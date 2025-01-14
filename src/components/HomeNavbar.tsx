@@ -39,15 +39,15 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="hidden md:flex space-x-8 bg-white px-8 py-2 rounded-xl">
-          <Link href="/teli" className="text-black hover:text-primary text-lg">
-            UseCases
+        <div className="hidden md:flex space-x-8 bg-white px-8 py-2 rounded-3xl">
+          <Link href="/geo" className="text-black hover:text-primary text-lg">
+            Geo
           </Link>
           <Link href="/gtm" className="text-black hover:text-primary text-lg">
-            Solutions
+            Gtm
           </Link>
           <Link href="/geni" className="text-black hover:text-primary text-lg">
-            Product
+            Geni
           </Link>
           <Link href="/about" className="text-black hover:text-primary text-lg">
             About
@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex space-x-4">
-          {/* <Link
+          <Link
             href="/signup"
             className="px-8 py-2 text-white bg-primary rounded hover:bg-violet-400"
           >
@@ -66,7 +66,7 @@ const Navbar = () => {
             className="px-8 py-2 text-primary border border-primary rounded hover:bg-violet-900 hover:text-white"
           >
             Demo
-          </Link> */}
+          </Link>
         </div>
       </div>
     </nav>
