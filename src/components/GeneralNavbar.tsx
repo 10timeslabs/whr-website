@@ -25,8 +25,21 @@ const GeneralNavbar = () => {
   }, []);
 
   // Function to toggle dropdown state
-  const toggleDropdown = (key: any) => {
-    setDropdowns((prev: any) => ({ ...prev, [key]: !prev[key] }));
+  const toggleDropdown = (item: any) => {
+    setDropdowns((prevState: any) => {
+      const newDropdowns = Object.keys(prevState).reduce(
+        (acc: any, key: any) => {
+          acc[key] = false;
+          return acc;
+        },
+        {}
+      );
+
+      return {
+        ...newDropdowns,
+        [item]: !prevState[item],
+      };
+    });
   };
 
   const closeDropdowns = () => setDropdowns({});
@@ -37,76 +50,106 @@ const GeneralNavbar = () => {
         {
           label: "Human Resource (Recruitment)",
           href: "/gtm/usecase1",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Sales & Biz Dev",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_2 />,
         },
         {
           label: "Marketing",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_3 />,
         },
         {
           label: "CSR",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_4 />,
         },
         {
           label: "Tech team",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_5 />,
         },
         {
           label: "Procurement",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_6 />,
         },
         {
           label: "Brand Agency",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_7 />,
         },
         {
           label: "Event Suppliers",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_8 />,
         },
         {
           label: "Venue",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_9 />,
         },
         {
           label: "Research & Consultancy",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_10 />,
         },
         {
           label: "Influencers",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_11 />,
         },
         {
           label: "Media & News",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_12 />,
         },
         {
           label: "Event Planners and M&A",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_13 />,
         },
         {
           label: "Manpower Agency",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_14 />,
         },
         {
           label: "Transportation & Logistics",
           href: "/gtm/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_15 />,
         },
       ],
@@ -114,36 +157,50 @@ const GeneralNavbar = () => {
         {
           label: "Competitor Tracking",
           href: "/gtm/solution1",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_1 />,
         },
         {
           label: "Prospects Mapping",
           href: "/gtm/solution2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_2 />,
         },
         {
           label: "Recruitement & DevRel",
           href: "/gtm/solution2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_3 />,
         },
         {
           label: "Brand Building",
           href: "/gtm/solution2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_4 />,
         },
         {
           label: "Speaking Opportunity",
           href: "/gtm/solution2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_5 />,
         },
         {
           label: "Product Matching",
           href: "/gtm/solution2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_6 />,
         },
         {
           label: "Exhibit & Sponsor",
           href: "/gtm/solution2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_7 />,
         },
       ],
@@ -151,36 +208,50 @@ const GeneralNavbar = () => {
         {
           label: "Event Search",
           href: "/gtm/product1",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "AI Assistant",
           href: "/gtm/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Smart Tracker",
           href: "/gtm/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Coordinate",
           href: "/gtm/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Outreach",
           href: "/gtm/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Prospect",
           href: "/gtm/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Trends Monitor",
           href: "/gtm/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
       ],
@@ -189,151 +260,209 @@ const GeneralNavbar = () => {
       "Use Cases": [
         {
           label: "Hotel & Lodging",
-          href: "/teli/usecase1",
-          icon: <Teli_UseCase_1 />,
+          href: "/geo/usecases/hotel&lodging",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_1 color="currentColor" />,
         },
         {
           label: "Restaurants",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_2 />,
+          href: "/geo/usecases/restaurants",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_2 color="currentColor" />,
         },
         {
           label: "Activity Planners",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_3 />,
+          href: "/geo/usecases/activityplanners",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_3 color="currentColor" />,
         },
         {
           label: "Aviation & Airport",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_4 />,
+          href: "/geo/usecases/aviation&airport",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_4 color="currentColor" />,
         },
         {
           label: "Transportation",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_5 />,
+          href: "/geo/usecases/transportation",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_5 color="currentColor" />,
         },
         {
           label: "OOH Marketing",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_6 />,
+          href: "/geo/usecases/oohmarketing",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_6 color="currentColor" />,
         },
         {
           label: "Retail Commerce",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_7 />,
+          href: "/geo/usecases/retailcommerce",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_7 color="currentColor" />,
         },
         {
           label: "Parking",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_8 />,
+          href: "/geo/usecases/parking",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_8 color="currentColor" />,
         },
         {
           label: "DMO & DMC",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_9 />,
+          href: "/geo/usecases/DMO&DMC",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_9 color="currentColor" />,
         },
         {
           label: "Event Planners",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_10 />,
+          href: "/geo/usecases/eventplanners",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_10 color="currentColor" />,
         },
         {
           label: "Venue Operators",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_11 />,
+          href: "/geo/usecases/venueoperators",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_11 color="currentColor" />,
         },
         {
           label: "Hyperlocal & Quick Commerce",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_12 />,
+          href: "/geo/usecases/hyperlocal&quickcommerce",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_12 color="currentColor" />,
         },
         {
           label: "Local Government",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_13 />,
+          href: "/geo/usecases/localgovernment",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_13 color="currentColor" />,
         },
         {
           label: "Enterprise",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_14 />,
+          href: "/geo/usecases/enterprise",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_14 color="currentColor" />,
         },
         {
           label: "Manpower Agency",
-          href: "/teli/usecase2",
-          icon: <Teli_UseCase_15 />,
+          href: "/geo/usecases/manpoweragency",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_UseCase_15 color="currentColor" />,
         },
       ],
       Solutions: [
         {
           label: "Demand Forecasting",
-          href: "/teli/solution1",
-          icon: <Teli_Soln_1 />,
+          href: "/geo/solutions/DemandForecasting",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_Soln_1 color="currentColor" />,
         },
         {
           label: "Risk Identification",
-          href: "/teli/solution2",
-          icon: <Teli_Soln_2 />,
+          href: "/geo/solutions/RiskIdentification",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_Soln_2 color="currentColor" />,
         },
         {
           label: "Geo Marketing",
-          href: "/teli/solution2",
-          icon: <Teli_Soln_3 />,
+          href: "/geo/solutions/GeoMarketing",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_Soln_3 color="currentColor" />,
         },
         {
           label: "Event Prospecting",
-          href: "/teli/solution2",
-          icon: <Teli_Soln_4 />,
+          href: "/geo/solutions/EventProspecting",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_Soln_4 color="currentColor" />,
         },
         {
           label: "Dynamic Pricing",
-          href: "/teli/solution2",
-          icon: <Teli_Soln_5 />,
+          href: "/geo/solutions/DynamicPricing",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_Soln_5 color="currentColor" />,
         },
         {
           label: "Workforce Management",
-          href: "/teli/solution2",
-          icon: <Teli_Soln_6 />,
+          href: "/geo/solutions/WorkforceManagement",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_Soln_6 color="currentColor" />,
         },
         {
           label: "Inventory Planning",
-          href: "/teli/solution2",
-          icon: <Teli_Soln_7 />,
+          href: "/geo/solutions/InventoryPlanning",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_Soln_7 color="currentColor" />,
         },
         {
           label: "Travel Advisory",
-          href: "/teli/solution2",
-          icon: <Teli_Soln_8 />,
+          href: "/geo/solutions/TravelAdvisory",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
+          icon: <Geo_Soln_8 color="currentColor" />,
         },
       ],
       Product: [
         {
           label: "Event Search",
-          href: "/teli/product1",
+          href: "/geo/product1",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Smart Tracker",
-          href: "/teli/product2",
+          href: "/geo/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "AI Assistant",
-          href: "/teli/product2",
+          href: "/geo/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Trends Monitor",
-          href: "/teli/product2",
+          href: "/geo/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Coordinate",
-          href: "/teli/product2",
+          href: "/geo/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "API & Model Training",
-          href: "/teli/product2",
+          href: "/geo/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
       ],
@@ -343,11 +472,15 @@ const GeneralNavbar = () => {
         {
           label: "Geni UseCase 1",
           href: "/geni/usecase1",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Geni UseCase 2",
           href: "/geni/usecase2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
       ],
@@ -355,11 +488,15 @@ const GeneralNavbar = () => {
         {
           label: "Geni Solution 1",
           href: "/geni/solution1",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Geni Solution 2",
           href: "/geni/solution2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
       ],
@@ -367,11 +504,15 @@ const GeneralNavbar = () => {
         {
           label: "Geni Product 1",
           href: "/geni/product1",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
         {
           label: "Geni Product 2",
           href: "/geni/product2",
+          subText:
+            "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 />,
         },
       ],
@@ -383,7 +524,7 @@ const GeneralNavbar = () => {
   const currentPage = pathname.split("/")[1];
   const options = dropdownValues[currentPage] || [];
   return (
-    <div className={`${styles.heroSection}`}>
+    <div>
       <nav className="fixed top-0 left-0 w-full z-50 ">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex-shrink-0 flex items-center space-x-2">
@@ -407,29 +548,256 @@ const GeneralNavbar = () => {
                   <Image src={DownArrowIcon} alt="" />
                 </div>
 
-                {dropdowns[item] && options[item] && (
+                {/* {dropdowns[item] && options[item] && (
                   <div
                     className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg z-50 text-nowrap pb-2"
                     onMouseLeave={closeDropdowns}
                     style={{ width: "550px" }}
                   >
-                    <div className="text-black font-semibold px-4 py-2 border-b mb-2">
+                    <div className="text-black font-normal px-6 py-2 border-b mb-2">
                       {item}
                     </div>
-                    <div className="grid grid-cols-2 gap-2 px-4">
+
+                    <div
+                      className={`grid gap-1 p-2 ${
+                        options[item].length <= 5
+                          ? "grid-cols-1"
+                          : options[item].length <= 10
+                          ? "grid-cols-2"
+                          : "grid-cols-3"
+                      }`}
+                    >
                       {options[item].map((link: any, i: any) => (
                         <Link
                           key={i}
                           href={link.href}
-                          className="block px-4 py-1 text-black hover:bg-gray-200 hover:text-primary text-sm"
+                          className="block px-2 py-2 text-black hover:bg-[#F7F7F7] hover:text-primary text-sm rounded-md"
                           onClick={closeDropdowns}
                         >
-                          <div className="flex items-center">
+                          <div className="flex items-center text-left">
                             {link.icon && (
-                              <span className="mr-2">{link.icon}</span>
+                              <span
+                                className="mr-2 transition-colors duration-200"
+                                style={{ color: "inherit" }}
+                              >
+                                {React.cloneElement(link.icon, {
+                                  style: { fill: "currentColor" },
+                                })}
+                              </span>
                             )}
-                            <span className="">{link.label}</span>
+                            <span className="truncate">{link.label}</span>
                           </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )} */}
+
+                {/* {dropdowns[item] && options[item] && (
+                  <div
+                    className="absolute top-full left-0 right-0 mt-2 bg-white shadow-lg rounded-lg z-50 text-nowrap pb-2"
+                    onMouseLeave={closeDropdowns}
+                    style={{
+                      width:
+                        options[item].length > 10
+                          ? "900px" // Three columns
+                          : options[item].length > 5
+                          ? "600px" // Two columns
+                          : "300px", // Single column
+                    }}
+                  >
+                    <div className="text-black font-normal px-6 py-2 border-b mb-2">
+                      {item}
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-2 p-2">
+                      <div className="grid grid-cols-1 gap-2">
+                        {options[item].slice(0, 5).map((link, i) => (
+                          <Link
+                            key={i}
+                            href={link.href}
+                            className="block px-2 py-2 text-black hover:bg-[#F7F7F7] hover:text-primary text-sm rounded-md"
+                            onClick={closeDropdowns}
+                          >
+                            <div className="flex items-center text-left">
+                              {link.icon && (
+                                <span
+                                  className="mr-2 transition-colors duration-200"
+                                  style={{ color: "inherit" }}
+                                >
+                                  {React.cloneElement(link.icon, {
+                                    style: { fill: "currentColor" },
+                                  })}
+                                </span>
+                              )}
+                              <span className="truncate">{link.label}</span>
+                            </div>
+                          
+                            {link.subText && (
+                              <div className="text-gray-500 text-xs mt-1 ml-6">
+                                {link.subText.includes(
+                                  "in forecast accuracy"
+                                ) ? (
+                                  <>
+                                    Quickly achieve a minimum 10% improvement{" "}
+                                    <br />
+                                    in forecast accuracy
+                                  </>
+                                ) : (
+                                  link.subText
+                                )}
+                              </div>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+
+                      <div className="grid grid-cols-1 gap-2">
+                        {options[item].slice(5, 10).map((link, i) => (
+                          <Link
+                            key={i}
+                            href={link.href}
+                            className="block px-2 py-2 text-black hover:bg-[#F7F7F7] hover:text-primary text-sm rounded-md"
+                            onClick={closeDropdowns}
+                          >
+                            <div className="flex items-center text-left">
+                              {link.icon && (
+                                <span
+                                  className="mr-2 transition-colors duration-200"
+                                  style={{ color: "inherit" }}
+                                >
+                                  {React.cloneElement(link.icon, {
+                                    style: { fill: "currentColor" },
+                                  })}
+                                </span>
+                              )}
+                              <span className="truncate">{link.label}</span>
+                            </div>
+
+                            {link.subText && (
+                              <div className="text-gray-500 text-xs mt-1 ml-6">
+                                {link.subText.includes(
+                                  "in forecast accuracy"
+                                ) ? (
+                                  <>
+                                    Quickly achieve a minimum 10% improvement{" "}
+                                    <br />
+                                    in forecast accuracy
+                                  </>
+                                ) : (
+                                  link.subText
+                                )}
+                              </div>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+
+                      <div className="grid grid-cols-1 gap-2">
+                        {options[item].slice(10).map((link, i) => (
+                          <Link
+                            key={i}
+                            href={link.href}
+                            className="block px-2 py-2 text-black hover:bg-[#F7F7F7] hover:text-primary text-sm rounded-md"
+                            onClick={closeDropdowns}
+                          >
+                            <div className="flex items-center text-left">
+                              {link.icon && (
+                                <span
+                                  className="mr-2 transition-colors duration-200"
+                                  style={{ color: "inherit" }}
+                                >
+                                  {React.cloneElement(link.icon, {
+                                    style: { fill: "currentColor" },
+                                  })}
+                                </span>
+                              )}
+                              <span className="truncate">{link.label}</span>
+                            </div>
+
+                            {link.subText && (
+                              <div className="text-gray-500 text-xs mt-1 ml-6">
+                                {link.subText.includes(
+                                  "in forecast accuracy"
+                                ) ? (
+                                  <>
+                                    Quickly achieve a minimum 10% improvement{" "}
+                                    <br />
+                                    in forecast accuracy
+                                  </>
+                                ) : (
+                                  link.subText
+                                )}
+                              </div>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )} */}
+
+                {dropdowns[item] && options[item] && (
+                  <div
+                    className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg z-50 text-nowrap pb-2"
+                    onMouseLeave={closeDropdowns}
+                    style={{
+                      width:
+                        options[item].length > 10
+                          ? "900px" // Three columns
+                          : options[item].length > 5
+                          ? "600px" // Two columns
+                          : "300px", // Single column
+                    }}
+                  >
+                    <div className="text-black font-normal px-6 py-2 border-b mb-2">
+                      {item}
+                    </div>
+
+                    <div
+                      className={`grid gap-2 p-2`}
+                      style={{
+                        gridTemplateColumns:
+                          options[item].length > 10
+                            ? "repeat(3, 1fr)"
+                            : options[item].length > 5
+                            ? "repeat(2, 1fr)"
+                            : "repeat(1, 1fr)",
+                      }}
+                    >
+                      {options[item].map((link:any, i:any) => (
+                        <Link
+                          key={i}
+                          href={link.href}
+                          className="block px-2 py-2 text-black hover:bg-[#F7F7F7] hover:text-primary text-sm rounded-md"
+                          onClick={closeDropdowns}
+                        >
+                          <div className="flex items-center text-left">
+                            {link.icon && (
+                              <span
+                                className="mr-2 transition-colors duration-200"
+                                style={{ color: "inherit" }}
+                              >
+                                {React.cloneElement(link.icon, {
+                                  style: { fill: "currentColor" },
+                                })}
+                              </span>
+                            )}
+                            <span className="truncate">{link.label}</span>
+                          </div>
+                          {link.subText && (
+                            <div className="text-gray-500 text-xs mt-1 ml-6">
+                              {link.subText.includes("in forecast accuracy") ? (
+                                <>
+                                  Quickly achieve a minimum 10% improvement{" "}
+                                  <br />
+                                  in forecast accuracy
+                                </>
+                              ) : (
+                                link.subText
+                              )}
+                            </div>
+                          )}
                         </Link>
                       ))}
                     </div>
@@ -1375,9 +1743,9 @@ function GTM_Soln_7() {
   );
 }
 
-// teli "Use Cases"
+// Geo "Use Cases"
 
-function Teli_UseCase_1() {
+function Geo_UseCase_1({ color = "black" }) {
   return (
     <svg
       width="16"
@@ -1392,47 +1760,47 @@ function Teli_UseCase_1() {
         width="4"
         height="6"
         rx="0.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M6 5.5C6 4.94772 6.44772 4.5 7 4.5H17C17.5523 4.5 18 4.94772 18 5.5V20.5C18 21.0523 17.5523 21.5 17 21.5H7C6.44772 21.5 6 21.0523 6 20.5V5.5Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M9 8H11"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M9 10.5H11"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M9 13H11"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M13.5 8H15.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M13.5 10.5H15.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M13.5 13H15.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1443,7 +1811,7 @@ function Teli_UseCase_1() {
         height="3"
         rx="1"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1451,7 +1819,7 @@ function Teli_UseCase_1() {
   );
 }
 
-function Teli_UseCase_2() {
+function Geo_UseCase_2({ color = "black" }) {
   return (
     <svg
       width="16"
@@ -1462,20 +1830,20 @@ function Teli_UseCase_2() {
     >
       <path
         d="M8.35279 7.36364V4C8.35279 3.44772 8.80051 3 9.35279 3H9.91204C10.4406 3 10.879 3.41506 10.9056 3.94299C11.1302 8.41031 10.8113 9.98467 9.82861 10.4582C9.33108 10.6979 8.85279 11.0841 8.85279 11.6364V20C8.85279 20.5523 8.40507 21 7.85279 21H7.35282C6.80054 21 6.35282 20.5523 6.35282 20V11.6364C6.35282 11.0841 5.87937 10.6733 5.37983 10.4378C3.60427 9.60064 3.93878 6.29103 4.24212 3.87759C4.30515 3.37617 4.73267 3 5.23804 3H5.35282C5.9051 3 6.35282 3.44772 6.35282 4V7.36364"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M6.34888 6.81824V4.00818C6.34888 3.45589 6.79851 3.00818 7.3508 3.00818V3.00818C7.90308 3.00818 8.35272 3.45589 8.35272 4.00818V6.81824"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M19.6838 20V3.5C19.6838 3.22386 19.4594 2.99802 19.1838 3.01522C14.3488 3.31685 14.1877 8.03686 14.1838 11.2286C14.1835 11.5047 14.4077 11.7273 14.6838 11.7273H15.6838C16.2361 11.7273 16.6838 12.175 16.6838 12.7273V20C16.6838 20.5523 17.1315 21 17.6838 21H18.6838C19.2361 21 19.6838 20.5523 19.6838 20Z"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1483,43 +1851,43 @@ function Teli_UseCase_2() {
   );
 }
 
-function Teli_UseCase_3() {
+function Geo_UseCase_3({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M4.83663 19.1337L17.9482 13.3933C18.4471 13.1748 19.0291 13.3958 19.2573 13.8904L19.5694 14.5668C19.8053 15.078 19.5728 15.6831 19.0553 15.9049L5.8329 21.572C5.29529 21.8024 4.67555 21.5243 4.49039 20.9694L4.28911 20.3663C4.12538 19.8757 4.36281 19.3412 4.83663 19.1337Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M19.1634 19.1337L6.05178 13.3933C5.55286 13.1748 4.9709 13.3958 4.74271 13.8904L4.4306 14.5668C4.19472 15.078 4.42718 15.6831 4.94466 15.9049L18.1671 21.572C18.7047 21.8024 19.3245 21.5243 19.5096 20.9694L19.7109 20.3663C19.8746 19.8757 19.6372 19.3412 19.1634 19.1337Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <circle cx="12.1172" cy="7.79357" r="2.20641" fill="#D9D9D9" />
       <path
         d="M12.1172 2.89648V1.89648"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M15.4726 4.75008L16.1797 4.04297"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M8.52742 4.75008L7.82031 4.04297"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1527,16 +1895,16 @@ function Teli_UseCase_3() {
         d="M13.5007 10.0826L13.0851 9.45829L12.8262 9.6306L12.7652 9.93554L13.5007 10.0826ZM10.7337 10.0826L11.4691 9.93554L11.4082 9.6306L11.1493 9.45829L10.7337 10.0826ZM11.0368 11.5981L11.7722 11.451V11.451L11.0368 11.5981ZM13.1976 11.5981L12.4621 11.451L13.1976 11.5981ZM13.8672 8C13.8672 8.60766 13.5581 9.14344 13.0851 9.45829L13.9162 10.707C14.7893 10.1259 15.3672 9.13058 15.3672 8H13.8672ZM12.1172 6.25C13.0837 6.25 13.8672 7.0335 13.8672 8H15.3672C15.3672 6.20507 13.9121 4.75 12.1172 4.75V6.25ZM10.3672 8C10.3672 7.0335 11.1507 6.25 12.1172 6.25V4.75C10.3223 4.75 8.86719 6.20507 8.86719 8H10.3672ZM11.1493 9.45829C10.6763 9.14344 10.3672 8.60766 10.3672 8H8.86719C8.86719 9.13058 9.4451 10.1259 10.3181 10.707L11.1493 9.45829ZM11.7722 11.451L11.4691 9.93554L9.99828 10.2297L10.3014 11.7451L11.7722 11.451ZM11.5271 11.25C11.6463 11.25 11.7489 11.3341 11.7722 11.451L10.3014 11.7451C10.4182 12.3294 10.9312 12.75 11.5271 12.75V11.25ZM12.7073 11.25H11.5271V12.75H12.7073V11.25ZM12.4621 11.451C12.4855 11.3341 12.5881 11.25 12.7073 11.25V12.75C13.3031 12.75 13.8162 12.3294 13.933 11.7451L12.4621 11.451ZM12.7652 9.93554L12.4621 11.451L13.933 11.7451L14.2361 10.2297L12.7652 9.93554Z"
         fill="black"
       />
-      <path d="M11.1172 9.75H13.1172" stroke="black" strokeLinecap="round" />
+      <path d="M11.1172 9.75H13.1172" stroke={color} strokeLinecap="round" />
     </svg>
   );
 }
 
-function Teli_UseCase_4() {
+function Geo_UseCase_4({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1547,25 +1915,25 @@ function Teli_UseCase_4() {
       />
       <path
         d="M9.5 14.5H6.63701C6.38539 14.5 6.14302 14.4051 5.95824 14.2343L3.34538 11.8192C3.12662 11.617 3.0094 11.3278 3.02564 11.0304L3.19136 7.99441C3.21378 7.58376 3.69477 7.37427 4.01071 7.63756L5.96751 9.26822C6.14723 9.41798 6.37376 9.5 6.60769 9.5H18.5096C18.6648 9.5 18.818 9.5353 18.9553 9.60772C20.9098 10.6384 23.699 12.8462 20.9568 14.3881C20.8215 14.4642 20.6648 14.5 20.5096 14.5H15.1228"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M14.2456 9L11.0444 5.3415C10.8545 5.12448 10.5802 5 10.2918 5H8.99132C8.2185 5 7.73776 5.83923 8.12871 6.50587L9.74561 9.26302"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M16.2456 13L11.0411 18.462C10.8524 18.6601 10.5908 18.7722 10.3172 18.7722H8.89233C8.14209 18.7722 7.65903 17.9768 8.00502 17.3111L10.2456 13"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M21.2456 12H18.2456"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1573,18 +1941,18 @@ function Teli_UseCase_4() {
   );
 }
 
-function Teli_UseCase_5() {
+function Geo_UseCase_5({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M21.5801 15.3167C22.3354 12.7456 22.6803 11.3399 21.789 10.6751C21.6593 10.5784 21.4956 10.5446 21.3338 10.5446H3.80811C3.25582 10.5446 2.80811 10.9923 2.80811 11.5446V15"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1598,7 +1966,7 @@ function Teli_UseCase_5() {
         height="7"
         rx="1"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <rect
@@ -1607,7 +1975,7 @@ function Teli_UseCase_5() {
         width="5"
         height="4"
         rx="1"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
@@ -1620,13 +1988,13 @@ function Teli_UseCase_5() {
       />
       <path
         d="M2.56531 17.571C3.54356 16.7377 5.03049 15.571 7.84785 17.571C10.6652 19.571 13.5904 17.6433 15.4782 16.5712C16.6521 15.9046 19.5868 15.2712 21.9346 18.0712"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M2.56531 20.571C3.54356 19.7377 5.03049 18.571 7.84785 20.571C10.6652 22.571 13.5904 20.6433 15.4782 19.5712C16.6521 18.9046 19.5868 18.2712 21.9346 21.0712"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1634,11 +2002,11 @@ function Teli_UseCase_5() {
   );
 }
 
-function Teli_UseCase_6() {
+function Geo_UseCase_6({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1647,25 +2015,25 @@ function Teli_UseCase_6() {
       <rect x="5" y="12" width="3" height="7" fill="#D9D9D9" />
       <path
         d="M16 12.5V21.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M5 12.5V21.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M19 12.5V21.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M8 12.5V21.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1675,19 +2043,19 @@ function Teli_UseCase_6() {
         width="20"
         height="9"
         rx="1"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M19 13.2783L16.5 15.4999L18.5 17.9999L16 20.9999"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M8 13.2783L5.5 15.4999L7.5 17.9999L5 20.9999"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1695,25 +2063,25 @@ function Teli_UseCase_6() {
   );
 }
 
-function Teli_UseCase_7() {
+function Geo_UseCase_7({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M4 9.5V19.5C4 20.0523 4.44772 20.5 5 20.5H9.5M9.5 20.5V14.5C9.5 13.9477 9.94772 13.5 10.5 13.5H13.5C14.0523 13.5 14.5 13.9477 14.5 14.5V20.5M9.5 20.5H14.5M14.5 20.5H18.5C19.0523 20.5 19.5 20.0523 19.5 19.5V9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M2.19312 8.38662L3.5313 3.72413C3.65435 3.2954 4.04646 3 4.49249 3H19.6221C20.0756 3 20.4723 3.30513 20.5887 3.7434L21.7909 8.27174C21.9126 8.73038 21.6971 9.2204 21.2551 9.39313C19.2352 10.1825 18.443 9.43714 17.6213 8.27437C17.3963 7.95607 16.9101 7.99913 16.7093 8.3332C15.2565 10.7505 13.6231 9.55862 12.5108 8.18693C12.2698 7.88964 11.7888 7.92776 11.585 8.25174C10.0585 10.6784 8.39981 9.76836 7.34274 8.40109C7.08776 8.07127 6.53138 8.10161 6.30502 8.45169C5.15641 10.2281 3.65982 9.99197 2.59302 9.43003C2.22115 9.23415 2.07717 8.79062 2.19312 8.38662Z"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1721,11 +2089,11 @@ function Teli_UseCase_7() {
   );
 }
 
-function Teli_UseCase_8() {
+function Geo_UseCase_8({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1736,7 +2104,7 @@ function Teli_UseCase_8() {
       />
       <path
         d="M9.94409 12.5273V6.06068C9.94409 5.76613 10.1829 5.52734 10.4774 5.52734H13.3644C14.4209 5.52734 15.2774 6.38384 15.2774 7.44039V7.44039C15.2774 8.49693 14.4209 9.35343 13.3644 9.35343H10.2996"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1746,19 +2114,19 @@ function Teli_UseCase_8() {
         width="15"
         height="20"
         rx="1"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M7.5 16H16"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M9.5 19H14"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1766,11 +2134,11 @@ function Teli_UseCase_8() {
   );
 }
 
-function Teli_UseCase_9() {
+function Geo_UseCase_9({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1778,14 +2146,14 @@ function Teli_UseCase_9() {
       <path
         d="M16.8124 12.2111L14.8289 8.24418C13.9432 6.47275 13.8242 4.19851 15.3346 2.91743C17.0428 1.46861 18.7042 1.92581 20.007 2.97842C21.5474 4.22316 21.4704 6.47275 20.5847 8.24418L18.6012 12.2111C18.2327 12.9482 17.1809 12.9482 16.8124 12.2111Z"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <circle cx="17.7067" cy="5.67572" r="1.38739" fill="black" />
       <path
         d="M18.1221 14.6824C18.3925 15.9524 16.1172 21.0322 11.1301 15.3018C6.51594 9.99994 2.45599 19.8799 2.62497 21.9999"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeDasharray="2.5 2.5"
@@ -1794,11 +2162,11 @@ function Teli_UseCase_9() {
   );
 }
 
-function Teli_UseCase_10() {
+function Geo_UseCase_10({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1814,7 +2182,7 @@ function Teli_UseCase_10() {
         width="7"
         height="3"
         rx="1.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
@@ -1825,22 +2193,22 @@ function Teli_UseCase_10() {
         d="M18.3835 18.5826L17.9679 17.9583L17.709 18.1306L17.648 18.4355L18.3835 18.5826ZM15.6165 18.5826L16.352 18.4355L16.291 18.1306L16.0321 17.9583L15.6165 18.5826ZM15.9196 20.0981L16.655 19.951V19.951L15.9196 20.0981ZM18.0804 20.0981L17.345 19.951L18.0804 20.0981ZM18.75 16.5C18.75 17.1077 18.4409 17.6434 17.9679 17.9583L18.799 19.207C19.6721 18.6259 20.25 17.6306 20.25 16.5H18.75ZM17 14.75C17.9665 14.75 18.75 15.5335 18.75 16.5H20.25C20.25 14.7051 18.7949 13.25 17 13.25V14.75ZM15.25 16.5C15.25 15.5335 16.0335 14.75 17 14.75V13.25C15.2051 13.25 13.75 14.7051 13.75 16.5H15.25ZM16.0321 17.9583C15.5591 17.6434 15.25 17.1077 15.25 16.5H13.75C13.75 17.6306 14.3279 18.6259 15.201 19.207L16.0321 17.9583ZM16.655 19.951L16.352 18.4355L14.8811 18.7297L15.1842 20.2451L16.655 19.951ZM16.4099 19.75C16.5291 19.75 16.6317 19.8341 16.655 19.951L15.1842 20.2451C15.301 20.8294 15.8141 21.25 16.4099 21.25V19.75ZM17.5901 19.75H16.4099V21.25H17.5901V19.75ZM17.345 19.951C17.3683 19.8341 17.4709 19.75 17.5901 19.75V21.25C18.1859 21.25 18.699 20.8294 18.8158 20.2451L17.345 19.951ZM17.648 18.4355L17.345 19.951L18.8158 20.2451L19.1189 18.7297L17.648 18.4355Z"
         fill="black"
       />
-      <path d="M15.75 18.5H17.75" stroke="black" strokeLinecap="round" />
+      <path d="M15.75 18.5H17.75" stroke={color} strokeLinecap="round" />
       <path
         d="M14 13.5L13 12.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M20.25 13.5L21.25 12.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M17 12V11"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1848,11 +2216,11 @@ function Teli_UseCase_10() {
   );
 }
 
-function Teli_UseCase_11() {
+function Geo_UseCase_11({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1865,23 +2233,23 @@ function Teli_UseCase_11() {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M11.9187 2.91406C11.8308 2.91398 11.7462 2.92917 11.6674 2.95722C11.454 3.03297 11.2868 3.20197 11.2118 3.41281C11.1873 3.48164 11.1726 3.55492 11.1693 3.63088C11.1284 4.35528 11.1225 5.20663 11.1677 6.13783C11.0695 8.04811 10.7436 10.3097 10.0381 12.4509C8.99472 15.618 7.17354 18.3775 4.18607 19.4996C3.86287 19.621 3.6727 19.9417 3.70267 20.2696C3.70076 20.2914 3.69979 20.3135 3.69979 20.3358C3.69979 20.7501 4.03557 21.0858 4.44979 21.0858H8.62212C8.97439 21.0858 9.31846 20.9795 9.60932 20.7808L11.2825 19.6377C11.3618 19.5835 11.4651 19.5795 11.5483 19.6274L13.677 20.8526C13.9426 21.0054 14.2436 21.0858 14.55 21.0858H19.8796C20.2938 21.0858 20.6296 20.7501 20.6296 20.3358C20.6296 19.9216 20.2938 19.5858 19.8796 19.5858H19.8158C19.7658 19.5511 19.7108 19.522 19.6512 19.4996C16.6638 18.3775 14.8426 15.618 13.7992 12.4509C13.0937 10.3097 12.7678 8.04811 12.6696 6.13782C12.7148 5.20664 12.7089 4.3553 12.668 3.6309C12.6647 3.55494 12.65 3.48164 12.6255 3.41281C12.5498 3.19943 12.3808 3.03228 12.1699 2.95722C12.0911 2.92917 12.0065 2.91398 11.9187 2.91406ZM16.7415 19.5858C14.5761 17.9385 13.21 15.4561 12.3745 12.9202C12.2018 12.3961 12.0505 11.8661 11.9187 11.3362C11.7868 11.8661 11.6355 12.3961 11.4628 12.9202C10.6273 15.4561 9.26124 17.9385 7.09583 19.5858H8.62212C8.67244 19.5858 8.7216 19.5707 8.76315 19.5423L10.4364 18.3991C10.9912 18.02 11.7141 17.9922 12.2965 18.3273L14.4253 19.5525C14.4632 19.5743 14.5062 19.5858 14.55 19.5858H16.7415Z"
-        fill="black"
+        fill="currentColor"
       />
       <path
         d="M10.3174 10.3508H13.4549"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M11.1393 4.66406H12.6331"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M7.05359 15.6641H16.7188"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1889,43 +2257,43 @@ function Teli_UseCase_11() {
   );
 }
 
-function Teli_UseCase_12() {
+function Geo_UseCase_12({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M9.75 19.9952C11.1922 20.8279 12.8705 21.1568 14.5204 20.9303C16.1702 20.7037 17.6977 19.9345 18.8621 18.7439C20.0264 17.5532 20.7614 16.009 20.9512 14.3545C21.1409 12.7 20.7746 11.0294 19.91 9.60615C19.0454 8.18285 17.7317 7.0878 16.1759 6.49362C14.6202 5.89945 12.911 5.83995 11.3177 6.32451C9.72447 6.80906 8.33778 7.81011 7.3763 9.16984C6.41482 10.5296 5.93323 12.1706 6.00745 13.8343"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <path d="M13 6V3.5" stroke="black" strokeWidth="1.5" />
+      <path d="M13 6V3.5" stroke={color} strokeWidth="1.5" />
       <path
         d="M11 3L15 3"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M4 16H11.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M6.5 18L11.5 18"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M13 10.5V13.5C13 14.0523 13.4477 14.5 14 14.5H16.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1933,11 +2301,11 @@ function Teli_UseCase_12() {
   );
 }
 
-function Teli_UseCase_13() {
+function Geo_UseCase_13({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1945,37 +2313,37 @@ function Teli_UseCase_13() {
       <path
         d="M5 6.3375C5 6.11759 5.11153 5.90993 5.29468 5.78821C10.8161 2.11872 13.8626 2.02547 18.7363 5.78037C18.9021 5.90806 19 6.10794 19 6.31715C19 6.69428 18.6943 7 18.3171 7H5.6625C5.29661 7 5 6.70339 5 6.3375Z"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M7 13V22.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M10.5 13V22.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M14 13V22.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M17.5 13V22.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M4.5 10H19.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -1983,11 +2351,11 @@ function Teli_UseCase_13() {
   );
 }
 
-function Teli_UseCase_14() {
+function Geo_UseCase_14({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1999,69 +2367,69 @@ function Teli_UseCase_14() {
         height="6"
         rx="0.5"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M6 5C6 4.44772 6.44772 4 7 4H17C17.5523 4 18 4.44772 18 5V21H6V5Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M9 7.5H11"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M9 10H11"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M9 12.5H11"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M13.5 7.5H15.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M13.5 10H15.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M13.5 12.5H15.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M18 9C18 8.44772 18.4477 8 19 8H20C20.5523 8 21 8.44772 21 9V20.0142C21 20.5664 20.5523 21.0142 20 21.0142H18V9Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M3 12.6177C3 12.0654 3.44772 11.6177 4 11.6177H5C5.55228 11.6177 6 12.0654 6 12.6177V21.0142H4C3.44772 21.0142 3 20.5665 3 20.0142V12.6177Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
     </svg>
   );
 }
 
-function Teli_UseCase_15() {
+function Geo_UseCase_15({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2072,12 +2440,12 @@ function Teli_UseCase_15() {
       />
       <path
         d="M4 20.25C4 18.0409 5.79086 16.25 8 16.25H9.81504C9.93439 16.25 10.0498 16.2927 10.1404 16.3704L11.8492 17.835C12.2237 18.156 12.7763 18.156 13.1508 17.835L14.8596 16.3704C14.9502 16.2927 15.0656 16.25 15.185 16.25H16C18.2091 16.25 20 18.0409 20 20.25V20.25C20 20.8023 19.5523 21.25 19 21.25H5C4.44772 21.25 4 20.8023 4 20.25V20.25Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M8 10.25V10.25C8 12.7353 10.0147 14.75 12.5 14.75V14.75C14.9853 14.75 17 12.7353 17 10.25V10.25"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <rect
@@ -2086,49 +2454,49 @@ function Teli_UseCase_15() {
         width="11"
         height="2"
         rx="1"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M17 7.75046C17 6.80015 16.6992 5.87424 16.1406 5.10542C15.582 4.33661 14.7944 3.76436 13.8906 3.4707"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M7.99995 7.75046C7.99995 6.80015 8.3008 5.87424 8.85938 5.10542C9.41795 4.33661 10.2056 3.76436 11.1094 3.4707"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M14 5.55473V3.25C14 2.97386 13.7761 2.75 13.5 2.75H11.5C11.2239 2.75 11 2.97386 11 3.25L11 5.55473"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
     </svg>
   );
 }
 
-// teli solution
+// Geo solution
 
-function Teli_Soln_1() {
+function Geo_Soln_1({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="12" cy="8.48535" r="6" stroke="black" strokeWidth="1.5" />
+      <circle cx="12" cy="8.48535" r="6" stroke={color} strokeWidth="1.5" />
       <path
         d="M6.3698 17.9599C6.55527 17.6817 6.8675 17.5146 7.20185 17.5146H16.7981C17.1325 17.5146 17.4447 17.6817 17.6302 17.9599L18.9635 19.9599C19.4066 20.6245 18.9302 21.5146 18.1315 21.5146H5.86852C5.06982 21.5146 4.59343 20.6245 5.03647 19.9599L6.3698 17.9599Z"
-        fill="#D9D9D9"
-        stroke="black"
+        fill="currentColor"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M8.76965 9.96401L10.8634 8.26602L12.9061 9.55543L15.3063 6.88718M15.3063 6.88718L13.2252 6.55526M15.3063 6.88718L15.5105 9.09586"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -2137,30 +2505,30 @@ function Teli_Soln_1() {
   );
 }
 
-function Teli_Soln_2() {
+function Geo_Soln_2({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M15 13.3456C13.777 9.8294 10.4224 3.50849 6.17111 4.03041C5.54646 4.1071 5.32396 4.8336 5.61126 5.39353C6.77617 7.66397 7.72456 11.3022 5 13.3456"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M4 16.571C4.83333 15.7377 6.1 14.571 8.5 16.571C10.9 18.571 13.3918 16.6433 15 15.5712C16 14.9046 18.5 14.2712 20.5 17.0712"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M4 19.571C4.83333 18.7377 6.1 17.571 8.5 19.571C10.9 21.571 13.3918 19.6433 15 18.5712C16 17.9046 18.5 17.2712 20.5 20.0712"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -2168,24 +2536,24 @@ function Teli_Soln_2() {
   );
 }
 
-function Teli_Soln_3() {
+function Geo_Soln_3({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M14.5 10.5V20.5M9 17.5V7.5"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M4 11.0351V18.9983C4 19.7856 4.86766 20.2642 5.53355 19.8441L8.71581 17.8365C9.04175 17.6309 9.45685 17.6309 9.78281 17.8365L13.9501 20.4647C14.2845 20.6756 14.7117 20.6697 15.0401 20.4496L19.7454 17.2971C20.0225 17.1114 20.1888 16.7998 20.1888 16.4663V8.78935C20.1888 8.00708 19.3311 7.52772 18.6648 7.93764L15.0456 10.1643C14.7131 10.3689 14.2918 10.3612 13.967 10.1447L9.80402 7.36977C9.4681 7.14585 9.0305 7.14588 8.69462 7.36983L4.44525 10.2031C4.16708 10.3886 4 10.7008 4 11.0351Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -2196,56 +2564,56 @@ function Teli_Soln_3() {
       <path
         d="M11.4915 9.21119L10.2351 6.69821C9.64457 5.51725 9.57967 4.02034 10.5494 3.12426C11.8831 1.89184 13.1865 2.30405 14.175 3.16608C15.1701 4.03387 15.1274 5.51725 14.5369 6.69821L13.2804 9.21119C12.9119 9.94824 11.8601 9.94824 11.4915 9.21119Z"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="12.386" cy="5" r="1" fill="black" />
+      <circle cx="12.386" cy="5" r="1" fill="currentColor" />
     </svg>
   );
 }
 
-function Teli_Soln_4() {
+function Geo_Soln_4({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M22 10V10.75H22.75V10H22ZM22 14H22.75V13.25H22V14ZM2 14V13.25H1.25V14H2ZM2 10H1.25V10.75H2V10ZM3 5.25C2.0335 5.25 1.25 6.0335 1.25 7H2.75C2.75 6.86193 2.86193 6.75 3 6.75V5.25ZM21 5.25H3V6.75H21V5.25ZM22.75 7C22.75 6.0335 21.9665 5.25 21 5.25V6.75C21.1381 6.75 21.25 6.86193 21.25 7H22.75ZM22.75 10V7H21.25V10H22.75ZM20.75 12C20.75 11.3096 21.3096 10.75 22 10.75V9.25C20.4812 9.25 19.25 10.4812 19.25 12H20.75ZM22 13.25C21.3096 13.25 20.75 12.6904 20.75 12H19.25C19.25 13.5188 20.4812 14.75 22 14.75V13.25ZM22.75 17V14H21.25V17H22.75ZM21 18.75C21.9665 18.75 22.75 17.9665 22.75 17H21.25C21.25 17.1381 21.1381 17.25 21 17.25V18.75ZM3 18.75H21V17.25H3V18.75ZM1.25 17C1.25 17.9665 2.0335 18.75 3 18.75V17.25C2.86193 17.25 2.75 17.1381 2.75 17H1.25ZM1.25 14V17H2.75V14H1.25ZM3.25 12C3.25 12.6904 2.69036 13.25 2 13.25V14.75C3.51878 14.75 4.75 13.5188 4.75 12H3.25ZM2 10.75C2.69036 10.75 3.25 11.3096 3.25 12H4.75C4.75 10.4812 3.51878 9.25 2 9.25V10.75ZM1.25 7V10H2.75V7H1.25Z"
-        fill="black"
+        fill="currentColor"
       />
       <path
         d="M11.3343 9.04894C11.5438 8.40402 12.4562 8.40402 12.6657 9.04894L12.9654 9.97123C13.0591 10.2596 13.3279 10.4549 13.6311 10.4549H14.6009C15.279 10.4549 15.561 11.3226 15.0124 11.7212L14.2278 12.2912C13.9825 12.4695 13.8798 12.7854 13.9735 13.0739L14.2732 13.9962C14.4827 14.6411 13.7446 15.1774 13.196 14.7788L12.4114 14.2088C12.1661 14.0305 11.8339 14.0305 11.5886 14.2088L10.804 14.7788C10.2554 15.1774 9.51727 14.6411 9.72681 13.9961L10.0265 13.0739C10.1202 12.7854 10.0175 12.4695 9.77219 12.2912L8.98765 11.7212C8.43905 11.3226 8.72099 10.4549 9.3991 10.4549H10.3689C10.6721 10.4549 10.9409 10.2596 11.0346 9.97123L11.3343 9.04894Z"
         fill="#D9D9D9"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
     </svg>
   );
 }
 
-function Teli_Soln_5() {
+function Geo_Soln_5({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M20.7054 12C20.7054 9.98596 20.0071 8.03422 18.7294 6.47734C17.4517 4.92046 15.6737 3.85476 13.6983 3.46184C11.723 3.06892 9.67252 3.37308 7.89628 4.3225C6.12005 5.27191 4.72796 6.80784 3.95722 8.66858C3.18648 10.5293 3.08476 12.5997 3.66941 14.5271C4.25406 16.4544 5.48889 18.1194 7.16352 19.2383C8.83814 20.3573 10.8489 20.8609 12.8533 20.6635C14.8576 20.4661 16.7315 19.5798 18.1557 18.1557M20.7054 12L18.5606 10.5389M20.7054 12L22.2236 9.9711"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M14.3333 9.26316H10.5425C9.99022 9.26316 9.5425 9.71087 9.5425 10.2632V11.2105C9.5425 11.7628 9.99022 12.2105 10.5425 12.2105H13.3333C13.8856 12.2105 14.3333 12.6582 14.3333 13.2105V13.7368C14.3333 14.2891 13.8856 14.7368 13.3333 14.7368H9.33331M11.8739 8V16"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -2253,36 +2621,36 @@ function Teli_Soln_5() {
   );
 }
 
-function Teli_Soln_6() {
+function Geo_Soln_6({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M6.98438 10.1064C6.1484 10.28 5.36067 10.6615 4.68282 11.2212C4.00496 11.7808 3.45534 12.5034 3.07696 13.3325C2.83545 13.8616 2.66788 14.4249 2.57825 15.0039C2.49376 15.5497 2.94941 16 3.50169 16H5.00338"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="12" cy="10" r="2" stroke="black" strokeWidth="1.5" />
-      <circle cx="7.5" cy="6" r="2" stroke="black" strokeWidth="1.5" />
+      <circle cx="12" cy="10" r="2" stroke={color} strokeWidth="1.5" />
+      <circle cx="7.5" cy="6" r="2" stroke={color} strokeWidth="1.5" />
       <circle
         cx="2"
         cy="2"
         r="2"
         transform="matrix(-1 0 0 1 18.5 4)"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M17.1681 9.37213C16.7625 9.28793 16.3655 9.54845 16.2813 9.95402C16.1971 10.3596 16.4576 10.7566 16.8632 10.8408C17.5761 10.9888 18.253 11.3152 18.8397 11.7996C18.9792 11.9147 19.1127 12.0381 19.2397 12.1691C20.3408 12.4614 21.2945 13.1154 21.966 13.9963C21.8698 13.6628 21.7494 13.3367 21.6054 13.0211C21.1816 12.0926 20.5634 11.2775 19.7947 10.6428C19.0257 10.0079 18.1271 9.57123 17.1681 9.37213Z"
-        fill="black"
+        fill="currentColor"
       />
       <path
         fillRule="evenodd"
@@ -2292,109 +2660,109 @@ function Teli_Soln_6() {
       />
       <path
         d="M13.7365 14.2363L14.3584 14.6555L14.9406 13.7918L13.9369 13.5135L13.7365 14.2363ZM9.51254 14.4948L9.22553 13.8019L9.22553 13.8019L9.51254 14.4948ZM7.40379 15.9038L6.87346 15.3735L6.87346 15.3735L7.40379 15.9038ZM5.99477 18.0126L5.30186 17.7255L5.30186 17.7255L5.99477 18.0126ZM5.57676 19.5039L4.83562 19.389L4.83562 19.389L5.57676 19.5039ZM6.49999 20.5L6.49999 21.25L6.49999 21.25L6.49999 20.5ZM12 20.5L12 19.75L12 19.75L12 20.5ZM14.2206 20.5V21.25H15.9364L14.7711 19.9906L14.2206 20.5ZM13.9369 13.5135C13.3074 13.339 12.6559 13.25 12 13.25V14.75C12.5202 14.75 13.0369 14.8206 13.5361 14.959L13.9369 13.5135ZM12 13.25C11.0479 13.25 10.1051 13.4375 9.22553 13.8019L9.79956 15.1877C10.4972 14.8987 11.2449 14.75 12 14.75V13.25ZM9.22553 13.8019C8.34592 14.1662 7.54669 14.7003 6.87346 15.3735L7.93412 16.4341C8.46806 15.9002 9.10193 15.4767 9.79956 15.1877L9.22553 13.8019ZM6.87346 15.3735C6.20024 16.0467 5.66621 16.8459 5.30186 17.7255L6.68768 18.2996C6.97664 17.6019 7.40018 16.9681 7.93412 16.4341L6.87346 15.3735ZM5.30186 17.7255C5.08019 18.2607 4.92397 18.8192 4.83562 19.389L6.3179 19.6189C6.38798 19.167 6.51187 18.724 6.68768 18.2996L5.30186 17.7255ZM4.83562 19.389C4.66829 20.468 5.57096 21.25 6.49999 21.25V19.75C6.42708 19.75 6.37189 19.7201 6.34239 19.6891C6.32848 19.6745 6.32226 19.662 6.31954 19.6538C6.31728 19.647 6.31512 19.6368 6.3179 19.6189L4.83562 19.389ZM6.49999 21.25L12 21.25L12 19.75L6.49999 19.75L6.49999 21.25ZM12 21.25H14.2206V19.75H12V21.25ZM14.7711 19.9906C14.0589 19.221 13.6247 18.1933 13.6247 17.0626H12.1247C12.1247 18.5857 12.7116 19.9735 13.6701 21.0094L14.7711 19.9906ZM13.6247 17.0626C13.6247 16.1699 13.8951 15.3427 14.3584 14.6555L13.1146 13.817C12.4896 14.7442 12.1247 15.8619 12.1247 17.0626H13.6247Z"
-        fill="black"
+        fill="currentColor"
       />
       <path
         d="M17.9374 14.1504V19.9747"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M19.9967 15.0033L15.8783 19.1217"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M20.8496 17.0626H15.0253"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M19.9966 19.1218L15.8782 15.0034"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="17.9066" cy="17.0626" r="2.2579" fill="black" />
+      <circle cx="17.9066" cy="17.0626" r="2.2579" fill="currentColor" />
       <circle cx="17.9066" cy="17.0626" r="0.833958" fill="white" />
     </svg>
   );
 }
 
-function Teli_Soln_7() {
+function Geo_Soln_7({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="17.9375" cy="7.79357" r="2.20641" fill="#D9D9D9" />
+      <circle cx="17.9375" cy="7.79357" r="2.20641" fill="currentColor" />
       <path
         d="M2.28503 10C2.28503 9.44771 2.73275 9 3.28503 9H11C11.5523 9 12 9.44772 12 10V22.2188H3.28503C2.73275 22.2188 2.28503 21.771 2.28503 21.2187V10Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M12 14H20.715C21.2673 14 21.715 14.4477 21.715 15V21.2187C21.715 21.771 21.2673 22.2187 20.715 22.2187H12V14Z"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M7.14252 9V12"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M16.8575 14V16.7396"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M17.9375 2.89648V1.89648"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M21.2929 4.75008L22 4.04297"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M14.3477 4.75008L13.6406 4.04297"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M19.321 10.0826L18.9054 9.45829L18.6465 9.6306L18.5855 9.93554L19.321 10.0826ZM16.554 10.0826L17.2895 9.93554L17.2285 9.6306L16.9696 9.45829L16.554 10.0826ZM16.8571 11.5981L17.5925 11.451L17.5925 11.451L16.8571 11.5981ZM19.0179 11.5981L18.2825 11.451L18.2825 11.451L19.0179 11.5981ZM19.6875 8C19.6875 8.60765 19.3784 9.14344 18.9054 9.45829L19.7365 10.707C20.6096 10.1259 21.1875 9.13058 21.1875 8H19.6875ZM17.9375 6.25C18.904 6.25 19.6875 7.0335 19.6875 8H21.1875C21.1875 6.20507 19.7324 4.75 17.9375 4.75V6.25ZM16.1875 8C16.1875 7.0335 16.971 6.25 17.9375 6.25V4.75C16.1426 4.75 14.6875 6.20507 14.6875 8H16.1875ZM16.9696 9.45829C16.4966 9.14344 16.1875 8.60766 16.1875 8H14.6875C14.6875 9.13058 15.2654 10.1259 16.1385 10.707L16.9696 9.45829ZM17.5925 11.451L17.2895 9.93554L15.8186 10.2297L16.1217 11.7451L17.5925 11.451ZM17.3474 11.25C17.4666 11.25 17.5692 11.3341 17.5925 11.451L16.1217 11.7451C16.2385 12.3294 16.7516 12.75 17.3474 12.75V11.25ZM18.5276 11.25H17.3474V12.75H18.5276V11.25ZM18.2825 11.451C18.3058 11.3341 18.4084 11.25 18.5276 11.25V12.75C19.1234 12.75 19.6365 12.3294 19.7533 11.7451L18.2825 11.451ZM18.5855 9.93554L18.2825 11.451L19.7533 11.7451L20.0564 10.2297L18.5855 9.93554Z"
-        fill="black"
+        fill="currentColor"
       />
-      <path d="M16.9375 9.75H18.9375" stroke="black" strokeLinecap="round" />
+      <path d="M16.9375 9.75H18.9375" stroke={color} strokeLinecap="round" />
     </svg>
   );
 }
 
-function Teli_Soln_8() {
+function Geo_Soln_8({ color = "black" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M14 7V3C14 2.44772 13.5523 2 13 2H10C9.44772 2 9 2.44772 9 3V7"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <rect
@@ -2403,25 +2771,25 @@ function Teli_Soln_8() {
         width="13"
         height="14"
         rx="1"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
       />
       <path
         d="M7 21V22M16 21V22"
-        stroke="black"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M7.74542 15.3629V11.3629C7.74542 10.8106 8.19314 10.3629 8.74542 10.3629H14.2545C14.8068 10.3629 15.2545 10.8106 15.2545 11.3629V15.5204C15.2545 15.9857 14.8773 16.3629 14.412 16.3629C14.0653 16.3629 13.754 16.5753 13.6276 16.8981L13.3062 17.7183C13.168 18.0711 12.7029 18.148 12.4586 17.8584L11.3463 16.5404C11.2513 16.4279 11.1115 16.3629 10.9642 16.3629H8.74542C8.19314 16.3629 7.74542 15.9152 7.74542 15.3629Z"
-        fill="#D9D9D9"
-        stroke="black"
+        fill="currentColor"
+        stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="9.5" cy="13.3629" r="0.5" fill="black" />
-      <circle cx="11.5" cy="13.3629" r="0.5" fill="black" />
-      <circle cx="13.5" cy="13.3629" r="0.5" fill="black" />
+      <circle cx="9.5" cy="13.3629" r="0.5" fill="currentColor" />
+      <circle cx="11.5" cy="13.3629" r="0.5" fill="currentColor" />
+      <circle cx="13.5" cy="13.3629" r="0.5" fill="currentColor" />
     </svg>
   );
 }
