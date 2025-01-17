@@ -16,6 +16,7 @@ import GetMore_6 from "/public/tracker/getmore_6.png";
 import GetMore_7 from "/public/tracker/getmore_7.png";
 import GetMore_8 from "/public/tracker/getmore_8.png";
 import GetMore_9 from "/public/tracker/getmore_9.png";
+
 export default function Home() {
   const [activeTab, setActiveTab] = useState("Location Intel");
   return (
@@ -81,6 +82,7 @@ export default function Home() {
               </div>
             </nav>
           </section>
+
           <section>
             <div className={`${styles.scroll_section_images}`}>
               <Image
