@@ -1,28 +1,45 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./navbar.style.module.css";
-import { usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "/public/logo/croppedlogo.png";
 import WhrAIText from "/public/logo/Whr.ai.png";
 import DownArrowIcon from "/public/DownSVG.svg";
+// import GTM_UseCase from "/public/GTM-Usecase/GTM-Usecase01.svg";
 const GeneralNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdowns, setDropdowns] = useState<any>({});
+  const router = useRouter();
   const pathname = usePathname();
+  const containerRef: any = useRef(null);
+  console.log("isScrolled____________", pathname, isScrolled);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
+      if (containerRef.current) {
+        setIsScrolled(containerRef.current.scrollTop > 10);
       } else {
         setIsScrolled(false);
       }
+      // console.log("isScrolled____________", isScrolled);
+      // if (window.scrollY > 10) {
+      //   setIsScrolled(true);
+      // } else {
+      //   setIsScrolled(false);
+      // }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleScroll);
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
+
+    const container = containerRef.current;
+    container?.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      container?.removeEventListener("scroll", handleScroll);
     };
   }, [pathname]);
 
@@ -148,8 +165,8 @@ const GeneralNavbar = () => {
           icon: <GTM_UseCase_14 color="currentColor" />,
         },
         {
-          label: "Transportation & Logistics",
-          href: "/gtm/usecases/transportation&logistics",
+          label: "Community & Groups",
+          href: "/gtm/usecases/community&groups",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_15 color="currentColor" />,
@@ -526,6 +543,7 @@ const GeneralNavbar = () => {
   return (
     <div>
       <nav
+        // className="fixed top-0 left-0 w-full z-50 "
         className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
           isScrolled ? "bg-white shadow-md" : "bg-transparent"
         }`}
@@ -536,6 +554,7 @@ const GeneralNavbar = () => {
               href="/"
               className="text-xl font-bold text-primary flex items-center gap-3"
             >
+              {/* <Image width="42" height="50" src={Logo} alt="nav-logo"/> */}
               <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center">
                 <Image width="32" height="40" src={Logo} alt="nav-logo" />
               </div>
@@ -554,7 +573,7 @@ const GeneralNavbar = () => {
                   <Image src={DownArrowIcon} alt="" />
                 </div>
 
-                {dropdowns[item] && options[item] && (
+                {/* {dropdowns[item] && options[item] && (
                   <div
                     className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg z-50 text-nowrap pb-2"
                     onMouseLeave={closeDropdowns}
@@ -639,6 +658,101 @@ const GeneralNavbar = () => {
                             ))}
                         </div>
                       ))}
+                    </div>
+                  </div>
+                )} */}
+
+                {dropdowns[item] && options[item] && (
+                  <div
+                    className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg z-50 text-nowrap pb-2"
+                    onMouseLeave={closeDropdowns}
+                    style={{
+                      width: `${Math.min(
+                        Math.ceil(options[item].length / 5) * 300,
+                        900
+                      )}px`, // Dynamically set width based on columns
+                    }}
+                  >
+                    <div className="text-black font-normal px-6 py-2 border-b mb-2">
+                      {item}
+                    </div>
+
+                    <div
+                      className={`grid ${
+                        options[item].length <= 5
+                          ? "grid-cols-1"
+                          : options[item].length <= 10
+                          ? "grid-cols-2"
+                          : "grid-cols-3"
+                      } gap-2 p-2`}
+                    >
+                      {Array.from({
+                        length: Math.min(
+                          Math.ceil(options[item].length / 5),
+                          3 // Max 3 columns
+                        ),
+                      }).map((_, colIndex) => {
+                        // Determine the slice range for the current column
+                        let start = colIndex * 5;
+                        let end =
+                          colIndex === 1 &&
+                          (options[item].length === 7 ||
+                            options[item].length === 8)
+                            ? options[item].length // Handle the special case for 7 or 8 items
+                            : start + 5; // Default: Next 5 items
+
+                        // Ensure no overflow of items
+                        end = Math.min(end, options[item].length);
+
+                        return (
+                          <div
+                            key={colIndex}
+                            className="grid grid-cols-1 gap-2"
+                          >
+                            {options[item]
+                              .slice(start, end)
+                              .map((link: any, i: any) => (
+                                <Link
+                                  key={i}
+                                  href={link.href}
+                                  className="block px-2 py-2 text-black hover:bg-[#F7F7F7] hover:text-primary text-sm rounded-md"
+                                  onClick={closeDropdowns}
+                                >
+                                  <div className="flex items-center text-left">
+                                    {link.icon && (
+                                      <span
+                                        className="mr-2"
+                                        style={{ color: "inherit" }}
+                                      >
+                                        {React.cloneElement(link.icon, {
+                                          style: { fill: "currentColor" },
+                                        })}
+                                      </span>
+                                    )}
+                                    <span className="truncate">
+                                      {link.label}
+                                    </span>
+                                  </div>
+                                  {link.subText && (
+                                    <div className="text-gray-500 text-xs mt-1 ml-6">
+                                      {link.subText.includes(
+                                        "in forecast accuracy"
+                                      ) ? (
+                                        <>
+                                          Quickly achieve a minimum 10%
+                                          improvement <br />
+                                          in forecast accuracy
+                                        </>
+                                      ) : (
+                                        link.subText
+                                      )}
+                                    </div>
+                                  )}
+                                </Link>
+                              ))}
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
