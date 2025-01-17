@@ -28,13 +28,15 @@ const Navbar = () => {
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between ">
+      <div className="px-32 py-8 flex items-center justify-between ">
         <div className="flex-shrink-0 flex items-center space-x-2">
           <Link
             href="/"
-            className="text-xl font-bold text-primary flex items-center gap-2"
+            className="text-xl font-bold text-primary flex items-center gap-3"
           >
-            <Image width="42" height="50" src={Logo} alt="nav-logo" />
+             <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center">
+                <Image width="32" height="40" src={Logo} alt="nav-logo" />
+              </div>
             <Image src={WhrAIText} alt="nav-logo" className="h-6 w-auto" />
           </Link>
         </div>
