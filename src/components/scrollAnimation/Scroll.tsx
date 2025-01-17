@@ -19,7 +19,7 @@ const Scroll = () => {
   const [isInView, setIsInView] = useState(false); // Track visibility of the div
   const scrollRef = useRef(null);
   const [scrollDirection, setScrollDirection] = useState("down"); // 'up' or 'down'
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScroll = (e: WheelEvent) => {
     if (!isInView) return; // Only trigger if the component is in view
@@ -27,7 +27,7 @@ const Scroll = () => {
     if (e.deltaY > 0) {
       // Scrolling down
       e.preventDefault(); // Prevent the default scroll behavior
-      if (currentIndex < data.length ) {
+      if (currentIndex < data.length) {
         setCurrentIndex((prev) => {
           setScrollDirection("down"); // Set direction to down
           return prev + 1;
@@ -87,9 +87,9 @@ const Scroll = () => {
     };
   }, [isInView, currentIndex]);
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log("current index :", currentIndex)
-  },[currentIndex])
+  }, [currentIndex])
 
   // useEffect(() => {
   //   const handleScrollDirection = () => {
@@ -108,15 +108,15 @@ const Scroll = () => {
 
   return (
     <div className="min-h-[580px] w-full relative" ref={scrollRef}>
-      <motion.div
-        className="w-full flex h-[580px] bg-[#ebf2ff40] items-center justify-center overflow-hidden"
+      <div
+        className="w-full flex h-[580px] items-center justify-center overflow-hidden"
       >
         {scrollDirection === 'down' ? (
           <>
             {currentIndex === 0 && (
               <LandingComponent image={data[0].imageOne} />
             )}
-            {currentIndex === 1 && (
+            {(currentIndex === 1) && (
               <FirstSolutionComponent
                 heading={data[0].solution}
                 subHeading={data[0].subHeading}
@@ -141,14 +141,14 @@ const Scroll = () => {
             )}
             {currentIndex > 0 && <SolutionComponent
               key={currentIndex}
-              heading={data[currentIndex-1].solution}
-              subHeading={data[currentIndex-1].subHeading}
-              imageOne={data[currentIndex-1].imageOne}
-              imageTwo={data[currentIndex-1].imageTwo}
+              heading={data[currentIndex - 1].solution}
+              subHeading={data[currentIndex - 1].subHeading}
+              imageOne={data[currentIndex - 1].imageOne}
+              imageTwo={data[currentIndex - 1].imageTwo}
             />}
           </>
         )}
-      </motion.div>
+      </div>
       <div className='flex items-center gap-2 absolute left-[20%] bottom-[50px]'>
         {Array.from({ length: data.length + 1 }).map((_, index) => (
           <div
@@ -157,36 +157,11 @@ const Scroll = () => {
           ></div>
         ))}
       </div>
-      {/* <LandingComponent image={data[0].imageOne}/>
-      <FirstSolutionComponent heading={data[0].solution} subHeading={data[0].subHeading} image={data[0].imageOne}/> */}
     </div>
 
   );
 
-  // return (
-  //   <div 
-  //    className="w-full flex h-[580px] bg-[#ebf2ff40] items-center justify-center overflow-hidden">
-  //     {/* <AnimatePresence mode="wait"> */}
-  //       <motion.div
-  //         key={currentIndex} // Ensures unique animations for each solution
-  //         initial={{ opacity: 0, y: 50 }}
-  //         animate={{ opacity: 1, y: 0 }}
-  //         exit={{ opacity: 0, x: 100 }}
-  //         transition={{ duration: 0.5, ease: "easeInOut" }}
-  //       >
-  //         <SolutionComponent
-  //           key={currentIndex}
-  //           heading={data[0].solution}
-  //           subHeading={data[0].subHeading}
-  //           imageOne={data[0].imageOne}
-  //           imageTwo={data[0].imageTwo}
-  //           // heading={data[currentIndex].solution} subHeading={data[currentIndex].subHeading} imageOne={data[currentIndex].imageOne} imageTwo={data[currentIndex].imageTwo}
-  //         />
-  //       </motion.div>
-  //     {/* </AnimatePresence> */}
-  //     {/* <FirstSolutionComponent heading={data[0].solution} subHeading={data[0].subHeading} image={data[0].image}/> */}
-  //   </div>
-  // );
+
 };
 
 export default Scroll

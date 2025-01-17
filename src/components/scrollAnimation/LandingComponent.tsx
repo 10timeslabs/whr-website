@@ -16,7 +16,7 @@ const LandingComponent = ({image }: Props) => {
       <div
         className="flex flex-col items-center gap-4 justify-start w-full text-center h-[580px] absolute z-20"
       >
-        <div className="rounded-lg border border-black p-2 mt-[60px]">How we are helpful</div>
+      <div className='text-sm font-medium border border-color rounded-xl py-1 px-7'>How are we helpful</div>
         <div className="font-semibold text-[40px] w-[40%]">
           Geo Provides Unique Features To Unlock On ground Demand
         </div>
