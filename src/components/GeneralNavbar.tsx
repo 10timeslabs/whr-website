@@ -11,10 +11,8 @@ const GeneralNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdowns, setDropdowns] = useState<any>({});
   const pathname = usePathname();
-  console.log("isScrolled____________", pathname, isScrolled);
   useEffect(() => {
     const handleScroll = () => {
-      console.log("isScrolled____________", isScrolled);
       if (window.scrollY > 10) {
         setIsScrolled(true);
       } else {
