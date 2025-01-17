@@ -18,6 +18,7 @@ import GetMore_8 from "/public/tracker/getmore_8.png";
 import GetMore_9 from "/public/tracker/getmore_9.png";
 import Scroll from "@/components/scrollAnimation/Scroll";
 import ScrollTwo from "@/components/scrollAnimation/ScrollTwo";
+import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
 export default function Home() {
   const [activeTab, setActiveTab] = useState("Location Intel");
   return (
@@ -85,6 +86,9 @@ export default function Home() {
           </section>
           <div className="min-h-[580px]">
             <Scroll />
+          </div>
+          <div className="mt-10">
+            <VerticalScroll/>
           </div>
           <section>
             <div className={`${styles.scroll_section_images}`}>
