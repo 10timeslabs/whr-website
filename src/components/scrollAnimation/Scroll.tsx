@@ -1,97 +1,192 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ImageOne from '/public/Scroll/ListView.png'
-import ImageTwo from '/public/tracker/getmore_2.png'
-import ImageThree from '/public/tracker/getmore_3.png'
+import ImageTwo from '/public/Scroll/ListViewSmall.png'
 import SolutionComponent from './SolutionComponent'
 import { AnimatePresence, motion } from 'framer-motion'
 import FirstSolutionComponent from './FirstSolutionComponent'
+import { div } from 'framer-motion/client'
+import LandingComponent from './LandingComponent'
 
 const Scroll = () => {
   const data = [
-    { solution: "Advanced Search",subHeading : "Use over 40+ filters to zoom in on what matters to your business for as much as 12 months ahead.", image: ImageOne },
-    { solution: "Smart Scores",subHeading : "Use proprietary scores like Inbound Score, Economic Impact Estimate or International percent to identify volatility.", image: ImageOne },
-    { solution: "Custom Tracker",subHeading : "Save your custom search to track you area of influence or that of your competitor. Get notified when something changes.", image: ImageOne },
-    
+    { solution: "Advanced Search", subHeading: "Use over 40+ filters to zoom in on what matters to your business for as much as 12 months ahead.", imageOne: ImageOne, imageTwo: ImageTwo },
+    { solution: "Smart Scores", subHeading: "Use proprietary scores like Inbound Score, Economic Impact Estimate or International percent to identify volatility.", imageOne: ImageOne, imageTwo: ImageTwo },
+    { solution: "Custom Tracker", subHeading: "Save your custom search to track you area of influence or that of your competitor. Get notified when something changes.", imageOne: ImageOne, imageTwo: ImageTwo },
+
   ];
 
-  // const [currentIndex, setCurrentIndex] = useState(0);
-  // const [isLocked, setIsLocked] = useState(true);
-  // const [isVisible, setIsVisible] = useState(false);
-  // const scrollRef = useRef<HTMLDivElement>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isInView, setIsInView] = useState(false); // Track visibility of the div
+  const scrollRef = useRef(null);
+  const [scrollDirection, setScrollDirection] = useState("down"); // 'up' or 'down'
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-  // const handleScroll = (event: WheelEvent) => {
-  //   if (!isLocked || !isVisible) return;
+  const handleScroll = (e: WheelEvent) => {
+    if (!isInView) return; // Only trigger if the component is in view
 
-  //   event.preventDefault();
+    if (e.deltaY > 0) {
+      // Scrolling down
+      e.preventDefault(); // Prevent the default scroll behavior
+      if (currentIndex < data.length ) {
+        setCurrentIndex((prev) => {
+          setScrollDirection("down"); // Set direction to down
+          return prev + 1;
+        });
+      } else {
+        // Allow normal scrolling when at the last index
+        window.removeEventListener("wheel", handleScroll);
+      }
+    } else {
+      // Scrolling up
+      if (currentIndex > 0) {
+        e.preventDefault(); // Prevent the default scroll behavior
+        setCurrentIndex((prev) => {
+          setScrollDirection("up"); // Set direction to up
+          return prev - 1;
+        });
+      } else {
+        // Allow normal scrolling when at the first index and scrolling up
+        window.removeEventListener("wheel", handleScroll);
+      }
+    }
+  };
 
-  //   if (event.deltaY > 0 && currentIndex < data.length - 1) {
-  //     // Scroll down, go to the next item
-  //     setCurrentIndex((prevIndex) => prevIndex + 1);
-  //   } else if (event.deltaY < 0 && currentIndex > 0) {
-  //     // Scroll up, go to the previous item
-  //     setCurrentIndex((prevIndex) => prevIndex - 1);
-  //   } else if (currentIndex === data.length - 1 && event.deltaY > 0) {
-  //     // Unlock scrolling once the last item is reached
-  //     setIsLocked(false);
-  //   }
-  // };
+  useEffect(() => {
+    // Intersection Observer to detect when the component is in view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        setIsInView(entry.isIntersecting); // Update visibility state
+      },
+      {
+        threshold: 0.9, // 90% visibility required
+      }
+    );
+
+    if (scrollRef.current) {
+      observer.observe(scrollRef.current);
+    }
+
+    return () => {
+      if (scrollRef.current) {
+        observer.unobserve(scrollRef.current);
+      }
+    };
+  }, []);
+
+  // Attach the scroll event listener to handle scroll direction
+  useEffect(() => {
+    if (isInView) {
+      window.addEventListener("wheel", handleScroll, { passive: false });
+    } else {
+      window.removeEventListener("wheel", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, [isInView, currentIndex]);
+
+  useEffect(()=>{
+    console.log("current index :", currentIndex)
+  },[currentIndex])
 
   // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       setIsVisible(entry.isIntersecting);
-  //     },
-  //     { threshold: 1.0 } // Ensures the element is fully visible
-  //   );
-
-  //   if (scrollRef.current) {
-  //     observer.observe(scrollRef.current);
-  //   }
-
-  //   return () => {
-  //     if (scrollRef.current) {
-  //       observer.unobserve(scrollRef.current);
+  //   const handleScrollDirection = () => {
+  //     const currentScrollY = window.scrollY;
+  //     if (currentScrollY > lastScrollY) {
+  //       setScrollDirection('down');
+  //     } else if (currentScrollY < lastScrollY) {
+  //       setScrollDirection('up');
   //     }
+  //     setLastScrollY(currentScrollY);
   //   };
-  // }, []);
-  // useEffect(() => {
-  //   if (isVisible) {
-  //     window.addEventListener("wheel", handleScroll, { passive: false });
-  //     console.log("fully visible")
-  //   } else {
-  //     window.removeEventListener("wheel", handleScroll);
-  //     console.log("not visible")
-  //   }
 
-  //   return () => {
-  //     window.removeEventListener("wheel", handleScroll);
-  //   };
-  // }, [isVisible, currentIndex, isLocked]);
+  //   window.addEventListener('wheel', handleScrollDirection);
+  //   return () => window.removeEventListener('wheel', handleScrollDirection);
+  // }, [lastScrollY]);
 
   return (
-    <div 
-    // ref={scrollRef}
-     className="w-full flex h-[580px] bg-[#ebf2ff40] items-center justify-center overflow-hidden">
-      {/* <AnimatePresence mode="wait">
-        <motion.div
-          key={currentIndex} // Ensures unique animations for each solution
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="absolute"
-        >
-          <SolutionComponent
-            key={currentIndex}
-            heading={data[currentIndex].solution}
-            subHeading={data[currentIndex].subHeading}
-            image={data[currentIndex].image}
-          />
-        </motion.div>
-      </AnimatePresence> */}
-      <FirstSolutionComponent heading={data[0].solution} subHeading={data[0].subHeading} image={data[0].image}/>
+    <div className="min-h-[580px] w-full relative" ref={scrollRef}>
+      <motion.div
+        className="w-full flex h-[580px] bg-[#ebf2ff40] items-center justify-center overflow-hidden"
+      >
+        {scrollDirection === 'down' ? (
+          <>
+            {currentIndex === 0 && (
+              <LandingComponent image={data[0].imageOne} />
+            )}
+            {currentIndex === 1 && (
+              <FirstSolutionComponent
+                heading={data[0].solution}
+                subHeading={data[0].subHeading}
+                imageOne={data[0].imageOne}
+                imageTwo={data[0].imageTwo}
+              />
+            )}
+            {currentIndex > 1 && (
+              <SolutionComponent
+                key={currentIndex - 1}
+                heading={data[currentIndex - 1].solution}
+                subHeading={data[currentIndex - 1].subHeading}
+                imageOne={data[currentIndex - 1].imageOne}
+                imageTwo={data[currentIndex - 1].imageTwo}
+              />
+            )}
+          </>
+        ) : (
+          <>
+            {currentIndex === 0 && (
+              <LandingComponent image={data[0].imageOne} />
+            )}
+            {currentIndex > 0 && <SolutionComponent
+              key={currentIndex}
+              heading={data[currentIndex-1].solution}
+              subHeading={data[currentIndex-1].subHeading}
+              imageOne={data[currentIndex-1].imageOne}
+              imageTwo={data[currentIndex-1].imageTwo}
+            />}
+          </>
+        )}
+      </motion.div>
+      <div className='flex items-center gap-2 absolute left-[20%] bottom-[50px]'>
+        {Array.from({ length: data.length + 1 }).map((_, index) => (
+          <div
+            key={index}
+            className={`h-[10px] w-[10px] rounded-[10px] bg-[#D9D9D9] ${index === currentIndex ? "bg-[var(--primary-color)]" : ""}`}
+          ></div>
+        ))}
+      </div>
+      {/* <LandingComponent image={data[0].imageOne}/>
+      <FirstSolutionComponent heading={data[0].solution} subHeading={data[0].subHeading} image={data[0].imageOne}/> */}
     </div>
+
   );
+
+  // return (
+  //   <div 
+  //    className="w-full flex h-[580px] bg-[#ebf2ff40] items-center justify-center overflow-hidden">
+  //     {/* <AnimatePresence mode="wait"> */}
+  //       <motion.div
+  //         key={currentIndex} // Ensures unique animations for each solution
+  //         initial={{ opacity: 0, y: 50 }}
+  //         animate={{ opacity: 1, y: 0 }}
+  //         exit={{ opacity: 0, x: 100 }}
+  //         transition={{ duration: 0.5, ease: "easeInOut" }}
+  //       >
+  //         <SolutionComponent
+  //           key={currentIndex}
+  //           heading={data[0].solution}
+  //           subHeading={data[0].subHeading}
+  //           imageOne={data[0].imageOne}
+  //           imageTwo={data[0].imageTwo}
+  //           // heading={data[currentIndex].solution} subHeading={data[currentIndex].subHeading} imageOne={data[currentIndex].imageOne} imageTwo={data[currentIndex].imageTwo}
+  //         />
+  //       </motion.div>
+  //     {/* </AnimatePresence> */}
+  //     {/* <FirstSolutionComponent heading={data[0].solution} subHeading={data[0].subHeading} image={data[0].image}/> */}
+  //   </div>
+  // );
 };
 
 export default Scroll
