@@ -783,8 +783,8 @@ export default GeneralNavbar;
 function GTM_UseCase_1({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -810,8 +810,8 @@ function GTM_UseCase_1({ color = "black" }) {
 function GTM_UseCase_2({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -840,8 +840,8 @@ function GTM_UseCase_2({ color = "black" }) {
 function GTM_UseCase_3({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -909,8 +909,8 @@ function GTM_UseCase_3({ color = "black" }) {
 function GTM_UseCase_4({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -935,8 +935,8 @@ function GTM_UseCase_4({ color = "black" }) {
 function GTM_UseCase_5({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -975,8 +975,8 @@ function GTM_UseCase_5({ color = "black" }) {
 function GTM_UseCase_6({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1005,8 +1005,8 @@ function GTM_UseCase_6({ color = "black" }) {
 function GTM_UseCase_7({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1028,8 +1028,8 @@ function GTM_UseCase_7({ color = "black" }) {
 function GTM_UseCase_8({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1067,8 +1067,8 @@ function GTM_UseCase_8({ color = "black" }) {
 function GTM_UseCase_9({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1110,8 +1110,8 @@ function GTM_UseCase_9({ color = "black" }) {
 function GTM_UseCase_10({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1138,8 +1138,8 @@ function GTM_UseCase_10({ color = "black" }) {
 function GTM_UseCase_11({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1165,8 +1165,8 @@ function GTM_UseCase_11({ color = "black" }) {
 function GTM_UseCase_12({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1225,8 +1225,8 @@ function GTM_UseCase_12({ color = "black" }) {
 function GTM_UseCase_13({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1261,8 +1261,8 @@ function GTM_UseCase_13({ color = "black" }) {
 function GTM_UseCase_14({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1311,8 +1311,8 @@ function GTM_UseCase_14({ color = "black" }) {
 function GTM_UseCase_15({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1373,8 +1373,8 @@ function GTM_UseCase_15({ color = "black" }) {
 function GTM_Soln_1({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1416,8 +1416,8 @@ function GTM_Soln_1({ color = "black" }) {
 function GTM_Soln_2({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1454,8 +1454,8 @@ function GTM_Soln_2({ color = "black" }) {
 function GTM_Soln_3({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1499,8 +1499,8 @@ function GTM_Soln_3({ color = "black" }) {
 function GTM_Soln_4({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1542,8 +1542,8 @@ function GTM_Soln_4({ color = "black" }) {
 function GTM_Soln_5({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1589,8 +1589,8 @@ function GTM_Soln_5({ color = "black" }) {
 function GTM_Soln_6({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1649,8 +1649,8 @@ function GTM_Soln_6({ color = "black" }) {
 function GTM_Soln_7({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1702,8 +1702,8 @@ function GTM_Soln_7({ color = "black" }) {
 function Geo_UseCase_1({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1776,8 +1776,8 @@ function Geo_UseCase_1({ color = "black" }) {
 function Geo_UseCase_2({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1808,8 +1808,8 @@ function Geo_UseCase_2({ color = "black" }) {
 function Geo_UseCase_3({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1857,8 +1857,8 @@ function Geo_UseCase_3({ color = "black" }) {
 function Geo_UseCase_4({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1898,8 +1898,8 @@ function Geo_UseCase_4({ color = "black" }) {
 function Geo_UseCase_5({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1959,8 +1959,8 @@ function Geo_UseCase_5({ color = "black" }) {
 function Geo_UseCase_6({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2020,8 +2020,8 @@ function Geo_UseCase_6({ color = "black" }) {
 function Geo_UseCase_7({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2046,8 +2046,8 @@ function Geo_UseCase_7({ color = "black" }) {
 function Geo_UseCase_8({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2091,8 +2091,8 @@ function Geo_UseCase_8({ color = "black" }) {
 function Geo_UseCase_9({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2119,8 +2119,8 @@ function Geo_UseCase_9({ color = "black" }) {
 function Geo_UseCase_10({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2173,8 +2173,8 @@ function Geo_UseCase_10({ color = "black" }) {
 function Geo_UseCase_11({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2214,8 +2214,8 @@ function Geo_UseCase_11({ color = "black" }) {
 function Geo_UseCase_12({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2258,8 +2258,8 @@ function Geo_UseCase_12({ color = "black" }) {
 function Geo_UseCase_13({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2308,8 +2308,8 @@ function Geo_UseCase_13({ color = "black" }) {
 function Geo_UseCase_14({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2382,8 +2382,8 @@ function Geo_UseCase_14({ color = "black" }) {
 function Geo_UseCase_15({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2435,8 +2435,8 @@ function Geo_UseCase_15({ color = "black" }) {
 function Geo_Soln_1({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2462,8 +2462,8 @@ function Geo_Soln_1({ color = "black" }) {
 function Geo_Soln_2({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2493,8 +2493,8 @@ function Geo_Soln_2({ color = "black" }) {
 function Geo_Soln_3({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2530,8 +2530,8 @@ function Geo_Soln_3({ color = "black" }) {
 function Geo_Soln_4({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2553,8 +2553,8 @@ function Geo_Soln_4({ color = "black" }) {
 function Geo_Soln_5({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2578,8 +2578,8 @@ function Geo_Soln_5({ color = "black" }) {
 function Geo_Soln_6({ color = "black" }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2649,8 +2649,8 @@ function Geo_Soln_6({ color = "black" }) {
 function Geo_Soln_7({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -2708,8 +2708,8 @@ function Geo_Soln_7({ color = "black" }) {
 function Geo_Soln_8({ color = "black" }) {
   return (
     <svg
-      width="18"
-      height="18"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
