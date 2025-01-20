@@ -11,6 +11,7 @@ import VenueOperator from "/public/GeoUsecasesBanners/geo_usecases_venue operato
 import QuickCommerce from "/public/GeoUsecasesBanners/geo_usecase_quick commerce.jpg";
 import LocalGovernment from "/public/GeoUsecasesBanners/geo_usecase_local government.jpg";
 import ManPower from "/public/GeoUsecasesBanners/geo_usecase_manpower.jpg";
+import EventPlanner from "/public/GeoUsecasesBanners/geo_useacase_eventplanner.jpg";
 
 import CorporateAndBrand from "/public/GeoUsecasesBanners/geo_usecase_corporate & brands .jpg";
 
@@ -169,6 +170,18 @@ export const geoUsecasesjsonData = [
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(217, 222, 233, 0.5) 53%)",
     opacity: "50%",
     text: "Events Create Jobs",
+    subtext:
+      "Events bring together people, but it also creates million of direct jobs across different expertise. From booth hosts, conference moderators to caterers, designers, security personel, the list goes on and on",
+  },
+
+  {
+    id: "eventplanners",
+    image: EventPlanner,
+    // blurColor: "#D9DEE9",
+    blurColor:
+      "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(217, 222, 233, 0.5) 53%)",
+    opacity: "50%",
+    text: "Event Planning Made Intelligent",
     subtext:
       "Events bring together people, but it also creates million of direct jobs across different expertise. From booth hosts, conference moderators to caterers, designers, security personel, the list goes on and on",
   },
