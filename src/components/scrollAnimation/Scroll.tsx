@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import FirstSolutionComponent from './FirstSolutionComponent'
 import { div } from 'framer-motion/client'
 import LandingComponent from './LandingComponent'
+import UsecaseScroll from '../usecaseScrollAnimation/UsecaseScroll'
 
 const Scroll = () => {
   const data = [
@@ -114,7 +115,7 @@ const Scroll = () => {
         {scrollDirection === 'down' ? (
           <>
             {currentIndex === 0 && (
-              <LandingComponent image={data[0].imageOne} />
+              <UsecaseScroll image={data[0].imageOne} />
             )}
             {(currentIndex === 1) && (
               <FirstSolutionComponent
@@ -137,7 +138,7 @@ const Scroll = () => {
         ) : (
           <>
             {currentIndex === 0 && (
-              <LandingComponent image={data[0].imageOne} />
+              <UsecaseScroll image={data[0].imageOne} />
             )}
             {currentIndex > 0 && <SolutionComponent
               key={currentIndex}

@@ -8,7 +8,7 @@ import Logo from "/public/logo/croppedlogo.png";
 import WhrAIText from "/public/logo/Whr.ai.png";
 import DownArrowIcon from "/public/DownSVG.svg";
 import { MagnifyingGlass, ChartBarRandom, LineChart } from "geist-icons";
-import { CoordinateIcon, Geo_Soln_1, Geo_Soln_2, Geo_Soln_3, Geo_Soln_4, Geo_Soln_5, Geo_Soln_6, Geo_Soln_7, Geo_Soln_8, Geo_UseCase_1, Geo_UseCase_10, Geo_UseCase_11, Geo_UseCase_12, Geo_UseCase_13, Geo_UseCase_14, Geo_UseCase_15, Geo_UseCase_2, Geo_UseCase_3, Geo_UseCase_4, Geo_UseCase_5, Geo_UseCase_6, Geo_UseCase_7, Geo_UseCase_8, Geo_UseCase_9, GTM_Soln_1, GTM_Soln_2, GTM_Soln_3, GTM_Soln_4, GTM_Soln_5, GTM_Soln_6, GTM_Soln_7, GTM_UseCase_1, GTM_UseCase_10, GTM_UseCase_11, GTM_UseCase_12, GTM_UseCase_13, GTM_UseCase_14, GTM_UseCase_15, GTM_UseCase_2, GTM_UseCase_3, GTM_UseCase_4, GTM_UseCase_5, GTM_UseCase_6, GTM_UseCase_7, GTM_UseCase_8, GTM_UseCase_9 } from "../../svgions/icons";
+import { AIAssistantIcon, APIModelIcon, CoordinateIcon, Geo_Soln_1, Geo_Soln_2, Geo_Soln_3, Geo_Soln_4, Geo_Soln_5, Geo_Soln_6, Geo_Soln_7, Geo_Soln_8, Geo_UseCase_1, Geo_UseCase_10, Geo_UseCase_11, Geo_UseCase_12, Geo_UseCase_13, Geo_UseCase_14, Geo_UseCase_15, Geo_UseCase_2, Geo_UseCase_3, Geo_UseCase_4, Geo_UseCase_5, Geo_UseCase_6, Geo_UseCase_7, Geo_UseCase_8, Geo_UseCase_9, GTM_Soln_1, GTM_Soln_2, GTM_Soln_3, GTM_Soln_4, GTM_Soln_5, GTM_Soln_6, GTM_Soln_7, GTM_UseCase_1, GTM_UseCase_10, GTM_UseCase_11, GTM_UseCase_12, GTM_UseCase_13, GTM_UseCase_14, GTM_UseCase_15, GTM_UseCase_2, GTM_UseCase_3, GTM_UseCase_4, GTM_UseCase_5, GTM_UseCase_6, GTM_UseCase_7, GTM_UseCase_8, GTM_UseCase_9 } from "../../svgicons/icons";
 const GeneralNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdowns, setDropdowns] = useState<any>({});
@@ -372,56 +372,56 @@ const GeneralNavbar = () => {
       Solutions: [
         {
           label: "Demand Forecasting",
-          href: "/geo/solutions/DemandForecasting",
+          href: "/geo/solutions/demand_forecasting",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_1 color="currentColor" />,
         },
         {
           label: "Risk Identification",
-          href: "/geo/solutions/RiskIdentification",
+          href: "/geo/solutions/risk_identification",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_2 color="currentColor" />,
         },
         {
           label: "Geo Marketing",
-          href: "/geo/solutions/GeoMarketing",
+          href: "/geo/solutions/geo_marketing",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_3 color="currentColor" />,
         },
         {
           label: "Event Prospecting",
-          href: "/geo/solutions/EventProspecting",
+          href: "/geo/solutions/event_prospecting",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_4 color="currentColor" />,
         },
         {
           label: "Dynamic Pricing",
-          href: "/geo/solutions/DynamicPricing",
+          href: "/geo/solutions/dynamic_pricing",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_5 color="currentColor" />,
         },
         {
           label: "Workforce Management",
-          href: "/geo/solutions/WorkforceManagement",
+          href: "/geo/solutions/workforce_management",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_6 color="currentColor" />,
         },
         {
           label: "Inventory Planning",
-          href: "/geo/solutions/InventoryPlanning",
+          href: "/geo/solutions/inventory_planning",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_7 color="currentColor" />,
         },
         {
           label: "Travel Advisory",
-          href: "/geo/solutions/TravelAdvisory",
+          href: "/geo/solutions/travel_advisory",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_8 color="currentColor" />,
@@ -447,7 +447,7 @@ const GeneralNavbar = () => {
           href: "/geo/product2",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 />,
+          icon: <AIAssistantIcon color="currentColor"/>,
         },
         {
           label: "Trends Monitor",
@@ -468,7 +468,7 @@ const GeneralNavbar = () => {
           href: "/geo/product2",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 />,
+          icon: <APIModelIcon color="currentColor"/>,
         },
       ],
     },

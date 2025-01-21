@@ -10,6 +10,7 @@ import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll"
 import UsecaseScroll from "@/components/usecaseScrollAnimation/UsecaseScroll";
 import HeroBanner from "@/components/solutionHeroBanner/HeroBanner";
 import Section from "@/components/solutionHeroBanner/Section";
+import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 
 const page = () => {
   const pathname = usePathname();
@@ -28,11 +29,11 @@ const page = () => {
 
   const dataToDisplay: any = usecaseData || defaultData;
 
-  console.log("Endpoint:", endpoint, dataToDisplay);
+  // console.log("Endpoint:", endpoint, dataToDisplay);
 
   return (
     <div className="relative w-full flex flex-col gap-12 ">
-      {pathname.split("/")[2] === "usecases" ?
+      {pathname.split("/")[2] === "usecases" ? (
         <div>
           <Image
             src={dataToDisplay.image}
@@ -63,21 +64,34 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
-        </div> :
-        <div className="w-full flex items-center justify-center mt-[140px]"><Section /></div>}
+        </div>
+      ) : (
+        <div className="w-full flex items-center justify-center mt-[140px]">
+          <Section />
+        </div>
+      )}
       <div>
         <ProblemSolution />
       </div>
-      {pathname.split("/")[2] === "solutions" ? <div className="min-h-[580px]">
-        <Scroll />
-      </div>
-        :
-        <div className="w-full flex items-center justify-center">
-          <UsecaseScroll />
+      {pathname.split("/")[2] === "solutions" ? (
+        <div className="min-h-[580px]">
+          {/* <Scroll /> */}
+          <div className="w-full flex items-center justify-center">
+            <LandingComponent />
+          </div>
         </div>
-      }
+      ) : (
+        <div className="w-full flex items-center justify-center">
+          {/* <LandingComponent /> */}
+          <Scroll />
+        </div>
+      )}
       <div className="mb-5">
-        <VerticalScroll mainHeading={pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"} />
+        <VerticalScroll
+          mainHeading={
+            pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+          }
+        />
       </div>
     </div>
   );

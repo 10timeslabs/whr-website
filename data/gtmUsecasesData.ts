@@ -1,18 +1,18 @@
-import CSR from "/public/GTMUsecasesBanners/gtm_usecase_csr.jpg";
-import EventSupplier from "/public/GTMUsecasesBanners/gtm_usecase_eventsuppliers.jpg";
-import Marketing from "/public/GTMUsecasesBanners/gtm_usecase_marketing.jpg";
-import SalesAndBiz from "/public/GTMUsecasesBanners/gtm_usecase_sales&biz.jpg";
-import Tech from "/public/GTMUsecasesBanners/gtm_usecase_tech.jpg";
-import Brand from "/public/GTMUsecasesBanners/gtm_usecase_brand.jpg";
-import Community from "/public/GTMUsecasesBanners/gtm_usecase_community.jpg";
-import HumanResource from "/public/GTMUsecasesBanners/gtm_usecase_human-resources.jpg";
-import Influencer from "/public/GTMUsecasesBanners/gtm_usecase_influencer.jpg";
-import ManPower from "/public/GTMUsecasesBanners/gtm_usecase_manpower.jpg";
-import NewsAndMedia from "/public/GTMUsecasesBanners/gtm_usecase_news&media.jpg";
-import Procurement from "/public/GTMUsecasesBanners/gtm_usecase_procurement.jpg";
-import ResearchAndConsulting from "/public/GTMUsecasesBanners/gtm_usecase_research&consulting.jpg";
-import Venue from "/public/GTMUsecasesBanners/gtm_usecase_venue.jpg";
-import MandA from '/public/GTMUsecasesBanners/gtm_usecase_m&a.jpg'
+import CSR from "/public/gtm_usecases_banners/gtm_usecase_csr.jpg";
+import EventSupplier from "/public/gtm_usecases_banners/gtm_usecase_eventsuppliers.jpg";
+import Marketing from "/public/gtm_usecases_banners/gtm_usecase_marketing.jpg";
+import SalesAndBiz from "/public/gtm_usecases_banners/gtm_usecase_sales&biz.jpg";
+import Tech from "/public/gtm_usecases_banners/gtm_usecase_tech.jpg";
+import Brand from "/public/gtm_usecases_banners/gtm_usecase_brand.jpg";
+import Community from "/public/gtm_usecases_banners/gtm_usecase_community.jpg";
+import HumanResource from "/public/gtm_usecases_banners/gtm_usecase_human-resources.jpg";
+import Influencer from "/public/gtm_usecases_banners/gtm_usecase_influencer.jpg";
+import ManPower from "/public/gtm_usecases_banners/gtm_usecase_manpower.jpg";
+import NewsAndMedia from "/public/gtm_usecases_banners/gtm_usecase_news&media.jpg";
+import Procurement from "/public/gtm_usecases_banners/gtm_usecase_procurement.jpg";
+import ResearchAndConsulting from "/public/gtm_usecases_banners/gtm_usecase_research&consulting.jpg";
+import Venue from "/public/gtm_usecases_banners/gtm_usecase_venue.jpg";
+import MandA from '/public/gtm_usecases_banners/gtm_usecase_m&a.jpg'
 
 export const gtmUsecasesjsonData = [
   {
