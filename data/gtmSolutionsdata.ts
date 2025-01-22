@@ -9,7 +9,7 @@ import SpeakingOpportunity from "/public/gtm_soln_illustrations/Speaking Opportu
 
 export const gtmSolutionsjsonData = [
   {
-    id: "demand_forecasting",
+    id: "brand_building",
     image: BrandBuilding,
     text: "Brand Alignment",
     subtext:
@@ -20,7 +20,7 @@ export const gtmSolutionsjsonData = [
       "With a brand goal defined, you need a solution that would identify, evaluate and recommend the right events for your goals. This solution needs to be comprehensive in its coverage and be able to match your goals with what the event offers",
   },
   {
-    id: "dynamic_pricing",
+    id: "competitor_tracking",
     image: CompetitorTracking,
     text: "Competitor Tracking",
     subtext:
@@ -31,7 +31,7 @@ export const gtmSolutionsjsonData = [
       "A single channel like a Google for the real-world, that tracks physcial footprints of companies at events from exhibiting, speaking, sponsoring or attending. Leverage this intel by mapping your competitor list to always stay informed",
   },
   {
-    id: "event_prospecting",
+    id: "exhibit&sponsor",
     image: ExhibitorAndSponsor,
     text: "Exhibit & Sponsor",
     subtext:
@@ -42,7 +42,7 @@ export const gtmSolutionsjsonData = [
       "A solution is needed that agreegates all events, looks beyond the surface level information of an event, takes into account a brands core goals and audience focus, in order to match with the relevance, budget, timelines to give a strategic blueprint on how to best maxmize the potential ROi from event participation in the form of exhibting & sponsoring",
   },
   {
-    id: "geo_marketing",
+    id: "product_matching",
     image: ProductMatching,
     text: "Product Matching",
     subtext:
@@ -54,7 +54,7 @@ export const gtmSolutionsjsonData = [
   },
 
   {
-    id: "inventory_planning",
+    id: "prospects_mapping",
     image: ProspectMapping,
     text: "Prospect Mapping",
     subtext:
@@ -65,7 +65,7 @@ export const gtmSolutionsjsonData = [
       "Every event is a great fit for someone, but it does not have to be for you. Instead of blaming the event, its better to identify events that best map to your potential prospects and which event they would be attending. You need a solution that understands your brand brief, focus and target audience you want to influence. On the basis of your goal it identifies, tracks and scores event that are best fit for you",
   },
   {
-    id: "risk_identification",
+    id: "recruitement&devRel",
     image: Recruitement,
     text: "Recruitement & DevRel",
     subtext:
@@ -76,7 +76,7 @@ export const gtmSolutionsjsonData = [
       "Meet your next hire at events where they are most likely to be. Exhibit, speak, sponsor or just attendee events where you come face to face with potential candidates to find those that might fit your job openings. Best way to influence them to join your mission is to meet and talk to them",
   },
   {
-    id: "travel_advisory",
+    id: "speaking_opportunity",
     image: SpeakingOpportunity,
     text: "Speaking Opportunity",
     subtext:

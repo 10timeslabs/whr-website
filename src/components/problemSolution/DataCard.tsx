@@ -11,7 +11,7 @@ interface Props {
 
 const DataCard = ({ heading, subHeading }: Props) => {
   return (
-    <div className='relative w-[576px] h-[370px] rounded-[20px] p-9 border border-[var(--border-color)] flex flex-col gap-5 text-[#010D3E] overflow-hidden' style={{ boxShadow: "0px 7px 24px 0px rgba(36, 38, 43, 0.1)" }}>
+    <div className='relative w-[496px] h-[370px] rounded-[20px] p-9 border border-[var(--border-color)] flex flex-col gap-5 text-[#010D3E] overflow-hidden' style={{ boxShadow: "0px 7px 24px 0px rgba(36, 38, 43, 0.1)" }}>
       <div className='font-semibold'>{heading}</div>
       <div>{subHeading}</div>
       <div className='absolute bottom-[-30%] left-[50%] translate-x-[-50%] opacity-40'>

@@ -3,6 +3,8 @@ import DataCard from "./DataCard";
 import { usePathname } from "next/navigation";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
 import { geoUsecasesjsonData } from "../../../data/geoUsecasesData";
+import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
+import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
 
 const ProblemSolution = () => {
   const pathname = usePathname();
@@ -12,6 +14,10 @@ const ProblemSolution = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/geo/usecases")) {
     dataSource = geoUsecasesjsonData;
+  }else if(pathname.includes("/gtm/usecases")){
+    dataSource = gtmUsecasesjsonData
+  }else if(pathname.includes("/gtm/solutions")){
+    dataSource = gtmSolutionsjsonData
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();

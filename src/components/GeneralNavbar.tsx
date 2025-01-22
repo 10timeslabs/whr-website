@@ -161,49 +161,49 @@ const GeneralNavbar = () => {
       Solutions: [
         {
           label: "Competitor Tracking",
-          href: "/gtm/solution/competitortracking",
+          href: "/gtm/solutions/competitor_tracking",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_1 color="currentColor" />,
         },
         {
           label: "Prospects Mapping",
-          href: "/gtm/solution/prospectsmapping",
+          href: "/gtm/solutions/prospects_mapping",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_2 color="currentColor" />,
         },
         {
           label: "Recruitement & DevRel",
-          href: "/gtm/solution/recruitement&devRel",
+          href: "/gtm/solutions/recruitement&devRel",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_3 color="currentColor" />,
         },
         {
           label: "Brand Building",
-          href: "/gtm/solution/brandbuilding",
+          href: "/gtm/solutions/brand_building",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_4 color="currentColor" />,
         },
         {
           label: "Speaking Opportunity",
-          href: "/gtm/solution/speakingopportunity",
+          href: "/gtm/solutions/speaking_opportunity",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_5 color="currentColor" />,
         },
         {
           label: "Product Matching",
-          href: "/gtm/solution/productmatching",
+          href: "/gtm/solutions/product_matching",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_6 color="currentColor" />,
         },
         {
           label: "Exhibit & Sponsor",
-          href: "/gtm/solution/exhibit&sponsor",
+          href: "/gtm/solutions/exhibit&sponsor",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_7 color="currentColor" />,
