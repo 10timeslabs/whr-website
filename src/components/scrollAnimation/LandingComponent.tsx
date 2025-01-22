@@ -1,81 +1,64 @@
-// import React, { useState, useEffect } from "react";
-// import Image, { StaticImageData } from "next/image";
-// import { motion, useScroll, useTransform } from "framer-motion";
-// import ArrowImgTwo from '/public/Arrow-2.svg'
-// import ArrowImgOne from '/public/Arrow-1.svg'
-// import { div } from "framer-motion/client";
-
-// interface Props {
-//   image: StaticImageData;
-// }
-
-// const LandingComponent = ({image }: Props) => {
-
-//   return (
-//     <div className="h-[580px] flex flex-col items-center relative w-full overflow-hidden">
-//       <div
-//         className="flex flex-col items-center gap-4 justify-start w-full text-center h-[580px] absolute z-20"
-//       >
-//       <div className='text-sm font-medium border border-color rounded-xl py-1 px-7'>How are we helpful</div>
-//         <div className="font-semibold text-[40px] w-[40%]">
-//           Geo Provides Unique Features To Unlock On ground Demand
-//         </div>
-//         <Image src={ArrowImgOne} alt="arrow" />
-//       </div> 
-//       <div
-//         className="absolute z-10 bottom-[-200px]"
-//         style={{ // initial position, ensures it starts from below
-//           width: '600px',    // with specific dimensions
-//           height: '450px'    // same for height
-//         }}
-//       >
-//         <Image
-//           src={image}
-//           alt="img"
-//           width={600}
-//           height={450}
-//           // fill
-//           unoptimized
-   
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default LandingComponent;
-
-
-import React from 'react'
-import DemandImg from '/public/demandforecasting.svg'
-import SparkleImg from '/public/sparkle.png'
-import Image from 'next/image'
+import React from "react";
+import DemandImg from "/public/demandforecasting.svg";
+import SparkleImg from "/public/sparkle.png";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
+import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
 
 const LandingComponent = () => {
-	return (
-		<div className='rounded-[20px] border border-[var(--border-color)] w-[80%] flex flex-col items-center gap-10 px-[70px] py-[40px] relative overflow-hidden'>
-			{/* Background Radial Gradient */}
-			<div className="absolute right-[-40%] top-0 h-full w-full -z-10" style={{
-				background: "radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 92%)",
-			}}></div>
-			<div className='flex items-center justify-between w-full'>
-				<Image src={SparkleImg} alt='star' height={38} width={38}/>
-				<div className='text-sm font-medium border border-color rounded-xl py-1 px-7'>How are we helpful</div>
-				<Image src={SparkleImg} alt='star' height={38} width={38}/>
-			</div>
+  const pathname = usePathname();
+  let dataSource = null;
+  if (pathname.includes("/geo/solutions")) {
+    dataSource = geoSolutionsjsonData;
+  } else if (pathname.includes("/gtm/solutions")) {
+    dataSource = gtmSolutionsjsonData;
+  }
+  const endpoint = pathname.split("/").pop()?.toLowerCase();
 
-			<div className='flex items-center gap-10'>
-				<div className='flex flex-col gap-5 text-lg'>
-					<div>We cover all event format that impact on-ground reality and footfall. For attended events, our AI engine estimates expected footfall and it split between local versus inbound traffic from outside a specific geo-location. Additionally, our engine qualifies the economic impacts the events go have individually or as a group of events happening within a geography on a specific time period.</div>
-					<div className='font-semibold'>How can this be used:</div>
-					<div>a. See demand forecast and its impact over time in our trend dashboard <br />
-						b. Consume data via an API to include in your internal prediction model</div>
-				</div>
-				<Image src={DemandImg} alt='img' width={428} />
-			</div>
+  const usecaseData = dataSource?.find((item) => {
+    return item.id.toLowerCase() === endpoint;
+  });
 
-		</div>
-	)
-}
+  const defaultData: any = {
+    image: dataSource?.[0]?.image || "",
+    problem: "Default Problem",
+    solution: "Default Solution",
+  };
 
-export default LandingComponent
+  const dataToDisplay = usecaseData || defaultData;
+
+  const points = dataToDisplay.how.split("\n");
+  return (
+    <div className="rounded-[20px] border border-[var(--border-color)] w-[80%] flex flex-col items-center gap-10 px-[70px] py-[40px] relative overflow-hidden">
+      {/* Background Radial Gradient */}
+      <div
+        className="absolute right-[-40%] top-0 h-full w-full -z-10"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 92%)",
+        }}
+      ></div>
+      <div className="flex items-center justify-between w-full">
+        <Image src={SparkleImg} alt="star" height={38} width={38} />
+        <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
+          How are we helpful
+        </div>
+        <Image src={SparkleImg} alt="star" height={38} width={38} />
+      </div>
+
+      <div className="flex items-center gap-10">
+        <div className="flex flex-col gap-5 text-lg">
+          <div className="mt-2">
+            {points.map((point: string, index: number) => (
+              <p key={index}>{point}</p>
+            ))}
+          </div>
+        </div>
+        <Image src={dataToDisplay.image} alt="img" width={428} />
+      </div>
+    </div>
+  );
+};
+
+export default LandingComponent;
