@@ -39,7 +39,7 @@ const ProblemSolution = () => {
       <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
         What do we solve
       </div>
-      <div className="flex gap-[50px]">
+      <div className="flex gap-[55px]">
         <DataCard heading="PROBLEM" subHeading={dataToDisplay.problem} />
         <DataCard heading="SOLUTION" subHeading={dataToDisplay.solution} />
       </div>
