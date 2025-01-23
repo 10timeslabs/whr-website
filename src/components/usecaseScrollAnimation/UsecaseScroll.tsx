@@ -34,12 +34,10 @@
 
 
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image, { StaticImageData } from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import ArrowImgTwo from "/public/Arrow-2.svg";
-import ArrowImgOne from "/public/Arrow-1.svg";
-import { div } from "framer-motion/client";
+import ArrowImgOne from '/public/Scroll/Arrow-1.svg'
+import SparkleImg from "/public/sparkle.png";
 
 interface Props {
   image: StaticImageData;
@@ -47,14 +45,19 @@ interface Props {
 
 const UsecaseScroll = ({ image }: Props) => {
   return (
-    <div className="h-[580px] flex flex-col items-center relative w-full overflow-hidden">
-      <div className="flex flex-col items-center gap-4 justify-start w-full text-center h-[580px] absolute z-20">
+    <div className="h-[500px] flex flex-col items-center relative w-full overflow-hidden">
+      <div className="flex flex-col items-center gap-4 justify-start w-full text-center h-[580px] absolute z-20 top-[20px]">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
           How are we helpful
         </div>
-        <div className="font-semibold text-[40px] w-[40%]">
-          Geo Provides Unique Features To Unlock On ground Demand
+        <div className="w-[70%] flex items-start justify-between">
+          <Image src={SparkleImg} alt="star" height={38} width={38} />
+          <div className="font-semibold text-[40px] w-[80%]">
+            Geo Provides Unique Features To Unlock On ground Demand
+          </div>
+          <Image src={SparkleImg} alt="star" height={38} width={38} />
         </div>
+
         <Image src={ArrowImgOne} alt="arrow" />
       </div>
       <div
