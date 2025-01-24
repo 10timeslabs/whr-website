@@ -81,7 +81,7 @@ const page = () => {
           </div>
         </div>
       ) : (
-        <div className="w-full flex items-center justify-center">
+        <div className="flex items-center justify-center">
           {/* <LandingComponent /> */}
           <Scroll />
         </div>
