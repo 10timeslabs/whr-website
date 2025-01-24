@@ -105,17 +105,14 @@ const Scroll = () => {
   }, [isInView, currentIndex]);
 
   return (
-    <div className="min-h-[500px] w-[85%] border border-[var(--border-color)] rounded-xl relative overflow-hidden" ref={scrollRef}>
-      <div
-        className={`absolute ${currentIndex === 0 ? "right-0 top-[20%]":"right-[-30%] top-0"} h-[500px] w-full -z-10`}
-        style={{
-          background:
-            "radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 70%)",
-        }}
-      ></div>
-      <div
-        className="w-full flex h-[500px] items-center justify-center overflow-hidden"
-      >
+    <div className="min-h-[500px] w-full overflow-hidden flex justify-center" ref={scrollRef}>
+      <div className="w-[1300px] border border-[var(--border-color)] relative rounded-xl h-[500px] items-center justify-center overflow-hidden">
+        <div
+          className={`absolute ${currentIndex === 0 ? "right-0 top-[20%]" : "right-[-30%] top-0"} h-[500px] w-[85%] -z-10`}
+          style={{
+            background:
+              "radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 70%)",
+          }}></div>
         {scrollDirection === 'down' ? (
           <>
             {currentIndex === 0 && (
@@ -159,15 +156,16 @@ const Scroll = () => {
             />}
           </>
         )}
+        {currentIndex !== 0 && <div className='flex items-center gap-2 absolute left-[60px] bottom-[50px]'>
+          {Array.from({ length: data.length + 1 }).map((_, index) => (
+            <div
+              key={index}
+              className={`h-[10px] w-[10px] rounded-[10px] bg-[#D9D9D9] ${index === currentIndex ? "bg-[var(--primary-color)]" : ""}`}
+            ></div>
+          ))}
+        </div>}
       </div>
-      {currentIndex !== 0 && <div className='flex items-center gap-2 absolute left-[60px] bottom-[50px]'>
-        {Array.from({ length: data.length + 1 }).map((_, index) => (
-          <div
-            key={index}
-            className={`h-[10px] w-[10px] rounded-[10px] bg-[#D9D9D9] ${index === currentIndex ? "bg-[var(--primary-color)]" : ""}`}
-          ></div>
-        ))}
-      </div>}
+
     </div>
 
   );

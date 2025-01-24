@@ -26,7 +26,7 @@ const SolutionComponent = ({ heading, subHeading, imageOne, imageTwo, arrowImg, 
       viewport={{ amount: 'all' }}
       className='h-[500px] flex gap-5 items-center justify-center w-full relative'>
       <div className="flex gap-1 h-[500px] w-full absolute left-[60px]">
-        <div className="flex flex-col w-[35%] gap-8 mt-[40px]">
+        <div className="flex flex-col w-[30%] gap-8 mt-[40px]">
           <Image src={iconImg} alt='icon' height={72} width={72} />
           <div className='text-xl font-semibold'>{heading}</div>
           <div className='text-base'>{subHeading}</div>
@@ -91,25 +91,47 @@ const SolutionComponent = ({ heading, subHeading, imageOne, imageTwo, arrowImg, 
           </motion.div>
         </div>
       }
-      {(animationType !== "inimage" && animationType !== "zoom") && <motion.div
-        className="flex items-center justify-center rounded-[14px] absolute right-20"
-        style={{ width: '600px', height: '500px' }}
-        viewport={{ once: true, amount: "some" }}
-        initial={{ opacity: 0, y: animationType === "updown" ? -100 : 100 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          transition: { duration: .5, delay: .5 }
-        }}
-      >
-        <Image
-          src={imageTwo}
-          alt='second image'
-          width={600}
-          unoptimized
-          className='object-fit'
-        />
-      </motion.div>}
+      {(animationType !== "inimage" && animationType !== "zoom") &&
+        <div className='absolute right-20'>
+          <motion.div
+            className="rounded-[14px]"
+            style={{ width: '600px' }}
+            viewport={{ once: true, amount: 'all' }} // trigger when the first image is in view
+            initial={{ opacity: 1 }}
+            whileInView={{
+              opacity: animationType === "none" ? 1 : 0,
+              transition: { duration: .5, delay: .5 },
+            }}
+          >
+            <Image
+              src={imageOne}
+              alt='first image'
+              width={600}
+              unoptimized
+              className='object-fit'
+            />
+          </motion.div>
+          {animationType !== "none" && <motion.div
+            className="flex items-center justify-center rounded-[14px] absolute z-10 bottom-0"
+            style={{ width: '600px', height: '500px' }}
+            viewport={{ once: true, amount: "some" }}
+            initial={{ opacity: 0, y: animationType === "updown" ? -100 : 100 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: .5, delay: .5 }
+            }}
+          >
+            <Image
+              src={imageTwo}
+              alt='second image'
+              width={600}
+              unoptimized
+              className='object-fit'
+            />
+          </motion.div>}
+        </div>
+      }
     </motion.div>
   )
 }

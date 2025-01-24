@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import DataCard from './DataCard'
 import ImageOne from './usecase.svg'
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 interface Props {
   mainHeading: string;
@@ -17,46 +17,45 @@ const VerticalScroll = ({ mainHeading }: Props) => {
     { icon: ImageOne, heading: "Geo Marketing", subHeading: "Events are constantly changing with new launches, dates, formats and location. " },
     { icon: ImageOne, heading: "Geo Marketing", subHeading: "Events are constantly changing with new launches, dates, formats and location. " },
   ]
+
   return (
     <div className='w-full flex flex-col items-center gap-5 p-4'>
       <div className='text-sm font-medium border border-color rounded-xl py-1 px-7'>{mainHeading}</div>
       <div className='text-center font-semibold text-2xl w-[40%]'>Preparing for demand anomalies is a powerful competitive advantage</div>
       <div className='text-[var(--secondary-text-color)] text-lg'>GEO enables better predictability of demand by taking into consideration upcoming & forecasted events, along with the estimated impact.</div>
       <div className="relative w-[1200px] flex flex-col items-center mt-7">
-        {/* Vertical Line */}
+        {/* Vertical Line Grey*/}
         <div className="absolute h-full w-0.5 bg-gray-200 left-1/2 transform -translate-x-1/2 z-0"></div>
 
+        {/*first Vertical Line colored*/}
         <motion.div
-          className="absolute w-0.5 bg-[var(--primary-color)] left-1/2 transform -translate-x-1/2 z-0"
-          initial={{ height: 0 }}          // Initial height is 0
-          whileInView={{ height: 85 }} // Animate to 100% when in view
-          viewport={{amount: 1, once : true }} // Trigger when 50% of the element is in view
-          transition={{ duration: .6 }}     // Set the duration of the animation
-          onViewportEnter={() => console.log("Entered viewport fully!")}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }} // Animate to 100% when in view
+          transition={{ duration: 0.5 }}
+          viewport={{ once: false, amount: 0.8 }} // Trigger when 50% of the element is in view
+          className="absolute w-0.5 bg-[var(--primary-color)] h-[85px] left-1/2 transform -translate-x-1/2 z-0"
         ></motion.div>
-        {/* Vertical Lines (Primary Color) */}
+        {/*Dynamic Vertical Lines (Primary Color) */}
         {Array.from({ length: data.length - 1 }).map((_, key) => (
           <motion.div
             key={key}
-            className="absolute w-0.5 bg-[var(--primary-color)] left-1/2 transform -translate-x-1/2 z-10"
+            className="absolute w-0.5 bg-[var(--primary-color)] h-[166px] left-1/2 transform -translate-x-1/2 z-10"
             style={{
               top: `${85 + key * 166}px`, // Properly position each line
             }}
-            initial={{ height: 0 }}
-            whileInView={{ height: 166 }}
-            viewport={{ once: false, amount: 0.8 }} // Trigger when 80% of the line is in view
-            transition={{
-              duration: 0.6,
-            }}
+            initial={{ opacity : 0 }}
+            whileInView={{ opacity : 1 }}
+            viewport={{ once: false, amount: 0.9 }} // Trigger when 80% of the line is in view
+            transition={{ duration: 0.5 }}
           ></motion.div>
         ))}
-
-        <motion.div className="absolute h-[85px] w-0.5 bg-[var(--primary-color)] left-1/2 transform -translate-x-1/2 z-0"
+        {/*Last Vertical Line colored*/}
+        <motion.div className="absolute h-[85px] w-0.5 h-[85px] bg-[var(--primary-color)] left-1/2 transform -translate-x-1/2 z-0"
           style={{ top: `${85 + (data.length - 1) * 166}px` }}
-          initial={{ height: 0 }}          // Initial height is 0
-          whileInView={{ height: "85px" }} // Animate to 100% when in view
-          viewport={{ once: false, amount: 0.5 }} // Trigger when 50% of the element is in view
-          transition={{ duration: .6 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }} // Animate to 100% when in view
+          transition={{ duration: 0.5 }}
+          viewport={{ once: false, amount: 0.8 }} 
         ></motion.div>
         {/* Start Circle */}
         <div className="absolute w-3 h-3 bg-[var(--primary-color)] rounded-full left-1/2 transform -translate-x-1/2 -top-3 z-10"></div>

@@ -42,7 +42,7 @@ const FirstSolutionComponent = ({ heading, subHeading, imageOne, imageTwo }: Pro
         viewport={{ once: true, amount: "some" }}
         transition={{ duration: .5 }}  // Duration of the fade-in animation
       >
-        <div className="flex flex-col w-[35%] gap-8 mt-[40px]">
+        <div className="flex flex-col w-[30%] gap-8 mt-[40px]">
           <Image src={ResearchIcon} alt='icon' height={72} width={72}/>
           <div className="text-xl font-semibold">{heading}</div>
           <div className="text-base">{subHeading}</div>
