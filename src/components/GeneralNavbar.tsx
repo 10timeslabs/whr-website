@@ -8,7 +8,56 @@ import Logo from "/public/logo/croppedlogo.png";
 import WhrAIText from "/public/logo/Whr.ai.png";
 import DownArrowIcon from "/public/DownSVG.svg";
 import { MagnifyingGlass, ChartBarRandom, LineChart } from "geist-icons";
-import { AIAssistantIcon, APIModelIcon, CoordinateIcon, Geo_Soln_1, Geo_Soln_2, Geo_Soln_3, Geo_Soln_4, Geo_Soln_5, Geo_Soln_6, Geo_Soln_7, Geo_Soln_8, Geo_UseCase_1, Geo_UseCase_10, Geo_UseCase_11, Geo_UseCase_12, Geo_UseCase_13, Geo_UseCase_14, Geo_UseCase_15, Geo_UseCase_2, Geo_UseCase_3, Geo_UseCase_4, Geo_UseCase_5, Geo_UseCase_6, Geo_UseCase_7, Geo_UseCase_8, Geo_UseCase_9, GTM_Soln_1, GTM_Soln_2, GTM_Soln_3, GTM_Soln_4, GTM_Soln_5, GTM_Soln_6, GTM_Soln_7, GTM_UseCase_1, GTM_UseCase_10, GTM_UseCase_11, GTM_UseCase_12, GTM_UseCase_13, GTM_UseCase_14, GTM_UseCase_15, GTM_UseCase_2, GTM_UseCase_3, GTM_UseCase_4, GTM_UseCase_5, GTM_UseCase_6, GTM_UseCase_7, GTM_UseCase_8, GTM_UseCase_9 } from "../../svgicons/icons";
+import {
+  AIAssistantIcon,
+  APIModelIcon,
+  CoordinateIcon,
+  Geo_Soln_1,
+  Geo_Soln_2,
+  Geo_Soln_3,
+  Geo_Soln_4,
+  Geo_Soln_5,
+  Geo_Soln_6,
+  Geo_Soln_7,
+  Geo_Soln_8,
+  Geo_UseCase_1,
+  Geo_UseCase_10,
+  Geo_UseCase_11,
+  Geo_UseCase_12,
+  Geo_UseCase_13,
+  Geo_UseCase_14,
+  Geo_UseCase_15,
+  Geo_UseCase_2,
+  Geo_UseCase_3,
+  Geo_UseCase_4,
+  Geo_UseCase_5,
+  Geo_UseCase_6,
+  Geo_UseCase_7,
+  Geo_UseCase_8,
+  Geo_UseCase_9,
+  GTM_Soln_1,
+  GTM_Soln_2,
+  GTM_Soln_3,
+  GTM_Soln_4,
+  GTM_Soln_5,
+  GTM_Soln_6,
+  GTM_Soln_7,
+  GTM_UseCase_1,
+  GTM_UseCase_10,
+  GTM_UseCase_11,
+  GTM_UseCase_12,
+  GTM_UseCase_13,
+  GTM_UseCase_14,
+  GTM_UseCase_15,
+  GTM_UseCase_2,
+  GTM_UseCase_3,
+  GTM_UseCase_4,
+  GTM_UseCase_5,
+  GTM_UseCase_6,
+  GTM_UseCase_7,
+  GTM_UseCase_8,
+  GTM_UseCase_9,
+} from "../../svgicons/icons";
 const GeneralNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdowns, setDropdowns] = useState<any>({});
@@ -447,7 +496,7 @@ const GeneralNavbar = () => {
           href: "/geo/product2",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <AIAssistantIcon color="currentColor"/>,
+          icon: <AIAssistantIcon color="currentColor" />,
         },
         {
           label: "Trends Monitor",
@@ -468,7 +517,7 @@ const GeneralNavbar = () => {
           href: "/geo/product2",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <APIModelIcon color="currentColor"/>,
+          icon: <APIModelIcon color="currentColor" />,
         },
       ],
     },
@@ -547,8 +596,6 @@ const GeneralNavbar = () => {
               <Image src={WhrAIText} alt="nav-logo" className="h-6 w-auto" />
             </Link>
           </div>
-
-        
 
           <div className="hidden md:flex space-x-8 bg-white rounded-3xl">
             {["Use Cases", "Solutions", "Product"].map((item) => (
@@ -709,4 +756,3 @@ const GeneralNavbar = () => {
 };
 
 export default GeneralNavbar;
-

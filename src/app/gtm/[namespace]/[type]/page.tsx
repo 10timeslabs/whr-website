@@ -27,37 +27,8 @@ const page = () => {
 
   const dataToDisplay: any = usecaseData || defaultData;
 
-  console.log("Endpoint:", endpoint, dataToDisplay);
-
   return (
-    <div className="relative w-full h-screen ">
-      {/* <Image
-        src={dataToDisplay.image}
-        alt="Banner Image"
-        className="h-[650px] w-full object-cover"
-      />
-
-      <div
-        className="absolute left-0 top-0 h-[650px] w-[700px] p-6 rounded-r-md"
-        style={{
-          opacity: "0.9",
-          background: `${dataToDisplay.blurColor}`,
-          filter: "blur(100px)",
-          backdropFilter: "blur(50px)",
-          maskImage:
-            "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
-        }}
-      />
-
-      <div className="absolute left-[100px] top-10 h-[570px] w-[40%] p-6 rounded-r-md flex flex-col ">
-        <div className="text-black font-bold text-[40px] mt-32 leading-[46px]">
-          {dataToDisplay.text}
-        </div>
-
-        <div className="text-[#171717] text-lg leading-6 mt-4">
-          <p>{dataToDisplay.subtext}</p>
-        </div>
-      </div> */}
+    <div className="relative w-full flex flex-col gap-12 ">
       {pathname.split("/")[2] === "usecases" ? (
         <div>
           <Image
@@ -65,7 +36,7 @@ const page = () => {
             alt="Banner Image"
             className="h-[650px] w-full object-cover"
           />
-
+          {/* Blurry Background */}
           <div
             className="absolute left-0 top-0 h-[650px] w-[700px] p-6 rounded-r-md"
             style={{
@@ -77,12 +48,14 @@ const page = () => {
                 "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
             }}
           />
-
+          {/* Text Content */}
           <div className="absolute left-[100px] top-10 h-[570px] w-[40%] p-6 rounded-r-md flex flex-col ">
+            {/* Main Text */}
             <div className="text-black font-bold text-[40px] mt-32 leading-[46px]">
               {dataToDisplay.text}
             </div>
 
+            {/* Subtext */}
             <div className="text-[#171717] text-lg leading-6 mt-4">
               <p>{dataToDisplay.subtext}</p>
             </div>
