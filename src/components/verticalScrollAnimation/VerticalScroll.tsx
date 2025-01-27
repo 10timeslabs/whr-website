@@ -71,7 +71,8 @@ const VerticalScroll = ({ mainHeading }: Props) => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.4, delay: .1 }}
-              className={`absolute h-0.5 bg-[var(--primary-color)] ${index % 2 !== 0 ? "left-1/2 transform -translate-x-0 w-[70px]" : "right-1/2 transform translate-x-0 w-[70px]"
+              className={`absolute bg-[var(--primary-color)] ${index % 2 !== 0 ? 
+                "left-1/2 h-[2px] transform -translate-x-0 w-[70px]" : "right-1/2 h-[2.5px] transform translate-x-0 w-[70px]"
                 }`}
               style={{ top: "50%" }}
             ></motion.div>

@@ -11,6 +11,8 @@ import UsecaseScroll from "@/components/usecaseScrollAnimation/UsecaseScroll";
 import HeroBanner from "@/components/solutionHeroBanner/HeroBanner";
 import Section from "@/components/solutionHeroBanner/Section";
 import LandingComponent from "@/components/scrollAnimation/LandingComponent";
+import CircleAnimation from "@/components/circleAnimation/CircleAnimation";
+import CircleContainer from "@/components/circleAnimation/CircleContainer";
 
 const page = () => {
   const pathname = usePathname();
@@ -93,6 +95,7 @@ const page = () => {
           }
         />
       </div>
+      <CircleContainer/>
     </div>
   );
 };
