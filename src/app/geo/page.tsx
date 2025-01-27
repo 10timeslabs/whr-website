@@ -3,7 +3,7 @@ import styles from "./page.style.module.css";
 const page = () => {
   return (
     <div className={styles.heroSection}>
-      <div>teli home page...</div>
+      <div>Geo landing page...</div>
     </div>
   );
 };

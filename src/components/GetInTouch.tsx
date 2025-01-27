@@ -21,15 +21,11 @@ const GetInTouch = () => {
             Sign up for free today
           </span>
         </div>
-        <div className="mt-6 text-[#010D3E] text-md">
-          <span>
-            Celebrate the Power of Connection with a Platform <br /> Designed to
-            Track Events, Uncover Insights, and Drive <br />
-            Impact.
-          </span>
+        <div className="mt-6 text-[#010D3E] text-md text-center w-[30%]">
+            Celebrate the Power of Connection with a Platform Designed to Track Events, Uncover Insights, and Drive Impact.
         </div>
         <div
-          className="bg-[#6750A4] px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
+          className="bg-[#6750A4] px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer mt-8"
           // onClick={() => {
           //   router.push("https://console.whr.ai/");
           // }}

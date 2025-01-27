@@ -11,6 +11,7 @@ import UsecaseScroll from "@/components/usecaseScrollAnimation/UsecaseScroll";
 import HeroBanner from "@/components/solutionHeroBanner/HeroBanner";
 import Section from "@/components/solutionHeroBanner/Section";
 import LandingComponent from "@/components/scrollAnimation/LandingComponent";
+import AutoScroll from "@/components/AutoScroll";
 
 const page = () => {
   const pathname = usePathname();
@@ -64,6 +65,7 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
+          <div className="mt-16"><AutoScroll/></div>
         </div>
       ) : (
         <div className="w-full flex items-center justify-center mt-[140px]">

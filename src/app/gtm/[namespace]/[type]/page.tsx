@@ -9,6 +9,7 @@ import ProblemSolution from "@/components/problemSolution/ProblemSolution";
 import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import Scroll from "@/components/scrollAnimation/Scroll";
 import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
+import AutoScroll from "@/components/AutoScroll";
 
 const page = () => {
   const pathname = usePathname();
@@ -60,6 +61,7 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
+          <div className="mt-16"><AutoScroll/></div>
         </div>
       ) : (
         <div className="w-full flex items-center justify-center mt-[140px]">
