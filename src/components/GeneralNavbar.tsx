@@ -482,14 +482,14 @@ const GeneralNavbar = () => {
           href: "/geo/product1",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          // icon: <MagnifyingGlass />,
+          icon: <MagnifyingGlass />,
         },
         {
           label: "Smart Tracker",
           href: "/geo/product2",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          // icon: <LineChart />,
+          icon: <LineChart />,
         },
         {
           label: "AI Assistant",
@@ -503,7 +503,7 @@ const GeneralNavbar = () => {
           href: "/geo/product2",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          // icon: <ChartBarRandom />,
+          icon: <ChartBarRandom />,
         },
         {
           label: "Coordinate",
