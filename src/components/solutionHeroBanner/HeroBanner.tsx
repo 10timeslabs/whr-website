@@ -1,0 +1,27 @@
+import React from "react";
+import DemandImg from "/public/demandforecasting.svg";
+import Image from "next/image";
+
+interface Props {
+  heading: string;
+  subHeading: string;
+  image: string;
+}
+
+const HeroBanner = ({ heading, subHeading, image }: Props) => {
+  return (
+    <div className="w-full flex justify-between items-start">
+      <div className="flex flex-col gap-5 w-[40%]">
+        <div className="font-semibold text-[40px]">{heading}</div>
+        <div className="text-[var(--secondary-text-color)] text-[18px]">
+          {subHeading}
+        </div>
+      </div>
+      <div className="w-[507px] h-[263px]">
+        <Image src={image} alt="banner" className="w-full h-full" />
+      </div>
+    </div>
+  );
+};
+
+export default HeroBanner;
