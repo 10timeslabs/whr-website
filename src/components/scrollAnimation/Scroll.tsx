@@ -37,7 +37,7 @@ const Scroll = () => {
   const scrollRef = useRef(null);
   const [scrollDirection, setScrollDirection] = useState("down"); // 'up' or 'down'
   // const [lastScrollY, setLastScrollY] = useState(0);
-
+ 
   const handleScroll = (e: WheelEvent) => {
     if (!isInView) return; // Only trigger if the component is in view
 

@@ -15,6 +15,9 @@ import AutoScroll from "@/components/AutoScroll";
 import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
 import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
+import CircleAnimation from "@/components/circleAnimation/CircleAnimation";
+import CircleContainer from "@/components/circleAnimation/CircleContainer";
+
 const page = () => {
   const pathname = usePathname();
   // const endpoint = pathname.split("/").pop()?.toLowerCase();
@@ -130,6 +133,7 @@ const page = () => {
           dataToDisplay={dataToDisplay}
         />
       </div>
+      <CircleContainer/>
     </div>
   );
 };
