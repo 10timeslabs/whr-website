@@ -72,7 +72,7 @@ const page = () => {
           <Section />
         </div>
       )}
-      <div>
+      <div className="w-full flex justify-center">
         <ProblemSolution />
       </div>
       {pathname.split("/")[2] === "solutions" ? (
