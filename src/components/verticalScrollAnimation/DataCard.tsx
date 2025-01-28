@@ -3,7 +3,8 @@ import Image, { StaticImageData } from 'next/image'
 import React, { useEffect } from 'react'
 
 interface Props {
-  icon: StaticImageData;
+  // icon: StaticImageData;
+  icon: React.ReactNode;
   heading: string;
   subHeading: string;
 }
@@ -21,10 +22,11 @@ const DataCard = ({ icon, heading, subHeading }: Props) => {
         backgroundColor: "white", // Default color
       }}
     >
-      <Image src={icon} alt='icon' />
+      {/* <Image src={icon} alt='icon' /> */}
+      <div>{icon}</div>
       <div className='flex flex-col gap-2 text-[#010D3E]'>
         <div className='text-[18px] font-semibold'>{heading}</div>
-        <div>{subHeading}</div>
+        <div className="line-clamp-2">{subHeading}</div>
       </div>
     </motion.div>
   )

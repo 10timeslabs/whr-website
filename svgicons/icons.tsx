@@ -1,11 +1,19 @@
 import React from "react";
 
-
-export function GTM_UseCase_1({ color = "black" }) {
+interface Props {
+  color?: string; // Optional color prop
+  width?: string;
+  height?: string;
+}
+export function GTM_UseCase_1({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -17,10 +25,10 @@ export function GTM_UseCase_1({ color = "black" }) {
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="11" cy="7.5" r="1.5" fill="currentColor" />
+      <circle cx="11" cy="7.5" r="1.5" fill={color} />
       <path
         d="M8.10557 12.5284C8.65374 11.432 9.77427 10.7395 11 10.7395C12.2257 10.7395 13.3463 11.432 13.8944 12.5284L14.2764 13.2923C14.6088 13.9572 14.1253 14.7395 13.382 14.7395H8.61803C7.87465 14.7395 7.39116 13.9572 7.72361 13.2923L8.10557 12.5284Z"
-        fill="currentColor"
+        // fill="currentColor"
         stroke={color}
         strokeWidth="1.5"
       />
@@ -28,11 +36,15 @@ export function GTM_UseCase_1({ color = "black" }) {
   );
 }
 
-export function GTM_UseCase_2({ color = "black" }) {
+export function GTM_UseCase_2({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -58,11 +70,15 @@ export function GTM_UseCase_2({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_3({ color = "black" }) {
+export function GTM_UseCase_3({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -127,11 +143,15 @@ export function GTM_UseCase_3({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_4({ color = "black" }) {
+export function GTM_UseCase_4({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -153,11 +173,15 @@ export function GTM_UseCase_4({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_5({ color = "black" }) {
+export function GTM_UseCase_5({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -184,20 +208,24 @@ export function GTM_UseCase_5({ color = "black" }) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M8.18442 2.96608C7.40337 3.74713 7.40337 5.01346 8.18442 5.79451L11.9886 9.59871C11.9907 9.6008 11.9941 9.6008 11.9962 9.59871C11.9983 9.59663 12.0017 9.59663 12.0037 9.59871C12.0058 9.6008 12.0092 9.6008 12.0113 9.59871L15.8155 5.79451C16.5966 5.01346 16.5966 3.74713 15.8155 2.96608L15.6598 2.8104C14.8788 2.02935 13.6124 2.02935 12.8314 2.8104L12.7071 2.93472C12.3165 3.32525 11.6834 3.32525 11.2929 2.93472L11.1685 2.8104C10.3875 2.02935 9.12115 2.02935 8.34011 2.8104L8.18442 2.96608Z"
-        fill="currentColor"
+        // fill="currentColor"
       />
       <path
         d="M8.18442 5.79451L8.71475 5.26418L8.18442 5.79451ZM8.18442 2.96608L7.65409 2.43575L8.18442 2.96608ZM15.8155 5.79451L15.2852 5.26418L15.8155 5.79451ZM15.8155 2.96608L15.2852 3.49641L15.2852 3.49641L15.8155 2.96608ZM15.6598 2.8104L16.1902 2.28007L16.1902 2.28007L15.6598 2.8104ZM12.8314 2.8104L13.3617 3.34073L12.8314 2.8104ZM11.1685 2.8104L11.6989 2.28007V2.28007L11.1685 2.8104ZM8.34011 2.8104L7.80978 2.28007L8.34011 2.8104ZM12.7071 2.93472L12.1767 2.40439L12.7071 2.93472ZM11.2929 2.93472L10.7625 3.46505L11.2929 2.93472ZM12.0113 9.59871L12.5416 10.129L12.0113 9.59871ZM11.9886 9.59871L12.519 9.06838L11.9886 9.59871ZM8.71475 5.26418C8.22659 4.77602 8.22659 3.98457 8.71475 3.49641L7.65409 2.43575C6.58015 3.50969 6.58015 5.2509 7.65409 6.32484L8.71475 5.26418ZM12.519 9.06838L8.71475 5.26418L7.65409 6.32484L11.4583 10.129L12.519 9.06838ZM12.5416 10.129L16.3458 6.32484L15.2852 5.26418L11.481 9.06838L12.5416 10.129ZM16.3458 6.32484C17.4198 5.2509 17.4198 3.50969 16.3458 2.43575L15.2852 3.49641C15.7733 3.98457 15.7733 4.77603 15.2852 5.26418L16.3458 6.32484ZM16.3458 2.43575L16.1902 2.28007L15.1295 3.34072L15.2852 3.49641L16.3458 2.43575ZM16.1902 2.28007C15.1162 1.20612 13.375 1.20612 12.3011 2.28007L13.3617 3.34073C13.8499 2.85257 14.6413 2.85257 15.1295 3.34073L16.1902 2.28007ZM12.3011 2.28007L12.1767 2.40439L13.2374 3.46505L13.3617 3.34073L12.3011 2.28007ZM10.6382 3.34073L10.7625 3.46505L11.8232 2.40439L11.6989 2.28007L10.6382 3.34073ZM8.87044 3.34073C9.35859 2.85257 10.15 2.85257 10.6382 3.34073L11.6989 2.28007C10.6249 1.20612 8.88372 1.20612 7.80978 2.28007L8.87044 3.34073ZM8.71475 3.49641L8.87044 3.34073L7.80978 2.28007L7.65409 2.43575L8.71475 3.49641ZM12.1767 2.40439C12.0791 2.50202 11.9208 2.50202 11.8232 2.40439L10.7625 3.46505C11.4459 4.14847 12.554 4.14847 13.2374 3.46505L12.1767 2.40439ZM11.4734 10.129C11.7684 10.424 12.2467 10.424 12.5416 10.129L11.481 9.06838C11.7718 8.77757 12.2433 8.77758 12.5341 9.0684L11.4734 10.129ZM12.5265 10.129C12.2357 10.4198 11.7642 10.4199 11.4734 10.129L12.5341 9.0684C12.2391 8.77339 11.7608 8.77341 11.4659 9.06838L12.5265 10.129ZM11.4583 10.129C11.7533 10.424 12.2315 10.424 12.5265 10.129L11.4659 9.06838C11.7566 8.7776 12.2281 8.77756 12.519 9.06838L11.4583 10.129Z"
-        fill="currentColor"
+        fill={color}
       />
     </svg>
   );
 }
-export function GTM_UseCase_6({ color = "black" }) {
+export function GTM_UseCase_6({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -223,11 +251,15 @@ export function GTM_UseCase_6({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_7({ color = "black" }) {
+export function GTM_UseCase_7({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -246,11 +278,15 @@ export function GTM_UseCase_7({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_8({ color = "black" }) {
+export function GTM_UseCase_8({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -285,11 +321,15 @@ export function GTM_UseCase_8({ color = "black" }) {
   );
 }
 
-export function GTM_UseCase_9({ color = "black" }) {
+export function GTM_UseCase_9({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -328,18 +368,22 @@ export function GTM_UseCase_9({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_10({ color = "black" }) {
+export function GTM_UseCase_10({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M14.5 16.8155V8.59363C14.5 8.22769 14.3001 7.89097 13.9789 7.71574L10.4789 5.80665C9.81248 5.44317 9 5.92548 9 6.68454V14.9064C9 15.2723 9.19989 15.609 9.52115 15.7843L13.0211 17.6934C13.6875 18.0568 14.5 17.5745 14.5 16.8155Z"
-        fill="currentColor"
+        // fill="currentColor"
       />
       <path
         d="M14.5 8.5V18.5M9 15.5V5.5"
@@ -356,11 +400,15 @@ export function GTM_UseCase_10({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_11({ color = "black" }) {
+export function GTM_UseCase_11({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -378,16 +426,20 @@ export function GTM_UseCase_11({ color = "black" }) {
       />
       <path
         d="M6.97359 10.1812C8.58004 9.55709 9.41766 8.629 10.2019 6.75993C10.3099 6.50256 10.6862 6.50431 10.7884 6.76403C11.5071 8.58972 12.1376 9.47208 13.9423 10.1563C14.2288 10.2649 14.2241 10.7182 13.9357 10.8216C12.2083 11.4409 11.4163 12.3135 10.857 13.8402C10.7493 14.1342 10.2712 14.1288 10.1641 13.8345C9.58993 12.2561 8.6826 11.473 6.97005 10.8278C6.68965 10.7222 6.69429 10.2897 6.97359 10.1812Z"
-        fill="currentColor"
+        fill={color}
       />
     </svg>
   );
 }
-export function GTM_UseCase_12({ color = "black" }) {
+export function GTM_UseCase_12({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -443,11 +495,15 @@ export function GTM_UseCase_12({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_13({ color = "black" }) {
+export function GTM_UseCase_13({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -456,7 +512,7 @@ export function GTM_UseCase_13({ color = "black" }) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M15 10V15.1428H9V10H15Z"
-        fill="currentColor"
+        fill={color}
       />
       <rect
         x="4"
@@ -479,18 +535,22 @@ export function GTM_UseCase_13({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_14({ color = "black" }) {
+export function GTM_UseCase_14({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M8 10.25H17C17 12.7353 14.9853 14.75 12.5 14.75C10.0147 14.75 8 12.7353 8 10.25Z"
-        fill="currentColor"
+        // fill="currentColor"
       />
       <path
         d="M4 20.25C4 18.0409 5.79086 16.25 8 16.25H9.81504C9.93439 16.25 10.0498 16.2927 10.1404 16.3704L11.8492 17.835C12.2237 18.156 12.7763 18.156 13.1508 17.835L14.8596 16.3704C14.9502 16.2927 15.0656 16.25 15.185 16.25H16C18.2091 16.25 20 18.0409 20 20.25V20.25C20 20.8023 19.5523 21.25 19 21.25H5C4.44772 21.25 4 20.8023 4 20.25V20.25Z"
@@ -529,26 +589,52 @@ export function GTM_UseCase_14({ color = "black" }) {
     </svg>
   );
 }
-export function GTM_UseCase_15({ color = "black" }) {
+export function GTM_UseCase_15({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="19.0294" cy="10.136" r="1.13603" fill="currentColor" />
-      <circle cx="5.0294" cy="10.136" r="1.13603" fill="currentColor" />
-      <path d="M16.8373 13.7629C17.2525 12.9326 18.1011 12.4081 19.0294 12.4081V12.4081C19.9577 12.4081 20.8064 12.9326 21.2215 13.7629L21.5108 14.3414C21.7626 14.845 21.3964 15.4375 20.8334 15.4375H17.2254C16.6624 15.4375 16.2962 14.845 16.548 14.3414L16.8373 13.7629Z" stroke={color} strokeWidth="1.13603" />
-      <path d="M2.83731 13.7629C3.25246 12.9326 4.1011 12.4081 5.02941 12.4081V12.4081C5.95772 12.4081 6.80636 12.9326 7.22151 13.7629L7.5108 14.3414C7.76258 14.845 7.3964 15.4375 6.8334 15.4375H3.22542C2.66242 15.4375 2.29624 14.845 2.54803 14.3414L2.83731 13.7629Z" stroke={color} strokeWidth="1.13603" />
-      <circle cx="12" cy="8.25" r="2.25" fill="currentColor" />
-      <path d="M7.65836 15.4332C8.48061 13.7887 10.1614 12.7499 12 12.7499V12.7499C13.8386 12.7499 15.5194 13.7887 16.3416 15.4332L16.8132 16.3763C16.9021 16.554 16.9465 16.6428 16.9722 16.7093C17.3302 17.6363 16.7044 18.6489 15.7152 18.7431C15.6442 18.7499 15.5449 18.7499 15.3463 18.7499H8.6537C8.45507 18.7499 8.35575 18.7499 8.28477 18.7431C7.29558 18.6489 6.66975 17.6363 7.02783 16.7093C7.05352 16.6428 7.09794 16.554 7.18677 16.3763L7.65836 15.4332Z" fill="currentColor" stroke={color} strokeWidth="1.5" />
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="19.0294" cy="10.136" r="1.13603" fill={color} />
+      <circle cx="5.0294" cy="10.136" r="1.13603" fill={color} />
+      <path
+        d="M16.8373 13.7629C17.2525 12.9326 18.1011 12.4081 19.0294 12.4081V12.4081C19.9577 12.4081 20.8064 12.9326 21.2215 13.7629L21.5108 14.3414C21.7626 14.845 21.3964 15.4375 20.8334 15.4375H17.2254C16.6624 15.4375 16.2962 14.845 16.548 14.3414L16.8373 13.7629Z"
+        stroke={color}
+        strokeWidth="1.13603"
+      />
+      <path
+        d="M2.83731 13.7629C3.25246 12.9326 4.1011 12.4081 5.02941 12.4081V12.4081C5.95772 12.4081 6.80636 12.9326 7.22151 13.7629L7.5108 14.3414C7.76258 14.845 7.3964 15.4375 6.8334 15.4375H3.22542C2.66242 15.4375 2.29624 14.845 2.54803 14.3414L2.83731 13.7629Z"
+        stroke={color}
+        strokeWidth="1.13603"
+      />
+      <circle cx="12" cy="8.25" r="2.25" fill={color} />
+      <path
+        d="M7.65836 15.4332C8.48061 13.7887 10.1614 12.7499 12 12.7499V12.7499C13.8386 12.7499 15.5194 13.7887 16.3416 15.4332L16.8132 16.3763C16.9021 16.554 16.9465 16.6428 16.9722 16.7093C17.3302 17.6363 16.7044 18.6489 15.7152 18.7431C15.6442 18.7499 15.5449 18.7499 15.3463 18.7499H8.6537C8.45507 18.7499 8.35575 18.7499 8.28477 18.7431C7.29558 18.6489 6.66975 17.6363 7.02783 16.7093C7.05352 16.6428 7.09794 16.554 7.18677 16.3763L7.65836 15.4332Z"
+        // fill="currentColor"
+        stroke={color}
+        strokeWidth="1.5"
+      />
     </svg>
-
   );
 }
 
 // gtm solution icons
-export function GTM_Soln_1({ color = "black" }) {
+export function GTM_Soln_1({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -575,7 +661,7 @@ export function GTM_Soln_1({ color = "black" }) {
         cx="11.2738"
         cy="6.06357"
         r="3.5759"
-        fill="currentColor"
+        fill={color}
         stroke={color}
         strokeWidth="1.5"
       />
@@ -587,19 +673,19 @@ export function GTM_Soln_1({ color = "black" }) {
   );
 }
 
-export function GTM_Soln_2({ color = "black" }) {
+export function GTM_Soln_2({ color = "black", width = "24", height = "24" }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="18.1494" cy="2.5" r="1.5" fill="currentColor" />
-      <circle cx="6" cy="2.5" r="1.5" fill="currentColor" />
-      <circle cx="6" cy="14.5" r="1.5" fill="currentColor" />
-      <circle cx="18.1494" cy="14.5" r="1.5" fill="currentColor" />
+      <circle cx="18.1494" cy="2.5" r="1.5" fill={color} />
+      <circle cx="6" cy="2.5" r="1.5" fill={color} />
+      <circle cx="6" cy="14.5" r="1.5" fill={color} />
+      <circle cx="18.1494" cy="14.5" r="1.5" fill={color} />
       <path
         d="M15.2549 7.28885C15.8031 6.19253 16.9236 5.5 18.1494 5.5V5.5C19.3751 5.5 20.4956 6.19253 21.0438 7.28885L21.4257 8.05279C21.7582 8.71769 21.2747 9.5 20.5313 9.5H15.7674C15.024 9.5 14.5405 8.71769 14.873 8.05279L15.2549 7.28885Z"
         stroke={color}
@@ -617,7 +703,7 @@ export function GTM_Soln_2({ color = "black" }) {
       />
       <path
         d="M15.2549 19.5284C15.8031 18.432 16.9236 17.7395 18.1494 17.7395V17.7395C19.3751 17.7395 20.4956 18.432 21.0438 19.5284L21.4257 20.2923C21.7582 20.9572 21.2747 21.7395 20.5313 21.7395H15.7674C15.024 21.7395 14.5405 20.9572 14.873 20.2923L15.2549 19.5284Z"
-        fill="currentColor"
+        // fill="currentColor"
         stroke={color}
         strokeWidth="1.5"
       />
@@ -625,11 +711,15 @@ export function GTM_Soln_2({ color = "black" }) {
   );
 }
 
-export function GTM_Soln_3({ color = "black" }) {
+export function GTM_Soln_3({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -659,10 +749,10 @@ export function GTM_Soln_3({ color = "black" }) {
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="12" cy="8.54248" r="1.5" fill="currentColor" />
+      <circle cx="12" cy="8.54248" r="1.5" fill={color} />
       <path
         d="M9.10557 13.5708C9.65374 12.4745 10.7743 11.782 12 11.782V11.782C13.2257 11.782 14.3463 12.4745 14.8944 13.5708L15.2764 14.3348C15.6088 14.9997 15.1253 15.782 14.382 15.782H9.61803C8.87465 15.782 8.39116 14.9997 8.72361 14.3348L9.10557 13.5708Z"
-        fill="currentColor"
+        // fill="currentColor"
         stroke={color}
         strokeWidth="1.5"
       />
@@ -670,11 +760,15 @@ export function GTM_Soln_3({ color = "black" }) {
   );
 }
 
-export function GTM_Soln_4({ color = "black" }) {
+export function GTM_Soln_4({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -713,11 +807,15 @@ export function GTM_Soln_4({ color = "black" }) {
   );
 }
 
-export function GTM_Soln_5({ color = "black" }) {
+export function GTM_Soln_5({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -752,7 +850,7 @@ export function GTM_Soln_5({ color = "black" }) {
       />
       <path
         d="M16.6353 14.8978C17.1875 14.8978 17.6445 14.4465 17.5444 13.9033C17.4747 13.5251 17.3653 13.1544 17.2175 12.7974C16.9416 12.1315 16.5373 11.5264 16.0277 11.0168C15.518 10.5071 14.9129 10.1028 14.247 9.82698C13.5811 9.55115 12.8674 9.40918 12.1466 9.40918C11.4258 9.40918 10.7121 9.55115 10.0462 9.82698C9.38028 10.1028 8.77521 10.5071 8.26555 11.0168C7.75588 11.5264 7.35159 12.1315 7.07576 12.7974C6.92788 13.1544 6.81848 13.5251 6.74881 13.9033C6.64874 14.4465 7.10567 14.8978 7.65796 14.8978L12.1466 14.8978H16.6353Z"
-        fill="currentColor"
+        // fill="currentColor"
         stroke={color}
         strokeWidth="1.5"
       />
@@ -760,19 +858,23 @@ export function GTM_Soln_5({ color = "black" }) {
   );
 }
 
-export function GTM_Soln_6({ color = "black" }) {
+export function GTM_Soln_6({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="6" cy="2.96716" r="1.5" fill="currentColor" />
+      <circle cx="6" cy="2.96716" r="1.5" fill={color} />
       <path
         d="M3.10557 7.99552C3.65374 6.89919 4.77427 6.20667 6 6.20667V6.20667C7.22573 6.20667 8.34626 6.89919 8.89443 7.99552L9.27639 8.75945C9.60884 9.42435 9.12535 10.2067 8.38197 10.2067H3.61803C2.87465 10.2067 2.39116 9.42435 2.72361 8.75945L3.10557 7.99552Z"
-        fill="currentColor"
+        // fill="currentColor"
         stroke={color}
         strokeWidth="1.5"
       />
@@ -820,22 +922,26 @@ export function GTM_Soln_6({ color = "black" }) {
   );
 }
 
-export function GTM_Soln_7({ color = "black" }) {
+export function GTM_Soln_7({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M16.5665 6.91595V5.55508C16.5665 5.13085 16.8342 4.7528 17.2343 4.61187L19.2343 3.90745C19.8848 3.67833 20.5665 4.16098 20.5665 4.85066V6.60571C20.5665 7.35199 19.7787 7.83532 19.1134 7.49716L18.8535 7.36507C18.5484 7.20996 18.1786 7.26417 17.9308 7.50034C17.4169 7.99011 16.5665 7.62585 16.5665 6.91595Z"
-        fill="currentColor"
+        fill="#D9D9D9"
       />
       <path
         d="M8 6.91603V5.5359C8 5.12116 7.744 4.74947 7.35652 4.60161L5.35652 3.83843C4.7019 3.58863 4 4.07206 4 4.77272V6.6058C4 7.35208 4.78786 7.8354 5.45313 7.49724L5.71298 7.36516C6.01814 7.21005 6.38795 7.26425 6.63575 7.50042C7.14964 7.9902 8 7.62594 8 6.91603Z"
-        fill="currentColor"
+        fill="#D9D9D9"
       />
       <path
         d="M2 1.80066C4.85714 4.81915 12.8571 9.04504 22 1.80066"
@@ -871,13 +977,15 @@ export function GTM_Soln_7({ color = "black" }) {
   );
 }
 
-// Geo "Use Cases"
-
-export function Geo_UseCase_1({ color = "black" }) {
+export function Geo_UseCase_1({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -947,11 +1055,15 @@ export function Geo_UseCase_1({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_2({ color = "black" }) {
+export function Geo_UseCase_2({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -979,11 +1091,15 @@ export function Geo_UseCase_2({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_3({ color = "black" }) {
+export function Geo_UseCase_3({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1021,18 +1137,22 @@ export function Geo_UseCase_3({ color = "black" }) {
       />
       <path
         d="M13.5007 10.0826L13.0851 9.45829L12.8262 9.6306L12.7652 9.93554L13.5007 10.0826ZM10.7337 10.0826L11.4691 9.93554L11.4082 9.6306L11.1493 9.45829L10.7337 10.0826ZM11.0368 11.5981L11.7722 11.451V11.451L11.0368 11.5981ZM13.1976 11.5981L12.4621 11.451L13.1976 11.5981ZM13.8672 8C13.8672 8.60766 13.5581 9.14344 13.0851 9.45829L13.9162 10.707C14.7893 10.1259 15.3672 9.13058 15.3672 8H13.8672ZM12.1172 6.25C13.0837 6.25 13.8672 7.0335 13.8672 8H15.3672C15.3672 6.20507 13.9121 4.75 12.1172 4.75V6.25ZM10.3672 8C10.3672 7.0335 11.1507 6.25 12.1172 6.25V4.75C10.3223 4.75 8.86719 6.20507 8.86719 8H10.3672ZM11.1493 9.45829C10.6763 9.14344 10.3672 8.60766 10.3672 8H8.86719C8.86719 9.13058 9.4451 10.1259 10.3181 10.707L11.1493 9.45829ZM11.7722 11.451L11.4691 9.93554L9.99828 10.2297L10.3014 11.7451L11.7722 11.451ZM11.5271 11.25C11.6463 11.25 11.7489 11.3341 11.7722 11.451L10.3014 11.7451C10.4182 12.3294 10.9312 12.75 11.5271 12.75V11.25ZM12.7073 11.25H11.5271V12.75H12.7073V11.25ZM12.4621 11.451C12.4855 11.3341 12.5881 11.25 12.7073 11.25V12.75C13.3031 12.75 13.8162 12.3294 13.933 11.7451L12.4621 11.451ZM12.7652 9.93554L12.4621 11.451L13.933 11.7451L14.2361 10.2297L12.7652 9.93554Z"
-        fill="black"
+        fill={color}
       />
       <path d="M11.1172 9.75H13.1172" stroke={color} strokeLinecap="round" />
     </svg>
   );
 }
 
-export function Geo_UseCase_4({ color = "black" }) {
+export function Geo_UseCase_4({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1069,11 +1189,15 @@ export function Geo_UseCase_4({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_5({ color = "black" }) {
+export function Geo_UseCase_5({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1084,9 +1208,9 @@ export function Geo_UseCase_5({ color = "black" }) {
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="7.5636" cy="12.9307" r="1" fill="black" />
-      <circle cx="12.5636" cy="12.9307" r="1" fill="black" />
-      <circle cx="17.5636" cy="12.9307" r="1" fill="black" />
+      <circle cx="7.5636" cy="12.9307" r="1" fill={color} />
+      <circle cx="12.5636" cy="12.9307" r="1" fill={color} />
+      <circle cx="17.5636" cy="12.9307" r="1" fill={color} />
       <rect
         x="4.41858"
         y="3.54456"
@@ -1108,11 +1232,11 @@ export function Geo_UseCase_5({ color = "black" }) {
       />
       <path
         d="M7.25 6.90259C7.25 7.3168 7.58579 7.65259 8 7.65259C8.41421 7.65259 8.75 7.3168 8.75 6.90259H7.25ZM7.25 3.90259V6.90259H8.75V3.90259H7.25Z"
-        fill="black"
+        fill={color}
       />
       <path
         d="M14.1686 8.04456C14.1686 8.45878 14.5044 8.79456 14.9186 8.79456C15.3328 8.79456 15.6686 8.45878 15.6686 8.04456H14.1686ZM14.1686 6.39539V8.04456H15.6686V6.39539H14.1686Z"
-        fill="black"
+        fill={color}
       />
       <path
         d="M2.56531 17.571C3.54356 16.7377 5.03049 15.571 7.84785 17.571C10.6652 19.571 13.5904 17.6433 15.4782 16.5712C16.6521 15.9046 19.5868 15.2712 21.9346 18.0712"
@@ -1130,11 +1254,15 @@ export function Geo_UseCase_5({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_6({ color = "black" }) {
+export function Geo_UseCase_6({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1191,11 +1319,15 @@ export function Geo_UseCase_6({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_7({ color = "black" }) {
+export function Geo_UseCase_7({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1217,11 +1349,15 @@ export function Geo_UseCase_7({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_8({ color = "black" }) {
+export function Geo_UseCase_8({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1262,11 +1398,15 @@ export function Geo_UseCase_8({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_9({ color = "black" }) {
+export function Geo_UseCase_9({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1278,7 +1418,7 @@ export function Geo_UseCase_9({ color = "black" }) {
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="17.7067" cy="5.67572" r="1.38739" fill="black" />
+      <circle cx="17.7067" cy="5.67572" r="1.38739" fill={color} />
       <path
         d="M18.1221 14.6824C18.3925 15.9524 16.1172 21.0322 11.1301 15.3018C6.51594 9.99994 2.45599 19.8799 2.62497 21.9999"
         stroke={color}
@@ -1290,11 +1430,15 @@ export function Geo_UseCase_9({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_10({ color = "black" }) {
+export function Geo_UseCase_10({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1302,7 +1446,7 @@ export function Geo_UseCase_10({ color = "black" }) {
       <circle cx="17" cy="16.5" r="2.5" fill="#D9D9D9" />
       <path
         d="M12.25 21.25C12.6642 21.25 13 20.9142 13 20.5C13 20.0858 12.6642 19.75 12.25 19.75V21.25ZM8.25 4.75H6.25V6.25H8.25V4.75ZM4.5 6.5V19.5H6V6.5H4.5ZM6.25 21.25H12.25V19.75H6.25V21.25ZM4.5 19.5C4.5 20.4665 5.2835 21.25 6.25 21.25V19.75C6.11193 19.75 6 19.6381 6 19.5H4.5ZM6.25 4.75C5.2835 4.75 4.5 5.5335 4.5 6.5H6C6 6.36193 6.11193 6.25 6.25 6.25V4.75Z"
-        fill="black"
+        fill={color}
       />
       <rect
         x="8"
@@ -1315,11 +1459,11 @@ export function Geo_UseCase_10({ color = "black" }) {
       />
       <path
         d="M17 7.67294C17 8.08715 17.3358 8.42294 17.75 8.42294C18.1642 8.42294 18.5 8.08715 18.5 7.67294H17ZM14.793 6.25H16.75V4.75H14.793V6.25ZM17 6.5V7.67294H18.5V6.5H17ZM16.75 6.25C16.8881 6.25 17 6.36193 17 6.5H18.5C18.5 5.5335 17.7165 4.75 16.75 4.75V6.25Z"
-        fill="black"
+        fill={color}
       />
       <path
         d="M18.3835 18.5826L17.9679 17.9583L17.709 18.1306L17.648 18.4355L18.3835 18.5826ZM15.6165 18.5826L16.352 18.4355L16.291 18.1306L16.0321 17.9583L15.6165 18.5826ZM15.9196 20.0981L16.655 19.951V19.951L15.9196 20.0981ZM18.0804 20.0981L17.345 19.951L18.0804 20.0981ZM18.75 16.5C18.75 17.1077 18.4409 17.6434 17.9679 17.9583L18.799 19.207C19.6721 18.6259 20.25 17.6306 20.25 16.5H18.75ZM17 14.75C17.9665 14.75 18.75 15.5335 18.75 16.5H20.25C20.25 14.7051 18.7949 13.25 17 13.25V14.75ZM15.25 16.5C15.25 15.5335 16.0335 14.75 17 14.75V13.25C15.2051 13.25 13.75 14.7051 13.75 16.5H15.25ZM16.0321 17.9583C15.5591 17.6434 15.25 17.1077 15.25 16.5H13.75C13.75 17.6306 14.3279 18.6259 15.201 19.207L16.0321 17.9583ZM16.655 19.951L16.352 18.4355L14.8811 18.7297L15.1842 20.2451L16.655 19.951ZM16.4099 19.75C16.5291 19.75 16.6317 19.8341 16.655 19.951L15.1842 20.2451C15.301 20.8294 15.8141 21.25 16.4099 21.25V19.75ZM17.5901 19.75H16.4099V21.25H17.5901V19.75ZM17.345 19.951C17.3683 19.8341 17.4709 19.75 17.5901 19.75V21.25C18.1859 21.25 18.699 20.8294 18.8158 20.2451L17.345 19.951ZM17.648 18.4355L17.345 19.951L18.8158 20.2451L19.1189 18.7297L17.648 18.4355Z"
-        fill="black"
+        fill={color}
       />
       <path d="M15.75 18.5H17.75" stroke={color} strokeLinecap="round" />
       <path
@@ -1344,11 +1488,15 @@ export function Geo_UseCase_10({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_11({ color = "black" }) {
+export function Geo_UseCase_11({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1361,7 +1509,7 @@ export function Geo_UseCase_11({ color = "black" }) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M11.9187 2.91406C11.8308 2.91398 11.7462 2.92917 11.6674 2.95722C11.454 3.03297 11.2868 3.20197 11.2118 3.41281C11.1873 3.48164 11.1726 3.55492 11.1693 3.63088C11.1284 4.35528 11.1225 5.20663 11.1677 6.13783C11.0695 8.04811 10.7436 10.3097 10.0381 12.4509C8.99472 15.618 7.17354 18.3775 4.18607 19.4996C3.86287 19.621 3.6727 19.9417 3.70267 20.2696C3.70076 20.2914 3.69979 20.3135 3.69979 20.3358C3.69979 20.7501 4.03557 21.0858 4.44979 21.0858H8.62212C8.97439 21.0858 9.31846 20.9795 9.60932 20.7808L11.2825 19.6377C11.3618 19.5835 11.4651 19.5795 11.5483 19.6274L13.677 20.8526C13.9426 21.0054 14.2436 21.0858 14.55 21.0858H19.8796C20.2938 21.0858 20.6296 20.7501 20.6296 20.3358C20.6296 19.9216 20.2938 19.5858 19.8796 19.5858H19.8158C19.7658 19.5511 19.7108 19.522 19.6512 19.4996C16.6638 18.3775 14.8426 15.618 13.7992 12.4509C13.0937 10.3097 12.7678 8.04811 12.6696 6.13782C12.7148 5.20664 12.7089 4.3553 12.668 3.6309C12.6647 3.55494 12.65 3.48164 12.6255 3.41281C12.5498 3.19943 12.3808 3.03228 12.1699 2.95722C12.0911 2.92917 12.0065 2.91398 11.9187 2.91406ZM16.7415 19.5858C14.5761 17.9385 13.21 15.4561 12.3745 12.9202C12.2018 12.3961 12.0505 11.8661 11.9187 11.3362C11.7868 11.8661 11.6355 12.3961 11.4628 12.9202C10.6273 15.4561 9.26124 17.9385 7.09583 19.5858H8.62212C8.67244 19.5858 8.7216 19.5707 8.76315 19.5423L10.4364 18.3991C10.9912 18.02 11.7141 17.9922 12.2965 18.3273L14.4253 19.5525C14.4632 19.5743 14.5062 19.5858 14.55 19.5858H16.7415Z"
-        fill="currentColor"
+        fill={color}
       />
       <path
         d="M10.3174 10.3508H13.4549"
@@ -1385,11 +1533,15 @@ export function Geo_UseCase_11({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_12({ color = "black" }) {
+export function Geo_UseCase_12({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1429,11 +1581,15 @@ export function Geo_UseCase_12({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_13({ color = "black" }) {
+export function Geo_UseCase_13({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1479,11 +1635,15 @@ export function Geo_UseCase_13({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_14({ color = "black" }) {
+export function Geo_UseCase_14({
+  color = "black",
+  width = "24",
+  height = "24",
+}) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1553,11 +1713,15 @@ export function Geo_UseCase_14({ color = "black" }) {
   );
 }
 
-export function Geo_UseCase_15({ color = "black" }) {
+export function Geo_UseCase_15({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1606,11 +1770,15 @@ export function Geo_UseCase_15({ color = "black" }) {
 
 // Geo solution
 
-export function Geo_Soln_1({ color = "black" }) {
+export function Geo_Soln_1({
+  color = "black",
+  width = "28",
+  height = "28",
+}: Props) {
   return (
     <svg
-      width="28"
-      height="28"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1618,7 +1786,7 @@ export function Geo_Soln_1({ color = "black" }) {
       <circle cx="12" cy="8.48535" r="6" stroke={color} strokeWidth="1.5" />
       <path
         d="M6.3698 17.9599C6.55527 17.6817 6.8675 17.5146 7.20185 17.5146H16.7981C17.1325 17.5146 17.4447 17.6817 17.6302 17.9599L18.9635 19.9599C19.4066 20.6245 18.9302 21.5146 18.1315 21.5146H5.86852C5.06982 21.5146 4.59343 20.6245 5.03647 19.9599L6.3698 17.9599Z"
-        fill="currentColor"
+        fill={color}
         stroke={color}
         strokeWidth="1.5"
       />
@@ -1633,11 +1801,15 @@ export function Geo_Soln_1({ color = "black" }) {
   );
 }
 
-export function Geo_Soln_2({ color = "black" }) {
+export function Geo_Soln_2({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1664,11 +1836,15 @@ export function Geo_Soln_2({ color = "black" }) {
   );
 }
 
-export function Geo_Soln_3({ color = "black" }) {
+export function Geo_Soln_3({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1696,23 +1872,27 @@ export function Geo_Soln_3({ color = "black" }) {
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="12.386" cy="5" r="1" fill="currentColor" />
+      <circle cx="12.386" cy="5" r="1" fill={color} />
     </svg>
   );
 }
 
-export function Geo_Soln_4({ color = "black" }) {
+export function Geo_Soln_4({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M22 10V10.75H22.75V10H22ZM22 14H22.75V13.25H22V14ZM2 14V13.25H1.25V14H2ZM2 10H1.25V10.75H2V10ZM3 5.25C2.0335 5.25 1.25 6.0335 1.25 7H2.75C2.75 6.86193 2.86193 6.75 3 6.75V5.25ZM21 5.25H3V6.75H21V5.25ZM22.75 7C22.75 6.0335 21.9665 5.25 21 5.25V6.75C21.1381 6.75 21.25 6.86193 21.25 7H22.75ZM22.75 10V7H21.25V10H22.75ZM20.75 12C20.75 11.3096 21.3096 10.75 22 10.75V9.25C20.4812 9.25 19.25 10.4812 19.25 12H20.75ZM22 13.25C21.3096 13.25 20.75 12.6904 20.75 12H19.25C19.25 13.5188 20.4812 14.75 22 14.75V13.25ZM22.75 17V14H21.25V17H22.75ZM21 18.75C21.9665 18.75 22.75 17.9665 22.75 17H21.25C21.25 17.1381 21.1381 17.25 21 17.25V18.75ZM3 18.75H21V17.25H3V18.75ZM1.25 17C1.25 17.9665 2.0335 18.75 3 18.75V17.25C2.86193 17.25 2.75 17.1381 2.75 17H1.25ZM1.25 14V17H2.75V14H1.25ZM3.25 12C3.25 12.6904 2.69036 13.25 2 13.25V14.75C3.51878 14.75 4.75 13.5188 4.75 12H3.25ZM2 10.75C2.69036 10.75 3.25 11.3096 3.25 12H4.75C4.75 10.4812 3.51878 9.25 2 9.25V10.75ZM1.25 7V10H2.75V7H1.25Z"
-        fill="currentColor"
+        fill={color}
       />
       <path
         d="M11.3343 9.04894C11.5438 8.40402 12.4562 8.40402 12.6657 9.04894L12.9654 9.97123C13.0591 10.2596 13.3279 10.4549 13.6311 10.4549H14.6009C15.279 10.4549 15.561 11.3226 15.0124 11.7212L14.2278 12.2912C13.9825 12.4695 13.8798 12.7854 13.9735 13.0739L14.2732 13.9962C14.4827 14.6411 13.7446 15.1774 13.196 14.7788L12.4114 14.2088C12.1661 14.0305 11.8339 14.0305 11.5886 14.2088L10.804 14.7788C10.2554 15.1774 9.51727 14.6411 9.72681 13.9961L10.0265 13.0739C10.1202 12.7854 10.0175 12.4695 9.77219 12.2912L8.98765 11.7212C8.43905 11.3226 8.72099 10.4549 9.3991 10.4549H10.3689C10.6721 10.4549 10.9409 10.2596 11.0346 9.97123L11.3343 9.04894Z"
@@ -1724,11 +1904,15 @@ export function Geo_Soln_4({ color = "black" }) {
   );
 }
 
-export function Geo_Soln_5({ color = "black" }) {
+export function Geo_Soln_5({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1749,11 +1933,15 @@ export function Geo_Soln_5({ color = "black" }) {
   );
 }
 
-export function Geo_Soln_6({ color = "black" }) {
+export function Geo_Soln_6({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1778,7 +1966,7 @@ export function Geo_Soln_6({ color = "black" }) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M17.1681 9.37213C16.7625 9.28793 16.3655 9.54845 16.2813 9.95402C16.1971 10.3596 16.4576 10.7566 16.8632 10.8408C17.5761 10.9888 18.253 11.3152 18.8397 11.7996C18.9792 11.9147 19.1127 12.0381 19.2397 12.1691C20.3408 12.4614 21.2945 13.1154 21.966 13.9963C21.8698 13.6628 21.7494 13.3367 21.6054 13.0211C21.1816 12.0926 20.5634 11.2775 19.7947 10.6428C19.0257 10.0079 18.1271 9.57123 17.1681 9.37213Z"
-        fill="currentColor"
+        fill={color}
       />
       <path
         fillRule="evenodd"
@@ -1788,7 +1976,7 @@ export function Geo_Soln_6({ color = "black" }) {
       />
       <path
         d="M13.7365 14.2363L14.3584 14.6555L14.9406 13.7918L13.9369 13.5135L13.7365 14.2363ZM9.51254 14.4948L9.22553 13.8019L9.22553 13.8019L9.51254 14.4948ZM7.40379 15.9038L6.87346 15.3735L6.87346 15.3735L7.40379 15.9038ZM5.99477 18.0126L5.30186 17.7255L5.30186 17.7255L5.99477 18.0126ZM5.57676 19.5039L4.83562 19.389L4.83562 19.389L5.57676 19.5039ZM6.49999 20.5L6.49999 21.25L6.49999 21.25L6.49999 20.5ZM12 20.5L12 19.75L12 19.75L12 20.5ZM14.2206 20.5V21.25H15.9364L14.7711 19.9906L14.2206 20.5ZM13.9369 13.5135C13.3074 13.339 12.6559 13.25 12 13.25V14.75C12.5202 14.75 13.0369 14.8206 13.5361 14.959L13.9369 13.5135ZM12 13.25C11.0479 13.25 10.1051 13.4375 9.22553 13.8019L9.79956 15.1877C10.4972 14.8987 11.2449 14.75 12 14.75V13.25ZM9.22553 13.8019C8.34592 14.1662 7.54669 14.7003 6.87346 15.3735L7.93412 16.4341C8.46806 15.9002 9.10193 15.4767 9.79956 15.1877L9.22553 13.8019ZM6.87346 15.3735C6.20024 16.0467 5.66621 16.8459 5.30186 17.7255L6.68768 18.2996C6.97664 17.6019 7.40018 16.9681 7.93412 16.4341L6.87346 15.3735ZM5.30186 17.7255C5.08019 18.2607 4.92397 18.8192 4.83562 19.389L6.3179 19.6189C6.38798 19.167 6.51187 18.724 6.68768 18.2996L5.30186 17.7255ZM4.83562 19.389C4.66829 20.468 5.57096 21.25 6.49999 21.25V19.75C6.42708 19.75 6.37189 19.7201 6.34239 19.6891C6.32848 19.6745 6.32226 19.662 6.31954 19.6538C6.31728 19.647 6.31512 19.6368 6.3179 19.6189L4.83562 19.389ZM6.49999 21.25L12 21.25L12 19.75L6.49999 19.75L6.49999 21.25ZM12 21.25H14.2206V19.75H12V21.25ZM14.7711 19.9906C14.0589 19.221 13.6247 18.1933 13.6247 17.0626H12.1247C12.1247 18.5857 12.7116 19.9735 13.6701 21.0094L14.7711 19.9906ZM13.6247 17.0626C13.6247 16.1699 13.8951 15.3427 14.3584 14.6555L13.1146 13.817C12.4896 14.7442 12.1247 15.8619 12.1247 17.0626H13.6247Z"
-        fill="currentColor"
+        fill={color}
       />
       <path
         d="M17.9374 14.1504V19.9747"
@@ -1814,22 +2002,26 @@ export function Geo_Soln_6({ color = "black" }) {
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="17.9066" cy="17.0626" r="2.2579" fill="currentColor" />
+      <circle cx="17.9066" cy="17.0626" r="2.2579" fill={color} />
       <circle cx="17.9066" cy="17.0626" r="0.833958" fill="white" />
     </svg>
   );
 }
 
-export function Geo_Soln_7({ color = "black" }) {
+export function Geo_Soln_7({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="17.9375" cy="7.79357" r="2.20641" fill="currentColor" />
+      <circle cx="17.9375" cy="7.79357" r="2.20641" fill={color} />
       <path
         d="M2.28503 10C2.28503 9.44771 2.73275 9 3.28503 9H11C11.5523 9 12 9.44772 12 10V22.2188H3.28503C2.73275 22.2188 2.28503 21.771 2.28503 21.2187V10Z"
         stroke={color}
@@ -1872,18 +2064,22 @@ export function Geo_Soln_7({ color = "black" }) {
       />
       <path
         d="M19.321 10.0826L18.9054 9.45829L18.6465 9.6306L18.5855 9.93554L19.321 10.0826ZM16.554 10.0826L17.2895 9.93554L17.2285 9.6306L16.9696 9.45829L16.554 10.0826ZM16.8571 11.5981L17.5925 11.451L17.5925 11.451L16.8571 11.5981ZM19.0179 11.5981L18.2825 11.451L18.2825 11.451L19.0179 11.5981ZM19.6875 8C19.6875 8.60765 19.3784 9.14344 18.9054 9.45829L19.7365 10.707C20.6096 10.1259 21.1875 9.13058 21.1875 8H19.6875ZM17.9375 6.25C18.904 6.25 19.6875 7.0335 19.6875 8H21.1875C21.1875 6.20507 19.7324 4.75 17.9375 4.75V6.25ZM16.1875 8C16.1875 7.0335 16.971 6.25 17.9375 6.25V4.75C16.1426 4.75 14.6875 6.20507 14.6875 8H16.1875ZM16.9696 9.45829C16.4966 9.14344 16.1875 8.60766 16.1875 8H14.6875C14.6875 9.13058 15.2654 10.1259 16.1385 10.707L16.9696 9.45829ZM17.5925 11.451L17.2895 9.93554L15.8186 10.2297L16.1217 11.7451L17.5925 11.451ZM17.3474 11.25C17.4666 11.25 17.5692 11.3341 17.5925 11.451L16.1217 11.7451C16.2385 12.3294 16.7516 12.75 17.3474 12.75V11.25ZM18.5276 11.25H17.3474V12.75H18.5276V11.25ZM18.2825 11.451C18.3058 11.3341 18.4084 11.25 18.5276 11.25V12.75C19.1234 12.75 19.6365 12.3294 19.7533 11.7451L18.2825 11.451ZM18.5855 9.93554L18.2825 11.451L19.7533 11.7451L20.0564 10.2297L18.5855 9.93554Z"
-        fill="currentColor"
+        fill={color}
       />
       <path d="M16.9375 9.75H18.9375" stroke={color} strokeLinecap="round" />
     </svg>
   );
 }
 
-export function Geo_Soln_8({ color = "black" }) {
+export function Geo_Soln_8({
+  color = "black",
+  width = "24",
+  height = "24",
+}: Props) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1910,14 +2106,14 @@ export function Geo_Soln_8({ color = "black" }) {
       />
       <path
         d="M7.74542 15.3629V11.3629C7.74542 10.8106 8.19314 10.3629 8.74542 10.3629H14.2545C14.8068 10.3629 15.2545 10.8106 15.2545 11.3629V15.5204C15.2545 15.9857 14.8773 16.3629 14.412 16.3629C14.0653 16.3629 13.754 16.5753 13.6276 16.8981L13.3062 17.7183C13.168 18.0711 12.7029 18.148 12.4586 17.8584L11.3463 16.5404C11.2513 16.4279 11.1115 16.3629 10.9642 16.3629H8.74542C8.19314 16.3629 7.74542 15.9152 7.74542 15.3629Z"
-        fill="currentColor"
+        fill={color}
         stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="9.5" cy="13.3629" r="0.5" fill="currentColor" />
-      <circle cx="11.5" cy="13.3629" r="0.5" fill="currentColor" />
-      <circle cx="13.5" cy="13.3629" r="0.5" fill="currentColor" />
+      <circle cx="9.5" cy="13.3629" r="0.5" fill="#D9D9D9" />
+      <circle cx="11.5" cy="13.3629" r="0.5" fill="#D9D9D9" />
+      <circle cx="13.5" cy="13.3629" r="0.5" fill="#D9D9D9" />
     </svg>
   );
 }
@@ -1943,23 +2139,61 @@ export function CoordinateIcon() {
 
 export function AIAssistantIcon({ color = "black" }) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20.325 6.15C20.146 6.15 19.9743 6.07888 19.8477 5.9523C19.7211 5.82571 19.65 5.65402 19.65 5.475C19.65 5.29598 19.7211 5.12429 19.8477 4.9977C19.9743 4.87112 20.146 4.8 20.325 4.8C20.504 4.8 20.6757 4.87112 20.8023 4.9977C20.9289 5.12429 21 5.29598 21 5.475C21 5.65402 20.9289 5.82571 20.8023 5.9523C20.6757 6.07888 20.504 6.15 20.325 6.15ZM20.325 6.15V9.525C20.325 10.1532 20.325 10.4673 20.2476 10.722C20.1618 11.0053 20.0074 11.2632 19.7981 11.4726C19.5889 11.682 19.3312 11.8366 19.0479 11.9226C18.7923 12 18.4782 12 17.85 12M3.675 17.85C3.85402 17.85 4.02571 17.9211 4.1523 18.0477C4.27888 18.1743 4.35 18.346 4.35 18.525C4.35 18.704 4.27888 18.8757 4.1523 19.0023C4.02571 19.1289 3.85402 19.2 3.675 19.2C3.49598 19.2 3.32429 19.1289 3.1977 19.0023C3.07112 18.8757 3 18.704 3 18.525C3 18.346 3.07112 18.1743 3.1977 18.0477C3.32429 17.9211 3.49598 17.85 3.675 17.85ZM3.675 17.85V14.475C3.675 13.8468 3.675 13.5327 3.7524 13.278C3.83821 12.9947 3.99259 12.7368 4.20186 12.5274C4.41112 12.318 4.66882 12.1634 4.9521 12.0774C5.2077 12 5.5218 12 6.15 12M6.15 3.675C6.15 3.85402 6.07888 4.02571 5.9523 4.1523C5.82571 4.27888 5.65402 4.35 5.475 4.35C5.29598 4.35 5.12429 4.27888 4.9977 4.1523C4.87112 4.02571 4.8 3.85402 4.8 3.675C4.8 3.49598 4.87112 3.32429 4.9977 3.1977C5.12429 3.07112 5.29598 3 5.475 3C5.65402 3 5.82571 3.07112 5.9523 3.1977C6.07888 3.32429 6.15 3.49598 6.15 3.675ZM6.15 3.675H9.525C10.1532 3.675 10.4673 3.675 10.722 3.7524C11.0053 3.83821 11.2632 3.99259 11.4726 4.20186C11.682 4.41112 11.8366 4.66882 11.9226 4.9521C12 5.2077 12 5.5218 12 6.15M17.85 20.325C17.85 20.146 17.9211 19.9743 18.0477 19.8477C18.1743 19.7211 18.346 19.65 18.525 19.65C18.704 19.65 18.8757 19.7211 19.0023 19.8477C19.1289 19.9743 19.2 20.146 19.2 20.325C19.2 20.504 19.1289 20.6757 19.0023 20.8023C18.8757 20.9289 18.704 21 18.525 21C18.346 21 18.1743 20.9289 18.0477 20.8023C17.9211 20.6757 17.85 20.504 17.85 20.325ZM17.85 20.325H14.475C13.8468 20.325 13.5327 20.325 13.278 20.2476C12.9947 20.1618 12.7368 20.0074 12.5274 19.7981C12.318 19.5889 12.1634 19.3312 12.0774 19.0479C12 18.7923 12 18.4782 12 17.85" stroke={color} strokeWidth="1.35" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M6.19409 11.956C6.19409 9.19836 6.19409 7.81956 7.05089 6.96276C7.90769 6.10596 9.28649 6.10596 12.0441 6.10596C14.8017 6.10596 16.1805 6.10596 17.0373 6.96276C17.8941 7.81956 17.8941 9.19836 17.8941 11.956C17.8941 14.7136 17.8941 16.0924 17.0373 16.9492C16.1805 17.806 14.8017 17.806 12.0441 17.806C9.28649 17.806 7.90769 17.806 7.05089 16.9492C6.19409 16.0924 6.19409 14.7136 6.19409 11.956Z" stroke={color} strokeWidth="1.35" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M12.4491 14.25L11.1351 10.1811C11.0895 10.0527 11.0047 9.94196 10.8925 9.86457C10.7804 9.78718 10.6467 9.7471 10.5105 9.75003C10.3745 9.74729 10.241 9.78746 10.129 9.86484C10.0171 9.94222 9.93234 10.0529 9.88682 10.1811L8.57281 14.25M14.6991 9.75003V14.25M9.05611 12.9H11.9649" stroke={color} strokeWidth="1.35" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20.325 6.15C20.146 6.15 19.9743 6.07888 19.8477 5.9523C19.7211 5.82571 19.65 5.65402 19.65 5.475C19.65 5.29598 19.7211 5.12429 19.8477 4.9977C19.9743 4.87112 20.146 4.8 20.325 4.8C20.504 4.8 20.6757 4.87112 20.8023 4.9977C20.9289 5.12429 21 5.29598 21 5.475C21 5.65402 20.9289 5.82571 20.8023 5.9523C20.6757 6.07888 20.504 6.15 20.325 6.15ZM20.325 6.15V9.525C20.325 10.1532 20.325 10.4673 20.2476 10.722C20.1618 11.0053 20.0074 11.2632 19.7981 11.4726C19.5889 11.682 19.3312 11.8366 19.0479 11.9226C18.7923 12 18.4782 12 17.85 12M3.675 17.85C3.85402 17.85 4.02571 17.9211 4.1523 18.0477C4.27888 18.1743 4.35 18.346 4.35 18.525C4.35 18.704 4.27888 18.8757 4.1523 19.0023C4.02571 19.1289 3.85402 19.2 3.675 19.2C3.49598 19.2 3.32429 19.1289 3.1977 19.0023C3.07112 18.8757 3 18.704 3 18.525C3 18.346 3.07112 18.1743 3.1977 18.0477C3.32429 17.9211 3.49598 17.85 3.675 17.85ZM3.675 17.85V14.475C3.675 13.8468 3.675 13.5327 3.7524 13.278C3.83821 12.9947 3.99259 12.7368 4.20186 12.5274C4.41112 12.318 4.66882 12.1634 4.9521 12.0774C5.2077 12 5.5218 12 6.15 12M6.15 3.675C6.15 3.85402 6.07888 4.02571 5.9523 4.1523C5.82571 4.27888 5.65402 4.35 5.475 4.35C5.29598 4.35 5.12429 4.27888 4.9977 4.1523C4.87112 4.02571 4.8 3.85402 4.8 3.675C4.8 3.49598 4.87112 3.32429 4.9977 3.1977C5.12429 3.07112 5.29598 3 5.475 3C5.65402 3 5.82571 3.07112 5.9523 3.1977C6.07888 3.32429 6.15 3.49598 6.15 3.675ZM6.15 3.675H9.525C10.1532 3.675 10.4673 3.675 10.722 3.7524C11.0053 3.83821 11.2632 3.99259 11.4726 4.20186C11.682 4.41112 11.8366 4.66882 11.9226 4.9521C12 5.2077 12 5.5218 12 6.15M17.85 20.325C17.85 20.146 17.9211 19.9743 18.0477 19.8477C18.1743 19.7211 18.346 19.65 18.525 19.65C18.704 19.65 18.8757 19.7211 19.0023 19.8477C19.1289 19.9743 19.2 20.146 19.2 20.325C19.2 20.504 19.1289 20.6757 19.0023 20.8023C18.8757 20.9289 18.704 21 18.525 21C18.346 21 18.1743 20.9289 18.0477 20.8023C17.9211 20.6757 17.85 20.504 17.85 20.325ZM17.85 20.325H14.475C13.8468 20.325 13.5327 20.325 13.278 20.2476C12.9947 20.1618 12.7368 20.0074 12.5274 19.7981C12.318 19.5889 12.1634 19.3312 12.0774 19.0479C12 18.7923 12 18.4782 12 17.85"
+        stroke={color}
+        strokeWidth="1.35"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6.19409 11.956C6.19409 9.19836 6.19409 7.81956 7.05089 6.96276C7.90769 6.10596 9.28649 6.10596 12.0441 6.10596C14.8017 6.10596 16.1805 6.10596 17.0373 6.96276C17.8941 7.81956 17.8941 9.19836 17.8941 11.956C17.8941 14.7136 17.8941 16.0924 17.0373 16.9492C16.1805 17.806 14.8017 17.806 12.0441 17.806C9.28649 17.806 7.90769 17.806 7.05089 16.9492C6.19409 16.0924 6.19409 14.7136 6.19409 11.956Z"
+        stroke={color}
+        strokeWidth="1.35"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.4491 14.25L11.1351 10.1811C11.0895 10.0527 11.0047 9.94196 10.8925 9.86457C10.7804 9.78718 10.6467 9.7471 10.5105 9.75003C10.3745 9.74729 10.241 9.78746 10.129 9.86484C10.0171 9.94222 9.93234 10.0529 9.88682 10.1811L8.57281 14.25M14.6991 9.75003V14.25M9.05611 12.9H11.9649"
+        stroke={color}
+        strokeWidth="1.35"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
-
   );
 }
 
 export function APIModelIcon({ color = "black" }) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9.94049 6.92163H5.32011C4.96999 6.92163 4.63422 7.06071 4.38665 7.30828C4.13908 7.55585 4 7.89163 4 8.24174V18.8026C4 19.1527 4.13908 19.4885 4.38665 19.7361C4.63422 19.9836 4.96999 20.1227 5.32011 20.1227H17.2011C17.5512 20.1227 17.887 19.9836 18.1346 19.7361C18.3821 19.4885 18.5212 19.1527 18.5212 18.8026V13.5222M4 10.2219H12.5807" stroke={color} strokeWidth="1.32011" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M7.30029 16.8225L9.28046 14.8424L7.30029 12.8622M11.2606 16.8225H13.2408M13.0771 7.53425C12.6151 7.45373 12.6151 6.78839 13.0771 6.70786C13.8975 6.56465 14.6567 6.18066 15.2583 5.60473C15.8598 5.02881 16.2765 4.28698 16.4553 3.4736L16.4817 3.34555C16.5833 2.88747 17.2341 2.88351 17.3397 3.34158L17.3727 3.49076C17.5572 4.30099 17.9773 5.03854 18.5801 5.61054C19.1828 6.18253 19.9413 6.56341 20.7601 6.70522C21.2248 6.78575 21.2248 7.45505 20.7601 7.53689C19.9413 7.6787 19.1828 8.05958 18.5801 8.63158C17.9773 9.20358 17.5572 9.94113 17.3727 10.7514L17.3384 10.8992C17.2341 11.356 16.5833 11.3533 16.483 10.8953L16.4553 10.7698C16.2765 9.95646 15.8598 9.21463 15.2583 8.63871C14.6567 8.06278 13.8975 7.67879 13.0771 7.53557V7.53425Z" stroke={color} strokeWidth="1.32011" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.94049 6.92163H5.32011C4.96999 6.92163 4.63422 7.06071 4.38665 7.30828C4.13908 7.55585 4 7.89163 4 8.24174V18.8026C4 19.1527 4.13908 19.4885 4.38665 19.7361C4.63422 19.9836 4.96999 20.1227 5.32011 20.1227H17.2011C17.5512 20.1227 17.887 19.9836 18.1346 19.7361C18.3821 19.4885 18.5212 19.1527 18.5212 18.8026V13.5222M4 10.2219H12.5807"
+        stroke={color}
+        strokeWidth="1.32011"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7.30029 16.8225L9.28046 14.8424L7.30029 12.8622M11.2606 16.8225H13.2408M13.0771 7.53425C12.6151 7.45373 12.6151 6.78839 13.0771 6.70786C13.8975 6.56465 14.6567 6.18066 15.2583 5.60473C15.8598 5.02881 16.2765 4.28698 16.4553 3.4736L16.4817 3.34555C16.5833 2.88747 17.2341 2.88351 17.3397 3.34158L17.3727 3.49076C17.5572 4.30099 17.9773 5.03854 18.5801 5.61054C19.1828 6.18253 19.9413 6.56341 20.7601 6.70522C21.2248 6.78575 21.2248 7.45505 20.7601 7.53689C19.9413 7.6787 19.1828 8.05958 18.5801 8.63158C17.9773 9.20358 17.5572 9.94113 17.3727 10.7514L17.3384 10.8992C17.2341 11.356 16.5833 11.3533 16.483 10.8953L16.4553 10.7698C16.2765 9.95646 15.8598 9.21463 15.2583 8.63871C14.6567 8.06278 13.8975 7.67879 13.0771 7.53557V7.53425Z"
+        stroke={color}
+        strokeWidth="1.32011"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
-
-
   );
 }
-

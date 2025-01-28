@@ -11,28 +11,66 @@ import UsecaseScroll from "@/components/usecaseScrollAnimation/UsecaseScroll";
 import HeroBanner from "@/components/solutionHeroBanner/HeroBanner";
 import Section from "@/components/solutionHeroBanner/Section";
 import LandingComponent from "@/components/scrollAnimation/LandingComponent";
+import AutoScroll from "@/components/AutoScroll";
+import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
+import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
+import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
 import CircleAnimation from "@/components/circleAnimation/CircleAnimation";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
+import Acme from "/public/auto_scroll_svg/acme 1.svg";
+import Apex from "/public/auto_scroll_svg/apex 1.svg";
+import Celestia from "/public/auto_scroll_svg/celestia 1.svg";
+import Echo from "/public/auto_scroll_svg/echo 1.svg";
+import Plus from "/public/auto_scroll_svg/pulse 1.svg";
+import Quantum from "/public/auto_scroll_svg/quantum 1 (1).svg";
+import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 
 const page = () => {
   const pathname = usePathname();
+
+  const icons = [Acme, Apex, Celestia, Echo, Plus, Quantum];
+  // const endpoint = pathname.split("/").pop()?.toLowerCase();
+
+  // const usecaseData = geoUsecasesjsonData.find((item) => {
+  //   return item.id.toLowerCase() === endpoint;
+  // });
+
+  // // Fallback data if no match is found
+  // const defaultData = {
+  //   image: geoUsecasesjsonData[0].image,
+  //   text: "Default Item",
+  //   subtext: "Default Description",
+  // };
+
+
+
+
+
+  let dataSource = null;
+  if (pathname.includes("/geo/solutions")) {
+    dataSource = geoSolutionsjsonData;
+  } else if (pathname.includes("/geo/usecases")) {
+    dataSource = geoUsecasesjsonData;
+  }else if(pathname.includes("/gtm/usecases")){
+    dataSource = gtmUsecasesjsonData
+  }else if(pathname.includes("/gtm/solutions")){
+    dataSource = gtmSolutionsjsonData
+  }
+
   const endpoint = pathname.split("/").pop()?.toLowerCase();
 
-  const usecaseData = geoUsecasesjsonData.find((item) => {
+  const usecaseData = dataSource?.find((item) => {
     return item.id.toLowerCase() === endpoint;
   });
 
-  // Fallback data if no match is found
   const defaultData = {
-    image: geoUsecasesjsonData[0].image,
-    text: "Default Item",
-    subtext: "Default Description",
+    image: dataSource?.[0]?.image || "",
+    problem: "Default Problem",
+    solution: "Default Solution",
   };
 
-  const dataToDisplay: any = usecaseData || defaultData;
-
-  // console.log("Endpoint:", endpoint, dataToDisplay);
-
+  const dataToDisplay:any = usecaseData || defaultData;
+  console.log("Endpoint:__", endpoint, dataToDisplay);
   return (
     <div className="relative w-full flex flex-col gap-12 ">
       {pathname.split("/")[2] === "usecases" ? (
@@ -66,6 +104,7 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
+          <div className="mt-16"><AutoScroll icons={icons} size="small"/></div>
         </div>
       ) : (
         <div className="w-full flex items-center justify-center mt-[140px]">
@@ -88,14 +127,25 @@ const page = () => {
           <Scroll />
         </div>
       )}
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <VerticalScroll
           mainHeading={
             pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
           }
         />
+      </div> */}
+       <div className="mb-5">
+        <VerticalScroll
+          mainHeading={
+            pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+          }
+          dataToDisplay={dataToDisplay}
+        />
       </div>
       <CircleContainer/>
+      <div>
+        <ProductsCarousel/>
+      </div>
     </div>
   );
 };

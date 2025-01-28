@@ -88,10 +88,24 @@ const config = {
             height: "0",
           },
         },
+        // "scroll-left-to-right": {
+        //   "0%": { transform: "translateX(0%)" },
+        //   "100%": { transform: "translateX(-50%)" },
+        // },
+        scroll: {
+          "0%": { transform: "translateX(0)%" },
+          "100%": { transform: "translateX(-50%)" }, // Shift left by half the width for seamless looping
+        },
+        // "scroll-left-to-right": {
+        //   "0%": { transform: "translateX(-100%)" },
+        //   "50%": { transform: "translateX(0)", opacity: "1" },
+        //   "100%": { transform: "translateX(100%)", opacity: "0" },
+        // },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        scroll: "scroll 15s linear infinite", 
       },
     },
   },

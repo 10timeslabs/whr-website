@@ -9,55 +9,62 @@ import ProblemSolution from "@/components/problemSolution/ProblemSolution";
 import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import Scroll from "@/components/scrollAnimation/Scroll";
 import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
+import AutoScroll from "@/components/AutoScroll";
+import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
+import { geoUsecasesjsonData } from "../../../../../data/geoUsecasesData";
+import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
+import Acme from "/public/auto_scroll_svg/acme 1.svg";
+import Apex from "/public/auto_scroll_svg/apex 1.svg";
+import Celestia from "/public/auto_scroll_svg/celestia 1.svg";
+import Echo from "/public/auto_scroll_svg/echo 1.svg";
+import Plus from "/public/auto_scroll_svg/pulse 1.svg";
+import Quantum from "/public/auto_scroll_svg/quantum 1 (1).svg";
 
 const page = () => {
   const pathname = usePathname();
+    const icons = [Acme, Apex, Celestia, Echo, Plus, Quantum];
+  // const endpoint = pathname.split("/").pop()?.toLowerCase();
+
+  // const usecaseData = gtmUsecasesjsonData.find((item) => {
+  //   return item.id.toLowerCase() === endpoint;
+  // });
+
+  // // Fallback data if no match is found
+  // const defaultData = {
+  //   image: gtmUsecasesjsonData[0].image,
+  //   text: "Default Item",
+  //   subtext: "Default Description",
+  // };
+
+  // const dataToDisplay: any = usecaseData || defaultData;
+  let dataSource = null;
+  if (pathname.includes("/geo/solutions")) {
+    dataSource = geoSolutionsjsonData;
+  } else if (pathname.includes("/geo/usecases")) {
+    dataSource = geoUsecasesjsonData;
+  }else if(pathname.includes("/gtm/usecases")){
+    dataSource = gtmUsecasesjsonData
+  }else if(pathname.includes("/gtm/solutions")){
+    dataSource = gtmSolutionsjsonData
+  }
+
   const endpoint = pathname.split("/").pop()?.toLowerCase();
 
-  const usecaseData = gtmUsecasesjsonData.find((item) => {
+  const usecaseData = dataSource?.find((item) => {
     return item.id.toLowerCase() === endpoint;
   });
 
-  // Fallback data if no match is found
   const defaultData = {
-    image: gtmUsecasesjsonData[0].image,
-    text: "Default Item",
-    subtext: "Default Description",
+    image: dataSource?.[0]?.image || "",
+    problem: "Default Problem",
+    solution: "Default Solution",
   };
 
-  const dataToDisplay: any = usecaseData || defaultData;
-
-  console.log("Endpoint:", endpoint, dataToDisplay);
+  const dataToDisplay:any = usecaseData || defaultData;
+  console.log("Endpoint:__", endpoint, dataToDisplay);
 
   return (
-    <div className="relative w-full h-screen ">
-      {/* <Image
-        src={dataToDisplay.image}
-        alt="Banner Image"
-        className="h-[650px] w-full object-cover"
-      />
-
-      <div
-        className="absolute left-0 top-0 h-[650px] w-[700px] p-6 rounded-r-md"
-        style={{
-          opacity: "0.9",
-          background: `${dataToDisplay.blurColor}`,
-          filter: "blur(100px)",
-          backdropFilter: "blur(50px)",
-          maskImage:
-            "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
-        }}
-      />
-
-      <div className="absolute left-[100px] top-10 h-[570px] w-[40%] p-6 rounded-r-md flex flex-col ">
-        <div className="text-black font-bold text-[40px] mt-32 leading-[46px]">
-          {dataToDisplay.text}
-        </div>
-
-        <div className="text-[#171717] text-lg leading-6 mt-4">
-          <p>{dataToDisplay.subtext}</p>
-        </div>
-      </div> */}
+    <div className="relative w-full flex flex-col gap-12 ">
       {pathname.split("/")[2] === "usecases" ? (
         <div>
           <Image
@@ -65,7 +72,7 @@ const page = () => {
             alt="Banner Image"
             className="h-[650px] w-full object-cover"
           />
-
+          {/* Blurry Background */}
           <div
             className="absolute left-0 top-0 h-[650px] w-[700px] p-6 rounded-r-md"
             style={{
@@ -77,16 +84,19 @@ const page = () => {
                 "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
             }}
           />
-
+          {/* Text Content */}
           <div className="absolute left-[100px] top-10 h-[570px] w-[40%] p-6 rounded-r-md flex flex-col ">
+            {/* Main Text */}
             <div className="text-black font-bold text-[40px] mt-32 leading-[46px]">
               {dataToDisplay.text}
             </div>
 
+            {/* Subtext */}
             <div className="text-[#171717] text-lg leading-6 mt-4">
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
+          <div className="mt-16"><AutoScroll icons={icons} size="small"/></div>
         </div>
       ) : (
         <div className="w-full flex items-center justify-center mt-[140px]">
@@ -109,11 +119,19 @@ const page = () => {
           <Scroll />
         </div>
       )}
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <VerticalScroll
           mainHeading={
             pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
           }
+        />
+      </div> */}
+       <div className="mb-5">
+        <VerticalScroll
+          mainHeading={
+            pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+          }
+          dataToDisplay={dataToDisplay}
         />
       </div>
     </div>

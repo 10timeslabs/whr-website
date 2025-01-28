@@ -16,9 +16,11 @@ import GetMore_6 from "/public/tracker/getmore_6.png";
 import GetMore_7 from "/public/tracker/getmore_7.png";
 import GetMore_8 from "/public/tracker/getmore_8.png";
 import GetMore_9 from "/public/tracker/getmore_9.png";
+import AutoScroll from "@/components/AutoScroll";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("Location Intel");
+  const icons = [GetMore_1, GetMore_2, GetMore_3, GetMore_4, GetMore_5, GetMore_6, GetMore_7, GetMore_8, GetMore_9]
   return (
     <div
       style={
@@ -84,82 +86,8 @@ export default function Home() {
           </section>
 
           <section>
-            <div className={`${styles.scroll_section_images}`}>
-              <Image
-                src={GetMore_1}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_2}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_3}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_4}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_5}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_6}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_7}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_8}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_9}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-
-              {/* <img src="./assets/img/getmore_2.png" className="img-fluid" width="365" height="265" alt="customericp"> */}
-              {/* <img src="./assets/img/getmore_3.png" className="img-fluid" width="365" height="265" */}
-              {/* alt="productkeywords"> */}
-              {/* <img src="./assets/img/getmore_4.png" className="img-fluid" width="365" height="265" alt="socialcause"> */}
-              {/* <img src="./assets/img/getmore_5.png" className="img-fluid" width="365" height="265" alt="peoplefinder"> */}
-              {/* <img src="./assets/img/getmore_6.png" className="img-fluid" width="365" height="265" alt="competitor"> */}
-              {/* <img src="./assets/img/getmore_7.png" className="img-fluid" width="365" height="265" */}
-              {/* alt="brandbuilding"> */}
-              {/* <img src="./assets/img/getmore_8.png" className="img-fluid" width="365" height="265" */}
-              {/* alt="speakingopportunity"> */}
-              {/* <img src="./assets/img/getmore_9.png" className="img-fluid" width="365" height="265" alt="audiencedept"> */}
+            <div>
+              <AutoScroll icons={icons} size="large"/>
             </div>
           </section>
         </div>
