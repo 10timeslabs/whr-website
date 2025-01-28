@@ -18,10 +18,11 @@ import TrackersIcon from '/public/Scroll/Trackers.svg'
 import TrendsIcon from '/public/Scroll/Trends.svg'
 import AiIcon from '/public/Scroll/AI.svg'
 import SolutionComponent from './SolutionComponent'
-import { AnimatePresence, motion } from 'framer-motion'
+// import { AnimatePresence, motion } from 'framer-motion'
 import FirstSolutionComponent from './FirstSolutionComponent'
-import LandingComponent from './LandingComponent'
+// import LandingComponent from './LandingComponent'
 import UsecaseScroll from '../usecaseScrollAnimation/UsecaseScroll'
+
 
 const Scroll = () => {
   const data = [
@@ -36,14 +37,19 @@ const Scroll = () => {
   const [isInView, setIsInView] = useState(false); // Track visibility of the div
   const scrollRef = useRef(null);
   const [scrollDirection, setScrollDirection] = useState("down"); // 'up' or 'down'
-  // const [lastScrollY, setLastScrollY] = useState(0);
- 
+
+  const debounce = (func: Function, delay: number) => {
+    let timer: ReturnType<typeof setTimeout>;
+    return (...args: any[]) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => func(...args), delay);
+    };
+  };
   const handleScroll = (e: WheelEvent) => {
     if (!isInView) return; // Only trigger if the component is in view
-
+    e.preventDefault(); // Prevent the default scroll behavior
     if (e.deltaY > 0) {
       // Scrolling down
-      e.preventDefault(); // Prevent the default scroll behavior
       if (currentIndex < data.length) {
         setCurrentIndex((prev) => {
           setScrollDirection("down"); // Set direction to down
@@ -56,18 +62,19 @@ const Scroll = () => {
     } else {
       // Scrolling up
       if (currentIndex > 0) {
-        e.preventDefault(); // Prevent the default scroll behavior
+        // e.preventDefault(); // Prevent the default scroll behavior
         setCurrentIndex((prev) => {
           setScrollDirection("up"); // Set direction to up
           return prev - 1;
         });
-      } else {
-        // Allow normal scrolling when at the first index and scrolling up
-        window.removeEventListener("wheel", handleScroll);
-      }
+      } 
+      // else {
+      //   // Allow normal scrolling when at the first index and scrolling up
+      //   window.removeEventListener("wheel", handleScroll);
+      // }
     }
   };
-
+  const debouncedHandleScroll = debounce(handleScroll, 100);
   useEffect(() => {
     // Intersection Observer to detect when the component is in view
     const observer = new IntersectionObserver(
@@ -91,18 +98,17 @@ const Scroll = () => {
     };
   }, []);
 
-  // Attach the scroll event listener to handle scroll direction
   useEffect(() => {
     if (isInView) {
-      window.addEventListener("wheel", handleScroll, { passive: false });
+      window.addEventListener("wheel", debouncedHandleScroll, { passive: false });
     } else {
-      window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("wheel", debouncedHandleScroll);
     }
 
     return () => {
-      window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("wheel", debouncedHandleScroll);
     };
-  }, [isInView, currentIndex]);
+  }, [isInView, debouncedHandleScroll, currentIndex]);
 
   return (
     <div className="min-h-[500px] w-full overflow-hidden flex justify-center" ref={scrollRef}>
@@ -174,3 +180,17 @@ const Scroll = () => {
 };
 
 export default Scroll
+
+
+  // Attach the scroll event listener to handle scroll direction
+  // useEffect(() => {
+  //   if (isInView) {
+  //     window.addEventListener("wheel", handleScroll, { passive: false });
+  //   } else {
+  //     window.removeEventListener("wheel", handleScroll);
+  //   }
+
+  //   return () => {
+  //     window.removeEventListener("wheel", handleScroll);
+  //   };
+  // }, [isInView, currentIndex]);
