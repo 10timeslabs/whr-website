@@ -10,23 +10,51 @@ import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import Scroll from "@/components/scrollAnimation/Scroll";
 import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
 import AutoScroll from "@/components/AutoScroll";
+import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
+import { geoUsecasesjsonData } from "../../../../../data/geoUsecasesData";
+import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
 
 const page = () => {
   const pathname = usePathname();
+  // const endpoint = pathname.split("/").pop()?.toLowerCase();
+
+  // const usecaseData = gtmUsecasesjsonData.find((item) => {
+  //   return item.id.toLowerCase() === endpoint;
+  // });
+
+  // // Fallback data if no match is found
+  // const defaultData = {
+  //   image: gtmUsecasesjsonData[0].image,
+  //   text: "Default Item",
+  //   subtext: "Default Description",
+  // };
+
+  // const dataToDisplay: any = usecaseData || defaultData;
+  let dataSource = null;
+  if (pathname.includes("/geo/solutions")) {
+    dataSource = geoSolutionsjsonData;
+  } else if (pathname.includes("/geo/usecases")) {
+    dataSource = geoUsecasesjsonData;
+  }else if(pathname.includes("/gtm/usecases")){
+    dataSource = gtmUsecasesjsonData
+  }else if(pathname.includes("/gtm/solutions")){
+    dataSource = gtmSolutionsjsonData
+  }
+
   const endpoint = pathname.split("/").pop()?.toLowerCase();
 
-  const usecaseData = gtmUsecasesjsonData.find((item) => {
+  const usecaseData = dataSource?.find((item) => {
     return item.id.toLowerCase() === endpoint;
   });
 
-  // Fallback data if no match is found
   const defaultData = {
-    image: gtmUsecasesjsonData[0].image,
-    text: "Default Item",
-    subtext: "Default Description",
+    image: dataSource?.[0]?.image || "",
+    problem: "Default Problem",
+    solution: "Default Solution",
   };
 
-  const dataToDisplay: any = usecaseData || defaultData;
+  const dataToDisplay:any = usecaseData || defaultData;
+  console.log("Endpoint:__", endpoint, dataToDisplay);
 
   return (
     <div className="relative w-full flex flex-col gap-12 ">
@@ -84,11 +112,19 @@ const page = () => {
           <Scroll />
         </div>
       )}
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <VerticalScroll
           mainHeading={
             pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
           }
+        />
+      </div> */}
+       <div className="mb-5">
+        <VerticalScroll
+          mainHeading={
+            pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+          }
+          dataToDisplay={dataToDisplay}
         />
       </div>
     </div>
