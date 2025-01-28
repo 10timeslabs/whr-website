@@ -16,6 +16,8 @@ import ModelImage from '/public/Products/model_enrichment.png'
 import ResearchImage from '/public/Products/Research.png'
 import TrendsImage from '/public/Products/trends_common.png'
 import { motion } from 'framer-motion';
+import LeftArrow from '/public/LeftArrow.svg'
+import RightArrow from '/public/RightArrow.svg'
 
 const ProductsCarousel = () => {
     const data = [
@@ -32,12 +34,16 @@ const ProductsCarousel = () => {
     const handlePrev = () => {
         if (currentIndex > 0) {
             setCurrentIndex(currentIndex - 1)
+        }else{
+            setCurrentIndex(4)
         }
     }
 
     const handleNext = () => {
         if (currentIndex < 4) {
             setCurrentIndex(currentIndex + 1)
+        }else{
+            setCurrentIndex(0)
         }
     }
 
@@ -54,8 +60,8 @@ const ProductsCarousel = () => {
                         justifyContent: "center",
                     }}
                 ></div>
-                <div className='absolute left-0' onClick={handlePrev}>
-                    left
+                <div className='absolute left-[10%] top-[30%] w-[40px] h-[40px] flex items-center justify-center bg-white rounded-[40px] shadow-md cursor-pointer' onClick={handlePrev}>
+                    <Image src={LeftArrow} alt='left'/>
                 </div>
                 <motion.div className="text-sm font-medium border border-color rounded-xl py-1 px-7 mt-10"
                     key={`topic-${currentIndex}`} // Unique key for heading
@@ -123,8 +129,8 @@ const ProductsCarousel = () => {
                                     </div>}
 
                 </motion.div>
-                <div className='absolute' onClick={handleNext}>
-                    right
+                <div className='absolute right-[10%] top-[30%] w-[40px] h-[40px] flex items-center justify-center bg-white rounded-[40px] shadow-md cursor-pointer' onClick={handleNext}>
+                    <Image src={RightArrow} alt='right'/>
                 </div>
             </div>
         </div>
