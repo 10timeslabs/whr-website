@@ -14,9 +14,10 @@ import CircleContainer from "@/components/circleAnimation/CircleContainer";
 import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 import { companyLogos } from "../../data/companyLogoData";
 import Clarity from "@/components/clarityAnimation/Clarity";
+import UseCasesContainer from "@/components/useCaseSection/UseCasesContainer";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("Location Intel");
+
   return (
     <div className={`py-[120px]`}>
       <div className={`text-center`}>
@@ -27,30 +28,11 @@ export default function Home() {
           Unlock Real-World Action Intel with WHR
         </p>
       </div>
+      <div className="w-full flex items-center justify-center mt-10">
+        <UseCasesContainer />
+      </div>
 
-      <section className="flex justify-center items-center mt-8">
-        <nav className={styles.nav}>
-          <div className={styles.tabs}>
-            <button
-              className={
-                activeTab === "Location Intel" ? styles.activeTab : ""
-              }
-              onClick={() => setActiveTab("Location Intel")}
-            >
-              Location Intel
-            </button>
-            <button
-              className={
-                activeTab === "Industry Intel" ? styles.activeTab : ""
-              }
-              onClick={() => setActiveTab("Industry Intel")}
-            >
-              Industry Intel
-            </button>
-          </div>
-        </nav>
-      </section>
-      <div className="w-full"><Clarity/></div>
+      <div className="w-full"><Clarity /></div>
       <div className="flex flex-col gap-6 items-center mb-[50px]">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS USING WHR</div>
         <AutoScroll icons={companyLogos} size="small" />
