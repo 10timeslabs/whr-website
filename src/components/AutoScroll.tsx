@@ -19,8 +19,8 @@ const AutoScroll = ({icons, size} : Props) => {
               src={icon}
               alt={`Icon ${index}`}
               layout="intrinsic"
-              width={size === "small" ? 100 : 300}
-              height={size === "small" ? 50 : 100}
+              width={size === "small" ? 150 : 300}
+              height={size === "small" ? 80 : 100}
             />
           </div>
         ))}

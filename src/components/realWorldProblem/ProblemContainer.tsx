@@ -31,7 +31,7 @@ const ProblemContainer = () => {
                     <div className='text-[64px] leading-[70px]'>Wht, Whn, <span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent font-semibold'>Whr?</span></div>
                     <div className='text-[var(--secondary-text-color)]'>Built with billions of signals, millions of sources, thousands of models to answer real questions</div>
                 </div>
-                <div className='w-[60%] flex flex-col gap-5'>
+                <div className='w-[60%] flex flex-col gap-8'>
                     <div className="grid grid-cols-2 gap-4">
                         {data.map((problem, key) => (
                             <ProblemCard
@@ -42,7 +42,7 @@ const ProblemContainer = () => {
                             />
                         ))}
                     </div>
-                    <div className='w-full h-[350px]'><EngineScroll/></div>
+                    <div className='w-full h-[500px]'><EngineScroll/></div>
                 </div>
             </div>
         </div>
