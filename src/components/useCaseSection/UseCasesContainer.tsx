@@ -3,6 +3,7 @@ import SparkleImg from "/public/sparkle.png";
 import Image from 'next/image';
 import CircleImage from '/public/CircularAnimation/Circle.png'
 import { dropdownValues } from '../../../data/dropdownData';
+import GridImage from '/public/usecase_grid.png'
 
 const UseCasesContainer = () => {
 
@@ -11,7 +12,9 @@ const UseCasesContainer = () => {
   const geoUsecases = dropdownValues.geo["Use Cases"];
 
   return (
-    <div className='h-[520px] w-[1300px] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden'>
+    <div className='h-[520px] w-[1300px] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden'
+    // style={{ backgroundImage: `url(${GridImage.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       <div
         className="absolute right-0 top-[-150px] h-[700px] w-full -z-10"
         style={{
@@ -22,7 +25,9 @@ const UseCasesContainer = () => {
           justifyContent: "center",
         }}
       ></div>
-      <Image src={CircleImage} alt="circle" width={690} height={690} unoptimized className='absolute top-[40%] -z-10' />
+      <Image src={GridImage} alt='grid' className='absolute -z-[2]'/>
+      <Image src={CircleImage} alt="circle" width={690} height={690} unoptimized className='absolute top-[40%] 
+      -z-[1]' />
       <div className='w-[80%] flex items-start justify-between mt-10'>
         <Image src={SparkleImg} alt="star" height={58} width={58} />
         <div className='flex flex-col gap-8 items-center'>
