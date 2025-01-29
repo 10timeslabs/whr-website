@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./navbar.style.module.css";
 import Link from "next/link";
 import Logo from "/public/logo/croppedlogo.png";
@@ -9,7 +9,20 @@ import { Cross, Menu } from "geist-icons";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    if (modalRef.current) {
+      if (mobileMenuOpen) {
+        // Animate modal to be visible
+        modalRef.current.classList.remove('opacity-0', '-translate-y-full');
+        modalRef.current.classList.add('opacity-100', 'translate-y-0');
+      } else {
+        // Animate modal to be hidden
+        modalRef.current.classList.add('opacity-0', '-translate-y-full');
+        modalRef.current.classList.remove('opacity-100', 'translate-y-0');
+      }
+    }
+  }, [mobileMenuOpen]);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -135,18 +148,19 @@ const Navbar = () => {
     //   </div>
     // </nav>
 
-   
     <nav
       className={`fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out`}
     >
       <div
-        className={`max-w-7xl mx-auto px-6 py-4 flex items-center transition-all duration-1000 ease-in-out ${
+        className={`mx-auto px-6 py-4 flex items-center transition-all duration-1000 ease-in-out ${
           isScrolled
-            ? "bg-white shadow-md justify-between space-x-8 transform scale-95 max-w-3xl rounded-full"
+            ? "bg-white shadow-md justify-between space-x-8 transform scale-95 rounded-full"
             : "bg-transparent justify-around py-2"
         }`}
+        style={{
+          maxWidth: isScrolled ? "48rem" : "80rem",
+        }}
       >
-        {/* Logo Section */}
         <div className="flex-shrink-0 flex items-center space-x-2">
           <Link
             href="/"
@@ -208,48 +222,61 @@ const Navbar = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="absolute top-14 left-0 w-full bg-white shadow-lg z-40 py-4 px-6 md:hidden">
-          <ul className="space-y-4">
-            <li>
-              <Link href="/geo" className="text-black hover:text-primary">
-                Geo
-              </Link>
-            </li>
-            <li>
-              <Link href="/gtm" className="text-black hover:text-primary">
-                Gtm
-              </Link>
-            </li>
-            <li>
-              <Link href="/geni" className="text-black hover:text-primary">
-                Geni
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="text-black hover:text-primary">
-                About
-              </Link>
-            </li>
-            {/* Mobile Action Buttons */}
-            <li>
-              <Link
-                href="/signup"
-                className="flex items-center justify-center w-[150px] px-4 py-2 text-white bg-primary rounded hover:bg-violet-400 transition-colors duration-300 ease-in-out"
-              >
-                Sign Up
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/demo"
-                className="flex items-center justify-center w-[150px] px-6 py-2 text-primary border border-primary rounded hover:bg-violet-900 hover:text-white transition-colors duration-300 ease-in-out"
-              >
-                Demo
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
+  <div
+    className="fixed top-0 left-0 w-full h-screen bg-white shadow-lg z-40 flex flex-col items-center justify-center opacity-0 transform -translate-y-full transition-all duration-500 ease-out"
+    style={{ transition: 'opacity 0.5s ease-out, transform 0.5s ease-out' }}
+    ref={modalRef} // If you're using refs
+  >
+    <button
+      onClick={() => setMobileMenuOpen(false)}
+      className="absolute top-4 right-4 p-2 rounded-full bg-primary text-white"
+      aria-label="Close Menu"
+    >
+      <Cross />
+    </button>
+    <ul  className="text-left space-y-6  text-2xl font-medium">
+      <li>
+        <Link href="/geo" className="text-black hover:text-primary">
+          Geo
+        </Link>
+      </li>
+      <li>
+        <Link href="/gtm" className="text-black hover:text-primary">
+          Gtm
+        </Link>
+      </li>
+      <li>
+        <Link href="/geni" className="text-black hover:text-primary">
+          Geni
+        </Link>
+      </li>
+      <li>
+        <Link href="/about" className="text-black hover:text-primary">
+          About
+        </Link>
+      </li>
+      {/* Mobile Action Buttons */}
+      <li>
+        <Link
+          href="/signup"
+          className="flex items-center justify-center w-[250px] px-4 py-2 text-white bg-primary rounded hover:bg-violet-400 transition-colors duration-300 ease-in-out"
+        >
+          Sign Up
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/demo"
+          className="flex items-center justify-center w-[250px] px-6 py-2 text-primary border border-primary rounded hover:bg-violet-900 hover:text-white transition-colors duration-300 ease-in-out"
+        >
+          Demo
+        </Link>
+      </li>
+    </ul>
+  </div>
+)}
+
+
     </nav>
   );
 };

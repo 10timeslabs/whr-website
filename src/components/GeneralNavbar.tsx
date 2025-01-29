@@ -757,11 +757,15 @@ const GeneralNavbar = () => {
         className={`fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out`}
       >
         <div
-          className={`max-w-7xl mx-auto px-8 py-4 flex items-center transition-all duration-1000 ease-in-out ${
+          
+          className={`mx-auto px-6 py-4 flex items-center transition-all duration-1000 ease-in-out ${
             isScrolled
-              ? "bg-white shadow-md justify-between space-x-4 transform scale-95 max-w-4xl rounded-full"
+              ? "bg-white shadow-md justify-between space-x-8 transform scale-95 rounded-full"
               : "bg-transparent justify-around py-2"
           }`}
+          style={{
+            maxWidth: isScrolled ? "56rem"  : "80rem" ,
+          }}
         >
           <div className="flex-shrink-0 flex items-center">
             <Link
