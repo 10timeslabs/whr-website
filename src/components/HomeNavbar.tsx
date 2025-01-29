@@ -5,8 +5,10 @@ import Link from "next/link";
 import Logo from "/public/logo/croppedlogo.png";
 import Image from "next/image";
 import WhrAIText from "/public/logo/Whr.ai.png";
+import { Cross, Menu } from "geist-icons";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -133,16 +135,18 @@ const Navbar = () => {
     //   </div>
     // </nav>
 
+   
     <nav
       className={`fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out`}
     >
       <div
-        className={`max-w-7xl mx-auto px-4 py-2 flex items-center transition-all duration-1000 ease-in-out ${
+        className={`max-w-7xl mx-auto px-6 py-4 flex items-center transition-all duration-1000 ease-in-out ${
           isScrolled
-            ? "bg-white shadow-md justify-between space-x-8 transform scale-95 max-w-3xl rounded-lg"
-            : "bg-transparent justify-evenly py-2"
+            ? "bg-white shadow-md justify-between space-x-8 transform scale-95 max-w-3xl rounded-full"
+            : "bg-transparent justify-around py-2"
         }`}
       >
+        {/* Logo Section */}
         <div className="flex-shrink-0 flex items-center space-x-2">
           <Link
             href="/"
@@ -158,6 +162,16 @@ const Navbar = () => {
               <Image src={WhrAIText} alt="nav-logo" className="h-6 w-auto" />
             </div>
           </Link>
+        </div>
+
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="p-2 rounded-md bg-primary text-white"
+            aria-label="Toggle Menu"
+          >
+            {mobileMenuOpen ? <Cross /> : <Menu />}
+          </button>
         </div>
 
         <div
@@ -177,7 +191,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex space-x-4">
+        <div className="hidden md:flex space-x-4">
           <Link
             href="/signup"
             className="px-6 py-2 text-white bg-primary rounded hover:bg-violet-400 transition-colors duration-300 ease-in-out"
@@ -192,6 +206,50 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+
+      {mobileMenuOpen && (
+        <div className="absolute top-14 left-0 w-full bg-white shadow-lg z-40 py-4 px-6 md:hidden">
+          <ul className="space-y-4">
+            <li>
+              <Link href="/geo" className="text-black hover:text-primary">
+                Geo
+              </Link>
+            </li>
+            <li>
+              <Link href="/gtm" className="text-black hover:text-primary">
+                Gtm
+              </Link>
+            </li>
+            <li>
+              <Link href="/geni" className="text-black hover:text-primary">
+                Geni
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="text-black hover:text-primary">
+                About
+              </Link>
+            </li>
+            {/* Mobile Action Buttons */}
+            <li>
+              <Link
+                href="/signup"
+                className="flex items-center justify-center w-[150px] px-4 py-2 text-white bg-primary rounded hover:bg-violet-400 transition-colors duration-300 ease-in-out"
+              >
+                Sign Up
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/demo"
+                className="flex items-center justify-center w-[150px] px-6 py-2 text-primary border border-primary rounded hover:bg-violet-900 hover:text-white transition-colors duration-300 ease-in-out"
+              >
+                Demo
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
