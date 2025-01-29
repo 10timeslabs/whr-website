@@ -6,6 +6,11 @@ import AiImage from '/public/Products/aiassistant.png'
 import ModelImage from '/public/Products/model_enrichment.png'
 import ResearchImage from '/public/Products/Research.png'
 import TrendsImage from '/public/Products/trends_common.png'
+import Aiicon from '/public/Products/aiicon.svg'
+import Modelicon from '/public/Products/modelicon.svg'
+import Researchicon from '/public/Products/researchicon.svg'
+import Trackericon from '/public/Products/trackericon.svg'
+import Trendsicon from '/public/Products/trendsicon.svg'
 import { motion } from 'framer-motion';
 import LeftArrow from '/public/LeftArrow.svg'
 import RightArrow from '/public/RightArrow.svg'
@@ -13,11 +18,11 @@ import { trackerImageData } from '../../../data/trackerImagesData';
 
 const ProductsCarousel = () => {
     const data = [
-        { topic: "SEARCH", heading: "Visualisation Engine", subheading: "Discover Insights Seamlessly with List, Map, and Calendar Views.", bottom: "-50%" },
-        { topic: "SMART TRACKERS", heading: "Deploy Agents", subheading: "Activate intelligence with agents that gather and deliver precise data.", bottom: "35%" },
-        { topic: "DATA MODELLING", heading: "Model Enrichment", subheading: "Transform raw data into actionable insights with advanced enrichment capabilities.", bottom: "-5%" },
-        { topic: "TRENDS", heading: "Identify Trends", subheading: "Uncover Patterns, Predict Future Movements, and Stay Ahead of the Curve.", bottom: "-4%" },
-        { topic: "CONSULTING", heading: "Consultant Service", subheading: "Get Tailored Insights to Answer Tough Questions and Drive Strategic Decisions", bottom: "-5%" },
+        { topic: "SEARCH", heading: "Visualisation Engine", subheading: "Discover Insights Seamlessly with List, Map, and Calendar Views.", bottom: "-20%", icon : Researchicon },
+        { topic: "SMART TRACKERS", heading: "Deploy Agents", subheading: "Activate intelligence with agents that gather and deliver precise data.", bottom: "15%",icon : Trackericon },
+        { topic: "DATA MODELLING", heading: "Model Enrichment", subheading: "Transform raw data into actionable insights with advanced enrichment capabilities.", bottom: "-5%",icon : Modelicon },
+        { topic: "TRENDS", heading: "Identify Trends", subheading: "Uncover Patterns, Predict Future Movements, and Stay Ahead of the Curve.", bottom: "-4%", icon : Trendsicon },
+        { topic: "CONSULTING", heading: "Consultant Service", subheading: "Get Tailored Insights to Answer Tough Questions and Drive Strategic Decisions", bottom: "-5%",icon : Aiicon },
     ]
 
     const [currentIndex, setCurrentIndex] = useState<number>(0)
@@ -54,7 +59,7 @@ const ProductsCarousel = () => {
                 <div className='absolute left-[10%] top-[30%] w-[40px] h-[40px] flex items-center justify-center bg-white rounded-[40px] shadow-md cursor-pointer' onClick={handlePrev}>
                     <Image src={LeftArrow} alt='left'/>
                 </div>
-                <motion.div className="text-sm font-medium border border-color rounded-xl py-1 px-7 mt-10"
+                <motion.div className="mt-10"
                     key={`topic-${currentIndex}`} // Unique key for heading
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -63,7 +68,8 @@ const ProductsCarousel = () => {
                         ease: "easeOut",
                     }}
                 >
-                    {data[currentIndex].topic}
+                    {/* {data[currentIndex].topic} */}
+                    <Image src={data[currentIndex].icon} alt='icon' height={64} width={64}/>
                 </motion.div>
 
                 <div className="w-[70%] flex items-start justify-between mt-5">
@@ -108,7 +114,7 @@ const ProductsCarousel = () => {
                     }}
                     style={{ bottom: data[currentIndex].bottom }}>
                     {currentIndex === 0 ?
-                        <Image src={ResearchImage} alt='ai' /> :
+                        <Image src={ResearchImage} alt='ai' width={900} height={400}/> :
                         currentIndex === 1 ?
                             <AutoScroll size='large' icons={trackerImageData} /> :
                             currentIndex === 2 ?
