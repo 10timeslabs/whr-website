@@ -39,8 +39,8 @@ const CircleContainer = () => {
 
 
   return (
-    <div className="h-[542px] w-full overflow-hidden flex justify-center">
-      <div className='w-[1300px] border border-[var(--border-color)] relative rounded-xl h-full items-center  overflow-hidden flex flex-col justify-start'>
+    <div className="h-[542px] w-full overflow-hidden flex justify-center max-[1325px]:h-[500px] max-[775px]:h-[400px]">
+      <div className='w-[87%] border border-[var(--border-color)] relative rounded-xl h-full items-center  overflow-hidden flex flex-col justify-start '>
         <div
           className="absolute right-0 top-[-150px] h-[600px] w-full -z-10"
           style={{
@@ -55,8 +55,8 @@ const CircleContainer = () => {
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7 mt-10">
           WHY CHOOSE US
         </div>
-        <div className="w-[70%] flex items-start justify-between mt-5">
-          <Image src={SparkleImg} alt="star" height={38} width={38} />
+        <div className="w-[70%] flex items-start justify-between mt-5 max-[775px]:w-full max-[775px]:justify-center">
+          <Image src={SparkleImg} alt="star" height={38} width={38} className='max-[775px]:hidden' />
           <div className='text-center'>
 
             <motion.div
@@ -67,7 +67,7 @@ const CircleContainer = () => {
                 duration: 0.8,      // Duration for fade in and fade out
                 ease: "easeOut"     // Easing for smooth transition
               }}
-              className="font-semibold text-[40px]"
+              className="font-semibold text-[40px] max-[775px]:text-[28px]"
             >
               {typing ? (
                 <Typewriter
@@ -87,7 +87,7 @@ const CircleContainer = () => {
                 duration: 0.8,      // Duration for fade in and fade out
                 ease: "easeOut"     // Easing for smooth transition
               }}
-              className="text-lg text-[var(--secondary-text-color)]"
+              className="text-lg text-[var(--secondary-text-color)] max-[775px]:text-[14px]"
             >
               {typing ? (
                 <Typewriter
@@ -101,9 +101,9 @@ const CircleContainer = () => {
             </motion.div>
           </div>
 
-          <Image src={SparkleImg} alt="star" height={38} width={38} />
+          <Image src={SparkleImg} alt="star" height={38} width={38} className='max-[775px]:hidden' />
         </div>
-        <div className='absolute bottom-[-60%]'><CircleAnimation /></div>
+        <div className='absolute bottom-[-60%] max-[775px]:bottom-[-30%]'><CircleAnimation /></div>
       </div>
     </div>
   )

@@ -291,7 +291,7 @@
 
 .tabs .activeTab {
     background-color: var(--primary-foreground);
-    color: var(--primary-text-color);
+    color: var(--primary-color);
 }
 
 

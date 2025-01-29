@@ -19,6 +19,7 @@ const CircleAnimation = () => {
 
     const [rotation, setRotation] = useState(0); // State to track the rotation angle
     const [activeIndex, setActiveIndex] = useState(0);
+    const [circleSize, setCircleSize] = useState(600);
     // const element = 9
 
     useEffect(() => {
@@ -34,20 +35,46 @@ const CircleAnimation = () => {
         // Cleanup interval on component unmount
         return () => clearInterval(intervalId);
     }, [activeIndex]);
+    useEffect(() => {
+        // Function to check window width and adjust size
+        const checkWindowSize = () => {
+            if(window.innerWidth <= 775){
+                setCircleSize(300); // Set size to 500x500 if screen width <= 1325px    
+            }
+            else if (window.innerWidth <= 1325) {
+                setCircleSize(500); // Set size to 500x500 if screen width <= 1325px
+            } else {
+                setCircleSize(600); // Otherwise, set size to 600x600
+            }
+        };
+
+        // Initial check on mount
+        checkWindowSize();
+
+        // Listen to window resize and update the size dynamically
+        window.addEventListener('resize', checkWindowSize);
+
+        // Cleanup event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', checkWindowSize);
+        };
+    }, []);
 
     return (
-        <motion.div className="relative w-[600px] h-[600px] bg-gray-200 rounded-full mx-auto mt-8"
+        <motion.div className="relative bg-gray-200 rounded-full mx-auto mt-8"
             style={{
                 transform: `rotate(${rotation}deg)`, // Apply the calculated rotation
                 transition: "transform .4s ease", // Smooth transition for rotation
+                height : circleSize,
+                width :  circleSize
             }}
         >
-            <Image src={CircleImage} alt='circle' width={600} height={600}/>
+            <Image src={CircleImage} alt='circle' width={circleSize} height={circleSize}/>
             {Array.from({ length: images.length }).map((_, index) => {
                 const angle = (index / images.length) * 360; // Angle in degrees for each element
                 const radians = (angle - 90) * (Math.PI / 180); // Convert to radians and shift by -90° to start at the top
-                const x = 300 + 300 * Math.cos(radians); // X-coordinate
-                const y = 300 + 300 * Math.sin(radians);
+                const x = circleSize/2 + circleSize/2 * Math.cos(radians); // X-coordinate
+                const y = circleSize/2 + circleSize/2 * Math.sin(radians);
                 const isActive = index === activeIndex;
                 return (
                     <motion.div
@@ -59,8 +86,8 @@ const CircleAnimation = () => {
                             transform: "translate(-50%, -50%)",
                         }}
                         animate={{
-                            width: isActive ? "140px" : "90px", // Animate width
-                            height: isActive ? "140px" : "90px", // Animate height
+                            width: circleSize === 300 ? isActive ? "100px" : "60px" :  isActive ? "140px" : "90px", // Animate width
+                            height:  circleSize === 300 ? isActive ? "100px" : "60px" :  isActive ? "140px" : "90px", // Animate height
                         }}
                         transition={{
                             duration: .5, // Smooth transition duration

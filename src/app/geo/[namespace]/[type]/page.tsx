@@ -17,6 +17,8 @@ import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
 import CircleAnimation from "@/components/circleAnimation/CircleAnimation";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
+import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
+import { companyLogos } from "../../../../../data/companyLogoData";
 
 const page = () => {
   const pathname = usePathname();
@@ -95,14 +97,14 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
-          <div className="mt-16"><AutoScroll/></div>
+          <div className="mt-16"><AutoScroll icons={companyLogos} size="small"/></div>
         </div>
       ) : (
         <div className="w-full flex items-center justify-center mt-[140px]">
           <Section />
         </div>
       )}
-      <div>
+      <div className="w-full flex justify-center">
         <ProblemSolution />
       </div>
       {pathname.split("/")[2] === "solutions" ? (
@@ -134,6 +136,9 @@ const page = () => {
         />
       </div>
       <CircleContainer/>
+      <div>
+        <ProductsCarousel/>
+      </div>
     </div>
   );
 };

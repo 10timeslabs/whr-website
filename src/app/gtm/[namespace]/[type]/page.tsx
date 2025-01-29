@@ -13,6 +13,7 @@ import AutoScroll from "@/components/AutoScroll";
 import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
 import { geoUsecasesjsonData } from "../../../../../data/geoUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
+import { companyLogos } from "../../../../../data/companyLogoData";
 
 const page = () => {
   const pathname = usePathname();
@@ -89,7 +90,7 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
-          <div className="mt-16"><AutoScroll/></div>
+          <div className="mt-16"><AutoScroll icons={companyLogos} size="small"/></div>
         </div>
       ) : (
         <div className="w-full flex items-center justify-center mt-[140px]">
