@@ -15,6 +15,7 @@ import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 import { companyLogos } from "../../data/companyLogoData";
 import Clarity from "@/components/clarityAnimation/Clarity";
 import UseCasesContainer from "@/components/useCaseSection/UseCasesContainer";
+import ProblemContainer from "@/components/realWorldProblem/ProblemContainer";
 
 export default function Home() {
 
@@ -33,7 +34,8 @@ export default function Home() {
       </div>
 
       <div className="w-full"><Clarity /></div>
-      <div className="flex flex-col gap-6 items-center mb-[50px]">
+      <div className="w-full"><ProblemContainer/></div>
+      <div className="flex flex-col gap-6 items-center mt-10 mb-[50px]">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS USING WHR</div>
         <AutoScroll icons={companyLogos} size="small" />
       </div>

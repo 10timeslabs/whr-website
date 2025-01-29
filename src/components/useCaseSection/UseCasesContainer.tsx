@@ -41,7 +41,7 @@ const UseCasesContainer = () => {
               GEO
             </button>
           </div>
-          <div>Where should you Go</div>
+          <div className='text-2xl'>Where should you Go</div>
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">USECASES</div>
         </div>
         <Image src={SparkleImg} alt="star" height={58} width={58} />
