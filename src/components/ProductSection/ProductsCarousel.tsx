@@ -2,15 +2,6 @@ import React, { useState } from 'react'
 import SparkleImg from "/public/sparkle.png";
 import Image from 'next/image';
 import AutoScroll from '../AutoScroll';
-import GetMore_1 from "/public/tracker/getmore_1.png";
-import GetMore_2 from "/public/tracker/getmore_2.png";
-import GetMore_3 from "/public/tracker/getmore_3.png";
-import GetMore_4 from "/public/tracker/getmore_4.png";
-import GetMore_5 from "/public/tracker/getmore_5.png";
-import GetMore_6 from "/public/tracker/getmore_6.png";
-import GetMore_7 from "/public/tracker/getmore_7.png";
-import GetMore_8 from "/public/tracker/getmore_8.png";
-import GetMore_9 from "/public/tracker/getmore_9.png";
 import AiImage from '/public/Products/aiassistant.png'
 import ModelImage from '/public/Products/model_enrichment.png'
 import ResearchImage from '/public/Products/Research.png'
@@ -18,6 +9,7 @@ import TrendsImage from '/public/Products/trends_common.png'
 import { motion } from 'framer-motion';
 import LeftArrow from '/public/LeftArrow.svg'
 import RightArrow from '/public/RightArrow.svg'
+import { trackerImageData } from '../../../data/trackerImagesData';
 
 const ProductsCarousel = () => {
     const data = [
@@ -29,7 +21,6 @@ const ProductsCarousel = () => {
     ]
 
     const [currentIndex, setCurrentIndex] = useState<number>(0)
-    const icons = [GetMore_1, GetMore_2, GetMore_3, GetMore_4, GetMore_5, GetMore_6, GetMore_7, GetMore_8, GetMore_9]
 
     const handlePrev = () => {
         if (currentIndex > 0) {
@@ -119,7 +110,7 @@ const ProductsCarousel = () => {
                     {currentIndex === 0 ?
                         <Image src={ResearchImage} alt='ai' /> :
                         currentIndex === 1 ?
-                            <AutoScroll size='large' icons={icons} /> :
+                            <AutoScroll size='large' icons={trackerImageData} /> :
                             currentIndex === 2 ?
                                 <Image src={ModelImage} alt='ai' width={500} height={370} /> :
                                 currentIndex === 3 ?

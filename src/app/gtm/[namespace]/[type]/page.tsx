@@ -13,16 +13,10 @@ import AutoScroll from "@/components/AutoScroll";
 import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
 import { geoUsecasesjsonData } from "../../../../../data/geoUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
-import Acme from "/public/auto_scroll_svg/acme 1.svg";
-import Apex from "/public/auto_scroll_svg/apex 1.svg";
-import Celestia from "/public/auto_scroll_svg/celestia 1.svg";
-import Echo from "/public/auto_scroll_svg/echo 1.svg";
-import Plus from "/public/auto_scroll_svg/pulse 1.svg";
-import Quantum from "/public/auto_scroll_svg/quantum 1 (1).svg";
+import { companyLogos } from "../../../../../data/companyLogoData";
 
 const page = () => {
   const pathname = usePathname();
-    const icons = [Acme, Apex, Celestia, Echo, Plus, Quantum];
   // const endpoint = pathname.split("/").pop()?.toLowerCase();
 
   // const usecaseData = gtmUsecasesjsonData.find((item) => {
@@ -96,7 +90,7 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
-          <div className="mt-16"><AutoScroll icons={icons} size="small"/></div>
+          <div className="mt-16"><AutoScroll icons={companyLogos} size="small"/></div>
         </div>
       ) : (
         <div className="w-full flex items-center justify-center mt-[140px]">
