@@ -22,7 +22,7 @@ const ProductsCarousel = () => {
         { topic: "SMART TRACKERS", heading: "Deploy Agents", subheading: "Activate intelligence with agents that gather and deliver precise data.", bottom: "15%",icon : Trackericon },
         { topic: "DATA MODELLING", heading: "Model Enrichment", subheading: "Transform raw data into actionable insights with advanced enrichment capabilities.", bottom: "-5%",icon : Modelicon },
         { topic: "TRENDS", heading: "Identify Trends", subheading: "Uncover Patterns, Predict Future Movements, and Stay Ahead of the Curve.", bottom: "-4%", icon : Trendsicon },
-        { topic: "CONSULTING", heading: "Consultant Service", subheading: "Get Tailored Insights to Answer Tough Questions and Drive Strategic Decisions", bottom: "-5%",icon : Aiicon },
+        { topic: "CONSULTING", heading: "Consultant Service", subheading: "Get Tailored Insights to Answer Tough Questions and Drive Strategic Decisions", bottom: "-1%",icon : Aiicon },
     ]
 
     const [currentIndex, setCurrentIndex] = useState<number>(0)
@@ -69,10 +69,10 @@ const ProductsCarousel = () => {
                     }}
                 >
                     {/* {data[currentIndex].topic} */}
-                    <Image src={data[currentIndex].icon} alt='icon' height={64} width={64}/>
+                    <Image src={data[currentIndex].icon} alt='icon' height={80} width={80}/>
                 </motion.div>
 
-                <div className="w-[70%] flex items-start justify-between mt-5">
+                <div className="w-[70%] flex items-start justify-between mt-1">
                     <Image src={SparkleImg} alt="star" height={38} width={38} />
                     <div className='text-center'>
                         <motion.div
@@ -120,9 +120,9 @@ const ProductsCarousel = () => {
                             currentIndex === 2 ?
                                 <Image src={ModelImage} alt='ai' width={500} height={370} /> :
                                 currentIndex === 3 ?
-                                    <Image src={TrendsImage} alt='ai' width={800} height={370} unoptimized /> :
+                                    <Image src={TrendsImage} alt='ai' width={700} height={370} unoptimized /> :
                                     <div className='bg-white rounded-xl shadow-md p-5'>
-                                        <Image src={AiImage} alt='ai' width={700} height={370} />
+                                        <Image src={AiImage} alt='ai' width={600} height={370} />
                                     </div>}
 
                 </motion.div>
