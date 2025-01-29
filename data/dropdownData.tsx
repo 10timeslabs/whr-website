@@ -44,7 +44,10 @@ import { AIAssistantIcon,  APIModelIcon,
     GTM_UseCase_6,
     GTM_UseCase_7,
     GTM_UseCase_8,
-    GTM_UseCase_9, } from "../svgicons/icons";
+    GTM_UseCase_9,
+    SearchIcon,
+    TrackerIcon,
+    TrendsIcon, } from "../svgicons/icons";
 
 export const dropdownValues: any = {
     gtm: {
@@ -430,14 +433,14 @@ export const dropdownValues: any = {
           href: "/geo/product1",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          // icon: <MagnifyingGlass />,
+          icon:<SearchIcon color="currentColor"/>
         },
         {
           label: "Smart Tracker",
           href: "/geo/product2",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          // icon: <LineChart />,
+          icon :<TrackerIcon color="currentColor"/>
         },
         {
           label: "AI Assistant",
@@ -451,7 +454,7 @@ export const dropdownValues: any = {
           href: "/geo/product2",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          // icon: <ChartBarRandom />,
+          icon:<TrendsIcon color="currentColor"/>
         },
         {
           label: "Coordinate",
