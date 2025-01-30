@@ -31,35 +31,35 @@ const ProductsCarousel = () => {
     useEffect(() => {
         const updateBottomValue = () => {
             if (window.innerWidth <= 650 && currentIndex === 0) {
-              setBottomValue("10%"); // Change bottom to 10% if width is 650px or less
+                setBottomValue("10%"); // Change bottom to 10% if width is 650px or less
             } else if (window.innerWidth <= 875 && currentIndex === 0) {
-              setBottomValue("-5%"); // Change bottom to -5% if width is between 651px and 875px
+                setBottomValue("-5%"); // Change bottom to -5% if width is between 651px and 875px
             } else if (currentIndex === 0) {
-              setBottomValue(data[0].bottom); // Restore original value if width increases
+                setBottomValue(data[0].bottom); // Restore original value if width increases
             }
-          };
-      
+        };
+
         updateBottomValue(); // Run on initial load
         window.addEventListener("resize", updateBottomValue); // Listen for resize events
-      
-        return () => window.removeEventListener("resize", updateBottomValue); // Cleanup
-      }, []);
 
+        return () => window.removeEventListener("resize", updateBottomValue); // Cleanup
+    }, []);
+
+    // Auto-change index every 2 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Loop back to 0
+        }, 3000);
+
+        return () => clearInterval(interval); // Cleanup on unmount
+    }, []);
     const handlePrev = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1)
-        } else {
-            setCurrentIndex(4)
-        }
-    }
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length); // Loop to last item if at start
+    };
 
     const handleNext = () => {
-        if (currentIndex < 4) {
-            setCurrentIndex(currentIndex + 1)
-        } else {
-            setCurrentIndex(0)
-        }
-    }
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Loop back to 0
+    };
 
     return (
         <div className="h-[650px] w-full overflow-hidden flex flex-col items-center justify-center">
@@ -141,9 +141,9 @@ const ProductsCarousel = () => {
                         duration: 0.8,
                         ease: "easeOut",
                     }}
-                    style={{ bottom: currentIndex === 0 ? bottomValue :  data[currentIndex].bottom }}>
+                    style={{ bottom: currentIndex === 0 ? bottomValue : data[currentIndex].bottom }}>
                     {currentIndex === 0 ?
-                        <Image src={ResearchImage} alt='ai' className='w-[900px]' style={{objectFit : "fill"}}/> :
+                        <Image src={ResearchImage} alt='ai' className='w-[900px]' style={{ objectFit: "fill" }} /> :
                         currentIndex === 1 ?
                             <AutoScroll size='large' icons={trackerImageData} /> :
                             currentIndex === 2 ?

@@ -16,7 +16,13 @@ const ProblemSolution = () => {
 
   useEffect(() => {
     const updateLeftValue = () => {
-      if(window.innerWidth <= 1200){
+      if (window.innerWidth <= 1050){
+        setLeftRightValue("-400%");
+      }
+      else if (window.innerWidth <= 1050){
+        setLeftRightValue("-260%");
+      }
+      else if(window.innerWidth <= 1200){
         setLeftRightValue("-100%");
       }
       else if (window.innerWidth <= 1300) {
@@ -64,7 +70,7 @@ const ProblemSolution = () => {
       </div>
       <div className="flex flex-col gap-5 w-full relative">
         <div className="w-full flex justify-start relative h-[272px] overflow-hidden rounded-e-xl">
-          <div className="w-[50%] flex flex-col gap-8 ml-5">
+          <div className="w-[50%] flex flex-col gap-8 ml-5 max-[650px]:w-[80%]">
             <div className="text-[32px] font-medium">Problem</div>
             <div>{dataToDisplay.problem}</div>
           </div>
@@ -72,14 +78,14 @@ const ProblemSolution = () => {
             className="absolute "
             initial={{ right: "0%" }} // Initial position
             whileInView={{ right: leftRightValue }} // Final position when in view
-            viewport={{ once: false, amount: 0.2 }} // Trigger animation when 50% in viewport
+            viewport={{ once: false }} // Trigger animation when 50% in viewport
             transition={{ duration: 0.8, delay: .2, ease: "easeInOut" }} // Animation settings
           >
-            <Image src={ProblemImg} height={272} width={1300} alt="problem" />
+            <Image src={ProblemImg} alt="problem" className="max-w-[1300px] min-w-[1300px]"/>
           </motion.div>
         </div>
         <div className="w-full flex justify-end relative h-[272px] overflow-hidden rounded-s-xl">
-          <div className="w-[50%] flex flex-col gap-8">
+          <div className="w-[50%] flex flex-col gap-8 max-[650px]:w-[80%]">
             <div className="text-[32px] font-medium">Solution</div>
             <div>{dataToDisplay.solution}</div>
           </div>
@@ -87,10 +93,10 @@ const ProblemSolution = () => {
             className="absolute"
             initial={{ left: "0%" }} // Initial position
             whileInView={{ left: leftRightValue }} // Final position when in view
-            viewport={{ once: false, amount: 0.2 }} // Trigger animation when 50% in viewport
+            viewport={{ once: false }} // Trigger animation when 50% in viewport
             transition={{ duration: 0.8, delay: .2, ease: "easeInOut" }} // Animation settings
           >
-            <Image src={SolutionImg} height={272} width={1300} alt="solution" />
+            <Image src={SolutionImg} alt="solution" className="max-w-[1300px] min-w-[1300px]"/>
           </motion.div>
         </div>
         <div className="absolute flex flex-col items-center h-full left-[-20px]">
