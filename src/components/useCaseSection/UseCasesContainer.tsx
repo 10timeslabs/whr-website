@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SparkleImg from "/public/sparkle.png";
 import Image from 'next/image';
 import CircleImage from '/public/CircularAnimation/Circle.png'
@@ -11,9 +11,23 @@ const UseCasesContainer = () => {
   const [activeTab, setActiveTab] = useState("GTM");
   const gtmUsecases = dropdownValues.gtm["Use Cases"];
   const geoUsecases = dropdownValues.geo["Use Cases"];
+  const [showMore, setShowMore] = useState(true); // Track visibility
+
+  useEffect(() => {
+    const updateVisibility = () => {
+      if (window.innerWidth <= 550) {
+        setShowMore(false);
+      }
+
+    };
+    updateVisibility(); // Run on initial load
+    window.addEventListener("resize", updateVisibility); // Listen for resize events
+    return () => window.removeEventListener("resize", updateVisibility); // Cleanup
+  }, []);
+
 
   return (
-    <div className='h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden'
+    <div className='min-h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden'
     // style={{ backgroundImage: `url(${GridImage.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div
@@ -26,11 +40,11 @@ const UseCasesContainer = () => {
           justifyContent: "center",
         }}
       ></div>
-      <Image src={GridImage} alt='grid' className='absolute -z-[2]'/>
+      <Image src={GridImage} alt='grid' className='absolute -z-[2]' />
       <Image src={CircleImage} alt="circle" width={690} height={690} unoptimized className='absolute top-[40%] 
       -z-[1]' />
       <div className='w-[80%] flex items-start justify-between mt-10 max-[600px]:justify-center'>
-        <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden'/>
+        <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />
         <div className='flex flex-col gap-8 items-center'>
           <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
             <button className={`w-[100px] py-1 font-semibold text-[var(--tertiary-text-color)] rounded-sm flex items-center justify-center gap-1 ${activeTab === "GTM" ? "text-[#6750a4] bg-white" : ""}`}
@@ -45,7 +59,7 @@ const UseCasesContainer = () => {
           <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">USECASES</div>
         </div>
-        <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden'/>
+        <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />
       </div>
       {activeTab === "GTM" ?
         <div className=''>
@@ -65,17 +79,19 @@ const UseCasesContainer = () => {
               </Link>
             ))}
           </div>
-          <div className='w-full flex gap-3 justify-center mt-3 flex-wrap'>
-            {gtmUsecases.slice(10).map((usecase: any, key: number) => (
-              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
-                <span>{usecase.label}</span>
-              </Link>
-            ))}
-          </div>
+          {showMore && (
+            <div className='w-full flex gap-3 justify-center mt-3 flex-wrap mb-5'>
+              {gtmUsecases.slice(10).map((usecase: any, key: number) => (
+                <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+                  {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                  <span>{usecase.label}</span>
+                </Link>
+              ))}
+            </div>
+          )}
         </div> :
         <>
-          <div className='w-full flex gap-3 justify-center mt-10'>
+          <div className='w-full flex gap-3 justify-center flex-wrap mt-10'>
             {geoUsecases.slice(0, 5).map((usecase: any, key: number) => (
               <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
@@ -83,7 +99,7 @@ const UseCasesContainer = () => {
               </Link>
             ))}
           </div>
-          <div className='w-full flex gap-3 justify-center mt-3'>
+          <div className='w-full flex gap-3 justify-center flex-wrap mt-3'>
             {geoUsecases.slice(5, 10).map((usecase: any, key: number) => (
               <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
@@ -91,16 +107,21 @@ const UseCasesContainer = () => {
               </Link>
             ))}
           </div>
-          <div className='w-full flex gap-3 justify-center mt-3'>
+          {showMore && ( <div className='w-full flex gap-3 justify-center flex-wrap mt-3 mb-5'>
             {geoUsecases.slice(10).map((usecase: any, key: number) => (
               <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
-          </div>
+          </div>)}
         </>}
-        <button className='bg-[var(--primary-color)] text-white'>+ Load More</button>
+      <button
+        className={`text-[#6750a4] font-medium cursor-pointer m-5 hidden max-[550px]:block ${showMore ? "mt-0": ""}`}
+        onClick={() => setShowMore(!showMore)} // Toggle state
+      >
+        {showMore ? "Hide" : "+ Load 5 More"}
+      </button>
 
     </div>
   )
