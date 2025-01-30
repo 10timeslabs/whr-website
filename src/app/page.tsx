@@ -34,11 +34,11 @@ export default function Home() {
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
       <div className={`text-center`}>
-        {/* <span className="mb-3 text-[56px] font-medium">
+        <span className="mb-3 text-[56px] font-medium">
           Whats Happening for Real
-        </span> */}
+        </span>
 
-        <HeadingtextAnimation heading="Whr is the" words={headingWords}/>
+        {/* <HeadingtextAnimation heading="Whr is the" words={headingWords}/> */}
         <p className="text-[20px] text-[var(--secondary-text-color)]">
           Unlock Real-World Action Intel with WHR
         </p>
