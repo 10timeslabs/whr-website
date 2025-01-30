@@ -5,7 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "/public/logo/croppedlogo.png";
-import WhrAIText from "/public/logo/Whr.ai.png";
+import WhrAIText from "/public/Whr.ai.svg";
 import DownArrowIcon from "/public/DownSVG.svg";
 import { dropdownValues } from "../../data/dropdownData";
 import HambergurMenuIcon from "/public/hamburger.svg";

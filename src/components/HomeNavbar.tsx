@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Logo from "/public/logo/croppedlogo.png";
 import Image from "next/image";
-import WhrAIText from "/public/logo/Whr.ai.png";
+import WhrAIText from "/public/Whr.ai.svg";
 import HambergurMenuIcon from "/public/hamburger.svg";
 import CrossIon from "/public/cross.svg";
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
             : "bg-transparent py-2 lg:justify-around justify-between"
         }`}
         style={{
-          maxWidth: isScrolled ? "60rem" : "90rem",
+          maxWidth: isScrolled ? "50rem" : "90rem",
         }}
       >
         {/* Logo */}
