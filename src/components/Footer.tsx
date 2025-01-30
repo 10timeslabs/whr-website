@@ -33,13 +33,13 @@ const Footer = () => {
           <Link href="https://www.linkedin.com/company/whrai/" target="_blank">
             <Image src={linkedInIcon} alt="LinkedIn" />
           </Link>
-          <Link href="https://twitter.com" target="_blank">
+          <Link href="https://x.com/whr_ai" target="_blank">
             <Image src={TwitterIcon} alt="Twitter" />
           </Link>
-          <Link href="https://instagram.com" target="_blank">
+          <Link href="https://www.instagram.com/whr_ai/" target="_blank">
             <Image src={InstaIcon} alt="Instagram" />
           </Link>
-          <Link href="https://youtube.com" target="_blank">
+          <Link href="https://www.youtube.com/@whrai" target="_blank">
             <Image src={youtubeIcon} alt="YouTube" />
           </Link>
         </div>
@@ -75,7 +75,7 @@ const Footer = () => {
             <h3 className="text-lg mb-2">Company</h3>
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
-                <Link href="#">About Us</Link>
+                <Link href="https://docs.google.com/document/d/1gwqPfP18N2PuokVuXQhKjNDTr_UyHknw7umGhwekBq8/edit?usp=sharing" target="_blank">About Us</Link>
               </li>
               <li>
                 <Link href="#">Blog</Link>
