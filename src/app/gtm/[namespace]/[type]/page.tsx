@@ -14,6 +14,8 @@ import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
 import { geoUsecasesjsonData } from "../../../../../data/geoUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
 import { companyLogos } from "../../../../../data/companyLogoData";
+import CircleContainer from "@/components/circleAnimation/CircleContainer";
+import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 
 const page = () => {
   const pathname = usePathname();
@@ -97,7 +99,7 @@ const page = () => {
           <Section />
         </div>
       )}
-      <div>
+      <div className="w-full flex justify-center">
         <ProblemSolution />
       </div>
       {pathname.split("/")[2] === "solutions" ? (
@@ -127,6 +129,10 @@ const page = () => {
           }
           dataToDisplay={dataToDisplay}
         />
+      </div>
+      <CircleContainer/>
+      <div>
+        <ProductsCarousel/>
       </div>
     </div>
   );

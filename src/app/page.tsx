@@ -54,11 +54,7 @@ export default function Home() {
         <AutoScroll icons={companyLogos} size="small" />
       </div>
       <CircleContainer />
-      <div className="flex flex-col gap-8 items-center mt-10">
-        <div className="flex flex-col text-center">
-          <span className="text-[48px]">Foresee the Future</span>
-          <span className="text-[var(--secondary-text-color)] text-[18px]"> Real-World Made Predictable for Taking Proactive Action</span>
-        </div>
+      <div className="mt-10">
         <ProductsCarousel />
       </div>
     </div>

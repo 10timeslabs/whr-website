@@ -9,7 +9,7 @@ interface Props{
 const AutoScroll = ({icons, size} : Props) => {
 
   return (
-    <div className="relative w-full overflow-hidd">
+    <div className="relative w-full overflow-hidden">
       {/* Scrolling container */}
       <div className="flex w-full animate-scroll gap-8">
         {/* Render icons twice for seamless looping */}
