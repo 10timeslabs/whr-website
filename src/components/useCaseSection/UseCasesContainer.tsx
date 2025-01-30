@@ -13,7 +13,7 @@ const UseCasesContainer = () => {
   const geoUsecases = dropdownValues.geo["Use Cases"];
 
   return (
-    <div className='h-[520px] w-[1300px] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden'
+    <div className='h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden'
     // style={{ backgroundImage: `url(${GridImage.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import DataCard from "./DataCard";
 import { usePathname } from "next/navigation";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
@@ -12,6 +12,25 @@ import { motion } from "framer-motion";
 
 const ProblemSolution = () => {
   const pathname = usePathname();
+  const [leftRightValue, setLeftRightValue] = useState("-70%"); // This is for the positioning of prob and sol images
+
+  useEffect(() => {
+    const updateLeftValue = () => {
+      if(window.innerWidth <= 1200){
+        setLeftRightValue("-100%");
+      }
+      else if (window.innerWidth <= 1300) {
+        setLeftRightValue("-80%"); // Change whileInView to -80% if width is 1300px or less
+      } else {
+        setLeftRightValue("-70%"); // Default value for larger screens
+      }
+    };
+
+    updateLeftValue(); // Run on initial load
+    window.addEventListener("resize", updateLeftValue); // Listen for resize events
+
+    return () => window.removeEventListener("resize", updateLeftValue); // Cleanup
+  }, []);
 
   let dataSource = null;
   if (pathname.includes("/geo/solutions")) {
@@ -39,7 +58,7 @@ const ProblemSolution = () => {
   const dataToDisplay = usecaseData || defaultData;
 
   return (
-    <div className="w-[1300px] flex flex-col items-center gap-5 p-4">
+    <div className="w-[87%] flex flex-col items-center gap-5 p-4">
       <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
         What do we solve
       </div>
@@ -50,11 +69,11 @@ const ProblemSolution = () => {
             <div>{dataToDisplay.problem}</div>
           </div>
           <motion.div
-            className="absolute right-[-50%]"
+            className="absolute "
             initial={{ right: "0%" }} // Initial position
-            whileInView={{ right: "-70%" }} // Final position when in view
+            whileInView={{ right: leftRightValue }} // Final position when in view
             viewport={{ once: false, amount: 0.2 }} // Trigger animation when 50% in viewport
-            transition={{ duration: 0.8, delay :.2, ease: "easeInOut" }} // Animation settings
+            transition={{ duration: 0.8, delay: .2, ease: "easeInOut" }} // Animation settings
           >
             <Image src={ProblemImg} height={272} width={1300} alt="problem" />
           </motion.div>
@@ -65,18 +84,18 @@ const ProblemSolution = () => {
             <div>{dataToDisplay.solution}</div>
           </div>
           <motion.div
-            className="absolute left-[-50%]"
+            className="absolute"
             initial={{ left: "0%" }} // Initial position
-            whileInView={{ left: "-70%" }} // Final position when in view
+            whileInView={{ left: leftRightValue }} // Final position when in view
             viewport={{ once: false, amount: 0.2 }} // Trigger animation when 50% in viewport
-            transition={{ duration: 0.8, delay :.2, ease: "easeInOut" }} // Animation settings
+            transition={{ duration: 0.8, delay: .2, ease: "easeInOut" }} // Animation settings
           >
             <Image src={SolutionImg} height={272} width={1300} alt="solution" />
           </motion.div>
         </div>
         <div className="absolute flex flex-col items-center h-full left-[-20px]">
-            <div className="w-[15px] h-[30%] bg-[#CAB8FF]"></div>
-            <div className="w-[.9px] h-[70%] bg-[#CAB8FF]"></div>
+          <div className="w-[15px] h-[30%] bg-[#CAB8FF]"></div>
+          <div className="w-[.9px] h-[70%] bg-[#CAB8FF]"></div>
         </div>
       </div>
     </div>
