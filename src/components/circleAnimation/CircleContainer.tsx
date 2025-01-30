@@ -3,7 +3,7 @@ import Image from 'next/image'
 import SparkleImg from "/public/sparkle.png";
 import CircleAnimation from './CircleAnimation';
 import { Typewriter } from "react-simple-typewriter";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 // import "react-simple-typewriter/dist/index.css";
 
 const CircleContainer = () => {
@@ -30,7 +30,7 @@ const CircleContainer = () => {
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
         setTyping(true);
-      }, 0); // Small delay before starting typing again
+      }); // Small delay before starting typing again
     }, 4000);
 
     return () => clearInterval(interval);
@@ -39,7 +39,7 @@ const CircleContainer = () => {
 
 
   return (
-    <div className="h-[542px] w-full overflow-hidden flex justify-center max-[1325px]:h-[500px] max-[775px]:h-[400px]">
+    <div className="h-[542px] w-full overflow-hidden flex justify-center max-[1325px]:h-[500px] max-[775px]:h-[400px] max-[550px]:h-[430px]">
       <div className='w-[87%] border border-[var(--border-color)] relative rounded-xl h-full items-center  overflow-hidden flex flex-col justify-start '>
         <div
           className="absolute right-0 top-[-150px] h-[600px] w-full -z-10"
@@ -55,7 +55,7 @@ const CircleContainer = () => {
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7 mt-10">
           WHY CHOOSE US
         </div>
-        <div className="w-[70%] flex items-start justify-between mt-5 max-[775px]:w-full max-[775px]:justify-center">
+        <div className="w-[70%] flex items-start justify-between mt-5 max-[775px]:w-full max-[775px]:justify-center max-[550px]:w-[90%]">
           <Image src={SparkleImg} alt="star" height={38} width={38} className='max-[775px]:hidden' />
           <div className='text-center'>
 
@@ -67,12 +67,12 @@ const CircleContainer = () => {
                 duration: 0.8,      // Duration for fade in and fade out
                 ease: "easeOut"     // Easing for smooth transition
               }}
-              className="font-semibold text-[40px] max-[775px]:text-[28px]"
+              className="font-semibold text-[40px] max-[775px]:text-[28px] max-[550px]:text-[24px]"
             >
               {typing ? (
                 <Typewriter
                   words={[currentData.heading]}
-                  typeSpeed={100}
+                  typeSpeed={30}
                   cursor={false}
                 />
               ) : (
@@ -103,7 +103,7 @@ const CircleContainer = () => {
 
           <Image src={SparkleImg} alt="star" height={38} width={38} className='max-[775px]:hidden' />
         </div>
-        <div className='absolute bottom-[-60%] max-[775px]:bottom-[-30%]'><CircleAnimation /></div>
+        <div className='absolute bottom-[-60%] max-[775px]:bottom-[-30%]'><CircleAnimation currentIndex={currentIndex}/></div>
       </div>
     </div>
   )

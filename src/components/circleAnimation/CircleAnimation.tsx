@@ -13,28 +13,22 @@ import ImageOne from '/public/CircularAnimation/Reliabledata.svg'
 import ImageTwo from '/public/CircularAnimation/Spamcheck.svg'
 import CircleImage from '/public/CircularAnimation/Circle.png'
 
-const CircleAnimation = () => {
+interface Props{
+    currentIndex : number
+}
+
+const CircleAnimation = ({currentIndex} : Props) => {
 
     const images = [ImageOne, ImageTwo, ImageThree, ImageFour, ImageFive, ImageSix, ImageSeven, ImageEight, ImageNine]
 
-    const [rotation, setRotation] = useState(0); // State to track the rotation angle
-    const [activeIndex, setActiveIndex] = useState(0);
+    // const [rotation, setRotation] = useState(0); // State to track the rotation angle
+    // const [activeIndex, setActiveIndex] = useState(0);
     const [circleSize, setCircleSize] = useState(600);
     // const element = 9
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setRotation((prevRotation) => {
-                const newRotation = prevRotation + 40; // Add 40 degrees for clockwise rotation
-                const newIndex = (activeIndex - 1 + images.length) % images.length; // Decrement index for clockwise rotation
-                setActiveIndex(newIndex); // Update the active index
-                return newRotation;
-            });
-        },4000);
-
-        // Cleanup interval on component unmount
-        return () => clearInterval(intervalId);
-    }, [activeIndex]);
+    const rotation = currentIndex * 40; // Controlled by parent
+    const activeIndex = (9 - currentIndex) % 9; 
+    
     useEffect(() => {
         // Function to check window width and adjust size
         const checkWindowSize = () => {

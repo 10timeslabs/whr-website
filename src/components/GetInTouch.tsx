@@ -17,7 +17,7 @@ const GetInTouch = () => {
           GET IN TOUCH
         </div>
         <div className="mt-12">
-          <span className="md:text-[56px] text-[36px] leading-[64px] font-bold">
+          <span className="text-[48px]">
             Sign up for free today
           </span>
         </div>
