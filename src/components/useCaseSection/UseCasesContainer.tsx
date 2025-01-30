@@ -4,6 +4,7 @@ import Image from 'next/image';
 import CircleImage from '/public/CircularAnimation/Circle.png'
 import { dropdownValues } from '../../../data/dropdownData';
 import GridImage from '/public/usecase_grid.png'
+import Link from 'next/link';
 
 const UseCasesContainer = () => {
 
@@ -41,7 +42,7 @@ const UseCasesContainer = () => {
               GEO
             </button>
           </div>
-          <div>Where should you Go</div>
+          <div className='text-2xl'>Where should you Go</div>
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">USECASES</div>
         </div>
         <Image src={SparkleImg} alt="star" height={58} width={58} />
@@ -50,52 +51,52 @@ const UseCasesContainer = () => {
         <>
           <div className='w-full flex gap-3 justify-center mt-10'>
             {gtmUsecases.slice(0, 5).map((usecase: any, key: number) => (
-              <div key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
-              </div>
+              </Link>
             ))}
           </div>
           <div className='w-full flex gap-3 justify-center mt-3'>
             {gtmUsecases.slice(5, 10).map((usecase: any, key: number) => (
-              <div key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
-              </div>
+              </Link>
             ))}
           </div>
           <div className='w-full flex gap-3 justify-center mt-3'>
             {gtmUsecases.slice(10).map((usecase: any, key: number) => (
-              <div key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
-              </div>
+              </Link>
             ))}
           </div>
         </> :
         <>
           <div className='w-full flex gap-3 justify-center mt-10'>
             {geoUsecases.slice(0, 5).map((usecase: any, key: number) => (
-              <div key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
-              </div>
+              </Link>
             ))}
           </div>
           <div className='w-full flex gap-3 justify-center mt-3'>
             {geoUsecases.slice(5, 10).map((usecase: any, key: number) => (
-              <div key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
-              </div>
+              </Link>
             ))}
           </div>
           <div className='w-full flex gap-3 justify-center mt-3'>
             {geoUsecases.slice(10).map((usecase: any, key: number) => (
-              <div key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
-              </div>
+              </Link>
             ))}
           </div>
         </>}

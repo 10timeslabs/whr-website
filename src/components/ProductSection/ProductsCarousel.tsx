@@ -5,7 +5,8 @@ import AutoScroll from '../AutoScroll';
 import AiImage from '/public/Products/aiassistant.png'
 import ModelImage from '/public/Products/model_enrichment.png'
 import ResearchImage from '/public/Products/Research.png'
-import TrendsImage from '/public/Products/trends_common.png'
+// import TrendsImage from '/public/Products/trends_common.png'
+import TrendsImg from '/public/Products/trends_carousel.png'
 import Aiicon from '/public/Products/aiicon.svg'
 import Modelicon from '/public/Products/modelicon.svg'
 import Researchicon from '/public/Products/researchicon.svg'
@@ -19,10 +20,10 @@ import { trackerImageData } from '../../../data/trackerImagesData';
 const ProductsCarousel = () => {
     const data = [
         { topic: "SEARCH", heading: "Visualisation Engine", subheading: "Discover Insights Seamlessly with List, Map, and Calendar Views.", bottom: "-20%", icon : Researchicon },
-        { topic: "SMART TRACKERS", heading: "Deploy Agents", subheading: "Activate intelligence with agents that gather and deliver precise data.", bottom: "15%",icon : Trackericon },
-        { topic: "DATA MODELLING", heading: "Model Enrichment", subheading: "Transform raw data into actionable insights with advanced enrichment capabilities.", bottom: "-5%",icon : Modelicon },
-        { topic: "TRENDS", heading: "Identify Trends", subheading: "Uncover Patterns, Predict Future Movements, and Stay Ahead of the Curve.", bottom: "-4%", icon : Trendsicon },
-        { topic: "CONSULTING", heading: "Consultant Service", subheading: "Get Tailored Insights to Answer Tough Questions and Drive Strategic Decisions", bottom: "-1%",icon : Aiicon },
+        { topic: "SMART TRACKERS", heading: "Deploy Agents", subheading: "Activate intelligence with agents that gather and deliver precise data.", bottom: "10%",icon : Trackericon },
+        { topic: "DATA MODELLING", heading: "Model Enrichment", subheading: "Transform raw data into actionable insights with advanced enrichment capabilities.", bottom: "-10%",icon : Modelicon },
+        { topic: "TRENDS", heading: "Identify Trends", subheading: "Uncover Patterns, Predict Future Movements, and Stay Ahead of the Curve.", bottom: "0%", icon : Trendsicon },
+        { topic: "CONSULTING", heading: "Consultant Service", subheading: "Get Tailored Insights to Answer Tough Questions and Drive Strategic Decisions", bottom: "-3%",icon : Aiicon },
     ]
 
     const [currentIndex, setCurrentIndex] = useState<number>(0)
@@ -120,7 +121,7 @@ const ProductsCarousel = () => {
                             currentIndex === 2 ?
                                 <Image src={ModelImage} alt='ai' width={500} height={370} /> :
                                 currentIndex === 3 ?
-                                    <Image src={TrendsImage} alt='ai' width={700} height={370} unoptimized /> :
+                                    <Image src={TrendsImg} alt='ai' width={700} height={370} unoptimized /> :
                                     <div className='bg-white rounded-xl shadow-md p-5'>
                                         <Image src={AiImage} alt='ai' width={600} height={370} />
                                     </div>}
