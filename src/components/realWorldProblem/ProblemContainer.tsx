@@ -1,23 +1,16 @@
 import React from 'react'
 import ProblemImage from '/public/realworldproblems/Problem_sol_pipeline.png'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import TopgridImage from '/public/realworldproblems/Problemgrid_top.png'
 import BottomgridImage from '/public/realworldproblems/Problemgrid_bottom.png'
-import FragmentDataIcon from '/public/realworldproblems/Fragmenteddata.svg'
-import NoiseIcon from '/public/realworldproblems/noise.svg'
-import PuzzleIcon from '/public/realworldproblems/puzzle.svg'
-import IntelDataIcon from '/public/realworldproblems/timesensitiveintel.svg'
 import ProblemCard from './ProblemCard'
 import EngineScroll from './EngineScroll'
 
-const ProblemContainer = () => {
+interface Props {
+    cardData : {icon : StaticImageData, heading : string, subheading : string}[]
+}
 
-    const data = [
-        { icon: FragmentDataIcon, heading: "Fragmented Data", subheading: "Fragmented data poses significant challenges, with information scattered across multiple sources, inconsistent formats, various languages, duplicate entries, and unsynchronised timelines" },
-        { icon: NoiseIcon, heading: "Too Much Noise", subheading: "With overwhelming volumes of information, the process of finding relevant data, cleaning it, identifying fake or unreliable entries, and quantifying it for meaningful use becomes a daunting task." },
-        { icon: PuzzleIcon, heading: "Piecing the Puzzle", subheading: "Data is only as valuable as the connections between its points. Without linking multiple lateral data points, insights remain incomplete and unusable." },
-        { icon: IntelDataIcon, heading: "Time Sensitive Intel", subheading: "Delivering actionable intelligence to the right people at the right time is critical for success. When key insights are accessible exactly when they’re needed, it enables informed decisions." },
-    ]
+const ProblemContainer = ({cardData} : Props) => {
 
     return (
         <div className='w-full flex items-center justify-center relative'>
@@ -33,7 +26,7 @@ const ProblemContainer = () => {
                 </div>
                 <div className='w-[60%] flex flex-col gap-8'>
                     <div className="grid grid-cols-2 gap-4">
-                        {data.map((problem, key) => (
+                        {cardData.map((problem, key) => (
                             <ProblemCard
                                 key={key}
                                 icon={problem.icon}
