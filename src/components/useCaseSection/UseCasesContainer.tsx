@@ -100,6 +100,7 @@ const UseCasesContainer = () => {
             ))}
           </div>
         </>}
+        <button className='bg-[var(--primary-color)] text-white'>+ Load More</button>
 
     </div>
   )

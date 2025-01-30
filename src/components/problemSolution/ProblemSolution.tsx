@@ -16,7 +16,10 @@ const ProblemSolution = () => {
 
   useEffect(() => {
     const updateLeftValue = () => {
-      if (window.innerWidth <= 1050){
+      if (window.innerWidth <= 410){
+        setLeftRightValue("-500%");
+      }
+      else if (window.innerWidth <= 1050){
         setLeftRightValue("-400%");
       }
       else if (window.innerWidth <= 1050){
@@ -70,7 +73,7 @@ const ProblemSolution = () => {
       </div>
       <div className="flex flex-col gap-5 w-full relative">
         <div className="w-full flex justify-start relative h-[272px] overflow-hidden rounded-e-xl">
-          <div className="w-[50%] flex flex-col gap-8 ml-5 max-[650px]:w-[80%]">
+          <div className="w-[50%] flex flex-col gap-8 ml-5 max-[1050px]:w-[90%]">
             <div className="text-[32px] font-medium">Problem</div>
             <div>{dataToDisplay.problem}</div>
           </div>
@@ -84,8 +87,8 @@ const ProblemSolution = () => {
             <Image src={ProblemImg} alt="problem" className="max-w-[1300px] min-w-[1300px]"/>
           </motion.div>
         </div>
-        <div className="w-full flex justify-end relative h-[272px] overflow-hidden rounded-s-xl">
-          <div className="w-[50%] flex flex-col gap-8 max-[650px]:w-[80%]">
+        <div className="w-full flex justify-end relative h-[272px] overflow-hidden rounded-s-xl max-[1050px]:justify-start max-[1050px]:ml-5">
+          <div className="w-[50%] flex flex-col gap-8 max-[1050px]:w-[90%]">
             <div className="text-[32px] font-medium">Solution</div>
             <div>{dataToDisplay.solution}</div>
           </div>
