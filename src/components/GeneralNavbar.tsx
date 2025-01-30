@@ -74,7 +74,8 @@ const GeneralNavbar = () => {
               : "bg-transparent lg:justify-around justify-between py-2"
           }`}
           style={{
-            maxWidth: isScrolled ? "56rem" : "80rem",
+            // maxWidth: isScrolled ? "56rem" : "80rem",
+            maxWidth: isScrolled ? "60rem" : "90rem",
           }}
         >
           <div className="flex-shrink-0 flex items-center">
@@ -232,12 +233,18 @@ const GeneralNavbar = () => {
           </div>
 
           <div className=" hidden lg:flex items-center">
-            <Link
+            {/* <Link
               href="/demo"
               className="px-8 py-2 text-primary border border-primary rounded hover:bg-violet-900 hover:text-white"
             >
               Demo
-            </Link>
+            </Link> */}
+             <Link
+            href="/signup"
+            className="px-6 py-2 text-white bg-primary rounded hover:bg-violet-400 transition-colors duration-300 ease-in-out"
+          >
+            Sign Up
+          </Link>
           </div>
           <div className="lg:hidden flex items-center">
             <button
