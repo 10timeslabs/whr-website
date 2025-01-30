@@ -1,23 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import SparkleImg from "/public/sparkle.png";
-import Image from 'next/image';
-import CircleImage from '/public/CircularAnimation/Circle.png'
-import { dropdownValues } from '../../../data/dropdownData';
-import GridImage from '/public/usecase_grid.png'
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-interface Props{
-  text?:string
+import Image from "next/image";
+import CircleImage from "/public/CircularAnimation/Circle.png";
+import { dropdownValues } from "../../../data/dropdownData";
+import GridImage from "/public/usecase_grid.png";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+interface Props {
+  text?: string;
 }
-const UseCasesContainer = ({text}:Props) => {
-
+const UseCasesContainer = ({ text }: Props) => {
   const [activeTab, setActiveTab] = useState("GTM");
   const gtmUsecases = dropdownValues.gtm["Use Cases"];
   const geoUsecases = dropdownValues.geo["Use Cases"];
-  const pathName = usePathname()
+  const pathName = usePathname();
   return (
-    <div className='h-[520px] w-[1300px] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden'
-    // style={{ backgroundImage: `url(${GridImage.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    <div
+      className="h-[520px] w-[1300px] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden"
+      // style={{ backgroundImage: `url(${GridImage.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div
         className="absolute right-0 top-[-150px] h-[700px] w-full -z-10"
@@ -29,102 +29,221 @@ const UseCasesContainer = ({text}:Props) => {
           justifyContent: "center",
         }}
       ></div>
-      <Image src={GridImage} alt='grid' className='absolute -z-[2]'/>
-      <Image src={CircleImage} alt="circle" width={690} height={690} unoptimized className='absolute top-[40%] 
-      -z-[1]' />
-      <div className='w-[80%] flex items-start justify-between mt-10'>
+      <Image src={GridImage} alt="grid" className="absolute -z-[2]" />
+      <Image
+        src={CircleImage}
+        alt="circle"
+        width={690}
+        height={690}
+        unoptimized
+        className="absolute top-[40%] 
+      -z-[1]"
+      />
+      <div className="w-[80%] flex items-start justify-between mt-10">
         <Image src={SparkleImg} alt="star" height={58} width={58} />
-        <div className='flex flex-col gap-8 items-center'>
-          {/* <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
-            <button className={`w-[100px] py-1 font-semibold text-[var(--tertiary-text-color)] rounded-sm flex items-center justify-center gap-1 ${activeTab === "GTM" ? "text-[var(--primary-color)] bg-white" : ""}`}
-              onClick={() => setActiveTab("GTM")}>
-              GTM
-            </button>
-            <button className={`w-[100px] py-1 font-semibold text-[var(--tertiary-text-color)] rounded-sm flex items-center justify-center gap-1 ${activeTab === "GEO" ? "text-[var(--primary-color)] bg-white" : ""}`}
-              onClick={() => setActiveTab("GEO")}>
-              GEO
-            </button>
-          </div> */}
-          {
-            pathName === "/geo" || pathName ==="/gtm"?<span className='text-[36px] font-medium'>{text}</span>:
+        <div className="flex flex-col gap-8 items-center">
+          {pathName === "/geo" || pathName === "/gtm" ? (
+            <span className="text-[36px] font-medium">{text}</span>
+          ) : (
             <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
-            <button className={`w-[100px] py-1 font-semibold text-[var(--tertiary-text-color)] rounded-sm flex items-center justify-center gap-1 ${activeTab === "GTM" ? "text-[var(--primary-color)] bg-white" : ""}`}
-              onClick={() => setActiveTab("GTM")}>
-              GTM
-            </button>
-            <button className={`w-[100px] py-1 font-semibold text-[var(--tertiary-text-color)] rounded-sm flex items-center justify-center gap-1 ${activeTab === "GEO" ? "text-[var(--primary-color)] bg-white" : ""}`}
-              onClick={() => setActiveTab("GEO")}>
-              GEO
-            </button>
+              <button
+                className={`w-[100px] py-1 font-semibold text-[var(--tertiary-text-color)] rounded-sm flex items-center justify-center gap-1 ${
+                  activeTab === "GTM"
+                    ? "text-[var(--primary-color)] bg-white"
+                    : ""
+                }`}
+                onClick={() => setActiveTab("GTM")}
+              >
+                GTM
+              </button>
+              <button
+                className={`w-[100px] py-1 font-semibold text-[var(--tertiary-text-color)] rounded-sm flex items-center justify-center gap-1 ${
+                  activeTab === "GEO"
+                    ? "text-[var(--primary-color)] bg-white"
+                    : ""
+                }`}
+                onClick={() => setActiveTab("GEO")}
+              >
+                GEO
+              </button>
+            </div>
+          )}
+          {pathName === "/geo" || pathName === "/gtm" ? (
+            ""
+          ) : (
+            <div className="text-2xl">Where should you Go</div>
+          )}
+          {pathName === "/geo" || pathName === "/gtm" ? (
+            <div>select your usecase to get started</div>
+          ) : (
+            ""
+          )}
+          <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
+            USECASES
           </div>
-          }
-          {
-            pathName ==='/geo'|| pathName==="/gtm" ?"":<div className='text-2xl'>Where should you Go</div>
-          }
-           {
-            pathName ==="/geo" || pathName ==="/gtm" ?<div>select your usecase to get started</div>:""
-           }
-          <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">USECASES</div>
-         
         </div>
         <Image src={SparkleImg} alt="star" height={58} width={58} />
       </div>
-      {activeTab === "GTM" ?
+
+      {pathName === "/gtm" ? (
         <>
-          <div className='w-full flex gap-3 justify-center mt-10'>
+          <div className="w-full flex gap-3 justify-center mt-10">
             {gtmUsecases.slice(0, 5).map((usecase: any, key: number) => (
-              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
           </div>
-          <div className='w-full flex gap-3 justify-center mt-3'>
+          <div className="w-full flex gap-3 justify-center mt-3">
             {gtmUsecases.slice(5, 10).map((usecase: any, key: number) => (
-              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
           </div>
-          <div className='w-full flex gap-3 justify-center mt-3'>
+          <div className="w-full flex gap-3 justify-center mt-3">
             {gtmUsecases.slice(10).map((usecase: any, key: number) => (
-              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
           </div>
-        </> :
+        </>
+      ) : pathName === "/geo" ? (
         <>
-          <div className='w-full flex gap-3 justify-center mt-10'>
+          <div className="w-full flex gap-3 justify-center mt-10">
             {geoUsecases.slice(0, 5).map((usecase: any, key: number) => (
-              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
           </div>
-          <div className='w-full flex gap-3 justify-center mt-3'>
+          <div className="w-full flex gap-3 justify-center mt-3">
             {geoUsecases.slice(5, 10).map((usecase: any, key: number) => (
-              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
           </div>
-          <div className='w-full flex gap-3 justify-center mt-3'>
+          <div className="w-full flex gap-3 justify-center mt-3">
             {geoUsecases.slice(10).map((usecase: any, key: number) => (
-              <Link href={usecase.href} key={key} className='flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center'>
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
                 {React.cloneElement(usecase.icon, { color: "#6750a4" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
           </div>
-        </>}
-
+        </>
+      ) : activeTab === "GTM" ? (
+        <>
+          <div className="w-full flex gap-3 justify-center mt-10">
+            {gtmUsecases.slice(0, 5).map((usecase: any, key: number) => (
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
+                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                <span>{usecase.label}</span>
+              </Link>
+            ))}
+          </div>
+          <div className="w-full flex gap-3 justify-center mt-3">
+            {gtmUsecases.slice(5, 10).map((usecase: any, key: number) => (
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
+                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                <span>{usecase.label}</span>
+              </Link>
+            ))}
+          </div>
+          <div className="w-full flex gap-3 justify-center mt-3">
+            {gtmUsecases.slice(10).map((usecase: any, key: number) => (
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
+                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                <span>{usecase.label}</span>
+              </Link>
+            ))}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="w-full flex gap-3 justify-center mt-10">
+            {geoUsecases.slice(0, 5).map((usecase: any, key: number) => (
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
+                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                <span>{usecase.label}</span>
+              </Link>
+            ))}
+          </div>
+          <div className="w-full flex gap-3 justify-center mt-3">
+            {geoUsecases.slice(5, 10).map((usecase: any, key: number) => (
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
+                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                <span>{usecase.label}</span>
+              </Link>
+            ))}
+          </div>
+          <div className="w-full flex gap-3 justify-center mt-3">
+            {geoUsecases.slice(10).map((usecase: any, key: number) => (
+              <Link
+                href={usecase.href}
+                key={key}
+                className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
+              >
+                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                <span>{usecase.label}</span>
+              </Link>
+            ))}
+          </div>
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default UseCasesContainer
+export default UseCasesContainer;
