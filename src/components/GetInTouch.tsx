@@ -5,7 +5,7 @@ const GetInTouch = () => {
   const router = useRouter();
   return (
     <div
-      className="h-[400px]"
+      className="pb-6"
       style={{
         opacity: "0.9",
         background:
@@ -17,7 +17,7 @@ const GetInTouch = () => {
           GET IN TOUCH
         </div>
         <div className="mt-12">
-          <span className="text-[56px] leading-[64px] font-bold">
+          <span className="md:text-[56px] text-[36px] leading-[64px] font-bold">
             Sign up for free today
           </span>
         </div>
