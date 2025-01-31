@@ -11,7 +11,7 @@ import TwitterIcon from "/public/social_link_icons/Vector.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white py-12 px-6 sm:px-16 lg:px-32 flex flex-col sm:flex-row justify-between h-auto">
+    <div className="bg-black text-white py-12 px-6 sm:px-16 gap-4 lg:px-32 flex flex-col sm:flex-row justify-between h-auto">
       <div className="flex flex-col items-center sm:items-start mb-8 sm:mb-0 w-full sm:w-auto">
         <div className="mb-4 flex justify-center sm:justify-start w-full">
           <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center">
