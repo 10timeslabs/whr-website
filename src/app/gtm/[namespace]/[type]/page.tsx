@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import BannerImage from "/public/GeoUsecasesBanners/geo_usecase_hotel&lodging_cropped.png";
 import GridImage from '/public/herosection_grid.png'
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -24,20 +23,6 @@ import Conclusion from "@/components/ProductSection/Conclusion";
 
 const page = () => {
   const pathname = usePathname();
-  // const endpoint = pathname.split("/").pop()?.toLowerCase();
-
-  // const usecaseData = gtmUsecasesjsonData.find((item) => {
-  //   return item.id.toLowerCase() === endpoint;
-  // });
-
-  // // Fallback data if no match is found
-  // const defaultData = {
-  //   image: gtmUsecasesjsonData[0].image,
-  //   text: "Default Item",
-  //   subtext: "Default Description",
-  // };
-
-  // const dataToDisplay: any = usecaseData || defaultData;
   let dataSource = null;
   if (pathname.includes("/geo/solutions")) {
     dataSource = geoSolutionsjsonData;
