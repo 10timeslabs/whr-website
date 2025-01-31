@@ -89,7 +89,7 @@ const GeneralNavbar = () => {
               <div
                 className={`${isScrolled ? "border-r border" : ""} h-[30px]`}
               ></div>
-              <div className={isScrolled ? "hidden" : ""}>
+               <div className={`${isScrolled ? "hidden" : ""} max-[768px]:hidden`}>
                 <Image src={WhrAIText} alt="nav-logo" className="h-6 w-auto" />
               </div>
             </Link>
