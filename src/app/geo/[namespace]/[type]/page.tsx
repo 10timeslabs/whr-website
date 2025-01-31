@@ -22,22 +22,6 @@ import { companyLogos } from "../../../../../data/companyLogoData";
 
 const page = () => {
   const pathname = usePathname();
-  // const endpoint = pathname.split("/").pop()?.toLowerCase();
-
-  // const usecaseData = geoUsecasesjsonData.find((item) => {
-  //   return item.id.toLowerCase() === endpoint;
-  // });
-
-  // // Fallback data if no match is found
-  // const defaultData = {
-  //   image: geoUsecasesjsonData[0].image,
-  //   text: "Default Item",
-  //   subtext: "Default Description",
-  // };
-
-
-
-
 
   let dataSource = null;
   if (pathname.includes("/geo/solutions")) {
@@ -120,13 +104,6 @@ const page = () => {
           <Scroll />
         </div>
       )}
-      {/* <div className="mb-5">
-        <VerticalScroll
-          mainHeading={
-            pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
-          }
-        />
-      </div> */}
        <div className="mb-5">
         <VerticalScroll
           mainHeading={

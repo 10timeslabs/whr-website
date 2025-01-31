@@ -16,7 +16,10 @@ const Section = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/gtm/solution")) {
     dataSource = gtmSolutionsjsonData;
-  }
+  } 
+  // else{
+  //   dataSource =
+  // }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
 

@@ -38,9 +38,9 @@ const page = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/geo/usecases")) {
     dataSource = geoUsecasesjsonData;
-  }else if(pathname.includes("/gtm/usecases")){
+  } else if (pathname.includes("/gtm/usecases")) {
     dataSource = gtmUsecasesjsonData
-  }else if(pathname.includes("/gtm/solutions")){
+  } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData
   }
 
@@ -56,12 +56,12 @@ const page = () => {
     solution: "Default Solution",
   };
 
-  const dataToDisplay:any = usecaseData || defaultData;
+  const dataToDisplay: any = usecaseData || defaultData;
   console.log("Endpoint:__", endpoint, dataToDisplay);
 
   return (
     <div className="relative w-full flex flex-col gap-12 ">
-      {pathname.split("/")[2] === "usecases" ? (
+      {(pathname.split("/")[2] === "usecases" ) ? (
         <div>
           <Image
             src={dataToDisplay.image}
@@ -92,7 +92,7 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
-          <div className="mt-16"><AutoScroll icons={companyLogos} size="small"/></div>
+          <div className="mt-16"><AutoScroll icons={companyLogos} size="small" /></div>
         </div>
       ) : (
         <div className="w-full flex items-center justify-center mt-[140px]">
@@ -115,24 +115,17 @@ const page = () => {
           <Scroll />
         </div>
       )}
-      {/* <div className="mb-5">
-        <VerticalScroll
-          mainHeading={
-            pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
-          }
-        />
-      </div> */}
-       <div className="mb-5">
+      {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5">
         <VerticalScroll
           mainHeading={
             pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
           }
           dataToDisplay={dataToDisplay}
         />
-      </div>
-      <CircleContainer/>
+      </div>}
+      <CircleContainer />
       <div>
-        <ProductsCarousel/>
+        <ProductsCarousel />
       </div>
     </div>
   );
