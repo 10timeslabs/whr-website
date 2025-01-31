@@ -73,11 +73,7 @@ const UseCasesContainer = ({ text }: Props) => {
           ) : (
             <div className="text-2xl">Where should you Go</div>
           )}
-          {pathName === "/geo" || pathName === "/gtm" ? (
-            <div>select your usecase to get started</div>
-          ) : (
-            ""
-          )}
+         
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
             USECASES
           </div>
