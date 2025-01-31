@@ -94,7 +94,7 @@ const Navbar = () => {
           <Link href="/geni" className="text-black hover:text-primary text-lg">
             Geni
           </Link>
-          <Link href="/about" className="text-black hover:text-primary text-lg">
+          <Link href="https://docs.google.com/document/d/1gwqPfP18N2PuokVuXQhKjNDTr_UyHknw7umGhwekBq8/edit?usp=sharing" target="_blank" className="text-black hover:text-primary text-lg">
             About
           </Link>
         </div>

@@ -16,13 +16,13 @@ const UseCasesContainer = ({ text }: Props) => {
   const [showMore, setShowMore] = useState(true); // Track visibility
   const [usecaseData, setUsecaseData] = useState([]);
 
-  
+
   const pathName = usePathname();
   useEffect(() => {
-    if(pathName === "/geo"){
+    if (pathName === "/geo") {
       setUsecaseData(geoUsecases)
     }
-    else if(pathName === "/gtm"){
+    else if (pathName === "/gtm") {
       setUsecaseData(gtmUsecases)
     }
     else if (activeTab === "GTM") {
@@ -100,8 +100,8 @@ const UseCasesContainer = ({ text }: Props) => {
           ) : (
             ""
           )} */}
-          
-          {pathName === "/"  && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
+
+          {pathName === "/" && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
             USECASES
           </div>
@@ -119,7 +119,7 @@ const UseCasesContainer = ({ text }: Props) => {
             key={key}
             className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
           >
-            {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+            {React.cloneElement(usecase.icon, { color: "#6750A4", color2: "#FFF6E6" })}
             <span>{usecase.label}</span>
           </Link>
         ))}
@@ -131,7 +131,7 @@ const UseCasesContainer = ({ text }: Props) => {
             key={key}
             className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
           >
-            {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+            {React.cloneElement(usecase.icon, { color: "#6750A4", color2: "#FFF6E6" })}
             <span>{usecase.label}</span>
           </Link>
         ))}
@@ -143,7 +143,7 @@ const UseCasesContainer = ({ text }: Props) => {
             key={key}
             className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
           >
-            {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+            {React.cloneElement(usecase.icon, { color: "#6750A4", color2: "#FFF6E6" })}
             <span>{usecase.label}</span>
           </Link>
         ))}

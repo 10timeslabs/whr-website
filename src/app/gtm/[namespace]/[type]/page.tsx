@@ -58,37 +58,77 @@ const page = () => {
         </>
       }
       {(pathname.split("/")[2] === "usecases") ? (
-        <div>
-          <Image
-            src={dataToDisplay.image}
-            alt="Banner Image"
-            className="h-[650px] w-full object-cover"
-          />
-          {/* Blurry Background */}
-          <div
-            className="absolute left-0 top-0 h-[650px] w-[700px] p-6 rounded-r-md"
-            style={{
-              opacity: "0.9",
-              background: `${dataToDisplay.blurColor}`,
-              filter: "blur(100px)",
-              backdropFilter: "blur(50px)",
-              maskImage:
-                "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
-            }}
-          />
-          {/* Text Content */}
-          <div className="absolute left-[100px] top-10 h-[570px] w-[40%] p-6 rounded-r-md flex flex-col ">
-            {/* Main Text */}
-            <div className="text-black font-bold text-[40px] mt-32 leading-[46px]">
-              {dataToDisplay.text}
-            </div>
+        // <div>
+        //   <Image
+        //     src={dataToDisplay.image}
+        //     alt="Banner Image"
+        //     className="h-[650px] w-full object-cover"
+        //   />
+        //   {/* Blurry Background */}
+        //   <div
+        //     className="absolute left-0 top-0 h-[650px] w-[700px] p-6 rounded-r-md"
+        //     style={{
+        //       opacity: "0.9",
+        //       background: `${dataToDisplay.blurColor}`,
+        //       filter: "blur(100px)",
+        //       backdropFilter: "blur(50px)",
+        //       maskImage:
+        //         "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
+        //     }}
+        //   />
+        //   {/* Text Content */}
+        //   <div className="absolute left-[100px] top-10 h-[570px] w-[40%] p-6 rounded-r-md flex flex-col ">
+        //     {/* Main Text */}
+        //     <div className="text-black font-bold text-[40px] mt-32 leading-[46px]">
+        //       {dataToDisplay.text}
+        //     </div>
 
-            {/* Subtext */}
-            <div className="text-[#171717] text-lg leading-6 mt-4">
-              <p>{dataToDisplay.subtext}</p>
-            </div>
+        //     {/* Subtext */}
+        //     <div className="text-[#171717] text-lg leading-6 mt-4">
+        //       <p>{dataToDisplay.subtext}</p>
+        //     </div>
+        //   </div>
+        //   <div className="mt-16"><AutoScroll icons={companyLogos} size="small"/></div>
+        // </div>
+        <div className="relative w-full">
+        {/* Background Image */}
+        <Image
+          src={dataToDisplay.image}
+          alt="Banner Image"
+          className="h-[450px] md:h-[650px] w-full object-cover"
+        />
+
+        {/* Blurry Background */}
+        <div
+          className="absolute left-0 top-0 h-[450px] md:h-[650px] w-full md:w-[700px] p-6 rounded-r-md"
+          style={{
+            opacity: "0.9",
+            background: `${dataToDisplay.blurColor}`,
+            filter: "blur(100px)",
+            backdropFilter: "blur(50px)",
+            maskImage:
+              "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
+          }}
+        />
+
+        {/* Text Content */}
+        <div className="absolute left-5 md:left-[100px] top-10 h-auto max-w-[90%] md:max-w-[40%] p-4 md:p-6 rounded-r-md flex flex-col">
+          {/* Main Text */}
+          <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
+            {dataToDisplay.text}
+          </div>
+
+          {/* Subtext */}
+          <div className="text-[#171717] text-sm md:text-lg leading-5 md:leading-6 mt-4 text-wrap break-words">
+            <p>{dataToDisplay.subtext}</p>
           </div>
         </div>
+
+        {/* AutoScroll Section */}
+        <div className="mt-10 md:mt-16">
+          <AutoScroll icons={companyLogos} size="small" />
+        </div>
+      </div>
       ) : (
         pathname.split("/")[2] === "solutions" &&
         <div className="w-full flex items-center justify-center mt-[140px]">

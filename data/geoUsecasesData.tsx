@@ -67,7 +67,7 @@ export const geoUsecasesjsonData = [
       {
         id: "eventprospecting",
         topic: "Dynamic Pricing",
-        icon: <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand. ",
       },

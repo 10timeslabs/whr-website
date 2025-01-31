@@ -78,56 +78,56 @@ export const dropdownValues: any = {
           href: "/gtm/usecases/CSR",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_4 color="currentColor" />,
+          icon: <GTM_UseCase_5 color="currentColor" />,
         },
         {
           label: "Tech team",
           href: "/gtm/usecases/techteam",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_5 color="currentColor" />,
+          icon: <GTM_UseCase_6 color="currentColor" />,
         },
         {
           label: "Procurement",
           href: "/gtm/usecases/procurement",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_6 color="currentColor" />,
+          icon: <GTM_UseCase_7 color="currentColor" />,
         },
         {
           label: "Brand Agency",
           href: "/gtm/usecases/brandagency",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_7 color="currentColor" />,
+          icon: <GTM_UseCase_8 color="currentColor" />,
         },
         {
           label: "Event Suppliers",
           href: "/gtm/usecases/eventsuppliers",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_8 color="currentColor" />,
+          icon: <GTM_UseCase_9 color="currentColor" />,
         },
         {
           label: "Venue",
           href: "/gtm/usecases/venue",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_9 color="currentColor" />,
+          icon: <GTM_UseCase_10 color="currentColor" />,
         },
         {
           label: "Research & Consultancy",
           href: "/gtm/usecases/research&consultancy",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_10 color="currentColor" />,
+          icon: <GTM_UseCase_11 color="currentColor" />,
         },
         {
           label: "Influencers",
           href: "/gtm/usecases/influencers",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_11 color="currentColor" />,
+          icon: <GTM_UseCase_4 color="currentColor" />,
         },
         {
           label: "Media & News",
