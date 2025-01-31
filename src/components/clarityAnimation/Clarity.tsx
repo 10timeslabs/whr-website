@@ -23,7 +23,7 @@ const Clarity = () => {
             <Image src={TopWaveImage} alt='wave' className='-z-10 absolute top-[-20%]' width={1300} />
             <Image src={BottomWaveImage} alt='wave' className='-z-10 absolute bottom-0' style={{ width: "100%" }} />
             <div className='font-medium text-[32px] max-[575px]:text-[28px]'>Clarity in Chaos</div>
-            <div className='text-[var(--secondary-text-color)] text-[20px] text-center max-[575px]:text-[16px]'>Real-world can be chaotic; beauty emerges from chaos. </div>
+            <div className='w-[90%] text-[var(--secondary-text-color)] text-[20px] text-center max-[575px]:text-[16px]'>Real-world can be chaotic; beauty emerges from chaos. </div>
             <div className='flex items-center justify-center w-full mt-10 h-[280px]'>
                 <div className='w-[800px] relative flex items-center justify-center h-full'>
                     <motion.div
