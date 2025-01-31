@@ -51,60 +51,47 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for hotels & other accomodation providers.",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "demand_forecasting",
+        topic: "Demand Forecasting",
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
-        topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "eventprospecting",
+        id: "event_prospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        id: "eventprospecting",
+        topic: "Dynamic Pricing",
+        icon: <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
+          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand. ",
       },
+
       {
         id: "workforcemanagement",
         topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
       {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
+        id: "strategic_planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "Besides unlocking value for sales, marketing & operation team, event intel is highly critical to be factored in by teams working on expansion or acquisition strategy. Use onground demand intel to identify geographies with higher demand than supply or a growing demand. Identify strategic locations closer to hubs for gathering or venues, that would give your hotel an edge. ",
       },
     ],
   },
@@ -124,58 +111,56 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for reataurants and QSR.",
     usecases: [
       {
-        id: "restaurant",
-        topic: "Restaurants & QSR",
+        id: "demand_forecasting",
+        topic: "Demand Forecasting",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
-      },
-      {
-        id: "restaurant",
-        topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        topic: "Geo Marketing",
+
+        icon: <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        // icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        // icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
-        content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
         id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
+        topic: "Workforce Management",
+        // icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
+          "Unlike a hotel, where the inventory can be a lot more non-perishable, a food joint business is highly suseptable to change in demand that isnt taken into consideration. With signals around volatity in demand, that would not be considered medium or normal expected level, can help flag potential scenario of inventory glut or over supply. Using the demand intel in the internal models, restaurants can take preventive measures that can minimize loss linked to inventory.  ",
       },
+      {
+        id: "strategicplanning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        content:
+          "Restaurant business requires constant flow of footfall and getting located near by growing event hotspots is a jackpot. Strategy team and consultants helping a restaurant identify new location to grow, can leverage event data trend and geo mapping to narrow down on great locations for expansion",
+      },
+
       {
         id: "traveladvisory",
         topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
       },
@@ -197,60 +182,47 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for activity planners.",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Activity Planner",
+        id: "demandforecasting",
+        topic: "Demand Forecasting",
         content:
           "Location specific activity & experience providers, catering to incoming tourists can leverage demand intelligence around inbound event traffic. Our forecasted data can help drive optimize onground marketing, collaboration, offer designing and workforce management. Better forecasting can improve revenue and profitability.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6"  width="62" height="62" />,
       },
       {
-        id: "restaurant",
-        topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        id: "geomarketing",
+        topic: "Geo Marketing",
+        // icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Inbound traffic into a city tends to do more than just attend the event. Both business and casual visitors are ripe audience for promoting local activities and experiences. Activity and experience providers can use the forecasted event intel to leverage geo-focused marketing and activations to reach the right audience at the right time. ",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        id: "event_prospecting",
+        topic: "Event Prospecting",
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "In a world where the line between business and entertainment is quickly getting blurred, activities outside the event are becoming an important part of the event itself. With activities providers fighting for market share, collaborating with event planners to become part of their event schedule can be a game changer. From pre-event to post-event official activity, it opens opportunities for visitors to extend their stays in the city and include activity in their itinerary. To achieve this, Eventeli provides activity planners a way to identify events that have the audience focus in a timely manner. ",
       },
       {
-        id: "eventprospecting",
-        topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        id: "workforce_management",
+        topic: "Workforce Management",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "In a world where the line between business and entertainment is quickly getting blurred, activities outside the event are becoming an important part of the event itself. With activities providers fighting for market share, collaborating with event planners to become part of their event schedule can be a game changer. From pre-event to post-event official activity, it opens opportunities for visitors to extend their stays in the city and include activity in their itinerary. To achieve this, Eventeli provides activity planners a way to identify events that have the audience focus in a timely manner. .",
+          "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
-        content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
-        content:
-          "Most destination specific activities are not designed for local audience. If its catering to inbound tourists and travelers, the highly unpredictable demand comes from events. Being able to foresee and model for future demand, activity planners can strategically align their pricing strategy. They can give early bird offers or hold the inventory if the expected demand around specific dates are higher. ",
-      },
-      {
-        id: "inventoryplanning",
+        id: "inventory_planning",
         topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
+          "Unlike a hotel, where the inventory can be a lot more non-perishable, a food joint business is highly suseptable to change in demand that isnt taken into consideration. With signals around volatity in demand, that would not be considered medium or normal expected level, can help flag potential scenario of inventory glut or over supply. Using the demand intel in the internal models, restaurants can take preventive measures that can minimize loss linked to inventory.  ",
       },
       {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
+        id: "strategic_planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "Restaurant business requires constant flow of footfall and getting located near by growing event hotspots is a jackpot. Strategy team and consultants helping a restaurant identify new location to grow, can leverage event data trend and geo mapping to narrow down on great locations for expansion",
       },
     ],
   },
@@ -270,60 +242,46 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for airlines and airports.",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "demandforecasting",
+        topic: "Demand Forecasting",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "Events are major factor for volatility in travelers from outside the city. Knowing trends and predictions based upcoming & forecasted events, can help airlines and airports to better manage spikes in passengers. From price optimization to manpower management, use the data API with priprietory scores to take informed decisions or run better data models.  ",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
+        id: "risk_identification",
         topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Major spike in inbound traffic into a city can lead to a security nightmare for airport management. It can compromise security and lead to the airport being under-staffed. Being informed about expetec spikes can help with risk mitigation.",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "eventprospecting",
+        id: "event_prospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
+          "Airports & Airlines are a major channel for out of home advertising. With prime real-estate at the airport or in business class flight, with millions of events happening every year, it becomes a lucrative market to sell ad space for the aviation industry. Identify what events have a large foot print, meets your geographical scope, traveler routes, in order to reach out to them for paid marketing and/or collaborations. ",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        id: "dynamic_pricing",
+        topic: "Dynamic Pricing",
+        icon: <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
+          "Destination specific demand linked to events can make pricing model for airlines more resilient. It can fill the missing holes in the season demand based modeling which relies on historical patterns, with a forecasted demand. Eventually you get a model which better maps demand with pricing and prevent under pricing or selling out inventory in advance due to lack of knowledge around upcoming events in a city. ",
       },
       {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
+        id: "workforce management",
+        topic: "Workforce Management",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
+          "No one likes to be at an airport and have to stand in long line for security checks or deal with dirty restrooms. If multiple events happen to happening in a single city at the same time, driving high inbound traffic, it can lead to an unexpected stress on airport manpower. This can be avoided with demand intel for forecasted and upcoming events. ",
       },
       {
-        id: "inventoryplanning",
-        topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        id: "strategic_planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-      },
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "If a billion people are forecasted to travel for events every year, strategy team and investors in the aviation space need data intel for which new destinations they should be flying to or building airports for. To decide they need past and future trends on events and how much inbound traffic they bring in and possible from which geographies. Unlock event intel to mix with other data intel to make your strategy more sound.",
       },
     ],
   },
@@ -344,60 +302,32 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes to enable large companies to monitor potential opportunity or risk. ",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
-        content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
-      },
-      {
-        id: "restaurant",
+        id: "risk_identification",
         topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Business travel is bigger than casual traveling. Large companies have their employees flying in and around cities & coutries all the time. Have a central dashboard to monitor any risk zone can help prevent or take precautions against anyone negative scenario that could have been avoided. Some examples of these risks are: avoiding travel & meeting around time and area with major spikes in onground activity to early detection of health, weather and terrorist warning. Our onground risk identifiction model can prevent avoidable risks associated with corporate travel. ",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        id: "geo_marketing",
+        topic: "Geo Marketing",
+        icon: <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Events are labelled for type and category, besdies projected scored around footfall and economic impact. Enterprise can use this audience filtering at scale to identify strategic time and geo-location to leverage onground marketing and activation activities. For example, an auto expo would be an opportunity for car manufacturers to build brand visibility with a very targeted audience outside of the event ",
       },
       {
-        id: "eventprospecting",
+        id: "event_prospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
+          "Event sponsoring is a major marketing channel for both small and large enterprise to reach target audience. Eventeli helps to indentify events which are forecated or upcoming and might be a good fit for an enterprise to sponsor. Create custom trackers and our AI agent will find and notify you to relevant event that match your criteria.  ",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        id: "workforce_management",
+        topic: "Workforce Management",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
-        content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
-        topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
-        content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-      },
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "Large companies have major event footprint. Employees across department and seniority levels are constantly attending events. If company human resource manegement has visibility on workforce event participation, it could ensure better planning, compliance requirements, etc.arising from such engagements. ",
       },
     ],
   },
@@ -417,60 +347,46 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for transportation providers.",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "demandforecasting",
+        topic: "Demand Forecasting",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "Local commute is the life-line of a city. Volatity and poor planning derails the schedule for local people and creates poor experience for visitors . Major events or many coinciding events dont follow set calendar and our comprehensive event intel solution address this gap for various transportation providers from cab services to bus and railways. Better match demand with superios planning on the supply side.  ",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
-        topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "eventprospecting",
+        id: "event_prospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
+          "Guests coming into town for an event need transportation. From airport rides to commute within the city. Transportation companies offering single rides or group shuttle have potential business to be unclocked by partnering with event planners to offer their solution early and generate more business. Using Eventeli, they can identify prospective events in advance. ",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        id: "dynamic_pricing",
+        topic: "Dynamic Pricing",
+        icon: <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
+          "For on demand cab providers like Uber, surge pricing is a major component of their revenue strategy. With forecasted event data, along with impact, it can help better strategies dynamic pricing or address questions in real-time for whats causing significant increase in demand. Either ways it can help transportation companies from cabs to buses to trains, to rethink their dynamic pricing strategy",
       },
       {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
+        id: "workforce_management",
+        topic: "Workforce Management",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
+          "While 'surge pricing' can be a strategic business model, often its not the best or only way to grow revenue from local transportation. When supply is flexible, having demand spike signals, can help transportation companies like cab, train, buses to pre-plan for increasing or decreasing workforce to meet the increase or decrease in demand due to people traveling locally for events or coming from outside to attend them. ",
       },
       {
-        id: "inventoryplanning",
+        id: "Inventory Planning",
         topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
+          "Inventory management for transportation deals with availability of buses, cabs, metros, railways, etc. and how its utlized across different routes in conjunction with expected demand. Without foresight into change in demand in advance, managing the availability in different city zones is difficult. Unlike factors which change slowly like economic growth, population density, urbanisation, events are temporary, but the impact is significant. Having access to forecasted onground event demand can help better utilize available inventory. ",
       },
       {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "Observing past and forecasted event demand, helps staretgy teams in companies involved with transportation to design their strategy. This includes but not limited to identifing need for more automotive in specfic geography, expanding or opening new geographies to grow the business or identifying ways to best utilize available inventory to improve profitibility.",
       },
     ],
   },
@@ -490,60 +406,39 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes upto 12 months in future. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for ad space sellers and buyers",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "Demand Forecasting",
+        topic: "Demand Forecasting",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "OOH Marketing is a significant portion of non-digital marketing. While traditionally they had minimul insights in dynamic demand change and pricing, they primarily charged for ad placements like on billboards and bus stands with availabel seasonal information. However, events play a major role in people movement in a city and identifing these key pockets. Using onground demand forecasting can lead to better pricing, space negotiation and increase in profit marginr",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
-        topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        id: "Geo Marketing",
+        topic: "Geo Marketing",
+        icon: <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Out of home marketing firms have a large inventory of advertising space and service they sell to potential customers. Having onground event intel for future can help better price the inventory and justify the increased rates. This can lead to significant increase in their revenue and data-driven proposals to their potential customers. Having Eventeli data can also prevent selling out premium inventory and static rates. ",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "eventprospecting",
+        id: "Event Prospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
+          "Events are a large spender in outdoor adverstising and branding. Its a must do for them and can also be offered as a service by them to their sponsors. For marketing firms offering advertising space outside of the venue, events are a lucrative customers. Identifying relevant upcoming & forecasted events can help OOH marketing companies to share unique strategy and opportunity to the events to drive up the buzz in the city before the event dates. ",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        id: "Dynamic Pricing",
+        topic: "Dynamic Pricing",
+        icon: <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
+          "As out of home advertising is going through a digital rennaisance of its own, ther is huge leverage to enable dynamic pricing. While digitalization could shink the lock-in period from months to minutes, knowing forecasted event demand and expected footfall, can help better price future inventory and not having information descripency with the demand side (which might know about some major upcoming events in future). ",
       },
       {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
-        topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
-        content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-      },
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "Out of home advertising companies trying to increase their inventory or evaluate the actual value of the location, need reliable event data in advance. Strategic teams can use Eventeli to spot achieve their goals to spot undervalued locations and also negotiate better rates in their favor.  ",
       },
     ],
   },
@@ -563,60 +458,46 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for retail commerce business",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "Demand Forecasting",
+        topic: "Demand Forecasting",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "Both attended and non-attended event have significant imapct on local retail commerce. From single stores to chains, any business catering to walkin customers can unlock significant advantage with better stock management, manpower planning and also, marketing strategy with forecasted demand intelligence. Basis expected footfall, economic impact and inbound scores, retail commerce stakeholder can identify events of impact or include data in internal models. ",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
+        id: "Risk Identification",
         topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Whats considered risk varies from business to business. For retail commerce, if its located within an area of event impact, it must take into consideration how it could impact its business in various ways. Firstly, events are not limited to attended live-events, it also includes political unrest, terorist attacks, severe weather, major road diversions, Eventeli provides a single dashboard to visualize what can be forecasted and action can be planned. Use live event data to access risk around how it could impact your usual walk-in customers, parking issues, store timings, etc. ",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        id: "Geo Marketing",
+        topic: "Geo Marketing",
+        icon: <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "From supermarkets to consumer brands trying to increase visibility or footfall into their stores can use the event data to plan onground marketing strategy to reach targeted audience persona. Unlike malls which are becoming ghost venues, live events open a new opportunity to reach audience that might be more condusive to spending, fresh and unique for retail commerce and brand building. ",
       },
       {
-        id: "eventprospecting",
-        topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        id: "Workforce Management",
+        topic: "Workforce Management",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
+          "For any retail commerce that happens to be in the periphery of venue hot-spots, seeing swings in walkins was considered normal. However, with better event demand intel, retail commerce stores can manage their workforce more efficiently. This can provide a better customer experience or reduce businesses losses due to inefficicient manpower planning. From store operation timing to additional staff on the counter, Eventeli can help better decisions making in manpwoer planning. ",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
-        content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
-        content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
+        id: "Inventory Planning",
         topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
+          "If a store is located near an event venue or within busy areas, it gets impacted by event of any form. From weather to politican unrest to planned events. Having onground demand intel forecasting would help with better inventory planning to ensure business is not lost due to stock out and prevent loss due to over stocking. ",
       },
       {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "If a store wants more footfall or be close to certain flow of new traffic, identifying such spots is strategic for retail commerce business. Events happen to be an extremely unique and valuable source of this audience and having this data can help in store location change, expansion and revenue forecasting.",
       },
     ],
   },
@@ -636,60 +517,39 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for parking business.",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "Demand Forecasting",
+        topic: "Demand Forecasting",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "Big citiies tend to be the hub for events and busy areas within the cities become hot spots for all forms of gathering. Parking space providers depend on demand intel to better manage pricing and manpower during peak and lean periods. Changing & forecasted event data can be the differentiator that cannot be predicted like morning & evening push. ",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
-        topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        id: "Dynamic Pricing",
+        topic: "Dynamic Pricing",
+        icon: <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Regular business commuters are not the cause of sudden volatility in demand for parking. Often spikes are linked to some ongoing event/s onground that leads to higher demand than supply. With parking business model quickly adopting digitalization and dynamic pricing, having data on upcoming events and its impact, can help price to better match demand on ground.  ",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        id: "Workforce Management",
+        topic: "Workforce Management",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Parking spaces are not always automated and often have valet in-house. With intel around demand spikes due to events in their area, they can better plan around having more valets and workforce to assist their customers. ",
       },
       {
-        id: "eventprospecting",
-        topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
-        content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
-      },
-      {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
-        content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
-        content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
+        id: "Inventory Planning",
         topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
+          "Knowing potential demand forecast can help with growing parking lot space to accomodate demand that could be volatile but lucrative. With Eventeli onground demand intel, parking space business can identify opportunity for better managing their inventory or finding additional temporary inventory for days demand is forecasted to be higher",
       },
       {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "For parking business to grow, expension team has to be constantly looking for either new lots or expending their existing space with technology. Having onground demand intel in the projection model can help estimate time to profitability for any longterm investment. ",
       },
     ],
   },
@@ -709,60 +569,32 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) in a specfic destination or competing destinations. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for DMOs and DMCs",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "Demand Forecasting",
+        topic: "Demand Forecasting",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "Destination management companies & organisation work with a mandate to promote and increase inbound traffic to a city. With access to event linked demand forecasting, they can collaborate with local hospitality partners on pricing and availability. Additionally, they can source new inventory in advance, depending on the expected events and linked inbound scores.",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
+        id: "Risk Identification",
         topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "If there is a sudden rise in demand in nearly or competing destination, its a risk to the business of DMOs and DMCs. Additionally, if there are warnings issues by countries or organisation for travel, health restriction, staying updated is crucial for the destination linked companies and the visitors. Eventeli help monitor all such onground risk indicators for a destination.",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "eventprospecting",
+        id: "Event Prospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
+          "Event participation is on the rise. With people wanting more expereinces and human connections, its becoming a leading factor in driving business for a destination. For destination management companies, having access to upcoming & forecasted events data can help them with early partnerships. Additionally, this data across other competing geographies can help them win more business for their destination for events that have not finalized their destination. ",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
-        content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
-        topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
-        content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-      },
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "Destinations are always competing for a share of the potential business. In order to grow, stratregy teams need to explore which destinations are growing, upcoming and would become a threat to their market share. Additionally, they can monitor which destination is on a decline and how they can use this information to their advantage. ",
       },
     ],
   },
@@ -783,60 +615,32 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across geographies. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for venue operators to take informed decision.",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "Demand Forecasting",
+        topic: "Demand Forecasting",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "Venues need tracking of past event trend for a geography, forecasted demand for what events could happen, how likley it would be rehosted, which event planners host events in a certain geoprahy. All this data is extremely crticial for venues operators for planning and forecastign their own business metrics.",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
+        id: "Risk Identification",
         topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Every venue competes with other venues in the same geography or those in competing destination. By tracking all onground forecasts and trends within their own city, but also competing destination is important for early identification of growing risk and opportunities.",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "eventprospecting",
+        id: "Event Prospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
+          "In a perfect scenario a venue would be booked 365 days of the year, but identifying and converting events is tedious work. It starts with prospecting and having an engine that makes it easy to identify, track and reach out to the potential event planners. Waiting till event dates are announced is often too late, as venues get dedicated before date announcement. In such a scenario, a venue needs access to forecasted events basis historicals and patters both in their own geography and that in competing geo-locations. ",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
-        content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
-        topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
-        content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-      },
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "If a venue is looking to grow, it can explore strategic geographies with growing demand forecast or expand existing facilities. These are big ticket decisions and any data that can sustantiate their hypothesis can be extremely valuable in furthering the research efforts. ",
       },
     ],
   },
@@ -856,60 +660,39 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for hyperlocal & quick commerce business.",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "Geo Marketing",
+        topic: "Geo Marketing",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "When people visit a city for event, its an opportunity for marketing for quick commerce brands. While it could be to introduce new customers to their service, but it can also spread brand awareness and adoption in future areas.  ",
+        icon: <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
-        topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        id: "Dynamic Pricing",
+        topic: "Dynamic Pricing",
+        icon: <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Like local cabs, quick commerce also tends to levy extra charges on their customers during peak hours. However, having advance intel on what might create an anomaly in their usual demand pattern, can help design dynamic pricing more strategically. ",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        id: "Workforce Management",
+        topic: "Workforce Management",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Quick commerce isnt limited to local residents. With growing movement of humans from other cities, countries and even within a city to attend events, hyperlocal commerce providers need to be ready to quickly move their available workforce around to meet demand where it arises. Not getting this signal can lead to mismatch in demand & supply, which is a major leakage in profitability, but more importantly, their business model around quick deliverary. ",
       },
       {
-        id: "eventprospecting",
-        topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
-        content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
-      },
-      {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
-        content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
-        content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
+        id: "Inventory Planning",
         topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
+          "With growing adoption of hyperlocal & quick commerce across major citities, when there is movement of demand from one area to another, or there is an unexpected increase in external demand, it can lead to inventory issues. Out of stock inventory leads to both business loss and poor customer experience. With onground event demand intel in the mix of other variables, quick commerce business can better strategies their inventory decisions. ",
       },
       {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "Hyperlocal & quick commerce business need to identify areas to expand. Having onground demand from events can be a good indicator for growth potential in a city.  Additionally, to provide seamless experience to their customers, they want to identify destination most visited by their core audience to get signals for city/country expansion.",
       },
     ],
   },
@@ -929,60 +712,32 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for local governing bodies. ",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
-        content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
-      },
-      {
-        id: "restaurant",
+        id: "Risk Identification",
         topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Most local government, security teams, traffic controllers have limited forecast on whats coming, changing or critical in specific areas. While big events often are easy to track but a set of smaller events coincding can lead to similar onground risks. They are usually not identified on time, if at all, leading to disruptions in city management (example: controling traffic). Having onground demand intel can help local authorities better plan security and resource deployment. ",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
-        content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "eventprospecting",
+        id: "Event Prospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
+          "Some events are so infleuntial that it can make major imapct on a city's image and future business opportuntiies. Often cities are seen jostling to get influencers like Taylor Swift which brings in not just revenue to the tune of $1billion, but also media coverage and recognition for a city. Similarly, countries compete to get events like Olympics, Grand Prix, etc. to make a statement.",
       },
       {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        id: "Workforce Management",
+        topic: "Workforce Management",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
+          "Onground police and other amenities provided by local government can be under stress or lack efficiency due to volatility in inbound traffic to a city. This is extremely relevant for citiies considered tourists hubs and areas that have concentration of event venues and footfall. With forecasted event demand data and estimates on inbound traffic, local authorities can manage their workforce more efficiently and creatively. From traffic police to emergency prepardnes to street cleaning, much can be improved with better data modeling",
       },
       {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
-        topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
-        content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-      },
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "For a city to stand out as the destination for both leisure and business travlers, it has to take many strategic decision around demand patterns. Events in and around key zones that drives high community engagement can be leveraged as a way to showcase the best the city has to offer. To unlock this intel, authorities need onground event data and filter out the noise. ",
       },
     ],
   },
@@ -1004,54 +759,54 @@ export const geoUsecasesjsonData = [
         topic: "Hotel & Lodging",
         content:
           "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        topic: "Geo Marketing",
+        icon: <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Our demand forecasting can split uocal vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
       {
         id: "traveladvisory",
         topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
       },
@@ -1074,60 +829,25 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across destination and venues of interest. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for event planners to decide more confidently and also track future changes until event date.",
     usecases: [
       {
-        id: "hotel&lodging",
-        topic: "Hotel & Lodging",
+        id: "Demand Forecasting",
+        topic: "Demand Forecasting",
         content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: <Geo_Soln_1 color="#6750a4" width="62" height="62" />,
+          "Event planners play a high stake game. They plan their events months in advance with limited insight on what could be happening onground in future. With demand forecasting they can see upcoming & forecasted events for months ahead, before deciding on the city & venue to host the event at. Additionally, they can track change in demand forecasting for specific dates, to adjust strategy on informing audience and making arrangements. ",
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
-        id: "restaurant",
+        id: "Risk Identification",
         topic: "Risk Identification",
-        icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Once events are scheduled and venues booked, its often impossible change the dates. Not knowing of potential change in onground reality can lead to major business losses. With Eventeli risk identifier, event planners can take action in advance. From notifying participants about heather or weather warning, to making stay & travel arrangments in scenario of high spike in demand. ",
       },
       {
-        id: "geomarketing",
-        topic: "Geo Marketing dummy",
-        icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
+        id: "Strategic Planning",
+        topic: "Strategic Planning",
+        icon: <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-      },
-      {
-        id: "eventprospecting",
-        topic: "Event Prospecting",
-        icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
-        content:
-          "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
-      },
-      {
-        id: "dynamicpricing",
-        topic: "Dynamic pricing",
-        icon: <Geo_Soln_5 color="#6750a4" width="62" height="62" />,
-        content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-      },
-      {
-        id: "workforcemanagement",
-        topic: "Workforce Managemant",
-        icon: <Geo_Soln_6 color="#6750a4" width="62" height="62" />,
-        content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
-      },
-      {
-        id: "inventoryplanning",
-        topic: "Inventory Planning",
-        icon: <Geo_Soln_7 color="#6750a4" width="62" height="62" />,
-        content:
-          "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-      },
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: <Geo_Soln_8 color="#6750a4" width="62" height="62" />,
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+          "Any event planner looking to grow their event business, needs to identify new geographies and demand to identify opportunities to expand. From taking the event ip to another geography to launching another event in the same city. Having onground demand intel data, enriched with estimated audience size, audience demographics and other tags, can unlock a tressure trove of opportunities. ",
       },
     ],
   },

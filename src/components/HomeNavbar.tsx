@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Logo from "/public/logo/croppedlogo.png";
 import Image from "next/image";
-import WhrAIText from "/public/logo/Whr.ai.png";
+import WhrAIText from "/public/Whr.ai.svg";
 import HambergurMenuIcon from "/public/hamburger.svg";
 import CrossIon from "/public/cross.svg";
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
             : "bg-transparent py-2 lg:justify-around justify-between"
         }`}
         style={{
-          maxWidth: isScrolled ? "48rem" : "80rem",
+          maxWidth: isScrolled ? "50rem" : "90rem",
         }}
       >
         {/* Logo */}
@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-md text-white"
+            className="rounded-md text-white"
             aria-label="Toggle Menu"
           >
             {mobileMenuOpen ? (
@@ -107,12 +107,12 @@ const Navbar = () => {
           >
             Sign Up
           </Link>
-          <Link
+          {/* <Link
             href="/demo"
             className="px-6 py-2 text-primary border border-primary rounded hover:bg-violet-900 hover:text-white transition-colors duration-300 ease-in-out"
           >
             Demo
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -169,12 +169,12 @@ const Navbar = () => {
           >
             Sign Up
           </Link>
-          <Link
+          {/* <Link
             href="/demo"
             className="block w-48 px-6 py-3 text-primary border border-primary rounded-lg text-center text-xl hover:bg-violet-900 hover:text-white transition-all duration-300 ease-in-out"
           >
             Demo
-          </Link>
+          </Link> */}
         </div>
       </div>
 
