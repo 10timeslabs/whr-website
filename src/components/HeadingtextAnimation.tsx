@@ -18,7 +18,7 @@ const HeadingtextAnimation = ({ heading, words }: Props) => {
     }, [words.length]);
 
     return (
-        <div className='flex text-[56px] leading-[60px] font-medium'>
+        <div className='flex justify-center w-[90%] text-[56px] leading-[60px] font-medium flex-wrap max-[600px]:text-[48px]'>
             <div>{heading}</div>
             <div className="overflow-hidden h-[60px] ml-2">
                 <AnimatePresence mode="wait">

@@ -63,15 +63,8 @@ export default function Home() {
       <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
-      <div className={`flex justify-center text-center`}>
-        {/* <span className="mb-3 text-[56px] font-medium">
-          Whr is the Demand
-        </span> */}
-
+      <div className={`flex justify-center w-full`}>
         <HeadingtextAnimation heading="Whr is the" words={headingWords} />
-        {/* <p className="text-[20px] text-[var(--secondary-text-color)]">
-          Unlock Real-World Action Intel with WHR
-        </p> */}
       </div>
       <div>
         <p className="flex mt-4 justify-center text-[20px] text-[var(--secondary-text-color)]">
