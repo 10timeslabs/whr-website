@@ -18,6 +18,7 @@ import { companyLogos } from "../../../../../data/companyLogoData";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
 import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
+import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 
 const page = () => {
   const pathname = usePathname();
@@ -118,6 +119,9 @@ const page = () => {
       </div>
       {pathname.split("/")[2] === "product" &&
         <div className="w-full flex items-center justify-center mt-10"><HelpfulContainer /></div>
+      }
+        {pathname.split("/")[2] === "product" &&
+        <div className="w-full flex items-center justify-center mt-10"><BeniftsSection /></div>
       }
       {pathname.split("/")[2] === "solutions" ? (
         <div className="min-h-[580px]">
