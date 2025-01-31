@@ -19,6 +19,8 @@ import CircleContainer from "@/components/circleAnimation/CircleContainer";
 import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
+import Conclusion from "@/components/ProductSection/Conclusion";
+
 
 const page = () => {
   const pathname = usePathname();
@@ -120,8 +122,13 @@ const page = () => {
       {pathname.split("/")[2] === "product" &&
         <div className="w-full flex items-center justify-center mt-10"><HelpfulContainer /></div>
       }
-        {pathname.split("/")[2] === "product" &&
+      {pathname.split("/")[2] === "product" &&
         <div className="w-full flex items-center justify-center mt-10"><BeniftsSection /></div>
+      }
+      {pathname.split("/")[2] === "product" &&
+        <div className="w-full flex items-center justify-center">
+          <Conclusion heading="Make Search Smart" subheading="Go beyond basic lists and power your event strategy with deeper intel."/>
+        </div>
       }
       {pathname.split("/")[2] === "solutions" ? (
         <div className="min-h-[580px]">
