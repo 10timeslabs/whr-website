@@ -90,7 +90,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4" ,color2:"#FFF6E6" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -102,7 +102,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4" ,color2:"#FFF6E6"})}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -114,7 +114,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4" ,color2:"#FFF6E6"})}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -129,7 +129,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4",color2:"#FFF6E6" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -141,7 +141,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4",color2:"#FFF6E6" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -153,7 +153,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4" ,color2:"#FFF6E6"})}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -168,7 +168,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4" ,color2:"#FFF6E6"})}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -180,7 +180,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4",color2:"#FFF6E6" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -192,7 +192,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4" ,color2:"#FFF6E6"})}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -207,7 +207,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4" ,color2:"#FFF6E6"})}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -219,7 +219,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4" ,color2:"#FFF6E6"})}
                 <span>{usecase.label}</span>
               </Link>
             ))}
@@ -231,7 +231,7 @@ const UseCasesContainer = ({ text }: Props) => {
                 key={key}
                 className="flex bg-white gap-2 rounded-lg border border-[#EEEEF0] p-2 items-center justify-center"
               >
-                {React.cloneElement(usecase.icon, { color: "#6750a4" })}
+                {React.cloneElement(usecase.icon, { color: "#6750a4",color2:"#FFF6E6" })}
                 <span>{usecase.label}</span>
               </Link>
             ))}

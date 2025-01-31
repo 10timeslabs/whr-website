@@ -43,47 +43,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -109,47 +109,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -175,47 +175,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -241,47 +241,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -308,47 +308,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -375,47 +375,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -441,47 +441,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -507,47 +507,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -573,47 +573,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -638,47 +638,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -704,47 +704,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -769,47 +769,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -835,47 +835,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -901,47 +901,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
@@ -967,47 +967,47 @@ export const gtmUsecasesjsonData = [
         topic: "Restaurants & QSR",
         content:
           "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-        icon: <GTM_Soln_1 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "restaurant",
         topic: "Risk Identification",
-        icon: <GTM_Soln_2 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
       },
       {
         id: "geomarketing",
         topic: "Geo Marketing dummy",
-        icon: <GTM_Soln_3 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
         id: "eventprospecting",
         topic: "Event Prospecting",
-        icon: <GTM_Soln_4 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
         id: "dynamicpricing",
         topic: "Dynamic pricing",
-        icon: <GTM_Soln_5 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
       },
       {
         id: "workforcemanagement",
         topic: "Workforce Management",
-        icon: <GTM_Soln_6 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
         id: "inventoryplanning",
         topic: "Inventory Planning",
-        icon: <GTM_Soln_7 color="#6750a4" width="62" height="62" />,
+        icon: <GTM_Soln_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
