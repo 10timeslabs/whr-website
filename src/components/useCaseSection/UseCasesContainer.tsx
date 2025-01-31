@@ -74,7 +74,7 @@ const UseCasesContainer = ({ text }: Props) => {
         <div className="flex flex-col gap-8 items-center">
 
           {pathName === "/geo" || pathName === "/gtm" ? (
-            <span className="text-[36px] font-medium">{text}</span>
+            <span className="text-[36px] font-medium text-center">{text}</span>
           ) : (
             <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
               <button
@@ -95,15 +95,16 @@ const UseCasesContainer = ({ text }: Props) => {
               </button>
             </div>
           )}
-          {pathName === "/geo" || pathName === "/gtm" ? (
+          {/* {pathName === "/geo" || pathName === "/gtm" ? (
             <div>select your usecase to get started</div>
           ) : (
             ""
-          )}
+          )} */}
+          
+          {pathName === "/"  && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
             USECASES
           </div>
-          <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>
           {/* <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">USECASES</div> */}
         </div>
         <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />
