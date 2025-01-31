@@ -25,7 +25,7 @@ const ProblemContainer = ({cardData} : Props) => {
                     <div className='text-[var(--secondary-text-color)] text-[20px] max-[1000px]:hidden'>Built with billions of signals, millions of sources, thousands of models to answer real questions</div>
                 </div>
                 <div className='w-[60%] flex flex-col gap-4 max-[1000px]:w-[100%] max-[1000px]:justify-center'>
-                    <div className="grid grid-cols-2 gap-4 max-[1000px]:mt-8 max-[1000px]:grid-cols-1">
+                    <div className="grid grid-cols-2 gap-4 max-[1000px]:mt-8 max-[700px]:grid-cols-1">
                         {cardData.map((problem, key) => (
                             <ProblemCard
                                 key={key}
