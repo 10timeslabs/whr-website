@@ -16,12 +16,12 @@ const GetInTouch = () => {
         <div className="flex flex-col items-center text-sm font-medium border border-color rounded-xl py-1 px-7">
           GET IN TOUCH
         </div>
-        <div className="mt-12">
+        <div className="mt-12 text-center">
           <span className="text-[48px]">
             Sign up for free today
           </span>
         </div>
-        <div className="mt-6 text-[#010D3E] text-md text-center w-[30%]">
+        <div className="mt-6 text-[#010D3E] text-md text-center w-[30%] max-[650px]:w-[70%]">
             Celebrate the Power of Connection with a Platform Designed to Track Events, Uncover Insights, and Drive Impact.
         </div>
         <div
