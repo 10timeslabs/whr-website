@@ -430,42 +430,42 @@ export const dropdownValues: any = {
       Product: [
         {
           label: "Event Search",
-          href: "/geo/product1",
+          href: "/geo/product/search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon:<SearchIcon color="currentColor"/>
         },
         {
           label: "Smart Tracker",
-          href: "/geo/product2",
+          href: "/geo/product/search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon :<TrackerIcon color="currentColor"/>
         },
         {
           label: "AI Assistant",
-          href: "/geo/product2",
+          href: "/geo/product/search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <AIAssistantIcon color="currentColor" />,
         },
         {
           label: "Trends Monitor",
-          href: "/geo/product2",
+          href: "/geo/product/search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon:<TrendsIcon color="currentColor"/>
         },
         {
           label: "Coordinate",
-          href: "/geo/product2",
+          href: "/geo/product/search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <CoordinateIcon />,
         },
         {
           label: "API & Model Training",
-          href: "/geo/product2",
+          href: "/geo/product/search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <APIModelIcon color="currentColor" />,

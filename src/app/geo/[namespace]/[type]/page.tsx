@@ -19,6 +19,10 @@ import CircleAnimation from "@/components/circleAnimation/CircleAnimation";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
 import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 import { companyLogos } from "../../../../../data/companyLogoData";
+import GridImage from '/public/herosection_grid.png'
+import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
+import BeniftsSection from "@/components/ProductSection/BeniftsSection";
+import Conclusion from "@/components/ProductSection/Conclusion";
 
 const page = () => {
   const pathname = usePathname();
@@ -28,9 +32,9 @@ const page = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/geo/usecases")) {
     dataSource = geoUsecasesjsonData;
-  }else if(pathname.includes("/gtm/usecases")){
+  } else if (pathname.includes("/gtm/usecases")) {
     dataSource = gtmUsecasesjsonData
-  }else if(pathname.includes("/gtm/solutions")){
+  } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData
   }
 
@@ -46,10 +50,16 @@ const page = () => {
     solution: "Default Solution",
   };
 
-  const dataToDisplay:any = usecaseData || defaultData;
+  const dataToDisplay: any = usecaseData || defaultData;
   console.log("Endpoint:__", endpoint, dataToDisplay);
   return (
-    <div className="relative w-full flex flex-col gap-12 ">
+    <div className="relative w-full flex flex-col gap-12 " style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }} >
+      {pathname.split("/")[2] === "product" &&
+        <>
+          <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
+          <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
+        </>
+      }
       {pathname.split("/")[2] === "usecases" ? (
         <div>
           <Image
@@ -81,16 +91,33 @@ const page = () => {
               <p>{dataToDisplay.subtext}</p>
             </div>
           </div>
-          <div className="mt-16"><AutoScroll icons={companyLogos} size="small"/></div>
+          {/* <div className="mt-16"><AutoScroll icons={companyLogos} size="small"/></div> */}
         </div>
       ) : (
+        pathname.split("/")[2] === "solutions" &&
         <div className="w-full flex items-center justify-center mt-[140px]">
           <Section />
         </div>
       )}
+      {pathname.split("/")[2] !== "solutions" &&
+        <div className="flex flex-col gap-10 items-center mt-12 ">
+          <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS USING WHR</div>
+          <AutoScroll icons={companyLogos} size="small" />
+        </div>}
       <div className="w-full flex justify-center">
         <ProblemSolution />
       </div>
+      {pathname.split("/")[2] === "product" &&
+        <div className="w-full flex items-center justify-center mt-10"><HelpfulContainer /></div>
+      }
+      {pathname.split("/")[2] === "product" &&
+        <div className="w-full flex items-center justify-center mt-10"><BeniftsSection /></div>
+      }
+      {pathname.split("/")[2] === "product" &&
+        <div className="w-full flex items-center justify-center">
+          <Conclusion heading="Make Search Smart" subheading="Go beyond basic lists and power your event strategy with deeper intel." />
+        </div>
+      }
       {pathname.split("/")[2] === "solutions" ? (
         <div className="min-h-[580px]">
           {/* <Scroll /> */}
@@ -99,22 +126,22 @@ const page = () => {
           </div>
         </div>
       ) : (
-        <div className="flex items-center justify-center">
+        pathname.split("/")[2] === "usecases" && <div className="w-full flex items-center justify-center">
           {/* <LandingComponent /> */}
           <Scroll />
         </div>
       )}
-       <div className="mb-5">
+      {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5">
         <VerticalScroll
           mainHeading={
             pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
           }
           dataToDisplay={dataToDisplay}
         />
-      </div>
-      <CircleContainer/>
+      </div>}
+      <CircleContainer />
       <div>
-        <ProductsCarousel/>
+        <ProductsCarousel />
       </div>
     </div>
   );
