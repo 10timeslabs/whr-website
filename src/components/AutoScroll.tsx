@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 
-interface Props{
-  icons : StaticImageData[],
-  size : string;
+interface Props {
+  icons: StaticImageData[],
+  size: string;
 }
 
-const AutoScroll = ({icons, size} : Props) => {
+const AutoScroll = ({ icons, size }: Props) => {
+  const [imageWidth, setImageWidth] = useState(size === "small" ? 150 : 300);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 421 && size !== "small") {
+        setImageWidth(200);
+      } else {
+        setImageWidth(size === "small" ? 150 : 300);
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [size]);
 
   return (
     <div className="relative w-full overflow-hidden">
@@ -19,7 +36,7 @@ const AutoScroll = ({icons, size} : Props) => {
               src={icon}
               alt={`Icon ${index}`}
               layout="intrinsic"
-              width={size === "small" ? 150 : 300}
+              width={imageWidth}
               height={size === "small" ? 80 : 100}
             />
           </div>

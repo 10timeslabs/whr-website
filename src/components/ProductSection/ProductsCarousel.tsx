@@ -46,13 +46,13 @@ const ProductsCarousel = () => {
     }, []);
 
     // Auto-change index every 2 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Loop back to 0
-        }, 3000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Loop back to 0
+    //     }, 3000);
 
-        return () => clearInterval(interval); // Cleanup on unmount
-    }, []);
+    //     return () => clearInterval(interval); // Cleanup on unmount
+    // }, []);
     const handlePrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length); // Loop to last item if at start
     };
