@@ -123,11 +123,6 @@ const page = () => {
             <p>{dataToDisplay.subtext}</p>
           </div>
         </div>
-
-        {/* AutoScroll Section */}
-        <div className="mt-10 md:mt-16">
-          <AutoScroll icons={companyLogos} size="small" />
-        </div>
       </div>
       ) : (
         pathname.split("/")[2] === "solutions" &&
