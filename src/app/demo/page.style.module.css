@@ -1,0 +1,11 @@
+/* Assuming the PhoneInput component has a specific class like .PhoneInput */
+.PhoneInput input {
+    border: none !important;  /* Remove the default border */
+    border-radius: 8px; /* Optional: Set your custom border radius */
+    padding: 8px 12px; /* Optional: Customize padding for the input field */
+    border: 2px solid #4CAF50; /* Set a custom border color and width */
+}
+
+.PhoneInput button {
+    border: none !important; /* Remove the border from the dropdown flag if needed */
+}
