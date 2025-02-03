@@ -181,7 +181,7 @@ const page = () => {
       {pathname.split("/")[2] !== "solutions" && (
         <div className="flex flex-col gap-10 items-center mt-12 ">
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
-            CUSTOMERS USING WHR
+            CUSTOMERS
           </div>
           <AutoScroll icons={companyLogos} size="small" />
         </div>

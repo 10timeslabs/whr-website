@@ -54,14 +54,14 @@ export const dropdownValues: any = {
       "Use Cases": [
         {
           label: "Human Resource (Recruitment)",
-          href: "/gtm/usecases/humanresource",
+          href: "/gtm/usecases/human-resource",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 color="currentColor" />,
         },
         {
           label: "Sales & Biz Dev",
-          href: "/gtm/usecases/sales&bizdev",
+          href: "/gtm/usecases/sales-bizdev",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_2 color="currentColor" />,
@@ -75,14 +75,14 @@ export const dropdownValues: any = {
         },
         {
           label: "CSR",
-          href: "/gtm/usecases/CSR",
+          href: "/gtm/usecases/csr",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_5 color="currentColor" />,
         },
         {
           label: "Tech team",
-          href: "/gtm/usecases/techteam",
+          href: "/gtm/usecases/tech-team",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_6 color="currentColor" />,
@@ -96,7 +96,7 @@ export const dropdownValues: any = {
         },
         {
           label: "Brand Agency",
-          href: "/gtm/usecases/brandagency",
+          href: "/gtm/usecases/brand-agency",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_8 color="currentColor" />,
@@ -117,7 +117,7 @@ export const dropdownValues: any = {
         },
         {
           label: "Research & Consultancy",
-          href: "/gtm/usecases/research&consultancy",
+          href: "/gtm/usecases/research-consultancy",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_11 color="currentColor" />,
@@ -131,28 +131,28 @@ export const dropdownValues: any = {
         },
         {
           label: "Media & News",
-          href: "/gtm/usecases/media&news",
+          href: "/gtm/usecases/media-news",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_12 color="currentColor" />,
         },
         {
           label: "Event Planners and M&A",
-          href: "/gtm/usecases/eventplannersandM&A",
+          href: "/gtm/usecases/event-planners-and-ma",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_13 color="currentColor" />,
         },
         {
           label: "Manpower Agency",
-          href: "/gtm/usecases/manpoweragency",
+          href: "/gtm/usecases/manpower-agency",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_14 color="currentColor" />,
         },
         {
           label: "Community & Groups",
-          href: "/gtm/usecases/community&groups",
+          href: "/gtm/usecases/community-groups",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_15 color="currentColor" />,
@@ -161,49 +161,49 @@ export const dropdownValues: any = {
       Solutions: [
         {
           label: "Competitor Tracking",
-          href: "/gtm/solutions/competitor_tracking",
+          href: "/gtm/solutions/competitor-tracking",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_1 color="currentColor" />,
         },
         {
           label: "Prospects Mapping",
-          href: "/gtm/solutions/prospects_mapping",
+          href: "/gtm/solutions/prospects-mapping",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_2 color="currentColor" />,
         },
         {
           label: "Recruitement & DevRel",
-          href: "/gtm/solutions/recruitement&devRel",
+          href: "/gtm/solutions/recruitement-devrel",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_3 color="currentColor" />,
         },
         {
           label: "Brand Building",
-          href: "/gtm/solutions/brand_building",
+          href: "/gtm/solutions/brand-building",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_4 color="currentColor" />,
         },
         {
           label: "Speaking Opportunity",
-          href: "/gtm/solutions/speaking_opportunity",
+          href: "/gtm/solutions/speaking-opportunity",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_5 color="currentColor" />,
         },
         {
           label: "Product Matching",
-          href: "/gtm/solutions/product_matching",
+          href: "/gtm/solutions/product-matching",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_6 color="currentColor" />,
         },
         {
           label: "Exhibit & Sponsor",
-          href: "/gtm/solutions/exhibit&sponsor",
+          href: "/gtm/solutions/exhibit-sponsor",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_Soln_7 color="currentColor" />,
@@ -265,7 +265,7 @@ export const dropdownValues: any = {
       "Use Cases": [
         {
           label: "Hotel & Lodging",
-          href: "/geo/usecases/hotel&lodging",
+          href: "/geo/usecases/hotel-lodging",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_1 color="currentColor" />,
@@ -279,14 +279,14 @@ export const dropdownValues: any = {
         },
         {
           label: "Activity Planners",
-          href: "/geo/usecases/activityplanners",
+          href: "/geo/usecases/activity-planners",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_3 color="currentColor" />,
         },
         {
           label: "Aviation & Airport",
-          href: "/geo/usecases/aviation&airport",
+          href: "/geo/usecases/aviation-airport",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_4 color="currentColor" />,
@@ -300,14 +300,14 @@ export const dropdownValues: any = {
         },
         {
           label: "OOH Marketing",
-          href: "/geo/usecases/oohmarketing",
+          href: "/geo/usecases/ooh-marketing",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_6 color="currentColor" />,
         },
         {
           label: "Retail Commerce",
-          href: "/geo/usecases/retailcommerce",
+          href: "/geo/usecases/retail-commerce",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_7 color="currentColor" />,
@@ -321,35 +321,35 @@ export const dropdownValues: any = {
         },
         {
           label: "DMO & DMC",
-          href: "/geo/usecases/DMO&DMC",
+          href: "/geo/usecases/dmo-dmc",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_9 color="currentColor" />,
         },
         {
           label: "Event Planners",
-          href: "/geo/usecases/eventplanners",
+          href: "/geo/usecases/event-planners",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_10 color="currentColor" />,
         },
         {
           label: "Venue Operators",
-          href: "/geo/usecases/venueoperators",
+          href: "/geo/usecases/venue-operators",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_11 color="currentColor" />,
         },
         {
           label: "Hyperlocal & Quick Commerce",
-          href: "/geo/usecases/hyperlocal&quickcommerce",
+          href: "/geo/usecases/hyperlocal-quick-commerce",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_12 color="currentColor" />,
         },
         {
           label: "Local Government",
-          href: "/geo/usecases/localgovernment",
+          href: "/geo/usecases/local-government",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_13 color="currentColor" />,
@@ -363,7 +363,7 @@ export const dropdownValues: any = {
         },
         {
           label: "Manpower Agency",
-          href: "/geo/usecases/manpoweragency",
+          href: "/geo/usecases/manpower-agency",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_UseCase_15 color="currentColor" />,
@@ -372,56 +372,56 @@ export const dropdownValues: any = {
       Solutions: [
         {
           label: "Demand Forecasting",
-          href: "/geo/solutions/demand_forecasting",
+          href: "/geo/solutions/demand-forecasting",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_1 color="currentColor" />,
         },
         {
           label: "Risk Identification",
-          href: "/geo/solutions/risk_identification",
+          href: "/geo/solutions/risk-identification",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_2 color="currentColor" />,
         },
         {
           label: "Geo Marketing",
-          href: "/geo/solutions/geo_marketing",
+          href: "/geo/solutions/geo-marketing",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_3 color="currentColor" />,
         },
         {
           label: "Event Prospecting",
-          href: "/geo/solutions/event_prospecting",
+          href: "/geo/solutions/event-prospecting",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_4 color="currentColor" />,
         },
         {
           label: "Dynamic Pricing",
-          href: "/geo/solutions/dynamic_pricing",
+          href: "/geo/solutions/dynamic-pricing",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_5 color="currentColor" />,
         },
         {
           label: "Workforce Management",
-          href: "/geo/solutions/workforce_management",
+          href: "/geo/solutions/workforce-management",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_6 color="currentColor" />,
         },
         {
           label: "Inventory Planning",
-          href: "/geo/solutions/inventory_planning",
+          href: "/geo/solutions/inventory-planning",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_7 color="currentColor" />,
         },
         {
           label: "Travel Advisory",
-          href: "/geo/solutions/travel_advisory",
+          href: "/geo/solutions/travel-advisory",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <Geo_Soln_8 color="currentColor" />,

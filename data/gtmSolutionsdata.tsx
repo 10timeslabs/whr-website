@@ -10,7 +10,7 @@ import { GTM_UseCase_1, GTM_UseCase_10, GTM_UseCase_11, GTM_UseCase_12, GTM_UseC
 
 export const gtmSolutionsjsonData = [
   {
-    id: "brand_building",
+    id: "brand-building",
     image: BrandBuilding,
     text: "Brand Alignment",
     subtext:
@@ -138,7 +138,7 @@ usecases: [
 ],  
 },
   {
-    id: "competitor_tracking",
+    id: "competitor-tracking",
     image: CompetitorTracking,
     text: "Competitor Tracking",
     subtext:
@@ -260,7 +260,7 @@ usecases: [
 ],   
 },
   {
-    id: "exhibit&sponsor",
+    id: "exhibit-sponsor",
     image: ExhibitorAndSponsor,
     text: "Exhibit & Sponsor",
     subtext:
@@ -386,7 +386,7 @@ usecases: [
 ],   
 },
   {
-    id: "product_matching",
+    id: "product-matching",
     image: ProductMatching,
     text: "Product Matching",
     subtext:
@@ -512,7 +512,7 @@ usecases: [
 },
 
   {
-    id: "prospects_mapping",
+    id: "prospects-mapping",
     image: ProspectMapping,
     text: "Prospect Mapping",
     subtext:
@@ -636,7 +636,7 @@ usecases: [
 ],   
 },
   {
-    id: "recruitement&devRel",
+    id: "recruitement-devrel",
     image: Recruitement,
     text: "Recruitement & DevRel",
     subtext:
@@ -761,7 +761,7 @@ usecases: [
 ],   
 },
   {
-    id: "speaking_opportunity",
+    id: "speaking-opportunity",
     image: SpeakingOpportunity,
     text: "Speaking Opportunity",
     subtext:

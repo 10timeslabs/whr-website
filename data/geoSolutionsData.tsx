@@ -27,7 +27,7 @@ import {
 
 export const geoSolutionsjsonData = [
   {
-    id: "demand_forecasting",
+    id: "demand-forecasting",
     image: DemandForeCasting,
     text: "Forecast Onground Demand",
     subtext:
@@ -123,7 +123,7 @@ b. Consume data via an API to include in your internal prediction model`,
     ],
   },
   {
-    id: "dynamic_pricing",
+    id: "dynamic-pricing",
     image: DynamicPricing,
     text: "Less Surprise, Better Price",
     subtext:
@@ -185,7 +185,7 @@ b. Consume data via an API to include in your internal prediction model`,
     ],
   },
   {
-    id: "event_prospecting",
+    id: "event-prospecting",
     image: EventProspecting,
     text: "Events Mean Business",
     subtext:
@@ -256,7 +256,7 @@ b. Consume data via an API to include in your internal prediction model`,
     ],
   },
   {
-    id: "geo_marketing",
+    id: "geo-marketing",
     image: GeoMarketing,
     text: "Spot that is Hot",
     subtext:
@@ -313,7 +313,7 @@ b. Consume data via an API to include in your internal prediction model`,
   },
 
   {
-    id: "inventory_planning",
+    id: "inventory-planning",
     image: InventoryPlanning,
     text: "Ready with the Right Stock",
     subtext:
@@ -348,7 +348,7 @@ b. Consume data via an API to include in your internal prediction model`,
     ],
   },
   {
-    id: "risk_identification",
+    id: "risk-identification",
     image: RiskIdentification,
     text: "Turn Risk into Opportunity",
     subtext:
@@ -397,7 +397,7 @@ b. Consume data via an API to include in your internal prediction model`,
     ],
   },
   {
-    id: "travel_advisory",
+    id: "travel-advisory",
     image: TravelAdvisory,
     text: "Better Safe than Sorry",
     subtext:
@@ -439,7 +439,7 @@ b. Consume data via an API to include in your internal prediction model`,
     ],
   },
   {
-    id: "workforce_management",
+    id: "workforce-management",
     image: WorkforceManagement,
     text: "Manage Workforce Availability & Utilization",
     subtext:

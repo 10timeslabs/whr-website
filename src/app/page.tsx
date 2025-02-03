@@ -47,7 +47,7 @@ export default function Home() {
       <div className="w-full"><Clarity /></div>
       <div className="w-full"><ProblemContainer cardData={cardData} /></div>
       <div className="flex flex-col gap-10 items-center mt-12 mb-[80px]">
-        <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS USING WHR</div>
+        <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS</div>
         <AutoScroll icons={companyLogos} size="small" />
       </div>
       <CircleContainer />

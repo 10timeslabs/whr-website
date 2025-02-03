@@ -35,7 +35,7 @@ import {
 } from "../svgicons/icons";
 export const geoUsecasesjsonData = [
   {
-    id: "hotel&lodging",
+    id: "hotel-lodging",
     image: Hotelandlodging,
     text: "Higher Occupancy, Lower Surprises",
     // blurColor: "#E3B785",
@@ -51,7 +51,7 @@ export const geoUsecasesjsonData = [
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for hotels & other accomodation providers.",
     usecases: [
       {
-        id: "demand_forecasting",
+        id: "demand-forecasting",
         topic: "Demand Forecasting",
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
@@ -167,7 +167,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "activityplanners",
+    id: "activity-planners",
     image: ActivityPlanners,
     // blurColor: "#C2BDC1",
     blurColor:
@@ -227,7 +227,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "aviation&airport",
+    id: "aviation-airport",
     image: Aviation,
     // blurColor: "#D6DDF3",
     blurColor:
@@ -391,7 +391,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "oohmarketing",
+    id: "ooh-marketing",
     image: OOHMarketing,
     // blurColor: "#BBBBB2",
     blurColor:
@@ -443,7 +443,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "retailcommerce",
+    id: "retail-commerce",
     image: RetailCommerce,
     // blurColor: "#E6DACE",
     blurColor:
@@ -554,7 +554,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "DMO&DMC",
+    id: "dmo-dmc",
     image: DemoDMC,
     // blurColor: "#BFA78D",
     blurColor:
@@ -599,7 +599,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "venueoperators",
+    id: "venue-operators",
     image: VenueOperator,
     // blurColor: "#C3BFBE",
     // blurColor: "linear-gradient(to bottom, #ffffff, #C3BFBE)",
@@ -645,7 +645,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "hyperlocal&quickcommerce",
+    id: "hyperlocal-quick-commerce",
     image: QuickCommerce,
     // blurColor: "#D6D3D2",
     blurColor:
@@ -697,7 +697,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "localgovernment",
+    id: "local-government",
     image: LocalGovernment,
     // blurColor: "#FFFFF",
     blurColor:
@@ -742,7 +742,7 @@ export const geoUsecasesjsonData = [
     ],
   },
   {
-    id: "manpoweragency",
+    id: "manpower-agency",
     image: ManPower,
     // blurColor: "#D9DEE9",
     blurColor:
@@ -755,7 +755,7 @@ export const geoUsecasesjsonData = [
     solution: "",
     usecases: [
       {
-        id: "hotel&lodging",
+        id: "hotel-lodging",
         topic: "Hotel & Lodging",
         content:
           "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
@@ -814,7 +814,7 @@ export const geoUsecasesjsonData = [
   },
 
   {
-    id: "eventplanners",
+    id: "event-planners",
     image: EventPlanner,
     // blurColor: "#D9DEE9",
     blurColor:
