@@ -139,7 +139,8 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="mt-12 text-center sm:text-left">
           <p className="text-[#BCBCBC] text-sm">
-            © 2025 Crintel Labs Private Limited. All rights reserved.
+            {/* © 2025 Crintel Labs Private Limited. All rights reserved. */}
+            {new Date().getFullYear()} Crintel Labs Private Limited. All rights reserved
           </p>
         </div>
       </div>

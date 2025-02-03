@@ -65,7 +65,7 @@ const ProductsCarousel = () => {
         <div className="h-[650px] w-full overflow-hidden flex flex-col items-center justify-center">
             <div className="flex flex-col text-center">
                 <span className="text-[48px]">Foresee the Future</span>
-                <span className="text-[var(--secondary-text-color)] text-[18px]"> Real-World Made Predictable for Taking Proactive Action</span>
+                <span className="text-[var(--secondary-text-color)] text-[18px]"> Real-world made predictable for taking proactive action</span>
             </div>
             <div className='w-[87%] border border-[var(--border-color)] relative rounded-xl h-[542px] items-center overflow-hidden flex flex-col justify-start mt-10'>
                 <div

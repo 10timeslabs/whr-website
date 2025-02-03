@@ -68,14 +68,14 @@ const GeneralNavbar = () => {
         className={`fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out`}
       >
         <div
-          className={`mx-auto px-6 py-4 flex items-center transition-all duration-1000 ease-in-out ${
+          className={` py-4 flex items-center transition-all duration-1000 ease-in-out ${
             isScrolled
-              ? "bg-white shadow-md justify-between space-x-8 transform scale-95 rounded-full"
-              : "bg-transparent lg:justify-around justify-between py-2"
+              ? "bg-white px-6 shadow-md justify-between space-x-8 transform scale-95 rounded-full"
+              : "bg-transparent py-2 justify-between"
           }`}
           style={{
-            // maxWidth: isScrolled ? "56rem" : "80rem",
-            maxWidth: isScrolled ? "60rem" : "90rem",
+            width: isScrolled ? "80%" : "87%",
+            margin: "0 auto",
           }}
         >
           <div className="flex-shrink-0 flex items-center">
@@ -89,13 +89,15 @@ const GeneralNavbar = () => {
               <div
                 className={`${isScrolled ? "border-r border" : ""} h-[30px]`}
               ></div>
-               <div className={`${isScrolled ? "hidden" : ""} max-[768px]:hidden`}>
+              <div
+                className={`${isScrolled ? "hidden" : ""} max-[768px]:hidden`}
+              >
                 <Image src={WhrAIText} alt="nav-logo" className="h-6 w-auto" />
               </div>
             </Link>
           </div>
 
-          <div className="hidden lg:flex space-x-8 bg-white rounded-3xl relative">
+          <div className="hidden lg:flex space-x-4 bg-white rounded-3xl relative">
             {["Use Cases", "Solutions", "Product"].map((item) => (
               <div key={item} className="">
                 <div
@@ -239,12 +241,12 @@ const GeneralNavbar = () => {
             >
               Demo
             </Link> */}
-             <Link
-            href="/signup"
-            className="px-6 py-2 text-white bg-primary rounded hover:bg-violet-400 transition-colors duration-300 ease-in-out"
-          >
-            Sign Up
-          </Link>
+            <Link
+              href="/signup"
+              className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
+            >
+              Sign Up
+            </Link>
           </div>
           <div className="lg:hidden flex items-center">
             <button

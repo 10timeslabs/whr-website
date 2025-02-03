@@ -24,7 +24,7 @@ import {
 } from "../svgicons/icons";
 export const gtmUsecasesjsonData = [
   {
-    id: "CSR",
+    id: "csr",
     image: CSR,
     //#ECEEE9
     text: "Find Strategic Initiatives",
@@ -90,7 +90,7 @@ export const gtmUsecasesjsonData = [
     ],
   },
   {
-    id: "eventsuppliers",
+    id: "event-suppliers",
     image: EventSupplier,
     //#ECEEE9
     text: "Don’t Miss an Event",
@@ -222,7 +222,7 @@ export const gtmUsecasesjsonData = [
     ],
   },
   {
-    id: "sales&bizdev",
+    id: "sales-bizdev",
     image: SalesAndBiz,
     //#ECEEE9
     blurColor:
@@ -289,7 +289,7 @@ export const gtmUsecasesjsonData = [
   },
 
   {
-    id: "techteam",
+    id: "tech-team",
     image: Tech,
     //#ECEEE9
     blurColor:
@@ -356,7 +356,7 @@ export const gtmUsecasesjsonData = [
   },
 
   {
-    id: "brandagency",
+    id: "brand-agency",
     image: Brand,
     //#FDFDFD
     blurColor:
@@ -422,7 +422,7 @@ export const gtmUsecasesjsonData = [
     ],
   },
   {
-    id: "community&groups",
+    id: "community-groups",
     image: Community,
     //#CDCDCD
     blurColor:
@@ -488,7 +488,7 @@ export const gtmUsecasesjsonData = [
     ],
   },
   {
-    id: "humanresource",
+    id: "human-resource",
     image: HumanResource,
     //#DEE4E8
     blurColor:
@@ -620,7 +620,7 @@ export const gtmUsecasesjsonData = [
     ],
   },
   {
-    id: "manpoweragency",
+    id: "manpower-agency",
     image: ManPower,
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 205, 218, 0.5) 53%)",
@@ -685,7 +685,7 @@ export const gtmUsecasesjsonData = [
     ],
   },
   {
-    id: "media&news",
+    id: "media-news",
     image: NewsAndMedia,
     //#E7E7E5
     blurColor:
@@ -816,7 +816,7 @@ export const gtmUsecasesjsonData = [
     ],
   },
   {
-    id: "research&consultancy",
+    id: "research-consultancy",
     image: ResearchAndConsulting,
     //#E7E7E5
     blurColor:
@@ -948,7 +948,7 @@ export const gtmUsecasesjsonData = [
     ],
   },
   {
-    id: "eventplannersandM&A",
+    id: "event-planners-and-ma",
     image: MandA,
     //#CBA88B
     blurColor:

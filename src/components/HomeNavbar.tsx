@@ -37,17 +37,16 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav
-      className={`fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out`}
-    >
+    <nav className="fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out">
       <div
-        className={`mx-auto px-6 py-4 flex items-center transition-all duration-1000 ease-in-out ${
+        className={` py-4 flex items-center transition-all duration-1000 ease-in-out ${
           isScrolled
-            ? "bg-white shadow-md justify-between space-x-8 transform scale-95 rounded-full"
-            : "bg-transparent py-2 lg:justify-around justify-between"
+            ? "bg-white px-6 shadow-md justify-between space-x-8 transform scale-95 rounded-full"
+            : "bg-transparent py-2 justify-between"
         }`}
         style={{
-          maxWidth: isScrolled ? "50rem" : "90rem",
+          width: isScrolled ? "75%" : "87%",
+          margin: "0 auto",
         }}
       >
         {/* Logo */}
@@ -62,14 +61,14 @@ const Navbar = () => {
             <div
               className={`${isScrolled ? "border-r border" : ""} h-[30px]`}
             ></div>
-            <div className={`${isScrolled ? "hidden" : ""} max-[768px]:hidden`}>
+            <div className={`${isScrolled ? "hidden" : ""} max-[1023px]:hidden`}>
               <Image src={WhrAIText} alt="nav-logo" className="h-6 w-auto" />
             </div>
           </Link>
         </div>
 
         {/* ----------------Mobile Menu Button -----------------*/}
-        <div className="md:hidden flex items-center">
+        <div className="lg:hidden flex items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="rounded-md text-white"
@@ -84,35 +83,39 @@ const Navbar = () => {
         </div>
 
         {/* ------------------Desktop Links-------------- */}
-        <div className="hidden md:flex space-x-4 px-4 py-2 ml-4 rounded-3xl transition-all duration-500 ease-in-out bg-white">
+        <div className="hidden lg:flex space-x-6 py-2 ml-6 px-8 rounded-3xl transition-all duration-500 ease-in-out bg-white">
           <Link href="/geo" className="text-black hover:text-primary text-lg">
             Geo
           </Link>
           <Link href="/gtm" className="text-black hover:text-primary text-lg">
             Gtm
           </Link>
-          <Link href="/geni" className="text-black hover:text-primary text-lg">
+          {/* <Link href="/geni" className="text-black hover:text-primary text-lg">
             Geni
-          </Link>
-          <Link href="https://docs.google.com/document/d/1gwqPfP18N2PuokVuXQhKjNDTr_UyHknw7umGhwekBq8/edit?usp=sharing" target="_blank" className="text-black hover:text-primary text-lg">
+          </Link> */}
+          <Link
+            href="https://docs.google.com/document/d/1gwqPfP18N2PuokVuXQhKjNDTr_UyHknw7umGhwekBq8/edit?usp=sharing"
+            target="_blank"
+            className="text-black hover:text-primary text-lg"
+          >
             About
           </Link>
         </div>
 
         {/*-------------- Desktop Buttons------------------- */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden lg:flex space-x-4">
           <Link
             href="/signup"
-            className="px-6 py-2 text-white bg-primary rounded hover:bg-violet-400 transition-colors duration-300 ease-in-out"
+            className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
           >
             Sign Up
           </Link>
-          {/* <Link
+          <Link
             href="/demo"
-            className="px-6 py-2 text-primary border border-primary rounded hover:bg-violet-900 hover:text-white transition-colors duration-300 ease-in-out"
+            className="px-[15px] py-[8px] rounded-[10px]  border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
           >
             Demo
-          </Link> */}
+          </Link>
         </div>
       </div>
 
@@ -165,16 +168,16 @@ const Navbar = () => {
         <div className="mt-10 space-y-6">
           <Link
             href="/signup"
-            className="block w-48 px-6 py-3 text-white bg-primary rounded-lg text-center text-xl hover:bg-violet-400 transition-all duration-300 ease-in-out"
+            className="block w-48 px-6 py-3 text-white bg-primary rounded-lg text-center text-xl hover:bg-primary transition-all duration-300 ease-in-out"
           >
             Sign Up
           </Link>
-          {/* <Link
+          <Link
             href="/demo"
-            className="block w-48 px-6 py-3 text-primary border border-primary rounded-lg text-center text-xl hover:bg-violet-900 hover:text-white transition-all duration-300 ease-in-out"
+            className="block w-48 px-6 py-3 text-primary border border-primary rounded-lg text-center text-xl hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
           >
             Demo
-          </Link> */}
+          </Link>
         </div>
       </div>
 
