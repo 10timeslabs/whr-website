@@ -114,7 +114,7 @@ const Scroll = () => {
 
   return (
     <div className="min-h-[500px] w-full overflow-hidden flex justify-center" ref={scrollRef}>
-      <div className="w-[1300px] border border-[var(--border-color)] relative rounded-xl h-[500px] items-center justify-center overflow-hidden">
+      <div className="w-[87%] border border-[var(--border-color)] relative rounded-xl h-[500px] items-center justify-center overflow-hidden">
         <div
           className={`absolute ${currentIndex === 0 ? "right-0 top-[20%]" : "right-[-30%] top-0"} h-[500px] w-[85%] -z-10`}
           style={{

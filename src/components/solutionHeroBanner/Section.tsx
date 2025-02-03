@@ -34,7 +34,7 @@ const Section = () => {
   const dataToDisplay = usecaseData || defaultData;
 
   return (
-    <div className="w-[80%]">
+    <div className="w-[87%]">
       <HeroBanner
         heading={dataToDisplay.text}
         subHeading={dataToDisplay.subtext}

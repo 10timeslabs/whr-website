@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const VerticalScroll = ({ mainHeading, dataToDisplay }: any) => {
 
   return (
-    <div className="w-full flex flex-col items-center gap-5 p-4">
+    <div className="w-[87%] flex flex-col items-center gap-5 p-4">
       <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
         {mainHeading}
       </div>

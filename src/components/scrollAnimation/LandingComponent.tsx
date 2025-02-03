@@ -33,7 +33,7 @@ const LandingComponent = () => {
   const points = dataToDisplay.how.split("\n");
   
   return (
-    <div className="rounded-[20px] border border-[var(--border-color)] w-[80%] flex flex-col items-center gap-10 px-[70px] py-[40px] relative overflow-hidden">
+    <div className="rounded-[20px] border border-[var(--border-color)] w-[87%] flex flex-col items-center gap-10 px-[70px] py-[40px] relative overflow-hidden">
       {/* Background Radial Gradient */}
       <div
         className="absolute right-[-40%] top-0 h-full w-full -z-10"

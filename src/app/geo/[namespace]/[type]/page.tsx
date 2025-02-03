@@ -133,7 +133,7 @@ const page = () => {
           <Scroll />
         </div>
       )}
-      {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5">
+      {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="w-full flex items-center justify-center mb-5">
         <VerticalScroll
           mainHeading={
             pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
