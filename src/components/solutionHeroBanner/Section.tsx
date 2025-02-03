@@ -5,25 +5,20 @@ import React from "react";
 import HeroBanner from "./HeroBanner";
 import { usePathname } from "next/navigation";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
-import { gtmSolutionsjsonData } from '../../../data/gtmSolutionsdata';
+import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
 
 const Section = () => {
   const pathname = usePathname();
-
-  // Determine data source based on the pathname
   let dataSource = null;
   if (pathname.includes("/geo/solutions")) {
     dataSource = geoSolutionsjsonData;
-  } else if (pathname.includes("/gtm/solution")) {
+  } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData;
-  } 
-  // else{
-  //   dataSource =
-  // }
+  }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
 
-  const usecaseData = dataSource?.find((item) => item.id.toLowerCase() === endpoint);
+  const usecaseData = dataSource?.find((item: any) => item.id.toLowerCase() === endpoint);
 
   const defaultData = {
     image: dataSource?.[0]?.image || "",

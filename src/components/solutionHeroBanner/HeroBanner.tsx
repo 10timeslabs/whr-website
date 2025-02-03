@@ -1,11 +1,12 @@
 import React from "react";
 import DemandImg from "/public/demandforecasting.svg";
 import Image from "next/image";
+import Lottie from "lottie-react";
 
 interface Props {
   heading: string;
   subHeading: string;
-  image: string;
+  image: any;
 }
 
 const HeroBanner = ({ heading, subHeading, image }: Props) => {
@@ -18,7 +19,7 @@ const HeroBanner = ({ heading, subHeading, image }: Props) => {
         </div>
       </div>
       <div className="w-[507px] h-[263px]">
-        <Image src={image} alt="banner" className="w-full h-full" />
+        <Lottie animationData={image} style={{ width: '100%', height: '100%' }}/>
       </div>
     </div>
   );

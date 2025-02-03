@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
 import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
+import Lottie from "lottie-react";
 
 const LandingComponent = () => {
   const pathname = usePathname();
@@ -16,7 +17,7 @@ const LandingComponent = () => {
   }
   console.log("data is ", dataSource)
   const endpoint = pathname.split("/").pop()?.toLowerCase();
-  console.log("endpoint is",endpoint)
+  console.log("endpoint is", endpoint)
 
   const usecaseData = dataSource?.find((item) => {
     return item.id.toLowerCase() === endpoint;
@@ -31,7 +32,7 @@ const LandingComponent = () => {
   const dataToDisplay = usecaseData || defaultData;
 
   const points = dataToDisplay.how.split("\n");
-  
+
   return (
     <div className="rounded-[20px] border border-[var(--border-color)] w-[87%] flex flex-col items-center gap-10 px-[70px] py-[40px] relative overflow-hidden">
       {/* Background Radial Gradient */}
@@ -51,14 +52,16 @@ const LandingComponent = () => {
       </div>
 
       <div className="flex items-center gap-10">
-        <div className="flex flex-col gap-5 text-lg">
+        <div className="flex flex-col gap-5 text-lg w-[60%]">
           <div className="mt-2">
             {points.map((point: string, index: number) => (
               <p key={index}>{point}</p>
             ))}
           </div>
-        </div>
-        <Image src={dataToDisplay.image} alt="img" width={428} />
+        </div>        
+        <div className="w-[507px] h-[263px]">
+        <Lottie animationData={dataToDisplay.image} style={{ width: '100%', height: '100%' }}/>
+      </div>
       </div>
     </div>
   );
