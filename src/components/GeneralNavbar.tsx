@@ -68,11 +68,10 @@ const GeneralNavbar = () => {
         className={`fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out`}
       >
         <div
-          className={` py-4 flex items-center transition-all duration-1000 ease-in-out ${
-            isScrolled
-              ? "bg-white px-6 shadow-md justify-between space-x-8 transform scale-95 rounded-full"
-              : "bg-transparent py-2 justify-between"
-          }`}
+          className={` py-4 flex items-center transition-all duration-1000 ease-in-out ${isScrolled
+            ? "bg-white px-6 shadow-md justify-between space-x-8 transform scale-95 rounded-full"
+            : "bg-transparent py-2 justify-between"
+            }`}
           style={{
             width: isScrolled ? "80%" : "87%",
             margin: "0 auto",
@@ -124,13 +123,12 @@ const GeneralNavbar = () => {
                     </div>
 
                     <div
-                      className={`grid ${
-                        options[item].length <= 5
-                          ? "grid-cols-1"
-                          : options[item].length <= 10
+                      className={`grid ${options[item].length <= 5
+                        ? "grid-cols-1"
+                        : options[item].length <= 10
                           ? "grid-cols-2"
                           : "grid-cols-3"
-                      } gap-2 p-2`}
+                        } gap-2 p-2`}
                     >
                       <div className="flex flex-col gap-2">
                         {options[item].slice(0, 5).map((link: any, i: any) => (
@@ -234,18 +232,18 @@ const GeneralNavbar = () => {
             </div>
           </div>
 
-          <div className=" hidden lg:flex items-center">
-            {/* <Link
-              href="/demo"
-              className="px-8 py-2 text-primary border border-primary rounded hover:bg-violet-900 hover:text-white"
-            >
-              Demo
-            </Link> */}
+          <div className=" hidden lg:flex items-center space-x-4">
             <Link
               href="/signup"
               className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
             >
               Sign Up
+            </Link>
+            <Link
+              href="/demo"
+              className="px-[15px] py-[8px] rounded-[10px]  border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
+            >
+              Demo
             </Link>
           </div>
           <div className="lg:hidden flex items-center">

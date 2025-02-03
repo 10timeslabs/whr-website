@@ -68,41 +68,6 @@ const page = () => {
         </>
       )}
       {pathname.split("/")[2] === "usecases" ? (
-        // <div className="relative w-full">
-        //   {/* Background Image */}
-        //   <Image
-        //     src={dataToDisplay.image}
-        //     alt="Banner Image"
-        //     className="h-[450px] md:h-[650px] w-full object-cover"
-        //   />
-
-        //   {/* Blurry Background */}
-        //   <div
-        //     className="absolute left-0 top-0 h-[450px] md:h-[650px] w-full md:w-[700px] p-6 rounded-r-md"
-        //     style={{
-        //       opacity: "0.9",
-        //       background: `${dataToDisplay.blurColor}`,
-        //       filter: "blur(100px)",
-        //       backdropFilter: "blur(50px)",
-        //       maskImage:
-        //         "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
-        //     }}
-        //   />
-
-        //   {/* Text Content */}
-        //   <div className="absolute left-5 md:left-[100px] top-10 h-auto max-w-[90%] md:max-w-[40%] p-4 md:p-6 rounded-r-md flex flex-col">
-        //     {/* Main Text */}
-        //     <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
-        //       {dataToDisplay.text}
-        //     </div>
-
-        //     {/* Subtext */}
-        //     <div className="text-[#171717] text-sm md:text-lg leading-5 md:leading-6 mt-4 text-wrap break-words">
-        //       <p>{dataToDisplay.subtext}</p>
-        //     </div>
-        //   </div>
-        // </div>
-
         <div className="w-full">
           {/* For Screens ≤ 898px - Text Above, Image Below */}
           <div className="max-[898px]:flex flex-col hidden mt-20 relative">
