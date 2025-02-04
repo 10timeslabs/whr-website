@@ -212,21 +212,21 @@ export const dropdownValues: any = {
       Product: [
         {
           label: "Event Search",
-          href: "/gtm/product/eventsearch",
+          href: "/gtm/product/event-search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 color="currentColor" />,
         },
         {
           label: "AI Assistant",
-          href: "/gtm/product/aiassistant",
+          href: "/gtm/product/ai-assistant",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 color="currentColor" />,
         },
         {
           label: "Smart Tracker",
-          href: "/gtm/product/smarttracker",
+          href: "/gtm/product/smart-tracker",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 color="currentColor" />,
@@ -254,7 +254,7 @@ export const dropdownValues: any = {
         },
         {
           label: "Trends Monitor",
-          href: "/gtm/product/trendsmonitor",
+          href: "/gtm/product/trends-monitor",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_1 color="currentColor" />,
@@ -430,42 +430,42 @@ export const dropdownValues: any = {
       Product: [
         {
           label: "Event Search",
-          href: "/geo/product/search",
+          href: "/geo/product/event-search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon:<SearchIcon color="currentColor"/>
         },
         {
           label: "Smart Tracker",
-          href: "/geo/product/search",
+          href: "/geo/product/smart-tracker",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon :<TrackerIcon color="currentColor"/>
         },
         {
           label: "AI Assistant",
-          href: "/geo/product/search",
+          href: "/geo/product/ai-assistant",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <AIAssistantIcon color="currentColor" />,
         },
         {
           label: "Trends Monitor",
-          href: "/geo/product/search",
+          href: "/geo/product/trends-monitor",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon:<TrendsIcon color="currentColor"/>
         },
         {
           label: "Coordinate",
-          href: "/geo/product/search",
+          href: "/geo/product/coordinate",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <CoordinateIcon />,
         },
         {
           label: "API & Model Training",
-          href: "/geo/product/search",
+          href: "/geo/product/api_modeltraining",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <APIModelIcon color="currentColor" />,
