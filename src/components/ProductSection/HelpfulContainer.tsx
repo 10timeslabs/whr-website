@@ -25,11 +25,6 @@ const HelpfulContainer = () => {
 		return { heading, subheading };
 	  });
 
-	const data = [
-		{ heading: "Search by Geo", subheading: "Draw polygons or pick entire cities." },
-		{ heading: "Filter by Types", subheading: "Business, social, or unplanned events." },
-		{ heading: "View Flexibly", subheading: "Table, card, map, or calendar." },
-	]
 	return (
 		<div className='w-[87%] flex flex-col justify-center items-center gap-10'>
 			<div className='w-[70%] flex justify-between items-start'>

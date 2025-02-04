@@ -5,6 +5,8 @@ import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
 import { geoUsecasesjsonData } from "../../../data/geoUsecasesData";
 import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
 import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
+import { geoProductJsonData } from "../../../data/geoProductData";
+import { gtmProductJsonData } from "../../../data/gtmProductData";
 import ProblemImg from '/public/Problembanner.png'
 import SolutionImg from '/public/Solutionbanner.png'
 import Image from "next/image";
@@ -50,6 +52,10 @@ const ProblemSolution = () => {
     dataSource = gtmUsecasesjsonData
   } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData
+  } else if(pathname.includes("/geo/product")){
+    dataSource = geoProductJsonData
+  } else if(pathname.includes("/gtm/product")){
+    dataSource = gtmProductJsonData
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
@@ -59,7 +65,7 @@ const ProblemSolution = () => {
   });
 
   const defaultData = {
-    image: dataSource?.[0]?.image || "",
+    // image: dataSource?.[0]?.image || "",
     problem: "Default Problem",
     solution: "Default Solution",
   };
