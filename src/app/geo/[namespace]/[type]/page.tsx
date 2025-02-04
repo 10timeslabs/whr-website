@@ -5,16 +5,11 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { geoUsecasesjsonData } from "../../../../../data/geoUsecasesData";
 import ProblemSolution from "@/components/problemSolution/ProblemSolution";
-import Scroll from "@/components/scrollAnimation/Scroll";
 import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
-import UsecaseScroll from "@/components/usecaseScrollAnimation/UsecaseScroll";
-import HeroBanner from "@/components/solutionHeroBanner/HeroBanner";
 import Section from "@/components/solutionHeroBanner/Section";
 import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import AutoScroll from "@/components/AutoScroll";
 import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
-import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
-import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
 import CircleAnimation from "@/components/circleAnimation/CircleAnimation";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
 import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
@@ -23,6 +18,7 @@ import GridImage from "/public/herosection_grid.png";
 import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
+import HowWeAreHelpful from "@/components/useCaseSection/HowWeAreHelpful";
 
 const page = () => {
   const pathname = usePathname();
@@ -32,11 +28,7 @@ const page = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/geo/usecases")) {
     dataSource = geoUsecasesjsonData;
-  } else if (pathname.includes("/gtm/usecases")) {
-    dataSource = gtmUsecasesjsonData;
-  } else if (pathname.includes("/gtm/solutions")) {
-    dataSource = gtmSolutionsjsonData;
-  }
+  } 
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
 
@@ -182,7 +174,7 @@ const page = () => {
         pathname.split("/")[2] === "usecases" && (
           <div className="w-full flex items-center justify-center">
             {/* <LandingComponent /> */}
-            <Scroll />
+            <HowWeAreHelpful />
           </div>
         )
       )}
