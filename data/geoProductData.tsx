@@ -4,6 +4,24 @@ import Research  from '/public/geoProductImages/Research.png'
 import TrackerTenmplate  from '/public/geoProductImages/tracker-templates.png'
 import TrackerLanding  from '/public/geoProductImages/Trackers-landing.png'
 import Trends  from '/public/geoProductImages/Trends-product.png'
+import Icon1  from '/public/GeoProductHowIcons/Teli-01.svg'
+import Icon2  from '/public/GeoProductHowIcons/Teli-02.svg'
+import Icon3  from '/public/GeoProductHowIcons/Teli-03.svg'
+import Icon4  from '/public/GeoProductHowIcons/Teli-04.svg'
+import Icon5  from '/public/GeoProductHowIcons/Teli-05.svg'
+import Icon6  from '/public/GeoProductHowIcons/Teli-06.svg'
+import Icon7  from '/public/GeoProductHowIcons/Teli-07.svg'
+import Icon8  from '/public/GeoProductHowIcons/Teli-08.svg'
+import Icon9  from '/public/GeoProductHowIcons/Teli-09.svg'
+import Icon10  from '/public/GeoProductHowIcons/Teli-10.svg'
+import Icon11  from '/public/GeoProductHowIcons/Teli-11.svg'
+import Icon12  from '/public/GeoProductHowIcons/Teli-12.svg'
+import Icon13  from '/public/GeoProductHowIcons/Teli-13.svg'
+import Icon14  from '/public/GeoProductHowIcons/Teli-14.svg'
+import Icon15  from '/public/GeoProductHowIcons/Teli-15.svg'
+import Icon16  from '/public/GeoProductHowIcons/Teli-16.svg'
+import Icon17  from '/public/GeoProductHowIcons/Teli-17.svg'
+import Icon18  from '/public/GeoProductHowIcons/Teli-18.svg'
 
 export const geoProductJsonData = [
     {
@@ -16,7 +34,11 @@ export const geoProductJsonData = [
             "Events are often limited to basic fields (topic, date, location). More signals are needed to quantify relevance & ROI from all available opportunities.",
         solution:
             "Allow polygon-based or citywide searches. Filter by event types, inbound scores, or expected footfall to see which events matter most.",
-        how: ["Search by Geo: Draw polygons or pick entire cities", "Filter by Types: Business, social, or unplanned events.", "View Flexibly: Table, card, map, or calendar."],
+        how: [
+            {icon : Icon1, content : "Search by Geo: Draw polygons or pick entire cities"},
+            {icon : Icon2, content :  "Filter by Types: Business, social, or unplanned events.", },
+            {icon : Icon3, content :  "View Flexibly: Table, card, map, or calendar."},
+           ],
         highlights : ["Uncover & compare relevant events", "Boost ROI with relevant filters", "Flexible viewing formats"],
         conclusion : {
             heading : "Make Search Smart",
@@ -33,7 +55,11 @@ export const geoProductJsonData = [
             "It’s tedious to keep tabs on every event that might impact demand or drive changes, especially across multiple locations or competitor areas.",
         solution:
             "Unlock events that could shape your outlook. Track entire cities or precise geolocations for the event types you care about—updated daily.",
-        how: ["City or Radius: Monitor all events in a custom radius (2–10 km) or a citywide scope.", "Multiple Trackers: Keep tabs on rival areas or new markets.", "Notifications: Custom triggers based on event type or volatility."],
+        how: [
+            {icon : Icon4, content : "City or Radius: Monitor all events in a custom radius (2–10 km) or a citywide scope."},
+            {icon : Icon5, content :  "Filter by Types: Business, social, or unplanned events.", },
+            {icon : Icon6, content : "Notifications: Custom triggers based on event type or volatility."}
+        ],
         highlights : ["Never miss a major or minor event change", "Scale monitoring across multiple areas", "Automated alerts for timely action"],
         conclusion : {
             heading : "Don’t Miss Out",
@@ -50,7 +76,9 @@ export const geoProductJsonData = [
             "Standard search filters may not always be the best for ad-hoc questions; a natural language approach is easier for deeper insight and context.",
         solution:
             "Our event AI harnesses advanced language models and intelligence on on-ground events. It can convert ad-hoc queries into future trackers automatically.",
-        how: ["Natural Language: Ask direct questions; get contextual answers.", "Powered by Data: Uses a decade of event intelligence to provide deeper context.", "Tracker Conversion: Turn repeated questions into persistent watchers."],
+        how: [{icon : Icon7, content :  "Natural Language: Ask direct questions; get contextual answers."},
+            {icon : Icon8, content :  "Powered by Data: Uses a decade of event intelligence to provide deeper context."},
+            {icon : Icon9, content : "Tracker Conversion: Turn repeated questions into persistent watchers."}],
         highlights : ["Conversational approach for complex queries", "Automatically sets trackers for future references", "Reduces guesswork with real-time context"],
         conclusion : {
             heading : "Your On-Ground Oracle",
@@ -67,7 +95,11 @@ export const geoProductJsonData = [
             "Impactful decisions require enough lead time and comprehensive coverage. Multiple small events can collectively create spikes or disruptions if not tracked in advance.",
         solution:
             "Trend monitoring quantifies anomalies in event volume, predicted footfall, and economic impact, all visualized in a dedicated dashboard.",
-        how: ["Anomaly Criteria: Adjust thresholds to reduce false alarms.", "Visual Dashboard: Real-time graphs of events, footfall, or economic signals.", "Proactive Alerts: Email or platform notifications when anomalies occur."],
+        how: [
+            {icon : Icon10, content : "Anomaly Criteria: Adjust thresholds to reduce false alarms."},
+            {icon : Icon11, content : "Visual Dashboard: Real-time graphs of events, footfall, or economic signals."},
+            {icon : Icon12, content : "Proactive Alerts: Email or platform notifications when anomalies occur."}
+        ],
         highlights : ["Real-time coverage ensures you have time to respond", "Data-driven anomaly detection for multi-event impacts", "Visual cues reduce oversight"],
         conclusion : {
             heading : "Stay Ahead",
@@ -84,7 +116,10 @@ export const geoProductJsonData = [
             "Identifying, noting, and acting on major or minor on-ground changes are usually separate tasks—leading to intel loss and coordination nightmares.",
         solution:
             "A single platform to unify notes, tasks, and alerts for each event or anomaly discovered. Keep everyone aligned and in the loop.",
-        how: ["Central Feed: Mark events that need action, mention colleagues, and store notes in context.", "One Interface: No endless emails; everything is linked to relevant event data.", "Track Changes: Flag updates or new signals."],
+        how: [
+            {icon : Icon13, content :  "Central Feed: Mark events that need action, mention colleagues, and store notes in context."},
+            {icon : Icon14, content : "One Interface: No endless emails; everything is linked to relevant event data."},
+            {icon : Icon15, content :  "Track Changes: Flag updates or new signals."}],
         highlights : ["Unified approach: search + notes + task assignment", "Faster team alignment on urgent or high-impact events", "Clear traceability for each decision"],
         conclusion : {
             heading : "Make Coordination Easy",
@@ -101,7 +136,10 @@ export const geoProductJsonData = [
             "Integrating event data into proprietary workflows is complicated: duplications, fake listings, messy formats, and incomplete insights hamper internal data accuracy.",
         solution:
             "A single EventAPI that aggregates and cleans millions of events worldwide. No more manually verifying, deduplicating, or checking for fakes—get structured data instantly.",
-        how: ["Single Endpoint: Access curated event data via RESTful API", "Score Enrichment: International audience, inbound traffic, or volatility scores.", "Historical Library: Train your models with historical event patterns."],
+        how: [
+            {icon : Icon16, content : "Single Endpoint: Access curated event data via RESTful API"},
+            {icon : Icon17, content : "Score Enrichment: International audience, inbound traffic, or volatility scores."},
+            {icon : Icon18, content : "Historical Library: Train your models with historical event patterns."}],
         highlights : ["Access large-scale, validated event data", "Offload heavy-lift verification & deduplication", "Refine internal models with robust external intel"],
         conclusion : {
             heading : "Elevate Your Data Stack",
