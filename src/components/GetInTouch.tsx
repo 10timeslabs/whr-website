@@ -25,7 +25,7 @@ const GetInTouch = () => {
             Celebrate the Power of Connection with a Platform Designed to Track Events, Uncover Insights, and Drive Impact.
         </div>
         <div
-          className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer mt-8"
+          className="bg-primary px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer mt-8"
           // onClick={() => {
           //   router.push("https://console.whr.ai/");
           // }}

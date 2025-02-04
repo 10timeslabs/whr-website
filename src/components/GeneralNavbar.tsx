@@ -243,7 +243,7 @@ const GeneralNavbar = () => {
             </Link> */}
             <Link
               href="/signup"
-              className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
+              className="bg-primary px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer"
             >
               Sign Up
             </Link>
