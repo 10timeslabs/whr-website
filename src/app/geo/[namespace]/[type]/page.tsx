@@ -55,7 +55,7 @@ const page = () => {
   return (
     <div
       className="relative w-full flex flex-col gap-12 "
-      style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }}
+      style={{ paddingTop: pathname.split("/")[2] === "product" || pathname.split("/")[2] === "solutions" ? 140 : 0 }}
     >
       {pathname.split("/")[2] === "product" && (
         <>
@@ -136,12 +136,11 @@ const page = () => {
             </div>
           </div>
         </div>
-      ) : (
-        pathname.split("/")[2] === "solutions" && (
-          <div className="w-full flex items-center justify-center mt-[140px]">
-            <Section />
-          </div>
-        )
+      ) : (pathname.split("/")[2] === "solutions" || pathname.includes("/geo/product")) && (
+        <div className="w-full flex items-center justify-center">
+          <Section />
+        </div>
+      
       )}
       {pathname.split("/")[2] !== "solutions" && (
         <div className="flex flex-col gap-10 items-center mt-12 ">

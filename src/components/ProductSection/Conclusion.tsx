@@ -4,7 +4,6 @@ import { geoProductJsonData } from "../../../data/geoProductData";
 import { gtmProductJsonData } from "../../../data/gtmProductData";
 import { usePathname } from "next/navigation";
 
-
 const Conclusion = () => {
 
     const pathname = usePathname();

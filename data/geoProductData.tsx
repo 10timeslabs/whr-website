@@ -1,6 +1,14 @@
+import ApiImage  from '/public/geoProductImages/Api_product.png'
+import Coordinate  from '/public/geoProductImages/Coordinate.png'
+import Research  from '/public/geoProductImages/Research.png'
+import TrackerTenmplate  from '/public/geoProductImages/tracker-templates.png'
+import TrackerLanding  from '/public/geoProductImages/Trackers-landing.png'
+import Trends  from '/public/geoProductImages/Trends-product.png'
+
 export const geoProductJsonData = [
     {
         id: "event-search",
+        image : Research,
         text: "Real-Time & Verified Data",
         subtext:
             "Identify what’s actionable from millions of events using smart filters and scores",
@@ -17,6 +25,7 @@ export const geoProductJsonData = [
     },
     {
         id: "smart-tracker",
+        image : TrackerLanding,
         text: "Track What Matters",
         subtext:
             "Create custom search filters and let your AI agent keep track of everything that’s changing—or critical—for your location or sector",
@@ -33,6 +42,7 @@ export const geoProductJsonData = [
     },
     {
         id: "ai-assistant",
+        image : TrackerTenmplate,
         text: "Deploy Event Agent",
         subtext:
             "Resolve on-ground demand queries by asking our fine-tuned AI assistant, trained on millions of events across 15k+ cities, accessing 2B+ data points",
@@ -49,6 +59,7 @@ export const geoProductJsonData = [
     },
     {
         id: "trends-monitor",
+        image : Trends,
         text: "Monitor Meaningful Change",
         subtext:
             "Keep an eye on future on-ground actions & events. Identify anomalies or outliers that require attention.",
@@ -65,6 +76,7 @@ export const geoProductJsonData = [
     },
     {
         id: "coordinate",
+        image : Coordinate,
         text: "Track & Take Action",
         subtext:
             "Turn risk into opportunity: flag anomalies or high-impact events, share with your team, and specify action in one interface.",
@@ -81,6 +93,7 @@ export const geoProductJsonData = [
     },
     {
         id: "api_modeltraining",
+        image : ApiImage,
         text: "Consume Event Data in Your Data Stack",
         subtext:
             "Consume event or trend data in your internal systems via an API or leverage it to enrich your own models",

@@ -5,6 +5,7 @@ import React from "react";
 import HeroBanner from "./HeroBanner";
 import { usePathname } from "next/navigation";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
+import { geoProductJsonData } from "../../../data/geoProductData";
 import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
 
 const Section = () => {
@@ -14,6 +15,8 @@ const Section = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData;
+  } else if (pathname.includes("/geo/product")) {
+    dataSource = geoProductJsonData;
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
