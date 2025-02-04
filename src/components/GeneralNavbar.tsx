@@ -96,7 +96,7 @@ const GeneralNavbar = () => {
             </Link>
           </div>
 
-          <div className="hidden lg:flex space-x-4 bg-white rounded-3xl relative">
+          <div className="hidden lg:flex px-3 bg-white rounded-3xl relative">
             {["Use Cases", "Solutions", "Product"].map((item) => (
               <div key={item} className="">
                 <div
