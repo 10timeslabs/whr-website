@@ -167,8 +167,8 @@ const page = () => {
       {pathname.split("/")[2] === "product" && (
         <div className="w-full flex items-center justify-center">
           <Conclusion
-            heading="Make Search Smart"
-            subheading="Go beyond basic lists and power your event strategy with deeper intel."
+            // heading="Make Search Smart"
+            // subheading="Go beyond basic lists and power your event strategy with deeper intel."
           />
         </div>
       )}
