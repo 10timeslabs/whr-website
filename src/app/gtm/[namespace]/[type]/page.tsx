@@ -17,6 +17,7 @@ import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
+import HowWeAreHelpful from "@/components/useCaseSection/HowWeAreHelpful";
 
 const page = () => {
   const pathname = usePathname();
@@ -155,7 +156,7 @@ const page = () => {
       ) : (
         pathname.split("/")[2] === "usecases" && <div className="w-full flex items-center justify-center">
           {/* <LandingComponent /> */}
-          <Scroll />
+          <HowWeAreHelpful />
         </div>
       )}
       {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5 w-full flex items-center justify-center">
