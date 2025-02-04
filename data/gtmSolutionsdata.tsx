@@ -1,11 +1,11 @@
 import React from "react";
-import BrandBuilding from "/public/gtm_soln_illustrations/Brand building.svg";
-import CompetitorTracking from "/public/gtm_soln_illustrations/Competitor Tracking.svg";
-import ExhibitorAndSponsor from "/public/gtm_soln_illustrations/Exhibit & Sponsor.svg";
-import ProductMatching from "/public/gtm_soln_illustrations/Product Matching.svg";
-import ProspectMapping from "/public/gtm_soln_illustrations/Prospects Mapping.svg";
-import Recruitement from "/public/gtm_soln_illustrations/Recruitement & DevRel.svg";
-import SpeakingOpportunity from "/public/gtm_soln_illustrations/Speaking Opportunity.svg";
+import BrandBuilding from "../data/solutionAnimationData/Brandbuilding.json"
+import CompetitorTracking from "../data/solutionAnimationData/competitortracking.json"
+import ExhibitorAndSponsor from "../data/solutionAnimationData/Exhibitandsponsor.json"
+import ProductMatching from "../data/solutionAnimationData/Productmatching.json"
+import ProspectMapping from "../data/solutionAnimationData/Prospectsmapping.json"
+import Recruitement from "../data/solutionAnimationData/Recruitmentanddevrel.json"
+import SpeakingOpportunity from "../data/solutionAnimationData/Speakingopportunity.json"
 import { GTM_UseCase_1, GTM_UseCase_10, GTM_UseCase_11, GTM_UseCase_12, GTM_UseCase_13, GTM_UseCase_14, GTM_UseCase_15, GTM_UseCase_2, GTM_UseCase_3, GTM_UseCase_4, GTM_UseCase_5, GTM_UseCase_6, GTM_UseCase_7, GTM_UseCase_8, GTM_UseCase_9 } from "../svgicons/icons";
 
 export const gtmSolutionsjsonData = [

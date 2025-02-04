@@ -12,8 +12,8 @@ const Conclusion = ({ heading, subheading }: Props) => {
         <div className="w-[87%] flex flex-col items-center justify-center rounded-2xl border border-[var(--border-color)] h-[256px] gap-5"
             style={{ backgroundImage: `url(${GridImageTwo.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-            <div className='text-[48px] text-[var(--primary-color)]'>{heading}</div>
-            <div className='w-[40%] text-center text-[20px] text-[var(--secondary-text-color)]'>{subheading}</div>
+            <div className='text-[48px] w-[90%] text-center text-[var(--primary-color)] max-[775px]:text-[40px] max-[450px]:text-[24px]'>{heading}</div>
+            <div className='w-[40%] text-center text-[20px] text-[var(--secondary-text-color)] max-[775px]:text-[16px] max-[450px]:text-[14px]'>{subheading}</div>
 
         </div>
     )

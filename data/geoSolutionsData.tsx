@@ -1,12 +1,20 @@
 import React from "react";
-import DemandForeCasting from "/public/geo_soln_illustrations/demand forecasting.svg";
-import DynamicPricing from "/public/geo_soln_illustrations/Dynamic Pricing.svg";
-import EventProspecting from "/public/geo_soln_illustrations/Event Prospecting.svg";
-import GeoMarketing from "/public/geo_soln_illustrations/Geo Marketing.svg";
-import InventoryPlanning from "/public/geo_soln_illustrations/Inventory Planning..svg";
-import RiskIdentification from "/public/geo_soln_illustrations/Risk Identification.svg";
-import TravelAdvisory from "/public/geo_soln_illustrations/Travel Advisory.svg";
-import WorkforceManagement from "/public/geo_soln_illustrations/Workforce Management.svg";
+// import DemandForeCasting from "/public/geo_soln_illustrations/demand forecasting.svg";
+// import DynamicPricing from "/public/geo_soln_illustrations/Dynamic Pricing.svg";
+// import EventProspecting from "/public/geo_soln_illustrations/Event Prospecting.svg";
+// import GeoMarketing from "/public/geo_soln_illustrations/Geo Marketing.svg";
+// import InventoryPlanning from "/public/geo_soln_illustrations/Inventory Planning..svg";
+// import RiskIdentification from "/public/geo_soln_illustrations/Risk Identification.svg";
+// import TravelAdvisory from "/public/geo_soln_illustrations/Travel Advisory.svg";
+// import WorkforceManagement from "/public/geo_soln_illustrations/Workforce Management.svg";
+import DemandForeCasting from "../data/solutionAnimationData/demandforecasting.json"
+import DynamicPricing from "../data/solutionAnimationData/Dynamicpricing.json"
+import EventProspecting from "../data/solutionAnimationData/EventProspecting.json"
+import GeoMarketing from "../data/solutionAnimationData/Geomarketing.json"
+import InventoryPlanning from "../data/solutionAnimationData/Inventoryplanning.json"
+import RiskIdentification from "../data/solutionAnimationData/RiskIdentification.json"
+import TravelAdvisory from "../data/solutionAnimationData/Traveladvisory.json"
+import WorkforceManagement from "../data/solutionAnimationData/Workforcemanagement.json"
 import {
   Geo_UseCase_1,
   Geo_UseCase_10,

@@ -16,7 +16,7 @@ const ProblemContainer = ({cardData} : Props) => {
         <div className='w-full flex items-center justify-center relative'>
             <Image src={TopgridImage} alt='grid' className='absolute top-0 -z-[10] max-[600px]:hidden' />
             <Image src={BottomgridImage} alt='grid' className='absolute bottom-[20%] -z-[10] max-[600px]:hidden'/>
-            <div className='w-[90%] flex mt-[110px] justify-between max-[1000px]:flex-col'>
+            <div className='w-[87%] flex mt-[110px] justify-between max-[1000px]:flex-col'>
                 <div className='flex flex-col w-[30%] gap-8 max-[1000px]:w-[100%] max-[1000px]:gap-4'>
                     <div className='text-[64px] leading-[70px]'>Real World Problems</div>
                     <div className='text-[20px] text-[var(--secondary-text-color)]'>A billion people go, do we know when, why, whr?</div>

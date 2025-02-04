@@ -1,24 +1,23 @@
 import React from "react";
-import DemandImg from "/public/demandforecasting.svg";
-import Image from "next/image";
+import Lottie from "lottie-react";
 
 interface Props {
   heading: string;
   subHeading: string;
-  image: string;
+  image: any;
 }
 
 const HeroBanner = ({ heading, subHeading, image }: Props) => {
   return (
-    <div className="w-full flex justify-between items-start">
-      <div className="flex flex-col gap-5 w-[40%]">
-        <div className="font-semibold text-[40px]">{heading}</div>
-        <div className="text-[var(--secondary-text-color)] text-[18px]">
+    <div className="w-full flex justify-between items-start max-[550px]:flex-col max-[550px]:items-center max-[550px]:gap-2">
+      <div className="flex flex-col gap-5 w-[40%] max-[550px]:w-full">
+        <div className="font-semibold text-[40px] max-[775px]:text-[28px]">{heading}</div>
+        <div className="text-[var(--secondary-text-color)] text-[18px] max-[775px]:text-[14px]">
           {subHeading}
         </div>
       </div>
-      <div className="w-[507px] h-[263px]">
-        <Image src={image} alt="banner" className="w-full h-full" />
+      <div className="h-[260px] max-[775px]:h-[200px]">
+        <Lottie animationData={image} style={{ width: '100%', height: '100%' }}/>
       </div>
     </div>
   );
