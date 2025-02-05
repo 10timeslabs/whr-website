@@ -33,7 +33,7 @@
 // export default UsecaseScroll
 
 
-
+"use client"
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import ArrowImgOne from '/public/Scroll/Arrow-1.svg'

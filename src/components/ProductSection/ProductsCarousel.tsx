@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from 'react'
 import SparkleImg from "/public/sparkle.png";
 import Image from 'next/image';

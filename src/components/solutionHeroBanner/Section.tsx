@@ -1,6 +1,7 @@
 
 
 
+"use client"
 import React from "react";
 import HeroBanner from "./HeroBanner";
 import { usePathname } from "next/navigation";

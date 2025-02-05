@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Lottie from 'lottie-react'
 import CleaningImage from '../../../public/realworldproblems/cleaningengine.json'

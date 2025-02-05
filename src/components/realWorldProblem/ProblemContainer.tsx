@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import ProblemImage from '/public/realworldproblems/Problem_sol_pipeline.png'
 import Image, { StaticImageData } from 'next/image'

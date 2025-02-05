@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import GridImageTwo from "/public/usecase_grid.png";
 import { geoProductJsonData } from "../../../data/geoProductData";
