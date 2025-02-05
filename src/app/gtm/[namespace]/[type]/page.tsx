@@ -3,7 +3,7 @@ import GtmComponent from "@/components/gtmComponents/GtmComponent";
 import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
 import { gtmProductJsonData } from "../../../../../data/gtmProductData";
-const page = () => {
+const Page = () => {
   return (
     <div>
       <GtmComponent />
@@ -11,7 +11,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 export async function generateMetadata(context: any) {
   

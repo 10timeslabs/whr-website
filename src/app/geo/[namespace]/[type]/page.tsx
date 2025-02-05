@@ -3,7 +3,7 @@ import GeoComponent from "@/components/geoComponents/GeoComponents";
 import { geoUsecasesjsonData } from "../../../../../data/geoUsecasesData";
 import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
 import { geoProductJsonData } from "../../../../../data/geoProductData";
-const page = () => {
+const Page = () => {
   return (
     <div>
       <GeoComponent />
@@ -11,7 +11,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 export async function generateMetadata(context: any) {
     console.log("content",context)
