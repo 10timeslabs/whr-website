@@ -49,6 +49,35 @@ export const geoUsecasesjsonData = [
       "Events are constantly changing with new launches, dates, formats and location. Historical data has been proven to be unreliable, specially with manual searching and excel sheets. While the impact is evident, its only valuable if the data can be accessed well in advance and in a comprehensive manner.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for hotels & other accomodation providers.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Pinpoint relevant events up to a year ahead, helping you anticipate demand and plan inventory."]
+        },
+        {
+          heading: "Smart Scores",
+          points: [" Measure event impact using metrics like Inbound Score to refine pricing strategies and optimize staff allocation."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Monitor competitor catchment areas or your own properties for event-driven changes and get notified in real time."
+          ]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Visualize how events affect bookings over specific timeframes or geographies, aiding strategic planning."
+          ]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Receive proactive updates on upcoming events that could influence occupancy, reducing guesswork."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "demand-forecasting",
@@ -109,6 +138,35 @@ export const geoUsecasesjsonData = [
       "Most restuarants in the vicinity of event venues have seen unexpected increase in footfall on some days and later found out that there was an event happening. But what if there was not one big events, but a bunch of small events?",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for reataurants and QSR.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Discover both major and minor events that could suddenly boost foot traffic, allowing you to prepare."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Gauge economic impact to forecast staffing needs and manage inventory effectively."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Keep tab on event-prone areas or competitor locales, ensuring you don’t miss sudden spikes."
+          ]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Track patterns of increased footfall over time to fine-tune resource allocation."
+          ]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Get automated alerts on new or changing events, so you’re never caught off guard."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "demand_forecasting",
@@ -180,13 +238,42 @@ export const geoUsecasesjsonData = [
       "Events form a big chunk of Incoming tourists for a large number of cities around the world. While this audience is prime target for activity planners, there is little insight or bandwidth to track, analyze and plan for potential impact of events or designing activities linked to large events.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for activity planners.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Identify tourist-heavy events months in advance to schedule activities and promotions."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Understand inbound vs. local attendance to tailor marketing and offerings."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Keep a close watch on events central to your target destinations or themes."
+          ]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Analyze how specific events drive tourist volumes over time, guiding better itinerary planning."
+          ]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Get quick recommendations on which events to prioritize for maximum engagement and revenue."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "demandforecasting",
         topic: "Demand Forecasting",
         content:
           "Location specific activity & experience providers, catering to incoming tourists can leverage demand intelligence around inbound event traffic. Our forecasted data can help drive optimize onground marketing, collaboration, offer designing and workforce management. Better forecasting can improve revenue and profitability.",
-        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6"  width="62" height="62" />,
+        icon: <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
       {
         id: "geomarketing",
@@ -240,6 +327,35 @@ export const geoUsecasesjsonData = [
       "Events of all types, from forecasted weather, planned holidays to scheduled events, drive people to travel around the world. Identifying and leveraging factors that make the historcial pattern redundant, is hard, time consuming and filled with unpredictability. ",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for airlines and airports.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Spot upcoming holidays, large gatherings, and weather-related events that could impact flight demand."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Evaluate inbound passenger flows or potential volatility for better route planning and resource allocation."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Monitor critical travel corridors or competitor airports for sudden event-driven changes."
+          ]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Identify time-based passenger volume shifts to optimize staffing and scheduling."
+          ]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Receive instant notifications about new events or changes in travel trends, enabling proactive operations."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "demandforecasting",
@@ -300,6 +416,35 @@ export const geoUsecasesjsonData = [
       "Not accounting for all business travel, business events alone drives over 500 million professionals to travel for events.For large enterprise, whose workforce is constantly moving to participate in events, its a big challenege to optimize where, why and when people are going for events, to manage risk and/or optimize return.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes to enable large companies to monitor potential opportunity or risk. ",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Spot major conferences, trade shows, or industry gatherings early, aligning travel and budget plans."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Gauge event impact and volatility, aiding in risk management and ROI optimization."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Follow relevant locations and link with geographies where you team is traveling to access risk."
+          ]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Pinpoint peak travel periods or anything that could cause an issue around popular location your team travel to."
+          ]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Link your company travel itinerary to automatically receive alerts any forecasted volatility in specific geo."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "risk_identification",
@@ -345,6 +490,35 @@ export const geoUsecasesjsonData = [
       "As events grows so does the need to commute. However, unlike regular daily commuters, rides for events are volatile and negatively impacts the available supply, unless spike in demand is taken into consideration",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for transportation providers.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Pinpoint events that create surges in demand, giving you time to adjust fleet and routes"]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Measure the potential magnitude of ride requests for better surge management."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Track key hubs or venues to stay updated on expected passenger volume."
+          ]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Observe daily, weekly, or seasonal patterns triggered by various events, aiding forecasting."
+          ]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Get real-time alerts when last-minute event changes could affect supply and demand."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "demandforecasting",
@@ -404,6 +578,33 @@ export const geoUsecasesjsonData = [
       "While venues for event are known, evaluating the value of the inventory in relation to the forecated event audience and interested advertisers requires lead-time for creating a vibrant ad marketplace.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes upto 12 months in future. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for ad space sellers and buyers",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Identify where and when significant events will occur, guiding your ad placement or space monetization strategies."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Assess an event’s audience size and spending power to price inventory effectively."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Follow specific venues or competitor ad spaces for timely market insights."]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Map overlapping events across geographies for strategic ad positioning."]
+        },
+        {
+          heading: "AI Assist",
+          points: [" Receive quick insights on which events could maximize ROI, simplifying decision-making."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "Demand Forecasting",
@@ -456,6 +657,35 @@ export const geoUsecasesjsonData = [
       "Both attended and not attended events impacts retail commerce and not knowing whats coming and could impact the business leaves room for ambiguity and chance for loss of potential business",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for retail commerce business",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Know which upcoming events might drive sudden foot traffic or online sales, helping plan inventory."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Quantify potential revenue impact for better resource allocation."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Monitor high-footfall areas around key event or venues to get notifications"
+          ]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Spot long-term fluctuations in event-driven traffic and adapt your sales strategy."
+          ]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Stay updated on evolving event details to prevent stock-outs or missed opportunities."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "Demand Forecasting",
@@ -515,6 +745,33 @@ export const geoUsecasesjsonData = [
       "Demand from event is not consistent and can vary with high volatility. To build any reliable business model around onground demand requires not just a reliable access to future demand, but also an estimate for what percent of the audience would be local and could be traveling in persoinal vehicle to the venue.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for parking business.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["See which future events could spike parking demand or lead to unexpected vacancies."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Gauge volatility to optimize pricing and capacity based on attendance figures."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Keep tabs on competing lots or targeted venues to stay ahead of demand changes."]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Track usage patterns and demand fluctuations over time, informing revenue models."]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Get automated alerts for new or altered events, refining daily and long-term parking strategies."
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "Demand Forecasting",
@@ -567,6 +824,33 @@ export const geoUsecasesjsonData = [
       "Destination Marketing Organisation (DMO) and Destination Management Company are aligned to drive more visitors to a destination. To be able to offer smooth service to their client they need to able to track whats forecated for their destination and past trends. This can be a very tedious task and often filled with leaks and gaps in the data, but not having this data is like shooting in the dark",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) in a specfic destination or competing destinations. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for DMOs and DMCs",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Aggregate data on events that will draw visitors to your destination, streamlining your marketing efforts."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Quickly interpret economic and inbound impacts to shape promotional campaigns."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Monitor your city’s event pipeline, adjusting itineraries and promotions as needed."]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Reveal seasonal or regional travel patterns, refining your destination’s offerings."]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Get automated notifications for important events and changes, ensuring proactive engagement with prospective visitors"
+          ]
+        }
+      ]
+    },
     usecases: [
       {
         id: "Demand Forecasting",
@@ -613,6 +897,32 @@ export const geoUsecasesjsonData = [
       "Venues do not operate in isolation. They are impacted by everything else going on in the city, nearby venues and those in competing geographies. From large events to political unrest to forecasted weather warning, being able to foresee potential disruptions and opportunities can make venues more resilient, serve their customers better and improve profit margins.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across geographies. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for venue operators to take informed decision.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Identify all citywide or nearby events that could influence foot traffic to your venue."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Evaluate the size and potential impact of each event, guiding operational plans and revenue strategies."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: [" Monitor competitor venues or strategic events and get alerts on notable changes."]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Understand how simultaneous events or disruptions affect profitability, enabling proactive measures."]
+        },
+        {
+          heading: "AI Assist",
+          points: [" Automate notifications on emerging challenges or opportunities, helping you stay ahead."]
+        }
+      ]
+    },
     usecases: [
       {
         id: "Demand Forecasting",
@@ -658,6 +968,32 @@ export const geoUsecasesjsonData = [
       "Hyperlocal commerce business hinges on predictability. Onground events that could have high impact individually or together, breakdown the business promise of speed and also causes losses due to inventory stock-out and unplanned workforce management.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for hyperlocal & quick commerce business.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Pinpoint large and small on-ground events that could disrupt deliveries or drive sudden local demand."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Assess which events might significantly alter traffic flow or consumer behavior."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Follow high-impact areas or competitor zones for immediate alerts."]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Observe spikes and dips over time, aiding in inventory and workforce planning."]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Get instant notifications on event-related disruptions or surges, keeping fulfillment efficient."]
+        }
+      ]
+    },
     usecases: [
       {
         id: "Geo Marketing",
@@ -710,6 +1046,32 @@ export const geoUsecasesjsonData = [
       "A lot is always happening and planned in a city, both good and bad. For local authorities to find, verify and manage all these forecasted events and access how it might impact day to day over a long duration is extremely challenging. This makes most local governing bodies more reactive than taking proactive measures to address predicted demand.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for local governing bodies. ",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Consolidate data on events, from expos to parades, festivals, and even political rallies to plan city services more effectively."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Gauge risk or economic benefits, helping prioritize resource allocation."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Keep watch on recurring or high-impact events, ensuring prompt updates for civic planning."]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["See how events overlap across the city and adjust transport, security, and other services accordingly."]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Stay informed on new permits or last-minute changes, promoting proactive rather than reactive governance."]
+        }
+      ]
+    },
     usecases: [
       {
         id: "Risk Identification",
@@ -753,6 +1115,32 @@ export const geoUsecasesjsonData = [
       "Events bring together people, but it also creates million of direct jobs across different expertise. From booth hosts, conference moderators to caterers, designers, security personel, the list goes on and on",
     problem: "",
     solution: "",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Discover upcoming events that require specific staffing, giving you time to recruit and schedule."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Measure an event’s potential size and impact, informing manpower forecasts."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Track priority regions or clients with recurring staffing needs, staying ahead of demand shifts."]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Identify recurring patterns or seasonal demand surges, streamlining workforce planning."]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Automatically receive updates on new or changed events, reducing last-minute chaos and improving service delivery."]
+        }
+      ]
+    },
     usecases: [
       {
         id: "hotel-lodging",
@@ -827,6 +1215,32 @@ export const geoUsecasesjsonData = [
       "Event dates are decided on average 6 months in advance. While expereinced planners might have some data from their previous years, mostly decisions are made with limited insight on what could be happening during, before and post the event date at a specific location. With limited intel, identifying suitable destination, venue, dates is more of a 'shoot in the dark' mission than a clearly planned strategy",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across destination and venues of interest. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for event planners to decide more confidently and also track future changes until event date.",
+    how: {
+      heading: "Unlock Onground Event Intel",
+      subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
+      content: [
+        {
+          heading: "Advanced Search",
+          points: ["Uncover overlapping or conflicting events, helping you secure the best dates and venues."]
+        },
+        {
+          heading: "Smart Scores",
+          points: ["Gauge attendance and economic impact to optimize planning and budgeting."]
+        },
+        {
+          heading: "Custom Trackers",
+          points: ["Keep track of multiple venues, dates, and potential scheduling shifts."]
+        },
+        {
+          heading: "Trend Visualizer",
+          points: ["Compare different timeframes or locations to see where attendance peaks."]
+        },
+        {
+          heading: "AI Assist",
+          points: ["Receive real-time updates on newly announced events or scheduling changes, enabling agility in planning."]
+        }
+      ]
+    },
     usecases: [
       {
         id: "Demand Forecasting",
