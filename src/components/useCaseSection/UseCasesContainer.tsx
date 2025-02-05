@@ -46,11 +46,11 @@ const UseCasesContainer = ({ text }: Props) => {
 
   return (
     <div
-      className="min-h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden"
+      className="min-h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden "
     // style={{ backgroundImage: `url(${GridImage.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div
-        className="absolute right-0 top-[-150px] h-[700px] w-full -z-10"
+        className="absolute right-0 top-[-150px] h-[700px] w-full -z-[10]"
         style={{
           background: `
             radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 40%)`,

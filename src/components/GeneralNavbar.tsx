@@ -10,12 +10,15 @@ import DownArrowIcon from "/public/DownSVG.svg";
 import { dropdownValues } from "../../data/dropdownData";
 import HambergurMenuIcon from "/public/hamburger.svg";
 import CrossIcon from "/public/cross.svg";
+import TickIcon from "/public/tick.svg";
 
 const GeneralNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdowns, setDropdowns] = useState<any>({});
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [activePage, setActivePage] = useState("GEO")
+  const [pageDropdown, setPagedropdown] = useState(false)
   const router = useRouter();
   const pathname = usePathname();
   useEffect(() => {
@@ -61,6 +64,9 @@ const GeneralNavbar = () => {
   };
   useEffect(() => {
     setOpenDropdown(null);
+    if(pathname.includes("/geo")){
+      setActivePage("GEO")
+    }else setActivePage("GTM")
   }, [pathname]);
   return (
     <div>
@@ -77,7 +83,7 @@ const GeneralNavbar = () => {
             margin: "0 auto",
           }}
         >
-          <div className="flex-shrink-0 flex items-center">
+          <div className="flex-shrink-0 flex items-center relative">
             <Link
               href="/"
               className="text-xl font-bold text-primary flex items-center gap-3"
@@ -86,14 +92,30 @@ const GeneralNavbar = () => {
                 <Image width="32" height="40" src={Logo} alt="nav-logo" />
               </div>
               <div
-                className={`${isScrolled ? "border-r border" : ""} h-[30px]`}
-              ></div>
-              <div
                 className={`${isScrolled ? "hidden" : ""} max-[768px]:hidden`}
               >
                 <Image src={WhrAIText} alt="nav-logo" className="h-6 w-auto" />
               </div>
             </Link>
+            <div className="text-[12px] w-[63px] py-1 ml-3 text-[#A35200] bg-[#FFF4D6] rounded flex gap-1 items-center justify-center cursor-pointer" onClick={() => setPagedropdown(!pageDropdown)}>
+              {activePage}
+              <DownArrowIconTwo />
+            </div>
+            {pageDropdown &&
+              <div className={`bg-white shadow-md rounded-xl p-3 absolute right-[10px] ${isScrolled ?"top-[50px]" :"top-[40px]"} flex flex-col items-center gap-2 text-[14px]`}>
+                <Link href={"/geo"} className="cursor-pointer w-[90px] hover:bg-[var(--accent-color)] p-1 rounded-[2px] flex items-center" onClick={() => setActivePage("GEO")}>
+                  {activePage === "GEO" && <Image src={TickIcon} alt="selected" />}
+                  <span className={activePage === "GEO" ? "ml-1" : "ml-3"}>GEO</span>
+                </Link>
+                <Link href={"/gtm"} className="cursor-pointer w-[90px] hover:bg-[var(--accent-color)] p-1 rounded-[2px] flex items-center" onClick={() => setActivePage("GTM")}>
+                  {activePage === "GTM" && <Image src={TickIcon} alt="selected" />}
+                  <span className={activePage === "GTM" ? "ml-1" : "ml-3"}>GTM</span>
+                  </Link>
+              </div>}
+
+            <div
+              className={`${isScrolled ? "border-r border" : ""} h-[30px] ml-3`}
+            ></div>
           </div>
 
           <div className="hidden lg:flex px-3 bg-white rounded-3xl relative">
@@ -321,3 +343,13 @@ const GeneralNavbar = () => {
 };
 
 export default GeneralNavbar;
+
+const DownArrowIconTwo = () => {
+  return (
+    <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.2115 1.39095L4.0865 4.51595C4.05748 4.545 4.02301 4.56805 3.98508 4.58378C3.94714 4.5995 3.90648 4.6076 3.86541 4.6076C3.82434 4.6076 3.78368 4.5995 3.74574 4.58378C3.7078 4.56805 3.67334 4.545 3.64431 4.51595L0.519314 1.39095C0.460677 1.33231 0.427734 1.25278 0.427734 1.16985C0.427734 1.08693 0.460677 1.0074 0.519314 0.948758C0.577952 0.89012 0.657482 0.857178 0.740408 0.857178C0.823334 0.857178 0.902864 0.89012 0.961502 0.948758L3.86541 3.85305L6.76931 0.948758C6.79835 0.919723 6.83282 0.896692 6.87075 0.880978C6.90869 0.865265 6.94935 0.857178 6.99041 0.857178C7.03147 0.857178 7.07213 0.865265 7.11006 0.880978C7.148 0.896692 7.18247 0.919723 7.2115 0.948758C7.24054 0.977792 7.26357 1.01226 7.27928 1.0502C7.29499 1.08813 7.30308 1.12879 7.30308 1.16985C7.30308 1.21091 7.29499 1.25157 7.27928 1.28951C7.26357 1.32744 7.24054 1.36191 7.2115 1.39095Z" fill="#A35200" />
+    </svg>
+
+
+  )
+}
