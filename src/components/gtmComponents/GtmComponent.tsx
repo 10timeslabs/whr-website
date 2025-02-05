@@ -199,7 +199,7 @@ const page = () => {
           </div>
         </div>
       ) : (
-        pathname.split("/")[2] === "solutions" &&
+        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) &&(
         <div className="w-full flex items-center justify-center mt-[140px]">
           <Section />
         </div>

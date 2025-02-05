@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
-
 import AutoScroll from "@/components/AutoScroll";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
 import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";

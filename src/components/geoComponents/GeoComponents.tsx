@@ -25,6 +25,7 @@ import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
 import { notFound } from "next/navigation";
+import NotFound from "../NotFound";
 
 const GeoComponent = () => {
   const pathname = usePathname();
@@ -43,7 +44,7 @@ const GeoComponent = () => {
   });
 
   if (!usecaseData) {
-    notFound();
+    return <NotFound />
   }
 
   const defaultData = {
@@ -144,11 +145,10 @@ const GeoComponent = () => {
           </div>
         </div>
       ) : (
-        pathname.split("/")[2] === "solutions" && (
-          <div className="w-full flex items-center justify-center mt-[140px]">
-            <Section />
-          </div>
-        )
+        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
+        <div className="w-full flex items-center justify-center mt-[140px]">
+          <Section />
+        </div>
       )}
       {pathname.split("/")[2] !== "solutions" && (
         <div className="flex flex-col gap-10 items-center mt-12 ">
