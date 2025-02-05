@@ -129,6 +129,11 @@ b. Consume data via an API to include in your internal prediction model`,
           "With quick commerce on the rise, delivery providers need visibility on forecasted demand for better inventory & manpower planning. The fulcrum for delivery & logistics business is minimum time / on-time delivery and availability of products, with onground demand data in the model, higher efficiency can be acheived.",
       },
     ],
+    metaData:{
+      title:"Demand Forecasting - whr.ai GEO",
+      description:"Accurately forecast on-ground demand using whr.ai GEO's event intelligence and predictive analytics for better planning.",
+      image:"https://c1.10times.com/whr/geo/static/image/solution/Demandforecasting.png",
+    }
   },
   {
     id: "dynamic-pricing",
@@ -191,6 +196,11 @@ b. Consume data via an API to include in your internal prediction model`,
           "Like local cabs, quick commerce also tends to levy extra charges on their customers during peak hours. However, having advance intel on what might create an anomaly in their usual demand pattern, can help design dynamic pricing more strategically. ",
       },
     ],
+    metaData:{
+      title:"Dynamic Pricing - whr.ai GEO",
+      description:"Optimize your pricing strategy with whr.ai GEO's dynamic pricing solutions, powered by real-time event demand intelligence.",
+      image:"https://c1.10times.com/whr/geo/static/image/solution/DynamicPricing.png",
+    }
   },
   {
     id: "event-prospecting",
@@ -262,6 +272,11 @@ b. Consume data via an API to include in your internal prediction model`,
           "Event sponsoring is a major marketing channel for both small and large enterprise to reach target audience. Eventeli helps to indentify events which are forecated or upcoming and might be a good fit for an enterprise to sponsor. Create custom trackers and our AI agent will find and notify you to relevant event that match your criteria.  ",
       },
     ],
+    metaData:{
+      title:"Event Prospecting - whr.ai GEO",
+      description:"Unlock business opportunities with whr.ai GEO's event prospecting. Identify and target events that align with your business objectives.",
+      image:"https://c1.10times.com/whr/geo/static/image/solution/EventProspecting.png",
+    }
   },
   {
     id: "geo-marketing",
@@ -318,6 +333,11 @@ b. Consume data via an API to include in your internal prediction model`,
           "Events are labelled for type and category, besdies projected scored around footfall and economic impact. Enterprise can use this audience filtering at scale to identify strategic time and geo-location to leverage onground marketing and activation activities. For example, an auto expo would be an opportunity for car manufacturers to build brand visibility with a very targeted audience outside of the event ",
       },
     ],
+    metaData:{
+      title:"Geo Marketing - whr.ai GEO",
+      description:"Enhance your geo-marketing strategies with whr.ai GEO's event intelligence. Target the right audience at the right time and location.",
+      image:"https://c1.10times.com/whr/geo/static/image/solution/GeoMarketing.png",
+    }
   },
 
   {
@@ -354,6 +374,11 @@ b. Consume data via an API to include in your internal prediction model`,
           "With growing adoption of hyperlocal & quick commerce across major citities, when there is movement of demand from one area to another, or there is an unexpected increase in external demand, it can lead to inventory issues. Out of stock inventory leads to both business loss and poor customer experience. With onground event demand intel in the mix of other variables, quick commerce business can better strategies their inventory decisions. ",
       },
     ],
+    metaData:{
+      title:"Inventory Planning - whr.ai GEO",
+      description:"Ensure optimal inventory levels with whr.ai GEO's inventory planning solutions, driven by event-driven demand forecasting.",
+      image:"https://c1.10times.com/whr/geo/static/image/solution/Inventorymanagement.png",
+    }
   },
   {
     id: "risk-identification",
@@ -403,6 +428,11 @@ b. Consume data via an API to include in your internal prediction model`,
           "Business travel is bigger than casual traveling. Large companies have their employees flying in and around cities & coutries all the time. Have a central dashboard to monitor any risk zone can help prevent or take precautions against anyone negative scenario that could have been avoided. Some examples of these risks are: avoiding travel & meeting around time and area with major spikes in onground activity to early detection of health, weather and terrorist warning. Our onground risk identifiction model can prevent avoidable risks associated with corporate travel. ",
       },
     ],
+    metaData:{
+      title:"Risk Identification - whr.ai GEO",
+      description:"Turn risks into opportunities with whr.ai GEO's risk identification solutions. Proactively manage event-driven risks for your business.",
+      image:"https://c1.10times.com/whr/geo/static/image/solution/RiskIdentification.png",
+    }
   },
   {
     id: "travel-advisory",
@@ -445,6 +475,11 @@ b. Consume data via an API to include in your internal prediction model`,
           "Your team members from the CEO to the sales person, all travel for various work related engagement. There safety is your utmost priority. Having a single panel where you can track who is going where and tracking those locations for onground uncertainties can help you prevent mishap, enable them to plan better or take timely action to ensure business does not suffer or jeoperdized",
       },
     ],
+    metaData:{
+      title:"Travel Advisory - whr.ai GEO",
+      description:"Stay safe and informed with whr.ai GEO's travel advisory solutions, powered by real-time event intelligence and risk assessment.",
+      image:"https://c1.10times.com/whr/geo/static/image/solution/Traveladvisory.png",
+    }
   },
   {
     id: "workforce-management",
@@ -523,5 +558,10 @@ b. Consume data via an API to include in your internal prediction model`,
       },
     
     ],
+    metaData:{
+      title:"Workforce Management - whr.ai GEO",
+      description:"Manage workforce availability and utilization effectively with whr.ai GEO's demand forecasting and event intelligence.",
+      image:"https://c1.10times.com/whr/geo/static/image/solution/WorkforceManagement.png",
+    }
   },
 ];

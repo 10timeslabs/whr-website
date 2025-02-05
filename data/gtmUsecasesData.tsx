@@ -25,7 +25,7 @@ import {
 export const gtmUsecasesjsonData = [
   {
     id: "csr",
-    image: CSR,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_csr.jpg",
     //#ECEEE9
     text: "Find Strategic Initiatives",
     blurColor:
@@ -88,10 +88,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_csr.jpg",
+    }
   },
   {
     id: "event-suppliers",
-    image: EventSupplier,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_eventsuppliers.jpg",
     //#ECEEE9
     text: "Don’t Miss an Event",
     blurColor:
@@ -154,10 +159,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_eventsuppliers.jpg",
+    }
   },
   {
     id: "marketing",
-    image: Marketing,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_marketing.jpg",
     //#FFFFFF
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 53%)",
@@ -220,10 +230,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_marketing.jpg",
+    }
   },
   {
     id: "sales-bizdev",
-    image: SalesAndBiz,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_sales&biz.jpg",
     //#ECEEE9
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(236, 238, 233, 0.5) 53%)",
@@ -286,11 +301,16 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_sales&biz.jpg",
+    }
   },
 
   {
     id: "tech-team",
-    image: Tech,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_tech.jpg",
     //#ECEEE9
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(236, 238, 233, 0.5) 53%)",
@@ -353,11 +373,16 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_tech.jpg",
+    }
   },
 
   {
     id: "brand-agency",
-    image: Brand,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_brand.jpg",
     //#FDFDFD
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(253, 253, 253, 0.5) 53%)",
@@ -420,10 +445,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_brand.jpg",
+    }
   },
   {
     id: "community-groups",
-    image: Community,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_community.jpg",
     //#CDCDCD
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(205, 205, 205, 0.5) 53%)",
@@ -486,10 +516,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_community.jpg",
+    }
   },
   {
     id: "human-resource",
-    image: HumanResource,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_human-resources.jpg",
     //#DEE4E8
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(222, 228, 232, 0.5) 53%)",
@@ -552,10 +587,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_human-resources.jpg",
+    }
   },
   {
     id: "influencers",
-    image: Influencer,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_influencer.jpg",
     //#BBBEB7
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 190, 183, 0.5) 53%)",
@@ -618,10 +658,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_influencer.jpg",
+    }
   },
   {
     id: "manpower-agency",
-    image: ManPower,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_manpower.jpg",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 205, 218, 0.5) 53%)",
     opacity: "100%",
@@ -683,10 +728,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_manpower.jpg",
+    }
   },
   {
     id: "media-news",
-    image: NewsAndMedia,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_news&media.jpg",
     //#E7E7E5
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(231, 231, 229, 0.5) 53%)",
@@ -749,10 +799,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_news&media.jpg",
+    }
   },
   {
     id: "procurement",
-    image: Procurement,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_procurement.jpg",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 205, 218, 0.5) 53%)",
     opacity: "100%",
@@ -814,10 +869,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_procurement.jpg",
+    }
   },
   {
     id: "research-consultancy",
-    image: ResearchAndConsulting,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_research&consulting.jpg",
     //#E7E7E5
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(231, 231, 229, 0.5) 53%)",
@@ -880,10 +940,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_research&consulting.jpg",
+    }
   },
   {
     id: "venue",
-    image: Venue,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_venue.jpg",
     //#F4E8EB
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(244, 232, 235, 0.5) 53%)",
@@ -946,10 +1011,15 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_venue.jpg",
+    }
   },
   {
     id: "event-planners-and-ma",
-    image: MandA,
+    image: "https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_m&a.jpg",
     //#CBA88B
     blurColor:
       "linear-gradient(180deg, rgba(203, 168, 139, 0.5) 10%, rgba(203, 168, 139, 0.5) 53%)",
@@ -1012,5 +1082,10 @@ export const gtmUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
     ],
+    metaData:{
+      title:"",
+      description:"",
+      image:"https://c1.10times.com/whr/gtm/static/image/usecases/gtm_usecase_m&a.jpg",
+    }
   },
 ];

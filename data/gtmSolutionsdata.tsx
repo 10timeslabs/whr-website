@@ -136,6 +136,11 @@ usecases: [
       "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
   },
 ],  
+metaData:{
+  title:"Brand Alignment - whr.ai GTM",
+  description:"Align your brand goals with the right events using whr.ai GTM's Brand Alignment solutions for maximum impact and ROI.",
+  image:"https://c1.10times.com/whr/gtm/static/image/solution/Brandbuilding.png",
+}
 },
   {
     id: "competitor-tracking",
@@ -258,6 +263,11 @@ usecases: [
       "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
   },
 ],   
+metaData:{
+  title:"Competitor Tracking - whr.ai GTM",
+  description:"Stay ahead of rivals with whr.ai GTM's competitor tracking. Monitor where competitors are exhibiting, sponsoring, or speaking at events.",
+  image:"https://c1.10times.com/whr/gtm/static/image/solution/CompetitorTracking.png",
+}
 },
   {
     id: "exhibit-sponsor",
@@ -384,6 +394,11 @@ usecases: [
       "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
   },
 ],   
+metaData:{
+  title:"Exhibit & Sponsor Matching - whr.ai GTM",
+  description:"Maximize ROI on event participation with whr.ai GTM's Exhibit & Sponsor Matching. Choose the right events to exhibit or sponsor strategically.",
+  image:"https://c1.10times.com/whr/gtm/static/image/solution/Exhibit&Sponsor.png",
+}
 },
   {
     id: "product-matching",
@@ -509,6 +524,11 @@ usecases: [
       "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
   },
 ],   
+metaData:{
+  title:"Product Matching - whr.ai GTM",
+  description:"Find events that perfectly match your products or topics with whr.ai GTM's Product Matching solutions for deeper engagement.",
+  image:"https://c1.10times.com/whr/gtm/static/image/solution/ProductMatching.png",
+}
 },
 
   {
@@ -634,6 +654,11 @@ usecases: [
       "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
   },
 ],   
+metaData:{
+  title:"Prospect Mapping - whr.ai GTM",
+  description:"Turn prospects into real-world wins with whr.ai GTM's Prospect Mapping. Identify and target the best events for your business objectives.",
+  image:"https://c1.10times.com/whr/gtm/static/image/solution/Prospectmapping.png",
+}
 },
   {
     id: "recruitement-devrel",
@@ -759,6 +784,11 @@ usecases: [
       "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
   },
 ],   
+metaData:{
+  title:"Recruitment & DevRel - whr.ai GTM",
+  description:"Meet top talent face-to-face with whr.ai GTM's Recruitment & DevRel solutions. Enhance your hiring strategy with event intelligence.",
+  image:"https://c1.10times.com/whr/gtm/static/image/solution/Recruitement&DevRel.png",
+}
 },
   {
     id: "speaking-opportunity",
@@ -882,6 +912,11 @@ usecases: [
       "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
   },
 ], 
+metaData:{
+  title:"Speaking Opportunity - whr.ai GTM",
+  description:"Secure speaking slots at key events with whr.ai GTM's Speaking Opportunity. Amplify your brand voice and influence the right audience.",
+  image:"https://c1.10times.com/whr/gtm/static/image/solution/SpeakingOpportunity.png",
+}
 
   },
 ];
