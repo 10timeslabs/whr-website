@@ -3,14 +3,19 @@
 
 "use client"
 import React from "react";
-import HeroBanner from "./HeroBanner";
+// import HeroBanner from "./HeroBanner";
 import { usePathname } from "next/navigation";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
 import { geoProductJsonData } from "../../../data/geoProductData";
 import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
 import { gtmProductJsonData } from "../../../data/gtmProductData";
+import dynamic from "next/dynamic";
 
 const Section = () => {
+  const HeroBanner = dynamic(
+    () => import('./HeroBanner'),
+    { ssr: false }
+  )
   const pathname = usePathname();
   let dataSource = null;
   if (pathname.includes("/geo/solutions")) {

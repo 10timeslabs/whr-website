@@ -10,7 +10,7 @@ import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll"
 import UsecaseScroll from "@/components/usecaseScrollAnimation/UsecaseScroll";
 import HeroBanner from "@/components/solutionHeroBanner/HeroBanner";
 import Section from "@/components/solutionHeroBanner/Section";
-import LandingComponent from "@/components/scrollAnimation/LandingComponent";
+// import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import AutoScroll from "@/components/AutoScroll";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
 import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
@@ -27,8 +27,13 @@ import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
 import { notFound } from "next/navigation";
 import NotFound from "../NotFound";
 import { geoProductJsonData } from "../../../data/geoProductData";
+import dynamic from "next/dynamic";
 
 const GeoComponent = () => {
+  const LandingComponent = dynamic(
+    () => import('@/components/scrollAnimation/LandingComponent'),
+    { ssr: false }
+  )
   const pathname = usePathname();
 
   let dataSource = null;

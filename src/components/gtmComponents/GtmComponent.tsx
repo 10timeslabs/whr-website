@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
 import Section from "@/components/solutionHeroBanner/Section";
 import ProblemSolution from "@/components/problemSolution/ProblemSolution";
-import LandingComponent from "@/components/scrollAnimation/LandingComponent";
+// import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import Scroll from "@/components/scrollAnimation/Scroll";
 import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
 import AutoScroll from "@/components/AutoScroll";
@@ -22,8 +22,13 @@ import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
 import { notFound } from "next/navigation";
 import { gtmProductJsonData } from "../../../data/gtmProductData";
+import dynamic from "next/dynamic";
 
 const page = () => {
+    const LandingComponent = dynamic(
+        () => import('@/components/scrollAnimation/LandingComponent'),
+        { ssr: false }
+      )
   const pathname = usePathname();
   let dataSource = null;
   if (pathname.includes("/gtm/usecases")) {
