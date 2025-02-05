@@ -257,7 +257,7 @@ const GeneralNavbar = () => {
           <div className=" hidden lg:flex items-center space-x-4">
             <Link
               href="/signup"
-              className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
+              className="bg-primary px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer"
             >
               Sign Up
             </Link>

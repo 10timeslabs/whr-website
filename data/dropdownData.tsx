@@ -103,7 +103,7 @@ export const dropdownValues: any = {
         },
         {
           label: "Event Suppliers",
-          href: "/gtm/usecases/eventsuppliers",
+          href: "/gtm/usecases/event-suppliers",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
           icon: <GTM_UseCase_9 color="currentColor" />,
