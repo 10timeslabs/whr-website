@@ -15,7 +15,7 @@ export default page;
 
 export async function generateMetadata(context: any) {
   
-  const { namespace, type } = context.params;
+  const { namespace, type } = await context.params;
   let dataSource = null;
   if (namespace === "usecases") {
     dataSource = gtmUsecasesjsonData;

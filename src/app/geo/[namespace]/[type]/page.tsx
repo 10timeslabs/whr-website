@@ -14,7 +14,9 @@ const page = () => {
 export default page;
 
 export async function generateMetadata(context: any) {
-  const { namespace, type } = context.params;
+    console.log("content",context)
+    const { namespace, type } = await context.params;
+
   let dataSource = null;
   if (namespace === "usecases") {
     dataSource = geoUsecasesjsonData;
