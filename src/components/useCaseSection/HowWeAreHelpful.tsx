@@ -6,6 +6,7 @@ import GridImageTwo from "/public/usecase_grid.png"
 import LeftArrow from '/public/LeftArrow.svg'
 import RightArrow from '/public/RightArrow.svg'
 import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
+import { geoUsecasesjsonData } from "../../../data/geoUsecasesData";
 import { usePathname } from "next/navigation";
 
 const HowWeAreHelpful = () => {
@@ -16,7 +17,7 @@ const HowWeAreHelpful = () => {
 	if (pathname.includes("/gtm/usecases")) {
 		dataSource = gtmUsecasesjsonData
 	} else {
-		dataSource = gtmUsecasesjsonData
+		dataSource = geoUsecasesjsonData
 	}
 	const usecaseData = dataSource.find((item) => {
 		return item.id.toLowerCase() === endpoint;
