@@ -47,7 +47,7 @@ export const geoProductJsonData = [
         metaData:{
             title:"Event Search - whr.ai GEO",
             description:"Utilize whr.ai's Event Search to identify actionable events with smart filters and scores for better planning and forecasting.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
           }
     },
     {
@@ -73,7 +73,7 @@ export const geoProductJsonData = [
         metaData:{
             title:"Smart Tracker - whr.ai GEO",
             description:"Track critical events with whr.ai's Smart Tracker. Create custom filters and let our AI agent monitor and notify you.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
         }
     },
     {
@@ -97,7 +97,7 @@ export const geoProductJsonData = [
         metaData:{
             title:"AI Assistant - whr.ai GEO",
             description:"Resolve on-ground demand queries with whr.ai's AI Assistant. Ask questions in natural language and get actionable responses.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
         }
     },
     {
@@ -123,7 +123,7 @@ export const geoProductJsonData = [
         metaData:{
             title:"Trends Monitor - whr.ai GEO",
             description:"Monitor meaningful changes in event trends with whr.ai's Trends Monitor. Identify anomalies and respond proactively.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
         }
     },
     {
@@ -148,7 +148,7 @@ export const geoProductJsonData = [
         metaData:{
             title:"Coordinate - whr.ai GEO",
             description:"Streamline team coordination around events with whr.ai's Coordinate. Flag risks, assign tasks, and share notes seamlessly.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
         }
     },
     {
@@ -173,7 +173,7 @@ export const geoProductJsonData = [
         metaData:{
             title:"API & Model Training - whr.ai GEO",
             description:"Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
           }
     }
 ]

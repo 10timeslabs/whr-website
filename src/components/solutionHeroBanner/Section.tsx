@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
 import { geoProductJsonData } from "../../../data/geoProductData";
 import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
+import { gtmProductJsonData } from "../../../data/gtmProductData";
 
 const Section = () => {
   const pathname = usePathname();
@@ -17,6 +18,8 @@ const Section = () => {
     dataSource = gtmSolutionsjsonData;
   } else if (pathname.includes("/geo/product")) {
     dataSource = geoProductJsonData;
+  } else if (pathname.includes("/gtm/product")) {
+    dataSource = gtmProductJsonData
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();

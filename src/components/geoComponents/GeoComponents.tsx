@@ -24,6 +24,9 @@ import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
+import { notFound } from "next/navigation";
+import NotFound from "../NotFound";
+import { geoProductJsonData } from "../../../data/geoProductData";
 
 const GeoComponent = () => {
   const pathname = usePathname();
@@ -33,6 +36,8 @@ const GeoComponent = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/geo/usecases")) {
     dataSource = geoUsecasesjsonData;
+  }else if(pathname.includes("/geo/product")){
+    dataSource = geoProductJsonData
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
@@ -40,6 +45,10 @@ const GeoComponent = () => {
   const usecaseData = dataSource?.find((item) => {
     return item.id.toLowerCase() === endpoint;
   });
+
+  if (!usecaseData) {
+    return <NotFound />
+  }
 
   const defaultData = {
     image: dataSource?.[0]?.image || "",
@@ -139,11 +148,10 @@ const GeoComponent = () => {
           </div>
         </div>
       ) : (
-        pathname.split("/")[2] === "solutions" && (
-          <div className="w-full flex items-center justify-center mt-[140px]">
-            <Section />
-          </div>
-        )
+        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
+        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]": ""} `}>
+          <Section />
+        </div>
       )}
       {pathname.split("/")[2] !== "solutions" && (
         <div className="flex flex-col gap-10 items-center mt-12 ">
@@ -168,7 +176,7 @@ const GeoComponent = () => {
       )}
       {pathname.split("/")[2] === "product" && (
         <div className="w-full flex items-center justify-center">
-          <Conclusion/>
+          <Conclusion />
         </div>
       )}
       {pathname.split("/")[2] === "solutions" ? (
@@ -188,15 +196,15 @@ const GeoComponent = () => {
       )}
       {(pathname.split("/")[2] === "solutions" ||
         pathname.split("/")[2] === "usecases") && (
-        <div className="mb-5 w-full flex items-center justify-center">
-          <VerticalScroll
-            mainHeading={
-              pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
-            }
-            dataToDisplay={dataToDisplay}
-          />
-        </div>
-      )}
+          <div className="mb-5 w-full flex items-center justify-center">
+            <VerticalScroll
+              mainHeading={
+                pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+              }
+              dataToDisplay={dataToDisplay}
+            />
+          </div>
+        )}
       <CircleContainer />
       <div>
         <ProductsCarousel />

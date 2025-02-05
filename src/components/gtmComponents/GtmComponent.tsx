@@ -20,7 +20,8 @@ import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
-
+import { notFound } from "next/navigation";
+import { gtmProductJsonData } from "../../../data/gtmProductData";
 
 const page = () => {
   const pathname = usePathname();
@@ -29,6 +30,8 @@ const page = () => {
     dataSource = gtmUsecasesjsonData
   } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData
+  }else if(pathname.includes("/gtm/product")){
+    dataSource = gtmProductJsonData
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
@@ -36,6 +39,10 @@ const page = () => {
   const usecaseData = dataSource?.find((item) => {
     return item.id.toLowerCase() === endpoint;
   });
+  if (!usecaseData) {
+      notFound();
+    }
+  
 
   const defaultData = {
     image: dataSource?.[0]?.image || "",
@@ -195,8 +202,8 @@ const page = () => {
           </div>
         </div>
       ) : (
-        pathname.split("/")[2] === "solutions" &&
-        <div className="w-full flex items-center justify-center mt-[140px]">
+        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) &&(
+        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]": ""} `}>
           <Section />
         </div>
       )}

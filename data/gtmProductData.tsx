@@ -1,3 +1,9 @@
+import ApiImage  from '/public/geoProductImages/Api_product.png'
+import Coordinate  from '/public/geoProductImages/Coordinate.png'
+import Research  from '/public/geoProductImages/Research.png'
+import TrackerTenmplate  from '/public/geoProductImages/tracker-templates.png'
+import TrackerLanding  from '/public/geoProductImages/Trackers-landing.png'
+import Trends  from '/public/geoProductImages/Trends-product.png'
 import Icon1  from '/public/GtmProductHowIcons/GTM-01.svg'
 import Icon2  from '/public/GtmProductHowIcons/GTM-02.svg'
 import Icon3  from '/public/GtmProductHowIcons/GTM-03.svg'
@@ -23,6 +29,7 @@ import Icon21  from '/public/GtmProductHowIcons/GTM-21.svg'
 export const gtmProductJsonData = [
     {
         id: "event-search",
+        image : TrackerLanding,
         text: "Find What’s Relevant",
         subtext:
             "Filter events the way you want—by products, audience, size, or location.",
@@ -42,11 +49,12 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Event Search - whr.ai GEO",
             description:"Utilize whr.ai's Event Search to identify actionable events with smart filters and scores for better planning and forecasting.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
           }
     },
     {
         id: "ai-assistant",
+        image : TrackerLanding,
         text: "Get Timely Notifications with AI",
         subtext:
             "Found relevant events? Get reminders & updates to never miss potential opportunities.",
@@ -66,11 +74,12 @@ export const gtmProductJsonData = [
         metaData:{
             title:"AI Assistant - whr.ai GEO",
             description:"Resolve on-ground demand queries with whr.ai's AI Assistant. Ask questions in natural language and get actionable responses.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
         }
     },
     {
         id: "smart-tracker",
+        image : TrackerLanding,
         text: "Don’t Miss an Opportunity",
         subtext:
             "Why rely on redundant searches? Define your own trackers to receive curated event leads that match your needs.",
@@ -90,11 +99,12 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Smart Tracker - whr.ai GEO",
             description:"Track critical events with whr.ai's Smart Tracker. Create custom filters and let our AI agent monitor and notify you.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
         }
     },
     {
         id: "coordinate",
+        image : TrackerLanding,
         text: "Bring Your Team Together",
         subtext:
             "Events touch every department, but internal coordination is tough. Share and align event plans to maximize value without silos.",
@@ -114,11 +124,12 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Coordinate - whr.ai GEO",
             description:"Streamline team coordination around events with whr.ai's Coordinate. Flag risks, assign tasks, and share notes seamlessly.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
         }
     },
     {
         id: "outreach",
+        image : TrackerLanding,
         text: "Faster Response from Organizers",
         subtext:
             "Why wait for answers? Streamline your questions and get decisions faster.",
@@ -138,11 +149,12 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Outreach - whr.ai GEO",
             description:"Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
           }
     },
     {
         id: "prospect",
+        image : TrackerLanding,
         text: "Identify & Set Up Meetings",
         subtext:
             "Discover who’s attending, plan effective meetings, and turn events into lead-generating opportunities.",
@@ -162,11 +174,12 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Prospect - whr.ai GEO",
             description:"Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
           }
     },
     {
         id: "trends-monitor",
+        image : TrackerLanding,
         text: "Monitor Industry Signals",
         subtext:
             "Track broader market changes and outliers to stay on top of emerging trends, competition, or shifting audience preferences.",
@@ -186,7 +199,7 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Trends Monitor - whr.ai GEO",
             description:"Monitor meaningful changes in event trends with whr.ai's Trends Monitor. Identify anomalies and respond proactively.",
-            image:"",
+            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
         }
     }
 ]
