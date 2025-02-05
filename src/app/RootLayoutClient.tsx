@@ -5,7 +5,7 @@ import GeneralNavbar from "@/components/GeneralNavbar";
 import Footer from "@/components/Footer";
 import GetInTouch from "@/components/GetInTouch";
 
-const generalPages = ["/geo", "/gtm", "/geni", "/about"];
+const generalPages = ["/geo", "/gtm", "/geni"];
 
 export default function RootLayoutClient({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

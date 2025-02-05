@@ -79,7 +79,7 @@ const GeneralNavbar = () => {
             : "bg-transparent py-2 justify-between"
             }`}
           style={{
-            width: isScrolled ? "80%" : "87%",
+            width: isScrolled ? "87%" : "87%",
             margin: "0 auto",
           }}
         >
@@ -249,9 +249,9 @@ const GeneralNavbar = () => {
               </div>
             ))}
 
-            <div className="text-black hover:text-primary text-lg px-4 py-2 cursor-pointer">
+            <Link href={pathname.includes("/geo") ? "/geo/about" : "gtm/about"}  className="text-black hover:text-primary text-lg px-4 py-2 cursor-pointer">
               About
-            </div>
+            </Link>
           </div>
 
           <div className=" hidden lg:flex items-center space-x-4">
@@ -331,9 +331,9 @@ const GeneralNavbar = () => {
                   )}
                 </div>
               ))}
-              <div className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2">
+              <Link href={pathname.includes("/geo") ? "/geo/about" : "gtm/about"} className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2">
                 About
-              </div>
+              </Link>
             </div>
           </div>
         </div>

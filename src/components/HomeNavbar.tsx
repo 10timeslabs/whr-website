@@ -94,8 +94,7 @@ const Navbar = () => {
             Geni
           </Link> */}
           <Link
-            href="https://docs.google.com/document/d/1gwqPfP18N2PuokVuXQhKjNDTr_UyHknw7umGhwekBq8/edit?usp=sharing"
-            target="_blank"
+            href="/about"
             className="text-black hover:text-primary text-lg"
           >
             About
