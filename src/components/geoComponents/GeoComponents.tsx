@@ -24,6 +24,7 @@ import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
+import { notFound } from "next/navigation";
 
 const GeoComponent = () => {
   const pathname = usePathname();
@@ -40,6 +41,10 @@ const GeoComponent = () => {
   const usecaseData = dataSource?.find((item) => {
     return item.id.toLowerCase() === endpoint;
   });
+
+  if (!usecaseData) {
+    notFound();
+  }
 
   const defaultData = {
     image: dataSource?.[0]?.image || "",
@@ -168,7 +173,7 @@ const GeoComponent = () => {
       )}
       {pathname.split("/")[2] === "product" && (
         <div className="w-full flex items-center justify-center">
-          <Conclusion/>
+          <Conclusion />
         </div>
       )}
       {pathname.split("/")[2] === "solutions" ? (
@@ -188,15 +193,15 @@ const GeoComponent = () => {
       )}
       {(pathname.split("/")[2] === "solutions" ||
         pathname.split("/")[2] === "usecases") && (
-        <div className="mb-5 w-full flex items-center justify-center">
-          <VerticalScroll
-            mainHeading={
-              pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
-            }
-            dataToDisplay={dataToDisplay}
-          />
-        </div>
-      )}
+          <div className="mb-5 w-full flex items-center justify-center">
+            <VerticalScroll
+              mainHeading={
+                pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+              }
+              dataToDisplay={dataToDisplay}
+            />
+          </div>
+        )}
       <CircleContainer />
       <div>
         <ProductsCarousel />

@@ -26,7 +26,7 @@ export async function generateMetadata(context: any) {
   });
   const dataToDisplay: any = gtmData;
   // console.log("id______________", namespace, type,dataToDisplay);
-  if (!type || !namespace) {
+  if (!type || !namespace || !gtmData) {
     return {
       title: "404 - Not Found",
       description: "The page you are looking for does not exist.",

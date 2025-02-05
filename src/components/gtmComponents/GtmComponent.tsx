@@ -20,7 +20,7 @@ import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
-
+import { notFound } from "next/navigation";
 
 const page = () => {
   const pathname = usePathname();
@@ -36,6 +36,10 @@ const page = () => {
   const usecaseData = dataSource?.find((item) => {
     return item.id.toLowerCase() === endpoint;
   });
+  if (!usecaseData) {
+      notFound();
+    }
+  
 
   const defaultData = {
     image: dataSource?.[0]?.image || "",
