@@ -38,7 +38,12 @@ export const gtmProductJsonData = [
         conclusion : {
             heading : "Don’t Just Go—Know Where",
             subheading : "Maximize the value of your time and budget by choosing events that truly fit your goals." 
-        }
+        },
+        metaData:{
+            title:"Event Search - whr.ai GEO",
+            description:"Utilize whr.ai's Event Search to identify actionable events with smart filters and scores for better planning and forecasting.",
+            image:"",
+          }
     },
     {
         id: "ai-assistant",
@@ -57,6 +62,11 @@ export const gtmProductJsonData = [
         conclusion : {
             heading : "Never Miss a Signal",
             subheading : "Let the AI keep watch and optimize event ROI without manual effort." 
+        },
+        metaData:{
+            title:"AI Assistant - whr.ai GEO",
+            description:"Resolve on-ground demand queries with whr.ai's AI Assistant. Ask questions in natural language and get actionable responses.",
+            image:"",
         }
     },
     {
@@ -76,6 +86,11 @@ export const gtmProductJsonData = [
         conclusion : {
             heading : "Why Depend on Chance?",
             subheading : "Pre-set your trackers so no opportunity is lost." 
+        },
+        metaData:{
+            title:"Smart Tracker - whr.ai GEO",
+            description:"Track critical events with whr.ai's Smart Tracker. Create custom filters and let our AI agent monitor and notify you.",
+            image:"",
         }
     },
     {
@@ -95,6 +110,11 @@ export const gtmProductJsonData = [
         conclusion : {
             heading : "One Unified Approach",
             subheading : "Stop siloed event planning—keep your entire organization on the same page." 
+        },
+        metaData:{
+            title:"Coordinate - whr.ai GEO",
+            description:"Streamline team coordination around events with whr.ai's Coordinate. Flag risks, assign tasks, and share notes seamlessly.",
+            image:"",
         }
     },
     {
@@ -114,7 +134,12 @@ export const gtmProductJsonData = [
         conclusion : {
             heading : "Streamline Organizer Communication",
             subheading : "Fast answers mean better planning and improved event outcomes." 
-        }
+        },
+        metaData:{
+            title:"Outreach - whr.ai GEO",
+            description:"Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
+            image:"",
+          }
     },
     {
         id: "prospect",
@@ -133,7 +158,12 @@ export const gtmProductJsonData = [
         conclusion : {
             heading : "Elevate Your Prospecting",
             subheading : "Identify, schedule, and convert high-value leads at the right events." 
-        }
+        },
+        metaData:{
+            title:"Prospect - whr.ai GEO",
+            description:"Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
+            image:"",
+          }
     },
     {
         id: "trends-monitor",
@@ -152,6 +182,11 @@ export const gtmProductJsonData = [
         conclusion : {
             heading : "Stay Ahead of the Curve",
             subheading : "Monitor and adapt to industry swings, ensuring you never lag behind new trends or competition." 
+        },
+        metaData:{
+            title:"Trends Monitor - whr.ai GEO",
+            description:"Monitor meaningful changes in event trends with whr.ai's Trends Monitor. Identify anomalies and respond proactively.",
+            image:"",
         }
     }
 ]

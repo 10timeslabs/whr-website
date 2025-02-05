@@ -45,6 +45,8 @@ import { AIAssistantIcon,  APIModelIcon,
     GTM_UseCase_7,
     GTM_UseCase_8,
     GTM_UseCase_9,
+    OutreachIcon,
+    ProspectIcon,
     SearchIcon,
     TrackerIcon,
     TrendsIcon, } from "../svgicons/icons";
@@ -215,49 +217,49 @@ export const dropdownValues: any = {
           href: "/gtm/product/event-search",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 color="currentColor" />,
+            icon:<SearchIcon color="currentColor"/>
         },
         {
           label: "AI Assistant",
           href: "/gtm/product/ai-assistant",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 color="currentColor" />,
+            icon: <AIAssistantIcon color="currentColor" />,
         },
         {
           label: "Smart Tracker",
           href: "/gtm/product/smart-tracker",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 color="currentColor" />,
+            icon :<TrackerIcon color="currentColor"/>
         },
         {
           label: "Coordinate",
           href: "/gtm/product/coordinate",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 color="currentColor" />,
+            icon: <CoordinateIcon />,
         },
         {
           label: "Outreach",
           href: "/gtm/product/outreach",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 color="currentColor" />,
+          icon: <OutreachIcon color="currentColor" />,
         },
         {
           label: "Prospect",
           href: "/gtm/product/prospect",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 color="currentColor" />,
+          icon: <ProspectIcon color="currentColor" />,
         },
         {
           label: "Trends Monitor",
           href: "/gtm/product/trends-monitor",
           subText:
             "Quickly achieve a minimum 10% improvement in forecast accuracy",
-          icon: <GTM_UseCase_1 color="currentColor" />,
+          icon:<TrendsIcon color="currentColor"/>
         },
       ],
     },

@@ -2,6 +2,7 @@ import React from "react";
 import GtmComponent from "@/components/gtmComponents/GtmComponent";
 import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
+import { gtmProductJsonData } from "../../../../../data/gtmProductData";
 const page = () => {
   return (
     <div>
@@ -20,12 +21,14 @@ export async function generateMetadata(context: any) {
     dataSource = gtmUsecasesjsonData;
   } else if (namespace === "solutions") {
     dataSource = gtmSolutionsjsonData;
+  }else if(namespace ==="product"){
+    dataSource = gtmProductJsonData
   }
   const gtmData = dataSource?.find((item) => {
     return item.id.toLowerCase() === type;
   });
   const dataToDisplay: any = gtmData;
-  // console.log("id______________", namespace, type,dataToDisplay);
+  console.log("id______________", namespace, type,dataToDisplay);
   if (!type || !namespace) {
     return {
       title: "404 - Not Found",

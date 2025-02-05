@@ -43,7 +43,12 @@ export const geoProductJsonData = [
         conclusion : {
             heading : "Make Search Smart",
             subheading : "Go beyond basic lists and power your event strategy with deeper intel." 
-        }
+        },
+        metaData:{
+            title:"Event Search - whr.ai GEO",
+            description:"Utilize whr.ai's Event Search to identify actionable events with smart filters and scores for better planning and forecasting.",
+            image:"",
+          }
     },
     {
         id: "smart-tracker",
@@ -64,6 +69,11 @@ export const geoProductJsonData = [
         conclusion : {
             heading : "Don’t Miss Out",
             subheading : "Use trackers to avoid guesswork and stay ahead of any event-led volatility." 
+        },
+        metaData:{
+            title:"Smart Tracker - whr.ai GEO",
+            description:"Track critical events with whr.ai's Smart Tracker. Create custom filters and let our AI agent monitor and notify you.",
+            image:"",
         }
     },
     {
@@ -83,6 +93,11 @@ export const geoProductJsonData = [
         conclusion : {
             heading : "Your On-Ground Oracle",
             subheading : "Ask questions, get contextual responses, and turn insights into trackers effortlessly." 
+        },
+        metaData:{
+            title:"AI Assistant - whr.ai GEO",
+            description:"Resolve on-ground demand queries with whr.ai's AI Assistant. Ask questions in natural language and get actionable responses.",
+            image:"",
         }
     },
     {
@@ -104,6 +119,11 @@ export const geoProductJsonData = [
         conclusion : {
             heading : "Stay Ahead",
             subheading : "Monitor crucial dates, locations, and potential causes of disruptions—minimize last-minute surprises." 
+        },
+        metaData:{
+            title:"Trends Monitor - whr.ai GEO",
+            description:"Monitor meaningful changes in event trends with whr.ai's Trends Monitor. Identify anomalies and respond proactively.",
+            image:"",
         }
     },
     {
@@ -124,6 +144,11 @@ export const geoProductJsonData = [
         conclusion : {
             heading : "Make Coordination Easy",
             subheading : "A single terminal for your entire team to annotate, act, and stay synced on event developments." 
+        },
+        metaData:{
+            title:"Coordinate - whr.ai GEO",
+            description:"Streamline team coordination around events with whr.ai's Coordinate. Flag risks, assign tasks, and share notes seamlessly.",
+            image:"",
         }
     },
     {
@@ -144,6 +169,11 @@ export const geoProductJsonData = [
         conclusion : {
             heading : "Elevate Your Data Stack",
             subheading : "Improve internal models and workflows with clean, continuously updated event intelligence—no clutter, only actionable data." 
-        }
+        },
+        metaData:{
+            title:"API & Model Training - whr.ai GEO",
+            description:"Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
+            image:"",
+          }
     }
 ]
