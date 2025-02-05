@@ -1,9 +1,10 @@
 import React from 'react'
-import CleaningImage from '/public/realworldproblems/cleaningengine.png'
-import EnrichmentImage from '/public/realworldproblems/enrichmentengine.png'
-import InteligenceImage from '/public/realworldproblems/intelligenceengine.png'
-import SourcingImage from '/public/realworldproblems/sourcingengine.png'
-import Image from 'next/image'
+import Lottie from 'lottie-react'
+import CleaningImage from '../../../public/realworldproblems/cleaningengine.json'
+import EnrichmentImage from '../../../public/realworldproblems/enrichmentengine.json'
+import InteligenceImage from '../../../public/realworldproblems/intelligenceengine.json'
+import SourcingImage from '../../../public/realworldproblems/sourcingengine.json'
+// import Image from 'next/image'
 
 const EngineScroll = () => {
 
@@ -27,16 +28,19 @@ const EngineScroll = () => {
 				}}
 			></div>
 			<div className="absolute z-20 w-[95%] h-[460px] overflow-y-auto"
-			style={{
-				WebkitMaskImage:
-					"linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)",
-				maskImage:
-					"linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)",
-			}}>
+				style={{
+					WebkitMaskImage:
+						"linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)",
+					maskImage:
+						"linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)",
+				}}>
 				{data.map((engine, key) => (
 					<div className="flex flex-col w-full h-full mt-5" key={key}>
-						<div className={`flex justify-center w-full`}>
+						{/* <div className={`flex justify-center w-full`}>
 							<Image src={engine.image} alt="img" height={222} />
+						</div> */}
+						<div className="h-[222px]">
+							<Lottie animationData={engine.image} style={{ width: '100%', height: '100%' }} />
 						</div>
 						<div className="font-semibold text-[24px] mt-10">{engine.heading}</div>
 						<div className="text-[var(--secondary-text-color)] mt-5">{engine.subheading}</div>

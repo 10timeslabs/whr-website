@@ -19,7 +19,8 @@ const HeroBanner = ({ heading, subHeading, image }: Props) => {
           {subHeading}
         </div>
       </div>
-      {pathname.includes("/geo/product") ?<Image src={image} alt="img" width={500}/> :<div className="h-[260px] max-[775px]:h-[200px]">
+      {pathname.includes("/geo/product") ?<Image src={image} alt="img" width={500}/> :
+      <div className="h-[260px] max-[775px]:h-[200px]">
         <Lottie animationData={image} style={{ width: '100%', height: '100%' }}/>
       </div> }
       
