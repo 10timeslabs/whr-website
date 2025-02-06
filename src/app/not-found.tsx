@@ -2,16 +2,18 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import GridImage from "/public/404_gridbackground.png";
-import Lottie from 'lottie-react';
-import NotFoundImage from '../../public/404.json'
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import LeftArrow from '/public/Left.svg'
 
 const NotFound = () => {
+	const LottieComponent = dynamic(
+		() => import('@/components/LottieComponent'),
+		{ ssr: false }
+	)
 	useEffect(() => {
 		// Disable scrolling
 		document.body.style.overflow = "hidden";
-
 		return () => {
 			// Re-enable scrolling when component unmounts
 			document.body.style.overflow = "auto";
@@ -31,9 +33,7 @@ const NotFound = () => {
 						<span>Back to Home</span>
 					</Link>
 				</div>
-				<div className="h-[300px]">
-					<Lottie animationData={NotFoundImage} style={{ width: '100%', height: '100%' }} />
-				</div>
+				<LottieComponent />
 			</div>
 		</div>
 	)

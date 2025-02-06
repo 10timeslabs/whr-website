@@ -5,7 +5,7 @@ import "react-international-phone/style.css";
 import styles from './page.style.module.css'
 import GetInTouch from '@/components/GetInTouch';
 import Footer from '@/components/Footer';
-import HomeNavbar from '@/components/HomeNavbar';
+import GeneralNavbar from '@/components/GeneralNavbar';
 
 const Page = () => {
 
@@ -100,7 +100,7 @@ const Page = () => {
 	}
 	return (
 		<div className='pt-[120px]'>
-			<HomeNavbar />
+			<GeneralNavbar />
 			<div className='flex justify-center'>
 				<form className='bg-white rounded-xl p-8 drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)] flex flex-col gap-5 w-[700px]' onSubmit={(e) => handleSubmit(e)}>
 					<div className="grid grid-cols-2 gap-4">

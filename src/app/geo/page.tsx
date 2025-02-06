@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import styles from "./page.module.css";
 import AutoScroll from "@/components/AutoScroll";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
 import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
@@ -11,15 +10,13 @@ import UseCasesContainer from "@/components/useCaseSection/UseCasesContainer";
 import ProblemContainer from "@/components/realWorldProblem/ProblemContainer";
 import GridImage from "/public/herosection_grid.png";
 import HeadingtextAnimation from "@/components/HeadingtextAnimation";
-import FragmentDataIcon from "/public/realworldproblems/Fragmenteddata.svg";
-import NoiseIcon from "/public/realworldproblems/noise.svg";
-import PuzzleIcon from "/public/realworldproblems/puzzle.svg";
-import IntelDataIcon from "/public/realworldproblems/timesensitiveintel.svg";
-
 import IneffectiveGround from '/public/internal_landing_page_icons/in-effective onground_eventeli prob.svg'
 import LastMinChaos from '/public/internal_landing_page_icons/last-minute chaos_eventeli prob.svg'
 import Scattered from '/public/internal_landing_page_icons/Scattered Event_Eventeli problem.svg'
 import Volatile from '/public/internal_landing_page_icons/Volatile local demand_eventeli prob.svg'
+import GetInTouch from "@/components/GetInTouch";
+import Footer from "@/components/Footer";
+import GeneralNavbar from "@/components/GeneralNavbar";
 
 export default function Home() {
   const headingWords = [
@@ -59,6 +56,7 @@ export default function Home() {
 
   return (
     <div style={{ paddingTop: 120 }} className="relative">
+      <GeneralNavbar />
       <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
@@ -71,7 +69,7 @@ export default function Home() {
         </p>
       </div>
       <div className="w-full flex items-center justify-center mt-10">
-        <UseCasesContainer text="Whr Depends on your Why"/>
+        <UseCasesContainer text="Whr Depends on your Why" />
       </div>
 
       <div className="w-full">
@@ -90,6 +88,8 @@ export default function Home() {
       <div className="mt-10">
         <ProductsCarousel />
       </div>
+      <GetInTouch />
+      <Footer />
     </div>
   );
 }

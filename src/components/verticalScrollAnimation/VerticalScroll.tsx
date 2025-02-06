@@ -14,14 +14,14 @@ const VerticalScroll = ({ mainHeading, dataToDisplay }: any) => {
       <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
         {mainHeading}
       </div>
-      <div className="text-center font-semibold text-2xl w-[40%]">
+      <div className="text-center font-semibold text-2xl w-[40%] max-[1000px]:w-[90%]">
         Preparing for demand anomalies is a powerful competitive advantage
       </div>
       <div className="text-[var(--secondary-text-color)] text-lg text-center">
         GEO enables better predictability of demand by taking into consideration
         upcoming & forecasted events, along with the estimated impact.
       </div>
-      <div className="relative w-[1200px] flex flex-col items-center mt-7 max-[600px]:grid max-[600px]:grid-cols-2 max-[600px]:gap-4 max-[600px]:w-[90%] max-[600px]:place-items-center">
+      <div className="relative w-[1200px] flex flex-col items-center mt-7 max-[600px]:grid max-[600px]:grid-cols-2 max-[600px]:gap-4 max-[600px]:w-[90%] max-[600px]:place-items-center max-[490px]:w-[340px]">
         {/* Vertical Line Grey*/}
         <div className="absolute h-full w-0.5 bg-gray-200 left-1/2 transform -translate-x-1/2 z-0 max-[600px]:hidden"></div>
 
