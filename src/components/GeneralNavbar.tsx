@@ -261,8 +261,7 @@ const GeneralNavbar = () => {
             >
               Sign Up
             </Link>
-            <Link
-              href="/demo"
+            <Link href={pathname.includes("/geo") ? "/geo/demo" : "gtm/demo"}
               className="px-[15px] py-[8px] rounded-[10px]  border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
             >
               Demo
