@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import { PhoneInput, ParsedCountry } from "react-international-phone";
 import "react-international-phone/style.css";
 import styles from './page.style.module.css'
+import GetInTouch from '@/components/GetInTouch';
+import Footer from '@/components/Footer';
+import HomeNavbar from '@/components/HomeNavbar';
 
 const Page = () => {
 
@@ -96,83 +99,88 @@ const Page = () => {
 		setPhoneNumber(phone);
 	}
 	return (
-		<div className='pt-[120px] flex justify-center'>
-			<form className='bg-white rounded-xl p-8 drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)] flex flex-col gap-5 w-[700px]' onSubmit={(e) => handleSubmit(e)}>
-				<div className="grid grid-cols-2 gap-4">
-					<div className="flex flex-col gap-2">
-						<label>First Name</label>
+		<div className='pt-[120px]'>
+			<HomeNavbar />
+			<div className='flex justify-center'>
+				<form className='bg-white rounded-xl p-8 drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)] flex flex-col gap-5 w-[700px]' onSubmit={(e) => handleSubmit(e)}>
+					<div className="grid grid-cols-2 gap-4">
+						<div className="flex flex-col gap-2">
+							<label>First Name</label>
+							<input
+								className="border border-gray-300 rounded-md p-2"
+								type="text"
+								value={firstName}
+								onChange={(e) => setFirstName(e.target.value)}
+							/>
+							{errors.firstName && <span className="text-red-500 text-sm">{errors.firstName}</span>}
+						</div>
+						<div className="flex flex-col gap-2">
+							<label>Last Name</label>
+							<input
+								className="border border-gray-300 rounded-md p-2"
+								type="text"
+								value={lastName}
+								onChange={(e) => setLastName(e.target.value)}
+							/>
+							{errors.lastName && <span className="text-red-500 text-sm">{errors.lastName}</span>}
+						</div>
+						<div className="flex flex-col gap-2">
+							<label>Business Email</label>
+							<input
+								className="border border-gray-300 rounded-md p-2"
+								type="email"
+								value={busEmail}
+								onChange={(e) => setBusEmail(e.target.value)}
+							/>
+							{errors.busEmail && <span className="text-red-500 text-sm">{errors.busEmail}</span>}
+						</div>
+						<div className="flex flex-col gap-2">
+							<label>Company</label>
+							<input
+								className="border border-gray-300 rounded-md p-2"
+								type="text"
+								value={companyName}
+								onChange={(e) => setCompanyName(e.target.value)}
+							/>
+							{errors.companyName && <span className="text-red-500 text-sm">{errors.companyName}</span>}
+						</div>
+						<div className="flex flex-col gap-2">
+							<label>Job Title</label>
+							<input
+								className="border border-gray-300 rounded-md p-2"
+								type="text"
+								value={jobTitle}
+								onChange={(e) => setJobTitle(e.target.value)}
+							/>
+							{errors.jobTitle && <span className="text-red-500 text-sm">{errors.jobTitle}</span>}
+						</div>
+						<div className="flex flex-col gap-2">
+							<label>Phone Number</label>
+							<PhoneInput
+								className={`w-full ${styles.PhoneInput} border border-gray-300 rounded-md p-0.5`}
+								defaultCountry="in"
+								value={phoneNumber}
+								onChange={handlePhoneChange}
+							/>
+							{errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
+						</div>
+					</div>
+					<div className="flex items-center gap-2">
 						<input
-							className="border border-gray-300 rounded-md p-2"
-							type="text"
-							value={firstName}
-							onChange={(e) => setFirstName(e.target.value)}
+							type="checkbox"
+							id="check"
+							checked={subscribe}
+							onChange={(e) => setSubscribe(e.target.checked)}
 						/>
-						{errors.firstName && <span className="text-red-500 text-sm">{errors.firstName}</span>}
+						<label htmlFor="check" className="cursor-pointer">
+							Please subscribe to the newsletter for influencer marketing best practices
+						</label>
 					</div>
-					<div className="flex flex-col gap-2">
-						<label>Last Name</label>
-						<input
-							className="border border-gray-300 rounded-md p-2"
-							type="text"
-							value={lastName}
-							onChange={(e) => setLastName(e.target.value)}
-						/>
-						{errors.lastName && <span className="text-red-500 text-sm">{errors.lastName}</span>}
-					</div>
-					<div className="flex flex-col gap-2">
-						<label>Business Email</label>
-						<input
-							className="border border-gray-300 rounded-md p-2"
-							type="email"
-							value={busEmail}
-							onChange={(e) => setBusEmail(e.target.value)}
-						/>
-						{errors.busEmail && <span className="text-red-500 text-sm">{errors.busEmail}</span>}
-					</div>
-					<div className="flex flex-col gap-2">
-						<label>Company</label>
-						<input
-							className="border border-gray-300 rounded-md p-2"
-							type="text"
-							value={companyName}
-							onChange={(e) => setCompanyName(e.target.value)}
-						/>
-						{errors.companyName && <span className="text-red-500 text-sm">{errors.companyName}</span>}
-					</div>
-					<div className="flex flex-col gap-2">
-						<label>Job Title</label>
-						<input
-							className="border border-gray-300 rounded-md p-2"
-							type="text"
-							value={jobTitle}
-							onChange={(e) => setJobTitle(e.target.value)}
-						/>
-						{errors.jobTitle && <span className="text-red-500 text-sm">{errors.jobTitle}</span>}
-					</div>
-					<div className="flex flex-col gap-2">
-						<label>Phone Number</label>
-						<PhoneInput
-							className={`w-full ${styles.PhoneInput} border border-gray-300 rounded-md p-0.5`}
-							defaultCountry="in"
-							value={phoneNumber}
-							onChange={handlePhoneChange}
-						/>
-						{errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
-					</div>
-				</div>
-				<div className="flex items-center gap-2">
-					<input
-						type="checkbox"
-						id="check"
-						checked={subscribe}
-						onChange={(e) => setSubscribe(e.target.checked)}
-					/>
-					<label htmlFor="check" className="cursor-pointer">
-						Please subscribe to the newsletter for influencer marketing best practices
-					</label>
-				</div>
-				<button className='bg-[#6750A4] w-full text-center py-[8px] rounded-[10px] text-white cursor-pointer'>Submit</button>
-			</form>
+					<button className='bg-[#6750A4] w-full text-center py-[8px] rounded-[10px] text-white cursor-pointer'>Submit</button>
+				</form>
+			</div>
+			<GetInTouch />
+			<Footer />
 		</div>
 	)
 }

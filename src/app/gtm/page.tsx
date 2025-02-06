@@ -21,6 +21,9 @@ import BrokenPromotion from '/public/internal_landing_page_icons/broken promotio
 import InEfficientOnground from '/public/internal_landing_page_icons/Inefficient onboarding_geo prob.svg'
 import LimitedIntelligence from '/public/internal_landing_page_icons/Limited Intelligence_geo prob.svg'
 import Untracked from '/public/internal_landing_page_icons/untracked roi_geo prob.svg'
+import GetInTouch from "@/components/GetInTouch";
+import Footer from "@/components/Footer";
+import GeneralNavbar from "@/components/GeneralNavbar";
 
 export default function Home() {
   const headingWords = [
@@ -71,6 +74,7 @@ export default function Home() {
 
   return (
     <div style={{ paddingTop: 120 }} className="relative">
+      <GeneralNavbar />
       <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
@@ -90,7 +94,7 @@ export default function Home() {
         </p>
       </div>
       <div className="w-full flex items-center justify-center mt-10">
-        <UseCasesContainer text="Whr Depends on your Why"/>
+        <UseCasesContainer text="Whr Depends on your Why" />
       </div>
 
       <div className="w-full">
@@ -109,6 +113,8 @@ export default function Home() {
       <div className="mt-10">
         <ProductsCarousel />
       </div>
+      <GetInTouch />
+      <Footer />
     </div>
   );
 }

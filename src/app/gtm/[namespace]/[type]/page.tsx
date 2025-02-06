@@ -3,6 +3,10 @@ import GtmComponent from "@/components/gtmComponents/GtmComponent";
 import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
 import { gtmProductJsonData } from "../../../../../data/gtmProductData";
+import GetInTouch from "@/components/GetInTouch";
+import Footer from "@/components/Footer";
+import GeneralNavbar from "@/components/GeneralNavbar";
+
 const Page = () => {
   return (
     <div>
@@ -14,14 +18,14 @@ const Page = () => {
 export default Page;
 
 export async function generateMetadata(context: any) {
-  
+
   const { namespace, type } = await context.params;
   let dataSource = null;
   if (namespace === "usecases") {
     dataSource = gtmUsecasesjsonData;
   } else if (namespace === "solutions") {
     dataSource = gtmSolutionsjsonData;
-  }else if(namespace ==="product"){
+  } else if (namespace === "product") {
     dataSource = gtmProductJsonData
   }
   const gtmData = dataSource?.find((item) => {

@@ -18,6 +18,9 @@ import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
 import { geoProductJsonData } from "../../../data/geoProductData";
 import dynamic from "next/dynamic";
+import GeneralNavbar from "../GeneralNavbar";
+import GetInTouch from "../GetInTouch";
+import Footer from "../Footer";
 
 const GeoComponent = () => {
   const LandingComponent = dynamic(
@@ -63,6 +66,7 @@ const GeoComponent = () => {
       className="relative w-full flex flex-col gap-12 "
       style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }}
     >
+      <GeneralNavbar />
       {pathname.split("/")[2] === "product" && (
         <>
           <Image
@@ -208,6 +212,8 @@ const GeoComponent = () => {
       <div>
         <ProductsCarousel />
       </div>
+      <GetInTouch />
+      <Footer />
     </div>
   );
 };

@@ -13,6 +13,9 @@ import FragmentDataIcon from '/public/realworldproblems/Fragmenteddata.svg'
 import NoiseIcon from '/public/realworldproblems/noise.svg'
 import PuzzleIcon from '/public/realworldproblems/puzzle.svg'
 import IntelDataIcon from '/public/realworldproblems/timesensitiveintel.svg'
+import GetInTouch from "@/components/GetInTouch";
+import Footer from "@/components/Footer";
+import HomeNavbar from "@/components/HomeNavbar";
 
 export default function Home() {
 
@@ -27,6 +30,7 @@ export default function Home() {
 
   return (
     <div style={{ paddingTop: 120 }} className="relative">
+      <HomeNavbar/>
       <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
@@ -54,6 +58,8 @@ export default function Home() {
       <div className="mt-10">
         <ProductsCarousel />
       </div>
+      <GetInTouch />
+      <Footer />
     </div>
   );
 }

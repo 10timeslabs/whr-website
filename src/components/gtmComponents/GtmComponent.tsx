@@ -18,6 +18,9 @@ import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
 import { gtmProductJsonData } from "../../../data/gtmProductData";
 import dynamic from "next/dynamic";
+import Footer from "../Footer";
+import GetInTouch from "../GetInTouch";
+import GeneralNavbar from "../GeneralNavbar";
 // import NotFound from "../NotFound";
 
 const page = () => {
@@ -135,6 +138,7 @@ const page = () => {
         // </div>
 
         <div className="w-full">
+          <GeneralNavbar />
           {/* For Screens ≤ 898px - Text Above, Image Below */}
           <div className="max-[898px]:flex flex-col hidden mt-20 relative">
             {/* Container with Gradient */}
@@ -257,6 +261,8 @@ const page = () => {
       <div>
         <ProductsCarousel />
       </div>
+      <GetInTouch />
+      <Footer />
     </div>
   );
 };

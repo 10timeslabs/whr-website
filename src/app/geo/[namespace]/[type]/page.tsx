@@ -3,6 +3,9 @@ import GeoComponent from "@/components/geoComponents/GeoComponents";
 import { geoUsecasesjsonData } from "../../../../../data/geoUsecasesData";
 import { geoSolutionsjsonData } from "../../../../../data/geoSolutionsData";
 import { geoProductJsonData } from "../../../../../data/geoProductData";
+import GetInTouch from "@/components/GetInTouch";
+import Footer from "@/components/Footer";
+import GeneralNavbar from "@/components/GeneralNavbar";
 const Page = () => {
   return (
     <div>
@@ -14,15 +17,15 @@ const Page = () => {
 export default Page;
 
 export async function generateMetadata(context: any) {
-    console.log("content",context)
-    const { namespace, type } = await context.params;
+  console.log("content", context)
+  const { namespace, type } = await context.params;
 
   let dataSource = null;
   if (namespace === "usecases") {
     dataSource = geoUsecasesjsonData;
   } else if (namespace === "solutions") {
     dataSource = geoSolutionsjsonData;
-  } else if(namespace === "product"){
+  } else if (namespace === "product") {
     dataSource = geoProductJsonData;
   }
   const geoData = dataSource?.find((item) => {

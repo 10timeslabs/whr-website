@@ -14,7 +14,7 @@ const GetInTouch = () => {
   }
   return (
     <div
-      className="pb-6"
+      className="pb-6 w-full"
       style={{
         opacity: "0.9",
         background:

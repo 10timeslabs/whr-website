@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
-import RootLayoutClient from "./RootLayoutClient"; // Import the client component
 
 export const metadata: Metadata = {
   title: "Whr.ai",
@@ -34,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <RootLayoutClient>{children}</RootLayoutClient>
+        <div>{children}</div>
       </body>
     </html>
   );
