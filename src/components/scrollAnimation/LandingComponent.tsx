@@ -59,10 +59,10 @@ const LandingComponent = () => {
               <p key={index}>{point}</p>
             ))}
           </div>
-        </div>        
+        </div>
         <div className="w-[507px] h-[263px]">
-        <Lottie animationData={dataToDisplay.image} style={{ width: '100%', height: '100%' }}/>
-      </div>
+          <Lottie animationData={dataToDisplay.image} style={{ width: '100%', height: '100%' }} />
+        </div>
       </div>
     </div>
   );

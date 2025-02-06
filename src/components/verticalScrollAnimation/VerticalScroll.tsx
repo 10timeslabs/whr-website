@@ -21,7 +21,7 @@ const VerticalScroll = ({ mainHeading, dataToDisplay }: any) => {
         GEO enables better predictability of demand by taking into consideration
         upcoming & forecasted events, along with the estimated impact.
       </div>
-      <div className="relative w-[1200px] flex flex-col items-center mt-7 max-[600px]:grid max-[600px]:grid-cols-2 max-[600px]:gap-4 max-[600px]:w-[90%] max-[600px]:place-items-center">
+      <div className="relative w-[1200px] flex flex-col items-center mt-7 max-[600px]:grid max-[600px]:grid-cols-2 max-[600px]:gap-4 max-[600px]:w-[90%] max-[600px]:place-items-center max-[490px]:w-[340px]">
         {/* Vertical Line Grey*/}
         <div className="absolute h-full w-0.5 bg-gray-200 left-1/2 transform -translate-x-1/2 z-0 max-[600px]:hidden"></div>
 
