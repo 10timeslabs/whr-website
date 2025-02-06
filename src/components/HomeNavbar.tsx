@@ -6,10 +6,12 @@ import Image from "next/image";
 import WhrAIText from "/public/Whr.ai.svg";
 import HambergurMenuIcon from "/public/hamburger.svg";
 import CrossIon from "/public/cross.svg";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement | null>(null);
+  const pathName = usePathname()
   useEffect(() => {
     if (modalRef.current) {
       if (mobileMenuOpen) {
@@ -36,6 +38,13 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const handleClick = () =>{
+    if(pathName.split("/")[1] === "geo"){
+      window.open("https://console.eventeli.com/", "_blank")
+    }else if(pathName.split("/")[1] === "gtm"){
+      window.open("https://console.whr.ai/", "_blank")
+    }
+  }
   return (
     <nav className="fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out">
       <div
@@ -157,20 +166,23 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/about" className="text-gray-800 hover:text-primary">
+            <Link href="/about" className="text-gray-800 hover:text-primary" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               About
             </Link>
           </li>
         </ul>
 
         {/* Buttons */}
-        <div className="mt-10 space-y-6">
-          <Link
-            href="/signup"
+        <div className="mt-10 space-y-6"  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <div
+            // href="/signup"
             className="block w-48 px-6 py-3 text-white bg-primary rounded-lg text-center text-xl hover:bg-primary transition-all duration-300 ease-in-out"
-          >
+            onClick={() => {
+              handleClick ()
+            }}
+         >
             Sign Up
-          </Link>
+          </div>
           <Link
             href="/demo"
             className="block w-48 px-6 py-3 text-primary border border-primary rounded-lg text-center text-xl hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
