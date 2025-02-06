@@ -89,7 +89,7 @@ const CircleAnimation = ({currentIndex} : Props) => {
                             ease: "easeInOut", // Smooth easing
                         }}
                     >
-                        <Image src={images[index]} className="h-full w-full" alt={`icon-${index}`} />
+                        <Image src={images[index]} className="h-full w-full" alt={`icon-${index}`}/>
                     </motion.div>
                 );
             })}
