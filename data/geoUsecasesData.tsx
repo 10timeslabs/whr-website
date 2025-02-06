@@ -33,11 +33,12 @@ import {
   Geo_UseCase_7,
   Geo_UseCase_8,
 } from "../svgicons/icons";
+const imageURL = "https://c1.10times.com/whr/geo/static/image/usecases"
 export const geoUsecasesjsonData = [
   {
     id: "hotel-lodging",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_hotel&lodging_cropped.png",
+      `${imageURL}/geo_usecase_hotel&lodging_cropped.png`,
     text: "Higher Occupancy, Lower Surprises",
     // blurColor: "#E3B785",
     // blurColor: "linear-gradient(to bottom, #ffffff, #E3B785)",
@@ -141,13 +142,13 @@ export const geoUsecasesjsonData = [
       description:
         "Optimize hotel pricing and revenue by forecasting inbound event-driven demand with whr.ai's demand forecasting.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_hotel&lodging_cropped.png",
+        `${imageURL}/geo_usecase_hotel&lodging_cropped.png`,
     },
   },
   {
     id: "restaurants",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_restaurants.jpg",
+      `${imageURL}/geo_usecase_restaurants.jpg`,
     text: "Serve More Tables",
     // blurColor: "linear-gradient(to bottom, #8DDF0340, #E4D7BE20)",
     blurColor:
@@ -262,13 +263,13 @@ export const geoUsecasesjsonData = [
       description:
         "Plan workforce and inventory effectively by forecasting event-driven demand in the restaurant industry with whr.ai.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_restaurants.jpg",
+        `${imageURL}/geo_usecase_restaurants.jpg`,
     },
   },
   {
     id: "activity-planners",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_activityplanner.jpg",
+      `${imageURL}/geo_usecase_activityplanner.jpg`,
     // blurColor: "#C2BDC1",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(194, 189, 193, 0.5) 53%)",
@@ -380,13 +381,13 @@ export const geoUsecasesjsonData = [
       description:
         "Enhance revenue and profitability for activity planners by leveraging forecasted demand intelligence from whr.ai.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_activityplanner.jpg",
+        `${imageURL}/geo_usecase_activityplanner.jpg`,
     },
   },
   {
     id: "aviation-airport",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_aviation&airport.jpg",
+      `${imageURL}/geo_usecase_aviation&airport.jpg`,
     // blurColor: "#D6DDF3",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(214, 221, 243, 0.5) 53%)",
@@ -488,14 +489,14 @@ export const geoUsecasesjsonData = [
       description:
         "Manage passenger spikes and optimize airport operations with event-driven demand forecasting from whr.ai.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_aviation&airport.jpg",
+        `${imageURL}/geo_usecase_aviation&airport.jpg`,
     },
   },
 
   {
     id: "enterprise",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_corporate&brands.jpg",
+      `${imageURL}/geo_usecase_corporate&brands.jpg`,
     // blurColor: "#BBCDDA",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 205, 218, 0.5) 53%)",
@@ -579,13 +580,13 @@ export const geoUsecasesjsonData = [
       description:
         "Integrate event intelligence into corporate planning to optimize operations and maximize ROI with whr.ai's solutions.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_corporate&brands.jpg",
+        `${imageURL}/geo_usecase_corporate&brands.jpg`,
     },
   },
   {
     id: "transportation",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_transportation.jpg",
+      `${imageURL}/geo_usecase_transportation.jpg`,
     // blurColor: "#B3E0F1",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(179, 224, 241, 0.5) 53%)",
@@ -687,13 +688,13 @@ export const geoUsecasesjsonData = [
       description:
         "Align transportation supply with event-driven demand for better service and customer experience using whr.ai's forecasting.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_transportation.jpg",
+        `${imageURL}/geo_usecase_transportation.jpg`,
     },
   },
   {
     id: "ooh-marketing",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_OOH-marketing.jpg",
+      `${imageURL}/geo_usecase_OOH-marketing.jpg`,
     // blurColor: "#BBBBB2",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(230, 218, 206, 0.5) 53%)",
@@ -784,13 +785,13 @@ export const geoUsecasesjsonData = [
       description:
         "Maximize OOH ad ROI with forecasted event footfall and audience insights from whr.ai.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_OOH-marketing.jpg",
+        `${imageURL}/geo_usecase_OOH-marketing.jpg`,
     },
   },
   {
     id: "retail-commerce",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_retail-commerce.jpg",
+      `${imageURL}/geo_usecase_retail-commerce.jpg`,
     // blurColor: "#E6DACE",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(230, 218, 206, 0.5) 53%)",
@@ -892,13 +893,13 @@ export const geoUsecasesjsonData = [
       description:
         "Optimize stock and manpower planning in retail commerce with whr.ai's event-driven demand intelligence.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_retail-commerce.jpg",
+        `${imageURL}/geo_usecase_retail-commerce.jpg`,
     },
   },
   {
     id: "parking",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_parking.jpg",
+      `${imageURL}/geo_usecase_parking.jpg`,
     // blurColor: "#D7E8EA",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(215, 232, 234, 0.5) 53%)",
@@ -989,13 +990,13 @@ export const geoUsecasesjsonData = [
       description:
         "Manage parking demand and pricing dynamically based on event forecasts with whr.ai's intelligence solutions.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_parking.jpg",
+        `${imageURL}/geo_usecase_parking.jpg`,
     },
   },
   {
     id: "dmo-dmc",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_dmo-dmc.jpg",
+      `${imageURL}/geo_usecase_dmo-dmc.jpg`,
     // blurColor: "#BFA78D",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(191, 167, 141, 0.5) 53%)",
@@ -1077,13 +1078,13 @@ export const geoUsecasesjsonData = [
       description:
         "Collaborate with hospitality partners and manage inbound traffic using whr.ai's event forecasting for DMO & DMC.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_dmo-dmc.jpg",
+        `${imageURL}/geo_usecase_dmo-dmc.jpg`,
     },
   },
   {
     id: "venue-operators",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecases_venue-operator.jpg",
+      `${imageURL}/geo_usecases_venue-operator.jpg`,
     // blurColor: "#C3BFBE",
     // blurColor: "linear-gradient(to bottom, #ffffff, #C3BFBE)",
     blurColor:
@@ -1165,13 +1166,13 @@ export const geoUsecasesjsonData = [
       description:
         "Fill your venue calendar early by identifying relevant events and optimizing scheduling with whr.ai's event intelligence.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecases_venue-operator.jpg",
+        `${imageURL}/geo_usecases_venue-operator.jpg`,
     },
   },
   {
     id: "hyperlocal-quick-commerce",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_quick-commerce.jpg",
+      `${imageURL}/geo_usecase_quick-commerce.jpg`,
     // blurColor: "#D6D3D2",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(214, 211, 210, .5) 53%)",
@@ -1270,13 +1271,13 @@ export const geoUsecasesjsonData = [
       description:
         "Optimize deliveries and inventory in hyperlocal and quick commerce sectors with event-driven demand intelligence from whr.ai.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_quick-commerce.jpg",
+        `${imageURL}/geo_usecase_quick-commerce.jpg`,
     },
   },
   {
     id: "local-government",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_local-government.jpg",
+      `${imageURL}/geo_usecase_local-government.jpg`,
     // blurColor: "#FFFFF",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.5) 53%)",
@@ -1357,13 +1358,13 @@ export const geoUsecasesjsonData = [
       description:
         "Enhance city management and resource deployment with real-time event forecasts and demand intelligence from whr.ai.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_local-government.jpg",
+        "imageURL/geo_usecase_local-government.jpg",
     },
   },
   {
     id: "manpower-agency",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_manpower.jpg",
+      `${imageURL}/geo_usecase_manpower.jpg`,
     // blurColor: "#D9DEE9",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(217, 222, 233, 0.5) 53%)",
@@ -1468,14 +1469,14 @@ export const geoUsecasesjsonData = [
       title: "",
       description: "",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_usecase_manpower.jpg",
+        `${imageURL}/geo_usecase_manpower.jpg`,
     },
   },
 
   {
     id: "event-planners",
     image:
-      "https://c1.10times.com/whr/geo/static/image/usecases/geo_useacase_eventplanner.jpg",
+      `${imageURL}/geo_useacase_eventplanner.jpg`,
     // blurColor: "#D9DEE9",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(217, 222, 233, 0.5) 53%)",
@@ -1547,7 +1548,7 @@ export const geoUsecasesjsonData = [
       description:
         "Select optimal event locations and adjust strategies with months-ahead event forecasts from whr.ai.",
       image:
-        "https://c1.10times.com/whr/geo/static/image/usecases/geo_useacase_eventplanner.jpg",
+        `${imageURL}/geo_useacase_eventplanner.jpg`,
     },
   },
 ];
