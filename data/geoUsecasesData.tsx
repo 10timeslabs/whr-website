@@ -1466,8 +1466,8 @@ export const geoUsecasesjsonData = [
       // },
     ],
     metaData: {
-      title: "",
-      description: "",
+      title: "Manpower Agency Usecase whr.ai - GEO",
+      description: "Anticipate staffing needs for live events using GTM’s demand prediction, ensuring optimal resource deployment and boosting client satisfaction.",
       image:
         `${imageURL}/geo_usecase_manpower.jpg`,
     },

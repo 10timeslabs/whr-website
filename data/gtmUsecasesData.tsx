@@ -110,8 +110,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"CSR Team - GTM by whr.ai",
+      description:"Align your social initiatives with meaningful events, leveraging GTM’s event impact data to maximize your brand’s positive footprint and community engagement.",
       image:`${imageURL}/gtm_usecase_csr.jpg`,
     }
   },
@@ -203,8 +203,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Event Suppliers - GTM by whr.ai",
+      description:"Uncover high-potential events to pitch your services using GTM’s event forecasting, ensuring you’re always first to win new business opportunities.",
       image:`${imageURL}/gtm_usecase_eventsuppliers.jpg`,
     }
   },
@@ -297,8 +297,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Marketing Team - GTM by whr.ai",
+      description:"Capture real-time event insights for smarter marketing strategies, capitalizing on on-ground demand and driving brand visibility where it matters most.",
       image:`${imageURL}/gtm_usecase_marketing.jpg`,
     }
   },
@@ -389,8 +389,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Sales & Biz Dev - GTM by whr.ai",
+      description:"Drive deal-making with GTM’s demand intelligence and event impact insights, pinpointing real-world opportunities to boost pipeline and revenue growth.",
       image:`${imageURL}/gtm_usecase_sales&biz.jpg`,
     }
   },
@@ -481,8 +481,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Tech Team - GTM by whr.ai",
+      description:"Discover tech-focused gatherings and developer hotspots with GTM’s event forecasting, fueling DevRel success and real-time intelligence for product launches.",
       image:`${imageURL}/gtm_usecase_tech.jpg`,
     }
   },
@@ -575,8 +575,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Brand Agency - GTM by whr.ai",
+      description:"Amplify client campaigns with GTM’s event data, discovering real-world brand alignment opportunities and maximizing sponsor ROI at key gatherings.",
       image:`${imageURL}/gtm_usecase_brand.jpg`,
     }
   },
@@ -668,8 +668,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Community & Groups - GTM by whr.ai",
+      description:"Strengthen social ties and coordinate group outings with GTM’s event insights, discovering gatherings that match shared interests.",
       image:`${imageURL}/gtm_usecase_community.jpg`,
     }
   },
@@ -762,8 +762,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Human Resource Team - GTM by whr.ai",
+      description:"Optimize hiring with GTM’s event intelligence, connecting you to top talent through demand forecasting and real-time event data for strategic recruitment.",
       image:`${imageURL}/gtm_usecase_human-resources.jpg`,
     }
   },
@@ -857,8 +857,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Influencers - GTM by whr.ai",
+      description:"Engage with relevant audiences by spotting events that match your niche, thanks to GTM’s demand planning and real-time event intelligence.",
       image:`${imageURL}/gtm_usecase_influencer.jpg`,
     }
   },
@@ -954,8 +954,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Manpower Agency - GTM by whr.ai",
+      description:"Anticipate staffing needs for live events using GTM’s demand prediction, ensuring optimal resource deployment and boosting client satisfaction.",
       image:`${imageURL}/gtm_usecase_manpower.jpg`,
     }
   },
@@ -1053,8 +1053,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Media & News - GTM by whr.ai",
+      description:"Get the scoop on upcoming events with GTM’s demand forecasting, ensuring timely coverage and exclusive stories shaped by real-time intelligence.",
       image:`${imageURL}/gtm_usecase_news&media.jpg`,
     }
   },
@@ -1147,8 +1147,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Procurement - GTM by whr.ai",
+      description:"Source new suppliers at relevant expos and trade shows, guided by GTM’s demand predictions and real-time event insights for better contract negotiation.",
       image:`${imageURL}/gtm_usecase_procurement.jpg`,
     }
   },
@@ -1241,8 +1241,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Research & Consultancy - GTM by whr.ai",
+      description:"Generate forward-looking market reports and track emerging industry trends with GTM’s event data, unlocking deep insights for strategic advisories.",
       image:`${imageURL}/gtm_usecase_research&consulting.jpg`,
     }
   },
@@ -1335,8 +1335,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Venue - GTM by whr.ai",
+      description:"Fill your calendar with top-tier events using GTM’s demand insights and footfall data, optimizing booking strategies for maximum revenue.",
       image:`${imageURL}/gtm_usecase_venue.jpg`,
     }
   },
@@ -1429,8 +1429,8 @@ export const gtmUsecasesjsonData = [
       },
     ],
     metaData:{
-      title:"",
-      description:"",
+      title:"Event Planners & M&A - GTM by whr.ai",
+      description:"Align your event portfolio and potential acquisitions with GTM’s footfall data, competitor analysis, and demand insights for strategic expansion.",
       image:`${imageURL}/gtm_usecase_m&a.jpg`,
     }
   },
