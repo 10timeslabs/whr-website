@@ -129,6 +129,7 @@ const Page = () => {
 							defaultCountry="in"
 							value={phoneNumber}
 							onChange={handlePhoneChange}
+                            required
 						/>
 					</div>
 				</div>

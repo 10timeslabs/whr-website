@@ -49,7 +49,7 @@ const Page = () => {
           <div className='text-[56px] leading-[64px] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>What Sets Us Apart</div>
           <div className='text-[var(--secondary-text-color)]'>Redefining the Ordinary. Delivering the Extraordinary.</div>
         </div>
-        <div className='relative w-[55%] flex flex-col items-center min-h-[250px] max-[730px]:w-full max-[730px]:mt-4 max-[730px]:w-full max-[1000px]:w-[60%]' 
+        <div className='relative w-[55%] flex flex-col items-center h-[250px] max-[730px]:justify-center max-[730px]:max-h-[220px] max-[730px]:w-full max-[730px]:mt-4 max-[1000px]:w-[60%]' 
         style={{ backgroundImage: `url(${GridImageTwo.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className='absolute left-[-3%] top-[50%] w-[40px] h-[40px] flex items-center justify-center bg-white rounded-[40px] drop-shadow-[2px_4px_6px_rgba(0,0,0,0.20)] cursor-pointer max-[575px]:h-[25px] max-[575px]:w-[25px]' onClick={handlePrev}>
             <Image src={LeftArrow} alt='left' />
