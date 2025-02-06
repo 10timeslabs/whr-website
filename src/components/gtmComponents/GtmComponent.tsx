@@ -63,6 +63,7 @@ const page = () => {
 
   return (
     <div className="relative w-full flex flex-col gap-12 " style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }} >
+      <GeneralNavbar/>
       {pathname.split("/")[2] === "product" &&
         <>
           <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
@@ -212,7 +213,7 @@ const page = () => {
         </div>
       ) : (
         (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
-        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]" : ""} `}>
+        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[120px]" : ""} `}>
           <Section />
         </div>
       )}

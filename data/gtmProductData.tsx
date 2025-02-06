@@ -1,9 +1,10 @@
-import ApiImage  from '/public/geoProductImages/Api_product.png'
 import Coordinate  from '/public/geoProductImages/Coordinate.png'
 import Research  from '/public/geoProductImages/Research.png'
 import TrackerTenmplate  from '/public/geoProductImages/tracker-templates.png'
 import TrackerLanding  from '/public/geoProductImages/Trackers-landing.png'
 import Trends  from '/public/geoProductImages/Trends-product.png'
+import Outreach  from '/public/gtmProductImages/Outreach_product.png'
+import Prospect  from '/public/gtmProductImages/Prospect.png'
 import Icon1  from '/public/GtmProductHowIcons/GTM-01.svg'
 import Icon2  from '/public/GtmProductHowIcons/GTM-02.svg'
 import Icon3  from '/public/GtmProductHowIcons/GTM-03.svg'
@@ -30,7 +31,7 @@ const imageURL = "https://c1.10times.com/whr/gtm-geo/static/image/product"
 export const gtmProductJsonData = [
     {
         id: "event-search",
-        image : TrackerLanding,
+        image : Research,
         text: "Find What’s Relevant",
         subtext:
             "Filter events the way you want—by products, audience, size, or location.",
@@ -55,7 +56,7 @@ export const gtmProductJsonData = [
     },
     {
         id: "ai-assistant",
-        image : TrackerLanding,
+        image : TrackerTenmplate,
         text: "Get Timely Notifications with AI",
         subtext:
             "Found relevant events? Get reminders & updates to never miss potential opportunities.",
@@ -105,7 +106,7 @@ export const gtmProductJsonData = [
     },
     {
         id: "coordinate",
-        image : TrackerLanding,
+        image : Coordinate,
         text: "Bring Your Team Together",
         subtext:
             "Events touch every department, but internal coordination is tough. Share and align event plans to maximize value without silos.",
@@ -130,7 +131,7 @@ export const gtmProductJsonData = [
     },
     {
         id: "outreach",
-        image : TrackerLanding,
+        image : Outreach,
         text: "Faster Response from Organizers",
         subtext:
             "Why wait for answers? Streamline your questions and get decisions faster.",
@@ -155,7 +156,7 @@ export const gtmProductJsonData = [
     },
     {
         id: "prospect",
-        image : TrackerLanding,
+        image : Prospect,
         text: "Identify & Set Up Meetings",
         subtext:
             "Discover who’s attending, plan effective meetings, and turn events into lead-generating opportunities.",
@@ -180,7 +181,7 @@ export const gtmProductJsonData = [
     },
     {
         id: "trends-monitor",
-        image : TrackerLanding,
+        image : Trends,
         text: "Monitor Industry Signals",
         subtext:
             "Track broader market changes and outliers to stay on top of emerging trends, competition, or shifting audience preferences.",

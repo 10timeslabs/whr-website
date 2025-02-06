@@ -152,7 +152,7 @@ const GeoComponent = () => {
         </div>
       ) : (
         (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
-        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]" : ""} `}>
+        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[120px]" : ""} `}>
           <Section />
         </div>
       )}
