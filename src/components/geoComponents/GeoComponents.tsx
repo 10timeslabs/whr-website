@@ -10,7 +10,7 @@ import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll"
 import UsecaseScroll from "@/components/usecaseScrollAnimation/UsecaseScroll";
 import HeroBanner from "@/components/solutionHeroBanner/HeroBanner";
 import Section from "@/components/solutionHeroBanner/Section";
-import LandingComponent from "@/components/scrollAnimation/LandingComponent";
+// import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import AutoScroll from "@/components/AutoScroll";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
 import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
@@ -26,8 +26,14 @@ import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
 import { notFound } from "next/navigation";
 import NotFound from "../NotFound";
+import { geoProductJsonData } from "../../../data/geoProductData";
+import dynamic from "next/dynamic";
 
 const GeoComponent = () => {
+  const LandingComponent = dynamic(
+    () => import('@/components/scrollAnimation/LandingComponent'),
+    { ssr: false }
+  )
   const pathname = usePathname();
 
   let dataSource = null;
@@ -35,6 +41,8 @@ const GeoComponent = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/geo/usecases")) {
     dataSource = geoUsecasesjsonData;
+  }else if(pathname.includes("/geo/product")){
+    dataSource = geoProductJsonData
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
@@ -146,7 +154,7 @@ const GeoComponent = () => {
         </div>
       ) : (
         (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
-        <div className="w-full flex items-center justify-center mt-[140px]">
+        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]": ""} `}>
           <Section />
         </div>
       )}

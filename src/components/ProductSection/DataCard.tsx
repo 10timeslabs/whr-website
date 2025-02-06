@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import LeafIcon from "/public/leafIcon.svg";
 import Image, { StaticImageData } from 'next/image';

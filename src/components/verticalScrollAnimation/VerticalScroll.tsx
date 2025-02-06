@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import DataCard from "./DataCard";
 import { motion } from "framer-motion";

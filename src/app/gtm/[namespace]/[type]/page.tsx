@@ -2,7 +2,8 @@ import React from "react";
 import GtmComponent from "@/components/gtmComponents/GtmComponent";
 import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
-const page = () => {
+import { gtmProductJsonData } from "../../../../../data/gtmProductData";
+const Page = () => {
   return (
     <div>
       <GtmComponent />
@@ -10,16 +11,18 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 export async function generateMetadata(context: any) {
   
-  const { namespace, type } = context.params;
+  const { namespace, type } = await context.params;
   let dataSource = null;
   if (namespace === "usecases") {
     dataSource = gtmUsecasesjsonData;
   } else if (namespace === "solutions") {
     dataSource = gtmSolutionsjsonData;
+  }else if(namespace ==="product"){
+    dataSource = gtmProductJsonData
   }
   const gtmData = dataSource?.find((item) => {
     return item.id.toLowerCase() === type;

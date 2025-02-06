@@ -1,5 +1,7 @@
-import { AnimatePresence, motion } from 'framer-motion';
+"use client"
 import React, { useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion';
+
 
 interface Props {
     heading: string;

@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef, useState } from 'react'
 import ResearchImg from '/public/Scroll/research_score.png'
 import ResearchSmallImg from '/public/Scroll/ListViewSmall.png'

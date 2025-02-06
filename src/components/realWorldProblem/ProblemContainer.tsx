@@ -1,16 +1,23 @@
+"use client"
 import React from 'react'
 import ProblemImage from '/public/realworldproblems/Problem_sol_pipeline.png'
 import Image, { StaticImageData } from 'next/image'
 import TopgridImage from '/public/realworldproblems/Problemgrid_top.png'
 import BottomgridImage from '/public/realworldproblems/Problemgrid_bottom.png'
 import ProblemCard from './ProblemCard'
-import EngineScroll from './EngineScroll'
+// import EngineScroll from './EngineScroll'
+import dynamic from 'next/dynamic'
 
 interface Props {
     cardData : {icon : StaticImageData, heading : string, subheading : string}[]
 }
 
 const ProblemContainer = ({cardData} : Props) => {
+    
+    const EngineScroll = dynamic(
+        () => import('./EngineScroll'),
+        { ssr: false }
+      )
 
     return (
         <div className='w-full flex items-center justify-center relative'>

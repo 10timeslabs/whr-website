@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
 import Section from "@/components/solutionHeroBanner/Section";
 import ProblemSolution from "@/components/problemSolution/ProblemSolution";
-import LandingComponent from "@/components/scrollAnimation/LandingComponent";
+// import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import Scroll from "@/components/scrollAnimation/Scroll";
 import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
 import AutoScroll from "@/components/AutoScroll";
@@ -21,14 +21,22 @@ import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
 import { notFound } from "next/navigation";
+import { gtmProductJsonData } from "../../../data/gtmProductData";
+import dynamic from "next/dynamic";
 
 const page = () => {
+    const LandingComponent = dynamic(
+        () => import('@/components/scrollAnimation/LandingComponent'),
+        { ssr: false }
+      )
   const pathname = usePathname();
   let dataSource = null;
   if (pathname.includes("/gtm/usecases")) {
     dataSource = gtmUsecasesjsonData
   } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData
+  }else if(pathname.includes("/gtm/product")){
+    dataSource = gtmProductJsonData
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
@@ -198,7 +206,7 @@ const page = () => {
           </div>
         </div>
       ) : (
-        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
+        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) &&(
         <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]": ""} `}>
           <Section />
         </div>

@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import DataCard from "./DataCard";
 import { usePathname } from "next/navigation";

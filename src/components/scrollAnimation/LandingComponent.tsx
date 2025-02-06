@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import DemandImg from "/public/demandforecasting.svg";
 import SparkleImg from "/public/sparkle.png";
