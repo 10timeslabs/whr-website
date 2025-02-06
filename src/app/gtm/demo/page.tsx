@@ -15,9 +15,37 @@ const Page = () => {
 	const [phoneCode, setPhoneCode] = useState("");
 	const [subscribe, setSubscribe] = useState(false);
 
+	const [errors, setErrors] = useState({
+		firstName: "",
+		lastName: "",
+		busEmail: "",
+		companyName: "",
+		jobTitle: "",
+		phoneNumber: "",
+	});
+
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+		let newErrors: any = {};
+		if (!firstName) newErrors.firstName = "First name is required.";
+		if (!lastName) newErrors.lastName = "Last name is required.";
+		if (!busEmail) newErrors.busEmail = "Business email is required.";
+		if (!companyName) newErrors.companyName = "Company name is required.";
+		if (!jobTitle) newErrors.jobTitle = "Job title is required.";
+		if (phoneNumber.length <= 3) newErrors.phoneNumber = "Phone number is required.";
 
+		if (Object.keys(newErrors).length > 0) {
+			setErrors(newErrors);
+			return;
+		}
+		setErrors({
+			firstName: "",
+			lastName: "",
+			busEmail: "",
+			companyName: "",
+			jobTitle: "",
+			phoneNumber: "",
+		});
 		// Create FormData object
 		const formData = new FormData();
 		formData.append("firstName", firstName);
@@ -61,7 +89,6 @@ const Page = () => {
 			alert("Something went wrong, please try again!");
 		}
 	};
-
 	// Handle phone input change
 	const handlePhoneChange = (phone: string, meta: { country: ParsedCountry; inputValue: string }) => {
 		setPhoneCode(meta.country.dialCode);
@@ -79,8 +106,8 @@ const Page = () => {
 							type="text"
 							value={firstName}
 							onChange={(e) => setFirstName(e.target.value)}
-							required
 						/>
+						{errors.firstName && <span className="text-red-500 text-sm">{errors.firstName}</span>}
 					</div>
 					<div className="flex flex-col gap-2">
 						<label>Last Name</label>
@@ -89,8 +116,8 @@ const Page = () => {
 							type="text"
 							value={lastName}
 							onChange={(e) => setLastName(e.target.value)}
-							required
 						/>
+						{errors.lastName && <span className="text-red-500 text-sm">{errors.lastName}</span>}
 					</div>
 					<div className="flex flex-col gap-2">
 						<label>Business Email</label>
@@ -99,8 +126,8 @@ const Page = () => {
 							type="email"
 							value={busEmail}
 							onChange={(e) => setBusEmail(e.target.value)}
-							required
 						/>
+						{errors.busEmail && <span className="text-red-500 text-sm">{errors.busEmail}</span>}
 					</div>
 					<div className="flex flex-col gap-2">
 						<label>Company</label>
@@ -109,8 +136,8 @@ const Page = () => {
 							type="text"
 							value={companyName}
 							onChange={(e) => setCompanyName(e.target.value)}
-							required
 						/>
+						{errors.companyName && <span className="text-red-500 text-sm">{errors.companyName}</span>}
 					</div>
 					<div className="flex flex-col gap-2">
 						<label>Job Title</label>
@@ -119,8 +146,8 @@ const Page = () => {
 							type="text"
 							value={jobTitle}
 							onChange={(e) => setJobTitle(e.target.value)}
-							required
 						/>
+						{errors.jobTitle && <span className="text-red-500 text-sm">{errors.jobTitle}</span>}
 					</div>
 					<div className="flex flex-col gap-2">
 						<label>Phone Number</label>
@@ -129,8 +156,8 @@ const Page = () => {
 							defaultCountry="in"
 							value={phoneNumber}
 							onChange={handlePhoneChange}
-                            required
 						/>
+						{errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
 					</div>
 				</div>
 				<div className="flex items-center gap-2">
