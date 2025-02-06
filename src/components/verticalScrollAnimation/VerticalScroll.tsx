@@ -14,7 +14,7 @@ const VerticalScroll = ({ mainHeading, dataToDisplay }: any) => {
       <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
         {mainHeading}
       </div>
-      <div className="text-center font-semibold text-2xl w-[40%]">
+      <div className="text-center font-semibold text-2xl w-[40%] max-[1000px]:w-[90%]">
         Preparing for demand anomalies is a powerful competitive advantage
       </div>
       <div className="text-[var(--secondary-text-color)] text-lg text-center">
