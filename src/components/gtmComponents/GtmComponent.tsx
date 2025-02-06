@@ -6,12 +6,8 @@ import { usePathname } from "next/navigation";
 import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
 import Section from "@/components/solutionHeroBanner/Section";
 import ProblemSolution from "@/components/problemSolution/ProblemSolution";
-// import LandingComponent from "@/components/scrollAnimation/LandingComponent";
-import Scroll from "@/components/scrollAnimation/Scroll";
 import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
 import AutoScroll from "@/components/AutoScroll";
-import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
-import { geoUsecasesjsonData } from "../../../data/geoUsecasesData";
 import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
 import { companyLogos } from "../../../data/companyLogoData";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
@@ -20,22 +16,27 @@ import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
-import { notFound } from "next/navigation";
 import { gtmProductJsonData } from "../../../data/gtmProductData";
 import dynamic from "next/dynamic";
+// import NotFound from "../NotFound";
 
 const page = () => {
-    const LandingComponent = dynamic(
-        () => import('@/components/scrollAnimation/LandingComponent'),
-        { ssr: false }
-      )
+  const LandingComponent = dynamic(
+    () => import('@/components/scrollAnimation/LandingComponent'),
+    { ssr: false }
+  )
+  const NotFound = dynamic(
+    () => import('../NotFound'),
+    { ssr: false }
+  )
+
   const pathname = usePathname();
   let dataSource = null;
   if (pathname.includes("/gtm/usecases")) {
     dataSource = gtmUsecasesjsonData
   } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData
-  }else if(pathname.includes("/gtm/product")){
+  } else if (pathname.includes("/gtm/product")) {
     dataSource = gtmProductJsonData
   }
 
@@ -45,7 +46,7 @@ const page = () => {
     return item.id.toLowerCase() === endpoint;
   });
   if (!usecaseData) {
-    notFound();
+    return <NotFound />
   }
 
   const defaultData = {
@@ -206,8 +207,8 @@ const page = () => {
           </div>
         </div>
       ) : (
-        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) &&(
-        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]": ""} `}>
+        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
+        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]" : ""} `}>
           <Section />
         </div>
       )}
@@ -244,14 +245,14 @@ const page = () => {
           <HowWeAreHelpful />
         </div>
       )}
-      {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5 w-full flex items-center justify-center">
+      {/* {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5 w-full flex items-center justify-center">
         <VerticalScroll
           mainHeading={
             pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
           }
           dataToDisplay={dataToDisplay}
         />
-      </div>}
+      </div>} */}
       <CircleContainer />
       <div>
         <ProductsCarousel />

@@ -81,7 +81,7 @@ export const geoUsecasesjsonData = [
     },
     usecases: [
       {
-        id: "demand-forecasting",
+        id: "demand_forecasting",
         topic: "Demand Forecasting",
         content:
           "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
@@ -99,7 +99,7 @@ export const geoUsecasesjsonData = [
           "Looking for group bookings? Hotels can identify all upcoming and forecasted events that have high inbound score (expected visitors from outside the city). See a calendar-wise list of events within a specified geographic coordinates. Use this data to reach the event planners or build marketing strategy around the same.",
       },
       {
-        id: "eventprospecting",
+        id: "dyanamic_pricing",
         topic: "Dynamic Pricing",
         icon: (
           <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
@@ -109,7 +109,7 @@ export const geoUsecasesjsonData = [
       },
 
       {
-        id: "workforcemanagement",
+        id: "workforce_management",
         topic: "Workforce Managemant",
         icon: (
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
@@ -118,7 +118,7 @@ export const geoUsecasesjsonData = [
           "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
       },
       {
-        id: "inventoryplanning",
+        id: "inventory_planning",
         topic: "Inventory Planning",
         icon: (
           <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
@@ -199,7 +199,7 @@ export const geoUsecasesjsonData = [
         ),
       },
       {
-        id: "geomarketing",
+        id: "geo_marketing",
         topic: "Geo Marketing",
 
         icon: (
@@ -209,7 +209,7 @@ export const geoUsecasesjsonData = [
           "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
       },
       {
-        id: "eventprospecting",
+        id: "event_prospecting",
         topic: "Event Prospecting",
         // icon: <Geo_Soln_3 color="#6750a4" width="62" height="62" />,
         // icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
@@ -220,7 +220,7 @@ export const geoUsecasesjsonData = [
           "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
       },
       {
-        id: "workforcemanagement",
+        id: "workforce_management",
         topic: "Workforce Management",
         // icon: <Geo_Soln_4 color="#6750a4" width="62" height="62" />,
         icon: (
@@ -230,7 +230,7 @@ export const geoUsecasesjsonData = [
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
       {
-        id: "inventoryplanning",
+        id: "inventory_planning",
         topic: "Inventory Planning",
         icon: (
           <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
@@ -239,7 +239,7 @@ export const geoUsecasesjsonData = [
           "Unlike a hotel, where the inventory can be a lot more non-perishable, a food joint business is highly suseptable to change in demand that isnt taken into consideration. With signals around volatity in demand, that would not be considered medium or normal expected level, can help flag potential scenario of inventory glut or over supply. Using the demand intel in the internal models, restaurants can take preventive measures that can minimize loss linked to inventory.  ",
       },
       {
-        id: "strategicplanning",
+        id: "strategic_planning",
         topic: "Strategic Planning",
         icon: (
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
@@ -247,16 +247,15 @@ export const geoUsecasesjsonData = [
         content:
           "Restaurant business requires constant flow of footfall and getting located near by growing event hotspots is a jackpot. Strategy team and consultants helping a restaurant identify new location to grow, can leverage event data trend and geo mapping to narrow down on great locations for expansion",
       },
-
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: (
-          <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-      },
+      // {
+      //   id: "traveladvisory",
+      //   topic: "Travel Advisory",
+      //   icon: (
+      //     <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      // },
     ],
     metaData: {
       title: "Restaurants Usecase - whr.ai GEO",
@@ -312,7 +311,7 @@ export const geoUsecasesjsonData = [
     },
     usecases: [
       {
-        id: "demandforecasting",
+        id: "demand_forecasting",
         topic: "Demand Forecasting",
         content:
           "Location specific activity & experience providers, catering to incoming tourists can leverage demand intelligence around inbound event traffic. Our forecasted data can help drive optimize onground marketing, collaboration, offer designing and workforce management. Better forecasting can improve revenue and profitability.",
@@ -321,7 +320,7 @@ export const geoUsecasesjsonData = [
         ),
       },
       {
-        id: "geomarketing",
+        id: "geo_marketing",
         topic: "Geo Marketing",
         // icon: <Geo_Soln_2 color="#6750a4" width="62" height="62" />,
         icon: (
@@ -340,6 +339,15 @@ export const geoUsecasesjsonData = [
           "In a world where the line between business and entertainment is quickly getting blurred, activities outside the event are becoming an important part of the event itself. With activities providers fighting for market share, collaborating with event planners to become part of their event schedule can be a game changer. From pre-event to post-event official activity, it opens opportunities for visitors to extend their stays in the city and include activity in their itinerary. To achieve this, Eventeli provides activity planners a way to identify events that have the audience focus in a timely manner. ",
       },
       {
+        id: "dynamic_pricing",
+        topic: "Dynamic Pricing",
+        icon: (
+          <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+        ),
+        content:
+          "Most destination specific activities are not designed for local audience. If its catering to inbound tourists and travelers, the highly unpredictable demand comes from events. Being able to foresee and model for future demand, activity planners can strategically align their pricing strategy. They can give early bird offers or hold the inventory if the expected demand around specific dates are higher. ",
+      },
+      {
         id: "workforce_management",
         topic: "Workforce Management",
         icon: (
@@ -348,15 +356,15 @@ export const geoUsecasesjsonData = [
         content:
           "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
       },
-      {
-        id: "inventory_planning",
-        topic: "Inventory Planning",
-        icon: (
-          <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Unlike a hotel, where the inventory can be a lot more non-perishable, a food joint business is highly suseptable to change in demand that isnt taken into consideration. With signals around volatity in demand, that would not be considered medium or normal expected level, can help flag potential scenario of inventory glut or over supply. Using the demand intel in the internal models, restaurants can take preventive measures that can minimize loss linked to inventory.  ",
-      },
+      // {
+      //   id: "inventory_planning",
+      //   topic: "Inventory Planning",
+      //   icon: (
+      //     <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Unlike a hotel, where the inventory can be a lot more non-perishable, a food joint business is highly suseptable to change in demand that isnt taken into consideration. With signals around volatity in demand, that would not be considered medium or normal expected level, can help flag potential scenario of inventory glut or over supply. Using the demand intel in the internal models, restaurants can take preventive measures that can minimize loss linked to inventory.  ",
+      // },
       {
         id: "strategic_planning",
         topic: "Strategic Planning",
@@ -421,7 +429,7 @@ export const geoUsecasesjsonData = [
     },
     usecases: [
       {
-        id: "demandforecasting",
+        id: "demand_forecasting",
         topic: "Demand Forecasting",
         content:
           "Events are major factor for volatility in travelers from outside the city. Knowing trends and predictions based upcoming & forecasted events, can help airlines and airports to better manage spikes in passengers. From price optimization to manpower management, use the data API with priprietory scores to take informed decisions or run better data models.  ",
@@ -457,7 +465,7 @@ export const geoUsecasesjsonData = [
           "Destination specific demand linked to events can make pricing model for airlines more resilient. It can fill the missing holes in the season demand based modeling which relies on historical patterns, with a forecasted demand. Eventually you get a model which better maps demand with pricing and prevent under pricing or selling out inventory in advance due to lack of knowledge around upcoming events in a city. ",
       },
       {
-        id: "workforce management",
+        id: "workforce_management",
         topic: "Workforce Management",
         icon: (
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
@@ -620,7 +628,7 @@ export const geoUsecasesjsonData = [
     },
     usecases: [
       {
-        id: "demandforecasting",
+        id: "demand_forecasting",
         topic: "Demand Forecasting",
         content:
           "Local commute is the life-line of a city. Volatity and poor planning derails the schedule for local people and creates poor experience for visitors . Major events or many coinciding events dont follow set calendar and our comprehensive event intel solution address this gap for various transportation providers from cab services to bus and railways. Better match demand with superios planning on the supply side.  ",
@@ -656,7 +664,7 @@ export const geoUsecasesjsonData = [
           "While 'surge pricing' can be a strategic business model, often its not the best or only way to grow revenue from local transportation. When supply is flexible, having demand spike signals, can help transportation companies like cab, train, buses to pre-plan for increasing or decreasing workforce to meet the increase or decrease in demand due to people traveling locally for events or coming from outside to attend them. ",
       },
       {
-        id: "Inventory Planning",
+        id: "inventory_planning",
         topic: "Inventory Planning",
         icon: (
           <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
@@ -665,7 +673,7 @@ export const geoUsecasesjsonData = [
           "Inventory management for transportation deals with availability of buses, cabs, metros, railways, etc. and how its utlized across different routes in conjunction with expected demand. Without foresight into change in demand in advance, managing the availability in different city zones is difficult. Unlike factors which change slowly like economic growth, population density, urbanisation, events are temporary, but the impact is significant. Having access to forecasted onground event demand can help better utilize available inventory. ",
       },
       {
-        id: "Strategic Planning",
+        id: "strategic_planning",
         topic: "Strategic Planning",
         icon: (
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
@@ -726,7 +734,7 @@ export const geoUsecasesjsonData = [
     },
     usecases: [
       {
-        id: "Demand Forecasting",
+        id: "demand_forecasting",
         topic: "Demand Forecasting",
         content:
           "OOH Marketing is a significant portion of non-digital marketing. While traditionally they had minimul insights in dynamic demand change and pricing, they primarily charged for ad placements like on billboards and bus stands with availabel seasonal information. However, events play a major role in people movement in a city and identifing these key pockets. Using onground demand forecasting can lead to better pricing, space negotiation and increase in profit marginr",
@@ -1203,6 +1211,15 @@ export const geoUsecasesjsonData = [
     },
     usecases: [
       {
+        id: "Demand Forecasting",
+        topic: "Demand Forecasting",
+        content:
+          "With quick commerce on the rise, delivery providers need visibility on forecasted demand for better inventory & manpower planning. The fulcrum for delivery & logistics business is minimum time / on-time delivery and availability of products, with onground demand data in the model, higher efficiency can be acheived.",
+        icon: (
+          <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+        ),
+      },
+      {
         id: "Geo Marketing",
         topic: "Geo Marketing",
         content:
@@ -1332,7 +1349,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "For a city to stand out as the destination for both leisure and business travlers, it has to take many strategic decision around demand patterns. Events in and around key zones that drives high community engagement can be leveraged as a way to showcase the best the city has to offer. To unlock this intel, authorities need onground event data and filter out the noise. ",
+          " e best the city has to offer. To unlock this intel, authorities need onground event data and filter out the noise. ",
       },
     ],
     metaData: {
@@ -1383,15 +1400,6 @@ export const geoUsecasesjsonData = [
       ]
     },
     usecases: [
-      {
-        id: "hotel-lodging",
-        topic: "Hotel & Lodging",
-        content:
-          "Looking for group bookings? Access a calendar of high-inbound events within specified coordinates to connect with event planners or craft targeted marketing strategies.",
-        icon: (
-          <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-      },
       {
         id: "restaurant",
         topic: "Risk Identification",
@@ -1446,15 +1454,15 @@ export const geoUsecasesjsonData = [
         content:
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
       },
-      {
-        id: "traveladvisory",
-        topic: "Travel Advisory",
-        icon: (
-          <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-      },
+      // {
+      //   id: "traveladvisory",
+      //   topic: "Travel Advisory",
+      //   icon: (
+      //     <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      // },
     ],
     metaData: {
       title: "",

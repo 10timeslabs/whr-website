@@ -1,21 +1,13 @@
 "use client";
 import React from "react";
-import BannerImage from "/public/GeoUsecasesBanners/geo_usecase_hotel&lodging_cropped.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { geoUsecasesjsonData } from "../../../data/geoUsecasesData";
 import ProblemSolution from "@/components/problemSolution/ProblemSolution";
-import Scroll from "@/components/scrollAnimation/Scroll";
 import VerticalScroll from "@/components/verticalScrollAnimation/VerticalScroll";
-import UsecaseScroll from "@/components/usecaseScrollAnimation/UsecaseScroll";
-import HeroBanner from "@/components/solutionHeroBanner/HeroBanner";
 import Section from "@/components/solutionHeroBanner/Section";
-// import LandingComponent from "@/components/scrollAnimation/LandingComponent";
 import AutoScroll from "@/components/AutoScroll";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
-import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
-import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
-import CircleAnimation from "@/components/circleAnimation/CircleAnimation";
 import CircleContainer from "@/components/circleAnimation/CircleContainer";
 import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
 import { companyLogos } from "../../../data/companyLogoData";
@@ -24,14 +16,16 @@ import HelpfulContainer from "@/components/ProductSection/HelpfulContainer";
 import BeniftsSection from "@/components/ProductSection/BeniftsSection";
 import Conclusion from "@/components/ProductSection/Conclusion";
 import HowWeAreHelpful from "../useCaseSection/HowWeAreHelpful";
-import { notFound } from "next/navigation";
-import NotFound from "../NotFound";
 import { geoProductJsonData } from "../../../data/geoProductData";
 import dynamic from "next/dynamic";
 
 const GeoComponent = () => {
   const LandingComponent = dynamic(
     () => import('@/components/scrollAnimation/LandingComponent'),
+    { ssr: false }
+  )
+  const NotFound = dynamic(
+    () => import('../NotFound'),
     { ssr: false }
   )
   const pathname = usePathname();
@@ -41,7 +35,7 @@ const GeoComponent = () => {
     dataSource = geoSolutionsjsonData;
   } else if (pathname.includes("/geo/usecases")) {
     dataSource = geoUsecasesjsonData;
-  }else if(pathname.includes("/geo/product")){
+  } else if (pathname.includes("/geo/product")) {
     dataSource = geoProductJsonData
   }
 
@@ -154,7 +148,7 @@ const GeoComponent = () => {
         </div>
       ) : (
         (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
-        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]": ""} `}>
+        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]" : ""} `}>
           <Section />
         </div>
       )}
