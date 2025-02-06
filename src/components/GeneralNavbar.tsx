@@ -99,6 +99,14 @@ const GeneralNavbar = () => {
     setPagedropdown(false);
   };
 
+  const handleAbout = ()=>{
+    if(pathname.includes("/geo")){
+      router.push("/geo/about")
+    }else router.push("/gtm/about")
+
+    setMobileMenuOpen(false)
+  }
+
   return (
     <div>
       <nav
@@ -280,9 +288,9 @@ const GeneralNavbar = () => {
               </div>
             ))}
 
-            <Link href={pathname.includes("/geo") ? "/geo/about" : "/gtm/about"} className="text-black hover:text-primary text-lg px-4 py-2 cursor-pointer">
+            <div className="text-black hover:text-primary text-lg px-4 py-2 cursor-pointer" onClick={handleAbout}>
               About
-            </Link>
+            </div>
           </div>
 
           <div className=" hidden lg:flex items-center space-x-4">
@@ -362,9 +370,9 @@ const GeneralNavbar = () => {
                   )}
                 </div>
               ))}
-              <Link href={pathname.includes("/geo") ? "/geo/about" : "/gtm/about"} className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2">
+              <div className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2" onClick={handleAbout}>
                 About
-              </Link>
+              </div>
             </div>
           </div>
         </div>
