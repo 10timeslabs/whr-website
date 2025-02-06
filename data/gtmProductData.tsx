@@ -26,6 +26,7 @@ import Icon19  from '/public/GtmProductHowIcons/GTM-19.svg'
 import Icon20  from '/public/GtmProductHowIcons/GTM-20.svg'
 import Icon21  from '/public/GtmProductHowIcons/GTM-21.svg'
 
+const imageURL = "https://c1.10times.com/whr/gtm-geo/static/image/product"
 export const gtmProductJsonData = [
     {
         id: "event-search",
@@ -49,7 +50,7 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Event Search - whr.ai GEO",
             description:"Utilize whr.ai's Event Search to identify actionable events with smart filters and scores for better planning and forecasting.",
-            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
+            image:`${imageURL}/Coordinate.png`,
           }
     },
     {
@@ -74,7 +75,7 @@ export const gtmProductJsonData = [
         metaData:{
             title:"AI Assistant - whr.ai GEO",
             description:"Resolve on-ground demand queries with whr.ai's AI Assistant. Ask questions in natural language and get actionable responses.",
-            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
+            image:`${imageURL}/Coordinate.png`,
         }
     },
     {
@@ -99,7 +100,7 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Smart Tracker - whr.ai GEO",
             description:"Track critical events with whr.ai's Smart Tracker. Create custom filters and let our AI agent monitor and notify you.",
-            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
+           image:`${imageURL}/Coordinate.png`,
         }
     },
     {
@@ -124,7 +125,7 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Coordinate - whr.ai GEO",
             description:"Streamline team coordination around events with whr.ai's Coordinate. Flag risks, assign tasks, and share notes seamlessly.",
-            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
+            image:`${imageURL}/Coordinate.png`,
         }
     },
     {
@@ -149,7 +150,7 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Outreach - whr.ai GEO",
             description:"Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
+            image:`${imageURL}/Coordinate.png`,
           }
     },
     {
@@ -174,7 +175,7 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Prospect - whr.ai GEO",
             description:"Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
+            image:`${imageURL}/Coordinate.png`,
           }
     },
     {
@@ -199,7 +200,7 @@ export const gtmProductJsonData = [
         metaData:{
             title:"Trends Monitor - whr.ai GEO",
             description:"Monitor meaningful changes in event trends with whr.ai's Trends Monitor. Identify anomalies and respond proactively.",
-            image:"https://c1.10times.com/whr/gtm-geo/static/image/product/Coordinate.png",
+            image:`${imageURL}/Coordinate.png`,
         }
     }
 ]

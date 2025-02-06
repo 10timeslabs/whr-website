@@ -19,6 +19,7 @@ const GeneralNavbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [activePage, setActivePage] = useState("GEO")
   const [pageDropdown, setPagedropdown] = useState(false)
+  const dropdownRef =  useRef<HTMLDivElement | null>(null)
   const router = useRouter();
   const pathname = usePathname();
   useEffect(() => {
@@ -68,6 +69,36 @@ const GeneralNavbar = () => {
       setActivePage("GEO")
     }else setActivePage("GTM")
   }, [pathname]);
+
+  const handleClick = () =>{
+    if(pathname.split("/")[1] === "geo"){
+      window.open("https://console.eventeli.com/", "_blank")
+    }else if(pathname.split("/")[1] === "gtm"){
+      window.open("https://console.whr.ai/", "_blank")
+    }
+  }
+
+  useEffect(() => {
+    function handleClickOutside(event:MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setPagedropdown(false);
+      }
+    }
+
+    if (pageDropdown) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [pageDropdown]);
+
+  const handlePageSelect = (page: string) => {
+    setActivePage(page);
+    setPagedropdown(false); 
+  };
+  
   return (
     <div>
       <nav
@@ -102,12 +133,12 @@ const GeneralNavbar = () => {
               <DownArrowIconTwo />
             </div>
             {pageDropdown &&
-              <div className={`bg-white shadow-md rounded-xl p-3 absolute right-[10px] ${isScrolled ?"top-[50px]" :"top-[40px]"} flex flex-col items-center gap-2 text-[14px]`}>
-                <Link href={"/geo"} className="cursor-pointer w-[90px] hover:bg-[var(--accent-color)] p-1 rounded-[2px] flex items-center" onClick={() => setActivePage("GEO")}>
+              <div ref={dropdownRef} className={`bg-white shadow-md rounded-xl p-3 absolute right-[10px] ${isScrolled ?"top-[50px]" :"top-[40px]"} flex flex-col items-center gap-2 text-[14px]`}>
+                <Link href={"/geo"} className="cursor-pointer w-[90px] hover:bg-[var(--accent-color)] p-1 rounded-[2px] flex items-center" onClick={() => handlePageSelect("GEO")}>
                   {activePage === "GEO" && <Image src={TickIcon} alt="selected" />}
                   <span className={activePage === "GEO" ? "ml-1" : "ml-3"}>GEO</span>
                 </Link>
-                <Link href={"/gtm"} className="cursor-pointer w-[90px] hover:bg-[var(--accent-color)] p-1 rounded-[2px] flex items-center" onClick={() => setActivePage("GTM")}>
+                <Link href={"/gtm"} className="cursor-pointer w-[90px] hover:bg-[var(--accent-color)] p-1 rounded-[2px] flex items-center" onClick={() => handlePageSelect("GTM")}>
                   {activePage === "GTM" && <Image src={TickIcon} alt="selected" />}
                   <span className={activePage === "GTM" ? "ml-1" : "ml-3"}>GTM</span>
                   </Link>
@@ -255,12 +286,13 @@ const GeneralNavbar = () => {
           </div>
 
           <div className=" hidden lg:flex items-center space-x-4">
-            <Link
-              href="/signup"
+            <div
+              // href="/signup"
+              onClick={() =>{handleClick()}}
               className="bg-primary px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer"
             >
               Sign Up
-            </Link>
+            </div>
             <Link
               href="/demo"
               className="px-[15px] py-[8px] rounded-[10px]  border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
@@ -331,7 +363,7 @@ const GeneralNavbar = () => {
                   )}
                 </div>
               ))}
-              <Link href={pathname.includes("/geo") ? "/geo/about" : "gtm/about"} className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2">
+              <Link href={pathname.includes("/geo") ? "/geo/about" : "gtm/about"} className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2"  onClick={() => setMobileMenuOpen(false)}>
                 About
               </Link>
             </div>

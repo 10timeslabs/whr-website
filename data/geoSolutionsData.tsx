@@ -32,7 +32,7 @@ import {
   Geo_UseCase_8,
   Geo_UseCase_9,
 } from "../svgicons/icons";
-
+const imageURL = "https://c1.10times.com/whr/geo/static/image";
 export const geoSolutionsjsonData = [
   {
     id: "demand-forecasting",
@@ -132,7 +132,7 @@ b. Consume data via an API to include in your internal prediction model`,
     metaData:{
       title:"Demand Forecasting - whr.ai GEO",
       description:"Accurately forecast on-ground demand using whr.ai GEO's event intelligence and predictive analytics for better planning.",
-      image:"https://c1.10times.com/whr/geo/static/image/solution/Demandforecasting.png",
+      image:`${imageURL}/solution/Demandforecasting.png`,
     }
   },
   {
@@ -199,7 +199,7 @@ b. Consume data via an API to include in your internal prediction model`,
     metaData:{
       title:"Dynamic Pricing - whr.ai GEO",
       description:"Optimize your pricing strategy with whr.ai GEO's dynamic pricing solutions, powered by real-time event demand intelligence.",
-      image:"https://c1.10times.com/whr/geo/static/image/solution/DynamicPricing.png",
+      image:`${imageURL}/solution/DynamicPricing.png`,
     }
   },
   {
@@ -275,7 +275,7 @@ b. Consume data via an API to include in your internal prediction model`,
     metaData:{
       title:"Event Prospecting - whr.ai GEO",
       description:"Unlock business opportunities with whr.ai GEO's event prospecting. Identify and target events that align with your business objectives.",
-      image:"https://c1.10times.com/whr/geo/static/image/solution/EventProspecting.png",
+      image:`${imageURL}/solution/EventProspecting.png`,
     }
   },
   {
@@ -336,7 +336,7 @@ b. Consume data via an API to include in your internal prediction model`,
     metaData:{
       title:"Geo Marketing - whr.ai GEO",
       description:"Enhance your geo-marketing strategies with whr.ai GEO's event intelligence. Target the right audience at the right time and location.",
-      image:"https://c1.10times.com/whr/geo/static/image/solution/GeoMarketing.png",
+      image:`${imageURL}/solution/GeoMarketing.png`,
     }
   },
 
@@ -377,7 +377,7 @@ b. Consume data via an API to include in your internal prediction model`,
     metaData:{
       title:"Inventory Planning - whr.ai GEO",
       description:"Ensure optimal inventory levels with whr.ai GEO's inventory planning solutions, driven by event-driven demand forecasting.",
-      image:"https://c1.10times.com/whr/geo/static/image/solution/Inventorymanagement.png",
+      image:`${imageURL}/solution/Inventorymanagement.png`,
     }
   },
   {
@@ -431,7 +431,7 @@ b. Consume data via an API to include in your internal prediction model`,
     metaData:{
       title:"Risk Identification - whr.ai GEO",
       description:"Turn risks into opportunities with whr.ai GEO's risk identification solutions. Proactively manage event-driven risks for your business.",
-      image:"https://c1.10times.com/whr/geo/static/image/solution/RiskIdentification.png",
+      image:`${imageURL}/solution/RiskIdentification.png`,
     }
   },
   {
@@ -478,7 +478,7 @@ b. Consume data via an API to include in your internal prediction model`,
     metaData:{
       title:"Travel Advisory - whr.ai GEO",
       description:"Stay safe and informed with whr.ai GEO's travel advisory solutions, powered by real-time event intelligence and risk assessment.",
-      image:"https://c1.10times.com/whr/geo/static/image/solution/Traveladvisory.png",
+      image:`${imageURL}/solution/Traveladvisory.png`,
     }
   },
   {
@@ -561,7 +561,7 @@ b. Consume data via an API to include in your internal prediction model`,
     metaData:{
       title:"Workforce Management - whr.ai GEO",
       description:"Manage workforce availability and utilization effectively with whr.ai GEO's demand forecasting and event intelligence.",
-      image:"https://c1.10times.com/whr/geo/static/image/solution/WorkforceManagement.png",
+      image:`${imageURL}/solution/WorkforceManagement.png`,
     }
   },
 ];

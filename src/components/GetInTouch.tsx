@@ -1,9 +1,17 @@
 "use client"
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 
 const GetInTouch = () => {
   const router = useRouter();
+  const pathName = usePathname()
+  const handleClick = () =>{
+    if(pathName.split("/")[1] === "geo"){
+      window.open("https://console.eventeli.com/", "_blank")
+    }else if(pathName.split("/")[1] === "gtm"){
+      window.open("https://console.whr.ai/", "_blank")
+    }
+  }
   return (
     <div
       className="pb-6"
@@ -27,11 +35,9 @@ const GetInTouch = () => {
         </div>
         <div
           className="bg-primary px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer mt-8"
-          // onClick={() => {
-          //   router.push("https://console.whr.ai/");
-          // }}
           onClick={() => {
-            window.open("https://console.whr.ai/", "_blank");
+            handleClick ()
+            // window.open("https://console.whr.ai/", "_blank");
           }}
         >
           Sign Up

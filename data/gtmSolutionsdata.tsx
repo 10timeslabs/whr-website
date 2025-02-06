@@ -7,7 +7,7 @@ import ProspectMapping from "../data/solutionAnimationData/Prospectsmapping.json
 import Recruitement from "../data/solutionAnimationData/Recruitmentanddevrel.json"
 import SpeakingOpportunity from "../data/solutionAnimationData/Speakingopportunity.json"
 import { GTM_UseCase_1, GTM_UseCase_10, GTM_UseCase_11, GTM_UseCase_12, GTM_UseCase_13, GTM_UseCase_14, GTM_UseCase_15, GTM_UseCase_2, GTM_UseCase_3, GTM_UseCase_4, GTM_UseCase_5, GTM_UseCase_6, GTM_UseCase_7, GTM_UseCase_8, GTM_UseCase_9 } from "../svgicons/icons";
-
+const imageURL = "https://c1.10times.com/whr/gtm/static/image/solution"
 export const gtmSolutionsjsonData = [
   {
     id: "brand-building",
@@ -139,7 +139,7 @@ usecases: [
 metaData:{
   title:"Brand Alignment - whr.ai GTM",
   description:"Align your brand goals with the right events using whr.ai GTM's Brand Alignment solutions for maximum impact and ROI.",
-  image:"https://c1.10times.com/whr/gtm/static/image/solution/Brandbuilding.png",
+  image:`${imageURL}/Brandbuilding.png`,
 }
 },
   {
@@ -266,7 +266,7 @@ usecases: [
 metaData:{
   title:"Competitor Tracking - whr.ai GTM",
   description:"Stay ahead of rivals with whr.ai GTM's competitor tracking. Monitor where competitors are exhibiting, sponsoring, or speaking at events.",
-  image:"https://c1.10times.com/whr/gtm/static/image/solution/CompetitorTracking.png",
+  image:`${imageURL}/CompetitorTracking.png`,
 }
 },
   {
@@ -397,7 +397,7 @@ usecases: [
 metaData:{
   title:"Exhibit & Sponsor Matching - whr.ai GTM",
   description:"Maximize ROI on event participation with whr.ai GTM's Exhibit & Sponsor Matching. Choose the right events to exhibit or sponsor strategically.",
-  image:"https://c1.10times.com/whr/gtm/static/image/solution/Exhibit&Sponsor.png",
+  image:`${imageURL}/Exhibit&Sponsor.png`,
 }
 },
   {
@@ -527,7 +527,7 @@ usecases: [
 metaData:{
   title:"Product Matching - whr.ai GTM",
   description:"Find events that perfectly match your products or topics with whr.ai GTM's Product Matching solutions for deeper engagement.",
-  image:"https://c1.10times.com/whr/gtm/static/image/solution/ProductMatching.png",
+  image:`${imageURL}/ProductMatching.png`,
 }
 },
 
@@ -657,7 +657,7 @@ usecases: [
 metaData:{
   title:"Prospect Mapping - whr.ai GTM",
   description:"Turn prospects into real-world wins with whr.ai GTM's Prospect Mapping. Identify and target the best events for your business objectives.",
-  image:"https://c1.10times.com/whr/gtm/static/image/solution/Prospectmapping.png",
+  image:`${imageURL}/Prospectmapping.png`,
 }
 },
   {
@@ -787,7 +787,7 @@ usecases: [
 metaData:{
   title:"Recruitment & DevRel - whr.ai GTM",
   description:"Meet top talent face-to-face with whr.ai GTM's Recruitment & DevRel solutions. Enhance your hiring strategy with event intelligence.",
-  image:"https://c1.10times.com/whr/gtm/static/image/solution/Recruitement&DevRel.png",
+  image:`${imageURL}/Recruitement&DevRel.png`,
 }
 },
   {
@@ -915,7 +915,7 @@ usecases: [
 metaData:{
   title:"Speaking Opportunity - whr.ai GTM",
   description:"Secure speaking slots at key events with whr.ai GTM's Speaking Opportunity. Amplify your brand voice and influence the right audience.",
-  image:"https://c1.10times.com/whr/gtm/static/image/solution/SpeakingOpportunity.png",
+  image:`${imageURL}/SpeakingOpportunity.png`,
 }
 
   },

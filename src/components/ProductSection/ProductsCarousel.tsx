@@ -19,6 +19,8 @@ import RightArrow from '/public/RightArrow.svg'
 import { trackerImageData } from '../../../data/trackerImagesData';
 
 const ProductsCarousel = () => {
+    const imageUrl = "https://c1.10times.com/whr/landing/static/image/common"
+    const researchImage = "https://c1.10times.com/whr/gtm-geo/static/image/product/Research.png"
     const data = [
         { topic: "SEARCH", heading: "Visualisation Engine", subheading: "Discover Insights Seamlessly with List, Map, and Calendar Views.", bottom: "-20%", icon: Researchicon },
         { topic: "SMART TRACKERS", heading: "Deploy Agents", subheading: "Activate intelligence with agents that gather and deliver precise data.", bottom: "10%", icon: Trackericon },
@@ -144,15 +146,15 @@ const ProductsCarousel = () => {
                     }}
                     style={{ bottom: currentIndex === 0 ? bottomValue : data[currentIndex].bottom }}>
                     {currentIndex === 0 ?
-                        <Image src={ResearchImage} alt='ai' className='w-[900px]' style={{ objectFit: "fill" }} /> :
+                        <Image src={researchImage} width={900} height={900} alt='ai' className='w-[900px]' style={{ objectFit: "fill" }} /> :
                         currentIndex === 1 ?
                             <AutoScroll size='large' icons={trackerImageData} /> :
                             currentIndex === 2 ?
-                                <Image src={ModelImage} alt='ai' width={500} height={370} /> :
+                                <Image src={`${imageUrl}/model_enrichment.png`} alt='ai' width={500} height={370} /> :
                                 currentIndex === 3 ?
-                                    <Image src={TrendsImg} alt='ai' width={700} height={370} unoptimized /> :
+                                    <Image src={`${imageUrl}/trends_carousel.png`} alt='ai' width={700} height={370} unoptimized /> :
                                     <div className='bg-white rounded-xl shadow-md p-5'>
-                                        <Image src={AiImage} alt='ai' width={600} height={370} />
+                                        <Image src={`${imageUrl}/aiassistant.png`} alt='ai' width={600} height={370} />
                                     </div>}
 
                 </motion.div>
