@@ -37,9 +37,8 @@ const page = () => {
     return item.id.toLowerCase() === endpoint;
   });
   if (!usecaseData) {
-      notFound();
-    }
-  
+    notFound();
+  }
 
   const defaultData = {
     image: dataSource?.[0]?.image || "",
@@ -199,8 +198,8 @@ const page = () => {
           </div>
         </div>
       ) : (
-        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) &&(
-        <div className="w-full flex items-center justify-center mt-[140px]">
+        (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
+        <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[140px]": ""} `}>
           <Section />
         </div>
       )}

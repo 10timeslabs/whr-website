@@ -4,7 +4,7 @@ import { PhoneInput, ParsedCountry } from "react-international-phone";
 import "react-international-phone/style.css";
 import styles from './page.style.module.css'
 
-const page = () => {
+const Page = () => {
 
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
@@ -149,4 +149,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default Page
