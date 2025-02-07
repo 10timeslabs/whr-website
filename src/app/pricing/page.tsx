@@ -6,6 +6,7 @@ import PriceCard from '@/components/pricing/PriceCard'
 import { motion } from 'framer-motion'
 import React from 'react'
 import TickIcon from '/public/priceTick.svg'
+import Image from 'next/image'
 
 const Page = () => {
 
@@ -47,10 +48,12 @@ const Page = () => {
 					<table className="w-full border-collapse">
 						{/* Table Header */}
 						<thead>
-							<tr className="bg-[var(--primary-light-color)]">
-								<th className="p-3 text-left">Features</th>
+							<tr className="
+							bg-[var(--neutral-light-color)] 
+							">
+								<th className="p-4 text-left text-[#6750a4]">Features</th>
 								{pricingPlans.map((data, key) => (
-									<th key={key} className="p-3 text-center">{data.name}</th>
+									<th key={key} className="p-4 text-center text-[#6750a4]">{data.name}</th>
 								))}
 							</tr>
 						</thead>
@@ -60,16 +63,28 @@ const Page = () => {
 							{features.map((feature, featureIndex) => (
 								<tr key={featureIndex}>
 									{/* Feature Name Column */}
-									<td className="p-3">{feature}</td>
+									<td className="p-4">{feature}</td>
 
 									{/* Pricing Plan Columns */}
 									{pricingPlans.map((plan, planIndex) => (
-										<td key={planIndex} className="p-3 text-center">
-											{(plan.features.includes(feature) || plan.features.includes("All Features")) ? "✅" : ""}
+										<td key={planIndex} className="p-4">
+											<div className="flex justify-center items-center h-full">
+												{(plan.features.includes(feature) || plan.features.includes("All Features")) ?
+													<Image src={TickIcon} alt="tick" width={15} height={15} />
+													: ""
+												}
+											</div>
 										</td>
 									))}
 								</tr>
 							))}
+							<tr>
+								<td className="p-4">Feature 8</td>
+								<td className="p-4 text-center font-medium text-[var(--secondary-text-color)]">Coming Soon</td>
+								<td className="p-4 text-center font-medium text-[var(--secondary-text-color)]">Coming Soon</td>
+								<td className="p-4 text-center font-medium text-[var(--secondary-text-color)]">Coming Soon</td>
+								<td className="p-4 text-center font-medium text-[var(--secondary-text-color)]">Coming Soon</td>
+							</tr>
 						</tbody>
 
 					</table>
