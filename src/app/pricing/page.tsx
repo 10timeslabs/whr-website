@@ -1,10 +1,10 @@
 'use client'
+import React from 'react'
 import Footer from '@/components/Footer'
 import GetInTouch from '@/components/GetInTouch'
 import HomeNavbar from '@/components/HomeNavbar'
 import PriceCard from '@/components/pricing/PriceCard'
 import { motion } from 'framer-motion'
-import React from 'react'
 import TickIcon from '/public/priceTick.svg'
 import Image from 'next/image'
 
@@ -23,10 +23,10 @@ const Page = () => {
 			<HomeNavbar />
 			<div className='flex flex-col mt-[120px] justify-center w-[87%] gap-10'>
 				<div className='flex flex-col'>
-					<span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent text-[60px] leading-[65px] font-medium w-fit'>Pricing</span>
+					<span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent text-[60px] leading-[65px] font-medium w-fit '>Pricing</span>
 					<span className='text-[20px] text-[var(--secondary-text-color)]'>Empower Real-World Intelligence with Whr</span>
 				</div>
-				<div className='w-full flex items-center justify-center gap-4'>
+				<div className="w-full gap-4 grid grid-cols-4 max-[1220px]:grid-cols-2 max-[650px]:grid-cols-1">
 					{pricingPlans.map((data, key) => (
 						<motion.div
 							key={key}
@@ -42,7 +42,7 @@ const Page = () => {
 				</div>
 				<div className='w-full flex flex-col items-center'>
 					<div className='text-[#171717] font-medium text-[36px]'>Find the right plan for you</div>
-					<div></div>
+					<div className='font-medium text-[var(--secondary-text-color)]'>Unclock the event potential.</div>
 				</div>
 				<div className="bg-white rounded-lg shadow-md border border-[var(--border-color)] overflow-hidden">
 					<table className="w-full border-collapse">
