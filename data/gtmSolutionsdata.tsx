@@ -12,6 +12,7 @@ export const gtmSolutionsjsonData = [
   {
     id: "brand-building",
     image: BrandBuilding,
+    imageAltText:"",
     text: "Brand Alignment",
     subtext:
       "Events open the door for brand building. From influencing new audience to reinforcing your message to targeted set of users",
@@ -64,6 +65,7 @@ metaData:{
   {
     id: "competitor-tracking",
     image: CompetitorTracking,
+    imageAltText:"",
     text: "Competitor Tracking",
     subtext:
       "Dont just go, know where your competitors are joing and tend to go",
@@ -121,6 +123,7 @@ metaData:{
   {
     id: "exhibit-sponsor",
     image: ExhibitorAndSponsor,
+    imageAltText:"",
     text: "Exhibit & Sponsor",
     subtext:
       "With number of events being hosted growing and new formats emerging, choosing the right fit for events to exhibit or sponsor can boost the potential ROI and drive the real-world marketing spend strategy.",
@@ -171,6 +174,7 @@ metaData:{
   {
     id: "product-matching",
     image: ProductMatching,
+    imageAltText:"",
     text: "Product Matching",
     subtext:
       "Dont just go by the name, go deeper. Find what you are looking for or be where find the right audience based on products or topics of relevance.",
@@ -221,6 +225,7 @@ metaData:{
   {
     id: "prospects-mapping",
     image: ProspectMapping,
+    imageAltText:"",
     text: "Prospect Mapping",
     subtext:
       "Its all about the signals. Link your sales CRM or upload a list of prospective companies to identify the best events for you to attend",
@@ -269,6 +274,7 @@ metaData:{
   {
     id: "recruitement-devrel",
     image: Recruitement,
+    imageAltText:"",
     text: "Recruitement & DevRel",
     subtext:
       "Hiring is changing and becoming challenging. Getting inbound is becoming spam applications. Meet candidates in the real-world",
@@ -318,6 +324,7 @@ metaData:{
   {
     id: "speaking-opportunity",
     image: SpeakingOpportunity,
+    imageAltText:"",
     text: "Speaking Opportunity",
     subtext:
       "Make your highly qualified set of C-level executives brand embassadors by getting them speaking positions in front of the audinece that matter to your company",
