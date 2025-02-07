@@ -1,26 +1,36 @@
 
 
 
+"use client"
 import React from "react";
-import HeroBanner from "./HeroBanner";
+// import HeroBanner from "./HeroBanner";
 import { usePathname } from "next/navigation";
 import { geoSolutionsjsonData } from "../../../data/geoSolutionsData";
-import { gtmSolutionsjsonData } from '../../../data/gtmSolutionsdata';
+import { geoProductJsonData } from "../../../data/geoProductData";
+import { gtmSolutionsjsonData } from "../../../data/gtmSolutionsdata";
+import { gtmProductJsonData } from "../../../data/gtmProductData";
+import dynamic from "next/dynamic";
 
 const Section = () => {
+  const HeroBanner = dynamic(
+    () => import('./HeroBanner'),
+    { ssr: false }
+  )
   const pathname = usePathname();
-
-  // Determine data source based on the pathname
   let dataSource = null;
   if (pathname.includes("/geo/solutions")) {
     dataSource = geoSolutionsjsonData;
-  } else if (pathname.includes("/gtm/solution")) {
+  } else if (pathname.includes("/gtm/solutions")) {
     dataSource = gtmSolutionsjsonData;
+  } else if (pathname.includes("/geo/product")) {
+    dataSource = geoProductJsonData;
+  } else if (pathname.includes("/gtm/product")) {
+    dataSource = gtmProductJsonData
   }
 
   const endpoint = pathname.split("/").pop()?.toLowerCase();
 
-  const usecaseData = dataSource?.find((item) => item.id.toLowerCase() === endpoint);
+  const usecaseData = dataSource?.find((item: any) => item.id.toLowerCase() === endpoint);
 
   const defaultData = {
     image: dataSource?.[0]?.image || "",
@@ -31,7 +41,7 @@ const Section = () => {
   const dataToDisplay = usecaseData || defaultData;
 
   return (
-    <div className="w-[80%]">
+    <div className="w-[87%]">
       <HeroBanner
         heading={dataToDisplay.text}
         subHeading={dataToDisplay.subtext}

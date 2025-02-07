@@ -1,3 +1,4 @@
+"use client"
 import Image, { StaticImageData } from 'next/image';
 import React from 'react'
 // import ArrowImg from '/public/Arrow-2.svg'

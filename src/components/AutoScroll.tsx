@@ -1,30 +1,44 @@
-import React from "react";
-import Image from "next/image";
+"use client"
+import React, { useEffect, useState } from "react";
+import Image, { StaticImageData } from "next/image";
 
-// Import SVG icons
-import Acme from "/public/auto_scroll_svg/acme 1.svg";
-import Apex from "/public/auto_scroll_svg/apex 1.svg";
-import Celestia from "/public/auto_scroll_svg/celestia 1.svg";
-import Echo from "/public/auto_scroll_svg/echo 1.svg";
-import Plus from "/public/auto_scroll_svg/pulse 1.svg";
-import Quantum from "/public/auto_scroll_svg/quantum 1 (1).svg";
+interface Props {
+  icons: StaticImageData[],
+  size: string;
+}
 
-const AutoScroll = () => {
-  const icons = [Acme, Apex, Celestia, Echo, Plus, Quantum];
+const AutoScroll = ({ icons, size }: Props) => {
+  const [imageWidth, setImageWidth] = useState(size === "small" ? 150 : 300);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 421 && size !== "small") {
+        setImageWidth(200);
+      } else {
+        setImageWidth(size === "small" ? 150 : 300);
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [size]);
 
   return (
-    <div className="relative w-full h-32 overflow-hidd">
+    <div className="relative w-full overflow-hidden">
       {/* Scrolling container */}
       <div className="flex w-full animate-scroll gap-8">
         {/* Render icons twice for seamless looping */}
         {[...icons, ...icons, ...icons].map((icon, index) => (
-          <div key={index} className="flex-shrink-0 w-24 h-24">
+          <div key={index} className="flex-shrink-0 ">
             <Image
               src={icon}
               alt={`Icon ${index}`}
               layout="intrinsic"
-              width={100}
-              height={50}
+              width={imageWidth}
+              height={size === "small" ? 80 : 100}
             />
           </div>
         ))}

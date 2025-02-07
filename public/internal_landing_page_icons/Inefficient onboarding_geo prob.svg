@@ -1,0 +1,25 @@
+<svg width="64" height="51" viewBox="0 0 64 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7932_77)">
+<path d="M55.38 4.42627H3.48C1.55805 4.42627 0 5.98432 0 7.90627V41.2863C0 43.2082 1.55805 44.7663 3.48 44.7663H55.38C57.302 44.7663 58.86 43.2082 58.86 41.2863V7.90627C58.86 5.98432 57.302 4.42627 55.38 4.42627Z" fill="#CAB8FF"/>
+<path d="M58.38 1.42627H6.48C4.55805 1.42627 3 2.98432 3 4.90627V38.2863C3 40.2082 4.55805 41.7663 6.48 41.7663H58.38C60.302 41.7663 61.86 40.2082 61.86 38.2863V4.90627C61.86 2.98432 60.302 1.42627 58.38 1.42627Z" fill="white" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.43 29.2062C35.567 29.2062 38.11 26.6632 38.11 23.5262C38.11 20.3892 35.567 17.8462 32.43 17.8462C29.293 17.8462 26.75 20.3892 26.75 23.5262C26.75 26.6632 29.293 29.2062 32.43 29.2062Z" fill="white" stroke="black" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M22.3199 41.7662V41.6862C22.3199 36.1062 26.8499 31.5762 32.4299 31.5762C38.0099 31.5762 42.5399 36.1062 42.5399 41.6862V41.7662" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M54.79 49.4562C59.4347 49.4562 63.2 45.6909 63.2 41.0462C63.2 36.4015 59.4347 32.6362 54.79 32.6362C50.1453 32.6362 46.38 36.4015 46.38 41.0462C46.38 45.6909 50.1453 49.4562 54.79 49.4562Z" fill="url(#paint0_linear_7932_77)" stroke="black" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M54.79 36.5464V42.3664" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.79 46.0862C55.4086 46.0862 55.91 45.5848 55.91 44.9662C55.91 44.3476 55.4086 43.8462 54.79 43.8462C54.1715 43.8462 53.67 44.3476 53.67 44.9662C53.67 45.5848 54.1715 46.0862 54.79 46.0862Z" fill="black"/>
+<path d="M3 8.33618H61.86" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="7.16003" cy="4.78638" r="0.75" fill="black"/>
+<circle cx="9.29004" cy="4.78638" r="0.75" fill="black"/>
+<circle cx="11.41" cy="4.78638" r="0.75" fill="black"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_7932_77" x1="46.38" y1="41.0462" x2="63.2" y2="41.0462" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CBD1FF"/>
+<stop offset="0.55" stop-color="#F7B363"/>
+<stop offset="1" stop-color="#771BED"/>
+</linearGradient>
+<clipPath id="clip0_7932_77">
+<rect width="63.95" height="49.53" fill="white" transform="translate(0 0.67627)"/>
+</clipPath>
+</defs>
+</svg>

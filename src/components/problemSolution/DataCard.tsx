@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import ProblemImg from '/public/Problem.png'
 import SolutionImg from '/public/Solution.png'

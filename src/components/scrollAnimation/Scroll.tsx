@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef, useState } from 'react'
 import ResearchImg from '/public/Scroll/research_score.png'
 import ResearchSmallImg from '/public/Scroll/ListViewSmall.png'
@@ -18,9 +19,7 @@ import TrackersIcon from '/public/Scroll/Trackers.svg'
 import TrendsIcon from '/public/Scroll/Trends.svg'
 import AiIcon from '/public/Scroll/AI.svg'
 import SolutionComponent from './SolutionComponent'
-// import { AnimatePresence, motion } from 'framer-motion'
 import FirstSolutionComponent from './FirstSolutionComponent'
-// import LandingComponent from './LandingComponent'
 import UsecaseScroll from '../usecaseScrollAnimation/UsecaseScroll'
 
 
@@ -38,6 +37,20 @@ const Scroll = () => {
   const scrollRef = useRef(null);
   const [scrollDirection, setScrollDirection] = useState("down"); // 'up' or 'down'
 
+  const handleScrollWrapper = (e: WheelEvent) => {
+    if (!isInView) return;
+
+    // Prevent default scrolling only if within bounds
+    if (
+      (e.deltaY > 0 && currentIndex < data.length ) || // Scrolling down, within bounds
+      (e.deltaY < 0 && currentIndex > 0) // Scrolling up, within bounds
+    ) {
+      e.preventDefault(); // Prevent default scroll immediately
+    }
+
+    debouncedHandleScroll(e); // Call the debounced version
+  };
+
   const debounce = (func: Function, delay: number) => {
     let timer: ReturnType<typeof setTimeout>;
     return (...args: any[]) => {
@@ -47,34 +60,26 @@ const Scroll = () => {
   };
   const handleScroll = (e: WheelEvent) => {
     if (!isInView) return; // Only trigger if the component is in view
-    e.preventDefault(); // Prevent the default scroll behavior
+
     if (e.deltaY > 0) {
       // Scrolling down
-      if (currentIndex < data.length) {
+      if (currentIndex < data.length ) {
         setCurrentIndex((prev) => {
           setScrollDirection("down"); // Set direction to down
           return prev + 1;
         });
-      } else {
-        // Allow normal scrolling when at the last index
-        window.removeEventListener("wheel", handleScroll);
       }
     } else {
       // Scrolling up
       if (currentIndex > 0) {
-        // e.preventDefault(); // Prevent the default scroll behavior
         setCurrentIndex((prev) => {
           setScrollDirection("up"); // Set direction to up
           return prev - 1;
         });
-      } 
-      // else {
-      //   // Allow normal scrolling when at the first index and scrolling up
-      //   window.removeEventListener("wheel", handleScroll);
-      // }
+      }
     }
   };
-  const debouncedHandleScroll = debounce(handleScroll, 100);
+  const debouncedHandleScroll = debounce(handleScroll, 50);
   useEffect(() => {
     // Intersection Observer to detect when the component is in view
     const observer = new IntersectionObserver(
@@ -90,7 +95,6 @@ const Scroll = () => {
     if (scrollRef.current) {
       observer.observe(scrollRef.current);
     }
-
     return () => {
       if (scrollRef.current) {
         observer.unobserve(scrollRef.current);
@@ -100,19 +104,18 @@ const Scroll = () => {
 
   useEffect(() => {
     if (isInView) {
-      window.addEventListener("wheel", debouncedHandleScroll, { passive: false });
+      window.addEventListener("wheel", handleScrollWrapper, { passive: false });
     } else {
-      window.removeEventListener("wheel", debouncedHandleScroll);
+      window.removeEventListener("wheel", handleScrollWrapper);
     }
-
     return () => {
-      window.removeEventListener("wheel", debouncedHandleScroll);
+      window.removeEventListener("wheel", handleScrollWrapper);
     };
   }, [isInView, debouncedHandleScroll, currentIndex]);
 
   return (
     <div className="min-h-[500px] w-full overflow-hidden flex justify-center" ref={scrollRef}>
-      <div className="w-[1300px] border border-[var(--border-color)] relative rounded-xl h-[500px] items-center justify-center overflow-hidden">
+      <div className="w-[87%] border border-[var(--border-color)] relative rounded-xl h-[500px] items-center justify-center overflow-hidden">
         <div
           className={`absolute ${currentIndex === 0 ? "right-0 top-[20%]" : "right-[-30%] top-0"} h-[500px] w-[85%] -z-10`}
           style={{
@@ -182,15 +185,15 @@ const Scroll = () => {
 export default Scroll
 
 
-  // Attach the scroll event listener to handle scroll direction
-  // useEffect(() => {
-  //   if (isInView) {
-  //     window.addEventListener("wheel", handleScroll, { passive: false });
-  //   } else {
-  //     window.removeEventListener("wheel", handleScroll);
-  //   }
+// Attach the scroll event listener to handle scroll direction
+// useEffect(() => {
+//   if (isInView) {
+//     window.addEventListener("wheel", handleScroll, { passive: false });
+//   } else {
+//     window.removeEventListener("wheel", handleScroll);
+//   }
 
-  //   return () => {
-  //     window.removeEventListener("wheel", handleScroll);
-  //   };
-  // }, [isInView, currentIndex]);
+//   return () => {
+//     window.removeEventListener("wheel", handleScroll);
+//   };
+// }, [isInView, currentIndex]);

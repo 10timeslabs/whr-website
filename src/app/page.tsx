@@ -1,169 +1,65 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import styles from "./page.module.css";
-import Navbar from "@/components/HomeNavbar";
+import AutoScroll from "@/components/AutoScroll";
+import CircleContainer from "@/components/circleAnimation/CircleContainer";
+import ProductsCarousel from "@/components/ProductSection/ProductsCarousel";
+import { companyLogos } from "../../data/companyLogoData";
+import Clarity from "@/components/clarityAnimation/Clarity";
+import UseCasesContainer from "@/components/useCaseSection/UseCasesContainer";
+import ProblemContainer from "@/components/realWorldProblem/ProblemContainer";
+import GridImage from '/public/herosection_grid.png'
+import FragmentDataIcon from '/public/realworldproblems/Fragmenteddata.svg'
+import NoiseIcon from '/public/realworldproblems/noise.svg'
+import PuzzleIcon from '/public/realworldproblems/puzzle.svg'
+import IntelDataIcon from '/public/realworldproblems/timesensitiveintel.svg'
+import GetInTouch from "@/components/GetInTouch";
 import Footer from "@/components/Footer";
-import BackgroundImage from "/public/logo/background.jpg";
-import HeroBannerPng from "/public/hero-bg.png";
-import CircleImage from "/public/circle-bg.png";
-import GetMore_1 from "/public/tracker/getmore_1.png";
-import GetMore_2 from "/public/tracker/getmore_2.png";
-import GetMore_3 from "/public/tracker/getmore_3.png";
-import GetMore_4 from "/public/tracker/getmore_4.png";
-import GetMore_5 from "/public/tracker/getmore_5.png";
-import GetMore_6 from "/public/tracker/getmore_6.png";
-import GetMore_7 from "/public/tracker/getmore_7.png";
-import GetMore_8 from "/public/tracker/getmore_8.png";
-import GetMore_9 from "/public/tracker/getmore_9.png";
+import HomeNavbar from "@/components/HomeNavbar";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("Location Intel");
+
+  const headingWords = ["Demand ?", "Opportunity ?", "Risk ?", "Focus ?", "Money ?"]
+
+  const cardData = [
+    { icon: FragmentDataIcon, heading: "Fragmented Data", subheading: "Fragmented data poses significant challenges, with information scattered across multiple sources, inconsistent formats, various languages, duplicate entries, and unsynchronised timelines" },
+    { icon: NoiseIcon, heading: "Too Much Noise", subheading: "With overwhelming volumes of information, the process of finding relevant data, cleaning it, identifying fake or unreliable entries, and quantifying it for meaningful use becomes a daunting task." },
+    { icon: PuzzleIcon, heading: "Piecing the Puzzle", subheading: "Data is only as valuable as the connections between its points. Without linking multiple lateral data points, insights remain incomplete and unusable." },
+    { icon: IntelDataIcon, heading: "Time Sensitive Intel", subheading: "Delivering actionable intelligence to the right people at the right time is critical for success. When key insights are accessible exactly when they’re needed, it enables informed decisions." },
+  ]
+
   return (
-    <div
-      style={
-        {
-          // minHeight: "100vh",
-          // backgroundImage: `url(${BackgroundImage.src})`,
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
-          // backgroundRepeat: "no-repeat",
-        }
-      }
-    >
-      <div className={`${styles.heroSection} relative`}>
-        <Navbar />
-        <div className={styles.shape1}></div>
-        <div className={styles.shape2}></div>
-        <div className={styles.circle_square}>
-          <span className={styles.dashboardImgSpinner}></span>
-          <Image
-            src={CircleImage}
-            alt="circleimage"
-            className={styles.circleImg}
-          />
-        </div>
-        <span className={styles.dashboardImgSpinnerTwo}></span>
-        <div className={styles.first_section}>
-          <div className={`${styles.heroCaption} text-center`}>
-            <h1 className="mb-3" style={{ fontSize: "4rem" }}>
-              Know Before You Go
-            </h1>
-            <h3 style={{ fontSize: "1.8rem", fontWeight: "500" }}>
-              AI Workflows to Unlock Real-World Events
-            </h3>
-            <p className={styles.heroCaption_sec_para}>
-              Build your event strategy with access to a billion+ data points
-            </p>
-            <a href="https://console.whr.ai" className={styles.scheduleDemoBtn}>
-              Get Started
-            </a>
-          </div>
+    <div style={{ paddingTop: 120 }} className="relative">
+      <HomeNavbar/>
+      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
+      <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
-          <section className="flex justify-center items-center mt-8">
-            <nav className={styles.nav}>
-              <div className={styles.tabs}>
-                <button
-                  className={
-                    activeTab === "Location Intel" ? styles.activeTab : ""
-                  }
-                  onClick={() => setActiveTab("Location Intel")}
-                >
-                  Location Intel
-                </button>
-                <button
-                  className={
-                    activeTab === "Industry Intel" ? styles.activeTab : ""
-                  }
-                  onClick={() => setActiveTab("Industry Intel")}
-                >
-                  Industry Intel
-                </button>
-              </div>
-            </nav>
-          </section>
+      <div className={`text-center`}>
+        <span className="mb-3 text-[56px] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]">
+          Whats Happening for Real
+        </span>
 
-          <section>
-            <div className={`${styles.scroll_section_images}`}>
-              <Image
-                src={GetMore_1}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_2}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_3}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_4}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_5}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_6}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_7}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_8}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-              <Image
-                src={GetMore_9}
-                className="img-fluid"
-                width="365"
-                height="265"
-                alt="recruitment"
-              />
-
-              {/* <img src="./assets/img/getmore_2.png" className="img-fluid" width="365" height="265" alt="customericp"> */}
-              {/* <img src="./assets/img/getmore_3.png" className="img-fluid" width="365" height="265" */}
-              {/* alt="productkeywords"> */}
-              {/* <img src="./assets/img/getmore_4.png" className="img-fluid" width="365" height="265" alt="socialcause"> */}
-              {/* <img src="./assets/img/getmore_5.png" className="img-fluid" width="365" height="265" alt="peoplefinder"> */}
-              {/* <img src="./assets/img/getmore_6.png" className="img-fluid" width="365" height="265" alt="competitor"> */}
-              {/* <img src="./assets/img/getmore_7.png" className="img-fluid" width="365" height="265" */}
-              {/* alt="brandbuilding"> */}
-              {/* <img src="./assets/img/getmore_8.png" className="img-fluid" width="365" height="265" */}
-              {/* alt="speakingopportunity"> */}
-              {/* <img src="./assets/img/getmore_9.png" className="img-fluid" width="365" height="265" alt="audiencedept"> */}
-            </div>
-          </section>
-        </div>
+        {/* <HeadingtextAnimation heading="Whr is the" words={headingWords}/> */}
+        <p className="text-[20px] text-[var(--secondary-text-color)] max-[850px]:text-[16px]">
+          Unlock Real-World Action Intel with WHR
+        </p>
       </div>
+      <div className="w-full flex items-center justify-center mt-10">
+        <UseCasesContainer />
+      </div>
+
+      <div className="w-full"><Clarity /></div>
+      <div className="w-full"><ProblemContainer cardData={cardData} route="home"/></div>
+      <div className="flex flex-col gap-10 items-center mt-12 mb-[80px]">
+        <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS</div>
+        <AutoScroll icons={companyLogos} size="small" />
+      </div>
+      <CircleContainer />
+      <div className="mt-10">
+        <ProductsCarousel />
+      </div>
+      <GetInTouch />
+      <Footer />
     </div>
   );
 }
