@@ -39,11 +39,7 @@ const Navbar = () => {
     };
   }, []);
   const handleClick = () =>{
-    if(pathName.split("/")[1] === "geo"){
-      window.open("https://console.eventeli.com/", "_blank")
-    }else if(pathName.split("/")[1] === "gtm"){
       window.open("https://console.whr.ai/", "_blank")
-    }
   }
   return (
     <nav className="fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out">
@@ -112,12 +108,10 @@ const Navbar = () => {
 
         {/*-------------- Desktop Buttons------------------- */}
         <div className="hidden lg:flex space-x-4">
-          <Link
-            href="/signup"
-            className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
-          >
+          <div className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
+          onClick={handleClick}>
             Sign Up
-          </Link>
+          </div>
           <Link
             href="/demo"
             className="px-[15px] py-[8px] rounded-[10px]  border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
@@ -177,9 +171,7 @@ const Navbar = () => {
           <div
             // href="/signup"
             className="block w-48 px-6 py-3 text-white bg-primary rounded-lg text-center text-xl hover:bg-primary transition-all duration-300 ease-in-out"
-            onClick={() => {
-              handleClick ()
-            }}
+            onClick={handleClick}
          >
             Sign Up
           </div>
