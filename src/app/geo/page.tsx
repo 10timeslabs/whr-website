@@ -76,7 +76,7 @@ export default function Home() {
         <Clarity />
       </div>
       <div className="w-full">
-        <ProblemContainer cardData={cardData} />
+        <ProblemContainer cardData={cardData} route="geo"/>
       </div>
       <div className="flex flex-col gap-10 items-center mt-12 mb-[80px]">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">

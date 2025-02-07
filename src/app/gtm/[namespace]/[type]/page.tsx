@@ -3,9 +3,6 @@ import GtmComponent from "@/components/gtmComponents/GtmComponent";
 import { gtmUsecasesjsonData } from "../../../../../data/gtmUsecasesData";
 import { gtmSolutionsjsonData } from "../../../../../data/gtmSolutionsdata";
 import { gtmProductJsonData } from "../../../../../data/gtmProductData";
-import GetInTouch from "@/components/GetInTouch";
-import Footer from "@/components/Footer";
-import GeneralNavbar from "@/components/GeneralNavbar";
 
 const Page = () => {
   return (
