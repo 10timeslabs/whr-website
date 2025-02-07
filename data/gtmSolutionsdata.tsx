@@ -31,109 +31,28 @@ g. Easily coordinate internally and even directly outreach to the event organise
 h. Access and track all event footprint to access impact`,
 usecases: [
   {
-    id: "restaurant",
-    topic: "Restaurants & QSR",
+    topic: "Marketing",
     content:
-      "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-    icon: <GTM_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+      "Align brand messaging with the perfect event audiences to maximize sponsorship ROI and brand recall.",
+    icon: <GTM_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
   },
   {
-    id: "restaurant",
-    topic: "Risk Identification",
-    icon: <GTM_UseCase_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+    topic: "Brand Agency",
+    icon: <GTM_UseCase_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+      "Curate events that fit client brand ethos, ensuring consistent storytelling across real-world activations.",
   },
   {
-    id: "geomarketing",
-    topic: "Geo Marketing dummy",
-    icon: <GTM_UseCase_3 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
-  },
-  {
-    id: "eventprospecting",
-    topic: "Event Prospecting",
-    icon: <GTM_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
-  },
-  {
-    id: "dynamicpricing",
-    topic: "Dynamic pricing",
+    topic: "CSR",
     icon: <GTM_UseCase_5 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
     content:
-      "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
+      "Discover socially aligned festivals or community gatherings to enhance your corporate social responsibility footprint.",
   },
   {
-    id: "workforcemanagement",
-    topic: "Workforce Managemant",
-    icon: <GTM_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Venue",
+    icon: <GTM_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
-  },
-  {
-    id: "inventoryplanning",
-    topic: "Inventory Planning",
-    icon: <GTM_UseCase_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_9 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_10 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_11 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_15 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Promote your venue’s rebranding or unique experience by joining forces with events echoing your brand values.",
   },
 ],  
 metaData:{
@@ -159,108 +78,38 @@ d. Leverage smart recommendation based on your brand mandate and our AI's abilit
 usecases: [
   {
     id: "restaurant",
-    topic: "Restaurants & QSR",
+    topic: "Sales & Biz Dev",
     content:
-      "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-    icon: <GTM_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+      "Spot competitor presence at real-world events to refine your sales approach and target new opportunities.",
+    icon: <GTM_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
   },
   {
     id: "restaurant",
-    topic: "Risk Identification",
-    icon: <GTM_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Marketing",
+    icon: <GTM_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+      "Track rival brand strategies offline to adjust campaigns for maximum impact where your competitors appear.",
   },
   {
     id: "geomarketing",
-    topic: "Geo Marketing dummy",
-    icon: <GTM_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Procurement",
+    icon: <GTM_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
+      " Keep tabs on competitor vendor relationships at trade shows to negotiate better supply deals.",
   },
   {
     id: "eventprospecting",
-    topic: "Event Prospecting",
-    icon: <GTM_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Brand Agency",
+    icon: <GTM_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
+      "Discover competitor client activations at events to propose more compelling brand strategies for your clients.",
   },
   {
     id: "dynamicpricing",
-    topic: "Dynamic pricing",
-    icon: <GTM_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-  },
-  {
-    id: "workforcemanagement",
-    topic: "Workforce Managemant",
+    topic: "Tech Team",
     icon: <GTM_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
-  },
-  {
-    id: "inventoryplanning",
-    topic: "Inventory Planning",
-    icon: <GTM_UseCase_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_9 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_11 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_13 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_15 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Monitor competitor product launches or developer meetups, aligning your own DevRel or feature roadmap accordingly.",
   },
 ],   
 metaData:{
@@ -289,109 +138,28 @@ d. define the timeline or other preference
 Get a list of events that are upcoming & forecasted. Additionally, get updates whenever an event is founfd that meets the goal`,
 usecases: [
   {
-    id: "restaurant",
-    topic: "Restaurants & QSR",
+    topic: "Sales & Biz Dev",
     content:
-      "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-    icon: <GTM_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-  },
-  {
-    id: "restaurant",
-    topic: "Risk Identification",
+      " Target the most profitable exhibitions or sponsor deals by evaluating footfall, competitor presence, and audience fit.",
     icon: <GTM_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
   },
   {
-    id: "geomarketing",
-    topic: "Geo Marketing dummy",
-    icon: <GTM_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
-  },
-  {
-    id: "eventprospecting",
-    topic: "Event Prospecting",
-    icon: <GTM_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
-  },
-  {
-    id: "dynamicpricing",
-    topic: "Dynamic pricing",
-    icon: <GTM_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-  },
-  {
-    id: "workforcemanagement",
-    topic: "Workforce Managemant",
-    icon: <GTM_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
-  },
-  {
-    id: "inventoryplanning",
-    topic: "Inventory Planning",
-    icon: <GTM_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
+    topic: "Brand Agency",
     icon: <GTM_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Recommend ideal expos or sponsorships that cater to clients’ brand goals, optimizing event marketing ROI.",
   },
   {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_9 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
+    topic: "Venue",
     icon: <GTM_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "If you exhibit at other fairs or do cross-promotions, spot high-value gatherings for improved brand synergy.",
   },
   {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_11 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Marketing",
+    icon: <GTM_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_15 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Select exhibitions or sponsorship packages driven by real-time event data, yielding stronger audience connections.",
   },
 ],   
 metaData:{
@@ -419,109 +187,28 @@ c. save your smart product matching tracker
 Get list of events and all future identified events that our AI thinks would be a great fit for your requirement. Continue to train it to improve its recommendation to be in-line with your company focus`,
 usecases: [
   {
-    id: "restaurant",
-    topic: "Restaurants & QSR",
+    topic: "Sales & Biz Dev",
     content:
-      "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-    icon: <GTM_UseCase_1 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+      "Identify expos and trade shows where your products truly resonate, driving better lead generation.",
+    icon: <GTM_UseCase_2 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
   },
   {
-    id: "restaurant",
-    topic: "Risk Identification",
-    icon: <GTM_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-  },
-  {
-    id: "geomarketing",
-    topic: "Geo Marketing dummy",
-    icon: <GTM_UseCase_3 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
-  },
-  {
-    id: "eventprospecting",
-    topic: "Event Prospecting",
-    icon: <GTM_UseCase_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
-  },
-  {
-    id: "dynamicpricing",
-    topic: "Dynamic pricing",
-    icon: <GTM_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-  },
-  {
-    id: "workforcemanagement",
-    topic: "Workforce Managemant",
-    icon: <GTM_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
-  },
-  {
-    id: "inventoryplanning",
-    topic: "Inventory Planning",
+    topic: "Procurement",
     icon: <GTM_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
+      "Focus on relevant vendor fairs that match your procurement needs, improving supply chain relations.",
   },
   {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_8 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_9 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_10 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
+    topic: "Research & Consultancy",
     icon: <GTM_UseCase_11 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Analyze upcoming summits or niche conferences containing topics pertinent to your client research.",
   },
   {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Brand Agency",
+    icon: <GTM_UseCase_8 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_15 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Pair client products with thematically aligned gatherings to foster successful brand collaborations.",
   },
 ],   
 metaData:{
@@ -549,109 +236,28 @@ e. Set scoring criteria for ranking events
 f. See current upcoming event list and also get notified when new events match your prospect focus`,
 usecases: [
   {
-    id: "restaurant",
-    topic: "Restaurants & QSR",
+    topic: "Sales & Biz Dev",
     content:
-      "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-    icon: <GTM_UseCase_1 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+      " Link your CRM leads to offline events they attend, ensuring high-intent engagement and faster deal cycles.",
+    icon: <GTM_UseCase_2 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
   },
   {
-    id: "restaurant",
-    topic: "Risk Identification",
-    icon: <GTM_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-  },
-  {
-    id: "geomarketing",
-    topic: "Geo Marketing dummy",
+    topic: "Marketing",
     icon: <GTM_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
+      " Focus marketing efforts at events where your ideal audience or potential leads show up in person.",
   },
   {
-    id: "eventprospecting",
-    topic: "Event Prospecting",
-    icon: <GTM_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
-  },
-  {
-    id: "dynamicpricing",
-    topic: "Dynamic pricing",
-    icon: <GTM_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-  },
-  {
-    id: "workforcemanagement",
-    topic: "Workforce Managemant",
+    topic: "Human Resource Team",
     icon: <GTM_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
+      " Identify career fairs or conferences with potential job candidates already in your prospect pipeline.",
   },
   {
-    id: "inventoryplanning",
-    topic: "Inventory Planning",
-    icon: <GTM_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_9 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_11 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
+    topic: "Event Planners & M&A",
     icon: <GTM_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_15 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Discover potential partnership leads or acquisition targets by mapping prospects to relevant gatherings",
   },
 ],   
 metaData:{
@@ -679,109 +285,28 @@ d. If you have limited budget, just attend them as a delegate
 e. Your tracker would update you on events that could be good to acheive your goals`,
 usecases: [
   {
-    id: "restaurant",
-    topic: "Restaurants & QSR",
+    topic: "Human Resource Team",
     content:
-      "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
+      " Locate top talent at conferences and job fairs that match your hiring needs, fueling more personal interactions.",
     icon: <GTM_UseCase_1 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
   },
   {
-    id: "restaurant",
-    topic: "Risk Identification",
-    icon: <GTM_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Tech Team",
+    icon: <GTM_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+      "Zero in on developer meetups or hackathons that align with your stack, boosting DevRel success.",
   },
   {
-    id: "geomarketing",
-    topic: "Geo Marketing dummy",
-    icon: <GTM_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
-  },
-  {
-    id: "eventprospecting",
-    topic: "Event Prospecting",
-    icon: <GTM_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
-  },
-  {
-    id: "dynamicpricing",
-    topic: "Dynamic pricing",
-    icon: <GTM_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-  },
-  {
-    id: "workforcemanagement",
-    topic: "Workforce Managemant",
-    icon: <GTM_UseCase_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
-  },
-  {
-    id: "inventoryplanning",
-    topic: "Inventory Planning",
-    icon: <GTM_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_9 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_11 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
+    topic: "Manpower Agency",
     icon: <GTM_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      " Pinpoint event staffing opportunities by matching positions with relevant event designations or roles.",
   },
   {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_15 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Event Suppliers",
+    icon: <GTM_UseCase_9 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Find skilled labor or specialized contractors through gatherings that attract the right workforce profile.",
   },
 ],   
 metaData:{
@@ -807,109 +332,28 @@ c. Set criteria for geography, audience, event size, etc. to get best recommenda
 Speaker`,
 usecases: [
   {
-    id: "restaurant",
-    topic: "Restaurants & QSR",
+    topic: "Marketing",
     content:
-      "Food joints in periphery of event venues can better plan with forecasted demand. Use the data to optimize onground marketing, work force planning, inventory and offer to drive maximum traffic",
-    icon: <GTM_UseCase_1 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+      "Elevate brand leadership by securing speaker slots at targeted industry events before agendas lock in.",
+    icon: <GTM_UseCase_3 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
   },
   {
-    id: "restaurant",
-    topic: "Risk Identification",
-    icon: <GTM_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
-  },
-  {
-    id: "geomarketing",
-    topic: "Geo Marketing dummy",
-    icon: <GTM_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Events play a big role in driving footfall to restaurants. When event audience are coming from outside the city, its an opportunity to strategcially target the marketing to reach relevant eyeballs. From hoardings to foot on the ground promotion, event data intel can help with better planning time and geo sensitive marketing strategy.",
-  },
-  {
-    id: "eventprospecting",
-    topic: "Event Prospecting",
-    icon: <GTM_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Food joints or fine-dining, if a restaurant is located near event venue, footfall is significantly impacted by expected events and associated footfall. Having access to upcoming & forecasted events can help restaurants to propsect event planners to become food partners, offer special offers or market directly to the incoming audience. They can go a step deeper with prospecting large groups coming for the events to lock-in reservations. ",
-  },
-  {
-    id: "dynamicpricing",
-    topic: "Dynamic pricing",
-    icon: <GTM_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
-  },
-  {
-    id: "workforcemanagement",
-    topic: "Workforce Managemant",
+    topic: "Tech Team",
     icon: <GTM_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Most restaurants do not get booking months in advance. Majority of business is walk-ins. With clear view on upcoming events in their area of influence (geo boundry), they can get signals for what could lead to higher walk-ins and vic-e-versa. Without this data intel, they can end up with either being over staffed or under. Both these scenarios can lead to loss of business and revenue, eating into their profit margins.",
+      "Place your engineers or CTO on stage at key developer conferences, enhancing company credibility.",
   },
   {
-    id: "inventoryplanning",
-    topic: "Inventory Planning",
-    icon: <GTM_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_9 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_10 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_11 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
+    topic: "Event Planners & M&A",
     icon: <GTM_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Attract high-profile speakers (or place your own) when orchestrating large conferences or evaluating acquisitions.",
   },
   {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+    topic: "Influencers",
+    icon: <GTM_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
     content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
-  },
-  {
-    id: "traveladvisory",
-    topic: "Travel Advisory",
-    icon: <GTM_UseCase_15 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
-    content:
-      "Get warning signals around your location or in the city, in order to take early action on behalf of your guests. If there is expected traffic, you can send early warning or assistance to your guests. ",
+      "Expand personal reach by identifying events open to influencer panels or keynote opportunities.",
   },
 ], 
 metaData:{
