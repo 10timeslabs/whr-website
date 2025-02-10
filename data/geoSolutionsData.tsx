@@ -56,78 +56,91 @@ b. Consume data via an API to include in your internal prediction model`,
         content:
           "Local vs. inbound audience data helps refine rates.",
         icon: <Geo_UseCase_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Restaurants",
         icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Plan workforce & inventory around spikes.",
+        href: "/geo/usecases/restaurants",
       },
       {
         topic: "Activity Planners",
         icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Time offers to inbound tourists.",
+        href: "/geo/usecases/activity-planners",
       },
       {
         topic: "Aviation & Airport",
         icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Manage passenger surge.",
+        href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Transportation ",
         icon: <Geo_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Match supply for local commutes.",
+        href: "/geo/usecases/transportation",
       },
       {
         topic: "OOH Marketing",
         icon: <Geo_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Price ad spots for event crowds.",
+        href: "/geo/usecases/ooh-marketing",
       },
       {
         topic: "Retail Commerce",
         icon: <Geo_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Staff & stock precisely.",
+        href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Parking",
         icon: <Geo_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Adjust capacity & fees.",
+        href: "/geo/usecases/parking",
       },
       {
         topic: "DMO & DMC",
         icon: <Geo_UseCase_9 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Collaborate with local hospitality on inbound. ",
+        href: "/geo/usecases/dmo-dmc",
       },
       {
         topic: "Event Planners",
         icon: <Geo_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Choose event location/dates. ",
+        href: "/geo/usecases/event-planners",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
         icon: <Geo_UseCase_11 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Plan deliveries.",
+        href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
-        topic: "Local Govt",
+        topic: "Local Government",
         icon: <Geo_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Proactively manage big gatherings.",
+        href: "/geo/usecases/local-government",
       },
       {
         topic: "Enterprise",
         icon: <Geo_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Integrate into corporate planning.",
+        href: "/geo/usecases/enterprise",
       },
     ],
     metaData:{
@@ -152,42 +165,49 @@ b. Consume data via an API to include in your internal prediction model`,
         content:
           "Fine-tune room pricing.",
         icon: <Geo_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Activity Planners",
         icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Adjust package rates around peak visitor times.",
+        href: "/geo/usecases/activity-planners",
       },
       {
         topic: "Aviation & Airport",
         icon: <Geo_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Update flight fares or add capacity.",
+        href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Transportation ",
         icon: <Geo_UseCase_5 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Manage surge fares or deploy extra staff.",
+        href: "/geo/usecases/transportation",
       },
       {
         topic: "OOH Marketing",
         icon: <Geo_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           " Price premium ad space for upcoming event windows.",
+        href: "/geo/usecases/ooh-marketing",
       },
       {
         topic: "Parking",
         icon: <Geo_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Adjust fees for events with high car usage.",
+        href: "/geo/usecases/parking",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
         icon: <Geo_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Set dynamic delivery charges.",
+        href: "/geo/usecases/hyperlocal-quick-commerce",
       },
     ],
     metaData:{
@@ -214,38 +234,42 @@ b. Consume data via an API to include in your internal prediction model`,
         icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Target travelers near event venues.",
+        href: "/geo/usecases/restaurants",
       },
       {
         topic: "Activity Planners",
         icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Market experiences to inbound visitors.",
+        href: "/geo/usecases/activity-planners",
       },
-     
-    
       {
         topic: "OOH Marketing",
         icon: <Geo_UseCase_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Billboards, bus stands near expected footfall hotspots.",
+        href: "/geo/usecases/ooh-marketing",          
       },
       {
         topic: "Retail Commerce",
         icon: <Geo_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Activate pop-ups or local promotions.",
+        href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
         icon: <Geo_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Acquire new customers from event audiences.",
+        href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Enterprise",
         icon: <Geo_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Identify right time/place for brand marketing.",
+        href: "/geo/usecases/enterprise",
       },
     ],
     metaData:{
@@ -271,36 +295,42 @@ b. Consume data via an API to include in your internal prediction model`,
         content:
           "Target travelers near event venues.",
         icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        href: "/geo/usecases/restaurants",
       },
       {
         topic: "Activity Planners",
         icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Market experiences to inbound visitors.",
+        href: "/geo/usecases/activity-planners",
       },
       {
         topic: "OOH Marketing",
         icon: <Geo_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Billboards, bus stands near expected footfall hotspots.",
+        href: "/geo/usecases/ooh-marketing",
       },
       {
         topic: "Retail Commerce",
         icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           " Activate pop-ups or local promotions.",
+        href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
         icon: <Geo_UseCase_12 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           " Acquire new customers from event audiences.",
+        href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Enterprise",
         icon: <Geo_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Identify right time/place for brand marketing.",
+        href: "/geo/usecases/enterprise",
       },
     ],
     metaData:{
@@ -327,30 +357,35 @@ b. Consume data via an API to include in your internal prediction model`,
         content:
           "Plan linens/toiletries around surge nights.",
         icon: <Geo_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Restaurants",
         icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Purchase perishable goods matching footfall forecasts.",
+        href: "/geo/usecases/restaurants",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
         icon: <Geo_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Move inventory to local hubs.",
+        href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Aviation & Airport",
         icon: <Geo_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Prepare enough supplies for passenger inflow.",
+        href: "/geo/usecases/aviation-airport",          
       },
       {
         topic: "Retail Commerce",
         icon: <Geo_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Order extra items for peak or hold back for lean phases.",
+        href: "/geo/usecases/retail-commerce",
       },
     ],
     metaData:{
@@ -376,30 +411,35 @@ b. Consume data via an API to include in your internal prediction model`,
         content:
           "Spike in inbound can be a security/capacity risk.",
         icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Retail Commerce",
         icon: <Geo_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Event disruptions or crowd surges can hamper normal traffic or cause traffic jams. ",
+        href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Event Planners",
         icon: <Geo_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Stay alert for competing or clashing events, plus environment disruptions.",
+        href: "/geo/usecases/event-planners",
       },
       {
         topic: "Local Government",
         icon: <Geo_UseCase_13 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Manage security, traffic for multiple small events.",
+        href: "/geo/usecases/local-government",
       },
       {
         topic: "Enterprise",
         icon: <Geo_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Avoid travel risk for employees if a city is overcrowded or under strain.",
+        href: "/geo/usecases/enterprise",
       },
     ],
     metaData:{
@@ -425,24 +465,28 @@ b. Consume data via an API to include in your internal prediction model`,
         content:
           "Pre-warn guests of citywide gatherings.",
         icon: <Geo_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Aviation & Airport",
         icon: <Geo_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Provide flight/traffic advisories",
+        href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Event Planners",
         icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Alert delegates to disruptions or schedule shifts.",
+        href: "/geo/usecases/event-planners",
       },
       {
         topic: "Enterprise",
         icon: <Geo_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Keep traveling staff informed to avoid high-risk areas.",
+        href: "/geo/usecases/enterprise",
       },
     ],
     metaData:{
@@ -468,54 +512,63 @@ b. Consume data via an API to include in your internal prediction model`,
         content:
           "Staff up for big events.",
         icon: <Geo_UseCase_1 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Restaurants",
         icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Align servers/chefs with forecasted crowds.",
+        href: "/geo/usecases/restaurants",
       },
       {
         topic: "Activity Planners",
         icon: <Geo_UseCase_3 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Have enough guides/instructors.",
+        href: "/geo/usecases/activity-planners",
       },
       {
         topic: "Aviation & Airport",
         icon: <Geo_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Staff security/customs for spikes.",
+        href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Transportation ",
         icon: <Geo_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Bring in more drivers or vehicles.",
+        href: "/geo/usecases/transportation",
       },
       {
         topic: "Retail Commerce",
         icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Schedule more floor staff.",
+        href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Parking",
         icon: <Geo_UseCase_8 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
         content:
           "Hire extra valet attendants.",
+        href: "/geo/usecases/parking",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
         icon: <Geo_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Shift couriers to hot zones",
+        href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Local Government",
         icon: <Geo_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
         content:
           "Deploy more police or sanitation.",
+        href: "/geo/usecases/local-government",
       },
     
     ],
