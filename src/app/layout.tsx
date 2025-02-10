@@ -5,6 +5,9 @@ import { GeistSans } from "geist/font/sans";
 export const metadata: Metadata = {
   title: "Whr.ai",
   description: "Your website description here",
+  verification: {
+    google: "KcRKKC-PQ7QtLvpfL-QPyrWNfS7jwFrK3_UEwft9dKI", 
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
