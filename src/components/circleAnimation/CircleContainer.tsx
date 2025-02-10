@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import SparkleImg from "/public/sparkle.png";
 import CircleAnimation from './CircleAnimation';
@@ -23,21 +23,36 @@ const CircleContainer = () => {
   ]
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typing, setTyping] = useState(true);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Update heading and subheading every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
+  const startAutoRotation = useCallback(() => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+
+    intervalRef.current = setInterval(() => {
       setTyping(false);
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
         setTyping(true);
-      }); // Small delay before starting typing again
+      }, 0);
     }, 4000);
+  }, [data.length]);
 
-    return () => clearInterval(interval);
-  }, []);
+  useEffect(() => {
+    startAutoRotation();
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null; // Ensure ref is reset
+      }
+    };
+  }, [startAutoRotation]);
+
+  // **Handle Click Event**
+  const handleClick = useCallback((clickedIndex: number) => {
+    setCurrentIndex((9 - clickedIndex) % 9);
+    startAutoRotation(); // Restart Timer
+  }, [startAutoRotation]);
   const currentData = data[currentIndex];
-
 
   return (
     <div className="h-[542px] w-full overflow-hidden flex justify-center max-[1325px]:h-[500px] max-[775px]:h-[400px] max-[550px]:h-[430px]">
@@ -104,7 +119,7 @@ const CircleContainer = () => {
 
           <Image src={SparkleImg} alt="star" height={38} width={38} className='max-[775px]:hidden' />
         </div>
-        <div className='absolute bottom-[-60%] max-[775px]:bottom-[-30%]'><CircleAnimation currentIndex={currentIndex}/></div>
+        <div className='absolute bottom-[-60%] max-[775px]:bottom-[-30%]'><CircleAnimation currentIndex={currentIndex} handleClick={handleClick} /></div>
       </div>
     </div>
   )
