@@ -33,10 +33,10 @@ const CircleAnimation = ({ currentIndex, handleClick }: Props) => {
         // Function to check window width and adjust size
         const checkWindowSize = () => {
             if (window.innerWidth <= 775) {
-                setCircleSize(300); // Set size to 500x500 if screen width <= 1325px    
+                setCircleSize(350);
             }
             else if (window.innerWidth <= 1325) {
-                setCircleSize(500); // Set size to 500x500 if screen width <= 1325px
+                setCircleSize(500); 
             } else {
                 setCircleSize(600); // Otherwise, set size to 600x600
             }
@@ -82,8 +82,8 @@ const CircleAnimation = ({ currentIndex, handleClick }: Props) => {
                             transform: "translate(-50%, -50%)",
                         }}
                         animate={{
-                            width: circleSize === 300 ? isActive ? "100px" : "60px" : isActive ? "140px" : "90px", // Animate width
-                            height: circleSize === 300 ? isActive ? "100px" : "60px" : isActive ? "140px" : "90px", // Animate height
+                            width: circleSize === 350 ? isActive ? "100px" : "60px" : isActive ? "140px" : "90px", // Animate width
+                            height: circleSize === 350 ? isActive ? "100px" : "60px" : isActive ? "140px" : "90px", // Animate height
                         }}
                         transition={{
                             duration: .5, // Smooth transition duration
