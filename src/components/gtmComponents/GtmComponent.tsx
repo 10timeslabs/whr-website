@@ -65,12 +65,12 @@ const page = () => {
     <>
       <GeneralNavbar />
       <div className="relative w-full flex flex-col gap-12" style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }} >
-        {pathname.split("/")[2] === "product" &&
+        {(pathname.split("/")[2] === "product") || (pathname.split("/")[2] === "solutions") && (
           <>
             <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
             <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
           </>
-        }
+        )}
         {(pathname.split("/")[2] === "usecases") ? (
           // <div>
           //   <Image
@@ -252,13 +252,13 @@ const page = () => {
           </div>
         )}
         {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5 w-full flex items-center justify-center">
-        <VerticalScroll
-          mainHeading={
-            pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
-          }
-          dataToDisplay={dataToDisplay}
-        />
-      </div>}
+          <VerticalScroll
+            mainHeading={
+              pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+            }
+            dataToDisplay={dataToDisplay}
+          />
+        </div>}
         <CircleContainer />
         <div>
           <ProductsCarousel />

@@ -50,8 +50,10 @@ const UseCasesContainer = ({ text }: Props) => {
       className="min-h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden "
     // style={{ backgroundImage: `url(${GridImage.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
+      <div className='w-full h-full absolute bg-white top-0 -z-[40]'></div>
+      <Image src={GridImage} alt="grid" className="absolute -z-[30]" />
       <div
-        className="absolute right-0 top-[-150px] h-[700px] w-full -z-[10]"
+        className="absolute right-0 top-[-150px] h-[700px] w-full -z-[20]"
         style={{
           background: `
             radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 40%)`,
@@ -60,7 +62,6 @@ const UseCasesContainer = ({ text }: Props) => {
           justifyContent: "center",
         }}
       ></div>
-      <Image src={GridImage} alt="grid" className="absolute -z-[2]" />
       <Image
         src={CircleImage}
         alt="circle"
@@ -68,7 +69,7 @@ const UseCasesContainer = ({ text }: Props) => {
         height={690}
         unoptimized
         className="absolute top-[40%] 
-      -z-[1]"
+      -z-[10]"
       />
       <div className="w-[80%] flex items-start justify-between mt-10 max-[600px]:justify-center">
         <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />
@@ -96,21 +97,13 @@ const UseCasesContainer = ({ text }: Props) => {
               </button>
             </div>
           )}
-          {/* {pathName === "/geo" || pathName === "/gtm" ? (
-            <div>select your usecase to get started</div>
-          ) : (
-            ""
-          )} */}
-
           {pathName === "/" && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
             USECASES
           </div>
-          {/* <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">USECASES</div> */}
         </div>
         <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />
       </div>
-
 
       {/* <> */}
       <div className='w-full flex gap-3 justify-center flex-wrap mt-10'>
