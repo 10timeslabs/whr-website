@@ -111,7 +111,8 @@ const Footer = () => {
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
                 <Link
-                  href="https://docs.google.com/document/d/1pq26xZBAgzSbn_dVSazrEv4TiubKMuOU78ctDdaPXT8/edit?usp=sharing"
+                  // href="https://docs.google.com/document/d/1pq26xZBAgzSbn_dVSazrEv4TiubKMuOU78ctDdaPXT8/edit?usp=sharing"
+                  href="/terms-of-service"
                   target="_blank"
                 >
                   Terms of Services
@@ -119,7 +120,8 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://docs.google.com/document/d/15lxeZeZnYK3dKHwGZqC5nMJhCJWwvCgCrbv2sxKdk2A/edit?usp=sharing"
+                  // href="https://docs.google.com/document/d/15lxeZeZnYK3dKHwGZqC5nMJhCJWwvCgCrbv2sxKdk2A/edit?usp=sharing"
+                  href="/privacy-policy"
                   target="_blank"
                 >
                   Privacy Policy
