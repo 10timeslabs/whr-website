@@ -1,13 +1,8 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import SparkleImg from "/public/sparkle.png";
 import Image from 'next/image';
 import AutoScroll from '../AutoScroll';
-import AiImage from '/public/Products/aiassistant.png'
-import ModelImage from '/public/Products/model_enrichment.png'
-import ResearchImage from '/public/Products/Research.png'
-// import TrendsImage from '/public/Products/trends_common.png'
-import TrendsImg from '/public/Products/trends_carousel.png'
 import Aiicon from '/public/Products/aiicon.svg'
 import Modelicon from '/public/Products/modelicon.svg'
 import Researchicon from '/public/Products/researchicon.svg'
@@ -31,6 +26,7 @@ const ProductsCarousel = () => {
 
     const [currentIndex, setCurrentIndex] = useState<number>(0)
     const [bottomValue, setBottomValue] = useState(data[currentIndex].bottom); // Only for this first data value in array
+    const intervalRef = useRef<NodeJS.Timeout | null>(null);
     useEffect(() => {
         const updateBottomValue = () => {
             if (window.innerWidth <= 650 && currentIndex === 0) {
@@ -48,20 +44,32 @@ const ProductsCarousel = () => {
         return () => window.removeEventListener("resize", updateBottomValue); // Cleanup
     }, []);
 
-    // Auto-change index every 2 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Loop back to 0
+    // Function to start auto-rotation
+    const startAutoRotation = () => {
+        if (intervalRef.current) clearInterval(intervalRef.current); // Clear any existing timer
+        intervalRef.current = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
         }, 3000);
-
-        return () => clearInterval(interval); // Cleanup on unmount
-    }, []);
-    const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length); // Loop to last item if at start
     };
 
+    // Effect to start rotation when component mounts
+    useEffect(() => {
+        startAutoRotation(); // Start auto-rotation on mount
+        return () => {
+            if (intervalRef.current) clearInterval(intervalRef.current); // Cleanup on unmount
+        };
+    }, []);
+
+    // Function to handle previous click
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+        startAutoRotation(); // Restart auto-rotation after manual change
+    };
+
+    // Function to handle next click
     const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Loop back to 0
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+        startAutoRotation(); // Restart auto-rotation after manual change
     };
 
     return (
