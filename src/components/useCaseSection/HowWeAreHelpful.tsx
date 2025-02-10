@@ -8,6 +8,8 @@ import RightArrow from '/public/RightArrow.svg'
 import { gtmUsecasesjsonData } from "../../../data/gtmUsecasesData";
 import { geoUsecasesjsonData } from "../../../data/geoUsecasesData";
 import { usePathname } from "next/navigation";
+import ResearchImage from '/public/landingPagesSolutionImages/Research.png'
+import ProblemCard from '../realWorldProblem/ProblemCard';
 
 const HowWeAreHelpful = () => {
 	const pathname = usePathname();
@@ -45,7 +47,17 @@ const HowWeAreHelpful = () => {
 				<div className='text-[64px] leading-[70px] max-[1000px]:text-[48px] max-[1000px]:leading-[54px] max-[730px]:text-[40px] max-[730px]:leading-[50px]'>{how_helpfulData?.heading}</div>
 				<div className='text-[var(--secondary-text-color)] text-[20px] max-[730px]:text-[16px]'>{how_helpfulData?.subheading}</div>
 			</div>
-			<div className='relative w-[55%] flex flex-col items-center min-h-[240px] max-[1000px]:w-[60%] max-[900px]:w-full max-[900px]:mt-7 max-[900px]:justify-center' style={{ backgroundImage: `url(${GridImageTwo.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+			<div className="w-[55%] grid grid-cols-2 gap-4 max-[1000px]:mt-8 max-[700px]:grid-cols-1">
+				{carouselData && carouselData.map((problem, key) => (
+					<ProblemCard
+						key={key}
+						icon={problem.icon}
+						heading={problem.heading}
+						subheading={problem.points.join(".")}
+					/>
+				))}
+			</div>
+			{/* <div className='relative w-[55%] flex flex-col items-center min-h-[240px] max-[1000px]:w-[60%] max-[900px]:w-full max-[900px]:mt-7 max-[900px]:justify-center' style={{ backgroundImage: `url(${GridImageTwo.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
 				<div className='absolute left-[-3%] top-[50%] w-[40px] h-[40px] flex items-center justify-center bg-white rounded-[40px] drop-shadow-[2px_4px_6px_rgba(0,0,0,0.20)] cursor-pointer max-[575px]:h-[25px] max-[575px]:w-[25px]' onClick={handlePrev}>
 					<Image src={LeftArrow} alt='left' />
 				</div>
@@ -66,7 +78,7 @@ const HowWeAreHelpful = () => {
 				<div className='absolute right-[-3%] top-[50%] w-[40px] h-[40px] flex items-center justify-center bg-white rounded-[40px] drop-shadow-[2px_4px_6px_rgba(0,0,0,0.20)] cursor-pointer max-[575px]:h-[25px] max-[575px]:w-[25px]' onClick={handleNext}>
 					<Image src={RightArrow} alt='right' />
 				</div>
-			</div>
+			</div> */}
 		</div>
 	)
 }

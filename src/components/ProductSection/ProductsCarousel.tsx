@@ -18,8 +18,8 @@ const ProductsCarousel = () => {
     const researchImage = "https://c1.10times.com/whr/gtm-geo/static/image/product/Research.png"
     const data = [
         { topic: "SEARCH", heading: "Visualisation Engine", subheading: "Discover Insights Seamlessly with List, Map, and Calendar Views.", bottom: "-20%", icon: Researchicon },
-        { topic: "SMART TRACKERS", heading: "Deploy Agents", subheading: "Activate intelligence with agents that gather and deliver precise data.", bottom: "10%", icon: Trackericon },
-        { topic: "DATA MODELLING", heading: "Model Enrichment", subheading: "Transform raw data into actionable insights with advanced enrichment capabilities.", bottom: "-10%", icon: Modelicon },
+        { topic: "SMART TRACKERS", heading: "Deploy Agents", subheading: "Activate intelligence with agents that gather and deliver precise data.", bottom: "10%", icon: Modelicon },
+        { topic: "DATA MODELLING", heading: "Model Enrichment", subheading: "Transform raw data into actionable insights with advanced enrichment capabilities.", bottom: "-10%", icon: Trackericon },
         { topic: "TRENDS", heading: "Identify Trends", subheading: "Uncover Patterns, Predict Future Movements, and Stay Ahead of the Curve.", bottom: "0%", icon: Trendsicon },
         { topic: "CONSULTING", heading: "Consultant Service", subheading: "Get Tailored Insights to Answer Tough Questions and Drive Strategic Decisions", bottom: "-3%", icon: Aiicon },
     ]

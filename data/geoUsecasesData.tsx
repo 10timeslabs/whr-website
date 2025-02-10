@@ -14,6 +14,11 @@ import ManPower from "/public/geo_usecases_banners/geo_usecase_manpower.jpg";
 import EventPlanner from "/public/geo_usecases_banners/geo_useacase_eventplanner.jpg";
 
 import CorporateAndBrand from "/public/geo_usecases_banners/geo_usecase_corporate & brands .jpg";
+import Aiicon from '/public/Products/aiicon.svg'
+import Modelicon from '/public/Products/modelicon.svg'
+import Researchicon from '/public/Products/researchicon.svg'
+import Trackericon from '/public/Products/trackericon.svg'
+import Trendsicon from '/public/Products/trendsicon.svg'
 
 import {
   Geo_Soln_1,
@@ -58,26 +63,31 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Pinpoint relevant events up to a year ahead, helping you anticipate demand and plan inventory."]
+          points: ["Pinpoint relevant events up to a year ahead, helping you anticipate demand and plan inventory."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: [" Measure event impact using metrics like Inbound Score to refine pricing strategies and optimize staff allocation."]
+          points: ["Measure event impact using metrics like Inbound Score to refine pricing strategies and optimize staff allocation."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
           points: ["Monitor competitor catchment areas or your own properties for event-driven changes and get notified in real time."
-          ]
+          ],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
           points: ["Visualize how events affect bookings over specific timeframes or geographies, aiding strategic planning."
-          ]
+          ],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Receive proactive updates on upcoming events that could influence occupancy, reducing guesswork."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -132,16 +142,16 @@ export const geoUsecasesjsonData = [
           "Besides the actual inventory of rooms and booking, any accomodation have a long list of inventory that needs to be maintained to serve their guests. Having insight of expected demand onground, specially major spikes, can help take early measures to beat any disruptions",
         href: "/geo/solutions/inventory-planning",
       },
-      {
-        id: "strategic_planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Besides unlocking value for sales, marketing & operation team, event intel is highly critical to be factored in by teams working on expansion or acquisition strategy. Use onground demand intel to identify geographies with higher demand than supply or a growing demand. Identify strategic locations closer to hubs for gathering or venues, that would give your hotel an edge. ",
-          href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "strategic_planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Besides unlocking value for sales, marketing & operation team, event intel is highly critical to be factored in by teams working on expansion or acquisition strategy. Use onground demand intel to identify geographies with higher demand than supply or a growing demand. Identify strategic locations closer to hubs for gathering or venues, that would give your hotel an edge. ",
+      //     href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Hotel & Lodging Usecase - whr.ai GEO",
@@ -173,26 +183,31 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Discover both major and minor events that could suddenly boost foot traffic, allowing you to prepare."]
+          points: ["Discover both major and minor events that could suddenly boost foot traffic, allowing you to prepare."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Gauge economic impact to forecast staffing needs and manage inventory effectively."]
+          points: ["Gauge economic impact to forecast staffing needs and manage inventory effectively."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
           points: ["Keep tab on event-prone areas or competitor locales, ensuring you don’t miss sudden spikes."
-          ]
+          ],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
           points: ["Track patterns of increased footfall over time to fine-tune resource allocation."
-          ]
+          ],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Get automated alerts on new or changing events, so you’re never caught off guard."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -251,16 +266,16 @@ export const geoUsecasesjsonData = [
           "Unlike a hotel, where the inventory can be a lot more non-perishable, a food joint business is highly suseptable to change in demand that isnt taken into consideration. With signals around volatity in demand, that would not be considered medium or normal expected level, can help flag potential scenario of inventory glut or over supply. Using the demand intel in the internal models, restaurants can take preventive measures that can minimize loss linked to inventory.  ",
         href: "/geo/solutions/inventory-planning",
       },
-      {
-        id: "strategic_planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Restaurant business requires constant flow of footfall and getting located near by growing event hotspots is a jackpot. Strategy team and consultants helping a restaurant identify new location to grow, can leverage event data trend and geo mapping to narrow down on great locations for expansion",
-          href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "strategic_planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Restaurant business requires constant flow of footfall and getting located near by growing event hotspots is a jackpot. Strategy team and consultants helping a restaurant identify new location to grow, can leverage event data trend and geo mapping to narrow down on great locations for expansion",
+      //     href: "/geo/solutions/inventory-planning",
+      // },
       // {
       //   id: "traveladvisory",
       //   topic: "Travel Advisory",
@@ -301,26 +316,31 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Identify tourist-heavy events months in advance to schedule activities and promotions."]
+          points: ["Identify tourist-heavy events months in advance to schedule activities and promotions."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Understand inbound vs. local attendance to tailor marketing and offerings."]
+          points: ["Understand inbound vs. local attendance to tailor marketing and offerings."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
           points: ["Keep a close watch on events central to your target destinations or themes."
-          ]
+          ],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
           points: ["Analyze how specific events drive tourist volumes over time, guiding better itinerary planning."
-          ]
+          ],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Get quick recommendations on which events to prioritize for maximum engagement and revenue."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -385,16 +405,16 @@ export const geoUsecasesjsonData = [
       //   content:
       //     "Unlike a hotel, where the inventory can be a lot more non-perishable, a food joint business is highly suseptable to change in demand that isnt taken into consideration. With signals around volatity in demand, that would not be considered medium or normal expected level, can help flag potential scenario of inventory glut or over supply. Using the demand intel in the internal models, restaurants can take preventive measures that can minimize loss linked to inventory.  ",
       // },
-      {
-        id: "strategic_planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Restaurant business requires constant flow of footfall and getting located near by growing event hotspots is a jackpot. Strategy team and consultants helping a restaurant identify new location to grow, can leverage event data trend and geo mapping to narrow down on great locations for expansion",
-          href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "strategic_planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Restaurant business requires constant flow of footfall and getting located near by growing event hotspots is a jackpot. Strategy team and consultants helping a restaurant identify new location to grow, can leverage event data trend and geo mapping to narrow down on great locations for expansion",
+      //     href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Activity Planners Usecase - whr.ai GEO",
@@ -426,26 +446,31 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Spot upcoming holidays, large gatherings, and weather-related events that could impact flight demand."]
+          points: ["Spot upcoming holidays, large gatherings, and weather-related events that could impact flight demand."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Evaluate inbound passenger flows or potential volatility for better route planning and resource allocation."]
+          points: ["Evaluate inbound passenger flows or potential volatility for better route planning and resource allocation."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
           points: ["Monitor critical travel corridors or competitor airports for sudden event-driven changes."
-          ]
+          ],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
           points: ["Identify time-based passenger volume shifts to optimize staffing and scheduling."
-          ]
+          ],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Receive instant notifications about new events or changes in travel trends, enabling proactive operations."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -500,17 +525,16 @@ export const geoUsecasesjsonData = [
           "No one likes to be at an airport and have to stand in long line for security checks or deal with dirty restrooms. If multiple events happen to happening in a single city at the same time, driving high inbound traffic, it can lead to an unexpected stress on airport manpower. This can be avoided with demand intel for forecasted and upcoming events. ",
         href: "/geo/solutions/workforce-management",
       },
-      {
-        id: "strategic_planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "If a billion people are forecasted to travel for events every year, strategy team and investors in the aviation space need data intel for which new destinations they should be flying to or building airports for. To decide they need past and future trends on events and how much inbound traffic they bring in and possible from which geographies. Unlock event intel to mix with other data intel to make your strategy more sound.",
-          href: "/geo/solutions/inventory-planning",
-        // href: "/geo/solutions/demand-forecasting",
-      },
+      // {
+      //   id: "strategic_planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "If a billion people are forecasted to travel for events every year, strategy team and investors in the aviation space need data intel for which new destinations they should be flying to or building airports for. To decide they need past and future trends on events and how much inbound traffic they bring in and possible from which geographies. Unlock event intel to mix with other data intel to make your strategy more sound.",
+      //     href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Aviation & Airport Usecase - whr.ai GEO",
@@ -542,26 +566,31 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Spot major conferences, trade shows, or industry gatherings early, aligning travel and budget plans."]
+          points: ["Spot major conferences, trade shows, or industry gatherings early, aligning travel and budget plans."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Gauge event impact and volatility, aiding in risk management and ROI optimization."]
+          points: ["Gauge event impact and volatility, aiding in risk management and ROI optimization."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
           points: ["Follow relevant locations and link with geographies where you team is traveling to access risk."
-          ]
+          ],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
           points: ["Pinpoint peak travel periods or anything that could cause an issue around popular location your team travel to."
-          ]
+          ],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Link your company travel itinerary to automatically receive alerts any forecasted volatility in specific geo."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -637,26 +666,31 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Pinpoint events that create surges in demand, giving you time to adjust fleet and routes"]
+          points: ["Pinpoint events that create surges in demand, giving you time to adjust fleet and routes"],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Measure the potential magnitude of ride requests for better surge management."]
+          points: ["Measure the potential magnitude of ride requests for better surge management."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
           points: ["Track key hubs or venues to stay updated on expected passenger volume."
-          ]
+          ],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
           points: ["Observe daily, weekly, or seasonal patterns triggered by various events, aiding forecasting."
-          ]
+          ],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Get real-time alerts when last-minute event changes could affect supply and demand."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -711,16 +745,16 @@ export const geoUsecasesjsonData = [
           "Inventory management for transportation deals with availability of buses, cabs, metros, railways, etc. and how its utlized across different routes in conjunction with expected demand. Without foresight into change in demand in advance, managing the availability in different city zones is difficult. Unlike factors which change slowly like economic growth, population density, urbanisation, events are temporary, but the impact is significant. Having access to forecasted onground event demand can help better utilize available inventory. ",
         href: "/geo/solutions/inventory-planning",
       },
-      {
-        id: "strategic_planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Observing past and forecasted event demand, helps staretgy teams in companies involved with transportation to design their strategy. This includes but not limited to identifing need for more automotive in specfic geography, expanding or opening new geographies to grow the business or identifying ways to best utilize available inventory to improve profitibility.",
-          href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "strategic_planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Observing past and forecasted event demand, helps staretgy teams in companies involved with transportation to design their strategy. This includes but not limited to identifing need for more automotive in specfic geography, expanding or opening new geographies to grow the business or identifying ways to best utilize available inventory to improve profitibility.",
+      //     href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Transportation Usecase - whr.ai GEO",
@@ -752,24 +786,29 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Identify where and when significant events will occur, guiding your ad placement or space monetization strategies."]
+          points: ["Identify where and when significant events will occur, guiding your ad placement or space monetization strategies."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Assess an event’s audience size and spending power to price inventory effectively."]
+          points: ["Assess an event’s audience size and spending power to price inventory effectively."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
-          points: ["Follow specific venues or competitor ad spaces for timely market insights."]
+          points: ["Follow specific venues or competitor ad spaces for timely market insights."],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
-          points: ["Map overlapping events across geographies for strategic ad positioning."]
+          points: ["Map overlapping events across geographies for strategic ad positioning."],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: [" Receive quick insights on which events could maximize ROI, simplifying decision-making."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -814,16 +853,16 @@ export const geoUsecasesjsonData = [
           "As out of home advertising is going through a digital rennaisance of its own, ther is huge leverage to enable dynamic pricing. While digitalization could shink the lock-in period from months to minutes, knowing forecasted event demand and expected footfall, can help better price future inventory and not having information descripency with the demand side (which might know about some major upcoming events in future). ",
         href: "/geo/solutions/dynamic-pricing",
       },
-      {
-        id: "Strategic Planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Out of home advertising companies trying to increase their inventory or evaluate the actual value of the location, need reliable event data in advance. Strategic teams can use Eventeli to spot achieve their goals to spot undervalued locations and also negotiate better rates in their favor.  ",
-          href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "Strategic Planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Out of home advertising companies trying to increase their inventory or evaluate the actual value of the location, need reliable event data in advance. Strategic teams can use Eventeli to spot achieve their goals to spot undervalued locations and also negotiate better rates in their favor.  ",
+      //     href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "OOH Marketing Usecase - whr.ai GEO",
@@ -855,26 +894,31 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Know which upcoming events might drive sudden foot traffic or online sales, helping plan inventory."]
+          points: ["Know which upcoming events might drive sudden foot traffic or online sales, helping plan inventory."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Quantify potential revenue impact for better resource allocation."]
+          points: ["Quantify potential revenue impact for better resource allocation."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
           points: ["Monitor high-footfall areas around key event or venues to get notifications"
-          ]
+          ],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
           points: ["Spot long-term fluctuations in event-driven traffic and adapt your sales strategy."
-          ]
+          ],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Stay updated on evolving event details to prevent stock-outs or missed opportunities."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -929,16 +973,16 @@ export const geoUsecasesjsonData = [
           "If a store is located near an event venue or within busy areas, it gets impacted by event of any form. From weather to politican unrest to planned events. Having onground demand intel forecasting would help with better inventory planning to ensure business is not lost due to stock out and prevent loss due to over stocking. ",
         href: "/geo/solutions/inventory-planning",
       },
-      {
-        id: "Strategic Planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "If a store wants more footfall or be close to certain flow of new traffic, identifying such spots is strategic for retail commerce business. Events happen to be an extremely unique and valuable source of this audience and having this data can help in store location change, expansion and revenue forecasting.",
-        href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "Strategic Planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "If a store wants more footfall or be close to certain flow of new traffic, identifying such spots is strategic for retail commerce business. Events happen to be an extremely unique and valuable source of this audience and having this data can help in store location change, expansion and revenue forecasting.",
+      //   href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Retail Commerce Usecase - whr.ai GEO",
@@ -970,24 +1014,29 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["See which future events could spike parking demand or lead to unexpected vacancies."]
+          points: ["See which future events could spike parking demand or lead to unexpected vacancies."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Gauge volatility to optimize pricing and capacity based on attendance figures."]
+          points: ["Gauge volatility to optimize pricing and capacity based on attendance figures."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
-          points: ["Keep tabs on competing lots or targeted venues to stay ahead of demand changes."]
+          points: ["Keep tabs on competing lots or targeted venues to stay ahead of demand changes."],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
-          points: ["Track usage patterns and demand fluctuations over time, informing revenue models."]
+          points: ["Track usage patterns and demand fluctuations over time, informing revenue models."],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Get automated alerts for new or altered events, refining daily and long-term parking strategies."
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -1032,16 +1081,16 @@ export const geoUsecasesjsonData = [
           "Knowing potential demand forecast can help with growing parking lot space to accomodate demand that could be volatile but lucrative. With Eventeli onground demand intel, parking space business can identify opportunity for better managing their inventory or finding additional temporary inventory for days demand is forecasted to be higher",
         href: "/geo/solutions/inventory-planning",
       },
-      {
-        id: "Strategic Planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "For parking business to grow, expension team has to be constantly looking for either new lots or expending their existing space with technology. Having onground demand intel in the projection model can help estimate time to profitability for any longterm investment. ",
-        href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "Strategic Planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "For parking business to grow, expension team has to be constantly looking for either new lots or expending their existing space with technology. Having onground demand intel in the projection model can help estimate time to profitability for any longterm investment. ",
+      //   href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Parking Usecase - whr.ai GEO",
@@ -1073,24 +1122,29 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Aggregate data on events that will draw visitors to your destination, streamlining your marketing efforts."]
+          points: ["Aggregate data on events that will draw visitors to your destination, streamlining your marketing efforts."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Quickly interpret economic and inbound impacts to shape promotional campaigns."]
+          points: ["Quickly interpret economic and inbound impacts to shape promotional campaigns."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
-          points: ["Monitor your city’s event pipeline, adjusting itineraries and promotions as needed."]
+          points: ["Monitor your city’s event pipeline, adjusting itineraries and promotions as needed."],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
-          points: ["Reveal seasonal or regional travel patterns, refining your destination’s offerings."]
+          points: ["Reveal seasonal or regional travel patterns, refining your destination’s offerings."],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
           points: ["Get automated notifications for important events and changes, ensuring proactive engagement with prospective visitors"
-          ]
+          ],
+          icon : Aiicon
         }
       ]
     },
@@ -1125,16 +1179,16 @@ export const geoUsecasesjsonData = [
           "Event participation is on the rise. With people wanting more expereinces and human connections, its becoming a leading factor in driving business for a destination. For destination management companies, having access to upcoming & forecasted events data can help them with early partnerships. Additionally, this data across other competing geographies can help them win more business for their destination for events that have not finalized their destination. ",
         href: "/geo/solutions/event-prospecting",
       },
-      {
-        id: "Strategic Planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Destinations are always competing for a share of the potential business. In order to grow, stratregy teams need to explore which destinations are growing, upcoming and would become a threat to their market share. Additionally, they can monitor which destination is on a decline and how they can use this information to their advantage. ",
-        href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "Strategic Planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Destinations are always competing for a share of the potential business. In order to grow, stratregy teams need to explore which destinations are growing, upcoming and would become a threat to their market share. Additionally, they can monitor which destination is on a decline and how they can use this information to their advantage. ",
+      //   href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "DMO & DMC Usecase - whr.ai GEO",
@@ -1167,23 +1221,28 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Identify all citywide or nearby events that could influence foot traffic to your venue."]
+          points: ["Identify all citywide or nearby events that could influence foot traffic to your venue."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Evaluate the size and potential impact of each event, guiding operational plans and revenue strategies."]
+          points: ["Evaluate the size and potential impact of each event, guiding operational plans and revenue strategies."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
-          points: [" Monitor competitor venues or strategic events and get alerts on notable changes."]
+          points: [" Monitor competitor venues or strategic events and get alerts on notable changes."],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
-          points: ["Understand how simultaneous events or disruptions affect profitability, enabling proactive measures."]
+          points: ["Understand how simultaneous events or disruptions affect profitability, enabling proactive measures."],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
-          points: [" Automate notifications on emerging challenges or opportunities, helping you stay ahead."]
+          points: [" Automate notifications on emerging challenges or opportunities, helping you stay ahead."],
+          icon : Aiicon
         }
       ]
     },
@@ -1218,16 +1277,16 @@ export const geoUsecasesjsonData = [
           "In a perfect scenario a venue would be booked 365 days of the year, but identifying and converting events is tedious work. It starts with prospecting and having an engine that makes it easy to identify, track and reach out to the potential event planners. Waiting till event dates are announced is often too late, as venues get dedicated before date announcement. In such a scenario, a venue needs access to forecasted events basis historicals and patters both in their own geography and that in competing geo-locations. ",
         href: "/geo/solutions/event-prospecting",
       },
-      {
-        id: "Strategic Planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "If a venue is looking to grow, it can explore strategic geographies with growing demand forecast or expand existing facilities. These are big ticket decisions and any data that can sustantiate their hypothesis can be extremely valuable in furthering the research efforts. ",
-        href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "Strategic Planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "If a venue is looking to grow, it can explore strategic geographies with growing demand forecast or expand existing facilities. These are big ticket decisions and any data that can sustantiate their hypothesis can be extremely valuable in furthering the research efforts. ",
+      //   href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Venue Operators Usecase - whr.ai GEO",
@@ -1259,23 +1318,28 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Pinpoint large and small on-ground events that could disrupt deliveries or drive sudden local demand."]
+          points: ["Pinpoint large and small on-ground events that could disrupt deliveries or drive sudden local demand."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Assess which events might significantly alter traffic flow or consumer behavior."]
+          points: ["Assess which events might significantly alter traffic flow or consumer behavior."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
-          points: ["Follow high-impact areas or competitor zones for immediate alerts."]
+          points: ["Follow high-impact areas or competitor zones for immediate alerts."],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
-          points: ["Observe spikes and dips over time, aiding in inventory and workforce planning."]
+          points: ["Observe spikes and dips over time, aiding in inventory and workforce planning."],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
-          points: ["Get instant notifications on event-related disruptions or surges, keeping fulfillment efficient."]
+          points: ["Get instant notifications on event-related disruptions or surges, keeping fulfillment efficient."],
+          icon : Aiicon
         }
       ]
     },
@@ -1330,16 +1394,16 @@ export const geoUsecasesjsonData = [
           "With growing adoption of hyperlocal & quick commerce across major citities, when there is movement of demand from one area to another, or there is an unexpected increase in external demand, it can lead to inventory issues. Out of stock inventory leads to both business loss and poor customer experience. With onground event demand intel in the mix of other variables, quick commerce business can better strategies their inventory decisions. ",
         href: "/geo/solutions/inventory-planning",
       },
-      {
-        id: "Strategic Planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Hyperlocal & quick commerce business need to identify areas to expand. Having onground demand from events can be a good indicator for growth potential in a city.  Additionally, to provide seamless experience to their customers, they want to identify destination most visited by their core audience to get signals for city/country expansion.",
-        href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "Strategic Planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Hyperlocal & quick commerce business need to identify areas to expand. Having onground demand from events can be a good indicator for growth potential in a city.  Additionally, to provide seamless experience to their customers, they want to identify destination most visited by their core audience to get signals for city/country expansion.",
+      //   href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Hyperlocal & Quick Commerce Usecase - whr.ai GEO",
@@ -1371,23 +1435,28 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Consolidate data on events, from expos to parades, festivals, and even political rallies to plan city services more effectively."]
+          points: ["Consolidate data on events, from expos to parades, festivals, and even political rallies to plan city services more effectively."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Gauge risk or economic benefits, helping prioritize resource allocation."]
+          points: ["Gauge risk or economic benefits, helping prioritize resource allocation."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
-          points: ["Keep watch on recurring or high-impact events, ensuring prompt updates for civic planning."]
+          points: ["Keep watch on recurring or high-impact events, ensuring prompt updates for civic planning."],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
-          points: ["See how events overlap across the city and adjust transport, security, and other services accordingly."]
+          points: ["See how events overlap across the city and adjust transport, security, and other services accordingly."],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
-          points: ["Stay informed on new permits or last-minute changes, promoting proactive rather than reactive governance."]
+          points: ["Stay informed on new permits or last-minute changes, promoting proactive rather than reactive governance."],
+          icon : Aiicon
         }
       ]
     },
@@ -1422,16 +1491,16 @@ export const geoUsecasesjsonData = [
           "Onground police and other amenities provided by local government can be under stress or lack efficiency due to volatility in inbound traffic to a city. This is extremely relevant for citiies considered tourists hubs and areas that have concentration of event venues and footfall. With forecasted event demand data and estimates on inbound traffic, local authorities can manage their workforce more efficiently and creatively. From traffic police to emergency prepardnes to street cleaning, much can be improved with better data modeling",
         href: "/geo/solutions/workforce-management",
       },
-      {
-        id: "Strategic Planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          " e best the city has to offer. To unlock this intel, authorities need onground event data and filter out the noise. ",
-        href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "Strategic Planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     " e best the city has to offer. To unlock this intel, authorities need onground event data and filter out the noise. ",
+      //   href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Local Government Usecase - whr.ai GEO",
@@ -1461,23 +1530,28 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Discover upcoming events that require specific staffing, giving you time to recruit and schedule."]
+          points: ["Discover upcoming events that require specific staffing, giving you time to recruit and schedule."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Measure an event’s potential size and impact, informing manpower forecasts."]
+          points: ["Measure an event’s potential size and impact, informing manpower forecasts."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
-          points: ["Track priority regions or clients with recurring staffing needs, staying ahead of demand shifts."]
+          points: ["Track priority regions or clients with recurring staffing needs, staying ahead of demand shifts."],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
-          points: ["Identify recurring patterns or seasonal demand surges, streamlining workforce planning."]
+          points: ["Identify recurring patterns or seasonal demand surges, streamlining workforce planning."],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
-          points: ["Automatically receive updates on new or changed events, reducing last-minute chaos and improving service delivery."]
+          points: ["Automatically receive updates on new or changed events, reducing last-minute chaos and improving service delivery."],
+          icon : Aiicon
         }
       ]
     },
@@ -1582,23 +1656,28 @@ export const geoUsecasesjsonData = [
       content: [
         {
           heading: "Advanced Search",
-          points: ["Uncover overlapping or conflicting events, helping you secure the best dates and venues."]
+          points: ["Uncover overlapping or conflicting events, helping you secure the best dates and venues."],
+          icon : Researchicon
         },
         {
           heading: "Smart Scores",
-          points: ["Gauge attendance and economic impact to optimize planning and budgeting."]
+          points: ["Gauge attendance and economic impact to optimize planning and budgeting."],
+          icon : Modelicon
         },
         {
           heading: "Custom Trackers",
-          points: ["Keep track of multiple venues, dates, and potential scheduling shifts."]
+          points: ["Keep track of multiple venues, dates, and potential scheduling shifts."],
+          icon : Trackericon
         },
         {
           heading: "Trend Visualizer",
-          points: ["Compare different timeframes or locations to see where attendance peaks."]
+          points: ["Compare different timeframes or locations to see where attendance peaks."],
+          icon : Trendsicon
         },
         {
           heading: "AI Assist",
-          points: ["Receive real-time updates on newly announced events or scheduling changes, enabling agility in planning."]
+          points: ["Receive real-time updates on newly announced events or scheduling changes, enabling agility in planning."],
+          icon : Aiicon
         }
       ]
     },
@@ -1623,16 +1702,16 @@ export const geoUsecasesjsonData = [
           "Once events are scheduled and venues booked, its often impossible change the dates. Not knowing of potential change in onground reality can lead to major business losses. With Eventeli risk identifier, event planners can take action in advance. From notifying participants about heather or weather warning, to making stay & travel arrangments in scenario of high spike in demand. ",
         href: "/geo/solutions/risk-identification",
       },
-      {
-        id: "Strategic Planning",
-        topic: "Strategic Planning",
-        icon: (
-          <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
-        ),
-        content:
-          "Any event planner looking to grow their event business, needs to identify new geographies and demand to identify opportunities to expand. From taking the event ip to another geography to launching another event in the same city. Having onground demand intel data, enriched with estimated audience size, audience demographics and other tags, can unlock a tressure trove of opportunities. ",
-        href: "/geo/solutions/inventory-planning",
-      },
+      // {
+      //   id: "Strategic Planning",
+      //   topic: "Strategic Planning",
+      //   icon: (
+      //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
+      //   ),
+      //   content:
+      //     "Any event planner looking to grow their event business, needs to identify new geographies and demand to identify opportunities to expand. From taking the event ip to another geography to launching another event in the same city. Having onground demand intel data, enriched with estimated audience size, audience demographics and other tags, can unlock a tressure trove of opportunities. ",
+      //   href: "/geo/solutions/inventory-planning",
+      // },
     ],
     metaData: {
       title: "Event Planners Usecase - whr.ai GEO",
