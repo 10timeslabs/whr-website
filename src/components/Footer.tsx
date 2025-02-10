@@ -84,11 +84,14 @@ const Footer = () => {
               <li>
                 <Link href="#">Contact</Link>
               </li>
+              <li>
+                <Link href="#">Docs</Link>
+              </li>
             </ul>
           </div>
 
           {/* Resource Section */}
-          <div>
+          {/* <div>
             <h3 className="text-lg mb-2">Resource</h3>
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
@@ -100,11 +103,8 @@ const Footer = () => {
               <li>
                 <Link href="#">Guides</Link>
               </li>
-              <li>
-                <Link href="#">Docs</Link>
-              </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h3 className="text-lg mb-2">Legal</h3>
