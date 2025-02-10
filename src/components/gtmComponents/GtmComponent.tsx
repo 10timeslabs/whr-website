@@ -169,7 +169,7 @@ const page = () => {
                   src={dataToDisplay.image}
                   width={1000}
                   height={1000}
-                  alt="Banner Image"
+                  alt={dataToDisplay.imageAltText}
                   className="w-full max-h-[650px] object-cover"
                 />
               </div>
@@ -181,7 +181,7 @@ const page = () => {
                 src={dataToDisplay.image}
                 width={1000}
                 height={1000}
-                alt="Banner Image"
+                alt={dataToDisplay.imageAltText}
                 className="h-[450px] md:h-[650px] w-full object-cover"
               />
 
@@ -251,14 +251,14 @@ const page = () => {
             <HowWeAreHelpful />
           </div>
         )}
-        {/* {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5 w-full flex items-center justify-center">
+        {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5 w-full flex items-center justify-center">
         <VerticalScroll
           mainHeading={
             pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
           }
           dataToDisplay={dataToDisplay}
         />
-      </div>} */}
+      </div>}
         <CircleContainer />
         <div>
           <ProductsCarousel />

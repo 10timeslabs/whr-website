@@ -32,6 +32,7 @@ export const gtmProductJsonData = [
     {
         id: "event-search",
         image : Research,
+        imageAltText:"",
         text: "Find What’s Relevant",
         subtext:
             "Filter events the way you want—by products, audience, size, or location.",
@@ -57,6 +58,7 @@ export const gtmProductJsonData = [
     {
         id: "ai-assistant",
         image : TrackerTenmplate,
+        imageAltText:"",
         text: "Get Timely Notifications with AI",
         subtext:
             "Found relevant events? Get reminders & updates to never miss potential opportunities.",
@@ -82,6 +84,7 @@ export const gtmProductJsonData = [
     {
         id: "smart-tracker",
         image : TrackerLanding,
+        imageAltText:"",
         text: "Don’t Miss an Opportunity",
         subtext:
             "Why rely on redundant searches? Define your own trackers to receive curated event leads that match your needs.",
@@ -107,6 +110,7 @@ export const gtmProductJsonData = [
     {
         id: "coordinate",
         image : Coordinate,
+        imageAltText:"",
         text: "Bring Your Team Together",
         subtext:
             "Events touch every department, but internal coordination is tough. Share and align event plans to maximize value without silos.",
@@ -132,6 +136,7 @@ export const gtmProductJsonData = [
     {
         id: "outreach",
         image : Outreach,
+        imageAltText:"",
         text: "Faster Response from Organizers",
         subtext:
             "Why wait for answers? Streamline your questions and get decisions faster.",
@@ -157,6 +162,7 @@ export const gtmProductJsonData = [
     {
         id: "prospect",
         image : Prospect,
+        imageAltText:"",
         text: "Identify & Set Up Meetings",
         subtext:
             "Discover who’s attending, plan effective meetings, and turn events into lead-generating opportunities.",
@@ -182,6 +188,7 @@ export const gtmProductJsonData = [
     {
         id: "trends-monitor",
         image : Trends,
+        imageAltText:"",
         text: "Monitor Industry Signals",
         subtext:
             "Track broader market changes and outliers to stay on top of emerging trends, competition, or shifting audience preferences.",

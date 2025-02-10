@@ -3,8 +3,8 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
-  title: "Whr.ai",
-  description: "Your website description here",
+  title: "whr.ai - Premier Event Intelligence Platform",
+  description: "Discover whr.ai's event intelligence platform for real-time forecasting, demand planning, and maximizing event impact.",
   verification: {
     google: "KcRKKC-PQ7QtLvpfL-QPyrWNfS7jwFrK3_UEwft9dKI", 
   },

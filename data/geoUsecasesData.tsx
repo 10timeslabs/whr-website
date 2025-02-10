@@ -39,6 +39,7 @@ export const geoUsecasesjsonData = [
     id: "hotel-lodging",
     image:
       `${imageURL}/geo_usecase_hotel&lodging_cropped.png`,
+      imageAltText:"Sunset over the ocean with a sail-shaped skyscraper reflecting golden light, evoking a serene atmosphere.",
     text: "Higher Occupancy, Lower Surprises",
     // blurColor: "#E3B785",
     // blurColor: "linear-gradient(to bottom, #ffffff, #E3B785)",
@@ -149,6 +150,7 @@ export const geoUsecasesjsonData = [
     id: "restaurants",
     image:
       `${imageURL}/geo_usecase_restaurants.jpg`,
+      imageAltText:"Outdoor café with wooden tables, chairs, and lush potted plants, creating a warm, inviting, and peaceful vibe.",
     text: "Serve More Tables",
     // blurColor: "linear-gradient(to bottom, #8DDF0340, #E4D7BE20)",
     blurColor:
@@ -270,6 +272,7 @@ export const geoUsecasesjsonData = [
     id: "activity-planners",
     image:
       `${imageURL}/geo_usecase_activityplanner.jpg`,
+      imageAltText:"A silver pen on an open planner with dated pages, beside a blurred smartphone and mug, conveying productivity.",
     // blurColor: "#C2BDC1",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(194, 189, 193, 0.5) 53%)",
@@ -388,6 +391,7 @@ export const geoUsecasesjsonData = [
     id: "aviation-airport",
     image:
       `${imageURL}/geo_usecase_aviation&airport.jpg`,
+      imageAltText:"A red and white Air Berlin airplane ascends against fluffy, dramatic clouds, symbolizing freedom and travel.",
     // blurColor: "#D6DDF3",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(214, 221, 243, 0.5) 53%)",
@@ -497,6 +501,7 @@ export const geoUsecasesjsonData = [
     id: "enterprise",
     image:
       `${imageURL}/geo_usecase_corporate&brands.jpg`,
+      imageAltText:"Skyline of modern skyscrapers under a clear blue sky, featuring diverse architecture and palm trees for greenery.",
     // blurColor: "#BBCDDA",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 205, 218, 0.5) 53%)",
@@ -587,6 +592,7 @@ export const geoUsecasesjsonData = [
     id: "transportation",
     image:
       `${imageURL}/geo_usecase_transportation.jpg`,
+      imageAltText:"A sleek train winds along coastal tracks with lush greenery, cliffs, and ocean views, as walkers stroll nearby.",
     // blurColor: "#B3E0F1",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(179, 224, 241, 0.5) 53%)",
@@ -695,6 +701,7 @@ export const geoUsecasesjsonData = [
     id: "ooh-marketing",
     image:
       `${imageURL}/geo_usecase_OOH-marketing.jpg`,
+      imageAltText:"Hands hold a pen, pointing at a document with charts on remote work, with a phone, notebook, coffee, and highlighter.",
     // blurColor: "#BBBBB2",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(230, 218, 206, 0.5) 53%)",
@@ -792,6 +799,7 @@ export const geoUsecasesjsonData = [
     id: "retail-commerce",
     image:
       `${imageURL}/geo_usecase_retail-commerce.jpg`,
+      imageAltText:"A small shopping cart with colorful bottles next to a white bag with a red 'SALE' tag, symbolizing discount shopping.",
     // blurColor: "#E6DACE",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(230, 218, 206, 0.5) 53%)",
@@ -900,6 +908,7 @@ export const geoUsecasesjsonData = [
     id: "parking",
     image:
       `${imageURL}/geo_usecase_parking.jpg`,
+      imageAltText:"A white SUV parked under solar panel canopies in a sunlit lot, surrounded by green trees, conveying sustainability.",
     // blurColor: "#D7E8EA",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(215, 232, 234, 0.5) 53%)",
@@ -997,6 +1006,7 @@ export const geoUsecasesjsonData = [
     id: "dmo-dmc",
     image:
       `${imageURL}/geo_usecase_dmo-dmc.jpg`,
+      imageAltText:"A hand points to a line graph on a wooden table, with a bar chart above labeled 'Our Company,' showing data.",
     // blurColor: "#BFA78D",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(191, 167, 141, 0.5) 53%)",
@@ -1085,6 +1095,7 @@ export const geoUsecasesjsonData = [
     id: "venue-operators",
     image:
       `${imageURL}/geo_usecases_venue-operator.jpg`,
+      imageAltText:"Rooftop event at sunset with elegant tables, string lights, servers in white, and a stunning city skyline.",
     // blurColor: "#C3BFBE",
     // blurColor: "linear-gradient(to bottom, #ffffff, #C3BFBE)",
     blurColor:
@@ -1173,6 +1184,7 @@ export const geoUsecasesjsonData = [
     id: "hyperlocal-quick-commerce",
     image:
       `${imageURL}/geo_usecase_quick-commerce.jpg`,
+      imageAltText:"A delivery cyclist in a tan jacket rides past a dark building, carrying a yellow insulated backpack.",
     // blurColor: "#D6D3D2",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(214, 211, 210, .5) 53%)",
@@ -1278,6 +1290,7 @@ export const geoUsecasesjsonData = [
     id: "local-government",
     image:
       `${imageURL}/geo_usecase_local-government.jpg`,
+      imageAltText:"Ornate parliament hall with a blue stained-glass dome ceiling and rows of wooden seats, exuding grandeur.",
     // blurColor: "#FFFFF",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.5) 53%)",
@@ -1365,6 +1378,7 @@ export const geoUsecasesjsonData = [
     id: "manpower-agency",
     image:
       `${imageURL}/geo_usecase_manpower.jpg`,
+      imageAltText:"A worker in a safety vest operates a yellow forklift, moving packages into a loading area with focus and efficiency.",
     // blurColor: "#D9DEE9",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(217, 222, 233, 0.5) 53%)",
@@ -1477,6 +1491,7 @@ export const geoUsecasesjsonData = [
     id: "event-planners",
     image:
       `${imageURL}/geo_useacase_eventplanner.jpg`,
+      imageAltText:"A hand writes in a spiral notebook, with open planners and a to-do list, evoking a sense of organization.",
     // blurColor: "#D9DEE9",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(217, 222, 233, 0.5) 53%)",

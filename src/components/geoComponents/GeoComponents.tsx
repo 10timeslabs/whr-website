@@ -107,7 +107,7 @@ const GeoComponent = () => {
               <div className="w-full">
                 <Image
                   src={dataToDisplay.image}
-                  alt="Banner Image"
+                  alt={dataToDisplay.imageAltText}
                   width={1000}
                   height={1000}
                   className="w-full max-h-[650px] object-cover"
@@ -119,7 +119,7 @@ const GeoComponent = () => {
               {/* Background Image */}
               <Image
                 src={dataToDisplay.image}
-                alt="Banner Image"
+                alt={dataToDisplay.imageAltText}
                 width={1000}
                 height={1000}
                 className="h-[450px] md:h-[650px] w-full object-cover"
