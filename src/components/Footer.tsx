@@ -129,7 +129,8 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://docs.google.com/document/d/1Cl5DY5IevK79BXRjElgfV7L8GF_F479MondVcARQbV4/edit?usp=sharing"
+                  // href="https://docs.google.com/document/d/1Cl5DY5IevK79BXRjElgfV7L8GF_F479MondVcARQbV4/edit?usp=sharing"
+                  href="/cookie-policy"
                   target="_blank"
                 >
                   Cookie Policy

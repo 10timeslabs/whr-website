@@ -28,7 +28,7 @@ const Page = () => {
         </p>
         <h2 className="text-lg font-semibold mt-4">1. About Us</h2>
 
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Company Name</strong>: Crintel Labs Private Limited
           </li>
@@ -87,7 +87,7 @@ const Page = () => {
           To use certain features of the Platform, you must register for an
           account:
         </p>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Account Responsibility</strong>: You are responsible for
             maintaining the confidentiality of your account credentials and for
@@ -106,7 +106,7 @@ const Page = () => {
         <h2 className="text-lg font-semibold mt-4">
           5. Subscription and Payment
         </h2>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Subscription Plans</strong>: WHR.AI offers both free and
             paid subscription plans with monthly and annual billing cycles.
@@ -124,7 +124,7 @@ const Page = () => {
           </li>
           <li>
             <strong>Refunds and Cancellations</strong>:
-            <ul className="list-disc ml-6">
+            <ul className="list-disc ml-12">
               <li>
                 Refunds are provided only in cases of billing errors, system
                 issues, or as mandated by law.
@@ -146,7 +146,7 @@ const Page = () => {
         <h2 className="text-lg font-semibold mt-4">
           6. API Usage and Data Licensing
         </h2>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>API Access</strong>: WHR.AI provides API access to its data
             with different tiers based on subscription plans. Details of API
@@ -174,7 +174,7 @@ const Page = () => {
           7. User Responsibilities and Restrictions
         </h2>
 
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Permitted Use</strong>: Users are granted a non-exclusive,
             non-transferable license to access and use the Platform for their
@@ -182,7 +182,7 @@ const Page = () => {
           </li>
           <li>
             <strong>Prohibited Actions</strong>:
-            <ul className="list-disc ml-6">
+            <ul className="list-disc ml-12">
               <li>
                 <strong>Data Scraping</strong>: Automated data scraping is
                 prohibited unless accessed via licensed API.
@@ -217,7 +217,7 @@ const Page = () => {
 
         <h2 className="text-lg font-semibold mt-4">8. Intellectual Property</h2>
 
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Ownership</strong>: All rights, title, and interest in the
             Platform, including all intellectual property rights, are owned by
@@ -240,7 +240,7 @@ const Page = () => {
         <h2 className="text-lg font-semibold mt-4">
           9. Liability and Disclaimers
         </h2>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Platform “As Is”</strong>: The Platform is provided “as is”
             without warranties of any kind. Crintel Labs disclaims all
@@ -269,7 +269,7 @@ const Page = () => {
         </ul>
 
         <h2 className="text-lg font-semibold mt-4">10. Termination</h2>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Termination by User</strong>: Users may terminate their
             account at any time via the account settings. No refunds will be
@@ -302,7 +302,7 @@ const Page = () => {
         <h2 className="text-lg font-semibold mt-4">
           12. Privacy and Security Incidents
         </h2>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Notification</strong>: Users must notify Crintel Labs
             immediately of any suspected unauthorized access to their account or
@@ -324,7 +324,7 @@ const Page = () => {
           changes constitutes acceptance of the new Terms.
         </p>
         <h2 className="text-lg font-semibold mt-4">14. Miscellaneous</h2>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12">
           <li>
             <strong>Severability</strong>: If any provision of these Terms is
             found to be unenforceable or invalid, that provision will be limited

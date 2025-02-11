@@ -52,7 +52,7 @@ const Page = () => {
         <h3 className="text-lg font-semibold mt-4">
           a. Information Provided by You
         </h3>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12 text-base">
           <li>
             <strong>Account Information</strong>: When you create an account, we
             collect personal details such as your name, professional email
@@ -74,7 +74,7 @@ const Page = () => {
         <h3 className="text-lg font-semibold mt-4">
           b. Information Collected Automatically
         </h3>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12 text-base">
           <li>
             <strong>Browsing Information</strong>: We automatically collect
             information about your interactions with the Platform, including
@@ -93,15 +93,20 @@ const Page = () => {
           We use cookies and similar tracking technologies to enhance your
           experience on our Platform:
         </p>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12 text-base">
           <li>
-            <strong>Session Cookies</strong>: Temporary cookies that expire once
-            you close your browser.
+            <strong>Types of Cookies</strong>:
           </li>
-          <li>
-            <strong>Persistent Cookies</strong>: Cookies that remain on your
-            device until you delete them.
-          </li>
+          <ul className="list-[circle] ml-8">
+            <li>
+              <strong>Session Cookies</strong>: Temporary cookies that expire
+              once you close your browser.
+            </li>
+            <li>
+              <strong>Persistent Cookies</strong>: Cookies that remain on your
+              device until you delete them.
+            </li>
+          </ul>
           <li>
             <strong>Purpose of Cookies</strong>: To remember your preferences,
             improve your user experience, analyze usage patterns, and
@@ -127,7 +132,7 @@ const Page = () => {
         <p>
           We use the information we collect for various purposes, including:
         </p>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12 text-base">
           <li>
             <strong>Provision of Services</strong>: To provide, maintain, and
             improve our Platform and services.
@@ -164,7 +169,7 @@ const Page = () => {
         <p>
           We process your personal data based on the following legal grounds:
         </p>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12 text-base">
           <li>
             <strong>Performance of a Contract</strong>:Processing is necessary
             for the performance of our contractual obligations to you.
@@ -183,7 +188,7 @@ const Page = () => {
           5. Sharing Your Information
         </h2>
         <p>We may share your information in the following circumstances:</p>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12 text-base">
           <li>
             <strong>Service Providers</strong>: We engage third-party companies
             to perform services on our behalf, such as payment processing, data
@@ -233,7 +238,7 @@ const Page = () => {
           If you are located in the European Economic Area (EEA), you have
           certain data protection rights, including:
         </p>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-12 text-base">
           <li>
             <strong>Access</strong>:You can request access to the personal data
             we hold about you.
