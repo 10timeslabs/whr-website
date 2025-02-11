@@ -1,4 +1,11 @@
 import React from "react";
+import BrandBuildingImage from "/public/gtm_soln_illustrations/Brand building.svg";
+import CompetitorTrackingImage from "/public/gtm_soln_illustrations/Competitor Tracking.svg";
+import ExhibitorAndSponsorImage from "/public/gtm_soln_illustrations/Exhibit & Sponsor.svg";
+import ProductMatchingImage from "/public/gtm_soln_illustrations/Product Matching.svg";
+import ProspectMappingImage from "/public/gtm_soln_illustrations/Prospects Mapping.svg";
+import RecruitementImage from "/public/gtm_soln_illustrations/Recruitement & DevRel.svg";
+import SpeakingOpportunityImage from "/public/gtm_soln_illustrations/Speaking Opportunity.svg";
 import BrandBuilding from "../data/solutionAnimationData/Brandbuilding.json"
 import CompetitorTracking from "../data/solutionAnimationData/competitortracking.json"
 import ExhibitorAndSponsor from "../data/solutionAnimationData/Exhibitandsponsor.json"
@@ -6,11 +13,23 @@ import ProductMatching from "../data/solutionAnimationData/Productmatching.json"
 import ProspectMapping from "../data/solutionAnimationData/Prospectsmapping.json"
 import Recruitement from "../data/solutionAnimationData/Recruitmentanddevrel.json"
 import SpeakingOpportunity from "../data/solutionAnimationData/Speakingopportunity.json"
-import { GTM_UseCase_1, GTM_UseCase_10, GTM_UseCase_11, GTM_UseCase_12, GTM_UseCase_13, GTM_UseCase_14, GTM_UseCase_15, GTM_UseCase_2, GTM_UseCase_3, GTM_UseCase_4, GTM_UseCase_5, GTM_UseCase_6, GTM_UseCase_7, GTM_UseCase_8, GTM_UseCase_9 } from "../svgicons/icons";
+import { GTM_UseCase_1, GTM_UseCase_10, GTM_UseCase_11, GTM_UseCase_12, GTM_UseCase_13, GTM_UseCase_14, GTM_UseCase_15, GTM_UseCase_2, GTM_UseCase_3, GTM_UseCase_4, GTM_UseCase_5, GTM_UseCase_6, GTM_UseCase_7, GTM_UseCase_8, GTM_UseCase_9, GTM_Soln_1,
+  GTM_Soln_2,
+  GTM_Soln_3,
+  GTM_Soln_4,
+  GTM_Soln_5,
+  GTM_Soln_6,
+  GTM_Soln_7, } from "../svgicons/icons";
 const imageURL = "https://c1.10times.com/whr/gtm/static/image/solution"
 export const gtmSolutionsjsonData = [
   {
     id: "brand-building",
+    heading: "Brand Building",
+    href: "/gtm/solutions/brand-building",
+    dropText:
+     "Amplify brand presence at events with whr.ai GTM.",
+    icon: <GTM_Soln_4 color="currentColor" />,
+    staticImage : BrandBuildingImage,
     image: BrandBuilding,
     imageAltText:"",
     text: "Brand Alignment",
@@ -64,6 +83,12 @@ metaData:{
 },
   {
     id: "competitor-tracking",
+    heading: "Competitor Tracking",
+    href: "/gtm/solutions/competitor-tracking",
+    dropText:
+      "Track competitors' event strategies with whr.ai GTM.",
+    icon: <GTM_Soln_1 color="currentColor" />,
+    staticImage : CompetitorTrackingImage,
     image: CompetitorTracking,
     imageAltText:"",
     text: "Competitor Tracking",
@@ -122,6 +147,12 @@ metaData:{
 },
   {
     id: "exhibit-sponsor",
+    heading: "Exhibit & Sponsor",
+    href: "/gtm/solutions/exhibit-sponsor",
+    dropText:
+      "Maximize exhibit ROI with whr.ai GTM's Exhibit Manager.",
+    icon: <GTM_Soln_7 color="currentColor" />,
+    staticImage : ExhibitorAndSponsorImage,
     image: ExhibitorAndSponsor,
     imageAltText:"",
     text: "Exhibit & Sponsor",
@@ -173,6 +204,12 @@ metaData:{
 },
   {
     id: "product-matching",
+    heading: "Product Matching",
+    href: "/gtm/solutions/product-matching",
+    dropText:
+      "Ensure product alignment with whr.ai GTM's matcher tool.",
+    icon: <GTM_Soln_6 color="currentColor" />,
+    staticImage : ProductMatchingImage,
     image: ProductMatching,
     imageAltText:"",
     text: "Product Matching",
@@ -224,6 +261,12 @@ metaData:{
 
   {
     id: "prospects-mapping",
+    heading: "Prospects Mapping",
+    href: "/gtm/solutions/prospects-mapping",
+    dropText:
+      "Find high-value prospects at events with whr.ai GTM.",
+    icon: <GTM_Soln_2 color="currentColor" />,
+    staticImage : ProspectMappingImage,
     image: ProspectMapping,
     imageAltText:"",
     text: "Prospect Mapping",
@@ -273,6 +316,12 @@ metaData:{
 },
   {
     id: "recruitement-devrel",
+    heading: "Recruitement & DevRel",
+    href: "/gtm/solutions/recruitement-devrel",
+    dropText:
+      "Connect with top talent at events using whr.ai GTM.",
+    icon: <GTM_Soln_3 color="currentColor" />,
+    staticImage : RecruitementImage,
     image: Recruitement,
     imageAltText:"",
     text: "Recruitement & DevRel",
@@ -323,6 +372,12 @@ metaData:{
 },
   {
     id: "speaking-opportunity",
+    heading: "Speaking Opportunity",
+    href: "/gtm/solutions/speaking-opportunity",
+    dropText:
+      "Secure speaking opportunities with whr.ai GTM.",
+    icon: <GTM_Soln_5 color="currentColor" />,
+    staticImage : SpeakingOpportunityImage,
     image: SpeakingOpportunity,
     imageAltText:"",
     text: "Speaking Opportunity",
