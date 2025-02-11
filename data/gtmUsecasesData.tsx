@@ -88,6 +88,7 @@ export const gtmUsecasesjsonData = [
         content:
           "Discover socially aligned festivals or community gatherings to enhance your corporate social responsibility footprint.",
         icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/brand-building",
       },
     ],
     metaData: {
@@ -146,6 +147,7 @@ export const gtmUsecasesjsonData = [
         content:
           "Find skilled labor or specialized contractors through gatherings that attract the right workforce profile.",
         icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/recruitement-devrel",
       },
     ],
     metaData: {
@@ -205,30 +207,35 @@ export const gtmUsecasesjsonData = [
         content:
           "Track rival brand strategies offline to adjust campaigns for maximum impact where your competitors appear.",
         icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/competitor-tracking",
       },
       {
         topic: "Prospect Mapping",
         icon: <GTM_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Focus marketing efforts at events where your ideal audience or potential leads show up in person.",
+          href: "/gtm/solutions/prospects-mapping",
       },
       {
         topic: "Brand Building",
         icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Align brand messaging with the perfect event audiences to maximize sponsorship ROI and brand recall.",
+        href: "/gtm/solutions/brand-building",
       },
       {
         topic: "Speaking Opportunity",
         icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Elevate brand leadership by securing speaker slots at targeted industry events before agendas lock in.",
+        href: "/gtm/solutions/speaking-opportunity",
       },
       {
         topic: "Exhibit & Sponsor",
         icon: <GTM_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Select exhibitions or sponsorship packages driven by real-time event data, yielding stronger audience connections.",
+          href: "/gtm/solutions/exhibit-sponsor",
       },
     ],
     metaData: {
@@ -286,24 +293,28 @@ export const gtmUsecasesjsonData = [
         content:
           "Spot competitor presence at real-world events to refine your sales approach and target new opportunities.",
         icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/competitor-tracking",
       },
       {
         topic: "Prospect Mapping",
         icon: <GTM_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Link your CRM leads to offline events they attend, ensuring high-intent engagement and faster deal cycles.",
+        href: "/gtm/solutions/prospects-mapping",
       },
       {
         topic: "Product Matching",
         icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Identify expos and trade shows where your products truly resonate, driving better lead generation.",
+        href: "/gtm/solutions/product-matching",
       },
       {
         topic: "Exhibit & Sponsor",
         icon: <GTM_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Target the most profitable exhibitions or sponsor deals by evaluating footfall, competitor presence, and audience fit.",
+        href: "/gtm/solutions/exhibit-sponsor",
       },
     ],
     metaData: {
@@ -361,18 +372,21 @@ export const gtmUsecasesjsonData = [
         content:
           "Monitor competitor product launches or developer meetups, aligning your own DevRel or feature roadmap accordingly.",
         icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/competitor-tracking",
       },
       {
         topic: "Recruitment & DevRel",
         icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Zero in on developer meetups or hackathons that align with your stack, boosting DevRel success.",
+        href: "/gtm/solutions/recruitement-devrel",
       },
       {
         topic: "Speaking Opportunity",
         icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Place your engineers or CTO on stage at key developer conferences, enhancing company credibility.",
+          href: "/gtm/solutions/speaking-opportunity",
       },
     ],
     metaData: {
@@ -432,24 +446,27 @@ export const gtmUsecasesjsonData = [
         content:
           "Discover competitor client activations at events to propose more compelling brand strategies for your clients.",
         icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/competitor-tracking",
       },
       {
         topic: "Brand Building",
         icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Curate events that fit client brand ethos, ensuring consistent storytelling across real-world activations.",
+        href: "/gtm/solutions/brand-building",
       },
       {
         topic: "Product Matching",
         icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Pair client products with thematically aligned gatherings to foster successful brand collaborations.",
+          "Pair client products with thematically aligned gatherings to foster successful brand collaborations.",href: "/gtm/solutions/product-matching",          
       },
       {
         topic: "Exhibit & Sponsor",
         icon: <GTM_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Recommend ideal expos or sponsorships that cater to clients’ brand goals, optimizing event marketing ROI.",
+        href: "/gtm/solutions/exhibit-sponsor",
       },
     ],
     metaData: {
@@ -569,12 +586,14 @@ export const gtmUsecasesjsonData = [
         content:
           "Identify career fairs or conferences with potential job candidates already in your prospect pipeline.",
         icon: <GTM_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/prospects-mapping",
       },
       {
         topic: "Recruitment & DevRel",
         icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Locate top talent at conferences and job fairs that match your hiring needs, fueling more personal interactions.",
+        href: "/gtm/solutions/recruitement-devrel",
       },
     ],
     metaData: {
@@ -635,6 +654,7 @@ export const gtmUsecasesjsonData = [
         content:
           " Expand personal reach by identifying events open to influencer panels or keynote opportunities.",
         icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/speaking-opportunity",
       },
     ],
     metaData: {
@@ -698,6 +718,7 @@ export const gtmUsecasesjsonData = [
         content:
           " Pinpoint event staffing opportunities by matching positions with relevant event designations or roles.",
         icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/recruitement-devrel",
       },
 
     ],
@@ -824,12 +845,14 @@ export const gtmUsecasesjsonData = [
         content:
           "Keep tabs on competitor vendor relationships at trade shows to negotiate better supply deals.",
         icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/competitor-tracking",
       },
       {
         topic: "Product Matching",
         icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Focus on relevant vendor fairs that match your procurement needs, improving supply chain relations.",
+          href: "/gtm/solutions/product-matching",
       },
 
     ],
@@ -890,6 +913,7 @@ export const gtmUsecasesjsonData = [
         content:
           "Analyze upcoming summits or niche conferences containing topics pertinent to your client research.",
         icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/product-matching",
       },
     ],
     metaData: {
@@ -949,12 +973,14 @@ export const gtmUsecasesjsonData = [
         content:
           "Promote your venue’s rebranding or unique experience by joining forces with events echoing your brand values.",
         icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/brand-building",
       },
       {
         topic: "Exhibit & Sponsor",
         icon: <GTM_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "If you exhibit at other fairs or do cross-promotions, spot high-value gatherings for improved brand synergy.",
+        href: "/gtm/solutions/exhibit-sponsor",
       },
     ],
     metaData: {
@@ -1014,12 +1040,14 @@ export const gtmUsecasesjsonData = [
         content:
           "Discover potential partnership leads or acquisition targets by mapping prospects to relevant gatherings.",
         icon: <GTM_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
+        href: "/gtm/solutions/prospects-mapping",
       },
       {
         topic: "Speaking Opportunity",
         icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           " Attract high-profile speakers (or place your own) when orchestrating large conferences or evaluating acquisitions.",
+          href: "/gtm/solutions/speaking-opportunity",
       },
 
     ],
