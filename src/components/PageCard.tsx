@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
 interface Props {
-  image: string;
+  image: string | StaticImageData;
   heading: string;
   subheading: string;
   icon: any
