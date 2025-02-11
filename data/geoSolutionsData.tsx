@@ -1,12 +1,12 @@
 import React from "react";
-// import DemandForeCasting from "/public/geo_soln_illustrations/demand forecasting.svg";
-// import DynamicPricing from "/public/geo_soln_illustrations/Dynamic Pricing.svg";
-// import EventProspecting from "/public/geo_soln_illustrations/Event Prospecting.svg";
-// import GeoMarketing from "/public/geo_soln_illustrations/Geo Marketing.svg";
-// import InventoryPlanning from "/public/geo_soln_illustrations/Inventory Planning..svg";
-// import RiskIdentification from "/public/geo_soln_illustrations/Risk Identification.svg";
-// import TravelAdvisory from "/public/geo_soln_illustrations/Travel Advisory.svg";
-// import WorkforceManagement from "/public/geo_soln_illustrations/Workforce Management.svg";
+import DemandForeCastingImage from "/public/geo_soln_illustrations/demand forecasting.svg";
+import DynamicPricingImage from "/public/geo_soln_illustrations/Dynamic Pricing.svg";
+import EventProspectingImage from "/public/geo_soln_illustrations/Event Prospecting.svg";
+import GeoMarketingImage from "/public/geo_soln_illustrations/Geo Marketing.svg";
+import InventoryPlanningImage from "/public/geo_soln_illustrations/Inventory Planning..svg";
+import RiskIdentificationImage from "/public/geo_soln_illustrations/Risk Identification.svg";
+import TravelAdvisoryImage from "/public/geo_soln_illustrations/Travel Advisory.svg";
+import WorkforceManagementImage from "/public/geo_soln_illustrations/Workforce Management.svg";
 import DemandForeCasting from "../data/solutionAnimationData/demandforecasting.json"
 import DynamicPricing from "../data/solutionAnimationData/Dynamicpricing.json"
 import EventProspecting from "../data/solutionAnimationData/EventProspecting.json"
@@ -16,6 +16,14 @@ import RiskIdentification from "../data/solutionAnimationData/RiskIdentification
 import TravelAdvisory from "../data/solutionAnimationData/Traveladvisory.json"
 import WorkforceManagement from "../data/solutionAnimationData/Workforcemanagement.json"
 import {
+  Geo_Soln_1,
+  Geo_Soln_2,
+  Geo_Soln_3,
+  Geo_Soln_4,
+  Geo_Soln_5,
+  Geo_Soln_6,
+  Geo_Soln_7,
+  Geo_Soln_8,
   Geo_UseCase_1,
   Geo_UseCase_10,
   Geo_UseCase_11,
@@ -36,6 +44,12 @@ const imageURL = "https://c1.10times.com/whr/geo/static/image";
 export const geoSolutionsjsonData = [
   {
     id: "demand-forecasting",
+    heading: "Demand Forecasting",
+    href: "/geo/solutions/demand-forecasting",
+    dropText:
+      "Accurately forecast demand with whr.ai GEO's intelligence.",
+    icon: <Geo_Soln_1 color="currentColor" />,
+    staticImage : DemandForeCastingImage,
     image: DemandForeCasting,
     text: "Forecast Onground Demand",
     subtext:
@@ -60,97 +74,103 @@ b. Consume data via an API to include in your internal prediction model`,
       },
       {
         topic: "Restaurants",
-        icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Plan workforce & inventory around spikes.",
         href: "/geo/usecases/restaurants",
       },
       {
         topic: "Activity Planners",
-        icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Time offers to inbound tourists.",
         href: "/geo/usecases/activity-planners",
       },
       {
         topic: "Aviation & Airport",
-        icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Manage passenger surge.",
         href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Transportation ",
-        icon: <Geo_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Match supply for local commutes.",
         href: "/geo/usecases/transportation",
       },
       {
         topic: "OOH Marketing",
-        icon: <Geo_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Price ad spots for event crowds.",
         href: "/geo/usecases/ooh-marketing",
       },
       {
         topic: "Retail Commerce",
-        icon: <Geo_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Staff & stock precisely.",
         href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Parking",
-        icon: <Geo_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Adjust capacity & fees.",
         href: "/geo/usecases/parking",
       },
       {
         topic: "DMO & DMC",
-        icon: <Geo_UseCase_9 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_9 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Collaborate with local hospitality on inbound. ",
         href: "/geo/usecases/dmo-dmc",
       },
       {
         topic: "Event Planners",
-        icon: <Geo_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_10 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Choose event location/dates. ",
         href: "/geo/usecases/event-planners",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
-        icon: <Geo_UseCase_11 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_11 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Plan deliveries.",
         href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Local Government",
-        icon: <Geo_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_13 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Proactively manage big gatherings.",
         href: "/geo/usecases/local-government",
       },
       {
         topic: "Enterprise",
-        icon: <Geo_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_14 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Integrate into corporate planning.",
         href: "/geo/usecases/enterprise",
       },
     ],
-    metaData:{
-      title:"Demand Forecasting - whr.ai GEO",
-      description:"Accurately forecast on-ground demand using whr.ai GEO's event intelligence and predictive analytics for better planning.",
-      image:`${imageURL}/solution/Demandforecasting.png`,
+    metaData: {
+      title: "Demand Forecasting - whr.ai GEO",
+      description: "Accurately forecast on-ground demand using whr.ai GEO's event intelligence and predictive analytics for better planning.",
+      image: `${imageURL}/solution/Demandforecasting.png`,
     }
   },
   {
     id: "dynamic-pricing",
+    heading: "Dynamic Pricing",
+    href: "/geo/solutions/dynamic-pricing",
+    dropText:
+      "Optimize pricing using whr.ai GEO's dynamic pricing data.",
+    icon: <Geo_Soln_5 color="currentColor" />,
+    staticImage : DynamicPricingImage,
     image: DynamicPricing,
     text: "Less Surprise, Better Price",
     subtext:
@@ -164,60 +184,66 @@ b. Consume data via an API to include in your internal prediction model`,
         topic: "Hotel & Lodging",
         content:
           "Fine-tune room pricing.",
-        icon: <Geo_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Activity Planners",
-        icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Adjust package rates around peak visitor times.",
         href: "/geo/usecases/activity-planners",
       },
       {
         topic: "Aviation & Airport",
-        icon: <Geo_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Update flight fares or add capacity.",
         href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Transportation ",
-        icon: <Geo_UseCase_5 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Manage surge fares or deploy extra staff.",
         href: "/geo/usecases/transportation",
       },
       {
         topic: "OOH Marketing",
-        icon: <Geo_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           " Price premium ad space for upcoming event windows.",
         href: "/geo/usecases/ooh-marketing",
       },
       {
         topic: "Parking",
-        icon: <Geo_UseCase_8 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Adjust fees for events with high car usage.",
         href: "/geo/usecases/parking",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
-        icon: <Geo_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_12 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Set dynamic delivery charges.",
         href: "/geo/usecases/hyperlocal-quick-commerce",
       },
     ],
-    metaData:{
-      title:"Dynamic Pricing - whr.ai GEO",
-      description:"Optimize your pricing strategy with whr.ai GEO's dynamic pricing solutions, powered by real-time event demand intelligence.",
-      image:`${imageURL}/solution/DynamicPricing.png`,
+    metaData: {
+      title: "Dynamic Pricing - whr.ai GEO",
+      description: "Optimize your pricing strategy with whr.ai GEO's dynamic pricing solutions, powered by real-time event demand intelligence.",
+      image: `${imageURL}/solution/DynamicPricing.png`,
     }
   },
   {
     id: "event-prospecting",
+    heading: "Event Prospecting",
+    href: "/geo/solutions/event-prospecting",
+    dropText:
+      "Unlock business opportunities with whr.ai GEO's insights.",
+    icon: <Geo_Soln_4 color="currentColor" />,
+    staticImage : EventProspectingImage,
     image: EventProspecting,
     text: "Events Mean Business",
     subtext:
@@ -228,58 +254,64 @@ b. Consume data via an API to include in your internal prediction model`,
       "Be able to an AI like assitant that can track your criteria and update you with list of events that are relevant for your business with enrichment, calendar view and contact details for the relevant event connect",
     how: "With a wide range of filters and scores, Eventeli makes it easy for any business to identify upcoming and forecasted events that would be relevant for their business. See it in a table or export the data to use it within your research environment. All data is check for duplciates, fake and verified by AI+human checks. Use the data in one single geography or around the world.",
     usecases: [
-     
+
       {
         topic: "Restaurants",
-        icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Target travelers near event venues.",
         href: "/geo/usecases/restaurants",
       },
       {
         topic: "Activity Planners",
-        icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Market experiences to inbound visitors.",
         href: "/geo/usecases/activity-planners",
       },
       {
         topic: "OOH Marketing",
-        icon: <Geo_UseCase_6 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Billboards, bus stands near expected footfall hotspots.",
-        href: "/geo/usecases/ooh-marketing",          
+        href: "/geo/usecases/ooh-marketing",
       },
       {
         topic: "Retail Commerce",
-        icon: <Geo_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Activate pop-ups or local promotions.",
         href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
-        icon: <Geo_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_12 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Acquire new customers from event audiences.",
         href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Enterprise",
-        icon: <Geo_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_14 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Identify right time/place for brand marketing.",
         href: "/geo/usecases/enterprise",
       },
     ],
-    metaData:{
-      title:"Event Prospecting - whr.ai GEO",
-      description:"Unlock business opportunities with whr.ai GEO's event prospecting. Identify and target events that align with your business objectives.",
-      image:`${imageURL}/solution/EventProspecting.png`,
+    metaData: {
+      title: "Event Prospecting - whr.ai GEO",
+      description: "Unlock business opportunities with whr.ai GEO's event prospecting. Identify and target events that align with your business objectives.",
+      image: `${imageURL}/solution/EventProspecting.png`,
     }
   },
   {
     id: "geo-marketing",
+    heading: "Geo Marketing",
+    href: "/geo/solutions/geo-marketing",
+    dropText:
+      "Enhance geo-marketing with whr.ai GEO's event intelligence.",
+    icon: <Geo_Soln_3 color="currentColor" />,
+    staticImage : GeoMarketingImage,
     image: GeoMarketing,
     text: "Spot that is Hot",
     subtext:
@@ -294,54 +326,60 @@ b. Consume data via an API to include in your internal prediction model`,
         topic: "Restaurants",
         content:
           "Target travelers near event venues.",
-        icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         href: "/geo/usecases/restaurants",
       },
       {
         topic: "Activity Planners",
-        icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Market experiences to inbound visitors.",
         href: "/geo/usecases/activity-planners",
       },
       {
         topic: "OOH Marketing",
-        icon: <Geo_UseCase_6 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Billboards, bus stands near expected footfall hotspots.",
         href: "/geo/usecases/ooh-marketing",
       },
       {
         topic: "Retail Commerce",
-        icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           " Activate pop-ups or local promotions.",
         href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
-        icon: <Geo_UseCase_12 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_12 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           " Acquire new customers from event audiences.",
         href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Enterprise",
-        icon: <Geo_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_14 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Identify right time/place for brand marketing.",
         href: "/geo/usecases/enterprise",
       },
     ],
-    metaData:{
-      title:"Geo Marketing - whr.ai GEO",
-      description:"Enhance your geo-marketing strategies with whr.ai GEO's event intelligence. Target the right audience at the right time and location.",
-      image:`${imageURL}/solution/GeoMarketing.png`,
+    metaData: {
+      title: "Geo Marketing - whr.ai GEO",
+      description: "Enhance your geo-marketing strategies with whr.ai GEO's event intelligence. Target the right audience at the right time and location.",
+      image: `${imageURL}/solution/GeoMarketing.png`,
     }
   },
 
   {
     id: "inventory-planning",
+    heading: "Inventory Planning",
+    href: "/geo/solutions/inventory-planning",
+    dropText:
+      "Ensure optimal inventory with whr.ai GEO's forecasting.",
+    icon: <Geo_Soln_7 color="currentColor" />,
+    staticImage : InventoryPlanningImage,
     image: InventoryPlanning,
     text: "Ready with the Right Stock",
     subtext:
@@ -356,46 +394,52 @@ b. Consume data via an API to include in your internal prediction model`,
         topic: "Hotel & Lodging",
         content:
           "Plan linens/toiletries around surge nights.",
-        icon: <Geo_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Restaurants",
-        icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Purchase perishable goods matching footfall forecasts.",
         href: "/geo/usecases/restaurants",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
-        icon: <Geo_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_12 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Move inventory to local hubs.",
         href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Aviation & Airport",
-        icon: <Geo_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Prepare enough supplies for passenger inflow.",
-        href: "/geo/usecases/aviation-airport",          
+        href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Retail Commerce",
-        icon: <Geo_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Order extra items for peak or hold back for lean phases.",
         href: "/geo/usecases/retail-commerce",
       },
     ],
-    metaData:{
-      title:"Inventory Planning - whr.ai GEO",
-      description:"Ensure optimal inventory levels with whr.ai GEO's inventory planning solutions, driven by event-driven demand forecasting.",
-      image:`${imageURL}/solution/Inventorymanagement.png`,
+    metaData: {
+      title: "Inventory Planning - whr.ai GEO",
+      description: "Ensure optimal inventory levels with whr.ai GEO's inventory planning solutions, driven by event-driven demand forecasting.",
+      image: `${imageURL}/solution/Inventorymanagement.png`,
     }
   },
   {
     id: "risk-identification",
+    heading: "Risk Identification",
+    href: "/geo/solutions/risk-identification",
+    dropText:
+      "Manage event-driven risks with whr.ai GEO's risk insights.",
+    icon: <Geo_Soln_2 color="currentColor" />,
+    staticImage : RiskIdentificationImage,
     image: RiskIdentification,
     text: "Turn Risk into Opportunity",
     subtext:
@@ -410,46 +454,52 @@ b. Consume data via an API to include in your internal prediction model`,
         topic: "Aviation & Airport",
         content:
           "Spike in inbound can be a security/capacity risk.",
-        icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Retail Commerce",
-        icon: <Geo_UseCase_7 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Event disruptions or crowd surges can hamper normal traffic or cause traffic jams. ",
         href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Event Planners",
-        icon: <Geo_UseCase_10 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_10 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Stay alert for competing or clashing events, plus environment disruptions.",
         href: "/geo/usecases/event-planners",
       },
       {
         topic: "Local Government",
-        icon: <Geo_UseCase_13 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_13 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Manage security, traffic for multiple small events.",
         href: "/geo/usecases/local-government",
       },
       {
         topic: "Enterprise",
-        icon: <Geo_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Avoid travel risk for employees if a city is overcrowded or under strain.",
         href: "/geo/usecases/enterprise",
       },
     ],
-    metaData:{
-      title:"Risk Identification - whr.ai GEO",
-      description:"Turn risks into opportunities with whr.ai GEO's risk identification solutions. Proactively manage event-driven risks for your business.",
-      image:`${imageURL}/solution/RiskIdentification.png`,
+    metaData: {
+      title: "Risk Identification - whr.ai GEO",
+      description: "Turn risks into opportunities with whr.ai GEO's risk identification solutions. Proactively manage event-driven risks for your business.",
+      image: `${imageURL}/solution/RiskIdentification.png`,
     }
   },
   {
     id: "travel-advisory",
+    heading: "Travel Advisory",
+    href: "/geo/solutions/travel-advisory",
+    dropText:
+      "Stay informed with whr.ai GEO's travel advisory insights.",
+    icon: <Geo_Soln_8 color="currentColor" />,
+    staticImage : TravelAdvisoryImage,
     image: TravelAdvisory,
     text: "Better Safe than Sorry",
     subtext:
@@ -464,39 +514,45 @@ b. Consume data via an API to include in your internal prediction model`,
         topic: "Hotel & Lodging",
         content:
           "Pre-warn guests of citywide gatherings.",
-        icon: <Geo_UseCase_1 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Aviation & Airport",
-        icon: <Geo_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Provide flight/traffic advisories",
         href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Event Planners",
-        icon: <Geo_UseCase_3 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Alert delegates to disruptions or schedule shifts.",
         href: "/geo/usecases/event-planners",
       },
       {
         topic: "Enterprise",
-        icon: <Geo_UseCase_14 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_14 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Keep traveling staff informed to avoid high-risk areas.",
         href: "/geo/usecases/enterprise",
       },
     ],
-    metaData:{
-      title:"Travel Advisory - whr.ai GEO",
-      description:"Stay safe and informed with whr.ai GEO's travel advisory solutions, powered by real-time event intelligence and risk assessment.",
-      image:`${imageURL}/solution/Traveladvisory.png`,
+    metaData: {
+      title: "Travel Advisory - whr.ai GEO",
+      description: "Stay safe and informed with whr.ai GEO's travel advisory solutions, powered by real-time event intelligence and risk assessment.",
+      image: `${imageURL}/solution/Traveladvisory.png`,
     }
   },
   {
     id: "workforce-management",
+    heading: "Workforce Management",
+    href: "/geo/solutions/workforce-management",
+    dropText:
+      "Manage workforce with whr.ai GEO's demand intelligence.",
+    icon: <Geo_Soln_6 color="currentColor" />,
+    staticImage : WorkforceManagementImage,
     image: WorkforceManagement,
     text: "Manage Workforce Availability & Utilization",
     subtext:
@@ -511,71 +567,71 @@ b. Consume data via an API to include in your internal prediction model`,
         topic: "Hotel & Lodging",
         content:
           "Staff up for big events.",
-        icon: <Geo_UseCase_1 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         href: "/geo/usecases/hotel-lodging",
       },
       {
         topic: "Restaurants",
-        icon: <Geo_UseCase_2 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Align servers/chefs with forecasted crowds.",
         href: "/geo/usecases/restaurants",
       },
       {
         topic: "Activity Planners",
-        icon: <Geo_UseCase_3 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Have enough guides/instructors.",
         href: "/geo/usecases/activity-planners",
       },
       {
         topic: "Aviation & Airport",
-        icon: <Geo_UseCase_4 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Staff security/customs for spikes.",
         href: "/geo/usecases/aviation-airport",
       },
       {
         topic: "Transportation ",
-        icon: <Geo_UseCase_5 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Bring in more drivers or vehicles.",
         href: "/geo/usecases/transportation",
       },
       {
         topic: "Retail Commerce",
-        icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Schedule more floor staff.",
         href: "/geo/usecases/retail-commerce",
       },
       {
         topic: "Parking",
-        icon: <Geo_UseCase_8 color="#6750a4" color2="#FFF6E6"width="62" height="62" />,
+        icon: <Geo_UseCase_8 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Hire extra valet attendants.",
         href: "/geo/usecases/parking",
       },
       {
         topic: "Hyperlocal & Quick Commerce",
-        icon: <Geo_UseCase_12 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_12 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Shift couriers to hot zones",
         href: "/geo/usecases/hyperlocal-quick-commerce",
       },
       {
         topic: "Local Government",
-        icon: <Geo_UseCase_13 color="#6750a4"color2="#FFF6E6" width="62" height="62" />,
+        icon: <Geo_UseCase_13 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
           "Deploy more police or sanitation.",
         href: "/geo/usecases/local-government",
       },
-    
+
     ],
-    metaData:{
-      title:"Workforce Management - whr.ai GEO",
-      description:"Manage workforce availability and utilization effectively with whr.ai GEO's demand forecasting and event intelligence.",
-      image:`${imageURL}/solution/WorkforceManagement.png`,
+    metaData: {
+      title: "Workforce Management - whr.ai GEO",
+      description: "Manage workforce availability and utilization effectively with whr.ai GEO's demand forecasting and event intelligence.",
+      image: `${imageURL}/solution/WorkforceManagement.png`,
     }
   },
 ];
