@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "whr.ai - Premier Event Intelligence Platform",
-  description: "Discover whr.ai's event intelligence platform for real-time forecasting, demand planning, and maximizing event impact.",
+  description:
+    "Discover whr.ai's event intelligence platform for real-time forecasting, demand planning, and maximizing event impact.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
@@ -33,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <Breadcrumbs />
         <div>{children}</div>
       </body>
     </html>
