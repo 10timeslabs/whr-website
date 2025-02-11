@@ -30,6 +30,12 @@ import {
   Geo_Soln_7,
   Geo_Soln_8,
   Geo_UseCase_1,
+  Geo_UseCase_10,
+  Geo_UseCase_11,
+  Geo_UseCase_12,
+  Geo_UseCase_13,
+  Geo_UseCase_14,
+  Geo_UseCase_15,
   Geo_UseCase_2,
   Geo_UseCase_3,
   Geo_UseCase_4,
@@ -37,17 +43,21 @@ import {
   Geo_UseCase_6,
   Geo_UseCase_7,
   Geo_UseCase_8,
+  Geo_UseCase_9,
+  
 } from "../svgicons/icons";
 const imageURL = "https://c1.10times.com/whr/geo/static/image/usecases"
 export const geoUsecasesjsonData = [
   {
     id: "hotel-lodging",
+    heading : "Hotel & Lodging",
+    icon: <Geo_UseCase_1 color="currentColor" />,
+    href: "/geo/usecases/hotel-lodging",
+    dropText : "Optimize hotel pricing with whr.ai's demand forecasting.",
     image:
       `${imageURL}/geo_usecase_hotel&lodging_cropped.png`,
     imageAltText: "Sunset over the ocean with a sail-shaped skyscraper reflecting golden light, evoking a serene atmosphere.",
     text: "Higher Occupancy, Lower Surprises",
-    // blurColor: "#E3B785",
-    // blurColor: "linear-gradient(to bottom, #ffffff, #E3B785)",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(227, 183, 133, 0.5) 53%)",
     opacity: "20%",
@@ -163,6 +173,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "restaurants",
+    icon: <Geo_UseCase_2 color="currentColor" />,
+    heading : "Restaurants",
+    href: "/geo/usecases/restaurants",
+    dropText : "Forecast event-driven demand for restaurants with whr.ai.",
     image:
       `${imageURL}/geo_usecase_restaurants.jpg`,
     imageAltText: "Outdoor café with wooden tables, chairs, and lush potted plants, creating a warm, inviting, and peaceful vibe.",
@@ -296,6 +310,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "activity-planners",
+    heading : "Activity Planners",
+    icon: <Geo_UseCase_3 color="currentColor" />,
+    href: "/geo/usecases/activity-planners",
+    dropText : "Enhance planner revenue with whr.ai's demand intelligence.",
     image:
       `${imageURL}/geo_usecase_activityplanner.jpg`,
     imageAltText: "A silver pen on an open planner with dated pages, beside a blurred smartphone and mug, conveying productivity.",
@@ -426,6 +444,11 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "aviation-airport",
+    heading : "Aviation Airport",
+    icon: <Geo_UseCase_4 color="currentColor" />,
+    href: "/geo/usecases/aviation-airport",
+    dropText:
+    "Optimize airport operations with whr.ai's demand data.",
     image:
       `${imageURL}/geo_usecase_aviation&airport.jpg`,
     imageAltText: "A red and white Air Berlin airplane ascends against fluffy, dramatic clouds, symbolizing freedom and travel.",
@@ -546,6 +569,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "enterprise",
+    heading : "Enterprise",
+    icon: <Geo_UseCase_14 color="currentColor" />,
+    href: "/geo/usecases/enterprise",
+    dropText:"Use event intelligence for corporate planning via whr.ai.",
     image:
       `${imageURL}/geo_usecase_corporate&brands.jpg`,
     imageAltText: "Skyline of modern skyscrapers under a clear blue sky, featuring diverse architecture and palm trees for greenery.",
@@ -646,6 +673,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "transportation",
+    heading : "Transportation",
+    icon: <Geo_UseCase_5 color="currentColor" />,
+    href: "/geo/usecases/transportation",
+    dropText : "Align transport supply with whr.ai's event forecasting.",
     image:
       `${imageURL}/geo_usecase_transportation.jpg`,
     imageAltText: "A sleek train winds along coastal tracks with lush greenery, cliffs, and ocean views, as walkers stroll nearby.",
@@ -766,6 +797,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "ooh-marketing",
+    heading : "OOH Marketing",
+    icon: <Geo_UseCase_6 color="currentColor" />,
+    href: "/geo/usecases/ooh-marketing",
+    dropText: "Maximize OOH ad ROI with whr.ai's event footfall data.",
     image:
       `${imageURL}/geo_usecase_OOH-marketing.jpg`,
     imageAltText: "Hands hold a pen, pointing at a document with charts on remote work, with a phone, notebook, coffee, and highlighter.",
@@ -874,6 +909,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "retail-commerce",
+    heading : "Retail Commerce",
+    icon: <Geo_UseCase_7 color="currentColor" />,
+    href: "/geo/usecases/retail-commerce",
+    dropText: "Optimize retail stock and manpower with whr.ai's data.",
     image:
       `${imageURL}/geo_usecase_retail-commerce.jpg`,
     imageAltText: "A small shopping cart with colorful bottles next to a white bag with a red 'SALE' tag, symbolizing discount shopping.",
@@ -994,6 +1033,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "parking",
+    heading : "Parking",
+    icon: <Geo_UseCase_8 color="currentColor" />,
+    href: "/geo/usecases/parking",
+    dropText : "Manage parking demand dynamically using whr.ai's data.",
     image:
       `${imageURL}/geo_usecase_parking.jpg`,
     imageAltText: "A white SUV parked under solar panel canopies in a sunlit lot, surrounded by green trees, conveying sustainability.",
@@ -1102,6 +1145,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "dmo-dmc",
+    heading : "DMO & DMC",
+    icon: <Geo_UseCase_9 color="currentColor" />,
+    href: "/geo/usecases/dmo-dmc",
+    dropText: "Collaborate with partners via whr.ai's event forecasting.",
     image:
       `${imageURL}/geo_usecase_dmo-dmc.jpg`,
     imageAltText: "A hand points to a line graph on a wooden table, with a bar chart above labeled 'Our Company,' showing data.",
@@ -1200,6 +1247,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "venue-operators",
+    heading : "Venue Operators",
+    icon: <Geo_UseCase_11 color="currentColor" />,
+    href: "/geo/usecases/venue-operators",
+    dropText : "Fill your venue calendar early with whr.ai's insights.",
     image:
       `${imageURL}/geo_usecases_venue-operator.jpg`,
     imageAltText: "Rooftop event at sunset with elegant tables, string lights, servers in white, and a stunning city skyline.",
@@ -1298,6 +1349,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "hyperlocal-quick-commerce",
+    heading : "Hyperlocal & Quick Commerce",
+    icon: <Geo_UseCase_12 color="currentColor" />,
+    href: "/geo/usecases/hyperlocal-quick-commerce",
+    dropText: "Optimize quick commerce deliveries using whr.ai's data.",
     image:
       `${imageURL}/geo_usecase_quick-commerce.jpg`,
     imageAltText: "A delivery cyclist in a tan jacket rides past a dark building, carrying a yellow insulated backpack.",
@@ -1415,6 +1470,10 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "local-government",
+    heading : "Local Government",
+    icon: <Geo_UseCase_13 color="currentColor" />,
+    href: "/geo/usecases/local-government",
+    dropText: "Use event intelligence for corporate planning via whr.ai.",
     image:
       `${imageURL}/geo_usecase_local-government.jpg`,
     imageAltText: "Ornate parliament hall with a blue stained-glass dome ceiling and rows of wooden seats, exuding grandeur.",
@@ -1512,6 +1571,11 @@ export const geoUsecasesjsonData = [
   },
   {
     id: "manpower-agency",
+    heading : "Manpower Agency",
+    icon: <Geo_UseCase_15 color="currentColor" />,
+    href: "/geo/usecases/manpower-agency",
+    dropText:
+      "Anticipate staffing needs using whr.ai GTM's forecasting.",
     image:
       `${imageURL}/geo_usecase_manpower.jpg`,
     imageAltText: "A worker in a safety vest operates a yellow forklift, moving packages into a loading area with focus and efficiency.",
@@ -1633,9 +1697,12 @@ export const geoUsecasesjsonData = [
         `${imageURL}/geo_usecase_manpower.jpg`,
     },
   },
-
   {
     id: "event-planners",
+    heading : "Event Planners",
+    icon: <Geo_UseCase_10 color="currentColor" />,
+    href: "/geo/usecases/event-planners",
+    dropText : "Select optimal event locations with whr.ai's forecasts.",
     image:
       `${imageURL}/geo_useacase_eventplanner.jpg`,
     imageAltText: "A hand writes in a spiral notebook, with open planners and a to-do list, evoking a sense of organization.",

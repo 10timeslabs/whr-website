@@ -22,13 +22,32 @@ import {
   GTM_Soln_5,
   GTM_Soln_6,
   GTM_Soln_7,
+  GTM_UseCase_1,
+  GTM_UseCase_10,
+  GTM_UseCase_11,
+  GTM_UseCase_12,
+  GTM_UseCase_13,
+  GTM_UseCase_14,
+  GTM_UseCase_15,
+  GTM_UseCase_2,
+  GTM_UseCase_3,
+  GTM_UseCase_4,
+  GTM_UseCase_5,
+  GTM_UseCase_6,
+  GTM_UseCase_7,
+  GTM_UseCase_8,
+  GTM_UseCase_9,
 } from "../svgicons/icons";
 const imageURL = "https://c1.10times.com/whr/gtm/static/image/usecases";
 export const gtmUsecasesjsonData = [
   {
     id: "csr",
+    heading: "CSR",
+    icon: <GTM_UseCase_5 color="currentColor" />,
+    href: "/gtm/usecases/csr",
+    dropText: "Align social initiatives with events using whr.ai GTM.",
     image: `${imageURL}/gtm_usecase_csr.jpg`,
-    imageAltText:"Two masked volunteers in blue shirts, one holding a basket of greens, symbolizing community and care.",
+    imageAltText: "Two masked volunteers in blue shirts, one holding a basket of greens, symbolizing community and care.",
     //#ECEEE9
     text: "Find Strategic Initiatives",
     blurColor:
@@ -47,19 +66,19 @@ export const gtmUsecasesjsonData = [
         {
           heading: "Keyword & Cause Filters",
           points: ["Create a “CSR mandate” by defining causes (e.g., diversity, climate) and track relevant events automatically."],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Event Size & Audience Profile",
           points: ["Narrow results by event scale and attendee demographics that fit your social objectives."],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Stay Updated & Collaborate",
           points: ["Get regular notifications about newly added or changed events that match your filters.",
             "Use our event concierge to reach organizers, manage follow-ups, and coordinate in one panel."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -71,16 +90,20 @@ export const gtmUsecasesjsonData = [
         icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
     ],
-    metaData:{
-      title:"CSR Team - GTM by whr.ai",
-      description:"Align your social initiatives with meaningful events, leveraging GTM’s event impact data to maximize your brand’s positive footprint and community engagement.",
-      image:`${imageURL}/gtm_usecase_csr.jpg`,
+    metaData: {
+      title: "CSR Team - GTM by whr.ai",
+      description: "Align your social initiatives with meaningful events, leveraging GTM’s event impact data to maximize your brand’s positive footprint and community engagement.",
+      image: `${imageURL}/gtm_usecase_csr.jpg`,
     }
   },
   {
     id: "event-suppliers",
+    heading: "Event Suppliers",
+    icon: <GTM_UseCase_9 color="currentColor" />,
+    href: "/gtm/usecases/event-suppliers",
+    dropText: "Identify high-value pitch events using whr.ai GTM.",
     image: `${imageURL}/gtm_usecase_eventsuppliers.jpg`,
-    imageAltText:"",
+    imageAltText: "",
     //#ECEEE9
     text: "Don’t Miss an Event",
     blurColor:
@@ -101,19 +124,19 @@ export const gtmUsecasesjsonData = [
           points: ["Filter by event type (trade shows, summits, festivals) and size to focus on viable leads",
             "Limit by region if your offering is location-dependent."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Qualify with History",
           points: ["Check event background and past attendance to ensure credibility."],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Track & Collaborate",
           points: ["Set up trackers to get updates when new or rehosted events match your criteria.",
             "Collaborate in a shared dashboard, manage outreach, and keep follow-ups organized."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -125,16 +148,20 @@ export const gtmUsecasesjsonData = [
         icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
     ],
-    metaData:{
-      title:"Event Suppliers - GTM by whr.ai",
-      description:"Uncover high-potential events to pitch your services using GTM’s event forecasting, ensuring you’re always first to win new business opportunities.",
-      image:`${imageURL}/gtm_usecase_eventsuppliers.jpg`,
+    metaData: {
+      title: "Event Suppliers - GTM by whr.ai",
+      description: "Uncover high-potential events to pitch your services using GTM’s event forecasting, ensuring you’re always first to win new business opportunities.",
+      image: `${imageURL}/gtm_usecase_eventsuppliers.jpg`,
     }
   },
   {
     id: "marketing",
+    heading: "Marketing",
+    icon: <GTM_UseCase_3 color="currentColor" />,
+    href: "/gtm/usecases/marketing",
+    dropText : "Capture event insights for marketing with whr.ai GTM.",
     image: `${imageURL}/gtm_usecase_marketing.jpg`,
-    imageAltText:"Handwritten 'Marketing Strategy' with an arrow pointing right on a white background.",
+    imageAltText: "Handwritten 'Marketing Strategy' with an arrow pointing right on a white background.",
     //#FFFFFF
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 53%)",
@@ -154,21 +181,21 @@ export const gtmUsecasesjsonData = [
           heading: "Audience Matching",
           points: ["Filter by category, location, dates, and go deeper with event reputation, impact, or demographics.", "Over 40 unique filters let you zoom in on what truly matters."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Streamline Participation",
           points: ["Consolidate cross-departmental event plans into a unified marketing strategy.",
             "Turn each event into a brand-building opportunity with consistent messaging."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Competitor & Audience Tracking",
           points: ["Monitor competitor participation and map where your target audience is gathering.",
             "Use AI to spot hidden opportunities early, securing sponsorships or speaker slots."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -204,16 +231,20 @@ export const gtmUsecasesjsonData = [
           "Select exhibitions or sponsorship packages driven by real-time event data, yielding stronger audience connections.",
       },
     ],
-    metaData:{
-      title:"Marketing Team - GTM by whr.ai",
-      description:"Capture real-time event insights for smarter marketing strategies, capitalizing on on-ground demand and driving brand visibility where it matters most.",
-      image:`${imageURL}/gtm_usecase_marketing.jpg`,
+    metaData: {
+      title: "Marketing Team - GTM by whr.ai",
+      description: "Capture real-time event insights for smarter marketing strategies, capitalizing on on-ground demand and driving brand visibility where it matters most.",
+      image: `${imageURL}/gtm_usecase_marketing.jpg`,
     }
   },
   {
     id: "sales-bizdev",
+    heading: "Sales & Biz Dev",
+    icon: <GTM_UseCase_2 color="currentColor" />,
+    href: "/gtm/usecases/sales-bizdev",
+    dropText: "Drive deal-making with whr.ai GTM's event insights.",
     image: `${imageURL}/gtm_usecase_sales&biz.jpg`,
-    imageAltText:"Two people review charts and graphs on paper and a laptop at a table.",
+    imageAltText: "Two people review charts and graphs on paper and a laptop at a table.",
     //#ECEEE9
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(236, 238, 233, 0.5) 53%)",
@@ -233,19 +264,19 @@ export const gtmUsecasesjsonData = [
           heading: "Smart Event Discovery",
           points: ["Use industry or keyword filters; upload prospect lists to find where your customers or similar audiences congregate.", " Focus on relevant designations or seniority levels to meet decision-makers face-to-face."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "AI Trackers & Match Scores",
           points: ["Enable AI trackers for automatic updates on new, matching events.",
             "Review match scores to prioritize which events to attend or sponsor."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Geographic Targeting",
           points: ["Limit searches by region and receive alerts only for locations that matter to your business."],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -275,16 +306,20 @@ export const gtmUsecasesjsonData = [
           "Target the most profitable exhibitions or sponsor deals by evaluating footfall, competitor presence, and audience fit.",
       },
     ],
-    metaData:{
-      title:"Sales & Biz Dev - GTM by whr.ai",
-      description:"Drive deal-making with GTM’s demand intelligence and event impact insights, pinpointing real-world opportunities to boost pipeline and revenue growth.",
-      image:`${imageURL}/gtm_usecase_sales&biz.jpg`,
+    metaData: {
+      title: "Sales & Biz Dev - GTM by whr.ai",
+      description: "Drive deal-making with GTM’s demand intelligence and event impact insights, pinpointing real-world opportunities to boost pipeline and revenue growth.",
+      image: `${imageURL}/gtm_usecase_sales&biz.jpg`,
     }
   },
   {
     id: "tech-team",
+    heading: "Tech team",
+    icon: <GTM_UseCase_6 color="currentColor" />,
+    href: "/gtm/usecases/tech-team",
+    dropText: "Discover tech events with whr.ai GTM's event forecasting.",
     image: `${imageURL}/gtm_usecase_tech.jpg`,
-    imageAltText:"A person in a gray hoodie wearing a VR headset, clapping hands under a blue sky with clouds, evoking wonder.",
+    imageAltText: "A person in a gray hoodie wearing a VR headset, clapping hands under a blue sky with clouds, evoking wonder.",
     //#ECEEE9
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(236, 238, 233, 0.5) 53%)",
@@ -304,19 +339,19 @@ export const gtmUsecasesjsonData = [
           heading: "Find the Right Tech Events",
           points: ["Set keyword filters (e.g., specific programming languages) or audience profiles for your hiring or outreach goals.", "Filter by event size and geography to focus on local user groups or major conferences."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Stay in the Loop",
           points: ["Receive automatic updates on new or rescheduled events, along with AI-driven recommendations.",
             "Collaborate with your team via a shared dashboard for notes and planning."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Single Panel Management",
           points: ["Reach out to organizers, manage follow-ups, and coordinate your tech presence all in one place."],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -340,16 +375,20 @@ export const gtmUsecasesjsonData = [
           "Place your engineers or CTO on stage at key developer conferences, enhancing company credibility.",
       },
     ],
-    metaData:{
-      title:"Tech Team - GTM by whr.ai",
-      description:"Discover tech-focused gatherings and developer hotspots with GTM’s event forecasting, fueling DevRel success and real-time intelligence for product launches.",
-      image:`${imageURL}/gtm_usecase_tech.jpg`,
+    metaData: {
+      title: "Tech Team - GTM by whr.ai",
+      description: "Discover tech-focused gatherings and developer hotspots with GTM’s event forecasting, fueling DevRel success and real-time intelligence for product launches.",
+      image: `${imageURL}/gtm_usecase_tech.jpg`,
     }
   },
   {
     id: "brand-agency",
+    heading: "Brand Agency",
+    icon: <GTM_UseCase_8 color="currentColor" />,
+    href: "/gtm/usecases/brand-agency",
+    dropText: "Boost client campaigns using whr.ai GTM's event data.",
     image: `${imageURL}/gtm_usecase_brand.jpg`,
-    imageAltText:"Flat lay of a laptop, eyeglasses, gold clips, pink stapler, and a clipboard with a branding diagram, exuding professionalism.",
+    imageAltText: "Flat lay of a laptop, eyeglasses, gold clips, pink stapler, and a clipboard with a branding diagram, exuding professionalism.",
     //#FDFDFD
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(253, 253, 253, 0.5) 53%)",
@@ -369,21 +408,21 @@ export const gtmUsecasesjsonData = [
           heading: "Curate Events by Brand Goals",
           points: ["Filter by client product keywords or brand strategy to pinpoint ideal opportunities.", "Consider size, audience profile, and format for tailored recommendations."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Track Competitors & Geography",
           points: ["Watch your clients’ rivals and see where they invest in events.",
             "Set geographic parameters to narrow down or expand the search as needed."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "All-in-One Dashboard",
           points: ["Get real-time updates, coordinate internally, and reach out to organizers to secure speaking slots or sponsorships.",
             "Track ROI for each event in one place."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -413,16 +452,21 @@ export const gtmUsecasesjsonData = [
           "Recommend ideal expos or sponsorships that cater to clients’ brand goals, optimizing event marketing ROI.",
       },
     ],
-    metaData:{
-      title:"Brand Agency - GTM by whr.ai",
-      description:"Amplify client campaigns with GTM’s event data, discovering real-world brand alignment opportunities and maximizing sponsor ROI at key gatherings.",
-      image:`${imageURL}/gtm_usecase_brand.jpg`,
+    metaData: {
+      title: "Brand Agency - GTM by whr.ai",
+      description: "Amplify client campaigns with GTM’s event data, discovering real-world brand alignment opportunities and maximizing sponsor ROI at key gatherings.",
+      image: `${imageURL}/gtm_usecase_brand.jpg`,
     }
   },
   {
     id: "community-groups",
+    heading: "Community & Groups",
+    icon: <GTM_UseCase_15 color="currentColor" />,
+    href: "/gtm/usecases/community-groups",
+    dropText:
+      "Coordinate group outings with whr.ai GTM's event insights.",
     image: `${imageURL}/gtm_usecase_community.jpg`,
-    imageAltText:"A group of hands stacked together, symbolizing unity and support, with a blurred background highlighting connection.",
+    imageAltText: "A group of hands stacked together, symbolizing unity and support, with a blurred background highlighting connection.",
     //#CDCDCD
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(205, 205, 205, 0.5) 53%)",
@@ -442,20 +486,20 @@ export const gtmUsecasesjsonData = [
           heading: "Tailor the Event Enginels",
           points: ["Define goals to ensure only relevant events appear for your members.", "Embed our event widget on your website or social channel for easy access."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Member Collaboration",
           points: [" Let members show interest in upcoming events and ask questions in a shared space.",
             " Encourage knowledge-sharing and coordination for better group engagement."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "One-Stop Experience",
           points: ["Provide valuable notifications, organizer contacts, and community insights—all from a single platform."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -467,16 +511,21 @@ export const gtmUsecasesjsonData = [
         icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
     ],
-    metaData:{
-      title:"Community & Groups - GTM by whr.ai",
-      description:"Strengthen social ties and coordinate group outings with GTM’s event insights, discovering gatherings that match shared interests.",
-      image:`${imageURL}/gtm_usecase_community.jpg`,
+    metaData: {
+      title: "Community & Groups - GTM by whr.ai",
+      description: "Strengthen social ties and coordinate group outings with GTM’s event insights, discovering gatherings that match shared interests.",
+      image: `${imageURL}/gtm_usecase_community.jpg`,
     }
   },
   {
     id: "human-resource",
+    heading: "Human Resource",
+    icon: <GTM_UseCase_1 color="currentColor" />,
+    href: "/gtm/usecases/human-resource",
+    dropText:
+     "Optimize hiring via whr.ai GTM's recruitment intelligence.",
     image: `${imageURL}/gtm_usecase_human-resources.jpg`,
-    imageAltText:"Two people at a table with coffee; one holds a clipboard and pen, seemingly leading an interview.",
+    imageAltText: "Two people at a table with coffee; one holds a clipboard and pen, seemingly leading an interview.",
     //#DEE4E8
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(222, 228, 232, 0.5) 53%)",
@@ -497,20 +546,20 @@ export const gtmUsecasesjsonData = [
           points: [" Filter events by industry or keywords if you need candidates with specific expertise.",
             "Narrow down by designation or seniority to find the right talent pool."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Combine Trackers & Match Scores",
           points: ["Create multiple trackers for different roles and see a match score for each event.",
             "Set notifications so you never miss new or updated events that fit your hiring needs."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Leverage AI Agent",
           points: ["Save your search filters and let our AI agent continuously monitor the best event matches for you."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -528,16 +577,20 @@ export const gtmUsecasesjsonData = [
           "Locate top talent at conferences and job fairs that match your hiring needs, fueling more personal interactions.",
       },
     ],
-    metaData:{
-      title:"Human Resource Team - GTM by whr.ai",
-      description:"Optimize hiring with GTM’s event intelligence, connecting you to top talent through demand forecasting and real-time event data for strategic recruitment.",
-      image:`${imageURL}/gtm_usecase_human-resources.jpg`,
+    metaData: {
+      title: "Human Resource Team - GTM by whr.ai",
+      description: "Optimize hiring with GTM’s event intelligence, connecting you to top talent through demand forecasting and real-time event data for strategic recruitment.",
+      image: `${imageURL}/gtm_usecase_human-resources.jpg`,
     }
   },
   {
     id: "influencers",
+    heading: "Influencers",
+    icon: <GTM_UseCase_4 color="currentColor" />,
+    href: "/gtm/usecases/influencers",
+    dropText:"Engage niche audiences with whr.ai GTM's intelligence.",
     image: `${imageURL}/gtm_usecase_influencer.jpg`,
-    imageAltText:"Young woman with red hair smiles and waves at a smartphone on a stand in a cozy, minimal home interior.",
+    imageAltText: "Young woman with red hair smiles and waves at a smartphone on a stand in a cozy, minimal home interior.",
     //#BBBEB7
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 190, 183, 0.5) 53%)",
@@ -558,21 +611,21 @@ export const gtmUsecasesjsonData = [
           points: ["Include relevant topics, exclude irrelevant ones, and narrow results by region.",
             "Filter by audience profile or experts you already admire for similar event matches."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "AI Trackers & Notifications",
           points: ["Save filters as trackers so the AI Co-pilot runs 24/7.",
             "Get notified immediately when new or forecasted events match your criteria."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Simple Outreach & Concierge",
           points: ["Contact organizers from your dashboard. Keep notes and follow-ups centralized.",
             "Enable event concierge to handle communications on your behalf."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -584,16 +637,20 @@ export const gtmUsecasesjsonData = [
         icon: <GTM_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
     ],
-    metaData:{
-      title:"Influencers - GTM by whr.ai",
-      description:"Engage with relevant audiences by spotting events that match your niche, thanks to GTM’s demand planning and real-time event intelligence.",
-      image:`${imageURL}/gtm_usecase_influencer.jpg`,
+    metaData: {
+      title: "Influencers - GTM by whr.ai",
+      description: "Engage with relevant audiences by spotting events that match your niche, thanks to GTM’s demand planning and real-time event intelligence.",
+      image: `${imageURL}/gtm_usecase_influencer.jpg`,
     }
   },
   {
     id: "manpower-agency",
+    heading: "Manpower Agency",
+    icon: <GTM_UseCase_14 color="currentColor" />,
+    href: "/gtm/usecases/manpower-agency",
+    dropText:"Anticipate staffing needs using whr.ai GTM's forecasting.",
     image: `${imageURL}/gtm_usecase_manpower.jpg`,
-    imageAltText:"Two construction workers in hard hats and vests walk under a bridge with yellow scaffolding, city skyline behind.",
+    imageAltText: "Two construction workers in hard hats and vests walk under a bridge with yellow scaffolding, city skyline behind.",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 205, 218, 0.5) 53%)",
     opacity: "100%",
@@ -613,25 +670,25 @@ export const gtmUsecasesjsonData = [
           points: ["Filter by event type, region, size, or audience to match staffing specialties.",
             "Bookmark or tag high-potential events for quick reference."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Team Coordination",
           points: ["Assign event leads to different sales members, manage notes, and centralize discussion.",
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Smart Trackers",
           points: ["Get alerts when new or rehosted events appear or when dates change."],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Direct Outreach",
           points: ["Send proposals to organizers from the same dashboard.",
             "Keep all follow-ups and communication in one streamlined system."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -642,18 +699,22 @@ export const gtmUsecasesjsonData = [
           " Pinpoint event staffing opportunities by matching positions with relevant event designations or roles.",
         icon: <GTM_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
-     
+
     ],
-    metaData:{
-      title:"Manpower Agency - GTM by whr.ai",
-      description:"Anticipate staffing needs for live events using GTM’s demand prediction, ensuring optimal resource deployment and boosting client satisfaction.",
-      image:`${imageURL}/gtm_usecase_manpower.jpg`,
+    metaData: {
+      title: "Manpower Agency - GTM by whr.ai",
+      description: "Anticipate staffing needs for live events using GTM’s demand prediction, ensuring optimal resource deployment and boosting client satisfaction.",
+      image: `${imageURL}/gtm_usecase_manpower.jpg`,
     }
   },
   {
     id: "media-news",
+    heading: "Media & News",
+    icon: <GTM_UseCase_12 color="currentColor" />,
+    href: "/gtm/usecases/media-news",
+    dropText:"Plan news coverage with whr.ai GTM's event forecasting.",
     image: `${imageURL}/gtm_usecase_news&media.jpg`,
-    imageAltText:"A person holds an open magazine with articles and images, a cup of black coffee on a white table, evoking calm.",
+    imageAltText: "A person holds an open magazine with articles and images, a cup of black coffee on a white table, evoking calm.",
     //#E7E7E5
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(231, 231, 229, 0.5) 53%)",
@@ -674,26 +735,26 @@ export const gtmUsecasesjsonData = [
           points: ["Specify focus areas and exclude irrelevant terms to find story-worthy gatherings.",
             "Limit or expand by region to align with your coverage scope."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Leverage Known Influencers & Events",
           points: ["Provide a sample set of notable experts or events. The system uncovers similar leads.",
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "24/7 AI Monitoring",
           points: ["Save filters as trackers; get alerts on newly added or changed events.",
             "Reach organizers from the same platform, centralizing your research and follow-ups."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Historical & Future Context",
           points: ["Explore past events for background info and stay on top of future ones to break news first",
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -705,16 +766,21 @@ export const gtmUsecasesjsonData = [
         icon: <GTM_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
     ],
-    metaData:{
-      title:"Media & News - GTM by whr.ai",
-      description:"Get the scoop on upcoming events with GTM’s demand forecasting, ensuring timely coverage and exclusive stories shaped by real-time intelligence.",
-      image:`${imageURL}/gtm_usecase_news&media.jpg`,
+    metaData: {
+      title: "Media & News - GTM by whr.ai",
+      description: "Get the scoop on upcoming events with GTM’s demand forecasting, ensuring timely coverage and exclusive stories shaped by real-time intelligence.",
+      image: `${imageURL}/gtm_usecase_news&media.jpg`,
     }
   },
   {
     id: "procurement",
+    heading: "Procurement",
+    icon: <GTM_UseCase_7 color="currentColor" />,
+    href: "/gtm/usecases/procurement",
+    dropText:
+      "Find new suppliers via whr.ai GTM's event predictions.",
     image: `${imageURL}/gtm_usecase_procurement.jpg`,
-    imageAltText:"Smiling man in a white T-shirt points up with both hands, wearing a smartwatch against a light gray background.",
+    imageAltText: "Smiling man in a white T-shirt points up with both hands, wearing a smartwatch against a light gray background.",
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(187, 205, 218, 0.5) 53%)",
     opacity: "100%",
@@ -734,21 +800,21 @@ export const gtmUsecasesjsonData = [
           points: ["Set keyword filters to find events that address your product needs or pain points.",
             "Narrow by event size, seller type, or format for precise targeting."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Geo & Competitor Tracking",
           points: ["Limit searches to your feasible regions.",
             "Monitor where your competitors or preferred vendors appear, and let AI suggest comparable options"
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Team Coordination & Outreach",
           points: ["Receive periodic recommendations and track everything in a shared dashboard.",
             " Engage organizers or request proposals directly, managing follow-ups in one system."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -765,18 +831,22 @@ export const gtmUsecasesjsonData = [
         content:
           "Focus on relevant vendor fairs that match your procurement needs, improving supply chain relations.",
       },
-     
+
     ],
-    metaData:{
-      title:"Procurement - GTM by whr.ai",
-      description:"Source new suppliers at relevant expos and trade shows, guided by GTM’s demand predictions and real-time event insights for better contract negotiation.",
-      image:`${imageURL}/gtm_usecase_procurement.jpg`,
+    metaData: {
+      title: "Procurement - GTM by whr.ai",
+      description: "Source new suppliers at relevant expos and trade shows, guided by GTM’s demand predictions and real-time event insights for better contract negotiation.",
+      image: `${imageURL}/gtm_usecase_procurement.jpg`,
     }
   },
   {
     id: "research-consultancy",
+    heading: "Research & Consultancy",
+    icon: <GTM_UseCase_11 color="currentColor" />,
+    href: "/gtm/usecases/research-consultancy",
+    dropText:"Track industry trends using whr.ai GTM's event data.",
     image: `${imageURL}/gtm_usecase_research&consulting.jpg`,
-    imageAltText:"Abstract image with transparent layers, blue patterns, dots, and circles, symbolizing data flow and tech.",
+    imageAltText: "Abstract image with transparent layers, blue patterns, dots, and circles, symbolizing data flow and tech.",
     //#E7E7E5
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(231, 231, 229, 0.5) 53%)",
@@ -797,20 +867,20 @@ export const gtmUsecasesjsonData = [
           points: ["Search by category, keywords, location, size, or format to capture exactly what you need.",
             "Include or exclude certain job roles to refine your dataset."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Trend & Tracker Tools",
           points: ["Monitor changes or newly launched events in your focus area. Compare historical data to identify emerging patterns"
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Deeper Intelligence",
           points: ["Export raw data for deeper modeling or rely on our Event AI Co-pilot for quick insights.",
             "Request white-glove research for advanced metrics like event revenue estimates."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -822,16 +892,20 @@ export const gtmUsecasesjsonData = [
         icon: <GTM_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
       },
     ],
-    metaData:{
-      title:"Research & Consultancy - GTM by whr.ai",
-      description:"Generate forward-looking market reports and track emerging industry trends with GTM’s event data, unlocking deep insights for strategic advisories.",
-      image:`${imageURL}/gtm_usecase_research&consulting.jpg`,
+    metaData: {
+      title: "Research & Consultancy - GTM by whr.ai",
+      description: "Generate forward-looking market reports and track emerging industry trends with GTM’s event data, unlocking deep insights for strategic advisories.",
+      image: `${imageURL}/gtm_usecase_research&consulting.jpg`,
     }
   },
   {
     id: "venue",
+    heading: "Venue",
+    icon: <GTM_UseCase_10 color="currentColor" />,
+    href: "/gtm/usecases/venue",
+    dropText:"Optimize event scheduling using whr.ai GTM's insights.",
     image: `${imageURL}/gtm_usecase_venue.jpg`,
-    imageAltText:"Outdoor amphitheater with red seats and a metallic structure, set against skyscrapers under a clear sky.",
+    imageAltText: "Outdoor amphitheater with red seats and a metallic structure, set against skyscrapers under a clear sky.",
     //#F4E8EB
     blurColor:
       "linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(244, 232, 235, 0.5) 53%)",
@@ -852,20 +926,20 @@ export const gtmUsecasesjsonData = [
           points: ["Choose event size, type, or format to match your venue’s capacity and capabilities.",
             "Define geographic constraints if you only book certain cities or regions."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Forecasted & TBA Events",
           points: ["Target events with upcoming or tentative dates and verify their past success to gauge fit."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Save & Track",
           points: ["Convert filters into trackers. Get notified about new events, changes, or rehosts.",
             "Use a shared dashboard for team coordination, proposals, and RFP management—all in one panel"
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -883,16 +957,20 @@ export const gtmUsecasesjsonData = [
           "If you exhibit at other fairs or do cross-promotions, spot high-value gatherings for improved brand synergy.",
       },
     ],
-    metaData:{
-      title:"Venue - GTM by whr.ai",
-      description:"Fill your calendar with top-tier events using GTM’s demand insights and footfall data, optimizing booking strategies for maximum revenue.",
-      image:`${imageURL}/gtm_usecase_venue.jpg`,
+    metaData: {
+      title: "Venue - GTM by whr.ai",
+      description: "Fill your calendar with top-tier events using GTM’s demand insights and footfall data, optimizing booking strategies for maximum revenue.",
+      image: `${imageURL}/gtm_usecase_venue.jpg`,
     }
   },
   {
     id: "event-planners-and-ma",
+    heading: "Event Planners and M&A",
+    icon: <GTM_UseCase_13 color="currentColor" />,
+    href: "/gtm/usecases/event-planners-and-ma",
+    dropText:"Align event portfolios with whr.ai GTM's competitor data.",
     image: `${imageURL}/gtm_usecase_m&a.jpg`,
-    imageAltText:"Close-up of wooden puzzle pieces with one missing, revealing a dark blue background, symbolizing unfinished work.",
+    imageAltText: "Close-up of wooden puzzle pieces with one missing, revealing a dark blue background, symbolizing unfinished work.",
     //#CBA88B
     blurColor:
       "linear-gradient(180deg, rgba(203, 168, 139, 0.5) 10%, rgba(203, 168, 139, 0.5) 53%)",
@@ -913,20 +991,20 @@ export const gtmUsecasesjsonData = [
           points: ["Filter by event type (trade shows, summits, festivals) and size to focus on viable leads.",
             "Limit by region if your offering is location-dependent."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Qualify with History",
           points: ["Check event background and past attendance to ensure credibility."
           ],
-          icon : Aiicon
+          icon: Aiicon
         },
         {
           heading: "Track & Collaborate",
           points: ["Set up trackers to get updates when new or rehosted events match your criteria.",
             "Collaborate in a shared dashboard, manage outreach, and keep follow-ups organized."
           ],
-          icon : Aiicon
+          icon: Aiicon
         }
       ]
     },
@@ -943,12 +1021,12 @@ export const gtmUsecasesjsonData = [
         content:
           " Attract high-profile speakers (or place your own) when orchestrating large conferences or evaluating acquisitions.",
       },
-      
+
     ],
-    metaData:{
-      title:"Event Planners & M&A - GTM by whr.ai",
-      description:"Align your event portfolio and potential acquisitions with GTM’s footfall data, competitor analysis, and demand insights for strategic expansion.",
-      image:`${imageURL}/gtm_usecase_m&a.jpg`,
+    metaData: {
+      title: "Event Planners & M&A - GTM by whr.ai",
+      description: "Align your event portfolio and potential acquisitions with GTM’s footfall data, competitor analysis, and demand insights for strategic expansion.",
+      image: `${imageURL}/gtm_usecase_m&a.jpg`,
     }
   },
 ];
