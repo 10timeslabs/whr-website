@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import Image from "next/image";
 import AutoScroll from "@/components/AutoScroll";
@@ -16,6 +16,13 @@ import IntelDataIcon from '/public/realworldproblems/timesensitiveintel.svg'
 import GetInTouch from "@/components/GetInTouch";
 import Footer from "@/components/Footer";
 import HomeNavbar from "@/components/HomeNavbar";
+
+export const metadata = {
+  title: "whr.ai - Premier Event Intelligence Platform",
+  alternates: {
+    canonical: "https://whr.ai",
+  },
+};
 
 export default function Home() {
 
@@ -35,9 +42,9 @@ export default function Home() {
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
       <div className={`text-center`}>
-        <span className="mb-3 text-[5vw] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]">
+        <h1 className="mb-3 text-[5vw] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]">
           Whats Happening for Real
-        </span>
+        </h1>
 
         {/* <HeadingtextAnimation heading="Whr is the" words={headingWords}/> */}
         <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[850px]:text-[16px]">

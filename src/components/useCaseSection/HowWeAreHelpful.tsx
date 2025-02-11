@@ -46,10 +46,10 @@ const HowWeAreHelpful = () => {
 			<div className='w-[87%] flex justify-between max-[900px]:flex-col'>
 				<div className='flex flex-col gap-4 w-[40%] items-start max-[1000px]:w-[30%] max-[900px]:w-full max-[900px]:items-center'>
 					<div className="text-sm font-medium border border-color rounded-xl py-1 px-7">HOW ARE WE HELPFUL</div>
-					<div className='text-[64px] leading-[70px] max-[1000px]:text-[48px] max-[1000px]:leading-[54px] max-[730px]:text-[40px] max-[730px]:leading-[50px]'>{how_helpfulData?.heading}</div>
+					<div className='text-[64px] leading-[70px] max-[1200px]:text-[48px] max-[1200px]:leading-[54px] max-[730px]:text-[40px] max-[730px]:leading-[50px]'>{how_helpfulData?.heading}</div>
 					<div className='text-[var(--secondary-text-color)] text-[20px] max-[730px]:text-[16px]'>{how_helpfulData?.subheading}</div>
 				</div>
-				<div className="w-[55%] grid grid-cols-2 gap-4 max-[1000px]:mt-8 max-[700px]:grid-cols-1">
+				<div className="w-[55%] grid grid-cols-2 gap-4 max-[1000px]:w-[65%] max-[1000px]:mt-8 max-[700px]:grid-cols-1 max-[900px]:w-full">
 					{carouselData && carouselData.map((problem, key) => (
 						<ProblemCard
 							key={key}

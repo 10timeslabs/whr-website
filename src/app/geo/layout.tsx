@@ -3,7 +3,7 @@ import "../globals.css";
 
 export const metadata: Metadata = {
   title: "whr.ai/geo - Geo Event Intelligence Solutions",
-  description: "whr.ai/geo - Geo Event Intelligence Solutions",
+  description: "Explore whr.ai's GEO solutions for location-based event intelligence, accurate forecasting, and operational optimization.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

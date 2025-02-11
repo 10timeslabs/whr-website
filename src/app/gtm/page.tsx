@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -25,6 +25,12 @@ import GetInTouch from "@/components/GetInTouch";
 import Footer from "@/components/Footer";
 import GeneralNavbar from "@/components/GeneralNavbar";
 
+export const metadata = {
+  title: "whr.ai/gtm - GTM Event Intelligence Solutions",
+  alternates: {
+    canonical: "https://whr.ai/gtm",
+  },
+};
 export default function Home() {
   const headingWords = [
     "Partners ?",

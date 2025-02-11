@@ -76,13 +76,13 @@ const Footer = () => {
             <h3 className="text-lg mb-2">Company</h3>
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
-                <Link href="https://docs.google.com/document/d/1gwqPfP18N2PuokVuXQhKjNDTr_UyHknw7umGhwekBq8/edit?usp=sharing" target="_blank">About Us</Link>
+                <Link href="/about" target="_blank">About Us</Link>
               </li>
               <li>
                 <Link href="#">Blog</Link>
               </li>
               <li>
-                <Link href="#">Contact</Link>
+                <Link href="/contact-us">Contact</Link>
               </li>
               <li>
                 <Link href="#">Docs</Link>
@@ -111,7 +111,8 @@ const Footer = () => {
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
                 <Link
-                  href="https://docs.google.com/document/d/1pq26xZBAgzSbn_dVSazrEv4TiubKMuOU78ctDdaPXT8/edit?usp=sharing"
+                  // href="https://docs.google.com/document/d/1pq26xZBAgzSbn_dVSazrEv4TiubKMuOU78ctDdaPXT8/edit?usp=sharing"
+                  href="/terms-of-service"
                   target="_blank"
                 >
                   Terms of Services
@@ -119,7 +120,8 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://docs.google.com/document/d/15lxeZeZnYK3dKHwGZqC5nMJhCJWwvCgCrbv2sxKdk2A/edit?usp=sharing"
+                  // href="https://docs.google.com/document/d/15lxeZeZnYK3dKHwGZqC5nMJhCJWwvCgCrbv2sxKdk2A/edit?usp=sharing"
+                  href="/privacy-policy"
                   target="_blank"
                 >
                   Privacy Policy
@@ -127,7 +129,8 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://docs.google.com/document/d/1Cl5DY5IevK79BXRjElgfV7L8GF_F479MondVcARQbV4/edit?usp=sharing"
+                  // href="https://docs.google.com/document/d/1Cl5DY5IevK79BXRjElgfV7L8GF_F479MondVcARQbV4/edit?usp=sharing"
+                  href="/cookie-policy"
                   target="_blank"
                 >
                   Cookie Policy

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import AutoScroll from "@/components/AutoScroll";
@@ -17,7 +17,12 @@ import Volatile from '/public/internal_landing_page_icons/Volatile local demand_
 import GetInTouch from "@/components/GetInTouch";
 import Footer from "@/components/Footer";
 import GeneralNavbar from "@/components/GeneralNavbar";
-
+export const metadata = {
+  title: "whr.ai/geo - Geo Event Intelligence Solutions",
+  alternates: {
+    canonical: "https://whr.ai/geo",
+  },
+};
 export default function Home() {
   const headingWords = [
     "Demand ?",

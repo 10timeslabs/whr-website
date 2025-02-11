@@ -1,19 +1,51 @@
-import CSR from "/public/gtm_usecases_banners/gtm_usecase_csr.jpg";
-import EventSupplier from "/public/gtm_usecases_banners/gtm_usecase_eventsuppliers.jpg";
-import Marketing from "/public/gtm_usecases_banners/gtm_usecase_marketing.jpg";
-import SalesAndBiz from "/public/gtm_usecases_banners/gtm_usecase_sales&biz.jpg";
-import Tech from "/public/gtm_usecases_banners/gtm_usecase_tech.jpg";
-import Brand from "/public/gtm_usecases_banners/gtm_usecase_brand.jpg";
-import Community from "/public/gtm_usecases_banners/gtm_usecase_community.jpg";
-import HumanResource from "/public/gtm_usecases_banners/gtm_usecase_human-resources.jpg";
-import Influencer from "/public/gtm_usecases_banners/gtm_usecase_influencer.jpg";
-import ManPower from "/public/gtm_usecases_banners/gtm_usecase_manpower.jpg";
-import NewsAndMedia from "/public/gtm_usecases_banners/gtm_usecase_news&media.jpg";
-import Procurement from "/public/gtm_usecases_banners/gtm_usecase_procurement.jpg";
-import ResearchAndConsulting from "/public/gtm_usecases_banners/gtm_usecase_research&consulting.jpg";
-import Venue from "/public/gtm_usecases_banners/gtm_usecase_venue.jpg";
-import MandA from "/public/gtm_usecases_banners/gtm_usecase_m&a.jpg";
-import Aiicon from '/public/Products/aiicon.svg'
+import BrandAgencyOne from '/public/gtm_how_icons/Brand agency01.svg'
+import BrandAgencyTwo from '/public/gtm_how_icons/Brand agency02.svg'
+import BrandAgencyThree from '/public/gtm_how_icons/Brand agency03.svg'
+import CommunityOne from '/public/gtm_how_icons/Community & groups01.svg'
+import CommunityTwo from '/public/gtm_how_icons/Community & groups02.svg'
+import CommunityThree from '/public/gtm_how_icons/Community & groups03.svg'
+import CsrOne from '/public/gtm_how_icons/CSR01.svg'
+import CsrTwo from '/public/gtm_how_icons/CSR02.svg'
+import CsrThree from '/public/gtm_how_icons/CSR03.svg'
+import EventPlannerOne from '/public/gtm_how_icons/Event planner and M&A01.svg'
+import EventPlannerTwo from '/public/gtm_how_icons/Event planner and M&A02.svg'
+import EventPlannerThree from '/public/gtm_how_icons/Event planner and M&A03.svg'
+import EventSupplierOne from '/public/gtm_how_icons/Event suppliers01.svg'
+import EventSupplierTwo from '/public/gtm_how_icons/Event suppliers02.svg'
+import EventSupplierThree from '/public/gtm_how_icons/Event suppliers03.svg'
+import HumanResourceOne from '/public/gtm_how_icons/Human resource01.svg'
+import HumanResourceTwo from '/public/gtm_how_icons/Human resource02.svg'
+import HumanResourceThree from '/public/gtm_how_icons/Human resource03.svg'
+import InfluencersOne from '/public/gtm_how_icons/Influencers01.svg'
+import InfluencersTwo from '/public/gtm_how_icons/Influencers02.svg'
+import InfluencersThree from '/public/gtm_how_icons/Influencers03.svg'
+import ManpowerOne from '/public/gtm_how_icons/Manpower agency01.svg'
+import ManpowerTwo from '/public/gtm_how_icons/Manpower agency02.svg'
+import ManpowerThree from '/public/gtm_how_icons/Manpower agency03.svg'
+import ManpowerFour from '/public/gtm_how_icons/Manpower agency04.svg'
+import MarketingOne from '/public/gtm_how_icons/Marketing01.svg'
+import MarketingTwo from '/public/gtm_how_icons/Marketing02.svg'
+import MarketingThree from '/public/gtm_how_icons/Marketing03.svg'
+import MediaOne from '/public/gtm_how_icons/Media & news01.svg'
+import MediaTwo from '/public/gtm_how_icons/Media & news02.svg'
+import MediaThree from '/public/gtm_how_icons/Media & news03.svg'
+import MediaFour from '/public/gtm_how_icons/Media & news04.svg'
+import ProcurementOne from '/public/gtm_how_icons/Procurement01.svg'
+import ProcurementTwo from '/public/gtm_how_icons/Procurement02.svg'
+import ProcurementThree from '/public/gtm_how_icons/Procurement03.svg'
+import ResearchOne from '/public/gtm_how_icons/Research & consultancy01.svg'
+import ResearchTwo from '/public/gtm_how_icons/Research & consultancy02.svg'
+import ResearchThree from '/public/gtm_how_icons/Research & consultancy03.svg'
+import SalesOne from '/public/gtm_how_icons/Sales & Biz01.svg'
+import SalesTwo from '/public/gtm_how_icons/Sales & Biz02.svg'
+import SalesThree from '/public/gtm_how_icons/Sales & Biz03.svg'
+import TechTeamOne from '/public/gtm_how_icons/Tech team01.svg'
+import TechTeamTwo from '/public/gtm_how_icons/Tech team02.svg'
+import TechTeamThree from '/public/gtm_how_icons/Tech team03.svg'
+import VenueOne from '/public/gtm_how_icons/Venue01.svg'
+import VenueTwo from '/public/gtm_how_icons/Venue02.svg'
+import VenueThree from '/public/gtm_how_icons/Venue03.svg'
+
 import {
   GTM_Soln_1,
   GTM_Soln_2,
@@ -66,19 +98,19 @@ export const gtmUsecasesjsonData = [
         {
           heading: "Keyword & Cause Filters",
           points: ["Create a “CSR mandate” by defining causes (e.g., diversity, climate) and track relevant events automatically."],
-          icon: Aiicon
+          icon: CsrOne
         },
         {
           heading: "Event Size & Audience Profile",
           points: ["Narrow results by event scale and attendee demographics that fit your social objectives."],
-          icon: Aiicon
+          icon: CsrTwo
         },
         {
           heading: "Stay Updated & Collaborate",
           points: ["Get regular notifications about newly added or changed events that match your filters.",
             "Use our event concierge to reach organizers, manage follow-ups, and coordinate in one panel."
           ],
-          icon: Aiicon
+          icon: CsrThree
         }
       ]
     },
@@ -125,19 +157,19 @@ export const gtmUsecasesjsonData = [
           points: ["Filter by event type (trade shows, summits, festivals) and size to focus on viable leads",
             "Limit by region if your offering is location-dependent."
           ],
-          icon: Aiicon
+          icon: EventSupplierOne
         },
         {
           heading: "Qualify with History",
           points: ["Check event background and past attendance to ensure credibility."],
-          icon: Aiicon
+          icon: EventSupplierTwo
         },
         {
           heading: "Track & Collaborate",
           points: ["Set up trackers to get updates when new or rehosted events match your criteria.",
             "Collaborate in a shared dashboard, manage outreach, and keep follow-ups organized."
           ],
-          icon: Aiicon
+          icon: EventSupplierThree
         }
       ]
     },
@@ -183,21 +215,21 @@ export const gtmUsecasesjsonData = [
           heading: "Audience Matching",
           points: ["Filter by category, location, dates, and go deeper with event reputation, impact, or demographics.", "Over 40 unique filters let you zoom in on what truly matters."
           ],
-          icon: Aiicon
+          icon: MarketingOne
         },
         {
           heading: "Streamline Participation",
           points: ["Consolidate cross-departmental event plans into a unified marketing strategy.",
             "Turn each event into a brand-building opportunity with consistent messaging."
           ],
-          icon: Aiicon
+          icon: MarketingTwo
         },
         {
           heading: "Competitor & Audience Tracking",
           points: ["Monitor competitor participation and map where your target audience is gathering.",
             "Use AI to spot hidden opportunities early, securing sponsorships or speaker slots."
           ],
-          icon: Aiicon
+          icon: MarketingThree
         }
       ]
     },
@@ -271,19 +303,19 @@ export const gtmUsecasesjsonData = [
           heading: "Smart Event Discovery",
           points: ["Use industry or keyword filters; upload prospect lists to find where your customers or similar audiences congregate.", " Focus on relevant designations or seniority levels to meet decision-makers face-to-face."
           ],
-          icon: Aiicon
+          icon: SalesOne
         },
         {
           heading: "AI Trackers & Match Scores",
           points: ["Enable AI trackers for automatic updates on new, matching events.",
             "Review match scores to prioritize which events to attend or sponsor."
           ],
-          icon: Aiicon
+          icon: SalesTwo
         },
         {
           heading: "Geographic Targeting",
           points: ["Limit searches by region and receive alerts only for locations that matter to your business."],
-          icon: Aiicon
+          icon: SalesThree
         }
       ]
     },
@@ -350,19 +382,19 @@ export const gtmUsecasesjsonData = [
           heading: "Find the Right Tech Events",
           points: ["Set keyword filters (e.g., specific programming languages) or audience profiles for your hiring or outreach goals.", "Filter by event size and geography to focus on local user groups or major conferences."
           ],
-          icon: Aiicon
+          icon: TechTeamOne
         },
         {
           heading: "Stay in the Loop",
           points: ["Receive automatic updates on new or rescheduled events, along with AI-driven recommendations.",
             "Collaborate with your team via a shared dashboard for notes and planning."
           ],
-          icon: Aiicon
+          icon: TechTeamTwo
         },
         {
           heading: "Single Panel Management",
           points: ["Reach out to organizers, manage follow-ups, and coordinate your tech presence all in one place."],
-          icon: Aiicon
+          icon: TechTeamThree
         }
       ]
     },
@@ -422,21 +454,21 @@ export const gtmUsecasesjsonData = [
           heading: "Curate Events by Brand Goals",
           points: ["Filter by client product keywords or brand strategy to pinpoint ideal opportunities.", "Consider size, audience profile, and format for tailored recommendations."
           ],
-          icon: Aiicon
+          icon: BrandAgencyOne
         },
         {
           heading: "Track Competitors & Geography",
           points: ["Watch your clients’ rivals and see where they invest in events.",
             "Set geographic parameters to narrow down or expand the search as needed."
           ],
-          icon: Aiicon
+          icon: BrandAgencyTwo
         },
         {
           heading: "All-in-One Dashboard",
           points: ["Get real-time updates, coordinate internally, and reach out to organizers to secure speaking slots or sponsorships.",
             "Track ROI for each event in one place."
           ],
-          icon: Aiicon
+          icon: BrandAgencyThree
         }
       ]
     },
@@ -503,20 +535,20 @@ export const gtmUsecasesjsonData = [
           heading: "Tailor the Event Enginels",
           points: ["Define goals to ensure only relevant events appear for your members.", "Embed our event widget on your website or social channel for easy access."
           ],
-          icon: Aiicon
+          icon: CommunityOne
         },
         {
           heading: "Member Collaboration",
           points: [" Let members show interest in upcoming events and ask questions in a shared space.",
             " Encourage knowledge-sharing and coordination for better group engagement."
           ],
-          icon: Aiicon
+          icon: CommunityTwo
         },
         {
           heading: "One-Stop Experience",
           points: ["Provide valuable notifications, organizer contacts, and community insights—all from a single platform."
           ],
-          icon: Aiicon
+          icon: CommunityThree
         }
       ]
     },
@@ -563,20 +595,20 @@ export const gtmUsecasesjsonData = [
           points: [" Filter events by industry or keywords if you need candidates with specific expertise.",
             "Narrow down by designation or seniority to find the right talent pool."
           ],
-          icon: Aiicon
+          icon: HumanResourceOne
         },
         {
           heading: "Combine Trackers & Match Scores",
           points: ["Create multiple trackers for different roles and see a match score for each event.",
             "Set notifications so you never miss new or updated events that fit your hiring needs."
           ],
-          icon: Aiicon
+          icon: HumanResourceTwo
         },
         {
           heading: "Leverage AI Agent",
           points: ["Save your search filters and let our AI agent continuously monitor the best event matches for you."
           ],
-          icon: Aiicon
+          icon: HumanResourceThree
         }
       ]
     },
@@ -630,21 +662,21 @@ export const gtmUsecasesjsonData = [
           points: ["Include relevant topics, exclude irrelevant ones, and narrow results by region.",
             "Filter by audience profile or experts you already admire for similar event matches."
           ],
-          icon: Aiicon
+          icon: InfluencersOne
         },
         {
           heading: "AI Trackers & Notifications",
           points: ["Save filters as trackers so the AI Co-pilot runs 24/7.",
             "Get notified immediately when new or forecasted events match your criteria."
           ],
-          icon: Aiicon
+          icon: InfluencersTwo
         },
         {
           heading: "Simple Outreach & Concierge",
           points: ["Contact organizers from your dashboard. Keep notes and follow-ups centralized.",
             "Enable event concierge to handle communications on your behalf."
           ],
-          icon: Aiicon
+          icon: InfluencersThree
         }
       ]
     },
@@ -690,25 +722,25 @@ export const gtmUsecasesjsonData = [
           points: ["Filter by event type, region, size, or audience to match staffing specialties.",
             "Bookmark or tag high-potential events for quick reference."
           ],
-          icon: Aiicon
+          icon: ManpowerOne
         },
         {
           heading: "Team Coordination",
           points: ["Assign event leads to different sales members, manage notes, and centralize discussion.",
           ],
-          icon: Aiicon
+          icon: ManpowerTwo
         },
         {
           heading: "Smart Trackers",
           points: ["Get alerts when new or rehosted events appear or when dates change."],
-          icon: Aiicon
+          icon: ManpowerThree
         },
         {
           heading: "Direct Outreach",
           points: ["Send proposals to organizers from the same dashboard.",
             "Keep all follow-ups and communication in one streamlined system."
           ],
-          icon: Aiicon
+          icon: ManpowerFour
         }
       ]
     },
@@ -756,26 +788,26 @@ export const gtmUsecasesjsonData = [
           points: ["Specify focus areas and exclude irrelevant terms to find story-worthy gatherings.",
             "Limit or expand by region to align with your coverage scope."
           ],
-          icon: Aiicon
+          icon: MediaOne
         },
         {
           heading: "Leverage Known Influencers & Events",
           points: ["Provide a sample set of notable experts or events. The system uncovers similar leads.",
           ],
-          icon: Aiicon
+          icon: MediaTwo
         },
         {
           heading: "24/7 AI Monitoring",
           points: ["Save filters as trackers; get alerts on newly added or changed events.",
             "Reach organizers from the same platform, centralizing your research and follow-ups."
           ],
-          icon: Aiicon
+          icon: MediaThree
         },
         {
           heading: "Historical & Future Context",
           points: ["Explore past events for background info and stay on top of future ones to break news first",
           ],
-          icon: Aiicon
+          icon: MediaFour
         }
       ]
     },
@@ -821,21 +853,21 @@ export const gtmUsecasesjsonData = [
           points: ["Set keyword filters to find events that address your product needs or pain points.",
             "Narrow by event size, seller type, or format for precise targeting."
           ],
-          icon: Aiicon
+          icon: ProcurementOne
         },
         {
           heading: "Geo & Competitor Tracking",
           points: ["Limit searches to your feasible regions.",
             "Monitor where your competitors or preferred vendors appear, and let AI suggest comparable options"
           ],
-          icon: Aiicon
+          icon: ProcurementTwo
         },
         {
           heading: "Team Coordination & Outreach",
           points: ["Receive periodic recommendations and track everything in a shared dashboard.",
             " Engage organizers or request proposals directly, managing follow-ups in one system."
           ],
-          icon: Aiicon
+          icon: ProcurementThree
         }
       ]
     },
@@ -890,20 +922,20 @@ export const gtmUsecasesjsonData = [
           points: ["Search by category, keywords, location, size, or format to capture exactly what you need.",
             "Include or exclude certain job roles to refine your dataset."
           ],
-          icon: Aiicon
+          icon: ResearchOne
         },
         {
           heading: "Trend & Tracker Tools",
           points: ["Monitor changes or newly launched events in your focus area. Compare historical data to identify emerging patterns"
           ],
-          icon: Aiicon
+          icon: ResearchTwo
         },
         {
           heading: "Deeper Intelligence",
           points: ["Export raw data for deeper modeling or rely on our Event AI Co-pilot for quick insights.",
             "Request white-glove research for advanced metrics like event revenue estimates."
           ],
-          icon: Aiicon
+          icon: ResearchThree
         }
       ]
     },
@@ -950,20 +982,20 @@ export const gtmUsecasesjsonData = [
           points: ["Choose event size, type, or format to match your venue’s capacity and capabilities.",
             "Define geographic constraints if you only book certain cities or regions."
           ],
-          icon: Aiicon
+          icon: VenueOne
         },
         {
           heading: "Forecasted & TBA Events",
           points: ["Target events with upcoming or tentative dates and verify their past success to gauge fit."
           ],
-          icon: Aiicon
+          icon: VenueTwo
         },
         {
           heading: "Save & Track",
           points: ["Convert filters into trackers. Get notified about new events, changes, or rehosts.",
             "Use a shared dashboard for team coordination, proposals, and RFP management—all in one panel"
           ],
-          icon: Aiicon
+          icon: VenueThree
         }
       ]
     },
@@ -1017,20 +1049,20 @@ export const gtmUsecasesjsonData = [
           points: ["Filter by event type (trade shows, summits, festivals) and size to focus on viable leads.",
             "Limit by region if your offering is location-dependent."
           ],
-          icon: Aiicon
+          icon: EventPlannerOne
         },
         {
           heading: "Qualify with History",
           points: ["Check event background and past attendance to ensure credibility."
           ],
-          icon: Aiicon
+          icon: EventPlannerTwo
         },
         {
           heading: "Track & Collaborate",
           points: ["Set up trackers to get updates when new or rehosted events match your criteria.",
             "Collaborate in a shared dashboard, manage outreach, and keep follow-ups organized."
           ],
-          icon: Aiicon
+          icon: EventPlannerThree
         }
       ]
     },
