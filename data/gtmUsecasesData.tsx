@@ -532,7 +532,7 @@ export const gtmUsecasesjsonData = [
       subheading: "Elevate Your Community with Built-In Event Discovery",
       content: [
         {
-          heading: "Tailor the Event Enginels",
+          heading: "Tailor the Event Engines",
           points: ["Define goals to ensure only relevant events appear for your members.", "Embed our event widget on your website or social channel for easy access."
           ],
           icon: CommunityOne

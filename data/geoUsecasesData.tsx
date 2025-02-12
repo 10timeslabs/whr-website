@@ -46,7 +46,7 @@ import {
   Geo_UseCase_9,
   
 } from "../svgicons/icons";
-const imageURL = "https://c1.10times.com/whr/geo/static/image/usecases"
+const imageURL = "  "
 export const geoUsecasesjsonData = [
   {
     id: "hotel-lodging",

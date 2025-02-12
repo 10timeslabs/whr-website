@@ -29,6 +29,7 @@ import { AIAssistantIcon,  APIModelIcon,
     TrendsIcon, } from "../svgicons/icons";
 
 const imageURL = "https://c1.10times.com/whr/gtm-geo/static/image/product"
+
 export const geoProductJsonData = [
     {
         id: "event-search",
@@ -37,7 +38,7 @@ export const geoProductJsonData = [
         dropText:
             "Find events with whr.ai's smart filters for better planning.",
         icon: <SearchIcon color="currentColor" />,
-        image: Research,
+        image: `${imageURL}/Research.png`,
         text: "Real-Time & Verified Data",
         subtext:
             "Identify what’s actionable from millions of events using smart filters and scores",
@@ -58,7 +59,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "Event Search - whr.ai GEO",
             description: "Utilize whr.ai's Event Search to identify actionable events with smart filters and scores for better planning and forecasting.",
-            image: `${imageURL}/Coordinate.png`,
+            image: `${imageURL}/Research.png`,
         }
     },
     {
@@ -68,7 +69,7 @@ export const geoProductJsonData = [
         dropText:
             "Track critical events with whr.ai's Smart Tracker.",
         icon: <TrackerIcon color="currentColor" />,
-        image: TrackerLanding,
+        image: `${imageURL}/Trackers-landing.png`,
         text: "Track What Matters",
         subtext:
             "Create custom search filters and let your AI agent keep track of everything that’s changing—or critical—for your location or sector",
@@ -89,7 +90,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "Smart Tracker - whr.ai GEO",
             description: "Track critical events with whr.ai's Smart Tracker. Create custom filters and let our AI agent monitor and notify you.",
-            image: `${imageURL}/Coordinate.png`,
+            image: `${imageURL}/Trackers-landing.png`,
         }
     },
     {
@@ -99,7 +100,7 @@ export const geoProductJsonData = [
         dropText:
             "Resolve demand queries with whr.ai's AI Assistant.",
         icon: <AIAssistantIcon color="currentColor" />,
-        image: TrackerTenmplate,
+        image: `${imageURL}/tracker-templates.png`,
         text: "Deploy Event Agent",
         subtext:
             "Resolve on-ground demand queries by asking our fine-tuned AI assistant, trained on millions of events across 15k+ cities, accessing 2B+ data points",
@@ -118,7 +119,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "AI Assistant - whr.ai GEO",
             description: "Resolve on-ground demand queries with whr.ai's AI Assistant. Ask questions in natural language and get actionable responses.",
-            image: `${imageURL}/Coordinate.png`,
+            image: `${imageURL}/tracker-templates.png`,
         }
     },
     {
@@ -128,7 +129,7 @@ export const geoProductJsonData = [
         dropText:
             "Monitor event trends with whr.ai's Trends Monitor.",
         icon: <TrendsIcon color="currentColor" />,
-        image: Trends,
+        image: `${imageURL}/Trends_product.png`,
         text: "Monitor Meaningful Change",
         subtext:
             "Keep an eye on future on-ground actions & events. Identify anomalies or outliers that require attention.",
@@ -149,7 +150,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "Trends Monitor - whr.ai GEO",
             description: "Monitor meaningful changes in event trends with whr.ai's Trends Monitor. Identify anomalies and respond proactively.",
-            image: `${imageURL}/Coordinate.png`,
+            image: `${imageURL}/Trends_product.png`,
         }
     },
     {
@@ -159,7 +160,7 @@ export const geoProductJsonData = [
         dropText:
             "Streamline team coordination with whr.ai's Coordinate.",
         icon: <CoordinateIcon />,
-        image: Coordinate,
+        image: `${imageURL}/Coordinate.png`,
         text: "Track & Take Action",
         subtext:
             "Turn risk into opportunity: flag anomalies or high-impact events, share with your team, and specify action in one interface.",
@@ -189,7 +190,7 @@ export const geoProductJsonData = [
         dropText:
             "Integrate whr.ai event data into your systems via API.",
         icon: <APIModelIcon color="currentColor" />,
-        image: ApiImage,
+        image: `${imageURL}/Api_product.png`,
         text: "Consume Event Data in Your Data Stack",
         subtext:
             "Consume event or trend data in your internal systems via an API or leverage it to enrich your own models",
@@ -209,7 +210,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "API & Model Training - whr.ai GEO",
             description: "Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image: `${imageURL}/Coordinate.png`,
+            image: `${imageURL}/Api_product.png`,
         }
     }
 ]
