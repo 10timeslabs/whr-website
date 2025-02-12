@@ -37,7 +37,7 @@ const Page = () => {
       {/* Empowering Section */}
       <div className='w-[87%] flex items-center'>
         <div className='flex flex-col w-[50%] gap-4 max-[480px]:w-full'>
-          <div className='text-[56px] leading-[64px] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>Empowering Real-World Intelligence</div>
+          <h1 className='text-[56px] leading-[64px] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>Empowering Real-World Intelligence..</h1>
           <div className='text-[#3a3a3a] text-lg max-[730px]:text-[14px] max-[730px]:leading-[20px] max-[480px]:w-full'>At whr.ai, our mission is to be the single source of truth for all actions happening in the real world. We envision a future where every individual and organization impacted by real-world events is empowered with the intelligence needed to plan better, forecast accurately, and take decisive actions to drive their business forward.</div>
         </div>
         <Image src={LogoSparkle} alt='Logo' className='ml-[20%] h-[200px] w-[180px] max-[730px]:h-[150px] max-[730px]:w-[120px]  max-[480px]:hidden' />
