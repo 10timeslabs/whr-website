@@ -79,7 +79,7 @@ const UseCasesContainer = ({ text }: Props) => {
           ) : (
             <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
               <button
-                className={`w-[100px] py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "GTM" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
+                className={`w-[100px] py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "GTM" ? "text-[#6750a4] bg-white" : "text-[var(--primary-text-color)]"
                   }`}
                 onClick={() => setActiveTab("GTM")}
               >
@@ -88,7 +88,7 @@ const UseCasesContainer = ({ text }: Props) => {
               <button
                 className={`w-[100px] py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "GEO"
                   ? "text-[#6750a4] bg-white"
-                  : "text-[var(--tertiary-text-color)]"
+                  : "text-[var(--primary-text-color)]"
                   }`}
                 onClick={() => setActiveTab("GEO")}
               >
