@@ -62,7 +62,6 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
         width={690}
         height={690}
         priority // Ensures this image loads ASAP for LCP optimization
-        loading="eager" // Disables lazy loading explicitly
         className="absolute top-[40%] -z-[10]"
       />
 
