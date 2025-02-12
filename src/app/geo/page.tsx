@@ -22,6 +22,21 @@ export const metadata = {
   alternates: {
     canonical: "https://whr.ai/geo",
   },
+  openGraph: {
+    title: "whr.ai/geo - Geo Event Intelligence Solutions",
+    description: "Discover powerful geo event intelligence solutions.",
+    url: "https://whr.ai/geo",
+    siteName: "whr.ai",
+    images: [
+      {
+        url: "https://c1.10times.com/whr/gtm-geo/static/image/product/Research.png",
+        width: 1200,
+        height: 630,
+        alt: "Geo Event Intelligence Solutions",
+      },
+    ],
+    type: "website",
+  },
 };
 export default function Home() {
   const headingWords = [

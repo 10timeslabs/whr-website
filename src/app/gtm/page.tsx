@@ -30,6 +30,21 @@ export const metadata = {
   alternates: {
     canonical: "https://whr.ai/gtm",
   },
+  openGraph: {
+    title: "whr.ai/gtm - GTM Event Intelligence Solutions",
+    description: "Discover powerful geo event intelligence solutions.",
+    url: "https://whr.ai/gtm",
+    siteName: "whr.ai",
+    images: [
+      {
+        url: "https://c1.10times.com/whr/gtm-geo/static/image/product/Research.png",
+        width: 1200,
+        height: 630,
+        alt: "GTM Event Intelligence Solutions",
+      },
+    ],
+    type: "website",
+  },
 };
 export default function Home() {
   const headingWords = [

@@ -38,7 +38,7 @@ export const geoProductJsonData = [
         dropText:
             "Find events with whr.ai's smart filters for better planning.",
         icon: <SearchIcon color="currentColor" />,
-        image: `${imageURL}/Research.png`,
+        image: Research,
         text: "Real-Time & Verified Data",
         subtext:
             "Identify what’s actionable from millions of events using smart filters and scores",
@@ -69,7 +69,7 @@ export const geoProductJsonData = [
         dropText:
             "Track critical events with whr.ai's Smart Tracker.",
         icon: <TrackerIcon color="currentColor" />,
-        image: `${imageURL}/Trackers-landing.png`,
+        image: TrackerLanding,
         text: "Track What Matters",
         subtext:
             "Create custom search filters and let your AI agent keep track of everything that’s changing—or critical—for your location or sector",
@@ -100,7 +100,7 @@ export const geoProductJsonData = [
         dropText:
             "Resolve demand queries with whr.ai's AI Assistant.",
         icon: <AIAssistantIcon color="currentColor" />,
-        image: `${imageURL}/tracker-templates.png`,
+        image: TrackerTenmplate,
         text: "Deploy Event Agent",
         subtext:
             "Resolve on-ground demand queries by asking our fine-tuned AI assistant, trained on millions of events across 15k+ cities, accessing 2B+ data points",
@@ -129,7 +129,7 @@ export const geoProductJsonData = [
         dropText:
             "Monitor event trends with whr.ai's Trends Monitor.",
         icon: <TrendsIcon color="currentColor" />,
-        image: `${imageURL}/Trends_product.png`,
+        image: Trends,
         text: "Monitor Meaningful Change",
         subtext:
             "Keep an eye on future on-ground actions & events. Identify anomalies or outliers that require attention.",
@@ -160,7 +160,7 @@ export const geoProductJsonData = [
         dropText:
             "Streamline team coordination with whr.ai's Coordinate.",
         icon: <CoordinateIcon />,
-        image: `${imageURL}/Coordinate.png`,
+        image: Coordinate,
         text: "Track & Take Action",
         subtext:
             "Turn risk into opportunity: flag anomalies or high-impact events, share with your team, and specify action in one interface.",
@@ -190,7 +190,7 @@ export const geoProductJsonData = [
         dropText:
             "Integrate whr.ai event data into your systems via API.",
         icon: <APIModelIcon color="currentColor" />,
-        image: `${imageURL}/Api_product.png`,
+        image: ApiImage,
         text: "Consume Event Data in Your Data Stack",
         subtext:
             "Consume event or trend data in your internal systems via an API or leverage it to enrich your own models",

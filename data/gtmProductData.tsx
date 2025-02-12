@@ -44,7 +44,7 @@ export const gtmProductJsonData = [
         dropText:
             "Find events with whr.ai's smart filters for better planning.",
         icon: <SearchIcon color="currentColor" />,
-        image: `${imageURL}/Research.png`,
+        image: Research,
         imageAltText: "",
         text: "Find What’s Relevant",
         subtext:
@@ -75,7 +75,7 @@ export const gtmProductJsonData = [
         dropText:
             "Resolve demand queries with whr.ai's AI Assistant.",
         icon: <AIAssistantIcon color="currentColor" />,
-        image: `${imageURL}/tracker-templates.png`,
+        image: TrackerTenmplate,
         imageAltText: "",
         text: "Get Timely Notifications with AI",
         subtext:
@@ -106,7 +106,7 @@ export const gtmProductJsonData = [
         dropText:
             "Track critical events with whr.ai's Smart Tracker.",
         icon: <TrackerIcon color="currentColor" />,
-        image: `${imageURL}/Trackers-landing.png`,
+        image: TrackerLanding,
         imageAltText: "",
         text: "Don’t Miss an Opportunity",
         subtext:
@@ -137,7 +137,7 @@ export const gtmProductJsonData = [
         dropText:
             "Streamline team coordination with whr.ai's Coordinate.",
         icon: <CoordinateIcon />,
-        image: `${imageURL}/Coordinate.png`,
+        image: Coordinate,
         imageAltText: "",
         text: "Bring Your Team Together",
         subtext:
@@ -168,7 +168,7 @@ export const gtmProductJsonData = [
         dropText:
             "Gain competitor event insights with whr.ai GTM's tool.",
         icon: <OutreachIcon color="currentColor" />,
-        image: `${imageURLTwo}/Outreach_product.png`,
+        image: Outreach,
         imageAltText: "",
         text: "Faster Response from Organizers",
         subtext:
@@ -199,7 +199,7 @@ export const gtmProductJsonData = [
         dropText:
             "Target high-value event prospects with whr.ai GTM.",
         icon: <ProspectIcon color="currentColor" />,
-        image: `${imageURLTwo}/Prospect.png`,
+        image: Prospect,
         imageAltText: "",
         text: "Identify & Set Up Meetings",
         subtext:
@@ -230,7 +230,7 @@ export const gtmProductJsonData = [
         dropText:
             "Monitor event trends with whr.ai's Trends Monitor.",
         icon: <TrendsIcon color="currentColor" />,
-        image: `${imageURL}/Trends_product.png`,
+        image: Trends,
         imageAltText: "",
         text: "Monitor Industry Signals",
         subtext:
