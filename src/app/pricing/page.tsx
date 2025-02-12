@@ -78,7 +78,7 @@ const Page = () => {
 			<div className={`${isSticky ? "hidden" : "block"}`}><HomeNavbar /></div>
 			<div className='flex flex-col mt-[120px] justify-center w-[87%] gap-10'>
 				<div className='flex flex-col'>
-					<span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent text-[60px] leading-[65px] font-medium w-fit '>Pricing</span>
+					<span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent text-[60px] leading-[65px] font-medium w-fit '><h1>Pricing</h1></span>
 					<span className='text-[20px] text-[var(--secondary-text-color)]'>Empower Real-World Intelligence with Whr</span>
 				</div>
 				{/* Toggle Switch */}
