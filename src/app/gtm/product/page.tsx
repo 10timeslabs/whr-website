@@ -4,7 +4,7 @@ import SubpageLandingComponent from '@/components/SubpageLandingComponent'
 
 const Page = () => {
 	return (
-		<SubpageLandingComponent passedData={gtmProductJsonData} page='product' />
+		<SubpageLandingComponent passedData={gtmProductJsonData} page='product' heading='' subheading=''/>
 	)
 }
 

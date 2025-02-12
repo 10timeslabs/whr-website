@@ -4,7 +4,7 @@ import SubpageLandingComponent from '@/components/SubpageLandingComponent'
 
 const Page = () => {
 	return (
-		<SubpageLandingComponent passedData={geoProductJsonData} page='product'/>
+		<SubpageLandingComponent passedData={geoProductJsonData} page='product' heading='' subheading=''/>
 	)
 }
 
