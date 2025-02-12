@@ -69,7 +69,7 @@ const GeoComponent = () => {
         style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }}
       >
 
-        {pathname.split("/")[2] === "product" && (
+        {(pathname.split("/")[2] === "product") || (pathname.split("/")[2] === "solutions") && (
           <>
             <Image
               src={GridImage}

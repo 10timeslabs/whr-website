@@ -37,17 +37,17 @@ export default function Home() {
 
   return (
     <div style={{ paddingTop: 120 }} className="relative">
-      <HomeNavbar/>
-      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
+      <HomeNavbar />
+      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
       <div className={`text-center`}>
-        <h1 className="mb-3 text-[56px] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]">
+        <h1 className="mb-3 text-[5vw] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]">
           Whats Happening for Real
         </h1>
 
         {/* <HeadingtextAnimation heading="Whr is the" words={headingWords}/> */}
-        <p className="text-[20px] text-[var(--secondary-text-color)] max-[850px]:text-[16px]">
+        <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[850px]:text-[16px]">
           Unlock Real-World Action Intel with WHR
         </p>
       </div>
@@ -56,13 +56,15 @@ export default function Home() {
       </div>
 
       <div className="w-full"><Clarity /></div>
-      <div className="w-full"><ProblemContainer cardData={cardData} route="home"/></div>
-      <div className="flex flex-col gap-10 items-center mt-12 mb-[80px]">
+      <div className="w-full"><ProblemContainer cardData={cardData} route="home" /></div>
+      <div className="flex flex-col gap-10 items-center mt-14">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS</div>
         <AutoScroll icons={companyLogos} size="small" />
       </div>
-      <CircleContainer />
-      <div className="mt-10">
+      <div className="mt-14">
+        <CircleContainer />
+      </div>
+      <div className="mt-14">
         <ProductsCarousel />
       </div>
       <GetInTouch />

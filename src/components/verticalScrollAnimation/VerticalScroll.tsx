@@ -95,6 +95,7 @@ const VerticalScroll = ({ mainHeading, dataToDisplay }: any) => {
                 heading={item.topic}
                 subHeading={item.content}
                 icon={item.icon}
+                href={item.href}
               />
             </div>
           </div>

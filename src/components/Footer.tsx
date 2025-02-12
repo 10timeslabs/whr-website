@@ -66,7 +66,7 @@ const Footer = () => {
                 <Link href="#">FAQ</Link>
               </li>
               <li>
-                <Link href="#">Pricing</Link>
+                <Link href="/pricing">Pricing</Link>
               </li>
             </ul>
           </div>
@@ -84,12 +84,15 @@ const Footer = () => {
               <li>
                 <Link href="/contact-us">Contact</Link>
               </li>
+              <li>
+                <Link href="#">Docs</Link>
+              </li>
             </ul>
           </div>
 
           {/* Resource Section */}
-          <div>
-            <div className="text-lg mb-2">Resource</div>
+          {/* <div>
+            <h3 className="text-lg mb-2">Resource</h3>
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
                 <Link href="#">Examples</Link>
@@ -100,11 +103,8 @@ const Footer = () => {
               <li>
                 <Link href="#">Guides</Link>
               </li>
-              <li>
-                <Link href="#">Docs</Link>
-              </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <div className="text-lg mb-2">Legal</div>

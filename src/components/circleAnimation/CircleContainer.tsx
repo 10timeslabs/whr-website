@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import SparkleImg from "/public/sparkle.png";
 import CircleAnimation from './CircleAnimation';
@@ -23,24 +23,39 @@ const CircleContainer = () => {
   ]
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typing, setTyping] = useState(true);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Update heading and subheading every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
+  const startAutoRotation = useCallback(() => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+
+    intervalRef.current = setInterval(() => {
       setTyping(false);
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
         setTyping(true);
-      }); // Small delay before starting typing again
+      }, 0);
     }, 4000);
+  }, [data.length]);
 
-    return () => clearInterval(interval);
-  }, []);
+  useEffect(() => {
+    startAutoRotation();
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null; // Ensure ref is reset
+      }
+    };
+  }, [startAutoRotation]);
+
+  // **Handle Click Event**
+  const handleClick = useCallback((clickedIndex: number) => {
+    setCurrentIndex((9 - clickedIndex) % 9);
+    startAutoRotation(); // Restart Timer
+  }, [startAutoRotation]);
   const currentData = data[currentIndex];
 
-
   return (
-    <div className="h-[542px] w-full overflow-hidden flex justify-center max-[1325px]:h-[500px] max-[775px]:h-[400px] max-[550px]:h-[430px]">
+    <div className="h-[580px] w-full overflow-hidden flex justify-center max-[1325px]:h-[540px] max-[775px]:h-[500px]">
       <div className='w-[87%] border border-[var(--border-color)] relative rounded-xl h-full items-center  overflow-hidden flex flex-col justify-start '>
         <div
           className="absolute right-0 top-[-150px] h-[600px] w-full -z-10"
@@ -56,6 +71,18 @@ const CircleContainer = () => {
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7 mt-10">
           WHY CHOOSE US
         </div>
+        {/* Progress bar */}
+        <div className="flex gap-2 mt-10 max-[400px]:gap-1">
+            {Array.from({ length: 9 }).map((_, index) => (
+                <div
+                    key={index}
+                    className={`h-2 w-10 rounded-lg transition-all duration-300 ${
+                        index <= currentIndex ? "bg-[#6750a4]" : "bg-gray-300"
+                    } max-[540px]:w-7 max-[400px]:h-1 `}
+                />
+            ))}
+        </div>
+
         <div className="w-[70%] flex items-start justify-between mt-5 max-[775px]:w-full max-[775px]:justify-center max-[550px]:w-[90%]">
           <Image src={SparkleImg} alt="star" height={38} width={38} className='max-[775px]:hidden' />
           <div className='text-center'>
@@ -104,7 +131,7 @@ const CircleContainer = () => {
 
           <Image src={SparkleImg} alt="star" height={38} width={38} className='max-[775px]:hidden' />
         </div>
-        <div className='absolute bottom-[-60%] max-[775px]:bottom-[-30%]'><CircleAnimation currentIndex={currentIndex}/></div>
+        <div className='absolute bottom-[-60%] max-[775px]:bottom-[-30%]'><CircleAnimation currentIndex={currentIndex} handleClick={handleClick} /></div>
       </div>
     </div>
   )

@@ -9,7 +9,7 @@ interface Props {
 
 const PriceCard = ({ data, isActive }: Props) => {
 	return (
-		<div className={`h-[430px] w-full bg-white drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-lg flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)]" : ""}`}>
+		<div className={`h-[430px] w-full bg-white drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)]" : ""}`}>
 			<div className='flex flex-col gap-4'>
 				<div className='flex flex-col gap-2'>
 					<span className='font-semibold text-[24px]'>{data.name}</span>

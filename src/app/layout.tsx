@@ -5,8 +5,25 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "whr.ai - Premier Event Intelligence Platform",
-  description:
-    "Discover whr.ai's event intelligence platform for real-time forecasting, demand planning, and maximizing event impact.",
+  description: "Discover whr.ai's event intelligence platform for real-time forecasting, demand planning, and maximizing event impact.",
+  verification: {
+    google: "KcRKKC-PQ7QtLvpfL-QPyrWNfS7jwFrK3_UEwft9dKI", 
+  },
+  openGraph: {
+    title: "whr.ai - Premier Event Intelligence Platform",
+    description: "Discover whr.ai's event intelligence platform for real-time forecasting, demand planning, and maximizing event impact.",
+    url: "https://whr.ai",
+    siteName: "whr.ai",
+    images: [
+      {
+        url: "https://c1.10times.com/whr/home/static/image/landing_preview.png",
+        width: 1200,
+        height: 630,
+        alt: "GTM Event Intelligence Solutions",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -29,6 +46,7 @@ export default function RootLayout({
             `,
           }}
         />
+         <meta name="theme-color" content="#6750a4" />
       </head>
       <body className={GeistSans.className}>
         <noscript>

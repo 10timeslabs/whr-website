@@ -30,6 +30,21 @@ export const metadata = {
   alternates: {
     canonical: "https://whr.ai/gtm",
   },
+  openGraph: {
+    title: "whr.ai/gtm - GTM Event Intelligence Solutions",
+    description: "Discover powerful geo event intelligence solutions.",
+    url: "https://whr.ai/gtm",
+    siteName: "whr.ai",
+    images: [
+      {
+        url: "https://c1.10times.com/whr/gtm-geo/static/image/product/Research.png",
+        width: 1200,
+        height: 630,
+        alt: "GTM Event Intelligence Solutions",
+      },
+    ],
+    type: "website",
+  },
 };
 export default function Home() {
   const headingWords = [
@@ -81,7 +96,7 @@ export default function Home() {
   return (
     <div style={{ paddingTop: 120 }} className="relative">
       <GeneralNavbar />
-      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
+      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
       <div className={`flex justify-center text-center`}>
@@ -109,14 +124,16 @@ export default function Home() {
       <div className="w-full">
         <ProblemContainer cardData={cardData} route="gtm" />
       </div>
-      <div className="flex flex-col gap-10 items-center mt-12 mb-[80px]">
+      <div className="flex flex-col gap-10 items-center mt-14">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
           CUSTOMERS
         </div>
         <AutoScroll icons={companyLogos} size="small" />
       </div>
-      <CircleContainer />
-      <div className="mt-10">
+      <div className="mt-14">
+        <CircleContainer />
+      </div>
+      <div className="mt-14">
         <ProductsCarousel />
       </div>
       <GetInTouch />
