@@ -1,0 +1,144 @@
+{
+  "headingFeatures": 
+  {
+    "Research":
+    { 
+      "tagline" : "Use over 100 filters & datapoints across event, companies & people to find real-world opportunity",
+      "features" : [
+      "Basic Filter",
+      "Advance Data Filter",
+      "Insights & Scores",
+      "Audience Intel",
+      "Access External Link",
+      "Past Events",
+      "Forecasted Event Dates",
+      "Match Intel - brandBrief",
+      "Event Detail Page (basic)",
+      "Event Detail Page (advance)"]
+    },
+    "Track":
+    { 
+      "tagline" : "Trackers are Agents who keep a check on the entire web to find & notifiy you of opportunities that meet your core goal with events. Go beyond filters to find the right events to target.",
+      "features" : [
+        "Basic & Advance Trackers",
+        "Filters",
+        "Tracking Entity Limits",
+        "Notes & Discussion",
+        "Share & Invite",
+        "Notification & Updates",
+        "Token Usage"
+      ]
+    },
+    "Trends & Reports":
+    { 
+      "tagline" : "Visualize & get signals not at single event level, but geography, time-period, industry, global-movement, etc. Trends is your Research Agent.",
+      "features" : ["Visual Trend Reporter","Set Notification"]
+    },
+    "Coordinate":
+    { 
+      "tagline" : "",
+      "features" : ["Saved Events","Event Update & Notification","Notes & Discussion", "Teams sharing"]
+    },
+    "Outreach":
+    { 
+      "tagline" : "",
+      "features" : [
+        "Platform Outreach",
+        "CRM & Notes",
+        "Unlock Contact - Email/Phone",
+        "Introduction & Meetings"
+      ]
+    },
+    "Promote":
+    { 
+      "tagline" : "",
+      "features" : [
+        "Listing & Detail Page",
+        "Number of Widgets",
+        "Branding",
+        "Custom Domain",
+        "Leads & CRM",
+        "Onsite Lead Scan & Track",
+        "Post-Event Lead Management"
+      ]
+    },
+    "Support":
+    { 
+      "tagline" : "",
+      "features" : [
+        "Knowledge Hub",
+        "Chat Bot",
+        "Priority Support",
+        "Dedicated Manager"
+      ]
+    },
+    "Export & API":
+    { 
+      "tagline" : "",
+      "features" : [
+        "Export File",
+        "API Access"
+      ]
+    },
+    "Integration":
+    { 
+      "tagline" : "",
+      "features" : [
+        "Snowflake",
+        "AWS",
+        "CRM"
+      ]
+    },
+    "Enrichment":
+    { 
+      "tagline" : "",
+      "features" : [
+        "Enrich Event List",
+        "Enrich Company List",
+        "CRM"
+      ]
+    },
+    "Prospect":
+    { 
+      "tagline" : "",
+      "features" : [
+        "People Search",
+        "Company Search",
+        "Platform Outreach",
+        "Unlock Contacts"
+      ]
+    },
+    "Analytics":
+    { 
+      "tagline" : "",
+      "features" : [
+        "Track Past Events for Future Consideration",
+        "Score ROI from Event Participation",
+        "Missed Opportunity Mapper",
+        "Team Participation",
+        "Event Impact Mapper"
+      ]
+    }
+  },
+  "plans": {
+    "basic": {
+      "Research": {
+        "Basic Filter": true
+      },
+      "Track" : {
+        "Basic & Advance Trackers" : "Basic",
+        "Filters" : "Basic"
+      }
+    },
+    "individual": {
+      "Research": {
+        "Basic Filter": true,
+        "Advance Data Filter": true,
+        "Insights & Scores": true,
+        "Audience Intel": true,
+        "Access External Link ": true,
+        "Event Detail Page (basic)" : true
+      }
+    }
+  }
+}
