@@ -282,7 +282,7 @@ export const gtmUsecasesjsonData = [
     icon: <GTM_UseCase_2 color="currentColor" />,
     href: "/gtm/usecases/sales-bizdev",
     dropText: "Drive deal-making with whr.ai GTM's event insights.",
-    image: `${imageURL}/gtm_usecase_sales&biz.jpg`,
+    image: `${imageURL}/gtm_usecase_sales-bizdev.jpg`,
     imageAltText: "Two people review charts and graphs on paper and a laptop at a table.",
     //#ECEEE9
     blurColor:
@@ -352,7 +352,7 @@ export const gtmUsecasesjsonData = [
     metaData: {
       title: "Sales & Biz Dev - GTM by whr.ai",
       description: "Drive deal-making with GTM’s demand intelligence and event impact insights, pinpointing real-world opportunities to boost pipeline and revenue growth.",
-      image: `${imageURL}/gtm_usecase_sales&biz.jpg`,
+      image: `${imageURL}/gtm_usecase_sales-bizdev.jpg`,
     }
   },
   {

@@ -12,10 +12,14 @@ const Page = () => {
 
 	const pricingPlans = [
 		{ name: "Basic", price: "$10", features: ["Feature 1", "Feature 2"], per: "per month" },
-		{ name: "Standard", price: "$20", features: ["Feature 1", "Feature 2", "Feature 3"], per: "per month" },
-		{ name: "Premium", price: "$50", features: ["Feature 1", "Feature 2", "Feature 3", "Feature 5"], per: "per month" },
-		{ name: "Enterprise", price: "Custom", features: ["All Features"], per: "per month" }
+		{ name: "Individual", price: "$20", features: ["Feature 1", "Feature 2", "Feature 3"], per: "per month" },
+		{ name: "Startup", price: "$50", features: ["Feature 1", "Feature 2", "Feature 3", "Feature 5"], per: "per month" },
+		{ name: "Mid-size", price: "Custom", features: ["All Features"], per: "per month" }
 	];
+
+	const tableData = [
+	
+	]
 
 	const features = ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5", "Feature 6", "Feature 7"]
 	return (

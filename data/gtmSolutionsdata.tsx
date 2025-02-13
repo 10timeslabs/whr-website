@@ -84,7 +84,7 @@ h. Access and track all event footprint to access impact`,
     metaData: {
       title: "Brand Alignment - whr.ai GTM",
       description: "Align your brand goals with the right events using whr.ai GTM's Brand Alignment solutions for maximum impact and ROI.",
-      image: `${imageURL}/Brandbuilding.png`,
+      image: `${imageURL}/brand-building.png`,
     }
   },
   {
@@ -153,7 +153,7 @@ d. Leverage smart recommendation based on your brand mandate and our AI's abilit
     metaData: {
       title: "Competitor Tracking - whr.ai GTM",
       description: "Stay ahead of rivals with whr.ai GTM's competitor tracking. Monitor where competitors are exhibiting, sponsoring, or speaking at events.",
-      image: `${imageURL}/CompetitorTracking.png`,
+      image: `${imageURL}/competitor-tracking.png`,
     }
   },
   {
@@ -214,7 +214,7 @@ Get a list of events that are upcoming & forecasted. Additionally, get updates w
     metaData: {
       title: "Exhibit & Sponsor Matching - whr.ai GTM",
       description: "Maximize ROI on event participation with whr.ai GTM's Exhibit & Sponsor Matching. Choose the right events to exhibit or sponsor strategically.",
-      image: `${imageURL}/Exhibit&Sponsor.png`,
+      image: `${imageURL}/exhibit-sponsor.png`,
     }
   },
   {
@@ -274,7 +274,7 @@ Get list of events and all future identified events that our AI thinks would be 
     metaData: {
       title: "Product Matching - whr.ai GTM",
       description: "Find events that perfectly match your products or topics with whr.ai GTM's Product Matching solutions for deeper engagement.",
-      image: `${imageURL}/ProductMatching.png`,
+      image: `${imageURL}/product-matching.png`,
     }
   },
 
@@ -334,7 +334,7 @@ f. See current upcoming event list and also get notified when new events match y
     metaData: {
       title: "Prospect Mapping - whr.ai GTM",
       description: "Turn prospects into real-world wins with whr.ai GTM's Prospect Mapping. Identify and target the best events for your business objectives.",
-      image: `${imageURL}/Prospectmapping.png`,
+      image: `${imageURL}/prospects-mapping.png`,
     }
   },
   {
@@ -394,7 +394,7 @@ e. Your tracker would update you on events that could be good to acheive your go
     metaData: {
       title: "Recruitment & DevRel - whr.ai GTM",
       description: "Meet top talent face-to-face with whr.ai GTM's Recruitment & DevRel solutions. Enhance your hiring strategy with event intelligence.",
-      image: `${imageURL}/Recruitement&DevRel.png`,
+      image: `${imageURL}/recruitement-devrel.png`,
     }
   },
   {
@@ -452,7 +452,7 @@ Speaker`,
     metaData: {
       title: "Speaking Opportunity - whr.ai GTM",
       description: "Secure speaking slots at key events with whr.ai GTM's Speaking Opportunity. Amplify your brand voice and influence the right audience.",
-      image: `${imageURL}/SpeakingOpportunity.png`,
+      image: `${imageURL}/speaking-opportunity.png`,
     }
 
   },
