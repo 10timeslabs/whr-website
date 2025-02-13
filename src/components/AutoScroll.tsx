@@ -29,7 +29,7 @@ const AutoScroll = ({ icons, size }: Props) => {
   return (
     <div className="relative w-full overflow-hidden">
       {/* Scrolling container */}
-      <div className="flex w-full animate-scroll gap-8">
+      <div className="flex w-full animate-scroll gap-8 items-center">
         {/* Render icons twice for seamless looping */}
         {[...icons, ...icons, ...icons].map((icon, index) => (
           <div key={index} className="flex-shrink-0 ">
