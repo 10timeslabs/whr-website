@@ -82,7 +82,7 @@ export default function Home() {
 
       <div className={`text-center`}>
         <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[950px]:text-[16px]">
-          Dont Just Guess, Know Whr!
+          Don't Just Guess, Know Whr!
         </p>
         <div className={`flex justify-center w-full`}>
           <HeadingtextAnimation heading="Whr is the" words={headingWords} />

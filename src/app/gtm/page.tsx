@@ -100,7 +100,7 @@ export default function Home() {
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
       <div className={`text-center`}>
         <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[950px]:text-[16px]">
-          Dont Just Go, Know Whr!
+          Don't Just Go, Know Whr!
         </p>
         <div className={`flex justify-center w-full`}>
           <HeadingtextAnimation heading="Whr is the" words={headingWords} />
