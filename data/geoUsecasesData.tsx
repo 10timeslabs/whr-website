@@ -55,7 +55,7 @@ export const geoUsecasesjsonData = [
     href: "/geo/usecases/hotel-lodging",
     dropText : "Optimize hotel pricing with whr.ai's demand forecasting.",
     image:
-      `${imageURL}/geo_usecase_hotel&lodging_cropped.png`,
+      `${imageURL}/geo_usecase_hotel-lodging.png`,
     imageAltText: "Sunset over the ocean with a sail-shaped skyscraper reflecting golden light, evoking a serene atmosphere.",
     text: "Higher Occupancy, Lower Surprises",
     blurColor:
@@ -168,7 +168,7 @@ export const geoUsecasesjsonData = [
       description:
         "Optimize hotel pricing and revenue by forecasting inbound event-driven demand with whr.ai's demand forecasting.",
       image:
-        `${imageURL}/geo_usecase_hotel&lodging_cropped.png`,
+        `${imageURL}/geo_usecase_hotel-lodging.png`,
     },
   },
   {
@@ -315,7 +315,7 @@ export const geoUsecasesjsonData = [
     href: "/geo/usecases/activity-planners",
     dropText : "Enhance planner revenue with whr.ai's demand intelligence.",
     image:
-      `${imageURL}/geo_usecase_activityplanner.jpg`,
+      `${imageURL}/geo_usecase_activity-planners.jpg`,
     imageAltText: "A silver pen on an open planner with dated pages, beside a blurred smartphone and mug, conveying productivity.",
     // blurColor: "#C2BDC1",
     blurColor:
@@ -439,7 +439,7 @@ export const geoUsecasesjsonData = [
       description:
         "Enhance revenue and profitability for activity planners by leveraging forecasted demand intelligence from whr.ai.",
       image:
-        `${imageURL}/geo_usecase_activityplanner.jpg`,
+        `${imageURL}/geo_usecase_activity-planners.jpg`,
     },
   },
   {
@@ -450,7 +450,7 @@ export const geoUsecasesjsonData = [
     dropText:
     "Optimize airport operations with whr.ai's demand data.",
     image:
-      `${imageURL}/geo_usecase_aviation&airport.jpg`,
+      `${imageURL}/geo_usecase_aviation-airport.jpg`,
     imageAltText: "A red and white Air Berlin airplane ascends against fluffy, dramatic clouds, symbolizing freedom and travel.",
     // blurColor: "#D6DDF3",
     blurColor:
@@ -564,7 +564,7 @@ export const geoUsecasesjsonData = [
       description:
         "Manage passenger spikes and optimize airport operations with event-driven demand forecasting from whr.ai.",
       image:
-        `${imageURL}/geo_usecase_aviation&airport.jpg`,
+        `${imageURL}/geo_usecase_aviation-airport.jpg`,
     },
   },
   {
@@ -802,7 +802,7 @@ export const geoUsecasesjsonData = [
     href: "/geo/usecases/ooh-marketing",
     dropText: "Maximize OOH ad ROI with whr.ai's event footfall data.",
     image:
-      `${imageURL}/geo_usecase_OOH-marketing.jpg`,
+      `${imageURL}/geo_usecase_ooh-marketing.jpg`,
     imageAltText: "Hands hold a pen, pointing at a document with charts on remote work, with a phone, notebook, coffee, and highlighter.",
     // blurColor: "#BBBBB2",
     blurColor:
@@ -904,7 +904,7 @@ export const geoUsecasesjsonData = [
       description:
         "Maximize OOH ad ROI with forecasted event footfall and audience insights from whr.ai.",
       image:
-        `${imageURL}/geo_usecase_OOH-marketing.jpg`,
+        `${imageURL}/geo_usecase_ooh-marketing.jpg`,
     },
   },
   {
@@ -1704,7 +1704,7 @@ export const geoUsecasesjsonData = [
     href: "/geo/usecases/event-planners",
     dropText : "Select optimal event locations with whr.ai's forecasts.",
     image:
-      `${imageURL}/geo_useacase_eventplanner.jpg`,
+      `${imageURL}/geo_useacase_event-planners.jpg`,
     imageAltText: "A hand writes in a spiral notebook, with open planners and a to-do list, evoking a sense of organization.",
     // blurColor: "#D9DEE9",
     blurColor:
@@ -1785,7 +1785,7 @@ export const geoUsecasesjsonData = [
       description:
         "Select optimal event locations and adjust strategies with months-ahead event forecasts from whr.ai.",
       image:
-        `${imageURL}/geo_useacase_eventplanner.jpg`,
+        `${imageURL}/geo_useacase_event-planners.jpg`,
     },
   },
 ];

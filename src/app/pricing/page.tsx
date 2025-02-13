@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import TickIcon from '/public/priceTick.svg'
 import DownArrow from '/public/DownArrowBold.svg'
 import Image from 'next/image'
-import PricingData from '../../../public/pricingdata.json'
+import PricingData from '../../../public/pricing-Data.json'
 
 const Page = () => {
 	// State to track open/closed tables

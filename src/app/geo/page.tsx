@@ -90,7 +90,7 @@ export default function Home() {
       </div>
 
       <div className="w-full flex items-center justify-center mt-10">
-        <UseCasesContainer text="Whr Depends on your Why" pathName="/geo" />
+        <UseCasesContainer text="Whr Depends on your Why" pathName="/geo"/>
       </div>
 
       <div className="w-full">

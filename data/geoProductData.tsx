@@ -29,7 +29,7 @@ import { AIAssistantIcon,  APIModelIcon,
     TrendsIcon, } from "../svgicons/icons";
 
 const imageURL = "https://c1.10times.com/whr/gtm-geo/static/image/product"
-
+const imageURLTwo = "https://c1.10times.com/whr/geo/static/image/product"
 export const geoProductJsonData = [
     {
         id: "event-search",
@@ -59,7 +59,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "Event Search - whr.ai GEO",
             description: "Utilize whr.ai's Event Search to identify actionable events with smart filters and scores for better planning and forecasting.",
-            image: `${imageURL}/Research.png`,
+            image: `${imageURL}/event-search.png`,
         }
     },
     {
@@ -119,7 +119,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "AI Assistant - whr.ai GEO",
             description: "Resolve on-ground demand queries with whr.ai's AI Assistant. Ask questions in natural language and get actionable responses.",
-            image: `${imageURL}/tracker-templates.png`,
+            image: `${imageURL}/smart-tracker.png`,
         }
     },
     {
@@ -150,7 +150,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "Trends Monitor - whr.ai GEO",
             description: "Monitor meaningful changes in event trends with whr.ai's Trends Monitor. Identify anomalies and respond proactively.",
-            image: `${imageURL}/Trends_product.png`,
+            image: `${imageURL}/trends-monitor.png`,
         }
     },
     {
@@ -180,7 +180,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "Coordinate - whr.ai GEO",
             description: "Streamline team coordination around events with whr.ai's Coordinate. Flag risks, assign tasks, and share notes seamlessly.",
-            image: `${imageURL}/Coordinate.png`,
+            image: `${imageURL}/coordinate.png`,
         }
     },
     {
@@ -210,7 +210,7 @@ export const geoProductJsonData = [
         metaData: {
             title: "API & Model Training - whr.ai GEO",
             description: "Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image: `${imageURL}/Api_product.png`,
+            image: `${imageURLTwo}/api.png`,
         }
     }
 ]
