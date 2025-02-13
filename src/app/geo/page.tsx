@@ -85,7 +85,7 @@ export default function Home() {
       </div>
       <div>
         <p className="flex mt-4 justify-center text-[20px] text-[var(--secondary-text-color)]">
-          Dont Just Guess, Know Whr!
+          Don't Just Guess, Know Whr!
         </p>
       </div>
       <div className="w-full flex items-center justify-center mt-10">

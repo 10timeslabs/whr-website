@@ -202,7 +202,7 @@ export const gtmUsecasesjsonData = [
     opacity: "50%",
     text: "Capture Real Attention",
     subtext:
-      "Context is the fuel that drives marketing. Event creates an opportunity for marketing teams to create context to engage potential audiene.",
+      "Context is the fuel that drives marketing. Event creates an opportunity for marketing teams to create context to engage potential audience.",
     problem:
       "Millions of events occur every year, but the most expensive ones aren’t always the most profitable. Finding relevant events that align with your goals and fit your schedule is hard. Participation decisions often lack data because event intel is cumbersome to gather and compare.",
     solution:
@@ -252,7 +252,7 @@ export const gtmUsecasesjsonData = [
         topic: "Brand Building",
         icon: <GTM_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />,
         content:
-          "Align brand messaging with the perfect event audiences to maximize sponsorship ROI and brand recall.",
+          "Align brand messaging with the perfect event audience to maximize sponsorship ROI and brand recall.",
         href: "/gtm/solutions/brand-building",
       },
       {
@@ -282,7 +282,7 @@ export const gtmUsecasesjsonData = [
     icon: <GTM_UseCase_2 color="currentColor" />,
     href: "/gtm/usecases/sales-bizdev",
     dropText: "Drive deal-making with whr.ai GTM's event insights.",
-    image: `${imageURL}/gtm_usecase_sales&biz.jpg`,
+    image: `${imageURL}/gtm_usecase_sales-bizdev.jpg`,
     imageAltText: "Two people review charts and graphs on paper and a laptop at a table.",
     //#ECEEE9
     blurColor:
@@ -294,7 +294,7 @@ export const gtmUsecasesjsonData = [
     problem:
       "Cold emails and calls are losing impact, and AI has commoditized outreach. If everyone can access the same data, craft perfect emails, and automate calls, how does your pitch stand out?",
     solution:
-      "For B2B, meeting prospects in person is essential. A real handshake and authentic conversation build trust more effectively than automated outreach. Once they see genuine human engagement, they’re far more likely to respond—because real relationships can’t be faked.A handshake goes a long way!",
+      "For B2B, meeting prospects in person is essential. A real handshake and authentic conversation builds trust more effectively than automated outreach. Once they see genuine human engagement, they’re far more likely to respond—because real relationships can’t be faked.A handshake goes a long way!",
     how: {
       heading: "Close More Deals",
       subheading: "Close More Deals with Real-World Event Intelligence",
@@ -352,7 +352,7 @@ export const gtmUsecasesjsonData = [
     metaData: {
       title: "Sales & Biz Dev - GTM by whr.ai",
       description: "Drive deal-making with GTM’s demand intelligence and event impact insights, pinpointing real-world opportunities to boost pipeline and revenue growth.",
-      image: `${imageURL}/gtm_usecase_sales&biz.jpg`,
+      image: `${imageURL}/gtm_usecase_sales-bizdev.jpg`,
     }
   },
   {
@@ -841,9 +841,9 @@ export const gtmUsecasesjsonData = [
     subtext:
       "No matter if you know exactly what you are looking for or exploring for new products that can help you grow, there is an event for it. If not, there soon will be. ",
     problem:
-      "Find the right event and then qualifying if its worth your time and money is like looking for a needle in a haystack. Most event decisions are made without much research and based on the narrative made by the event or what you heard in the grapevine. But, this process isnt very reliable or suitable if you want to make your time & money to be better suited.",
+      "Find the right event and then qualifying if it's worth your time and money is like looking for a needle in a haystack. Most event decisions are made without much research and based on the narrative made by the event or what you heard in the grapevine. But, this process isn't very reliable or suitable if you want to make your time & money to be better suited.",
     solution:
-      "When we can dig deep into our digital spend, map audience to the exact cohort we want to go after, why shouldnt we demand the same for our event spend? Earlier this was not possible and the excuse we gave was event is all about serendipity. However, that not a valid argument, but an excuse for not having any way to compare, evaluate and make a better decision.EventGTM in on a mission to change this. We believe events is the future of human trust building and business engagement. But, it needs to become more data driven. We have to focus on driving right people to the right place, driving higher ROI. ",
+      "When we can dig deep into our digital spend, map audience to the exact cohort we want to go after, why shouldn't we demand the same for our event spend? Earlier this was not possible and the excuse we gave was event is all about serendipity. However, that not a valid argument, but an excuse for not having any way to compare, evaluate and make a better decision.EventGTM in on a mission to change this. We believe events is the future of human trust building and business engagement. But, it needs to become more data driven. We have to focus on driving right people to the right place, driving higher ROI. ",
     how: {
       heading: "Data-Driven Logic to Event",
       subheading: "Bring Data-Driven Logic to Event Spend",
@@ -908,11 +908,11 @@ export const gtmUsecasesjsonData = [
     opacity: "100%",
     text: "Window to the World Economy",
     subtext:
-      "If there is an industry, there are events for it. Events are a window to peer into the world economy and how its changeing",
+      "If there is an industry, there are events for it. Events are a window to peer into the world economy and how it's changing",
     problem:
-      "Gloabl trade is noisy, with changing dynamics. With millions of events each year, many vanish while new ones appear, often exaggerating their size or influence and reflection on changing industry & trade trends. Adding fakes, duplicates, and cancellations makes it even harder to compile accurate, actionable data for research or strategy around real-world footprint of companies through events.",
+      "Global trade is noisy, with changing dynamics. With millions of events each year, many vanish while new ones appear, often exaggerating their size or influence and reflection on changing industry & trade trends. Adding fakes, duplicates, and cancellations makes it even harder to compile accurate, actionable data for research or strategy around real-world footprint of companies through events.",
     solution:
-      "A solution that can cut through the noise by consolidating and verifying event data worldwide. This platform need to provide reliable metrics like size, event host credibility, participant quality and overall influence scores, letting you focus on deeper analysis instead of data cleanup. Get ready to use data of events that can be linked with other datasets around trade & commerce to identify valubale trends. ",
+      "A solution that can cut through the noise by consolidating and verifying event data worldwide. This platform need to provide reliable metrics like size, event host credibility, participant quality and overall influence scores, letting you focus on deeper analysis instead of data cleanup. Get ready to use data of events that can be linked with other datasets around trade & commerce to identify valuable trends. ",
     how: {
       heading: "Enhance Event Analysis",
       subheading: "Power Your Event Analysis & Strategic Insights",
@@ -1035,7 +1035,7 @@ export const gtmUsecasesjsonData = [
     opacity: "100%",
     text: "Benchmark & Identify Opportunities",
     subtext:
-      "In order to grow its essential to both benchmark against existing competion and identy gaps in the market to either sclae, launch new events, expand into new markets or acquire other event IPs",
+      "In order to grow it's essential to both benchmark against existing competition and identity gaps in the market to either scale, launch new events, expand into new markets or acquire other event IP's",
     problem:
       "Mapping events within a category or region is often unreliable, and identifying complementary segments or new markets requires heavy research. Without structured, credible data, growth or acquisition strategies is challenging. Depending on manual excel sheet and self-reported data can be misleading",
     solution:
