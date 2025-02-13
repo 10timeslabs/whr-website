@@ -177,7 +177,7 @@ b. Consume data via an API to include in your internal prediction model`,
       "Improve pricing strategy with forecasted data around events and its impact.",
     problem: "Demand is volatile. Knowledge about change is time sensitive",
     solution:
-      "AI enabled demand forecasting can help price change in tandem. Staying ahead of the market forces is critical to optimaily price inventory to ensure maximum return. If future demand is low and its not factored into the pricing, it can lead to lower sales and vic-e-versa.",
+      "AI enabled demand forecasting can help price change in tandem. Staying ahead of the market forces is critical to optimally price inventory to ensure maximum return. If future demand is low and its not factored into the pricing, it can lead to lower sales and vice-versa.",
     how: "With a single source of truth for events that are coming, adjusted for what is changing and accounting for whats critical for the businesses, can provide a significant edge in efficient pricing. Know in advance about forecasted demand basis relevent audience, to improve your internal model or to make manual interventions in price setting. ",
     usecases: [
       {
@@ -249,9 +249,9 @@ b. Consume data via an API to include in your internal prediction model`,
     subtext:
       "Events generate 1 trillion+ economic impact. Unlock potential business opportunities identifying events that meet your business objectives.",
     problem:
-      "Finding and managing all events that can be interest is time consuming. Even if you were able to make a list of upcoming events, the opporutnity is lost unless you can forecast events that are likely to be hosted and meet your business criteria",
+      "Finding and managing all events that can be interest is time consuming. Even if you were able to make a list of upcoming events, the opportunity is lost unless you can forecast events that are likely to be hosted and meet your business criteria",
     solution:
-      "Be able to an AI like assitant that can track your criteria and update you with list of events that are relevant for your business with enrichment, calendar view and contact details for the relevant event connect",
+      "Be able to an AI like assistant that can track your criteria and update you with list of events that are relevant for your business with enrichment, calendar view and contact details for the relevant event connect",
     how: "With a wide range of filters and scores, Eventeli makes it easy for any business to identify upcoming and forecasted events that would be relevant for their business. See it in a table or export the data to use it within your research environment. All data is check for duplciates, fake and verified by AI+human checks. Use the data in one single geography or around the world.",
     usecases: [
 
@@ -385,7 +385,7 @@ b. Consume data via an API to include in your internal prediction model`,
     subtext:
       "Being over or under stocked can jeoperdize a business. Effcient inventory management needs reliable demand predictor.",
     problem:
-      "Getting inventory level just right is an art. How well its managed can be the difference between profit and loss for a business. Too much or too little can both lead to inefficiency. To get it right, a business needs  a magic balls that can look sufficiently far ahead in time and also, help idnetify what could impact the demand.",
+      "Getting inventory level just right is an art. How well its managed can be the difference between profit and loss for a business. Too much or too little can both lead to inefficiency. To get it right, a business needs  a magic balls that can look sufficiently far ahead in time and also, help identify what could impact the demand.",
     solution:
       "To solve the inventory problem, businesses impacted by onground event demand, need the intel sufficiently ahead of time to decide to reduce or increase supplies. They need to be able to filter out whats relevant for their business and how much impact it could have.",
     how: "Eventeli provides a single event data source for all events that are upcoming or forecasted, along with potential footfall, estimated economic impact and split between local vs. customers who are travelling. This data can be seen in a user friendy dashboard or consumed in the models being used by the businesses, which might take into consideration their own historicial data.  ",
@@ -445,9 +445,9 @@ b. Consume data via an API to include in your internal prediction model`,
     subtext:
       "Prepare for unexpected risks in an area with forecasting around large gathering or other warnings",
     problem:
-      "Onground occurance can lead to potential risk to local businesses directly and indirectly.",
+      "Onground occurrence can lead to potential risk to local businesses directly and indirectly.",
     solution:
-      "While some events cannot be forecasted or predicted, but significant amount of ongound activity from planned events to expected weather, can be consolidated and checked of impact in isolation or in conjunction with all other events. Using AI model and human overview, anomalies can be unearthered.",
+      "While some events cannot be forecasted or predicted, but significant amount of onground activity from planned events to expected weather, can be consolidated and checked of impact in isolation or in conjunction with all other events. Using AI model and human overview, anomalies can be unearthed.",
     how: "We both consolidate and forecast all possible events, quantify them using our models, verify with human reviewing, pattern match where needed, to get a clear view on onground activity in advance. Next, our models identifies any unexpected change in demand pattern. Lastly, our human intervention tries to quantfy the root cause and what risk it entails for the local businesses.",
     usecases: [
       {
@@ -505,9 +505,9 @@ b. Consume data via an API to include in your internal prediction model`,
     subtext:
       "Traveling for work is a norm and only expected to grow in the coming days. However, local circumstances are always changing, evolving and volatile. Connect the dots with a single window on what is planned or forecated for a specific geography.",
     problem:
-      "Geting an ealy warning based on pattern or as soon as there is any signal triggered by onground event, requires tracking various signals and looking at it hollistically to ascertain if there is anything of concern",
+      "Getting an early warning based on pattern or as soon as there is any signal triggered by onground event, requires tracking various signals and looking at it holistically to ascertain if there is anything of concern",
     solution:
-      "A single channel that identifies events of all form - social, business, sports, unplanned like weather & holidays, terror attacks to help to stay on top. Based on your company planned travel footprint, track various geopgraphies for specific travel dates in advance.",
+      "A single channel that identifies events of all form - social, business, sports, unplanned like weather & holidays, terror attacks to help to stay on top. Based on your company planned travel footprint, track various geographies for specific travel dates in advance.",
     how: "Collating, cleaning and enriching events of all form, from a small social event to a large tradeshow, along with holidays, weather, unexpected events like terror attacks along with any other anomoly that would be could as an event, we try to bring forth a risk score that can sent out as a notification or a warning. Additionally, we can also, send an update if things look good and meets your internal mandate or requirement. ",
     usecases: [
       {
@@ -556,9 +556,9 @@ b. Consume data via an API to include in your internal prediction model`,
     image: WorkforceManagement,
     text: "Manage Workforce Availability & Utilization",
     subtext:
-      "Workforce cannot change ad-hoc. Better strategies your workforce availbility with future demand data around events onground.",
+      "Workforce cannot change ad-hoc. Better strategies your workforce availability with future demand data around events onground.",
     problem:
-      "Labor cost is a major expense and cannot be increased or decreased without enough planning time. Workforce needs training and scheduling months in advance. So if there are spikes & lean period, workforce is either over-burdened or under utlized.",
+      "Labor cost is a major expense and cannot be increased or decreased without enough planning time. Workforce needs training and scheduling months in advance. So if there are spikes & lean period, workforce is either over-burdened or under utilized.",
     solution:
       "A single channel that aggregates, structures, qualifies onground event data. It should remove noise and bring out whats relevant. Solution needs to be smart enough to ingest parameters important for a business to tag forecasted events and audience that would be considered target audience.",
     how: "Eventeli's single source of truth for events that impact businesses, can help identify volatity in demand basis the nature of a business and its audience filtering. This can be visualized for operational managers to take a call or used by companies in their internal data modeling.",

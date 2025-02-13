@@ -91,7 +91,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
           )}
           {pathName === "/" && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
-            USECASES
+           Use Cases
           </div>
         </div>
         <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />

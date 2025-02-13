@@ -115,7 +115,7 @@ const Footer = () => {
                   href="/terms-of-service"
                   target="_blank"
                 >
-                  Terms of Services
+                  Terms of Service
                 </Link>
               </li>
               <li>
