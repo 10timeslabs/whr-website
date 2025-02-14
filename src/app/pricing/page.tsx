@@ -111,11 +111,11 @@ const Page = () => {
 					<div ref={headerRef} className={`drop-shadow-md border-b-[3px] border-[#6750A4] bg-white transition-all duration-300 ${isSticky ? "fixed top-[0px] z-50 w-[87%]" : "relative w-full"}`}>
 						<div className="flex">
 							{/* Feature Column (2/5 width) */}
-							<div className="p-3 text-left w-2/5 font-bold max-[760px]:hidden">Feature</div>
+							<div className="p-3 text-left text-[20px] w-2/5 font-bold max-[760px]:hidden">Feature</div>
 
 							{/* Plan Columns (Each 1/5 width) */}
-							{Object.keys(PricingData.plans).map((plan) => (
-								<div key={plan} className="p-3 text-center w-1/5 font-bold max-[760px]:w-1/4">{plan}</div>
+							{Object.keys(PricingData.plans).map((plan : any) => (
+								<div key={plan} className="p-3 text-[20px] text-center w-1/5 font-semibold max-[760px]:w-1/4 max-[620px]:text-[16px] max-[480px]:text-[12px]">{plan}</div>
 							))}
 						</div>
 					</div>
@@ -124,10 +124,10 @@ const Page = () => {
 						<div key={category} className="">
 							{/* Section Heading */}
 							<div
-								className="cursor-pointer text-xl font-bold border-b pb-2 flex items-center justify-between h-[80px]"
+								className="cursor-pointer text-xl font-bold border-b pb-2 flex items-center justify-between h-[80px] max-[480px]:font-semibold"
 								onClick={() => toggleSection(category)}
 							>
-								<span>{category}</span>
+								<span className='text-[18px]'>{category}</span>
 								<Image
 									src={DownArrow}
 									alt="down"

@@ -11,7 +11,7 @@ interface Props {
 
 const PriceCard = ({ data, isActive, isAnually }: Props) => {
 	return (
-		<div className={`h-[540px] w-full bg-white drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)]" : ""}`}>
+		<div className={`h-[540px] w-full bg-white drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)] bg-[#E6E6F9]" : ""}`}>
 			<div className='flex flex-col gap-4'>
 				<div className='flex flex-col gap-2'>
 					<span className='font-semibold text-[24px]'>{data.name}</span>
@@ -21,7 +21,7 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 					<span className='text-[30px] font-medium'>
 						{data.price === 0 ? "Custom" : `$${isAnually ? data.price * 10 : data.price}`}
 					</span>
-					{!isAnually && <span className='text-[var(--secondary-text-color)] text-[14px]'>{data.per}</span>}
+					<span className='text-[var(--secondary-text-color)] text-[14px]'>{isAnually ? "per year": "per month"}</span>
 				</div>
 				<div className='w-full border'></div>
 				<div className='flex flex-col gap-2'>
