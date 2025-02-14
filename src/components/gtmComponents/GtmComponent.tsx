@@ -171,6 +171,7 @@ const page = () => {
                   src={dataToDisplay.image}
                   width={1000}
                   height={1000}
+                  priority
                   alt={dataToDisplay.imageAltText}
                   className="w-full max-h-[650px] object-cover"
                 />
@@ -183,6 +184,7 @@ const page = () => {
                 src={dataToDisplay.image}
                 width={1000}
                 height={1000}
+                priority
                 alt={dataToDisplay.imageAltText}
                 className="h-[450px] md:h-[650px] w-full object-cover"
               />
