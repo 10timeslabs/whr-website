@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import TickIcon from '/public/priceTick.svg'
+import Link from 'next/link';
 
 
 interface Props {
@@ -11,7 +12,7 @@ interface Props {
 
 const PriceCard = ({ data, isActive, isAnually }: Props) => {
 	return (
-		<div className={`h-[540px] w-full bg-white drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)] bg-[#E6E6F9]" : ""}`}>
+		<div className={`h-[540px] w-full drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)] bg-[#E6E6F9]" : "bg-white"}`}>
 			<div className='flex flex-col gap-4'>
 				<div className='flex flex-col gap-2'>
 					<span className='font-semibold text-[24px]'>{data.name}</span>
@@ -33,7 +34,7 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 					))}
 				</div>
 			</div>
-			<button className='bg-[var(--primary-color)] rounded-md text-white text-center py-2 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)]'>Start free trial</button>
+			<Link href="/demo" className='bg-[var(--primary-color)] rounded-md text-white text-center py-2 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)]'>Start free trial</Link>
 		</div>
 	)
 }

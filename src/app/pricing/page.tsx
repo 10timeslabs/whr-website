@@ -71,20 +71,20 @@ const Page = () => {
 					<span className='text-[20px] text-[var(--secondary-text-color)]'>Empower Real-World Intelligence with Whr</span>
 				</div>
 				{/* Toggle Switch */}
-				<div className="flex justify-center items-center gap-4 mb-2">
-					<span className={isYearly ? "text-gray-400" : "text-[var(--primary-color)] font-semibold"}>Monthly</span>
+				<div className="flex justify-center items-center gap-4 mb-2 text-[18px]">
+					<span className={` ${isYearly ? "text-gray-400" : "text-[var(--primary-color)] font-semibold"}`}>Monthly</span>
 					<div
-						className="relative w-14 h-8 bg-gray-300 rounded-full cursor-pointer p-1 transition-all duration-300"
+						className="relative w-14 h-8 bg-white drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] rounded-full cursor-pointer p-1 transition-all duration-300"
 						onClick={togglePricing}
 					>
 						<div
-							className={`absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-all duration-300 ${isYearly ? "translate-x-6" : "translate-x-0"
+							className={`absolute w-6 h-6 bg-[var(--primary-color)] rounded-full shadow-md transform transition-all duration-300 ${isYearly ? "translate-x-6" : "translate-x-0"
 								}`}
 						/>
 					</div>
 					<div className="flex items-center gap-2">
 						<span className={isYearly ? "text-[var(--primary-color)] font-semibold" : "text-gray-400"}>Anually</span>
-						<span className='text-[14px] border border-[#6750a4] rounded-lg px-3 shadow-md'>20% Off</span>
+						<span className='text-[14px] border border-[#6750a4] rounded-lg px-3'>20% Off</span>
 					</div>
 				</div>
 				<div className="w-full gap-4 grid grid-cols-4 max-[1220px]:grid-cols-2 max-[650px]:grid-cols-1">
