@@ -154,11 +154,11 @@ const Navbar = () => {
               Gtm
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/geni" className="text-gray-800 hover:text-primary">
               Geni
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/about" className="text-gray-800 hover:text-primary" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               About
