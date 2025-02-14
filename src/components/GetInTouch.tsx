@@ -27,7 +27,7 @@ const GetInTouch = () => {
         </div>
         <div className="mt-12 text-center">
           <span className="text-[48px]">
-            Sign up for free today
+            Sign up to know Whr
           </span>
         </div>
         <div className="mt-6 text-[#010D3E] text-md text-center w-[30%] max-[650px]:w-[70%]">

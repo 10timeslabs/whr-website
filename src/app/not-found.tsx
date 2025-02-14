@@ -5,6 +5,7 @@ import GridImage from "/public/404_gridbackground.png";
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import LeftArrow from '/public/Left.svg'
+import NotFoundImage from '../../public/404.json'
 
 const NotFound = () => {
 	const LottieComponent = dynamic(
@@ -33,7 +34,7 @@ const NotFound = () => {
 						<span>Back to Home</span>
 					</Link>
 				</div>
-				<LottieComponent />
+				<LottieComponent lottieData={NotFoundImage} height={300}/>
 			</div>
 		</div>
 	)

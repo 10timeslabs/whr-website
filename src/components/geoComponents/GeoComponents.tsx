@@ -69,7 +69,7 @@ const GeoComponent = () => {
         style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }}
       >
 
-        {pathname.split("/")[2] === "product" && (
+        {(pathname.split("/")[2] === "product") || (pathname.split("/")[2] === "solutions") && (
           <>
             <Image
               src={GridImage}
@@ -94,12 +94,14 @@ const GeoComponent = () => {
               >
                 {/* Text Content */}
                 <div className="w-[60%]">
-                  <div className="text-black font-bold text-[28px] leading-[34px] z-30">
-                    {dataToDisplay.text}
-                  </div>
-                  <div className="text-black text-sm leading-5 mt-4 z-300">
-                    <p>{dataToDisplay.subtext}</p>
-                  </div>
+                  <h1>
+                    <div className="text-black font-bold text-[28px] leading-[34px] z-30">
+                      {dataToDisplay.text}
+                    </div>
+                    <div className="text-black text-sm leading-5 mt-4 z-300">
+                      <p>{dataToDisplay.subtext}</p>
+                    </div>
+                  </h1>
                 </div>
               </div>
 
@@ -107,9 +109,10 @@ const GeoComponent = () => {
               <div className="w-full">
                 <Image
                   src={dataToDisplay.image}
-                  alt="Banner Image"
+                  alt={dataToDisplay.imageAltText}
                   width={1000}
                   height={1000}
+                  priority // Ensures this image loads ASAP for LCP optimization
                   className="w-full max-h-[650px] object-cover"
                 />
               </div>
@@ -119,9 +122,10 @@ const GeoComponent = () => {
               {/* Background Image */}
               <Image
                 src={dataToDisplay.image}
-                alt="Banner Image"
+                alt={dataToDisplay.imageAltText}
                 width={1000}
                 height={1000}
+                priority
                 className="h-[450px] md:h-[650px] w-full object-cover"
               />
 
@@ -141,14 +145,16 @@ const GeoComponent = () => {
               {/* Text Content */}
               <div className="absolute left-5 md:left-[100px] top-10 h-auto max-w-[90%] md:max-w-[40%] p-4 md:p-6 rounded-r-md flex flex-col">
                 {/* Main Text */}
-                <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
-                  {dataToDisplay.text}
-                </div>
+                <h1>
+                  <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
+                    {dataToDisplay.text}
+                  </div>
 
-                {/* Subtext */}
-                <div className="text-[#171717] text-sm md:text-lg leading-5 md:leading-6 mt-4 text-wrap break-words">
-                  <p>{dataToDisplay.subtext}</p>
-                </div>
+                  {/* Subtext */}
+                  <div className="text-[#171717] text-sm md:text-lg leading-5 md:leading-6 mt-4 text-wrap break-words">
+                    <p>{dataToDisplay.subtext}</p>
+                  </div>
+                </h1>
               </div>
             </div>
           </div>

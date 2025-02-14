@@ -46,11 +46,14 @@ export async function generateMetadata(context: any) {
   return {
     title: dataToDisplay.metaData.title,
     description: dataToDisplay.metaData.description,
+    alternates: {
+      canonical:`https://www.whr.ai/gtm/${namespace}/${type}`,
+    },
     openGraph: {
       title: dataToDisplay.metaData.title,
       description: dataToDisplay.metaData.description,
       images: dataToDisplay.metaData.image,
-      // url: `${console_url}/detailpage?widgetId=${widgetId}&eventId=${eventId}`,
+       url: `https://www.whr.ai/gtm/${namespace}/${type}`,
       type: "website",
     },
   };

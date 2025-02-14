@@ -17,8 +17,8 @@ const Page = () => {
 export default Page;
 
 export async function generateMetadata(context: any) {
-  console.log("content", context)
   const { namespace, type } = await context.params;
+  // console.log("content", context,namespace,type)
 
   let dataSource = null;
   if (namespace === "usecases") {
@@ -49,11 +49,14 @@ export async function generateMetadata(context: any) {
   return {
     title: dataToDisplay.metaData.title,
     description: dataToDisplay.metaData.description,
+    alternates: {
+      canonical:`https://www.whr.ai/geo/${namespace}/${type}`,
+    },
     openGraph: {
       title: dataToDisplay.metaData.title,
       description: dataToDisplay.metaData.description,
       images: dataToDisplay.metaData.image,
-      // url: `${console_url}/detailpage?widgetId=${widgetId}&eventId=${eventId}`,
+      url: `https://www.whr.ai/geo/${namespace}/${type}`,
       type: "website",
     },
   };

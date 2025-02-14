@@ -104,6 +104,12 @@ const Navbar = () => {
           >
             About
           </Link>
+          <Link
+            href="/pricing"
+            className="text-black hover:text-primary text-lg"
+          >
+            Pricing
+          </Link>
         </div>
 
         {/*-------------- Desktop Buttons------------------- */}
@@ -154,14 +160,19 @@ const Navbar = () => {
               Gtm
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/geni" className="text-gray-800 hover:text-primary">
               Geni
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/about" className="text-gray-800 hover:text-primary" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               About
+            </Link>
+          </li>
+          <li>
+            <Link href="/pricing" className="text-gray-800 hover:text-primary">
+              Pricing
             </Link>
           </li>
         </ul>

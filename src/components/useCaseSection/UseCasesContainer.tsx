@@ -6,32 +6,26 @@ import CircleImage from "/public/CircularAnimation/Circle.png";
 import { dropdownValues } from "../../../data/dropdownData";
 import GridImage from "/public/usecase_grid.png";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 interface Props {
   text?: string;
+  pathName: string;
 }
-const UseCasesContainer = ({ text }: Props) => {
+const UseCasesContainer = ({ text, pathName }: Props) => {
   const [activeTab, setActiveTab] = useState("GTM");
   const gtmUsecases = dropdownValues.gtm["Use Cases"];
   const geoUsecases = dropdownValues.geo["Use Cases"];
   const [showMore, setShowMore] = useState(true); // Track visibility
-  const [usecaseData, setUsecaseData] = useState([]);
+  const [usecaseData, setUsecaseData] = useState(
+    pathName === "/geo" ? geoUsecases : gtmUsecases
+  );
 
-
-  const pathName = usePathname();
+  const showTabs = !(pathName === "/geo" || pathName === "/gtm");
   useEffect(() => {
-    if (pathName === "/geo") {
-      setUsecaseData(geoUsecases)
+    // Only update usecaseData if not on /geo or /gtm
+    if (pathName !== "/geo" && pathName !== "/gtm") {
+      setUsecaseData(activeTab === "GTM" ? gtmUsecases : geoUsecases);
     }
-    else if (pathName === "/gtm") {
-      setUsecaseData(gtmUsecases)
-    }
-    else if (activeTab === "GTM") {
-      setUsecaseData(gtmUsecases)
-    } else if (activeTab === "GEO") {
-      setUsecaseData(geoUsecases)
-    }
-  }, [activeTab])
+  }, [activeTab, pathName]);
 
   useEffect(() => {
     const updateVisibility = () => {
@@ -50,8 +44,10 @@ const UseCasesContainer = ({ text }: Props) => {
       className="min-h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden "
     // style={{ backgroundImage: `url(${GridImage.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
+      <div className='w-full h-full absolute bg-white top-0 -z-[40]'></div>
+      <Image src={GridImage} alt="grid" className="absolute -z-[30]" />
       <div
-        className="absolute right-0 top-[-150px] h-[700px] w-full -z-[10]"
+        className="absolute right-0 top-[-150px] h-[700px] w-full -z-[20]"
         style={{
           background: `
             radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 40%)`,
@@ -60,23 +56,20 @@ const UseCasesContainer = ({ text }: Props) => {
           justifyContent: "center",
         }}
       ></div>
-      <Image src={GridImage} alt="grid" className="absolute -z-[2]" />
       <Image
         src={CircleImage}
         alt="circle"
         width={690}
         height={690}
-        unoptimized
-        className="absolute top-[40%] 
-      -z-[1]"
+        priority // Ensures this image loads ASAP for LCP optimization
+        className="absolute top-[40%] -z-[10]"
       />
+
       <div className="w-[80%] flex items-start justify-between mt-10 max-[600px]:justify-center">
         <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />
         <div className="flex flex-col gap-8 items-center">
 
-          {pathName === "/geo" || pathName === "/gtm" ? (
-            <span className="text-[36px] font-medium text-center">{text}</span>
-          ) : (
+          {showTabs ? (
             <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
               <button
                 className={`w-[100px] py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "GTM" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
@@ -86,31 +79,23 @@ const UseCasesContainer = ({ text }: Props) => {
                 GTM
               </button>
               <button
-                className={`w-[100px] py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "GEO"
-                  ? "text-[#6750a4] bg-white"
-                  : "text-[var(--tertiary-text-color)]"
+                className={`w-[100px] py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "GEO" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
                   }`}
                 onClick={() => setActiveTab("GEO")}
               >
                 GEO
               </button>
             </div>
-          )}
-          {/* {pathName === "/geo" || pathName === "/gtm" ? (
-            <div>select your usecase to get started</div>
           ) : (
-            ""
-          )} */}
-
+            <span className="text-[36px] font-medium text-center">{text}</span>
+          )}
           {pathName === "/" && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
             USECASES
           </div>
-          {/* <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">USECASES</div> */}
         </div>
         <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />
       </div>
-
 
       {/* <> */}
       <div className='w-full flex gap-3 justify-center flex-wrap mt-10'>

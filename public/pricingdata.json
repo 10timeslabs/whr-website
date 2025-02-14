@@ -1,0 +1,467 @@
+{
+  "headingFeatures": 
+  {
+    "Usage, Tokens & Credits":
+    { 
+      "features" : [
+      "Per Month",
+      "Records Per Search",
+      "Advance Search & Update Tokens ",
+      "External Outreach Credits",
+      "User Access"]
+    },
+    "Research":
+    { 
+      "features" : [
+        "Basic Filter",
+        "Advance Filter",
+        "Insights & Scores",
+        "Audience Intel",
+        "Access External Link",
+        "Past Events",
+        "Forecasted Event Dates",
+        "Match Intel - brandBrief",
+        "Event Detail Page (basic)",
+        "Event Detail Page (advance)"
+      ]      
+    },
+    "Track Signals & Alerts":
+    { 
+      "features" : [
+        "Basic & Advance Trackers",
+        "Filters",
+        "Tracking Entity Limits",
+        "Notes & Discussion",
+        "Share & Invite",
+        "Notification & Updates",
+        "Token Usage"
+      ]      
+    },
+    "Trends & Reports":
+    { 
+      "features" : ["Visual Trend Reporter","Set Notification"]
+    },
+    "Event Management CRM":
+    { 
+      "features" : ["Saved Events","Event Update & Notification","Notes & Discussion", "Teams sharing"]
+    },
+    "Event Outreach & Introductions":
+    { 
+      "features" : [
+        "Platform Outreach",
+        "CRM & Notes",
+        "Unlock Contact - Email/Phone",
+        "Introduction & Meetings"
+      ]
+    },
+    "Event Promotion":
+    { 
+      "features" : [
+        "Listing & Detail Page",
+        "Number of Widgets",
+        "Branding",
+        "Custom Domain",
+        "Leads & CRM",
+        "Onsite Lead Scan & Track",
+        "Post-Event Lead Management"
+      ]
+    },
+    "Support":
+    { 
+      "features" : [
+        "Knowledge Hub",
+        "Chat Bot",
+        "Priority Support",
+        "Dedicated Manager"
+      ]
+    },
+    "Export & API":
+    { 
+      "features" : [
+        "Export File",
+        "API Access"
+      ]
+    },
+    "integration & Extensions":
+    { 
+      "features" : [
+        "SSO",
+        "Snowflake",
+        "AWS",
+        "External CRM",
+        "Browser & Email Extension"
+      ]      
+    },
+    "Data Enrichment":
+    { 
+      "features" : [
+        "Enrich Event List",
+        "Enrich Company List",
+        "Enrich People List",
+        "Third-party Enrichment"
+      ]      
+    },
+    "Prospect":
+    { 
+      "features" : [
+        "People Search",
+        "Company Search",
+        "Platform Outreach",
+        "Unlock Contacts",
+        "Introduction"
+      ]
+    },
+    "Analyze & Improve Participation":
+    { 
+      "features" : [
+        "Score ROI from event participation",
+        "Missed Opportunity Mapper",
+        "Team Participation Analysis",
+        "Event Impact Mapper",
+        "Past Participation Tracking"
+      ]      
+    },
+    "Team Management":
+    { 
+      "features" : [
+        "Team Management",
+        "Participation Permission & Approvals",
+        "Multi-department / Region Setup"
+      ]      
+    }
+  },
+  "plans": {
+    "Essential": {
+      "Usage, Tokens & Credits": {
+        "Per Month": "$10",
+        "Records Per Search" : "10",
+        "Advance Search & Update Tokens " : "400",
+        "External Outreach Credits" : "0",
+        "User Access" : "1"
+      },
+      "Research": {
+        "Basic Filter": true,
+        "Advance Filter" : true,
+        "Insights & Scores" : true,
+        "Audience Intel" : true,
+        "Access External Link" : true,
+        "Event Detail Page (basic)" : true
+      },
+      "Track Signals & Alerts" : {
+        "Basic & Advance Trackers" : "Basic",
+        "Filters" : "Advance",
+        "Tracking Entity Limits" : "100",
+        "Notes & Discussion" : true,
+        "Share & Invite" : true,
+        "Notification & Updates" : true
+      },
+      "Trends & Reports" : {
+        "Visual Trend Reporter" : "Basic",
+        "Set Notification" : "4 token/ intel generated or automated notification signal"
+      },
+      "Event Management CRM" : {
+        "Saved Events" : "100 Events",
+        "Event Update & Notification" : true,
+        "Notes & Discussion" : "unlimited",
+        "Teams sharing" : "1-2"
+      },
+      "Event Outreach & Introductions" : {
+        "Platform Outreach" : true,
+        "CRM & Notes" : "unlimited",
+        "Unlock Contact - Email/Phone" : true
+      },
+      "Event Promotion" : {
+        "Listing & detail Page" : "Unlimited",
+        "Number of Widgets" : "Unlimited",
+        "Branding" : true,
+        "Leads & CRM" : "100"
+      },
+      "Support" : {
+        "Knowledge hub" : true,
+        "Chat Bot" : true
+      },
+      "Export & API" : {
+
+      },
+      "integration & Extensions" : {
+
+      },
+      "Data Enrichment" : {
+
+      },
+      "Prospect" : {
+        "People search" : "Basic",
+        "Company search" : "Basic",
+        "Platform Outreach" : true
+      },
+      "Analyze & Improve Participation" : {
+        "Past Participation Tracking" : true
+      },
+      "Team Management" : {
+
+      }
+    },
+    "Scale": {
+     "Usage, Tokens & Credits": {
+        "Per Month": "$100",
+        "Records Per Search" : "50",
+        "Advance Search & Update Tokens " : "4000",
+        "External Outreach Credits" : "100",
+        "User Access" : "5"
+      },
+      "Research": {
+        "Basic Filter": true,
+        "Advance Filter" : true,
+        "Insights & Scores" : true,
+        "Audience Intel" : true,
+        "Access External Link" : true,
+        "Past Events" : true,
+        "Forecasted Event Dates" : true,
+        "Event Detail Page (basic)" : true,
+        "Event Detail Page (advance)" : true
+      },
+      "Track Signals & Alerts" : {
+        "Basic & Advance Trackers" : "Advance",
+        "Filters" : "Advance",
+        "Tracking Entity Limits" : "500",
+        "Notes & Discussion" : true,
+        "Share & Invite" : true,
+        "Notification & Updates" : true
+      },
+      "Trends & Reports" : {
+        "Visual Trend Reporter" : "Advance",
+        "Set Notification" : "4 token/ intel generated or automated notification signal"
+      },
+      "Event Management CRM" : {
+        "Saved Events" : "500 Events",
+        "Event Update & Notification" : true,
+        "Notes & Discussion" : "unlimited",
+        "Teams sharing" : "10"
+      },
+      "Event Outreach & Introductions" : {
+        "Platform Outreach" : "+ Ai Agent",
+        "CRM & Notes" : "unlimited",
+        "Unlock Contact - Email/Phone" : true,
+        "Introduction & Meetings" : "Basic"
+      },
+      "Event Promotion" : {
+        "Listing & detail Page" : "Unlimited",
+        "Number of Widgets" : "Unlimited",
+        "Branding" : true,
+        "Custom Domain" : true,
+        "Leads & CRM" : "1000"
+      },
+      "Support" : {
+        "Knowledge hub" : true,
+        "Chat Bot" : true
+      },
+      "Export & API" : {
+
+      },
+      "integration & Extensions" : {
+
+      },
+      "Data Enrichment" : {
+        "Enrich Event List" : true
+      },
+      "Prospect" : {
+        "People search" : "Advance",
+        "Company search" : "Advance",
+        "Platform Outreach" : true,
+        "Introduction" : "Intro Bot"
+      },
+      "Analyze & Improve Participation" : {
+        "Score ROI from event participation" : true,
+        "Missed Opportunity Mapper" : true,
+        "Team Participation Analysis" : true,
+        "Past Participation Tracking" : true
+      },
+      "Team Management" : {
+        "Team Management" : true,
+        "Participation Permission & Approvals" : true
+      }
+    },
+    "Advance": {
+     "Usage, Tokens & Credits": {
+        "Per Month": "$1000",
+        "Records Per Search" : "100",
+        "Advance Search & Update Tokens " : "20000",
+        "External Outreach Credits" : "500",
+        "User Access" : "100"
+      },
+      "Research": {
+        "Basic Filter": true,
+        "Advance Filter" : true,
+        "Insights & Scores" : true,
+        "Audience Intel" : true,
+        "Access External Link" : true,
+        "Past Events" : true,
+        "Forecasted Event Dates" : true,
+        "Match Intel - brandBrief" : true,
+        "Event Detail Page (basic)" : true,
+        "Event Detail Page (advance)" : true
+      },
+      "Track Signals & Alerts" : {
+        "Basic & Advance Trackers" : "Advance",
+        "Filters" : "Advance",
+        "Tracking Entity Limits" : "1000",
+        "Notes & Discussion" : true,
+        "Share & Invite" : true,
+        "Notification & Updates" : true
+      },
+      "Trends & Reports" : {
+        "Visual Trend Reporter" : "Advance",
+        "Set Notification" : "4 token/ intel generated or automated notification signal"
+      },
+      "Event Management CRM" : {
+        "Saved Events" : "1000 Events",
+        "Event Update & Notification" : true,
+        "Notes & Discussion" : "unlimited",
+        "Teams sharing" : "100"
+      },
+      "Event Outreach & Introductions" : {
+        "Platform Outreach" : "+ Human Agent",
+        "CRM & Notes" : "unlimited",
+        "Unlock Contact - Email/Phone" : true,
+        "Introduction & Meetings" : "Advance"
+      },
+      "Event Promotion" : {
+        "Listing & detail Page" : "Unlimited",
+        "Number of Widgets" : "Unlimited",
+        "Branding" : true,
+        "Custom Domain" : true,
+        "Leads & CRM" : "10000",
+        "Onsite Lead Scan & Track" : true,
+        "Post-Event Lead Management" : true
+      },
+      "Support" : {
+        "Knowledge hub" : true,
+        "Chat Bot" : true,
+        "Priority Support" : true 
+      },
+      "Export & API" : {
+        "Export File" : true
+      },
+      "integration & Extensions" : {
+        "External CRM" : true,
+        "Browser & Email Extension" : true
+      },
+      "Data Enrichment" : {
+        "Enrich Event List" : true,
+        "Enrich Company List" : true
+      },
+      "Prospect" : {
+        "People search" : "Advance",
+        "Company search" : "Advance",
+        "Platform Outreach" : true,
+        "Introduction" : "Intro Bot"
+      },
+      "Analyze & Improve Participation" : {
+        "Score ROI from event participation" : true,
+        "Missed Opportunity Mapper" : true,
+        "Team Participation Analysis" : true,
+        "Event Impact Mapper" : true,
+        "Past Participation Tracking" : true
+      },
+      "Team Management" : {
+        "Team Management" : true,
+        "Participation Permission & Approvals" : true,
+        "Multi-department / Region Setup" : true
+      }
+    },
+    "Enterprise": {
+     "Usage, Tokens & Credits": {
+        "Per Month": "$10,000",
+        "Records Per Search" : "100",
+        "Advance Search & Update Tokens " : "100000",
+        "External Outreach Credits" : "2000",
+        "User Access" : "Unlimited"
+      },
+      "Research": {
+        "Basic Filter": true,
+        "Advance Filter" : true,
+        "Insights & Scores" : true,
+        "Audience Intel" : true,
+        "Access External Link" : true,
+        "Past Events" : true,
+        "Forecasted Event Dates" : true,
+        "Match Intel - brandBrief" : true,
+        "Event Detail Page (basic)" : true,
+        "Event Detail Page (advance)" : true
+      },
+      "Track Signals & Alerts" : {
+        "Basic & Advance Trackers" : "+Custom",
+        "Filters" : "Advance",
+        "Tracking Entity Limits" : "5000",
+        "Notes & Discussion" : true,
+        "Share & Invite" : true,
+        "Notification & Updates" : true
+      },
+      "Trends & Reports" : {
+        "Visual Trend Reporter" : "Advance + Custom",
+        "Set Notification" : "4 token/ intel generated or automated notification signal"
+      },
+      "Event Management CRM" : {
+        "Saved Events" : "5000 Events",
+        "Event Update & Notification" : true,
+        "Notes & Discussion" : "unlimited",
+        "Teams sharing" : "500"
+      },
+      "Event Outreach & Introductions" : {
+        "Platform Outreach" : "+Dedicated Agent",
+        "CRM & Notes" : "unlimited",
+        "Unlock Contact - Email/Phone" : true,
+        "Introduction & Meetings" : "Conceirge"
+      },
+      "Event Promotion" : {
+        "Listing & detail Page" : "Unlimited",
+        "Number of Widgets" : "Unlimited",
+        "Branding" : true,
+        "Custom Domain" : true,
+        "Leads & CRM" : "Unlimited",
+        "Onsite Lead Scan & Track" : true,
+        "Post-Event Lead Management" : true
+      },
+      "Support" : {
+        "Knowledge hub" : true,
+        "Chat Bot" : true,
+        "Priority Support" : true,
+        "Dedicated Manager" : true
+      },
+      "Export & API" : {
+        "Export File" : true,
+        "API Access" : true
+      },
+      "integration & Extensions" : {
+        "Snowflake" : true,
+        "AWS" : true,
+        "External CRM" : true,
+        "Browser & Email Extension" : true
+      },
+      "Data Enrichment" : {
+        "Enrich Event List" : true,
+        "Enrich Company List" : true,
+        "Enrich People List" : true,
+        "Third-party Enrichment" : true
+      },
+      "Prospect" : {
+        "People search" : "Advance",
+        "Company search" : "Advance",
+        "Platform Outreach" : true,
+        "Introduction" : "Custom Intro Flows"
+      },
+      "Analyze & Improve Participation" : {
+        "Score ROI from event participation" : true,
+        "Missed Opportunity Mapper" : true,
+        "Team Participation Analysis" : true,
+        "Event Impact Mapper" : true,
+        "Past Participation Tracking" : true
+      },
+      "Team Management" : {
+        "Team Management" : true,
+        "Participation Permission & Approvals" : true,
+        "Multi-department / Region Setup" : true
+      }
+    }
+  }
+}
