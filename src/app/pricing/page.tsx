@@ -16,6 +16,7 @@ const Page = () => {
 	const [isSticky, setIsSticky] = useState(false);
 	const headerRef = useRef<HTMLDivElement | null>(null);
 	const [headerOffset, setHeaderOffset] = useState(0);
+	const [isYearly, setIsYearly] = useState<boolean>(false)
 
 	// Toggle function
 	const toggleSection = (category: string) => {
@@ -40,24 +41,26 @@ const Page = () => {
 
 	const pricingPlans = [
 		{
-			name: "Essential", price: "$10",
+			name: "Essential", price: 10,
 			features: ["Global Event Search", "Global Company Search", "Global People Search", "Basic Event Tracker",
 				"Event Pipeline Management", "Event Outreach CRM", "Past Participation Tracking"], per: "per month"
 		},
 		{
-			name: "Scale", price: "$100",
+			name: "Scale", price: 100,
 			features: ["Eveything in Essential +", "Advance Event Search", "Advance People Search", "Advance Company Search", "Advance Trackers", "Trends & Reports Access", "Team Coordinate", "Past & Forecasted Events"], per: "per month"
 		},
 		{
-			name: "Advance", price: "$1000",
+			name: "Advance", price: 1000,
 			features: ["Eveything in Scale +", "Priority Support", "Unlimited User-access", "Event Relevance Scoring ", "Embedable Custom Domain", "Advance Trend & Report Access", "Export Function", "Browser & Email Extension"], per: "per month"
 		},
 		{
-			name: "Enterprise", price: "Custom",
+			name: "Enterprise", price: 0,
 			features: ["Eveything in Advance +", "Advance Outreach & Conceirge", "API Access", "Dedicated Support", "Custom Reports & Intel", "Unlimited Advance Trackers", "SSO & Integrations", "AI Event Strategist"], per: "per month"
 		}
 	];
-
+	const togglePricing = () => {
+		setIsYearly(!isYearly);
+	};
 
 	const features = ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5", "Feature 6", "Feature 7"]
 	return (
@@ -67,6 +70,23 @@ const Page = () => {
 				<div className='flex flex-col'>
 					<span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent text-[60px] leading-[65px] font-medium w-fit '><h1>Pricing</h1></span>
 					<span className='text-[20px] text-[var(--secondary-text-color)]'>Empower Real-World Intelligence with Whr</span>
+				</div>
+				{/* Toggle Switch */}
+				<div className="flex justify-center items-center gap-4 mb-2">
+					<span className={isYearly ? "text-gray-400" : "text-[var(--primary-color)] font-semibold"}>Monthly</span>
+					<div
+						className="relative w-14 h-8 bg-gray-300 rounded-full cursor-pointer p-1 transition-all duration-300"
+						onClick={togglePricing}
+					>
+						<div
+							className={`absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-all duration-300 ${isYearly ? "translate-x-6" : "translate-x-0"
+								}`}
+						/>
+					</div>
+					<div className="flex items-center gap-2">
+						<span className={isYearly ? "text-[var(--primary-color)] font-semibold" : "text-gray-400"}>Anually</span>
+						<span className='text-[14px] border border-[#6750a4] rounded-lg px-3 shadow-md'>20% Off</span>
+					</div>
 				</div>
 				<div className="w-full gap-4 grid grid-cols-4 max-[1220px]:grid-cols-2 max-[650px]:grid-cols-1">
 					{pricingPlans.map((data, key) => (
@@ -78,7 +98,7 @@ const Page = () => {
 							transition={{ duration: 0.6, delay: key * 0.2, ease: 'easeOut' }} // Delay each card slightly
 							viewport={{ once: true }} // Only animate once
 						>
-							<PriceCard data={data} isActive={key === 2} />
+							<PriceCard data={data} isActive={key === 2} isAnually={isYearly}/>
 						</motion.div>
 					))}
 				</div>
