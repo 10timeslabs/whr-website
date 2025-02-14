@@ -65,7 +65,7 @@ export const gtmProductJsonData = [
         metaData: {
             title: "Event Search - whr.ai GEO",
             description: "Utilize whr.ai's Event Search to identify actionable events with smart filters and scores for better planning and forecasting.",
-            image: `${imageURL}/event-search.png`,
+            image: `${imageURL}/Research.png`,
         }
     },
     {
@@ -96,7 +96,7 @@ export const gtmProductJsonData = [
         metaData: {
             title: "AI Assistant - whr.ai GEO",
             description: "Resolve on-ground demand queries with whr.ai's AI Assistant. Ask questions in natural language and get actionable responses.",
-            image: `${imageURL}/smart-tracker.png`,
+            image: `${imageURL}/tracker-templates.png`,
         }
     },
     {
@@ -158,7 +158,7 @@ export const gtmProductJsonData = [
         metaData: {
             title: "Coordinate - whr.ai GEO",
             description: "Streamline team coordination around events with whr.ai's Coordinate. Flag risks, assign tasks, and share notes seamlessly.",
-            image: `${imageURL}/coordinate.png`,
+            image: `${imageURL}/Coordinate.png`,
         }
     },
     {
@@ -189,7 +189,7 @@ export const gtmProductJsonData = [
         metaData: {
             title: "Outreach - whr.ai GEO",
             description: "Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image: `${imageURLTwo}/outreach.png`,
+            image: `${imageURLTwo}/Outreach_product.png`,
         }
     },
     {
@@ -220,7 +220,7 @@ export const gtmProductJsonData = [
         metaData: {
             title: "Prospect - whr.ai GEO",
             description: "Integrate whr.ai's event data into your systems via our API. Enhance your models with reliable, enriched event intelligence.",
-            image: `${imageURLTwo}/prospect.png`,
+            image: `${imageURLTwo}/Prospect.png`,
         }
     },
     {
@@ -251,7 +251,7 @@ export const gtmProductJsonData = [
         metaData: {
             title: "Trends Monitor - whr.ai GEO",
             description: "Monitor meaningful changes in event trends with whr.ai's Trends Monitor. Identify anomalies and respond proactively.",
-            image: `${imageURL}/trends-monitor.png`,
+            image: `${imageURL}/Trends_product.png`,
         }
     }
 ]
