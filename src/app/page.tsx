@@ -43,14 +43,12 @@ export default function Home() {
 
       <div className={`text-center`}>
         <h1 className="mb-3 text-[5vw] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]">
-          {/* Whats Happening for Real */}
-          Maximize Event ROI
+          Whats Happening for Real
         </h1>
 
         {/* <HeadingtextAnimation heading="Whr is the" words={headingWords}/> */}
         <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[850px]:text-[16px]">
-          {/* Unlock Real-World Action Intel with WHR */}
-          Harness real-world opportunity with AI
+          Unlock Real-World Action Intel with WHR
         </p>
       </div>
       <div className="w-full flex items-center justify-center mt-10">

@@ -72,7 +72,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
           {showTabs ? (
             <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
               <button
-                className={`w-[100px] py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "GTM" ? "text-[#6750a4] bg-white" : "text-[var(--primary-text-color)]"
+                className={`w-[100px] py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "GTM" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
                   }`}
                 onClick={() => setActiveTab("GTM")}
               >
@@ -91,7 +91,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
           )}
           {pathName === "/" && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
-           Use Cases
+            USECASES
           </div>
         </div>
         <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />

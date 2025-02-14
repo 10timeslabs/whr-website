@@ -55,7 +55,7 @@ const HowWeAreHelpful = () => {
 							key={key}
 							icon={problem.icon}
 							heading={problem.heading}
-							subheading={problem.points.join("")}
+							subheading={problem.points.join(".")}
 						/>
 					))}
 				</div>
