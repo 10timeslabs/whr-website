@@ -99,7 +99,7 @@ h. Access and track all event footprint to access impact`,
     imageAltText: "",
     text: "Competitor Tracking",
     subtext:
-      "Dont just go, know where your competitors are joing and tend to go",
+      "Dont just go, know whr your competitors are joing and tend to go",
     problem:
       "Aggregating and tracking all your competitor and potential competitor can be nightmare, let alone identifying what sort of events they participate and in what form",
     solution:
