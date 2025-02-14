@@ -51,7 +51,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
           {/* Product Section */}
           <div>
-            <h3 className="text-lg mb-2">Product</h3>
+            <div className="text-lg mb-2">Product</div>
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
                 <Link href="#">Feature Request</Link>
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Company Section */}
           <div>
-            <h3 className="text-lg mb-2">Company</h3>
+            <div className="text-lg mb-2">Company</div>
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
                 <Link href="/about" target="_blank">About Us</Link>
@@ -107,7 +107,7 @@ const Footer = () => {
           </div> */}
 
           <div>
-            <h3 className="text-lg mb-2">Legal</h3>
+            <div className="text-lg mb-2">Legal</div>
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
                 <Link
@@ -115,7 +115,7 @@ const Footer = () => {
                   href="/terms-of-service"
                   target="_blank"
                 >
-                  Terms of Services
+                  Terms of Service
                 </Link>
               </li>
               <li>

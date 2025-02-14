@@ -55,7 +55,7 @@ export const geoUsecasesjsonData = [
     href: "/geo/usecases/hotel-lodging",
     dropText : "Optimize hotel pricing with whr.ai's demand forecasting.",
     image:
-      `${imageURL}/geo_usecase_hotel&lodging_cropped.png`,
+      `${imageURL}/geo_usecase_hotel-lodging.png`,
     imageAltText: "Sunset over the ocean with a sail-shaped skyscraper reflecting golden light, evoking a serene atmosphere.",
     text: "Higher Occupancy, Lower Surprises",
     blurColor:
@@ -64,9 +64,9 @@ export const geoUsecasesjsonData = [
     subtext:
       "You can't plan for what you can't foresee. Identifying causes for sudden increases and decreases in bookings is critical to taking action. With events being the most volatile factor, having a reliable event forecast helps with better pricing, inventory management, and staffing.",
     problem:
-      "Events are constantly changing with new launches, dates, formats and location. Historical data has been proven to be unreliable, specially with manual searching and excel sheets. While the impact is evident, its only valuable if the data can be accessed well in advance and in a comprehensive manner.",
+      "Events are constantly changing with new launches, dates, formats and location. Historical data has been proven to be unreliable, specially with manual searching and excel sheets. While the impact is evident, it's only valuable if the data can be accessed well in advance and in a comprehensive manner.",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for hotels & other accomodation providers.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for hotels & other accommodation providers.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -139,7 +139,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
+          "Hospitality industry is a major employer. However, it comes with the challenge of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
         href: "/geo/solutions/workforce-management",
       },
       {
@@ -168,7 +168,7 @@ export const geoUsecasesjsonData = [
       description:
         "Optimize hotel pricing and revenue by forecasting inbound event-driven demand with whr.ai's demand forecasting.",
       image:
-        `${imageURL}/geo_usecase_hotel&lodging_cropped.png`,
+        `${imageURL}/geo_usecase_hotel-lodging.png`,
     },
   },
   {
@@ -188,9 +188,9 @@ export const geoUsecasesjsonData = [
     subtext:
       "Besides rent, almost all of a restaurant recurring cost requires better planning & demand forecasting. Access onground event demand intel to better forecast potential demand, need for staffing and inventory requirement, and imporve operational efficiency.",
     problem:
-      "Most restuarants in the vicinity of event venues have seen unexpected increase in footfall on some days and later found out that there was an event happening. But what if there was not one big events, but a bunch of small events?",
+      "Most restaurants in the vicinity of event venues have seen unexpected increase in footfall on some days and later found out that there was an event happening. But what if there was not one big events, but a bunch of small events?",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for reataurants and QSR.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for restaurants and QSR.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -315,7 +315,7 @@ export const geoUsecasesjsonData = [
     href: "/geo/usecases/activity-planners",
     dropText : "Enhance planner revenue with whr.ai's demand intelligence.",
     image:
-      `${imageURL}/geo_usecase_activityplanner.jpg`,
+      `${imageURL}/geo_usecase_activity-planners.jpg`,
     imageAltText: "A silver pen on an open planner with dated pages, beside a blurred smartphone and mug, conveying productivity.",
     // blurColor: "#C2BDC1",
     blurColor:
@@ -325,9 +325,9 @@ export const geoUsecasesjsonData = [
     subtext:
       "Unlock forecasted inbound tourist or business professionals traffic for event or design your activity in-line with the theme of upcoming events to increase bookings and better manage workforce.",
     problem:
-      "Events form a big chunk of Incoming tourists for a large number of cities around the world. While this audience is prime target for activity planners, there is little insight or bandwidth to track, analyze and plan for potential impact of events or designing activities linked to large events.",
+      "Events form a big chunk of incoming tourists for a large number of cities around the world. While this audience is prime target for activity planners, there is little insight or bandwidth to track, analyze and plan for potential impact of events or designing activities linked to large events.",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for activity planners.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for activity planners.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -439,7 +439,7 @@ export const geoUsecasesjsonData = [
       description:
         "Enhance revenue and profitability for activity planners by leveraging forecasted demand intelligence from whr.ai.",
       image:
-        `${imageURL}/geo_usecase_activityplanner.jpg`,
+        `${imageURL}/geo_usecase_activity-planners.jpg`,
     },
   },
   {
@@ -450,7 +450,7 @@ export const geoUsecasesjsonData = [
     dropText:
     "Optimize airport operations with whr.ai's demand data.",
     image:
-      `${imageURL}/geo_usecase_aviation&airport.jpg`,
+      `${imageURL}/geo_usecase_aviation-airport.jpg`,
     imageAltText: "A red and white Air Berlin airplane ascends against fluffy, dramatic clouds, symbolizing freedom and travel.",
     // blurColor: "#D6DDF3",
     blurColor:
@@ -462,7 +462,7 @@ export const geoUsecasesjsonData = [
     problem:
       "Events of all types, from forecasted weather, planned holidays to scheduled events, drive people to travel around the world. Identifying and leveraging factors that make the historcial pattern redundant, is hard, time consuming and filled with unpredictability. ",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for airlines and airports.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for airlines and airports.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -564,7 +564,7 @@ export const geoUsecasesjsonData = [
       description:
         "Manage passenger spikes and optimize airport operations with event-driven demand forecasting from whr.ai.",
       image:
-        `${imageURL}/geo_usecase_aviation&airport.jpg`,
+        `${imageURL}/geo_usecase_aviation-airport.jpg`,
     },
   },
   {
@@ -584,7 +584,7 @@ export const geoUsecasesjsonData = [
     subtext:
       "Travel Advisory for risk management teams. Companies need to know track any risks involved when their employees are traveling.",
     problem:
-      "Not accounting for all business travel, business events alone drives over 500 million professionals to travel for events.For large enterprise, whose workforce is constantly moving to participate in events, its a big challenege to optimize where, why and when people are going for events, to manage risk and/or optimize return.",
+      "Not accounting for all business travel, business events alone drives over 500 million professionals to travel for event.For large enterprise, whose workforce is constantly moving to participate in events, its a big challenge to optimize where, why and when people are going for events, to manage risk and/or optimize return.",
     solution:
       "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes to enable large companies to monitor potential opportunity or risk. ",
     how: {
@@ -626,7 +626,7 @@ export const geoUsecasesjsonData = [
         id: "risk_identification",
         topic: "Risk Identification",
         content:
-          "Business travel is bigger than casual traveling. Large companies have their employees flying in and around cities & coutries all the time. Have a central dashboard to monitor any risk zone can help prevent or take precautions against anyone negative scenario that could have been avoided. Some examples of these risks are: avoiding travel & meeting around time and area with major spikes in onground activity to early detection of health, weather and terrorist warning. Our onground risk identifiction model can prevent avoidable risks associated with corporate travel. ",
+          "Business travel is bigger than casual traveling. Large companies have their employees flying in and around cities & countries all the time. Have a central dashboard to monitor any risk zone can help prevent or take precautions against anyone negative scenario that could have been avoided. Some examples of these risks are: avoiding travel & meeting around time and area with major spikes in onground activity to early detection of health, weather and terrorist warning. Our onground risk identifiction model can prevent avoidable risks associated with corporate travel. ",
         icon: (
           <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
@@ -639,7 +639,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Events are labelled for type and category, besdies projected scored around footfall and economic impact. Enterprise can use this audience filtering at scale to identify strategic time and geo-location to leverage onground marketing and activation activities. For example, an auto expo would be an opportunity for car manufacturers to build brand visibility with a very targeted audience outside of the event ",
+          "Events are labelled for type and category, besides projected scored around footfall and economic impact. Enterprise can use this audience filtering at scale to identify strategic time and geo-location to leverage onground marketing and activation activities. For example, an auto expo would be an opportunity for car manufacturers to build brand visibility with a very targeted audience outside of the event ",
         href: "/geo/solutions/geo-marketing",
       },
       {
@@ -649,7 +649,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Event sponsoring is a major marketing channel for both small and large enterprise to reach target audience. Eventeli helps to indentify events which are forecated or upcoming and might be a good fit for an enterprise to sponsor. Create custom trackers and our AI agent will find and notify you to relevant event that match your criteria.  ",
+          "Event sponsoring is a major marketing channel for both small and large enterprise to reach target audience. Eventeli helps to identify events which are forecasted or upcoming and might be a good fit for an enterprise to sponsor. Create custom trackers and our AI agent will find and notify you to relevant event that match your criteria.  ",
         href: "/geo/solutions/event-prospecting",
       },
       {
@@ -659,7 +659,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Large companies have major event footprint. Employees across department and seniority levels are constantly attending events. If company human resource manegement has visibility on workforce event participation, it could ensure better planning, compliance requirements, etc.arising from such engagements. ",
+          "Large companies have major event footprint. Employees across department and seniority levels are constantly attending events. If company human resource management has visibility on workforce event participation, it could ensure better planning, compliance requirements, etc.arising from such engagements. ",
         href: "/geo/solutions/workforce-management",
       },
     ],
@@ -690,7 +690,7 @@ export const geoUsecasesjsonData = [
     problem:
       "As events grows so does the need to commute. However, unlike regular daily commuters, rides for events are volatile and negatively impacts the available supply, unless spike in demand is taken into consideration",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for transportation providers.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for transportation providers.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -753,7 +753,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "For on demand cab providers like Uber, surge pricing is a major component of their revenue strategy. With forecasted event data, along with impact, it can help better strategies dynamic pricing or address questions in real-time for whats causing significant increase in demand. Either ways it can help transportation companies from cabs to buses to trains, to rethink their dynamic pricing strategy",
+          "For on demand cab providers like Uber, surge pricing is a major component of their revenue strategy. With forecasted event data, along with impact, it can help better strategies dynamic pricing or address questions in real-time for what's causing significant increase in demand. Either ways it can help transportation companies from cabs to buses to trains, to rethink their dynamic pricing strategy",
         href: "/geo/solutions/dynamic-pricing",
       },
       {
@@ -783,7 +783,7 @@ export const geoUsecasesjsonData = [
       //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
       //   ),
       //   content:
-      //     "Observing past and forecasted event demand, helps staretgy teams in companies involved with transportation to design their strategy. This includes but not limited to identifing need for more automotive in specfic geography, expanding or opening new geographies to grow the business or identifying ways to best utilize available inventory to improve profitibility.",
+      //     "Observing past and forecasted event demand, helps staretgy teams in companies involved with transportation to design their strategy. This includes but not limited to identifing need for more automotive in specific geography, expanding or opening new geographies to grow the business or identifying ways to best utilize available inventory to improve profitibility.",
       //     href: "/geo/solutions/inventory-planning",
       // },
     ],
@@ -802,7 +802,7 @@ export const geoUsecasesjsonData = [
     href: "/geo/usecases/ooh-marketing",
     dropText: "Maximize OOH ad ROI with whr.ai's event footfall data.",
     image:
-      `${imageURL}/geo_usecase_OOH-marketing.jpg`,
+      `${imageURL}/geo_usecase_ooh-marketing.jpg`,
     imageAltText: "Hands hold a pen, pointing at a document with charts on remote work, with a phone, notebook, coffee, and highlighter.",
     // blurColor: "#BBBBB2",
     blurColor:
@@ -812,9 +812,9 @@ export const geoUsecasesjsonData = [
     subtext:
       "Unlock premium out of home advertising inventory to target intent driven audience. Targeted, time sensitive and high value ad space to push curated brand messaging around defined event audience.",
     problem:
-      "While venues for event are known, evaluating the value of the inventory in relation to the forecated event audience and interested advertisers requires lead-time for creating a vibrant ad marketplace.",
+      "While venues for events are known, evaluating the value of the inventory in relation to the forecasted event audience and interested advertisers requires lead-time for creating a vibrant ad marketplace.",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes upto 12 months in future. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for ad space sellers and buyers",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes upto 12 months in future. Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for ad space sellers and buyers",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -904,7 +904,7 @@ export const geoUsecasesjsonData = [
       description:
         "Maximize OOH ad ROI with forecasted event footfall and audience insights from whr.ai.",
       image:
-        `${imageURL}/geo_usecase_OOH-marketing.jpg`,
+        `${imageURL}/geo_usecase_ooh-marketing.jpg`,
     },
   },
   {
@@ -924,9 +924,9 @@ export const geoUsecasesjsonData = [
     subtext:
       "Events are an integral part of all bustling cities and any commerce in its periphery is impacted by footfall it brings or disrupts. From managing inventory to workforce, a reliable event forecast can help improve the retail commerce revenue.",
     problem:
-      "Both attended and not attended events impacts retail commerce and not knowing whats coming and could impact the business leaves room for ambiguity and chance for loss of potential business",
+      "Both attended and not attended events impacts retail commerce and not knowing what's coming and could impact the business leaves room for ambiguity and chance for loss of potential business",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for retail commerce business",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for retail commerce business",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -966,7 +966,7 @@ export const geoUsecasesjsonData = [
         id: "Demand Forecasting",
         topic: "Demand Forecasting",
         content:
-          "Both attended and non-attended event have significant imapct on local retail commerce. From single stores to chains, any business catering to walkin customers can unlock significant advantage with better stock management, manpower planning and also, marketing strategy with forecasted demand intelligence. Basis expected footfall, economic impact and inbound scores, retail commerce stakeholder can identify events of impact or include data in internal models. ",
+          "Both attended and non-attended event have significant impact on local retail commerce. From single stores to chains, any business catering to walkin customers can unlock significant advantage with better stock management, manpower planning and also, marketing strategy with forecasted demand intelligence. Basis expected footfall, economic impact and inbound scores, retail commerce stakeholder can identify events of impact or include data in internal models. ",
         icon: (
           <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
@@ -979,7 +979,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Whats considered risk varies from business to business. For retail commerce, if its located within an area of event impact, it must take into consideration how it could impact its business in various ways. Firstly, events are not limited to attended live-events, it also includes political unrest, terorist attacks, severe weather, major road diversions, Eventeli provides a single dashboard to visualize what can be forecasted and action can be planned. Use live event data to access risk around how it could impact your usual walk-in customers, parking issues, store timings, etc. ",
+          "What's considered risk varies from business to business. For retail commerce, if its located within an area of event impact, it must take into consideration how it could impact its business in various ways. Firstly, events are not limited to attended live-events, it also includes political unrest, terrorist attacks, severe weather, major road diversions, Eventeli provides a single dashboard to visualize what can be forecasted and action can be planned. Use live event data to access risk around how it could impact your usual walk-in customers, parking issues, store timings, etc. ",
         href: "/geo/solutions/risk-identification",
       },
       {
@@ -999,7 +999,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "For any retail commerce that happens to be in the periphery of venue hot-spots, seeing swings in walkins was considered normal. However, with better event demand intel, retail commerce stores can manage their workforce more efficiently. This can provide a better customer experience or reduce businesses losses due to inefficicient manpower planning. From store operation timing to additional staff on the counter, Eventeli can help better decisions making in manpwoer planning. ",
+          "For any retail commerce that happens to be in the periphery of venue hot-spots, seeing swings in walkins was considered normal. However, with better event demand intel, retail commerce stores can manage their workforce more efficiently. This can provide a better customer experience or reduce businesses losses due to inefficient manpower planning. From store operation timing to additional staff on the counter, Eventeli can help better decisions making in manpower planning. ",
           href: "/geo/solutions/workforce-management",
       },
       {
@@ -1009,7 +1009,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "If a store is located near an event venue or within busy areas, it gets impacted by event of any form. From weather to politican unrest to planned events. Having onground demand intel forecasting would help with better inventory planning to ensure business is not lost due to stock out and prevent loss due to over stocking. ",
+          "If a store is located near an event venue or within busy areas, it gets impacted by event of any form. From weather to politician unrest to planned events. Having onground demand intel forecasting would help with better inventory planning to ensure business is not lost due to stock out and prevent loss due to over stocking. ",
         href: "/geo/solutions/inventory-planning",
       },
       // {
@@ -1048,9 +1048,9 @@ export const geoUsecasesjsonData = [
     subtext:
       "Better spots and fair pricing is essential to run a succesful parking business. Drive revenue growth with onground event demand intel",
     problem:
-      "Demand from event is not consistent and can vary with high volatility. To build any reliable business model around onground demand requires not just a reliable access to future demand, but also an estimate for what percent of the audience would be local and could be traveling in persoinal vehicle to the venue.",
+      "Demand from event is not consistent and can vary with high volatility. To build any reliable business model around onground demand requires not just a reliable access to future demand, but also an estimate for what percent of the audience would be local and could be traveling in personal vehicle to the venue.",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for parking business.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares). Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for parking business.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -1088,7 +1088,7 @@ export const geoUsecasesjsonData = [
         id: "Demand Forecasting",
         topic: "Demand Forecasting",
         content:
-          "Big citiies tend to be the hub for events and busy areas within the cities become hot spots for all forms of gathering. Parking space providers depend on demand intel to better manage pricing and manpower during peak and lean periods. Changing & forecasted event data can be the differentiator that cannot be predicted like morning & evening push. ",
+          "Big cities tend to be the hub for events and busy areas within the cities become hot spots for all forms of gathering. Parking space providers depend on demand intel to better manage pricing and manpower during peak and lean periods. Changing & forecasted event data can be the differentiator that cannot be predicted like morning & evening push. ",
         icon: (
           <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
@@ -1101,7 +1101,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Regular business commuters are not the cause of sudden volatility in demand for parking. Often spikes are linked to some ongoing event/s onground that leads to higher demand than supply. With parking business model quickly adopting digitalization and dynamic pricing, having data on upcoming events and its impact, can help price to better match demand on ground.  ",
+          "Regular business commuters are not the cause of sudden volatility in demand for parking. Often spikes are linked to some ongoing events onground that leads to higher demand than supply. With parking business model quickly adopting digitalization and dynamic pricing, having data on upcoming events and its impact, can help price to better match demand on ground.  ",
           href: "/geo/solutions/dynamic-pricing",
       },
       {
@@ -1121,7 +1121,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Knowing potential demand forecast can help with growing parking lot space to accomodate demand that could be volatile but lucrative. With Eventeli onground demand intel, parking space business can identify opportunity for better managing their inventory or finding additional temporary inventory for days demand is forecasted to be higher",
+          "Knowing potential demand forecast can help with growing parking lot space to accommodate demand that could be volatile but lucrative. With Eventeli onground demand intel, parking space business can identify opportunity for better managing their inventory or finding additional temporary inventory for days demand is forecasted to be higher",
         href: "/geo/solutions/inventory-planning",
       },
       // {
@@ -1160,9 +1160,9 @@ export const geoUsecasesjsonData = [
     subtext:
       "DMOs primarily assist in showing planners all their locale has to offer, DMCs are often more involved in helping planners manage all destination-related elements of their events",
     problem:
-      "Destination Marketing Organisation (DMO) and Destination Management Company are aligned to drive more visitors to a destination. To be able to offer smooth service to their client they need to able to track whats forecated for their destination and past trends. This can be a very tedious task and often filled with leaks and gaps in the data, but not having this data is like shooting in the dark",
+      "Destination Marketing Organisation (DMO) and Destination Management Company are aligned to drive more visitors to a destination. To be able to offer smooth service to their client they need to able to track what's forecasted for their destination and past trends. This can be a very tedious task and often filled with leaks and gaps in the data, but not having this data is like shooting in the dark",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) in a specfic destination or competing destinations. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for DMOs and DMCs",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) in a specific destination or competing destinations. Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for DMOs and DMCs",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -1223,7 +1223,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Event participation is on the rise. With people wanting more expereinces and human connections, its becoming a leading factor in driving business for a destination. For destination management companies, having access to upcoming & forecasted events data can help them with early partnerships. Additionally, this data across other competing geographies can help them win more business for their destination for events that have not finalized their destination. ",
+          "Event participation is on the rise. With people wanting more experiences and human connections, its becoming a leading factor in driving business for a destination. For destination management companies, having access to upcoming & forecasted events data can help them with early partnerships. Additionally, this data across other competing geographies can help them win more business for their destination for events that have not finalized their destination. ",
         href: "/geo/solutions/event-prospecting",
       },
       // {
@@ -1261,11 +1261,11 @@ export const geoUsecasesjsonData = [
     opacity: "100%",
     text: "Transform Your Venue with Data-Driven Insights",
     subtext:
-      "Venues form the backbone of onground attended events. Having data intel can help improve planning, operation streamling and unlock new stratgic opportunities for growth.",
+      "Venues form the backbone of onground attended events. Having data intel can help improve planning, operation streamlining and unlock new strategic opportunities for growth.",
     problem:
       "Venues do not operate in isolation. They are impacted by everything else going on in the city, nearby venues and those in competing geographies. From large events to political unrest to forecasted weather warning, being able to foresee potential disruptions and opportunities can make venues more resilient, serve their customers better and improve profit margins.",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across geographies. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for venue operators to take informed decision.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across geographies. Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for venue operators to take informed decision.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -1302,7 +1302,7 @@ export const geoUsecasesjsonData = [
         id: "Demand Forecasting",
         topic: "Demand Forecasting",
         content:
-          "Venues need tracking of past event trend for a geography, forecasted demand for what events could happen, how likley it would be rehosted, which event planners host events in a certain geoprahy. All this data is extremely crticial for venues operators for planning and forecastign their own business metrics.",
+          "Venues need tracking of past event trend for a geography, forecasted demand for what events could happen, how likely it would be rehosted, which event planners host events in a certain geography. All this data is extremely crticial for venues operators for planning and forecasting their own business metrics.",
         icon: (
           <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
@@ -1325,7 +1325,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "In a perfect scenario a venue would be booked 365 days of the year, but identifying and converting events is tedious work. It starts with prospecting and having an engine that makes it easy to identify, track and reach out to the potential event planners. Waiting till event dates are announced is often too late, as venues get dedicated before date announcement. In such a scenario, a venue needs access to forecasted events basis historicals and patters both in their own geography and that in competing geo-locations. ",
+          "In a perfect scenario a venue would be booked 365 days of the year, but identifying and converting events is tedious work. It starts with prospecting and having an engine that makes it easy to identify, track and reach out to the potential event planners. Waiting till event dates are announced is often too late, as venues get dedicated before date announcement. In such a scenario, a venue needs access to forecasted events basis historicals and patterns both in their own geography and that in competing geo-locations. ",
         href: "/geo/solutions/event-prospecting",
       },
       // {
@@ -1366,7 +1366,7 @@ export const geoUsecasesjsonData = [
     problem:
       "Hyperlocal commerce business hinges on predictability. Onground events that could have high impact individually or together, breakdown the business promise of speed and also causes losses due to inventory stock-out and unplanned workforce management.",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for hyperlocal & quick commerce business.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes. Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for hyperlocal & quick commerce business.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -1403,7 +1403,7 @@ export const geoUsecasesjsonData = [
         id: "Demand Forecasting",
         topic: "Demand Forecasting",
         content:
-          "With quick commerce on the rise, delivery providers need visibility on forecasted demand for better inventory & manpower planning. The fulcrum for delivery & logistics business is minimum time / on-time delivery and availability of products, with onground demand data in the model, higher efficiency can be acheived.",
+          "With quick commerce on the rise, delivery providers need visibility on forecasted demand for better inventory & manpower planning. The fulcrum for delivery & logistics business is minimum time / on-time delivery and availability of products, with onground demand data in the model, higher efficiency can be achieved.",
         icon: (
           <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
@@ -1413,7 +1413,7 @@ export const geoUsecasesjsonData = [
         id: "Geo Marketing",
         topic: "Geo Marketing",
         content:
-          "When people visit a city for event, its an opportunity for marketing for quick commerce brands. While it could be to introduce new customers to their service, but it can also spread brand awareness and adoption in future areas.  ",
+          "When people visit a city for event, it's an opportunity for marketing for quick commerce brands. While it could be to introduce new customers to their service, but it can also spread brand awareness and adoption in future areas.  ",
         icon: (
           <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
@@ -1487,7 +1487,7 @@ export const geoUsecasesjsonData = [
     problem:
       "A lot is always happening and planned in a city, both good and bad. For local authorities to find, verify and manage all these forecasted events and access how it might impact day to day over a long duration is extremely challenging. This makes most local governing bodies more reactive than taking proactive measures to address predicted demand.",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for local governing bodies. ",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across different zones and pincodes. Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for local governing bodies. ",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -1524,7 +1524,7 @@ export const geoUsecasesjsonData = [
         id: "Risk Identification",
         topic: "Risk Identification",
         content:
-          "Most local government, security teams, traffic controllers have limited forecast on whats coming, changing or critical in specific areas. While big events often are easy to track but a set of smaller events coincding can lead to similar onground risks. They are usually not identified on time, if at all, leading to disruptions in city management (example: controling traffic). Having onground demand intel can help local authorities better plan security and resource deployment. ",
+          "Most local government, security teams, traffic controllers have limited forecast on what's coming, changing or critical in specific areas. While big events often are easy to track but a set of smaller events coinciding can lead to similar onground risks. They are usually not identified on time, if at all, leading to disruptions in city management (example: controlling traffic). Having onground demand intel can help local authorities better plan security and resource deployment. ",
         icon: (
           <Geo_Soln_1 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
@@ -1537,7 +1537,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Some events are so infleuntial that it can make major imapct on a city's image and future business opportuntiies. Often cities are seen jostling to get influencers like Taylor Swift which brings in not just revenue to the tune of $1billion, but also media coverage and recognition for a city. Similarly, countries compete to get events like Olympics, Grand Prix, etc. to make a statement.",
+          "Some events are so infleuntial that it can make major impact on a city's image and future business opportunities. Often cities are seen jostling to get influencers like Taylor Swift which brings in not just revenue to the tune of $1billion, but also media coverage and recognition for a city. Similarly, countries compete to get events like Olympics, Grand Prix, etc. to make a statement.",
         href: "/geo/solutions/event-prospecting",
       },
       {
@@ -1547,7 +1547,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Onground police and other amenities provided by local government can be under stress or lack efficiency due to volatility in inbound traffic to a city. This is extremely relevant for citiies considered tourists hubs and areas that have concentration of event venues and footfall. With forecasted event demand data and estimates on inbound traffic, local authorities can manage their workforce more efficiently and creatively. From traffic police to emergency prepardnes to street cleaning, much can be improved with better data modeling",
+          "Onground police and other amenities provided by local government can be under stress or lack efficiency due to volatility in inbound traffic to a city. This is extremely relevant for cities considered tourists hubs and areas that have concentration of event venues and footfall. With forecasted event demand data and estimates on inbound traffic, local authorities can manage their workforce more efficiently and creatively. From traffic police to emergency preparedness to street cleaning, much can be improved with better data modeling",
         href: "/geo/solutions/workforce-management",
       },
       // {
@@ -1637,7 +1637,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Our demand forecasting can split uocal vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
+          "Our demand forecasting can split local vs. inbound audience to help estimate incoming traffic to a geography. it could be a single large attended event or a group of small events, see its impact in conjunction with other season events like holidays and observances. This can improve pricing and have a significant increase in revenue",
           href: "/geo/solutions/geo-marketing",
       },
       {
@@ -1657,7 +1657,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
+          "Room pricing for hotels is never constant. It's constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of it's combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
         href: "/geo/solutions/dynamic-pricing",
       },
       {
@@ -1667,7 +1667,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Hospitality industry is a major employer. However, it comes with the challenege of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
+          "Hospitality industry is a major employer. However, it comes with the challenge of managing workforce efficiently. With demand being volatile, to provide best possible service, they need demand signals  as much in advance as possible. While, relying on past patterns helps, however, to normalize past spikes and to plan for futures volality, they need forecasted events data with relevancy filters. This data can help them increase manpower, or plan to move existing team around when expecting significant demand change. ",
         href: "/geo/solutions/workforce-management",
       },
       {
@@ -1704,7 +1704,7 @@ export const geoUsecasesjsonData = [
     href: "/geo/usecases/event-planners",
     dropText : "Select optimal event locations with whr.ai's forecasts.",
     image:
-      `${imageURL}/geo_useacase_eventplanner.jpg`,
+      `${imageURL}/geo_useacase_event-planners.jpg`,
     imageAltText: "A hand writes in a spiral notebook, with open planners and a to-do list, evoking a sense of organization.",
     // blurColor: "#D9DEE9",
     blurColor:
@@ -1714,9 +1714,9 @@ export const geoUsecasesjsonData = [
     subtext:
       "Events bring together people, but it also creates million of direct jobs across different expertise. From booth hosts, conference moderators to caterers, designers, security personel, the list goes on and on",
     problem:
-      "Event dates are decided on average 6 months in advance. While expereinced planners might have some data from their previous years, mostly decisions are made with limited insight on what could be happening during, before and post the event date at a specific location. With limited intel, identifying suitable destination, venue, dates is more of a 'shoot in the dark' mission than a clearly planned strategy",
+      "Event dates are decided on average 6 months in advance. While experienced planners might have some data from their previous years, mostly decisions are made with limited insight on what could be happening during, before and post the event date at a specific location. With limited intel, identifying suitable destination, venue, dates is more of a 'shoot in the dark' mission than a clearly planned strategy",
     solution:
-      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across destination and venues of interest. Addiitonally, it should consolidate the aggregate impact, filter whats relevant and visualizes expected spikes to make it actionable for event planners to decide more confidently and also track future changes until event date.",
+      "A reliable single event feed that constantly tracks, verifies and quantifies new event launches, rehosts, date & venue changes and forecast (for both attended and non-attended events like weather and health scares) across destination and venues of interest. Additionally, it should consolidate the aggregate impact, filter what's relevant and visualizes expected spikes to make it actionable for event planners to decide more confidently and also track future changes until event date.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -1766,7 +1766,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Once events are scheduled and venues booked, its often impossible change the dates. Not knowing of potential change in onground reality can lead to major business losses. With Eventeli risk identifier, event planners can take action in advance. From notifying participants about heather or weather warning, to making stay & travel arrangments in scenario of high spike in demand. ",
+          "Once events are scheduled and venues booked, it's often impossible change the dates. Not knowing of potential change in onground reality can lead to major business losses. With Eventeli risk identifier, event planners can take action in advance. From notifying participants about heather or weather warning, to making stay & travel arrangments in scenario of high spike in demand. ",
         href: "/geo/solutions/risk-identification",
       },
       // {
@@ -1785,7 +1785,7 @@ export const geoUsecasesjsonData = [
       description:
         "Select optimal event locations and adjust strategies with months-ahead event forecasts from whr.ai.",
       image:
-        `${imageURL}/geo_useacase_eventplanner.jpg`,
+        `${imageURL}/geo_useacase_event-planners.jpg`,
     },
   },
 ];
