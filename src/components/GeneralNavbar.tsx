@@ -103,11 +103,14 @@ const GeneralNavbar = () => {
     setPagedropdown(false);
   };
 
-  const handleAbout = () => {
-    if (pathname.includes("/geo")) {
-      router.push("/geo/about");
-    } else router.push("/gtm/about");
+  const handleRoute = (type : string) => {
+    if(type === "about"){
+      if (pathname.includes("/geo")) {
+        router.push("/geo/about");
+      } else router.push("/gtm/about");
+    }
 
+    else router.push("/pricing")
     setMobileMenuOpen(false);
   };
 
@@ -117,13 +120,12 @@ const GeneralNavbar = () => {
         className={`fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out`}
       >
         <div
-          className={` py-4 flex items-center transition-all duration-1000 ease-in-out ${
-            isScrolled
+          className={` py-4 flex items-center transition-all duration-1000 ease-in-out ${isScrolled
               ? "bg-white px-6 shadow-md justify-between space-x-8 transform scale-95 rounded-full"
               : "bg-transparent py-2 justify-between"
-          }`}
+            }`}
           style={{
-            width: isScrolled ? "87%" : "87%",
+            width: isScrolled ? "90%" : "87%",
             margin: "0 auto",
           }}
         >
@@ -135,11 +137,11 @@ const GeneralNavbar = () => {
               <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center">
                 <Image width="32" height="40" src={Logo} alt="nav-logo" />
               </div>
-              <div
+              {/* <div
                 className={`${isScrolled ? "hidden" : ""} max-[768px]:hidden`}
               >
                 <Image src={WhrAIText} alt="nav-logo" className="h-6 w-auto" />
-              </div>
+              </div> */}
             </Link>
             <div
               className="text-[12px] w-[63px] py-1 ml-3 text-[#A35200] bg-[#FFF4D6] rounded flex gap-1 items-center justify-center cursor-pointer"
@@ -151,9 +153,8 @@ const GeneralNavbar = () => {
             {pageDropdown && (
               <div
                 ref={dropdownRef}
-                className={`bg-white shadow-md rounded-xl p-3 absolute right-[10px] ${
-                  isScrolled ? "top-[50px]" : "top-[40px]"
-                } flex flex-col items-center gap-2 text-[14px]`}
+                className={`bg-white shadow-md rounded-xl p-3 absolute right-[10px] ${isScrolled ? "top-[50px]" : "top-[40px]"
+                  } flex flex-col items-center gap-2 text-[14px]`}
               >
                 <Link
                   href={"/geo"}
@@ -191,7 +192,7 @@ const GeneralNavbar = () => {
             {["Use Cases", "Solutions", "Product"].map((item) => (
               <div key={item} className="">
                 <div
-                  className="text-black hover:text-primary text-lg px-3 py-2 font-normal cursor-pointer flex items-center gap-2"
+                  className="text-black hover:text-primary text-[16px] px-3 py-2 font-normal cursor-pointer flex items-center gap-2"
                   onClick={() => toggleDropdown(item)}
                 >
                   {item}
@@ -332,13 +333,12 @@ const GeneralNavbar = () => {
                     </div>
 
                     <div
-                      className={`grid ${
-                        options[item].length <= 5
+                      className={`grid ${options[item].length <= 5
                           ? "grid-cols-1"
                           : options[item].length <= 10
-                          ? "grid-cols-2"
-                          : "grid-cols-3"
-                      } gap-2 p-2`}
+                            ? "grid-cols-2"
+                            : "grid-cols-3"
+                        } gap-2 p-2`}
                     >
                       {Array.from({
                         length: Math.ceil(options[item].length / 5),
@@ -395,10 +395,16 @@ const GeneralNavbar = () => {
             ))}
 
             <div
-              className="text-black hover:text-primary text-lg px-4 py-2 cursor-pointer"
-              onClick={handleAbout}
+              className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
+              onClick={()=>handleRoute("about")}
             >
               About
+            </div>
+            <div
+              className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
+              onClick={()=>handleRoute("price")}
+            >
+              Pricing
             </div>
           </div>
 
@@ -408,13 +414,13 @@ const GeneralNavbar = () => {
               onClick={() => {
                 handleClick();
               }}
-              className="bg-primary px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer"
+              className="bg-primary text-[14px] px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer"
             >
               Sign Up
             </div>
             <Link
               href={pathname.includes("/geo") ? "/geo/demo" : "/gtm/demo"}
-              className="px-[15px] py-[8px] rounded-[10px]  border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
+              className="px-[15px] text-[14px] py-[8px] rounded-[10px] border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
             >
               Demo
             </Link>
@@ -484,9 +490,15 @@ const GeneralNavbar = () => {
               ))}
               <div
                 className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2"
-                onClick={handleAbout}
+                onClick={()=>handleRoute("about")}
               >
                 About
+              </div>
+              <div
+                className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2 mt-4"
+                onClick={()=>handleRoute("price")}
+              >
+                Pricing
               </div>
             </div>
           </div>
