@@ -59,7 +59,7 @@ export const gtmProductJsonData = [
             { icon: Icon3, content: "Direct Company/Web Info: Provide your site or details to auto-match events." }],
         highlights: ["Avoid random guesswork", "Streamlined search & compare", "Maximize ROI by focusing on relevant events"],
         conclusion: {
-            heading: "Don’t Just Go—Know Where",
+            heading: "Don’t Just Go—Know Whr",
             subheading: "Maximize the value of your time and budget by choosing events that truly fit your goals."
         },
         metaData: {
