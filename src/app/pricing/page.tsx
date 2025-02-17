@@ -41,8 +41,8 @@ const Page = () => {
 			}
 
 			// When user scrolls past the table, show the navbar again
-			if (scrollY >= tableBottom-100) {
-			  setIsSticky(false);
+			if (scrollY >= tableBottom - 100) {
+				setIsSticky(false);
 			}
 		};
 
@@ -98,7 +98,7 @@ const Page = () => {
 						<span className='text-[14px] border border-[#6750a4] rounded-lg px-3'>20% Off</span>
 					</div>
 				</div>
-				<div className="w-full gap-4 grid grid-cols-4 max-[1220px]:grid-cols-2 max-[650px]:grid-cols-1">
+				<div className="w-full gap-4 grid grid-cols-4 max-[1300px]:grid-cols-2 max-[650px]:grid-cols-1">
 					{pricingPlans.map((data, key) => (
 						<motion.div
 							key={key}
@@ -131,20 +131,28 @@ const Page = () => {
 						</div>
 					</div>
 					<div ref={tableRef}>
-						{Object.entries(PricingData.headingFeatures).map(([category, { features }]) => (
+						{Object.entries(PricingData.headingFeatures).map(([category, { features, values }]) => (
 							<div key={category}>
 								{/* Section Heading */}
 								<div
-									className="cursor-pointer text-xl font-bold border-b pb-2 flex items-center justify-between h-[80px] max-[480px]:font-semibold"
+									className="cursor-pointer text-xl font-bold border-b pb-2 flex justify-between items-center h-[80px] max-[480px]:font-semibold"
 									onClick={() => toggleSection(category)}
 								>
-									<span className='text-[18px]'>{category}</span>
+									<span className='text-[18px] w-2/5 max-[767px]:w-full'>{category}</span>
+									{values.map((value, key) => (
+										<div key={key} className='w-1/5 text-center text-[18px] max-[767px]:hidden'>{value}</div>
+									))}
 									<Image
 										src={DownArrow}
 										alt="down"
 										className={`transform transition-transform duration-300 ${openSections[category] ? "rotate-180" : ""
 											}`}
 									/>
+								</div>
+								<div className='flex items-center font-semibold border'>
+								{values.map((value, key) => (
+									<div key={key} className='w-1/4 text-center text-[18px] hidden max-[767px]:block'>{value}</div>
+								))}
 								</div>
 
 								{/* Table */}

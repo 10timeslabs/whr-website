@@ -75,28 +75,29 @@ export default function Home() {
   ];
 
   return (
-    <div style={{ paddingTop: 120 }} className="relative">
+    <div className="relative pt-[160px] max-[1024px]:pt-[120px]">
       <GeneralNavbar />
       <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
-      <div className={`flex justify-center w-full`}>
-        <HeadingtextAnimation heading="Whr is the" words={headingWords} />
-      </div>
-      <div>
-        <p className="flex mt-4 justify-center text-[20px] text-[var(--secondary-text-color)]">
+      <div className={`text-center`}>
+        <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[950px]:text-[16px]">
           Dont Just Guess, Know Whr!
         </p>
+        <div className={`flex justify-center w-full`}>
+          <HeadingtextAnimation heading="Whr is the" words={headingWords} />
+        </div>
       </div>
+
       <div className="w-full flex items-center justify-center mt-10">
-        <UseCasesContainer text="Whr Depends on your Why" pathName="/geo"/>
+        <UseCasesContainer text="Whr Depends on your Why" pathName="/geo" />
       </div>
 
       <div className="w-full">
         <Clarity />
       </div>
       <div className="w-full">
-        <ProblemContainer cardData={cardData} route="geo"/>
+        <ProblemContainer cardData={cardData} route="geo" />
       </div>
       <div className="flex flex-col gap-10 items-center mt-14">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
