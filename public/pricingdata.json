@@ -3,6 +3,7 @@
   {
     "Usage, Tokens & Credits":
     { 
+      "values" : [],
       "features" : [
       "Per Month",
       "Records Per Search",
@@ -12,6 +13,7 @@
     },
     "Research":
     { 
+      "values" : ["Basic", "Advance", "Advance", "Custom"], 
       "features" : [
         "Basic Filter",
         "Advance Filter",
@@ -27,6 +29,7 @@
     },
     "Track Signals & Alerts":
     { 
+      "values" : ["Basic", "Advance", "Advance", "Custom"],
       "features" : [
         "Basic & Advance Trackers",
         "Filters",
@@ -39,14 +42,17 @@
     },
     "Trends & Reports":
     { 
+      "values" : ["Basic", "Advance", "Advance", "Custom"],
       "features" : ["Visual Trend Reporter","Set Notification"]
     },
     "Event Management CRM":
     { 
+      "values" : ["Yes", "Yes", "Yes", "Yes"],
       "features" : ["Saved Events","Event Update & Notification","Notes & Discussion", "Teams sharing"]
     },
     "Event Outreach & Introductions":
     { 
+      "values" : ["Basic", "Advance", "Advance", "Conceirge"],
       "features" : [
         "Platform Outreach",
         "CRM & Notes",
@@ -56,6 +62,7 @@
     },
     "Event Promotion":
     { 
+      "values" : ["Yes", "Yes", "Yes", "Yes"],
       "features" : [
         "Listing & Detail Page",
         "Number of Widgets",
@@ -68,6 +75,7 @@
     },
     "Support":
     { 
+      "values" : ["Chat", "Chat", "Priority", "Dedicated"],
       "features" : [
         "Knowledge Hub",
         "Chat Bot",
@@ -77,6 +85,7 @@
     },
     "Export & API":
     { 
+      "values" : ["No", "No", "Export", "+Api"],
       "features" : [
         "Export File",
         "API Access"
@@ -84,6 +93,7 @@
     },
     "integration & Extensions":
     { 
+      "values" : ["No", "No", "Limited", "Advance"],
       "features" : [
         "SSO",
         "Snowflake",
@@ -94,6 +104,7 @@
     },
     "Data Enrichment":
     { 
+      "values" : ["No", "Event Level", "+Company", "+People"],
       "features" : [
         "Enrich Event List",
         "Enrich Company List",
@@ -103,6 +114,7 @@
     },
     "Prospect":
     { 
+      "values" : ["Basic", "Intro Bot", "Intro Bot", "Custom Intro flows"],
       "features" : [
         "People Search",
         "Company Search",
@@ -113,6 +125,7 @@
     },
     "Analyze & Improve Participation":
     { 
+      "values" : ["Basic", "Advance", "Advance", "Custom"],
       "features" : [
         "Score ROI from event participation",
         "Missed Opportunity Mapper",
@@ -123,6 +136,7 @@
     },
     "Team Management":
     { 
+      "values" : ["No", "Yes", "Advance", "Advance"],
       "features" : [
         "Team Management",
         "Participation Permission & Approvals",

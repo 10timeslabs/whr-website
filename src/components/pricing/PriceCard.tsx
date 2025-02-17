@@ -24,7 +24,7 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 					</span>
 					<span className='text-[var(--secondary-text-color)] text-[14px]'>{isAnually ? "per year": "per month"}</span>
 				</div>
-				<div className='w-full border'></div>
+				<div className='w-full border border-[var(--border-color)]'></div>
 				<div className='flex flex-col gap-2'>
 					{data.features.map((feature, key) => (
 						<div key={key} className='flex gap-2 items-center'>
