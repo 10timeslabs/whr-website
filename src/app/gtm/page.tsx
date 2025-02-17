@@ -96,7 +96,7 @@ export default function Home() {
   return (
     <div style={{ paddingTop: 120 }} className="relative">
       <GeneralNavbar />
-      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" />
+      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" priority/>
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
       <div className={`flex justify-center text-center`}>
