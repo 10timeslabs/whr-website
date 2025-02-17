@@ -15,6 +15,7 @@ const Page = () => {
 	const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>({});
 	const [isSticky, setIsSticky] = useState(false);
 	const headerRef = useRef<HTMLDivElement | null>(null);
+	const tableRef = useRef<HTMLDivElement | null>(null);
 	const [headerOffset, setHeaderOffset] = useState(0);
 	const [isYearly, setIsYearly] = useState<boolean>(false)
 
@@ -28,10 +29,20 @@ const Page = () => {
 		}
 
 		const handleScroll = () => {
-			if (window.scrollY > headerOffset) {
+			const scrollY = window.scrollY;
+			const tableBottom = tableRef.current
+				? tableRef.current.getBoundingClientRect().bottom + window.scrollY
+				: 0;
+
+			if (scrollY > headerOffset) {
 				setIsSticky(true);
 			} else {
 				setIsSticky(false);
+			}
+
+			// When user scrolls past the table, show the navbar again
+			if (scrollY >= tableBottom-100) {
+			  setIsSticky(false);
 			}
 		};
 
@@ -64,7 +75,7 @@ const Page = () => {
 
 	return (
 		<div className='flex flex-col items-center'>
-			<div className={`${isSticky ? "hidden" : ""}`}><HomeNavbar /></div>
+			<div className={`${isSticky ? "hidden" : "block"}`}><HomeNavbar /></div>
 			<div className='flex flex-col mt-[120px] justify-center w-[87%] gap-10'>
 				<div className='flex flex-col'>
 					<span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent text-[60px] leading-[65px] font-medium w-fit '>Pricing</span>
@@ -97,7 +108,7 @@ const Page = () => {
 							transition={{ duration: 0.6, delay: key * 0.2, ease: 'easeOut' }} // Delay each card slightly
 							viewport={{ once: true }} // Only animate once
 						>
-							<PriceCard data={data} isActive={key === 2} isAnually={isYearly}/>
+							<PriceCard data={data} isActive={key === 2} isAnually={isYearly} />
 						</motion.div>
 					))}
 				</div>
@@ -114,93 +125,93 @@ const Page = () => {
 							<div className="p-3 text-left text-[20px] w-2/5 font-bold max-[760px]:hidden">Feature</div>
 
 							{/* Plan Columns (Each 1/5 width) */}
-							{Object.keys(PricingData.plans).map((plan : any) => (
+							{Object.keys(PricingData.plans).map((plan: any) => (
 								<div key={plan} className="p-3 text-[20px] text-center w-1/5 font-semibold max-[760px]:w-1/4 max-[620px]:text-[16px] max-[480px]:text-[12px]">{plan}</div>
 							))}
 						</div>
 					</div>
+					<div ref={tableRef}>
+						{Object.entries(PricingData.headingFeatures).map(([category, { features }]) => (
+							<div key={category}>
+								{/* Section Heading */}
+								<div
+									className="cursor-pointer text-xl font-bold border-b pb-2 flex items-center justify-between h-[80px] max-[480px]:font-semibold"
+									onClick={() => toggleSection(category)}
+								>
+									<span className='text-[18px]'>{category}</span>
+									<Image
+										src={DownArrow}
+										alt="down"
+										className={`transform transition-transform duration-300 ${openSections[category] ? "rotate-180" : ""
+											}`}
+									/>
+								</div>
 
-					{Object.entries(PricingData.headingFeatures).map(([category, { features }]) => (
-						<div key={category} className="">
-							{/* Section Heading */}
-							<div
-								className="cursor-pointer text-xl font-bold border-b pb-2 flex items-center justify-between h-[80px] max-[480px]:font-semibold"
-								onClick={() => toggleSection(category)}
-							>
-								<span className='text-[18px]'>{category}</span>
-								<Image
-									src={DownArrow}
-									alt="down"
-									className={`transform transition-transform duration-300 ${openSections[category] ? "rotate-180" : ""
-										}`}
-								/>
-							</div>
+								{/* Table */}
+								<AnimatePresence>
+									{openSections[category] &&
+										(
+											<motion.div
+												initial={{ height: 0, opacity: 0 }}
+												animate={{ height: openSections[category] ? "max-content" : 0, opacity: openSections[category] ? 1 : 0 }}
+												exit={{ height: 0, opacity: 0 }}
+												transition={{ duration: 0.4, ease: "easeInOut" }}
+												className="overflow-hidden"
+											>
+												<table className="w-full border-collapse table-fixed">
+													{/* Table Body */}
+													<tbody>
+														{features.map((feature) => (
+															<>
+																{/* Standard Row for Larger Screens */}
+																<tr key={feature} className="border hidden md:table-row">
+																	{/* Feature Name (Wider Column) */}
+																	<td className="border p-3 font-medium w-2/5 max-w-[300px] break-words max-[930px]:text-[14px]">
+																		{feature}
+																	</td>
 
-							{/* Table */}
-							<AnimatePresence>
-								{openSections[category] &&
-									(
-										<motion.div
-											initial={{ height: 0, opacity: 0 }}
-											animate={{ height: openSections[category] ? "max-content" : 0, opacity: openSections[category] ? 1 : 0 }}
-											exit={{ height: 0, opacity: 0 }}
-											transition={{ duration: 0.4, ease: "easeInOut" }}
-											className="overflow-hidden"
-										>
-											<table className="w-full border-collapse table-fixed">
-												{/* Table Body */}
-												<tbody>
-													{features.map((feature) => (
-														<>
-															{/* Standard Row for Larger Screens */}
-															<tr key={feature} className="border hidden md:table-row">
-																{/* Feature Name (Wider Column) */}
-																<td className="border p-3 font-medium w-2/5 max-w-[300px] break-words max-[930px]:text-[14px]">
-																	{feature}
-																</td>
-
-																{/* Feature Values Per Plan (Equal Widths) */}
-																{Object.entries(PricingData.plans).map(([plan, planData]: [string, any]) => {
-																	const value = planData[category]?.[feature];
-
-																	return (
-																		<td key={plan} className="border p-3 text-center w-1/5 max-[930px]:text-[14px]">
-																			{typeof value === "boolean" ? (value ? "✅" : "-") : value ?? "—"}
-																		</td>
-																	);
-																})}
-															</tr>
-
-															{/* Responsive Row Format (Stacks on Small Screens) */}
-															<tr key={`${feature}-mobile`} className="border md:hidden block w-full">
-																<td className="border-b p-3 font-medium w-full block bg-gray-100">
-																	{feature}
-																</td>
-
-																<td className="w-full flex justify-between px-3 py-2">
+																	{/* Feature Values Per Plan (Equal Widths) */}
 																	{Object.entries(PricingData.plans).map(([plan, planData]: [string, any]) => {
 																		const value = planData[category]?.[feature];
 
 																		return (
-																			<div key={plan} className="w-1/4 text-center text-sm max-[500px]:text-[12px]">
-																				{/* <div className="font-bold">{plan}</div> */}
-																				<div className="mt-1">{typeof value === "boolean" ? (value ? "✅" : "-") : value ?? "—"}</div>
-																			</div>
+																			<td key={plan} className="border p-3 text-center w-1/5 max-[930px]:text-[14px]">
+																				{typeof value === "boolean" ? (value ? "✅" : "-") : value ?? "—"}
+																			</td>
 																		);
 																	})}
-																</td>
-															</tr>
-														</>
-													))}
-												</tbody>
-											</table>
+																</tr>
+
+																{/* Responsive Row Format (Stacks on Small Screens) */}
+																<tr key={`${feature}-mobile`} className="border md:hidden block w-full">
+																	<td className="border-b p-3 font-medium w-full block bg-gray-100">
+																		{feature}
+																	</td>
+
+																	<td className="w-full flex justify-between px-3 py-2">
+																		{Object.entries(PricingData.plans).map(([plan, planData]: [string, any]) => {
+																			const value = planData[category]?.[feature];
+
+																			return (
+																				<div key={plan} className="w-1/4 text-center text-sm max-[500px]:text-[12px]">
+																					{/* <div className="font-bold">{plan}</div> */}
+																					<div className="mt-1">{typeof value === "boolean" ? (value ? "✅" : "-") : value ?? "—"}</div>
+																				</div>
+																			);
+																		})}
+																	</td>
+																</tr>
+															</>
+														))}
+													</tbody>
+												</table>
 
 
-										</motion.div>)}
-							</AnimatePresence>
-						</div>
-					))}
-
+											</motion.div>)}
+								</AnimatePresence>
+							</div>
+						))}
+					</div>
 				</div>
 
 			</div>

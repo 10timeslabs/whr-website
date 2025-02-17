@@ -21,6 +21,7 @@ import dynamic from "next/dynamic";
 import GeneralNavbar from "../GeneralNavbar";
 import GetInTouch from "../GetInTouch";
 import Footer from "../Footer";
+import Link from "next/link";
 
 const GeoComponent = () => {
   const LandingComponent = dynamic(
@@ -68,7 +69,16 @@ const GeoComponent = () => {
         className="relative w-full flex flex-col gap-12 "
         style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }}
       >
-
+        {/* <div className="absolute top-[100px] left-[100px] text-[14px] font-semibold z-[40] flex gap-2">
+          <Link href={`/geo/${pathname.split("/")[2]}`}>{pathname.split("/")[2].toUpperCase()}</Link>
+          <span>{`>`}</span>
+          <span className="text-[var(--secondary-text-color)]">{endpoint?.toUpperCase()}</span>
+        </div> */}
+        {/* <div className="w-[87%] text-[14px] font-semibold z-[40] flex gap-2">
+          <Link href={`/geo/${pathname.split("/")[2]}`}>{pathname.split("/")[2].toUpperCase()}</Link>
+          <span>{`>`}</span>
+          <span className="text-[var(--secondary-text-color)]">{endpoint?.toUpperCase()}</span>
+        </div> */}
         {(pathname.split("/")[2] === "product") || (pathname.split("/")[2] === "solutions") && (
           <>
             <Image
