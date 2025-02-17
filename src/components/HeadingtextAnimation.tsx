@@ -20,9 +20,9 @@ const HeadingtextAnimation = ({ heading, words }: Props) => {
     }, [words.length]);
 
     return (
-        <div className='flex justify-center w-[90%] text-[56px] leading-[60px] font-medium flex-wrap max-[600px]:text-[48px]'>
+        <div className='flex justify-center w-[90%] font-medium flex-wrap text-[5vw] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]'>
             <div>{heading}</div>
-            <div className="overflow-hidden h-[60px] ml-2">
+            <div className="overflow-hidden h-[6vw] ml-2 max-[850px]:h-[60px]">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={words[index]} // Key helps AnimatePresence track changes

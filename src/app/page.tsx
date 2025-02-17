@@ -16,6 +16,8 @@ import IntelDataIcon from '/public/realworldproblems/timesensitiveintel.svg'
 import GetInTouch from "@/components/GetInTouch";
 import Footer from "@/components/Footer";
 import HomeNavbar from "@/components/HomeNavbar";
+import { Typewriter } from "react-simple-typewriter";
+import TypewriterEffect from "@/components/TypewriterEffect";
 
 export const metadata = {
   title: "whr.ai - Premier Event Intelligence Platform",
@@ -36,25 +38,24 @@ export default function Home() {
   ]
 
   return (
-    <div style={{ paddingTop: 120 }} className="relative">
+    <div className="relative pt-[160px] max-[1024px]:pt-[120px]">
       <HomeNavbar />
       <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
 
       <div className={`text-center`}>
+        <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[950px]:text-[16px]">
+          Harness real-world opportunity with AI
+        </p>
         <h1 className="mb-3 text-[5vw] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]">
-          {/* Whats Happening for Real */}
-          Maximize Event ROI
+          M<TypewriterEffect text="aximize Event ROI"/>
         </h1>
 
         {/* <HeadingtextAnimation heading="Whr is the" words={headingWords}/> */}
-        <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[850px]:text-[16px]">
-          {/* Unlock Real-World Action Intel with WHR */}
-          Harness real-world opportunity with AI
-        </p>
+
       </div>
       <div className="w-full flex items-center justify-center mt-10">
-        <UseCasesContainer pathName=""/>
+        <UseCasesContainer pathName="" />
       </div>
 
       <div className="w-full"><Clarity /></div>

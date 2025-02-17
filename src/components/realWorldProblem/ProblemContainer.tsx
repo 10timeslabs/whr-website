@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import ProblemImage from '../../../public/realworldproblems/Problemsolution.json'
 import Image, { StaticImageData } from 'next/image'
 import TopgridImage from '/public/realworldproblems/Problemgrid_top.png'
@@ -25,6 +25,9 @@ const ProblemContainer = ({ cardData, route }: Props) => {
 		() => import('@/components/LottieComponent'),
 		{ ssr: false }
 	)
+	const MemoizedLottie = useMemo(() => {
+    return <LottieComponent lottieData={ProblemImage} height={484} />;
+  }, []); // 
 	const EngineScroll = dynamic(
 		() => import('./EngineScroll'),
 		{ ssr: false }
@@ -58,17 +61,19 @@ const ProblemContainer = ({ cardData, route }: Props) => {
 	return (
 		<div className='w-full flex items-center justify-center relative'>
 			<Image src={TopgridImage} alt='grid' className='absolute top-0 -z-[10] max-[600px]:hidden' />
-			<Image src={BottomgridImage} alt='grid' className='absolute bottom-[20%] -z-[10] max-[600px]:hidden' />
+			<Image src={BottomgridImage} alt='grid' className='absolute bottom-[25%] -z-[10] max-[600px]:hidden' />
 			<div className='w-[87%] flex mt-[110px] justify-between max-[1000px]:flex-col'>
 				<div className='flex flex-col w-[25%] gap-8 max-[1000px]:w-[100%] max-[1000px]:gap-4'>
 					<div className='text-[64px] leading-[70px]'>Real World Problems</div>
 					<div className='text-[20px] text-[var(--secondary-text-color)]'>A billion people go, do we know when, why, whr?</div>
 					<div className='max-[1000px]:hidden'>
-						<LottieComponent lottieData={ProblemImage} height={484}/>
+					{MemoizedLottie}
 					</div>
 					{/* <Image src={ProblemImage} alt='prob' width={220} className='max-[1000px]:hidden' /> */}
 					<div className='text-[64px] leading-[70px] max-[1000px]:hidden max-[1200px]:text-[48px] max-[1200px]:leading-[55px]'>
-						{route === "home" ? "Wht, Whn, " : route === "geo" ? geoSolutionData[currentIndex].heading : gtmSolutionData[currentIndex].heading}
+						{route === "home" ? "Wht, Whn, " : "Solutions"
+						// route === "geo" ? geoSolutionData[currentIndex].heading : gtmSolutionData[currentIndex].heading
+						}
 						{route === "home" && <span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent'>Whr?</span>}
 					</div>
 					<div className='text-[var(--secondary-text-color)] text-[20px] max-[1000px]:hidden max-[1200px]:text-[16px]'>
@@ -87,7 +92,8 @@ const ProblemContainer = ({ cardData, route }: Props) => {
 						))}
 					</div>
 					<div className='text-[64px] leading-[64px] hidden max-[1000px]:block mt-5'>
-						{route === "home" ? "Wht, Whn, " : route === "geo" ? geoSolutionData[currentIndex].heading : gtmSolutionData[currentIndex].heading}
+						{route === "home" ? "Wht, Whn, " : 
+						"Solutions"}
 						{route === "home" && <span className='bg-gradient-to-r from-[#EE1CC082] via-[#7757DE] to-[#DD18FD40] bg-clip-text text-transparent'>Whr?</span>}
 					</div>
 					<div className='text-[var(--secondary-text-color)] text-[20px] hidden max-[1000px]:block'>
@@ -95,7 +101,10 @@ const ProblemContainer = ({ cardData, route }: Props) => {
 					</div>
 					{route === "home" && <div className='w-full h-[500px]'><EngineScroll /></div>}
 					{route !== "home" &&
-						<div className='w-full relative'>
+						<div className='w-full relative mt-10'>
+							{route === "geo" ? 
+							<div className='text-[40px] text-center font-semibold'>{geoSolutionData[currentIndex].heading}</div>:
+							<div className='text-[40px] text-center font-semibold'>{gtmSolutionData[currentIndex].heading}</div>}
 							<div className='absolute left-[-6%] top-[50%] w-[40px] h-[40px] flex items-center justify-center bg-white rounded-[40px] drop-shadow-[2px_4px_6px_rgba(0,0,0,0.20)] cursor-pointer max-[575px]:h-[25px] max-[575px]:w-[25px]' onClick={handlePrev}>
 								<Image src={LeftArrow} alt='left' />
 							</div>

@@ -94,28 +94,20 @@ export default function Home() {
   ];
 
   return (
-    <div style={{ paddingTop: 120 }} className="relative">
+    <div className="relative pt-[160px] max-[1024px]:pt-[120px]">
       <GeneralNavbar />
       <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" priority/>
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
-
-      <div className={`flex justify-center text-center`}>
-        {/* <span className="mb-3 text-[56px] font-medium">
-          Whr is the Demand
-        </span> */}
-
-        <HeadingtextAnimation heading="Meet" words={headingWords} />
-        {/* <p className="text-[20px] text-[var(--secondary-text-color)]">
-          Unlock Real-World Action Intel with WHR
-        </p> */}
-      </div>
-      <div>
-        <p className="flex mt-4 justify-center text-[20px] text-[var(--secondary-text-color)]">
-          Don't Just Go, Know Whr!
+      <div className={`text-center`}>
+        <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[950px]:text-[16px]">
+          Dont Just Go, Know Whr!
         </p>
+        <div className={`flex justify-center w-full`}>
+          <HeadingtextAnimation heading="Whr is the" words={headingWords} />
+        </div>
       </div>
       <div className="w-full flex items-center justify-center mt-10">
-        <UseCasesContainer text="Whr Depends on your Why" pathName="/gtm"/>
+        <UseCasesContainer text="Whr Depends on your Why" pathName="/gtm" />
       </div>
 
       <div className="w-full">

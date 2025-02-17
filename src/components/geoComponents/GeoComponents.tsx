@@ -21,6 +21,10 @@ import dynamic from "next/dynamic";
 import GeneralNavbar from "../GeneralNavbar";
 import GetInTouch from "../GetInTouch";
 import Footer from "../Footer";
+import Link from "next/link";
+import UsecaseIcon from '/public/Usecase.svg'
+import ProductIcon from '/public/Products.svg'
+import SolutionIcon from '/public/Solutions.svg'
 
 const GeoComponent = () => {
   const LandingComponent = dynamic(
@@ -59,17 +63,32 @@ const GeoComponent = () => {
   };
 
   const dataToDisplay: any = usecaseData || defaultData;
-  console.log("Endpoint:__", endpoint, dataToDisplay, pathname);
+  const currentPathname = pathname.split("/")[2]
 
   return (
     <>
       <GeneralNavbar />
       <div
-        className="relative w-full flex flex-col gap-12 "
-        style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }}
+        className="relative w-full flex flex-col gap-12"
+        style={{ paddingTop: (currentPathname === "product" || currentPathname === "solutions") ? 120 : 0 }}
       >
-
-        {(pathname.split("/")[2] === "product") || (pathname.split("/")[2] === "solutions") && (
+        {(currentPathname === "usecases") &&
+          <div className="text-[12px] absolute w-[87%] left-[7%] top-[120px] flex items-center gap-2 font-semibold z-[40]">
+            <Image src={UsecaseIcon} alt="usecase" width={14} height={14} className="mb-[1px]"/>
+            <Link className="hover:underline" href={`/geo/${currentPathname}`}>{currentPathname.toUpperCase()}</Link>
+            <span>{`>`}</span>
+            <span className="text-[var(--secondary-text-color)] hover:underline cursor-pointer">{endpoint?.toUpperCase()}</span>
+          </div>}
+        {(currentPathname === "product" || currentPathname === "solutions") &&
+          <div className="text-[12px] w-full flex justify-center font-semibold z-[40]">
+            <div className="w-[87%] flex gap-2 items-center">
+            <Image src={currentPathname === "product" ? ProductIcon :  SolutionIcon} alt="usecase" width={15} height={15} className="mb-[1px]"/>
+              <Link className="hover:underline" href={`/geo/${currentPathname}`}>{currentPathname.toUpperCase()}</Link>
+              <span>{`>`}</span>
+              <span className="text-[var(--secondary-text-color)] hover:underline cursor-pointer">{endpoint?.toUpperCase()}</span>
+            </div>
+          </div>}
+        {(currentPathname === "product") || (currentPathname === "solutions") && (
           <>
             <Image
               src={GridImage}
@@ -79,10 +98,10 @@ const GeoComponent = () => {
             <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
           </>
         )}
-        {pathname.split("/")[2] === "usecases" ? (
+        {currentPathname === "usecases" ? (
           <div className="w-full">
             {/* For Screens ≤ 898px - Text Above, Image Below */}
-            <div className="max-[898px]:flex flex-col hidden mt-20 relative">
+            <div className="max-[898px]:flex flex-col hidden mt-[140px] relative">
               {/* Container with Gradient */}
               <div
                 className="w-full p-6 rounded-r-md relative"
@@ -159,38 +178,36 @@ const GeoComponent = () => {
             </div>
           </div>
         ) : (
-          (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
-          <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[120px]" : ""} `}>
+          (currentPathname === "solutions" || currentPathname === "product")) && (
+          <div className={`w-full flex items-center justify-center`}>
             <Section />
           </div>
         )}
-        {pathname.split("/")[2] !== "solutions" && (
-          <div className="flex flex-col gap-10 items-center mt-12 ">
-            <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
-              CUSTOMERS
-            </div>
-            <AutoScroll icons={companyLogos} size="small" />
+        <div className="flex flex-col gap-10 items-center mt-12 ">
+          <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
+            CUSTOMERS
           </div>
-        )}
+          <AutoScroll icons={companyLogos} size="small" />
+        </div>
         <div className="w-full flex justify-center">
           <ProblemSolution />
         </div>
-        {pathname.split("/")[2] === "product" && (
+        {currentPathname === "product" && (
           <div className="w-full flex items-center justify-center mt-10">
             <HelpfulContainer />
           </div>
         )}
-        {pathname.split("/")[2] === "product" && (
+        {currentPathname === "product" && (
           <div className="w-full flex items-center justify-center mt-10">
             <BeniftsSection />
           </div>
         )}
-        {pathname.split("/")[2] === "product" && (
+        {currentPathname === "product" && (
           <div className="w-full flex items-center justify-center">
             <Conclusion />
           </div>
         )}
-        {pathname.split("/")[2] === "solutions" ? (
+        {currentPathname === "solutions" ? (
           <div className="">
             {/* <Scroll /> */}
             <div className="w-full flex items-center justify-center">
@@ -198,19 +215,19 @@ const GeoComponent = () => {
             </div>
           </div>
         ) : (
-          pathname.split("/")[2] === "usecases" && (
+          currentPathname === "usecases" && (
             <div className="w-full flex items-center justify-center">
               {/* <LandingComponent /> */}
               <HowWeAreHelpful />
             </div>
           )
         )}
-        {(pathname.split("/")[2] === "solutions" ||
-          pathname.split("/")[2] === "usecases") && (
+        {(currentPathname === "solutions" ||
+          currentPathname === "usecases") && (
             <div className="mb-5 w-full flex items-center justify-center">
               <VerticalScroll
                 mainHeading={
-                  pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+                  currentPathname === "usecases" ? "SOLUTIONS" : "USE CASES"
                 }
                 dataToDisplay={dataToDisplay}
               />

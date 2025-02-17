@@ -21,7 +21,10 @@ import dynamic from "next/dynamic";
 import Footer from "../Footer";
 import GetInTouch from "../GetInTouch";
 import GeneralNavbar from "../GeneralNavbar";
-// import NotFound from "../NotFound";
+import Link from "next/link";
+import UsecaseIcon from '/public/Usecase.svg'
+import ProductIcon from '/public/Products.svg'
+import SolutionIcon from '/public/Solutions.svg'
 
 const page = () => {
   const LandingComponent = dynamic(
@@ -59,90 +62,40 @@ const page = () => {
   };
 
   const dataToDisplay: any = usecaseData || defaultData;
-  console.log("Endpoint:__", endpoint, dataToDisplay);
+  const currentPathname = pathname.split("/")[2]
 
   return (
     <>
       <GeneralNavbar />
-      <div className="relative w-full flex flex-col gap-12" style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }} >
-        {(pathname.split("/")[2] === "product") || (pathname.split("/")[2] === "solutions") && (
+      <div className="relative w-full flex flex-col gap-12"
+        style={{ paddingTop: (currentPathname === "product" || currentPathname === "solutions") ? 120 : 0 }}>
+        {(currentPathname === "usecases") &&
+          <div className="text-[12px] absolute w-[87%] left-[7%] top-[120px] flex items-center gap-2 font-semibold z-[40]">
+            <Image src={UsecaseIcon} alt="usecase" width={14} height={14} className="mb-[1px]"/>
+            <Link className="hover:underline" href={`/geo/${currentPathname}`}>{currentPathname.toUpperCase()}</Link>
+            <span>{`>`}</span>
+            <span className="text-[var(--secondary-text-color)] hover:underline cursor-pointer">{endpoint?.toUpperCase()}</span>
+          </div>}
+        {(currentPathname === "product" || currentPathname === "solutions") &&
+          <div className="text-[12px] w-full flex justify-center font-semibold z-[40]">
+            <div className="w-[87%] flex gap-2 items-center">
+            <Image src={currentPathname === "product" ? ProductIcon :  SolutionIcon} alt="usecase" width={15} height={15} className="mb-[1px]"/>
+              <Link className="hover:underline" href={`/geo/${currentPathname}`}>{currentPathname.toUpperCase()}</Link>
+              <span>{`>`}</span>
+              <span className="text-[var(--secondary-text-color)] hover:underline cursor-pointer">{endpoint?.toUpperCase()}</span>
+            </div>
+          </div>}
+        {(currentPathname === "product") || (currentPathname === "solutions") && (
           <>
             <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
             <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
           </>
         )}
-        {(pathname.split("/")[2] === "usecases") ? (
-          // <div>
-          //   <Image
-          //     src={dataToDisplay.image}
-          //     alt="Banner Image"
-          //     className="h-[650px] w-full object-cover"
-          //   />
-          //   {/* Blurry Background */}
-          //   <div
-          //     className="absolute left-0 top-0 h-[650px] w-[700px] p-6 rounded-r-md"
-          //     style={{
-          //       opacity: "0.9",
-          //       background: `${dataToDisplay.blurColor}`,
-          //       filter: "blur(100px)",
-          //       backdropFilter: "blur(50px)",
-          //       maskImage:
-          //         "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
-          //     }}
-          //   />
-          //   {/* Text Content */}
-          //   <div className="absolute left-[100px] top-10 h-[570px] w-[40%] p-6 rounded-r-md flex flex-col ">
-          //     {/* Main Text */}
-          //     <div className="text-black font-bold text-[40px] mt-32 leading-[46px]">
-          //       {dataToDisplay.text}
-          //     </div>
-
-          //     {/* Subtext */}
-          //     <div className="text-[#171717] text-lg leading-6 mt-4">
-          //       <p>{dataToDisplay.subtext}</p>
-          //     </div>
-          //   </div>
-          //   <div className="mt-16"><AutoScroll icons={companyLogos} size="small"/></div>
-          // </div>
-          //   <div className="relative w-full">
-          //   {/* Background Image */}
-          //   <Image
-          //     src={dataToDisplay.image}
-          //     alt="Banner Image"
-          //     className="h-[450px] md:h-[650px] w-full object-cover"
-          //   />
-
-          //   {/* Blurry Background */}
-          //   <div
-          //     className="absolute left-0 top-0 h-[450px] md:h-[650px] w-full md:w-[700px] p-6 rounded-r-md"
-          //     style={{
-          //       opacity: "0.9",
-          //       background: `${dataToDisplay.blurColor}`,
-          //       filter: "blur(100px)",
-          //       backdropFilter: "blur(50px)",
-          //       maskImage:
-          //         "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
-          //     }}
-          //   />
-
-          //   {/* Text Content */}
-          //   <div className="absolute left-5 md:left-[100px] top-10 h-auto max-w-[90%] md:max-w-[40%] p-4 md:p-6 rounded-r-md flex flex-col">
-          //     {/* Main Text */}
-          //     <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
-          //       {dataToDisplay.text}
-          //     </div>
-
-          //     {/* Subtext */}
-          //     <div className="text-[#171717] text-sm md:text-lg leading-5 md:leading-6 mt-4 text-wrap break-words">
-          //       <p>{dataToDisplay.subtext}</p>
-          //     </div>
-          //   </div>
-          // </div>
-
+        {(currentPathname === "usecases") ? (
           <div className="w-full">
             <GeneralNavbar />
             {/* For Screens ≤ 898px - Text Above, Image Below */}
-            <div className="max-[898px]:flex flex-col hidden mt-20 relative">
+            <div className="max-[898px]:flex flex-col hidden mt-[140px] relative">
               {/* Container with Gradient */}
               <div
                 className="w-full p-6 rounded-r-md relative"
@@ -154,14 +107,14 @@ const page = () => {
               >
                 {/* Text Content */}
                 <div className="w-[60%]">
-                 <h1>
-                 <div className="text-black font-bold text-[28px] leading-[34px] z-30">
-                    {dataToDisplay.text}
-                  </div>
-                  <div className="text-black text-sm leading-5 mt-4 z-300">
-                    <p>{dataToDisplay.subtext}</p>
-                  </div>
-                 </h1>
+                  <h1>
+                    <div className="text-black font-bold text-[28px] leading-[34px] z-30">
+                      {dataToDisplay.text}
+                    </div>
+                    <div className="text-black text-sm leading-5 mt-4 z-300">
+                      <p>{dataToDisplay.subtext}</p>
+                    </div>
+                  </h1>
                 </div>
               </div>
 
@@ -205,46 +158,45 @@ const page = () => {
               {/* Text Content */}
               <div className="absolute left-5 md:left-[100px] top-10 h-auto max-w-[90%] md:max-w-[40%] p-4 md:p-6 rounded-r-md flex flex-col">
                 {/* Main Text */}
-              <h1>
-              <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
-                  {dataToDisplay.text}
-                </div>
+                <h1>
+                  <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
+                    {dataToDisplay.text}
+                  </div>
 
-                {/* Subtext */}
-                <div className="text-[#171717] text-sm md:text-lg leading-5 md:leading-6 mt-4 text-wrap break-words">
-                  <p>{dataToDisplay.subtext}</p>
-                </div>
-              </h1>
+                  {/* Subtext */}
+                  <div className="text-[#171717] text-sm md:text-lg leading-5 md:leading-6 mt-4 text-wrap break-words">
+                    <p>{dataToDisplay.subtext}</p>
+                  </div>
+                </h1>
               </div>
             </div>
           </div>
         ) : (
-          (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
-          <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[120px]" : ""} `}>
+          (currentPathname === "solutions" || currentPathname === "product")) && (
+          <div className={`w-full flex items-center justify-center`}>
             <Section />
           </div>
         )}
-        {pathname.split("/")[2] !== "solutions" &&
           <div className="flex flex-col gap-10 items-center mt-12 ">
             <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS</div>
             <AutoScroll icons={companyLogos} size="small" />
-          </div>}
+          </div>
 
         <div className="w-full flex justify-center">
           <ProblemSolution />
         </div>
-        {pathname.split("/")[2] === "product" &&
+        {currentPathname === "product" &&
           <div className="w-full flex items-center justify-center mt-10"><HelpfulContainer /></div>
         }
-        {pathname.split("/")[2] === "product" &&
+        {currentPathname === "product" &&
           <div className="w-full flex items-center justify-center mt-10"><BeniftsSection /></div>
         }
-        {pathname.split("/")[2] === "product" &&
+        {currentPathname === "product" &&
           <div className="w-full flex items-center justify-center">
             <Conclusion />
           </div>
         }
-        {pathname.split("/")[2] === "solutions" ? (
+        {currentPathname === "solutions" ? (
           <div className="">
             {/* <Scroll /> */}
             <div className="w-full flex items-center justify-center">
@@ -252,15 +204,15 @@ const page = () => {
             </div>
           </div>
         ) : (
-          pathname.split("/")[2] === "usecases" && <div className="w-full flex items-center justify-center">
+          currentPathname === "usecases" && <div className="w-full flex items-center justify-center">
             {/* <LandingComponent /> */}
             <HowWeAreHelpful />
           </div>
         )}
-        {(pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "usecases") && <div className="mb-5 w-full flex items-center justify-center">
+        {(currentPathname === "solutions" || currentPathname === "usecases") && <div className="mb-5 w-full flex items-center justify-center">
           <VerticalScroll
             mainHeading={
-              pathname.split("/")[2] === "usecases" ? "SOLUTIONS" : "USE CASES"
+              currentPathname === "usecases" ? "SOLUTIONS" : "USE CASES"
             }
             dataToDisplay={dataToDisplay}
           />
