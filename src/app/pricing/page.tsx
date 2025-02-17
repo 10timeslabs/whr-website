@@ -6,7 +6,7 @@ import HomeNavbar from '@/components/HomeNavbar'
 import PriceCard from '@/components/pricing/PriceCard'
 import { AnimatePresence, motion } from 'framer-motion'
 import TickIcon from '/public/priceTick.svg'
-import DownArrow from '/public/DownSVG.svg'
+import DownArrow from '/public/DownArrowBold.svg'
 import Image from 'next/image'
 import PricingData from '../../../public/pricingdata.json'
 
@@ -140,7 +140,7 @@ const Page = () => {
 								>
 									<span className='text-[18px] w-2/5 max-[767px]:w-full'>{category}</span>
 									{values.map((value, key) => (
-										<div key={key} className='w-1/5 text-center text-[18px] max-[767px]:hidden'>{value}</div>
+										<div key={key} className='w-1/5 text-center text-[18px] font-medium max-[767px]:hidden'>{value}</div>
 									))}
 									<Image
 										src={DownArrow}
@@ -149,7 +149,7 @@ const Page = () => {
 											}`}
 									/>
 								</div>
-								<div className='flex items-center font-semibold border'>
+								<div className='flex items-center font-medium border'>
 								{values.map((value, key) => (
 									<div key={key} className='w-1/4 text-center text-[18px] hidden max-[767px]:block'>{value}</div>
 								))}
