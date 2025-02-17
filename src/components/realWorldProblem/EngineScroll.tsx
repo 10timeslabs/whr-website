@@ -12,7 +12,7 @@ const EngineScroll = () => {
 	const data = [
 		{ image: SourcingImage, heading: "Sourcing Engine", subheading: "Powered by the largest event scraper, our platform sources data from millions of users, channels, and trusted partners. Backed by a dedicated data-searching team and integrated with top platforms, we ensure comprehensive and reliable event intelligence to keep you ahead" },
 		{ image: CleaningImage, heading: "Cleaning Engine", subheading: "The Cleaning Engine streamlines data by performing critical tasks like deduplication, spam detection, scam identification, and thorough verification and re-verification. By eliminating noise and enhancing accuracy, it ensures that only reliable, high-quality data is ready for actionable use." },
-		{ image: EnrichmentImage, heading: "Enrcihment Engine", subheading: "Link additional data building blocks, add valuable cues for deeper insights, and organize with ranking, rating, clustering, and tagging. Calculate linkages and influence to unlock the full potential of your data and drive smarter decisions" },
+		{ image: EnrichmentImage, heading: "Enrichment Engines", subheading: "Link additional data building blocks, add valuable cues for deeper insights, and organize with ranking, rating, clustering, and tagging. Calculate linkages and influence to unlock the full potential of your data and drive smarter decisions" },
 		{ image: InteligenceImage, heading: "Intelligence Engine", subheading: "Seamlessly connect multiple datasets, identify patterns through advanced modeling, and generate precise estimations and scoring. Compute overall impact scores to unlock deeper insights and drive impactful decisions" },
 	]
 

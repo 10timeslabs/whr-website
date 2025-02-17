@@ -96,7 +96,7 @@ export default function Home() {
   return (
     <div className="relative pt-[160px] max-[1024px]:pt-[120px]">
       <GeneralNavbar />
-      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" />
+      <Image src={GridImage} alt="grid" className="absolute top-0 -z-[50]" priority/>
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
       <div className={`text-center`}>
         <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[950px]:text-[16px]">
