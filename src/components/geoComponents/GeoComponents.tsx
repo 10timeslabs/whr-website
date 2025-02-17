@@ -66,19 +66,23 @@ const GeoComponent = () => {
     <>
       <GeneralNavbar />
       <div
-        className="relative w-full flex flex-col gap-12 "
-        style={{ paddingTop: pathname.split("/")[2] === "product" ? 120 : 0 }}
+        className="relative w-full flex flex-col gap-12"
+        style={{ paddingTop: (pathname.split("/")[2] === "product" || pathname.split("/")[2] === "solutions") ? 120 : 0 }}
       >
-        {/* <div className="absolute top-[100px] left-[100px] text-[14px] font-semibold z-[40] flex gap-2">
-          <Link href={`/geo/${pathname.split("/")[2]}`}>{pathname.split("/")[2].toUpperCase()}</Link>
-          <span>{`>`}</span>
-          <span className="text-[var(--secondary-text-color)]">{endpoint?.toUpperCase()}</span>
-        </div> */}
-        {/* <div className="w-[87%] text-[14px] font-semibold z-[40] flex gap-2">
-          <Link href={`/geo/${pathname.split("/")[2]}`}>{pathname.split("/")[2].toUpperCase()}</Link>
-          <span>{`>`}</span>
-          <span className="text-[var(--secondary-text-color)]">{endpoint?.toUpperCase()}</span>
-        </div> */}
+        {(pathname.split("/")[2] === "usecases") &&
+          <div className="text-[12px] absolute w-[87%] left-[7%] top-[120px] flex gap-2 font-semibold z-[40]">
+            <Link className="hover:underline" href={`/geo/${pathname.split("/")[2]}`}>{pathname.split("/")[2].toUpperCase()}</Link>
+            <span>{`>`}</span>
+            <span className="text-[var(--secondary-text-color)] hover:underline cursor-pointer">{endpoint?.toUpperCase()}</span>
+          </div>}
+        {(pathname.split("/")[2] === "product" || pathname.split("/")[2] === "solutions") &&
+          <div className="text-[12px] w-full flex justify-center font-semibold z-[40]">
+            <div className="w-[87%] flex gap-2">
+              <Link className="hover:underline" href={`/geo/${pathname.split("/")[2]}`}>{pathname.split("/")[2].toUpperCase()}</Link>
+              <span>{`>`}</span>
+              <span className="text-[var(--secondary-text-color)] hover:underline cursor-pointer">{endpoint?.toUpperCase()}</span>
+            </div>
+          </div>}
         {(pathname.split("/")[2] === "product") || (pathname.split("/")[2] === "solutions") && (
           <>
             <Image
@@ -92,7 +96,7 @@ const GeoComponent = () => {
         {pathname.split("/")[2] === "usecases" ? (
           <div className="w-full">
             {/* For Screens ≤ 898px - Text Above, Image Below */}
-            <div className="max-[898px]:flex flex-col hidden mt-20 relative">
+            <div className="max-[898px]:flex flex-col hidden mt-[140px] relative">
               {/* Container with Gradient */}
               <div
                 className="w-full p-6 rounded-r-md relative"
@@ -170,7 +174,7 @@ const GeoComponent = () => {
           </div>
         ) : (
           (pathname.split("/")[2] === "solutions" || pathname.split("/")[2] === "product")) && (
-          <div className={`w-full flex items-center justify-center ${pathname.split("/")[2] === "solutions" ? "mt-[120px]" : ""} `}>
+          <div className={`w-full flex items-center justify-center`}>
             <Section />
           </div>
         )}
