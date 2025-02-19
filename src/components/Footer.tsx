@@ -54,10 +54,10 @@ const Footer = () => {
             <h3 className="text-lg mb-2">Product</h3>
             <ul className="space-y-1 text-[#7B7B7B] text-sm">
               <li>
-                <Link href="#">Feature Request</Link>
+                <Link href="https://whr.canny.io/feature-request" target="_blank">Feature Request</Link>
               </li>
               <li>
-                <Link href="#">Roadmap</Link>
+                <Link href="https://whr.canny.io" target="_blank">Roadmap</Link>
               </li>
               <li>
                 <Link href="#">Changelog</Link>

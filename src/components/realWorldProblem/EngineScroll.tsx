@@ -21,8 +21,8 @@ const EngineScroll = () => {
 			<div
 				className="absolute right-[-100px] top-0 h-full w-[600px] h-[500px] z-10"
 				style={{
-					background: `
-            radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 100%)`,
+			// 		background: `
+            // radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 100%)`,
 					display: "flex",
 					alignItems: "center",
 					justifyContent: "center",
