@@ -1,13 +1,63 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Lottie from 'lottie-react'
 import CleaningImage from '../../../public/realworldproblems/cleaningengine.json'
 import EnrichmentImage from '../../../public/realworldproblems/enrichmentengine.json'
 import InteligenceImage from '../../../public/realworldproblems/intelligenceengine.json'
 import SourcingImage from '../../../public/realworldproblems/sourcingengine.json'
+import { motion } from 'framer-motion'
 // import Image from 'next/image'
 
 const EngineScroll = () => {
+
+	const [activeIndex, setActiveIndex] = useState(0);
+	const [isVisible, setIsVisible] = useState(false);
+	const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+	const containerRef = useRef<HTMLDivElement | null>(null);
+
+	useEffect(() => {
+		const observerOptions = {
+			root: null, // viewport
+			rootMargin: "0px",
+			threshold: 1, // Trigger only when fully visible
+		};
+
+		const observerCallback = (entries: IntersectionObserverEntry[]) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const index = sectionRefs.current.indexOf(entry.target as HTMLDivElement);
+					if (index !== -1) {
+						setActiveIndex(index);
+					}
+				}
+			});
+		};
+
+		const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+		sectionRefs.current.forEach((section) => {
+			if (section) observer.observe(section);
+		});
+
+		return () => observer.disconnect();
+	}, []);
+
+	// Detect when the entire scrolling section is in view
+	useEffect(() => {
+		const handleScroll = () => {
+			if (!containerRef.current) return;
+
+			const { top, bottom } = containerRef.current.getBoundingClientRect();
+			const isInView = top < window.innerHeight - 500 && bottom > 350;
+			setIsVisible(isInView);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		handleScroll(); // Run on mount
+
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
 
 	const data = [
 		{ image: SourcingImage, heading: "Sourcing Engine", subheading: "Powered by the largest event scraper, our platform sources data from millions of users, channels, and trusted partners. Backed by a dedicated data-searching team and integrated with top platforms, we ensure comprehensive and reliable event intelligence to keep you ahead" },
@@ -17,39 +67,65 @@ const EngineScroll = () => {
 	]
 
 	return (
-		<div className='w-full h-full rounded-xl border border-[var(--border-color)] relative overflow-hidden p-5 bg-white'>
-			<div
-				className="absolute right-[-100px] top-0 h-full w-[600px] h-[500px] z-10"
-				style={{
-			// 		background: `
-            // radial-gradient(circle, rgba(229, 221, 252, 0.6) 0%, transparent 100%)`,
-					display: "flex",
-					alignItems: "center",
-					justifyContent: "center",
-				}}
-			></div>
-			<div className="absolute z-20 w-[95%] h-[460px] overflow-y-auto"
-				style={{
-					WebkitMaskImage:
-						"linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)",
-					maskImage:
-						"linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)",
-				}}>
-				{data.map((engine, key) => (
-					<div className="flex flex-col w-full h-full mt-5" key={key}>
-						{/* <div className={`flex justify-center w-full`}>
-							<Image src={engine.image} alt="img" height={222} />
-						</div> */}
-						<div className="h-[222px]">
-							<Lottie animationData={engine.image} style={{ width: '100%', height: '100%' }} />
+		<div ref={containerRef} className="relative w-full flex justify-center">
+			{/* Scrollable Container */}
+			<div className="w-[87%] flex relative">
+				{/* Left Side Content (Scrollable) */}
+				<div className="w-[50%] flex flex-col max-[800px]:w-full">
+					{data.map((engine, key) => (
+						<div key={key} className='flex flex-col gap-10 max-[800px]:mt-10 max-[800px]:items-center'>
+							<div ref={(el) => { sectionRefs.current[key] = el; }}
+								className="h-[500px] flex flex-col justify-center max-[800px]:h-fit max-[800px]:items-center"
+							>
+								<motion.div
+									initial={{ opacity: 0, x: -50 }}
+									animate={{ opacity: 1, x: 0 }}
+									transition={{ duration: 0.5 }}
+									className="font-semibold text-[36px] max-[1024px]:text-[24px] max-[800px]:text-[36px] max-[500px]:text-[28px]"
+								>
+									{engine.heading}
+								</motion.div>
+								<motion.div
+									initial={{ opacity: 0, x: -50 }}
+									animate={{ opacity: 1, x: 0 }}
+									transition={{ duration: 0.5, delay: 0.2 }}
+									className="text-[var(--secondary-text-color)] mt-5 text-[20px] max-[1024px]:text-[16px] max-[800px]:text-[20px] max-[800px]:text-center"
+								>
+									{engine.subheading}
+								</motion.div>
+							</div>
+							<div className='hidden max-[800px]:block w-[80%]'><Lottie animationData={engine.image} style={{ width: "100%", height: "100%" }} /></div>
 						</div>
-						<div className="font-semibold text-[24px] mt-10">{engine.heading}</div>
-						<div className="text-[var(--secondary-text-color)] mt-5">{engine.subheading}</div>
+					))}
+				</div>
+				{/* Right Side - Fixed Image with Visibility Control */}
+				{isVisible && ( // Ensure the component renders only when in view
+					<div className="w-[50%] max-[800px]:hidden">
+						<motion.div
+							className="fixed top-0 right-0 w-[40%] h-[500px] flex items-center justify-center"
+							initial={{ opacity: 0 }} // Start hidden
+							animate={{
+								opacity: isVisible ? 1 : 0,
+								visibility: isVisible ? "visible" : "hidden",
+							}}
+							transition={{ duration: 0.5 }}
+						>
+							<motion.div
+								key={activeIndex} // Forces animation when index changes
+								initial={{ opacity: 0, scale: 0.8 }} // Start hidden
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0, scale: 0.8 }}
+								transition={{ duration: 0.5 }}
+								className="h-[250px] w-full"
+							>
+								<Lottie animationData={data[activeIndex].image} style={{ width: "100%", height: "100%" }} />
+							</motion.div>
+						</motion.div>
 					</div>
-				))}
+				)}
 			</div>
 		</div>
-	)
+	);
 }
 
 export default EngineScroll
