@@ -20,7 +20,7 @@ import { Typewriter } from "react-simple-typewriter";
 import TypewriterEffect from "@/components/TypewriterEffect";
 
 export const metadata = {
-  title: "whr.ai - Premier Event Intelligence Platform",
+  title: "whr.ai - Global Event Intelligence Platform",
   alternates: {
     canonical: "https://whr.ai",
   },
@@ -45,7 +45,7 @@ export default function Home() {
 
       <div className={`text-center`}>
         <p className="text-[1.5vw] text-[var(--secondary-text-color)] max-[950px]:text-[16px]">
-          Harness real-world opportunity with AI
+          DONT GUESS. KNOW WHR!
         </p>
         <h1 className="mb-3 text-[5vw] font-medium max-[850px]:text-[40px] max-[550px]:text-[32px]">
           M<TypewriterEffect text="aximize Event ROI"/>
