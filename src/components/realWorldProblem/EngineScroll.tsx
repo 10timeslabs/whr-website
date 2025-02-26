@@ -5,7 +5,7 @@ import CleaningImage from '../../../public/realworldproblems/cleaningengine.json
 import EnrichmentImage from '../../../public/realworldproblems/enrichmentengine.json'
 import InteligenceImage from '../../../public/realworldproblems/intelligenceengine.json'
 import SourcingImage from '../../../public/realworldproblems/sourcingengine.json'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 // import Image from 'next/image'
 
 const EngineScroll = () => {
@@ -69,9 +69,9 @@ const EngineScroll = () => {
 	return (
 		<div ref={containerRef} className="relative w-full flex justify-center">
 			{/* Scrollable Container */}
-			<div className="w-[87%] flex relative">
+			<div className="w-[87%] flex relative justify-between">
 				{/* Left Side Content (Scrollable) */}
-				<div className="w-[50%] flex flex-col max-[800px]:w-full">
+				<div className="w-[40%] flex flex-col max-[800px]:w-full">
 					{data.map((engine, key) => (
 						<div key={key} className='flex flex-col gap-10 max-[800px]:mt-10 max-[800px]:items-center'>
 							<div ref={(el) => { sectionRefs.current[key] = el; }}
@@ -98,28 +98,43 @@ const EngineScroll = () => {
 						</div>
 					))}
 				</div>
+				{!isVisible &&
+					<div className='w-[50%] h-[500px] flex items-center justify-center'>
+						<div className='h-[250px]'><Lottie animationData={data[0].image} style={{ width: "100%", height: "100%" }} /></div>
+					</div>
+				}
 				{/* Right Side - Fixed Image with Visibility Control */}
-				{isVisible && ( // Ensure the component renders only when in view
-					<div className="w-[50%] max-[800px]:hidden">
+				{isVisible && (
+					<div className="w-[50%] relative max-[800px]:hidden">
 						<motion.div
-							className="fixed top-0 right-0 w-[40%] h-[500px] flex items-center justify-center"
-							initial={{ opacity: 0 }} // Start hidden
+							className="fixed top-[90px] right-[8%] w-[40%] h-[500px] flex items-center justify-center"
+							initial={{
+								opacity: activeIndex === 0 ? 1 : 0
+								// opacity: 0
+							}}
 							animate={{
 								opacity: isVisible ? 1 : 0,
 								visibility: isVisible ? "visible" : "hidden",
 							}}
 							transition={{ duration: 0.5 }}
 						>
-							<motion.div
-								key={activeIndex} // Forces animation when index changes
-								initial={{ opacity: 0, scale: 0.8 }} // Start hidden
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0, scale: 0.8 }}
-								transition={{ duration: 0.5 }}
-								className="h-[250px] w-full"
-							>
-								<Lottie animationData={data[activeIndex].image} style={{ width: "100%", height: "100%" }} />
-							</motion.div>
+							<AnimatePresence mode="wait"> -
+								<motion.div
+									key={activeIndex} // Forces re-render on index change
+									initial={{
+										// opacity: 0,
+										opacity: activeIndex === 0 ? 1 : 0,
+										// scale: 0.9
+										scale: activeIndex === 0 ? 1 : 0.9 
+									}}
+									animate={{ opacity: 1, scale: 1 }}
+									exit={{ opacity: 0 }}
+									transition={{ duration: 0.3, ease: "easeInOut" }} // Smooth transition
+									className="h-[250px]"
+								>
+									<Lottie animationData={data[activeIndex].image} style={{ width: "100%", height: "100%" }} />
+								</motion.div>
+							</AnimatePresence>
 						</motion.div>
 					</div>
 				)}
