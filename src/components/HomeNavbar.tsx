@@ -104,12 +104,12 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link
+          {/* <Link
             href="/pricing"
             className="text-black hover:text-primary text-lg"
           >
             Pricing
-          </Link>
+          </Link> */}
         </div>
 
         {/*-------------- Desktop Buttons------------------- */}
@@ -170,11 +170,11 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/pricing" className="text-gray-800 hover:text-primary">
               Pricing
             </Link>
-          </li>
+          </li> */}
         </ul>
 
         {/* Buttons */}
