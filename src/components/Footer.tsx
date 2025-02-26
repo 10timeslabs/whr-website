@@ -24,7 +24,7 @@ const Footer = () => {
         {/* Company Section */}
         <div className="">
           <h3 className="text-lg mb-2">Resources</h3>
-          <ul className="space-y-1 text-[var(--secondary-text-color)] text-sm">
+          <ul className="space-y-1 text-[#BCBCBC] text-sm">
             <li className="hover:text-[var(--primary-color)]">
               <Link href="/about" target="_blank">About Us</Link>
             </li>
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         <div className="">
           <Link href="/gtm/usecases" className="text-lg hover:text-[var(--primary-color)] cursor-pointer ">Industry Usecases</Link>
-          <ul className="space-y-1 text-[#7B7B7B] text-sm mt-2">
+          <ul className="space-y-1 text-[#BCBCBC] text-sm mt-2">
             {gtmUseCases.map((usecase: any, key: number) => (
               <li key={key} className="hover:text-[var(--primary-color)]">
                 <Link href={usecase.href}>{usecase.label}</Link>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
         <div className="">
           <Link href="/gtm/solutions" className="text-lg hover:text-[var(--primary-color)] cursor-pointer">Industry Solutions</Link>
-          <ul className="space-y-1 text-[#7B7B7B] text-sm mt-2">
+          <ul className="space-y-1 text-[#BCBCBC] text-sm mt-2">
             {gtmSolutions.map((solution: any, key: number) => (
               <li key={key} className="hover:text-[var(--primary-color)]">
                 <Link href={solution.href}>{solution.label}</Link>
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
         <div className="">
           <Link href="/geo/usecases" className="text-lg hover:text-[var(--primary-color)] cursor-pointer">Location Usecases</Link>
-          <ul className="space-y-1 text-[#7B7B7B] text-sm mt-2">
+          <ul className="space-y-1 text-[#BCBCBC] text-sm mt-2">
             {geoUseCases.map((usecase: any, key: number) => (
               <li key={key} className="hover:text-[var(--primary-color)]">
                 <Link href={usecase.href}>{usecase.label}</Link>
@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
         <div className="">
           <Link href="/geo/solutions" className="text-lg hover:text-[var(--primary-color)] cursor-pointer">Location Solutions</Link>
-          <ul className="space-y-1 text-[#7B7B7B] text-sm mt-2">
+          <ul className="space-y-1 text-[#BCBCBC] text-sm mt-2">
             {geoSolutions.map((solution: any, key: number) => (
               <li key={key} className="hover:text-[var(--primary-color)]">
                 <Link href={solution.href}>{solution.label}</Link>
@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
         <div className="">
           <Link href="/gtm/product" className="text-lg hover:text-[var(--primary-color)] cursor-pointer">Products</Link>
-          <ul className="space-y-1 text-[#7B7B7B] text-sm mt-2">
+          <ul className="space-y-1 text-[#BCBCBC] text-sm mt-2">
             {gtmProduct.map((product: any, key: number) => (
               <li key={key} className="hover:text-[var(--primary-color)]">
                 <Link href={product.href}>{product.label}</Link>
@@ -199,7 +199,7 @@ const Footer = () => {
               {/* <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center"> */}
                 <Image width="32" height="40" src={Logo} alt="nav-logo" />
               {/* </div> */}
-              <ul className="text-[#7B7B7B] text-sm flex gap-4">
+              <ul className="text-[#BCBCBC] text-sm flex gap-4">
                 <li>
                   <Link
                     // href="https://docs.google.com/document/d/1pq26xZBAgzSbn_dVSazrEv4TiubKMuOU78ctDdaPXT8/edit?usp=sharing"
@@ -245,14 +245,14 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="text-[#BCBCBC] text-sm text-left w-[300px]">
+          {/* <div className="text-[#BCBCBC] text-sm text-left w-[300px]">
             <p>
               Address: Gopala Krishna Complex, No. 45/3 Residency Road, MG Road,
               Bengaluru 560025
             </p>
             <p className="mt-2">E-mail: be@whr.ai</p>
             <p className="mt-2">Contact: +91-9353648076</p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="mt-5 text-left">
