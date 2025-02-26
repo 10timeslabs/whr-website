@@ -196,9 +196,9 @@ const Footer = () => {
         <div className="flex flex-col gap-10 w-full">
           <div className="flex justify-between items-center max-[630px]:flex-col max-[630px]:items-start max-[630px]:gap-4">
             <div className="flex gap-4 items-center max-[630px]:flex-col max-[630px]:items-start">
-              <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center">
+              {/* <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center"> */}
                 <Image width="32" height="40" src={Logo} alt="nav-logo" />
-              </div>
+              {/* </div> */}
               <ul className="text-[#7B7B7B] text-sm flex gap-4">
                 <li>
                   <Link
