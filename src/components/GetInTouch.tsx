@@ -10,6 +10,8 @@ const GetInTouch = () => {
       window.open("https://console.eventeli.com/", "_blank")
     }else if(pathName.split("/")[1] === "gtm"){
       window.open("https://console.whr.ai/", "_blank")
+    }else{
+      window.open("https://console.whr.ai/", "_blank")
     }
   }
   return (

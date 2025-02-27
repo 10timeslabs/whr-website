@@ -165,7 +165,10 @@ const GeoComponent = () => {
               <div className="absolute left-5 md:left-[100px] top-10 h-auto max-w-[90%] md:max-w-[40%] p-4 md:p-6 rounded-r-md flex flex-col">
                 {/* Main Text */}
                 <h1>
-                  <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
+                  {/* <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
+                    {dataToDisplay.text}
+                  </div> */}
+                   <div className="text-black mt-28 text-[58px] max-[775px]:text-[28px] break-words leading-[34px] md:leading-[66px]">
                     {dataToDisplay.text}
                   </div>
 

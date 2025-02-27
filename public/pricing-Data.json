@@ -185,7 +185,7 @@
         "Unlock Contact - Email/Phone" : true
       },
       "Event Promotion" : {
-        "Listing & detail Page" : "Unlimited",
+        "Listing & Detail Page" : "Unlimited",
         "Number of Widgets" : "Unlimited",
         "Branding" : true,
         "Leads & CRM" : "100"
@@ -259,7 +259,7 @@
         "Introduction & Meetings" : "Basic"
       },
       "Event Promotion" : {
-        "Listing & detail Page" : "Unlimited",
+        "Listing & Detail Page" : "Unlimited",
         "Number of Widgets" : "Unlimited",
         "Branding" : true,
         "Custom Domain" : true,
@@ -340,7 +340,7 @@
         "Introduction & Meetings" : "Advance"
       },
       "Event Promotion" : {
-        "Listing & detail Page" : "Unlimited",
+        "Listing & Detail Page" : "Unlimited",
         "Number of Widgets" : "Unlimited",
         "Branding" : true,
         "Custom Domain" : true,
@@ -428,7 +428,7 @@
         "Introduction & Meetings" : "Conceirge"
       },
       "Event Promotion" : {
-        "Listing & detail Page" : "Unlimited",
+        "Listing & Detail Page" : "Unlimited",
         "Number of Widgets" : "Unlimited",
         "Branding" : true,
         "Custom Domain" : true,
