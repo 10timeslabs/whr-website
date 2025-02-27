@@ -10,7 +10,7 @@ import InstaIcon from "/public/social_link_icons/Vector (1).svg";
 import linkedInIcon from "/public/social_link_icons/Vector (3).svg";
 import youtubeIcon from "/public/social_link_icons/Vector (5).svg";
 import TwitterIcon from "/public/social_link_icons/Vector.svg";
-
+import HomeNavbar from "@/components/HomeNavbar";
 const Page = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -79,7 +79,8 @@ const Page = () => {
 
   return (
     <div>
-      <GeneralNavbar />
+      {/* <GeneralNavbar /> */}
+      <HomeNavbar />
       <div className="pt-[120px] flex flex-col items-center">
         <div className="flex justify-evenly w-[87%] max-[950px]:flex-col">
           <div className="text-left w-[300px] max-[950px]:hidden">
