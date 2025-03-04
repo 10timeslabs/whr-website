@@ -158,7 +158,7 @@ const ProductsCarousel = () => {
                         currentIndex === 1 ?
                             <AutoScroll size='large' icons={trackerImageData} /> :
                             currentIndex === 2 ?
-                                <Image src={`${imageUrl}/model_enrichment.png`} alt='ai' width={500} height={370} /> :
+                                <Image src={`https://c1.10times.com/whr/landing/static/image/common/model_enrichment.png`} alt='ai' width={380} height={400} /> :
                                 currentIndex === 3 ?
                                     <Image src={`${imageUrl}/trends_carousel.png`} alt='ai' width={700} height={370} unoptimized /> :
                                     <div className='bg-white rounded-xl shadow-md p-5'>

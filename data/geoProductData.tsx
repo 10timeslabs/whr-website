@@ -190,7 +190,7 @@ export const geoProductJsonData = [
         dropText:
             "Integrate whr.ai event data into your systems via API.",
         icon: <APIModelIcon color="currentColor" />,
-        image: ApiImage,
+        image: 'https://c1.10times.com/whr/geo/static/image/product/api.png',
         text: "Consume Event Data in Your Data Stack",
         subtext:
             "Consume event or trend data in your internal systems via an API or leverage it to enrich your own models",
