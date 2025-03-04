@@ -129,7 +129,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand. ",
+          "Room pricing for hotels is never constant. Its constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of its combined effect on supply way ahead in future. By having Geo's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand. ",
         href: "/geo/solutions/dynamic-pricing",
       },
       {
@@ -391,7 +391,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "In a world where the line between business and entertainment is quickly getting blurred, activities outside the event are becoming an important part of the event itself. With activities providers fighting for market share, collaborating with event planners to become part of their event schedule can be a game changer. From pre-event to post-event official activity, it opens opportunities for visitors to extend their stays in the city and include activity in their itinerary. To achieve this, Eventeli provides activity planners a way to identify events that have the audience focus in a timely manner. ",
+          "In a world where the line between business and entertainment is quickly getting blurred, activities outside the event are becoming an important part of the event itself. With activities providers fighting for market share, collaborating with event planners to become part of their event schedule can be a game changer. From pre-event to post-event official activity, it opens opportunities for visitors to extend their stays in the city and include activity in their itinerary. To achieve this, Geo provides activity planners a way to identify events that have the audience focus in a timely manner. ",
         href: "/geo/solutions/event-prospecting",
       },
       {
@@ -649,7 +649,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Event sponsoring is a major marketing channel for both small and large enterprise to reach target audience. Eventeli helps to identify events which are forecasted or upcoming and might be a good fit for an enterprise to sponsor. Create custom trackers and our AI agent will find and notify you to relevant event that match your criteria.  ",
+          "Event sponsoring is a major marketing channel for both small and large enterprise to reach target audience. Geo helps to identify events which are forecasted or upcoming and might be a good fit for an enterprise to sponsor. Create custom trackers and our AI agent will find and notify you to relevant event that match your criteria.  ",
         href: "/geo/solutions/event-prospecting",
       },
       {
@@ -743,7 +743,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_4 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Guests coming into town for an event need transportation. From airport rides to commute within the city. Transportation companies offering single rides or group shuttle have potential business to be unclocked by partnering with event planners to offer their solution early and generate more business. Using Eventeli, they can identify prospective events in advance. ",
+          "Guests coming into town for an event need transportation. From airport rides to commute within the city. Transportation companies offering single rides or group shuttle have potential business to be unclocked by partnering with event planners to offer their solution early and generate more business. Using Geo, they can identify prospective events in advance. ",
         href: "/geo/solutions/event-prospecting",
       },
       {
@@ -865,7 +865,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_3 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Out of home marketing firms have a large inventory of advertising space and service they sell to potential customers. Having onground event intel for future can help better price the inventory and justify the increased rates. This can lead to significant increase in their revenue and data-driven proposals to their potential customers. Having Eventeli data can also prevent selling out premium inventory and static rates. ",
+          "Out of home marketing firms have a large inventory of advertising space and service they sell to potential customers. Having onground event intel for future can help better price the inventory and justify the increased rates. This can lead to significant increase in their revenue and data-driven proposals to their potential customers. Having Geo data can also prevent selling out premium inventory and static rates. ",
         href: "/geo/solutions/geo-marketing",
       },
       {
@@ -895,7 +895,7 @@ export const geoUsecasesjsonData = [
       //     <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
       //   ),
       //   content:
-      //     "Out of home advertising companies trying to increase their inventory or evaluate the actual value of the location, need reliable event data in advance. Strategic teams can use Eventeli to spot achieve their goals to spot undervalued locations and also negotiate better rates in their favor.  ",
+      //     "Out of home advertising companies trying to increase their inventory or evaluate the actual value of the location, need reliable event data in advance. Strategic teams can use Geo to spot achieve their goals to spot undervalued locations and also negotiate better rates in their favor.  ",
       //     href: "/geo/solutions/inventory-planning",
       // },
     ],
@@ -979,7 +979,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "What's considered risk varies from business to business. For retail commerce, if its located within an area of event impact, it must take into consideration how it could impact its business in various ways. Firstly, events are not limited to attended live-events, it also includes political unrest, terrorist attacks, severe weather, major road diversions, Eventeli provides a single dashboard to visualize what can be forecasted and action can be planned. Use live event data to access risk around how it could impact your usual walk-in customers, parking issues, store timings, etc. ",
+          "What's considered risk varies from business to business. For retail commerce, if its located within an area of event impact, it must take into consideration how it could impact its business in various ways. Firstly, events are not limited to attended live-events, it also includes political unrest, terrorist attacks, severe weather, major road diversions, Geo provides a single dashboard to visualize what can be forecasted and action can be planned. Use live event data to access risk around how it could impact your usual walk-in customers, parking issues, store timings, etc. ",
         href: "/geo/solutions/risk-identification",
       },
       {
@@ -999,7 +999,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_6 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "For any retail commerce that happens to be in the periphery of venue hot-spots, seeing swings in walkins was considered normal. However, with better event demand intel, retail commerce stores can manage their workforce more efficiently. This can provide a better customer experience or reduce businesses losses due to inefficient manpower planning. From store operation timing to additional staff on the counter, Eventeli can help better decisions making in manpower planning. ",
+          "For any retail commerce that happens to be in the periphery of venue hot-spots, seeing swings in walkins was considered normal. However, with better event demand intel, retail commerce stores can manage their workforce more efficiently. This can provide a better customer experience or reduce businesses losses due to inefficient manpower planning. From store operation timing to additional staff on the counter, Geo can help better decisions making in manpower planning. ",
           href: "/geo/solutions/workforce-management",
       },
       {
@@ -1121,7 +1121,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_7 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Knowing potential demand forecast can help with growing parking lot space to accommodate demand that could be volatile but lucrative. With Eventeli onground demand intel, parking space business can identify opportunity for better managing their inventory or finding additional temporary inventory for days demand is forecasted to be higher",
+          "Knowing potential demand forecast can help with growing parking lot space to accommodate demand that could be volatile but lucrative. With Geo onground demand intel, parking space business can identify opportunity for better managing their inventory or finding additional temporary inventory for days demand is forecasted to be higher",
         href: "/geo/solutions/inventory-planning",
       },
       // {
@@ -1213,7 +1213,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "If there is a sudden rise in demand in nearly or competing destination, its a risk to the business of DMOs and DMCs. Additionally, if there are warnings issues by countries or organisation for travel, health restriction, staying updated is crucial for the destination linked companies and the visitors. Eventeli help monitor all such onground risk indicators for a destination.",
+          "If there is a sudden rise in demand in nearly or competing destination, its a risk to the business of DMOs and DMCs. Additionally, if there are warnings issues by countries or organisation for travel, health restriction, staying updated is crucial for the destination linked companies and the visitors. Geo help monitor all such onground risk indicators for a destination.",
         href: "/geo/solutions/risk-identification",
       },
       {
@@ -1586,8 +1586,8 @@ export const geoUsecasesjsonData = [
     text: "Events Create Jobs",
     subtext:
       "Events bring together people, but it also creates million of direct jobs across different expertise. From booth hosts, conference moderators to caterers, designers, security personel, the list goes on and on",
-    problem: "",
-    solution: "",
+    problem: "Events operate more like the gig economy than full-time jobs. Knowing when and where they happen, who is coming—and who’s in charge—matters. Without reliable leads, agencies risk missing out on time sensitive opportunities to pitch their services.",
+    solution: "A solution that captures events of all sizes and types across multiple regions, tagging and scoring them for precise matching. You can coordinate internally, reach out to key decision-makers, and manage communications seamlessly—ensuring you never miss the perfect staffing opportunity from providing hosts, speakers, ushers to security guards.",
     how: {
       heading: "Unlock Onground Event Intel",
       subheading: "Gain real-time insights, track key metrics, and make data-driven event decisions",
@@ -1657,7 +1657,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_5 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Room pricing for hotels is never constant. It's constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of it's combined effect on supply way ahead in future. By having Eventeli's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
+          "Room pricing for hotels is never constant. It's constantly changing to mimic expected demand. However, currently most models rely on competitor pricing or past trends. This approach is broken as future demand isnt constant, doesnt follow any preset norms and isnt aware of it's combined effect on supply way ahead in future. By having Geo's AI-powered, human checked data, hotels can build better dynamic pricing models & strategy. They can hold on to inventory, when they know demand could significantly increase or offload early, if they expect a sharp decline in demand.",
         href: "/geo/solutions/dynamic-pricing",
       },
       {
@@ -1766,7 +1766,7 @@ export const geoUsecasesjsonData = [
           <Geo_Soln_2 color="#6750a4" color2="#FFF6E6" width="62" height="62" />
         ),
         content:
-          "Once events are scheduled and venues booked, it's often impossible change the dates. Not knowing of potential change in onground reality can lead to major business losses. With Eventeli risk identifier, event planners can take action in advance. From notifying participants about heather or weather warning, to making stay & travel arrangments in scenario of high spike in demand. ",
+          "Once events are scheduled and venues booked, it's often impossible change the dates. Not knowing of potential change in onground reality can lead to major business losses. With Geo risk identifier, event planners can take action in advance. From notifying participants about heather or weather warning, to making stay & travel arrangments in scenario of high spike in demand. ",
         href: "/geo/solutions/risk-identification",
       },
       // {
