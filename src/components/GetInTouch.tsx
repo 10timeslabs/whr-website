@@ -6,10 +6,13 @@ const GetInTouch = () => {
   const router = useRouter();
   const pathName = usePathname()
   const handleClick = () =>{
-    if(pathName.split("/")[1] === "geo"){
-      window.open("https://console.eventeli.com/", "_blank")
+    if(pathName==="/"){
+      window.open("https://console.whr.ai/signup", "_blank")
+    }
+    else if(pathName.split("/")[1] === "geo"){
+      window.open("https://console.eventeli.com/signup", "_blank")
     }else if(pathName.split("/")[1] === "gtm"){
-      window.open("https://console.whr.ai/", "_blank")
+      window.open("https://console.whr.ai/signup", "_blank")
     }
   }
   return (

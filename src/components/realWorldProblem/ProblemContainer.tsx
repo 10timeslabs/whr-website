@@ -13,6 +13,7 @@ import TrackerImage from '/public/landingPagesSolutionImages/Trackers.png'
 import TrendsImage from '/public/landingPagesSolutionImages/Trends.png'
 import LeftArrow from '/public/LeftArrow.svg'
 import RightArrow from '/public/RightArrow.svg'
+import { usePathname } from 'next/navigation'
 
 interface Props {
 	cardData: { icon: StaticImageData, heading: string, subheading: string }[]
@@ -34,6 +35,7 @@ const ProblemContainer = ({ cardData, route }: Props) => {
 	)
 
 	const [currentIndex, setCurrentIndex] = useState<number>(1);
+	const pathName = usePathname()
 	const handlePrev = () => {
 		const length = route === "geo" ? geoSolutionData.length : gtmSolutionData.length
 		setCurrentIndex((prevIndex) =>
@@ -57,7 +59,16 @@ const ProblemContainer = ({ cardData, route }: Props) => {
 		{ heading: "Promote Strategically", subheading: "Promote events with branded widgets, custom pages, and seamless asset integration. Engage prospects and share effortlessly with custom links", image: PromoteImage },
 		{ heading: "Track Actively", subheading: "Track event participation, ROI, and feedback in a single dashboard. Manage reports, teams, and strategies seamlessly across geographies", image: TrackerImage }
 	]
-
+	const handleClick = () =>{
+		if(pathName==="/"){
+		  window.open("https://console.whr.ai/signup", "_blank")
+		}
+		else if(pathName.split("/")[1] === "geo"){
+		  window.open("https://console.eventeli.com/signup", "_blank")
+		}else if(pathName.split("/")[1] === "gtm"){
+		  window.open("https://console.whr.ai/signup", "_blank")
+		}
+	  }
 	return (
 		<div className='w-full flex flex-col items-center justify-center relative'>
 			<Image src={TopgridImage} alt='grid' className='absolute top-0 -z-[10] max-[600px]:hidden' />
@@ -120,6 +131,15 @@ const ProblemContainer = ({ cardData, route }: Props) => {
 				</div>
 			</div>
 			{route === "home" && <div className='w-full flex items-center justify-center'><EngineScroll /></div>}
+			<div
+        		onClick={() => {
+          			handleClick();
+        		}}
+        		className={`bg-primary text-[14px] px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer mt-10 mb-2 `}
+				// className={`hover:bg-primary border border-primary text-primary text-[14px] px-[12px] py-[8px] rounded-[10px] hover:text-white cursor-pointer mt-20 mb-2 `}
+			>
+          		Unlock Insights
+      		</div>
 		</div>
 	)
 }

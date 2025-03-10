@@ -5,6 +5,7 @@ import SparkleImg from "/public/sparkle.png";
 import CircleAnimation from './CircleAnimation';
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 // import "react-simple-typewriter/dist/index.css";
 
 const CircleContainer = () => {
@@ -24,7 +25,7 @@ const CircleContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typing, setTyping] = useState(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-
+  const pathName = usePathname()
   const startAutoRotation = useCallback(() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
 
@@ -53,9 +54,19 @@ const CircleContainer = () => {
     startAutoRotation(); // Restart Timer
   }, [startAutoRotation]);
   const currentData = data[currentIndex];
-
+  
+  const handleCTAClick = () =>{
+    if(pathName==="/"){
+      window.open("https://console.whr.ai/signup", "_blank")
+    }
+    else if(pathName.split("/")[1] === "geo"){
+      window.open("https://console.eventeli.com/signup", "_blank")
+    }else if(pathName.split("/")[1] === "gtm"){
+      window.open("https://console.whr.ai/signup", "_blank")
+    }
+  }
   return (
-    <div className="h-[580px] w-full overflow-hidden flex justify-center max-[1325px]:h-[540px] max-[775px]:h-[500px]">
+    <div className="h-[580px] w-full overflow-hidden flex justify-center max-[1325px]:h-[540px] max-[775px]:h-[550px]">
       <div className='w-[87%] border border-[var(--border-color)] relative rounded-xl h-full items-center  overflow-hidden flex flex-col justify-start '>
         <div
           className="absolute right-0 top-[-150px] h-[600px] w-full -z-10"
@@ -70,6 +81,14 @@ const CircleContainer = () => {
 
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7 mt-10">
           WHY CHOOSE US
+        </div>
+        <div
+          onClick={() => {
+            handleCTAClick();
+          }}
+          className={` bg-primary text-[14px] px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer mt-4`}
+        >
+          Explore Our Data Intelligence
         </div>
         {/* Progress bar */}
         <div className="flex gap-2 mt-10 max-[400px]:gap-1">

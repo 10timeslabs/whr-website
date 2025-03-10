@@ -193,6 +193,16 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
     return () => window.removeEventListener("resize", updateVisibility); // Cleanup
   }, []);
 
+  const handleClick = () =>{
+    if(pathName==="/"){
+      window.open("https://console.whr.ai/signup", "_blank")
+    }
+    else if(pathName.split("/")[1] === "geo"){
+      window.open("https://console.eventeli.com/signup", "_blank")
+    }else if(pathName.split("/")[1] === "gtm"){
+      window.open("https://console.whr.ai/signup", "_blank")
+    }
+  }
   return (
     <div
       className="min-h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden "
@@ -303,7 +313,16 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
       >
         {showMore ? "Hide" : "+ Load 5 More"}
       </button>
-
+      <div
+        onClick={() => {
+          handleClick();
+        }}
+        className={`bg-primary text-[14px] px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer mt-20 mb-2 `}
+        // className={`hover:bg-primary border border-primary text-black text-[14px] px-[12px] py-[8px] rounded-[10px] hover:text-white cursor-pointer mt-20 mb-2 `}
+        >
+          Try for Free
+      </div>
+     
     </div>
   );
 };
