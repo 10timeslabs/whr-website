@@ -73,9 +73,9 @@ const GeneralNavbar = () => {
 
   const handleClick = () => {
     if (pathname.split("/")[1] === "geo") {
-      window.open("https://console.eventeli.com/", "_blank");
+      window.open("https://console.eventeli.com/signup", "_blank");
     } else if (pathname.split("/")[1] === "gtm") {
-      window.open("https://console.whr.ai/", "_blank");
+      window.open("https://console.whr.ai/signup", "_blank");
     }
   };
 
