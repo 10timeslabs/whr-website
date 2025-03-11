@@ -343,12 +343,14 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
       </div>)}
       {/* </> */}
       {/* } */}
-      <button
+      {activeTab !== "Sell to Events" && (
+       <button
         className={`text-[#6750a4] font-medium cursor-pointer m-5 hidden max-[550px]:block ${showMore ? "mt-0" : ""}`}
         onClick={() => setShowMore(!showMore)} // Toggle state
       >
         {showMore ? "Hide" : "+ Load 5 More"}
       </button>
+      )}
     </div>
   );
 };
