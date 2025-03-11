@@ -193,6 +193,30 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
     return () => window.removeEventListener("resize", updateVisibility); // Cleanup
   }, []);
 
+  const [isMobile, setIsMobile] = useState(typeof window !== "undefined" && window.innerWidth <= 890);
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 890); 
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  const tabs = ["Predict from Events", "Sell to Events", "Participate in Events"];
+  const activeIndex = tabs.indexOf(activeTab)
+  const handlePrev = () => {
+    const newIndex = activeIndex === 0 ? tabs.length - 1 : activeIndex - 1;
+    setActiveTab(tabs[newIndex]);
+  };
+
+  const handleNext = () => {
+    const newIndex = activeIndex === tabs.length - 1 ? 0 : activeIndex + 1;
+    setActiveTab(tabs[newIndex]);
+  };
+  
   return (
     <div
       className="min-h-[520px] w-[87%] border border-[var(--border-color)] relative rounded-xl flex flex-col items-center relative overflow-hidden "
@@ -222,9 +246,33 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
       <div className="w-[80%] flex items-start justify-between mt-10 max-[600px]:justify-center">
         <Image src={SparkleImg} alt="star" height={58} width={58} className='max-[600px]:hidden' />
         <div className="flex flex-col gap-8 items-center">
-
-          {showTabs ? (
-            <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
+           {
+            isMobile&&showTabs?(
+              <div className="flex flex-col items-center">
+              <div className="flex items-center gap-1 w-max">
+                <button onClick={handlePrev} className="p-2">
+                 <LeftArrow/>
+                </button>
+    
+               <div className='bg-[var(--neutral-light-color)] p-2 rounded-md'> <div className="px-4 py-2 bg-white rounded-md shadow-md border font-semibold text-[#6750a4]">
+                  {activeTab}
+                </div></div>
+    
+                <button onClick={handleNext} className="p-2">
+                <RightArrow/>
+                </button>
+              </div>
+    
+              <div className="flex gap-2 mt-2">
+                {tabs.map((_, index) => (
+                  <span
+                    key={index}
+                    className={`h-2 w-2 rounded-full ${index === activeIndex? "bg-[#6750a4]" : "bg-gray-400"}`}
+                  ></span>
+                ))}
+              </div>
+            </div>
+            ):( <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
               <button
                 className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Predict from Events" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
                   }`}
@@ -246,10 +294,8 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
               >
                 Participate in Events
               </button>
-            </div>
-          ) : (
-            <span className="text-[36px] font-medium text-center">{text}</span>
-          )}
+            </div> )
+           }
           {pathName === "/" && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
            Use Cases
@@ -308,3 +354,41 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
 };
 
 export default UseCasesContainer;
+
+const LeftArrow = () =>{
+  return(
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="w-5 h-5 text-gray-600"
+  >
+    <path d="M15 18l-6-6 6-6"></path>
+  </svg>
+  )
+}
+
+const RightArrow = () =>{
+  return(
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="w-5 h-5 text-gray-600"
+  >
+    <path d="M9 18l6-6-6-6"></path>
+  </svg>
+  )
+}
