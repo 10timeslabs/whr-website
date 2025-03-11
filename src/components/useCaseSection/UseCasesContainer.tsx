@@ -254,7 +254,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
                  <LeftArrow/>
                 </button>
     
-               <div className='bg-[var(--neutral-light-color)] p-2 rounded-md'> <div className="px-4 py-2 bg-white rounded-md shadow-md border font-semibold text-[#6750a4]">
+               <div className='bg-[var(--neutral-light-color)] p-1 rounded-md'> <div className="px-4 py-2 bg-white rounded-md shadow-md border font-semibold text-[#6750a4]">
                   {activeTab}
                 </div></div>
     
