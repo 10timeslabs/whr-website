@@ -6,6 +6,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "whr.ai - Premier Event Intelligence Platform",
   description: "Discover whr.ai's event intelligence platform for real-time forecasting, demand planning, and maximizing event impact.",
+  alternates: {
+    canonical: "https://whr.ai",
+  },
   verification: {
     google: "KcRKKC-PQ7QtLvpfL-QPyrWNfS7jwFrK3_UEwft9dKI", 
   },
