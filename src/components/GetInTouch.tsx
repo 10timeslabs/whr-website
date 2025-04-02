@@ -7,11 +7,11 @@ const GetInTouch = () => {
   const pathName = usePathname()
   const handleClick = () =>{
     if(pathName.split("/")[1] === "geo"){
-      window.open("https://console.eventeli.com/", "_blank")
+      window.open("https://geo.whr.ai/signup", "_blank")
     }else if(pathName.split("/")[1] === "gtm"){
-      window.open("https://console.whr.ai/", "_blank")
+      window.open("https://gtm.whr.ai/signup", "_blank")
     }else{
-      window.open("https://console.whr.ai/", "_blank")
+      window.open("https://gtm.whr.ai/signup", "_blank")
     }
   }
   return (
