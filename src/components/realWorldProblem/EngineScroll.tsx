@@ -149,7 +149,7 @@ const EngineScroll = () => {
             ))}
           </div>
           {!isVisible && (
-            <div className="w-[50%] border h-[500px] flex items-center justify-center max-[800px]:hidden">
+            <div className="w-[50%] h-[500px] flex items-center justify-center max-[800px]:hidden">
               <div className="h-[250px]">
                 <Lottie
                   animationData={data[0].image}
