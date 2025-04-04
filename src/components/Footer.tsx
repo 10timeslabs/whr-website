@@ -131,7 +131,7 @@ const Footer = () => {
           </ul>
         </div> */}
         <div className="">
-          <Link href="/solutions" className="text-lg hover:text-[var(--primary-color)] cursor-pointer">
+          <Link href="" className="text-lg hover:text-[var(--primary-color)] cursor-pointer">
             Solutions
           </Link>
         <ul className="space-y-1 text-[#BCBCBC] text-sm mt-2">

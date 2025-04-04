@@ -195,13 +195,13 @@ export const homepageTabsData: any = {
         subText: "Optimize retail stock and manpower with whr.ai's data.",
         icon: <Geo_UseCase_7 color="currentColor" />,
       },
-      // {
-      //   label: "Parking",
-      //   href: "/geo/usecases/parking",
-      //   subText:
-      //     "Manage parking demand dynamically using whr.ai's data.",
-      //   icon: <Geo_UseCase_8 color="currentColor" />,
-      // },
+      {
+        label: "Parking",
+        href: "/geo/usecases/parking",
+        subText:
+          "Manage parking demand dynamically using whr.ai's data.",
+        icon: <Geo_UseCase_8 color="currentColor" />,
+      },
       {
         label: "DMO & DMC",
         href: "/geo/usecases/dmo-dmc",
