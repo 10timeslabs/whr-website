@@ -110,7 +110,7 @@ const Footer = () => {
             ))}
           </ul>
         </div> */}
-        <div className="">
+        {/* <div className="">
           <Link href="/geo/usecases" className="text-lg hover:text-[var(--primary-color)] cursor-pointer">Location Usecases</Link>
           <ul className="space-y-1 text-[#BCBCBC] text-sm mt-2">
             {geoUseCases.map((usecase: any, key: number) => (
@@ -119,7 +119,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         {/* <div className="">
           <Link href="/geo/solutions" className="text-lg hover:text-[var(--primary-color)] cursor-pointer">Location Solutions</Link>
           <ul className="space-y-1 text-[#BCBCBC] text-sm mt-2">

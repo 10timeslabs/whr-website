@@ -82,50 +82,25 @@
 
 // export default Clarity
 
-
 "use client";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import Logo from "/public/logo/croppedlogo.png";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
-import Logo from "/public/logo/croppedlogo.png";
+import { Typewriter } from "react-simple-typewriter";
 import BottomWaveImage from "/public/claritysection_wave_bottom.png";
-import CircleImage from "/public/CircularAnimation/Circle.png";
 
 const Clarity = () => {
   const logoRef = useRef(null);
   const isLogoInView = useInView(logoRef, { once: false });
-
   const [showText, setShowText] = useState(false);
-  const [circleSize, setCircleSize] = useState(300);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [rotationDeg, setRotationDeg] = useState(0); // Accumulated rotation
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-
-  const texts = [
-    "Don't Just Go, Know WHR!",
-    "Where should you GO?",
-    "Where would you BE?",
-    "Where could you FOCUS?",
+  const textSequences = [
+    ["Don't Just Go, Know", " WHR!"],
+    ["Where could you", " FOCUS?"],
+    ["Where should you", " GO?"],
+    ["Where would you", " BE?"],
   ];
-
-  const startAutoRotation = useCallback(() => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-
-    intervalRef.current = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-      setRotationDeg((prevDeg) => prevDeg + 90);
-    }, 4000);
-  }, []);
-
-  useEffect(() => {
-    startAutoRotation();
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
-    };
-  }, [startAutoRotation]);
+  const [rotationAngle, setRotationAngle] = useState(0);
 
   useEffect(() => {
     if (isLogoInView) {
@@ -136,147 +111,88 @@ const Clarity = () => {
   }, [isLogoInView]);
 
   useEffect(() => {
-    const updateCircleSize = () => {
-      if (window.innerWidth <= 775) {
-        setCircleSize(350);
-      } else if (window.innerWidth <= 1325) {
-        setCircleSize(300);
-      } else {
-        setCircleSize(600);
-      }
-    };
+    if (showText) {
+      const interval = setInterval(() => {
+        setRotationAngle((prev) => (prev + 1) % textSequences.length);
+      }, 2000);
+      return () => clearInterval(interval);
+    }
+  }, [showText]);
 
-    updateCircleSize();
-    window.addEventListener("resize", updateCircleSize);
-    return () => window.removeEventListener("resize", updateCircleSize);
-  }, []);
-
-  const getRotatedTexts = () => {
-    return texts.map((_, i) => texts[(i + currentIndex) % texts.length]);
-  };
-
-  const rotatedTexts = getRotatedTexts();
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 575;
+  const radiusX = isMobile ? 150 : 250; // reduced horizontal radius for mobile
+  const radiusY = isMobile ? 90 : 120; // reduced vertical radius for mobile
 
   return (
-    <div className="w-full flex flex-col items-center justify-center h-[550px] relative">
+    <div className="w-full flex flex-col items-center justify-center min-h-[480px] relative">
       <Image
         src={BottomWaveImage}
         alt="wave"
         className="-z-10 absolute bottom-0"
         style={{ width: "100%" }}
       />
-
       <div className="font-medium text-[32px] max-[575px]:text-[28px]">
         Clarity in Chaos
       </div>
       <div className="w-[90%] text-[var(--secondary-text-color)] text-[20px] text-center max-[575px]:text-[16px]">
-        Real-world can be chaotic; beauty emerges from chaos.
+        Real-world can be chaotic; beauty emerges from chaos.{" "}
       </div>
-
-      <div className="flex items-center justify-center w-full mt-16 h-[280px]">
-        <div className="w-[800px] relative flex items-center justify-center h-full">
-          {/* Rotating Container */}
-          <motion.div
-            animate={{ rotate: rotationDeg }}
-            transition={{ duration: 1 }}
-            className="absolute flex items-center justify-center"
-            style={{ width: circleSize, height: circleSize }}
-          >
-            {/* Circle Image */}
-            <Image
-              src={CircleImage}
-              alt="circle"
-              width={circleSize}
-              height={circleSize}
-              className="absolute"
-            />
-
-            {/* Text Elements */}
-            {showText && (
-              <>
-                {/* Top */}
-                <div
-                  className="absolute"
-                  style={{
-                    top: `-30px`,
-                    left: "50%",
-                    transform: `translateX(-50%) rotate(-${rotationDeg}deg)`,
-                    width: "140px",
-                    textAlign: "center",
-                  }}
-                >
-                  <div className="bg-[#F8FBEA] text-[#8B8D52] rounded-xl py-1 px-2 text-sm">
-                    {rotatedTexts[0]}
-                  </div>
-                </div>
-
-                {/* Right */}
-                <div
-                  className="absolute"
-                  style={{
-                    top: "50%",
-                    right: `-70px`,
-                    transform: `translateY(-50%) rotate(-${rotationDeg}deg)`,
-                    width: "140px",
-                    textAlign: "center",
-                  }}
-                >
-                  <div className="bg-[#FEF6FF] text-[#9263A0] rounded-xl py-1 px-2 text-sm">
-                    {rotatedTexts[1]}
-                  </div>
-                </div>
-
-                {/* Bottom */}
-                <div
-                  className="absolute"
-                  style={{
-                    bottom: `-30px`,
-                    left: "50%",
-                    transform: `translateX(-50%) rotate(-${rotationDeg}deg)`,
-                    width: "140px",
-                    textAlign: "center",
-                  }}
-                >
-                  <div className="bg-[#F4FAFF] text-[#486D95] rounded-xl py-1 px-2 text-sm">
-                    {rotatedTexts[2]}
-                  </div>
-                </div>
-
-                {/* Left */}
-                <div
-                  className="absolute"
-                  style={{
-                    top: "50%",
-                    left: `-70px`,
-                    transform: `translateY(-50%) rotate(-${rotationDeg}deg)`,
-                    width: "140px",
-                    textAlign: "center",
-                  }}
-                >
-                  <div className="bg-[#FFF7F5] text-[#AE7562] rounded-xl py-1 px-2 text-sm">
-                    {rotatedTexts[3]}
-                  </div>
-                </div>
-              </>
-            )}
-          </motion.div>
-
-          {/* Center Logo */}
+      <div className="flex items-center justify-center w-full mt-6 min-h-[280px] relative">
+        <div className="w-full max-w-[800px] relative flex items-center justify-center h-full">
           <motion.div
             ref={logoRef}
             initial={{ scale: 0.1 }}
             animate={isLogoInView ? { scale: 1, opacity: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="absolute"
           >
-            <Image
-              className="drop-shadow-[0_10px_5px_rgba(103,80,164,0.5)]"
-              src={Logo}
-              alt="logo"
-              height={60}
-              width={51}
-            />
+            <div className=" rounded-full z-10 ">
+              <Image
+                className="drop-shadow-[0_10px_5px_rgba(103,80,164,0.5)]"
+                src={Logo}
+                alt="logo"
+                height={60}
+                width={51}
+              />
+            </div>
           </motion.div>
+
+          {showText && (
+            <div className="absolute inset-0 text-[24px] max-[820px]:text-[18px] pointer-events-none">
+              {textSequences.map((text, i) => {
+                const angle =
+                  ((i + rotationAngle) % textSequences.length) *
+                  (360 / textSequences.length);
+                const radian = angle * (Math.PI / 180);
+                const x = radiusX * Math.cos(radian);
+                const y = radiusY * Math.sin(radian);
+                return (
+                  <div
+                    key={i}
+                    className="absolute rounded-xl py-0 px-3 transition-all duration-500 whitespace-nowrap"
+                    style={{
+                      top: `calc(50% + ${y}px)`,
+                      left: `calc(50% + ${x}px)`,
+                      transform: "translate(-50%, -50%)",
+                      backgroundColor: [
+                        "#F8FBEA",
+                        "#FFF7F5",
+                        "#FEF6FF",
+                        "#F4FAFF",
+                      ][i],
+                      color: ["#8B8D52", "#AE7562", "#9263A0", "#486D95"][i],
+                      zIndex: 1,
+                      textAlign: "center",
+                    }}
+                  >
+                    <Typewriter words={[text[0]]} loop={1} typeSpeed={50} />
+                    <span className="font-semibold">
+                      <Typewriter words={[text[1]]} loop={1} typeSpeed={50} />
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>
