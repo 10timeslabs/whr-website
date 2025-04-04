@@ -164,7 +164,7 @@ interface Props {
   pathName: string;
 }
 const UseCasesContainer = ({ text, pathName }: Props) => {
-  const [activeTab, setActiveTab] = useState("Predict from Events");
+  const [activeTab, setActiveTab] = useState("Participate");
   const predictFromEvents = homepageTabsData.PredictFromEvents["Use Cases"];
   const ParticipateInEvents = homepageTabsData.participateInEvents["Use Cases"];
   const sellToEvents = homepageTabsData.SellToEvents["Use Cases"];
@@ -177,7 +177,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
   useEffect(() => {
     // Only update usecaseData if not on /geo or /gtm
     if (pathName !== "/geo" && pathName !== "/gtm") {
-      setUsecaseData(activeTab === "Predict from Events" ? predictFromEvents : activeTab==="Participate in Events" ?ParticipateInEvents:sellToEvents);
+      setUsecaseData(activeTab === "Predict" ? predictFromEvents : activeTab==="Participate" ?ParticipateInEvents:sellToEvents);
     }
   }, [activeTab, pathName]);
 
@@ -205,7 +205,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const tabs = ["Predict from Events", "Sell to Events", "Participate in Events"];
+  const tabs = ["Predict", "Sell", "Participate"];
   const activeIndex = tabs.indexOf(activeTab)
   const handlePrev = () => {
     const newIndex = activeIndex === 0 ? tabs.length - 1 : activeIndex - 1;
@@ -272,29 +272,31 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
                 ))}
               </div>
             </div>
-            ):( <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
+            ):(
+              showTabs ? <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
               <button
-                className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Predict from Events" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
-                  }`}
-                onClick={() => setActiveTab("Predict from Events")}
-              >
-                Predict from Events
-              </button>
-              <button
-                className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Sell to Events" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
-                  }`}
-                onClick={() => setActiveTab("Sell to Events")}
-              >
-                Sell to Events
-              </button>
-              <button
-                className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Participate in Events" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
-                  }`}
-                onClick={() => setActiveTab("Participate in Events")}
-              >
-                Participate in Events
-              </button>
-            </div> )
+             className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Participate" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
+               }`}
+             onClick={() => setActiveTab("Participate")}
+           >
+             Participate
+           </button>
+          
+           <button
+             className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Sell" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
+               }`}
+             onClick={() => setActiveTab("Sell")}
+           >
+             Sell
+           </button>
+           <button
+             className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Predict" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
+               }`}
+             onClick={() => setActiveTab("Predict")}
+           >
+             Predict
+           </button>
+         </div> : <span className="text-[36px] font-medium text-center">{text}</span>)
            }
           {pathName === "/" && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
@@ -343,7 +345,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
       </div>)}
       {/* </> */}
       {/* } */}
-      {activeTab !== "Sell to Events" && (
+      {activeTab !== "Sell" && (
        <button
         className={`text-[#6750a4] font-medium cursor-pointer m-5 hidden max-[550px]:block ${showMore ? "mt-0" : ""}`}
         onClick={() => setShowMore(!showMore)} // Toggle state

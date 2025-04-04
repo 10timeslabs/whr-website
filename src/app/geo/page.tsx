@@ -93,23 +93,32 @@ export default function Home() {
         <UseCasesContainer text="Whr Depends on your Why" pathName="/geo"/>
       </div>
 
-      <div className="w-full">
+      {/* <div className="w-full">
         <Clarity />
-      </div>
-      <div className="w-full">
-        <ProblemContainer cardData={cardData} route="geo" />
-      </div>
-      <div className="flex flex-col gap-10 items-center mt-14">
+      </div> */}
+       <div className="flex flex-col gap-10 items-center mt-14 mb-14">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
           CUSTOMERS
         </div>
         <AutoScroll icons={companyLogos} size="small" />
       </div>
+      <div className="w-full">
+        <ProblemContainer cardData={cardData} route="geo" />
+      </div>
+      {/* <div className="flex flex-col gap-10 items-center mt-14">
+        <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
+          CUSTOMERS
+        </div>
+        <AutoScroll icons={companyLogos} size="small" />
+      </div> */}
       <div className="mt-14">
         <CircleContainer />
       </div>
       <div className="mt-14">
         <ProductsCarousel />
+      </div>
+      <div className="w-full">
+        <Clarity />
       </div>
       <GetInTouch />
       <Footer />
