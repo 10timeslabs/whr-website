@@ -54,7 +54,7 @@
 //     startAutoRotation(); // Restart Timer
 //   }, [startAutoRotation]);
 //   const currentData = data[currentIndex];
-  
+
 //   return (
 //     <div className="h-[580px] w-full overflow-hidden flex justify-center max-[1325px]:h-[540px] max-[775px]:h-[550px]">
 //       <div className='w-[87%] border border-[var(--border-color)] relative rounded-xl h-full items-center  overflow-hidden flex flex-col justify-start '>
@@ -140,7 +140,6 @@
 
 // export default CircleContainer
 
-
 "use client";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
@@ -153,7 +152,7 @@ import { usePathname } from "next/navigation";
 import BottomWaveImage from "/public/claritysection_wave_bottom.png";
 import TopWaveImage from "/public/claritysection_wave_top.png";
 
-const CircleContainer = () => {
+const CircleContainer = ({ urlPath }: any) => {
   const data = [
     {
       heading: "Reliable Data",
@@ -237,6 +236,14 @@ const CircleContainer = () => {
         className="-z-10 absolute top-[10]"
         width={1300}
       />
+      {/* {urlPath !== "geo" && urlPath !== "gtm" && (
+        <Image
+          src={TopWaveImage}
+          alt="wave"
+          className="-z-10 absolute top-[0]"
+          width={1300}
+        />
+      )} */}
       <div className="w-[100%] relative rounded-xl h-full items-center  flex flex-col justify-start">
         <div className="w-[87%]   rounded-xl h-full items-center  overflow-hidden flex flex-col justify-start ">
           <div
@@ -337,6 +344,14 @@ const CircleContainer = () => {
           className="-z-10 absolute bottom-0"
           style={{ width: "100%" }}
         />
+        {/* {urlPath !== "geo" && urlPath !== "gtm" && (
+          <Image
+            src={BottomWaveImage}
+            alt="wave"
+            className="-z-10 absolute bottom-0"
+            style={{ width: "100%" }}
+          />
+        )} */}
       </div>
     </div>
   );

@@ -28,7 +28,7 @@
 // 	)
 // 	const MemoizedLottie = useMemo(() => {
 // 		return <LottieComponent lottieData={ProblemImage} height={484} />;
-// 	}, []); // 
+// 	}, []); //
 // 	const EngineScroll = dynamic(
 // 		() => import('./EngineScroll'),
 // 		{ ssr: false }
@@ -126,8 +126,6 @@
 // }
 
 // export default ProblemContainer
-
-
 
 "use client";
 import React, { useMemo, useState } from "react";
@@ -242,13 +240,14 @@ const ProblemContainer = ({ cardData, route }: Props) => {
         alt="grid"
         className="absolute bottom-[25%] -z-[10] max-[600px]:hidden"
       />
-      <Image
-        src={TopWaveImage}
-        alt="wave"
-        className="-z-10 absolute top-[0]"
-        width={1300}
-      />
-
+      {route !== "geo" && route !== "gtm" && (
+        <Image
+          src={TopWaveImage}
+          alt="wave"
+          className="-z-10 absolute top-[0]"
+          width={1300}
+        />
+      )}
       <div className="w-[100%] flex items-center justify-center relative">
         <div className="w-[87%] flex mt-[110px] justify-between max-[1000px]:flex-col">
           <div className="flex flex-col w-[25%] gap-8 max-[1000px]:w-[100%] max-[1000px]:gap-4">
@@ -335,14 +334,21 @@ const ProblemContainer = ({ cardData, route }: Props) => {
             )}
           </div>
         </div>
-        <Image
+        {/* <Image
           src={BottomWaveImage}
           alt="wave"
           className="-z-10 absolute bottom-0 max-[1000px]:hidden"
           style={{ width: "100%" }}
-        />
+        /> */}
+        {route !== "geo" && route !== "gtm" && (
+          <Image
+            src={BottomWaveImage}
+            alt="wave"
+            className="-z-10 absolute bottom-0 max-[1000px]:hidden"
+            style={{ width: "100%" }}
+          />
+        )}
       </div>
-
       {route === "home" && (
         <div className="w-full flex items-center justify-center">
           <EngineScroll />
