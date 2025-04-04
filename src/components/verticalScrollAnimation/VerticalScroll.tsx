@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 //   mainHeading: string;
 // }
 
-const VerticalScroll = ({ mainHeading, dataToDisplay }: any) => {
+const VerticalScroll = ({ mainHeading, dataToDisplay,urlPath }: any) => {
 
   return (
     <div className="w-[87%] flex flex-col items-center gap-5 p-4">
@@ -18,8 +18,8 @@ const VerticalScroll = ({ mainHeading, dataToDisplay }: any) => {
         Preparing for demand anomalies is a powerful competitive advantage
       </div>
       <div className="text-[var(--secondary-text-color)] text-lg text-center">
-        GEO enables better predictability of demand by taking into consideration
-        upcoming & forecasted events, along with the estimated impact.
+       {`${urlPath.toUpperCase()} enables better predictability of demand by taking into consideration upcoming & forecasted events, along with the estimated impact.`}
+
       </div>
       <div className="relative w-[1200px] flex flex-col items-center mt-7 max-[600px]:grid max-[600px]:grid-cols-2 max-[600px]:gap-4 max-[600px]:w-[90%] max-[600px]:place-items-center max-[490px]:w-[340px]">
         {/* Vertical Line Grey*/}

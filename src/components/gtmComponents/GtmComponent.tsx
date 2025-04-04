@@ -63,6 +63,7 @@ const page = () => {
 
   const dataToDisplay: any = usecaseData || defaultData;
   const currentPathname = pathname.split("/")[2]
+  const urlPath = pathname.split("/")[1];
 
   return (
     <>
@@ -72,7 +73,7 @@ const page = () => {
         {(currentPathname === "usecases") &&
           <div className="text-[12px] absolute w-[87%] left-[7%] top-[120px] flex items-center gap-2 font-semibold z-[40]">
             <Image src={UsecaseIcon} alt="usecase" width={14} height={14} className="mb-[1px]"/>
-            <Link className="hover:underline" href={`/geo/${currentPathname}`}>{currentPathname.toUpperCase()}</Link>
+            <Link className="hover:underline" href={`/gtm/${currentPathname}`}>{currentPathname.toUpperCase()}</Link>
             <span>{`>`}</span>
             <span className="text-[var(--secondary-text-color)] hover:underline cursor-pointer">{endpoint?.toUpperCase()}</span>
           </div>}
@@ -80,7 +81,7 @@ const page = () => {
           <div className="text-[12px] w-full flex justify-center font-semibold z-[40]">
             <div className="w-[87%] flex gap-2 items-center">
             <Image src={currentPathname === "product" ? ProductIcon :  SolutionIcon} alt="usecase" width={15} height={15} className="mb-[1px]"/>
-              <Link className="hover:underline" href={`/geo/${currentPathname}`}>{currentPathname.toUpperCase()}</Link>
+              <Link className="hover:underline" href={`/gtm/${currentPathname}`}>{currentPathname.toUpperCase()}</Link>
               <span>{`>`}</span>
               <span className="text-[var(--secondary-text-color)] hover:underline cursor-pointer">{endpoint?.toUpperCase()}</span>
             </div>
@@ -218,6 +219,7 @@ const page = () => {
               currentPathname === "usecases" ? "SOLUTIONS" : "USE CASES"
             }
             dataToDisplay={dataToDisplay}
+            urlPath={urlPath}
           />
         </div>}
         <CircleContainer />

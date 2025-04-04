@@ -25,7 +25,7 @@ const HeroBanner = ({ heading, subHeading, image }: Props) => {
         </div>
       </div>
       {(pathname.includes("/geo/product") || pathname.includes("/gtm/product")) ? (
-        <Image src={image} alt="img" width={500} priority/>
+        <Image src={image} alt="img" width={400} height={10} priority/>
       ) : (
         <div className="h-[290px] max-[775px]:h-[200px]">
           <Lottie animationData={animationData} style={{ width: "100%", height: "100%" }} />

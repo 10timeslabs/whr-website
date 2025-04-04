@@ -73,9 +73,9 @@ const GeneralNavbar = () => {
 
   const handleClick = () => {
     if (pathname.split("/")[1] === "geo") {
-      window.open("https://console.eventeli.com/", "_blank");
+      window.open("https://console.eventeli.com/signup", "_blank");
     } else if (pathname.split("/")[1] === "gtm") {
-      window.open("https://console.whr.ai/", "_blank");
+      window.open("https://console.whr.ai/signup", "_blank");
     }
   };
 
@@ -469,7 +469,8 @@ const GeneralNavbar = () => {
                   </div>
 
                   {openDropdown === item && (
-                    <div className="bg-white shadow-lg rounded-lg mt-2">
+                    // <div className="bg-white shadow-lg rounded-lg mt-2">
+                    <div className="bg-white shadow-lg rounded-lg mt-2 max-h-60 overflow-y-auto">
                       <div
                         className="grid grid-cols-1 gap-2 p-2"
                         onClick={() => setMobileMenuOpen(false)}

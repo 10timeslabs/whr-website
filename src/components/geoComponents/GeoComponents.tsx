@@ -64,7 +64,7 @@ const GeoComponent = () => {
 
   const dataToDisplay: any = usecaseData || defaultData;
   const currentPathname = pathname.split("/")[2]
-
+  const urlPath = pathname.split("/")[1];
   return (
     <>
       <GeneralNavbar />
@@ -233,10 +233,11 @@ const GeoComponent = () => {
                   currentPathname === "usecases" ? "SOLUTIONS" : "USE CASES"
                 }
                 dataToDisplay={dataToDisplay}
+                urlPath={urlPath}
               />
             </div>
           )}
-        <CircleContainer />
+        <CircleContainer urlPath={urlPath}/>
         <div>
           <ProductsCarousel />
         </div>
