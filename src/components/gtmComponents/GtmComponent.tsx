@@ -222,7 +222,7 @@ const page = () => {
             urlPath={urlPath}
           />
         </div>}
-        <CircleContainer />
+        <CircleContainer  urlPath={urlPath} />
         <div>
           <ProductsCarousel />
         </div>
