@@ -237,7 +237,7 @@ const GeoComponent = () => {
               />
             </div>
           )}
-        <CircleContainer />
+        <CircleContainer urlPath={urlPath}/>
         <div>
           <ProductsCarousel />
         </div>

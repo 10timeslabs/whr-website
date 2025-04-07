@@ -16,7 +16,7 @@ const Breadcrumbs = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: breadcrumbs.map((breadcrumb, index) => ({
-      "@type": "BreadcrumbList",
+      "@type": "ListItem",
       position: index + 1,
       name: breadcrumb.name,
       item: `https://whr.ai${breadcrumb.path}`,

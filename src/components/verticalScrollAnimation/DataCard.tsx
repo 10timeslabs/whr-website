@@ -55,12 +55,44 @@ const DataCard = ({ icon, heading, subHeading, href }: Props) => {
     //   </div>
     // </motion.div>
 
+    // <motion.div
+    //   initial={{ opacity: 0 }}
+    //   whileInView={{ opacity: 1 }}
+    //   viewport={{ once: false, amount: 0.5 }}
+    //   transition={{ duration: 0.4, delay: 0.1 }}
+    //   className="rounded-[20px] cursor-pointer border border-[var(--border-color)] p-5 shadow-md h-[166px] w-[527px] flex items-center gap-5 max-[1250px]:w-[400px] max-[1000px]:w-[300px] max-[790px]:w-[200px] max-[790px]:flex-col max-[600px]:w-[150px] relative"
+    //   style={{ backgroundColor: "white" }}
+    //   onClick={handleRouting}
+    // >
+    //   <div>
+    //     {React.cloneElement(icon, {
+    //       width: iconSize.width,
+    //       height: iconSize.height,
+    //     })}
+    //   </div>
+    //   <div className="absolute right-5 hidden max-[790px]:block">
+    //     <ArrowSvg />
+    //   </div>
+
+    //   <div className="flex flex-col gap-2 text-[#010D3E] w-full">
+    //     <div className="flex items-center justify-between">
+    //       <span className="text-[18px] font-semibold max-[790px]:text-center max-[600px]:text-[12px]">
+    //         {heading}
+    //       </span>
+    //       <div className="max-[790px]:hidden">
+    //         <ArrowSvg />
+    //       </div>
+    //     </div>
+
+    //     <div className="line-clamp-2 max-[790px]:hidden">{subHeading}</div>
+    //   </div>
+    // </motion.div>
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.5 }}
       transition={{ duration: 0.4, delay: 0.1 }}
-      className="rounded-[20px] cursor-pointer border border-[var(--border-color)] p-5 shadow-md h-[166px] w-[527px] flex items-center gap-5 max-[1250px]:w-[400px] max-[1000px]:w-[300px] max-[790px]:w-[200px] max-[790px]:flex-col max-[600px]:w-[150px] relative"
+      className={`${subHeading.length<120?'min-h-[166px] items-center':""} max-[790px]:h-[166px] rounded-[20px] cursor-pointer border border-[var(--border-color)] p-5 shadow-md  w-[527px] flex max-[790px]:items-center gap-5 max-[1250px]:w-[400px] max-[1000px]:w-[300px] max-[790px]:w-[200px] max-[790px]:flex-col max-[600px]:w-[150px] relative`}
       style={{ backgroundColor: "white" }}
       onClick={handleRouting}
     >
@@ -84,7 +116,7 @@ const DataCard = ({ icon, heading, subHeading, href }: Props) => {
           </div>
         </div>
 
-        <div className="line-clamp-2 max-[790px]:hidden">{subHeading}</div>
+        <div className="max-[790px]:hidden">{subHeading}</div>
       </div>
     </motion.div>
   );

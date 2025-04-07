@@ -39,7 +39,10 @@ const Navbar = () => {
     };
   }, []);
   const handleClick = () =>{
-      window.open("https://gtm.whr.ai/signup", "_blank")
+    if(pathName.split("/")[1] === "geo"){
+      window.open("https://geo.whr.ai/signup", "_blank")
+    }
+    else window.open("https://gtm.whr.ai/signup", "_blank")
   }
   return (
     <nav className="fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out">
@@ -60,9 +63,9 @@ const Navbar = () => {
             href="/"
             className="text-xl font-bold text-primary flex items-center gap-3"
           >
-            <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center">
+            {/* <div className="w-[43px] h-[43px] flex justify-center items-center"> */}
               <Image width="32" height="40" src={Logo} alt="nav-logo" />
-            </div>
+            {/* </div> */}
             <div
               className={`${isScrolled ? "border-r border" : ""} h-[30px]`}
             ></div>

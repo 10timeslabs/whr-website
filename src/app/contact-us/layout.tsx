@@ -4,7 +4,9 @@ import "../globals.css";
 export const metadata: Metadata = {
     title: "Contact us - whr.ai",
     description: "Connect with us to learn how WHR.AI's Event Intelligence Platform can help you with real-time forecasting, demand planning, and maximizing event impact. Our team is here to assist you—reach out today!",
-   
+    alternates: {
+      canonical: "https://whr.ai/contact-us",
+    },
     openGraph: {
       title: "Contact us - whr.ai",
       description: "Connect with us to learn how WHR.AI's Event Intelligence Platform can help you with real-time forecasting, demand planning, and maximizing event impact. Our team is here to assist you—reach out today!",

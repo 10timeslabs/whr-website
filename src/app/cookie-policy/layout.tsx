@@ -4,7 +4,9 @@ import "../globals.css";
 export const metadata: Metadata = {
   title: "Cookie Policy - whr.ai",
   description: "Find out how WHR.AI uses cookies to enhance your experience. Read our Cookie Policy to understand data tracking, preferences, and control options.",
- 
+  alternates: {
+    canonical: "https://whr.ai/cookie-policy",
+  },
   openGraph: {
     title: "Cookie Policy - whr.ai",
     description: "Find out how WHR.AI uses cookies to enhance your experience. Read our Cookie Policy to understand data tracking, preferences, and control options.",
