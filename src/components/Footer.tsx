@@ -32,7 +32,7 @@ const Footer = () => {
               <Link href="/about" target="_blank">About Us</Link>
             </li>
             <li className="hover:text-[var(--primary-color)]">
-              <Link href="#">Blog</Link>
+              <Link href="https://whr.ai/blog/" target="_blank">Blog</Link>
             </li>
             <li className="hover:text-[var(--primary-color)]">
               <Link href="/contact-us">Contact</Link>
