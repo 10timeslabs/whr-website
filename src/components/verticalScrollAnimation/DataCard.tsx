@@ -92,7 +92,7 @@ const DataCard = ({ icon, heading, subHeading, href }: Props) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.5 }}
       transition={{ duration: 0.4, delay: 0.1 }}
-      className={`${subHeading.length<50?`h-[166px] items-center`:""} rounded-[20px] cursor-pointer border border-[var(--border-color)] p-5 shadow-md  w-[527px] flex max-[790px]:items-center gap-5 max-[1250px]:w-[400px] max-[1000px]:w-[300px] max-[790px]:w-[200px] max-[790px]:flex-col max-[600px]:w-[150px] relative`}
+      className={`${subHeading.length<120?'min-h-[166px] items-center':""} max-[790px]:h-[166px] rounded-[20px] cursor-pointer border border-[var(--border-color)] p-5 shadow-md  w-[527px] flex max-[790px]:items-center gap-5 max-[1250px]:w-[400px] max-[1000px]:w-[300px] max-[790px]:w-[200px] max-[790px]:flex-col max-[600px]:w-[150px] relative`}
       style={{ backgroundColor: "white" }}
       onClick={handleRouting}
     >

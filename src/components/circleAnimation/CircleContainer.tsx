@@ -230,20 +230,20 @@ const CircleContainer = ({ urlPath }: any) => {
 
   return (
     <div className="h-[580px] w-full overflow-hidden flex justify-center max-[1325px]:h-[540px] max-[775px]:h-[550px]">
-      <Image
+      {/* <Image
         src={TopWaveImage}
         alt="wave"
         className="-z-10 absolute top-[10]"
         width={1300}
-      />
-      {/* {urlPath !== "geo" && urlPath !== "gtm" && (
+      /> */}
+      {urlPath !== "geo" && urlPath !== "gtm" && (
         <Image
           src={TopWaveImage}
           alt="wave"
-          className="-z-10 absolute top-[0]"
+          className="-z-10 absolute top-[10]"
           width={1300}
         />
-      )} */}
+      )}
       <div className="w-[100%] relative rounded-xl h-full items-center  flex flex-col justify-start">
         <div className="w-[87%]   rounded-xl h-full items-center  overflow-hidden flex flex-col justify-start ">
           <div
@@ -338,20 +338,20 @@ const CircleContainer = ({ urlPath }: any) => {
             />
           </div>
         </div>
-        <Image
+        {/* <Image
           src={BottomWaveImage}
           alt="wave"
           className="-z-10 absolute bottom-0"
           style={{ width: "100%" }}
-        />
-        {/* {urlPath !== "geo" && urlPath !== "gtm" && (
+        /> */}
+        {urlPath !== "geo" && urlPath !== "gtm" && (
           <Image
             src={BottomWaveImage}
             alt="wave"
             className="-z-10 absolute bottom-0"
             style={{ width: "100%" }}
           />
-        )} */}
+        )}
       </div>
     </div>
   );
