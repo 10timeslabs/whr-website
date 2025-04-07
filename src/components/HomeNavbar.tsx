@@ -39,14 +39,10 @@ const Navbar = () => {
     };
   }, []);
   const handleClick = () =>{
-    if(pathName==="/"){
-      window.open("https://console.whr.ai/signup", "_blank")
+    if(pathName.split("/")[1] === "geo"){
+      window.open("https://geo.whr.ai/signup", "_blank")
     }
-    else if(pathName.split("/")[1] === "geo"){
-      window.open("https://console.eventeli.com/signup", "_blank")
-    }else if(pathName.split("/")[1] === "gtm"){
-      window.open("https://console.whr.ai/signup", "_blank")
-    }
+    else window.open("https://gtm.whr.ai/signup", "_blank")
   }
   return (
     <nav className="fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out">
