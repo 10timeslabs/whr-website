@@ -63,9 +63,9 @@ const Navbar = () => {
             href="/"
             className="text-xl font-bold text-primary flex items-center gap-3"
           >
-            <div className="w-[43px] h-[43px] rounded-md border flex justify-center items-center">
+            {/* <div className="w-[43px] h-[43px] flex justify-center items-center"> */}
               <Image width="32" height="40" src={Logo} alt="nav-logo" />
-            </div>
+            {/* </div> */}
             <div
               className={`${isScrolled ? "border-r border" : ""} h-[30px]`}
             ></div>
