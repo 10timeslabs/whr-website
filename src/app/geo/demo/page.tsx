@@ -6,6 +6,8 @@ import styles from './page.style.module.css'
 import GetInTouch from '@/components/GetInTouch';
 import Footer from '@/components/Footer';
 import GeneralNavbar from '@/components/GeneralNavbar';
+import Image from 'next/image';
+import GridImage from "/public/usecase_grid.png";
 
 const Page = () => {
 
@@ -35,7 +37,7 @@ const Page = () => {
 		if (!busEmail) newErrors.busEmail = "Business email is required.";
 		if (!companyName) newErrors.companyName = "Company name is required.";
 		if (!jobTitle) newErrors.jobTitle = "Job title is required.";
-		if (phoneNumber.length <= 3) newErrors.phoneNumber = "Phone number is required.";
+		if (phoneNumber.length <= 5) newErrors.phoneNumber = "Phone number is required.";
 
 		if (Object.keys(newErrors).length > 0) {
 			setErrors(newErrors);
@@ -101,6 +103,7 @@ const Page = () => {
 	return (
 		<div className='pt-[120px]'>
 			<GeneralNavbar />
+			<Image src={GridImage} alt="grid" className="absolute top-[120px] -z-[50]" />
 			<div className='flex justify-center'>
 				<form className='bg-white rounded-xl p-8 drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)] flex flex-col gap-5 w-[700px]' onSubmit={(e) => handleSubmit(e)}>
 					<div className="grid grid-cols-2 gap-4">

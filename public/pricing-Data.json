@@ -301,7 +301,7 @@
         "Records Per Search" : "100",
         "Advance Search & Update Tokens " : "20000",
         "External Outreach Credits" : "500",
-        "User Access" : "100"
+        "User Access" : "25"
       },
       "Research": {
         "Basic Filter": true,

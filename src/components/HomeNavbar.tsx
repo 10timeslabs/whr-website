@@ -107,6 +107,13 @@ const Navbar = () => {
           >
             About
           </Link>
+          <Link
+            href="https://whr.ai/blog/"
+            className="text-black hover:text-primary text-lg"
+            target="_blank"
+          >
+            Blog
+          </Link>
           {/* <Link
             href="/pricing"
             className="text-black hover:text-primary text-lg"
@@ -171,6 +178,16 @@ const Navbar = () => {
           <li>
             <Link href="/about" className="text-gray-800 hover:text-primary" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://whr.ai/blog/"
+              target="_blank"
+              className="text-gray-800 hover:text-primary"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              Blog
             </Link>
           </li>
           {/* <li>
