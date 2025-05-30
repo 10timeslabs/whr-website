@@ -103,7 +103,7 @@ export default function Home() {
           Don't Just Go, Know Whr!
         </p>
         <div className={`flex justify-center w-full`}>
-          <HeadingtextAnimation heading="Whr is the" words={headingWords} />
+          <HeadingtextAnimation heading="Whr are the" words={headingWords} />
         </div>
       </div>
       <div className="w-full flex items-center justify-center mt-10">

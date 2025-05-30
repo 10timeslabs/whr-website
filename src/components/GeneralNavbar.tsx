@@ -400,6 +400,14 @@ const GeneralNavbar = () => {
             >
               About
             </div>
+            <Link
+              href="https://whr.ai/blog/"
+              target="_blank"
+              className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
+            </Link>
             <div
               className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
               onClick={()=>handleRoute("price")}
@@ -495,6 +503,14 @@ const GeneralNavbar = () => {
               >
                 About
               </div>
+              <Link
+                href="https://whr.ai/blog/"
+                target="_blank"
+                className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2 mt-4"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
               <div
                 className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2 mt-4"
                 onClick={()=>handleRoute("price")}
