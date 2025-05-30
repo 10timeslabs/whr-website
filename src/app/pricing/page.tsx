@@ -54,7 +54,7 @@ const Page = () => {
 		{
 			name: "Essential", price: 10,
 			features: ["Global Event Search", "Global Company Search", "Global People Search", "Basic Event Tracker",
-				"Event Pipeline Management", "Event Outreach CRM", "Past Participation Tracking"], per: "per month"
+				"Event Pipeline Management", "Event Outreach CRM", "Past Participation Tracking", "No Ads & Event Promotions", "Search events beyond 6 months"], per: "per month"
 		},
 		{
 			name: "Scale", price: 100,

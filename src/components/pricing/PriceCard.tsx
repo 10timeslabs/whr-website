@@ -12,7 +12,7 @@ interface Props {
 
 const PriceCard = ({ data, isActive, isAnually }: Props) => {
 	return (
-		<div className={`h-[540px] w-full drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)] bg-[#E6E6F9]" : "bg-white"}`}>
+		<div className={`h-[560px] w-full drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)] bg-[#E6E6F9]" : "bg-white"}`}>
 			<div className='flex flex-col gap-4'>
 				<div className='flex flex-col gap-2'>
 					<span className='font-semibold text-[24px]'>{data.name}</span>
@@ -27,7 +27,7 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 				<div className='w-full border border-[var(--border-color)]'></div>
 				<div className='flex flex-col gap-2'>
 					{data.features.map((feature, key) => (
-						<div key={key} className='flex gap-2 items-center'>
+						<div key={key} className='flex gap-2 items-baseline'>
 							<Image src={TickIcon} alt='tick' />
 							<span>{feature}</span>
 						</div>
