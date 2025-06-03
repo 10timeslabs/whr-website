@@ -32,12 +32,12 @@ const Page = () => {
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		let newErrors: any = {};
-		if (!firstName) newErrors.firstName = "First name is required.";
-		if (!lastName) newErrors.lastName = "Last name is required.";
-		if (!busEmail) newErrors.busEmail = "Business email is required.";
-		if (!companyName) newErrors.companyName = "Company name is required.";
-		if (!jobTitle) newErrors.jobTitle = "Job title is required.";
-		if (phoneNumber.length <= 5) newErrors.phoneNumber = "Phone number is required.";
+		if (!firstName.trim()) newErrors.firstName = "First name is required.";
+		if (!lastName.trim()) newErrors.lastName = "Last name is required.";
+		if (!busEmail.trim()) newErrors.busEmail = "Business email is required.";
+		if (!companyName.trim()) newErrors.companyName = "Company name is required.";
+		if (!jobTitle.trim()) newErrors.jobTitle = "Job title is required.";
+		if (phoneNumber.length <= 5 || phoneNumber.length >= 16) newErrors.phoneNumber = "Phone number is required.";
 
 		if (Object.keys(newErrors).length > 0) {
 			setErrors(newErrors);
@@ -53,13 +53,14 @@ const Page = () => {
 		});
 		// Create FormData object
 		const formData = new FormData();
-		formData.append("firstName", firstName);
-		formData.append("lastName", lastName);
-		formData.append("busEmail", busEmail);
-		formData.append("companyName", companyName);
-		formData.append("jobTitle", jobTitle);
+		formData.append("firstName", firstName.trim());
+		formData.append("lastName", lastName.trim());
+		formData.append("busEmail", busEmail.trim());
+		formData.append("companyName", companyName.trim());
+		formData.append("jobTitle", jobTitle.trim());
 		formData.append("phoneNumber", phoneNumber.substring(phoneCode.length + 1));
 		formData.append("phoneCode", `+${phoneCode}`);
+		formData.append("pageUrl", window.location.href);
 		if (subscribe) {
 			formData.append("newsLetter", "on")
 		}
