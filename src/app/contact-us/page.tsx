@@ -29,12 +29,12 @@ const Page = () => {
 
   const validateForm = () => {
     let newErrors: typeof errors = {};
-    if (!formData.firstName) newErrors.firstName = "First name is required";
-    if (!formData.lastName) newErrors.lastName = "Last name is required";
-    if (!formData.busEmail) newErrors.busEmail = "Email is required";
+    if (!formData.firstName.trim()) newErrors.firstName = "First name is required";
+    if (!formData.lastName.trim()) newErrors.lastName = "Last name is required";
+    if (!formData.busEmail.trim()) newErrors.busEmail = "Email is required";
     else if (!/\S+@\S+\.\S+/.test(formData.busEmail))
       newErrors.busEmail = "Invalid email format";
-    if (!formData.message) newErrors.message = "Message is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
     return newErrors;
   };
 
@@ -54,10 +54,11 @@ const Page = () => {
     }
 
     const submitData = new FormData();
-    submitData.append("firstName", formData.firstName);
-    submitData.append("lastName", formData.lastName);
-    submitData.append("busEmail", formData.busEmail);
-    submitData.append("message", formData.message);
+    submitData.append("firstName", formData.firstName.trim());
+    submitData.append("lastName", formData.lastName.trim());
+    submitData.append("busEmail", formData.busEmail.trim());
+    submitData.append("message", formData.message.trim());
+    submitData.append("pageUrl", window.location.href);
 
     try {
       const response = await fetch("https://board.10times.com/enquiry/submit", {
