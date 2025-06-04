@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { Suspense, useEffect, useRef, useState } from 'react'
 import Footer from '@/components/Footer'
 import GetInTouch from '@/components/GetInTouch'
 import HomeNavbar from '@/components/HomeNavbar'
@@ -108,7 +108,9 @@ const Page = () => {
 							transition={{ duration: 0.6, delay: key * 0.2, ease: 'easeOut' }} // Delay each card slightly
 							viewport={{ once: true }} // Only animate once
 						>
-							<PriceCard data={data} isActive={key === 2} isAnually={isYearly} />
+							<Suspense>
+								<PriceCard data={data} isActive={key === 2} isAnually={isYearly} />
+							</Suspense>
 						</motion.div>
 					))}
 				</div>
