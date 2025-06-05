@@ -44,8 +44,8 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 		  yearly: `https://buy.stripe.com/test_6oU6oGan2aRDfou5YY57W04?${queryString}`,
 		},
 		Enterprise: {
-		  monthly: "/demo",
-		  yearly: "/demo",
+		  monthly: `/demo?${queryString}`,
+		  yearly: `/demo?${queryString}`,
 		},
 	  };
 
