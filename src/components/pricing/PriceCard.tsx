@@ -1,7 +1,9 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
 import TickIcon from '/public/priceTick.svg'
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 
 
 interface Props {
@@ -11,6 +13,66 @@ interface Props {
 }
 
 const PriceCard = ({ data, isActive, isAnually }: Props) => {
+
+	const searchParams = useSearchParams();
+
+	const utm = {
+		utm_source: searchParams.get('utm_source') || 'whr',
+		utm_campaign: 'pricing',
+		utm_medium: 'web',
+		utm_term: searchParams.get('utm_term') || `whr_pricing_${data.name.toLowerCase()}_${isAnually ? 'yearly' : 'monthly'}`,
+	}
+
+	const queryString = new URLSearchParams(utm).toString();
+
+	const testPaymentLinks: {
+		[key: string]: {
+		  monthly: string;
+		  yearly: string;
+		};
+	  } = {
+		Essential: {
+		  monthly: `https://buy.stripe.com/test_cNi7sK8eU0cZekq4UU57W01?${queryString}`,
+		  yearly: `https://buy.stripe.com/test_eVqdR8eDif7T2BI9ba57W06?${queryString}`,
+		},
+		Scale: {
+		  monthly: `https://buy.stripe.com/test_bJedR852I2l7foudrq57W02?${queryString}`,
+		  yearly: `https://buy.stripe.com/test_00weVcdze3pbb8e3QQ57W05?${queryString}`,
+		},
+		Advance: {
+		  monthly: `https://buy.stripe.com/test_00w4gy1Qw1h36RYcnm57W03?${queryString}`,
+		  yearly: `https://buy.stripe.com/test_6oU6oGan2aRDfou5YY57W04?${queryString}`,
+		},
+		Enterprise: {
+		  monthly: `/demo?${queryString}`,
+		  yearly: `/demo?${queryString}`,
+		},
+	  };
+
+	const paymentLinks: {
+	[key: string]: {
+		monthly: string;
+		yearly: string;
+	};
+	} = {
+	Essential: {
+		monthly: `https://buy.stripe.com/bJedR852I2l7foudrq57W02?${queryString}`,
+		yearly: `https://buy.stripe.com/bJe7sKcva9Nz2BIdrq57W07?${queryString}`,
+	},
+	Scale: {
+		monthly: `https://buy.stripe.com/00w4gy1Qw1h36RYcnm57W03?${queryString}`,
+		yearly: `https://buy.stripe.com/eVqdR8eDif7T2BI9ba57W06?${queryString}`,
+	},
+	Advance: {
+		monthly: `https://buy.stripe.com/6oU6oGan2aRDfou5YY57W04?${queryString}`,
+		yearly: `https://buy.stripe.com/00weVcdze3pbb8e3QQ57W05?${queryString}`,
+	},
+	Enterprise: {
+		monthly: `/demo?${queryString}`,
+		yearly: `/demo?${queryString}`,
+	},
+	};
+
 	return (
 		<div className={`h-[560px] w-full drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)] bg-[#E6E6F9]" : "bg-white"}`}>
 			<div className='flex flex-col gap-4'>
@@ -34,7 +96,13 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 					))}
 				</div>
 			</div>
-			<Link href="/demo" className='bg-[var(--primary-color)] rounded-md text-white text-center py-2 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)]'>Start free trial</Link>
+			<Link
+				href={paymentLinks[data.name][isAnually ? "yearly" : "monthly"]}
+				target={data.name === "Enterprise" ? "_self" : "_blank"}
+				className='bg-[var(--primary-color)] rounded-md text-white text-center py-2 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)]'
+			>
+				{data.name === "Enterprise" ? "Get In Touch" : "Buy Now"}
+			</Link>
 		</div>
 	)
 }
