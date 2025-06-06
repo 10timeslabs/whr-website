@@ -25,7 +25,7 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 
 	const queryString = new URLSearchParams(utm).toString();
 
-	const paymentLinks: {
+	const testPaymentLinks: {
 		[key: string]: {
 		  monthly: string;
 		  yearly: string;
@@ -48,6 +48,30 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 		  yearly: `/demo?${queryString}`,
 		},
 	  };
+
+	const paymentLinks: {
+	[key: string]: {
+		monthly: string;
+		yearly: string;
+	};
+	} = {
+	Essential: {
+		monthly: `https://buy.stripe.com/bJedR852I2l7foudrq57W02?${queryString}`,
+		yearly: `https://buy.stripe.com/bJe7sKcva9Nz2BIdrq57W07?${queryString}`,
+	},
+	Scale: {
+		monthly: `https://buy.stripe.com/00w4gy1Qw1h36RYcnm57W03?${queryString}`,
+		yearly: `https://buy.stripe.com/eVqdR8eDif7T2BI9ba57W06?${queryString}`,
+	},
+	Advance: {
+		monthly: `https://buy.stripe.com/6oU6oGan2aRDfou5YY57W04?${queryString}`,
+		yearly: `https://buy.stripe.com/00weVcdze3pbb8e3QQ57W05?${queryString}`,
+	},
+	Enterprise: {
+		monthly: `/demo?${queryString}`,
+		yearly: `/demo?${queryString}`,
+	},
+	};
 
 	return (
 		<div className={`h-[560px] w-full drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] rounded-2xl flex flex-col justify-between p-5 ${isActive ? "border-2 border-[var(--primary-color)] bg-[#E6E6F9]" : "bg-white"}`}>
