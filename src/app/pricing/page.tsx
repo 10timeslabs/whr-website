@@ -94,7 +94,7 @@ const Page = () => {
 						/>
 					</div>
 					<div className="flex items-center gap-2">
-						<span className={isYearly ? "text-[var(--primary-color)] font-semibold" : "text-gray-400"}>Anually</span>
+						<span className={isYearly ? "text-[var(--primary-color)] font-semibold" : "text-gray-400"}>Annually</span>
 						<span className='text-[14px] border border-[#6750a4] rounded-lg px-3'>20% Off</span>
 					</div>
 				</div>

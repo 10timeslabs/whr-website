@@ -84,7 +84,9 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 					<span className='text-[30px] font-medium'>
 						{data.price === 0 ? "Custom" : `$${isAnually ? data.price * 10 : data.price}`}
 					</span>
-					<span className='text-[var(--secondary-text-color)] text-[14px]'>{isAnually ? "per year": "per month"}</span>
+					{data.price !== 0 && (
+						<span className='text-[var(--secondary-text-color)] text-[14px]'>{isAnually ? "per year": "per month"}</span>
+					)}
 				</div>
 				<div className='w-full border border-[var(--border-color)]'></div>
 				<div className='flex flex-col gap-2'>
