@@ -11,6 +11,7 @@ import { dropdownValues } from "../../data/dropdownData";
 import HambergurMenuIcon from "/public/hamburger.svg";
 import CrossIcon from "/public/cross.svg";
 import TickIcon from "/public/tick.svg";
+import UserProfiles from "./ProfileCard";
 
 const GeneralNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -432,8 +433,9 @@ const GeneralNavbar = () => {
             >
               Demo
             </Link>
+            <UserProfiles />
           </div>
-          <div className="lg:hidden flex items-center">
+          <div className="lg:hidden flex items-center gap-2">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-md  text-white"
@@ -449,6 +451,7 @@ const GeneralNavbar = () => {
                 />
               )}
             </button>
+            <UserProfiles />
           </div>
         </div>
       </nav>

@@ -7,6 +7,7 @@ import WhrAIText from "/public/Whr.ai.svg";
 import HambergurMenuIcon from "/public/hamburger.svg";
 import CrossIon from "/public/cross.svg";
 import { usePathname } from "next/navigation";
+import UserProfiles from "./ProfileCard";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -76,7 +77,7 @@ const Navbar = () => {
         </div>
 
         {/* ----------------Mobile Menu Button -----------------*/}
-        <div className="lg:hidden flex items-center">
+        <div className="lg:hidden flex items-center gap-2">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="rounded-md text-white"
@@ -88,6 +89,7 @@ const Navbar = () => {
               <Image width={40} src={HambergurMenuIcon} alt="Open Menu" />
             )}
           </button>
+          <UserProfiles />
         </div>
 
         {/* ------------------Desktop Links-------------- */}
@@ -134,6 +136,8 @@ const Navbar = () => {
           >
             Demo
           </Link>
+          {/* User Logo */}
+          <UserProfiles />
         </div>
       </div>
 
