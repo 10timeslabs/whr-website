@@ -8,9 +8,9 @@ export async function submitContactForm(formData: FormData) {
     // Determine API endpoint based on platform
     let apiEndpoint: string;
     if (platform === "geo") {
-      apiEndpoint = "https://geodev-api.whr.ai/others/contactMail/contactUs";
+      apiEndpoint = "https://geo-api.whr.ai/others/contactMail/contactUs";
     } else {
-      apiEndpoint = "https://gtmdev-api.whr.ai/others/contactMail/contactUs";
+      apiEndpoint = "https://gtm-api.whr.ai/others/contactMail/contactUs";
     }
 
     const body = {

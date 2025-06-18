@@ -45,14 +45,11 @@ const Page = () => {
 		if (!busEmailValue?.trim()) newErrors.busEmail = "Business email is required."
 		if (!companyNameValue?.trim()) newErrors.companyName = "Company name is required."
 		if (!jobTitleValue?.trim()) newErrors.jobTitle = "Job title is required."
-	
-		// if (!phoneNumberValue?.trim() || phoneNumberValue.trim().length < 3) {
-		//   newErrors.phoneNumber = "Phone number is required."
-		// }
+		if (phoneNumber.length <= 5 || phoneNumber.length >= 16) newErrors.phoneNumber = "Phone number is required.";
 	
 		if (Object.keys(newErrors).length > 0) {
 		  setErrors(newErrors)
-		  return { success: false, message: "Please fix the validation errors." }
+		  return
 		}
 	
 		setErrors({
@@ -174,10 +171,6 @@ const Page = () => {
           >
             {isPending ? "Submitting..." : "Submit"}
           </button>
-
-		  {state && (
-            <div className={`text-center ${state.success ? "text-green-600" : "text-red-600"}`}>{state.message}</div>
-          )}
 				</form>
 			</div>
 			<GetInTouch />

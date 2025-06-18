@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Footer from "@/components/Footer";
+import GeneralNavbar from "@/components/GeneralNavbar";
 import GetInTouch from "@/components/GetInTouch";
 import Image from "next/image";
 import Link from "next/link";
@@ -57,8 +58,6 @@ const Page = () => {
 
     try {
       const result = await submitContactForm(formDataObj)
-
-      console.log(result)
 
       if (result.success) {
         setSubmitted(true)

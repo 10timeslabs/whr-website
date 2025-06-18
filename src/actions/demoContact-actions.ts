@@ -9,9 +9,9 @@ export async function submitContactForm(
   try {
     let apiEndpoint: string;
     if (platform === "geo") {
-      apiEndpoint = "https://geodev-api.whr.ai/others/contactMail/demoContact";
+      apiEndpoint = "https://geo-api.whr.ai/others/contactMail/demoContact";
     } else {
-      apiEndpoint = "https://gtmdev-api.whr.ai/others/contactMail/demoContact";
+      apiEndpoint = "https://gtm-api.whr.ai/others/contactMail/demoContact";
     }
 
     const body = {
