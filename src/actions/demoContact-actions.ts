@@ -9,9 +9,9 @@ export async function submitContactForm(
   try {
     let apiEndpoint: string;
     if (platform === "geo") {
-      apiEndpoint = "https://geo-api.whr.ai/others/contactMail/demoContact";
+      apiEndpoint = "https://geodev-api.whr.ai/others/contactMail/demoContact";
     } else {
-      apiEndpoint = "https://gtm-api.whr.ai/others/contactMail/demoContact";
+      apiEndpoint = "https://gtmdev-api.whr.ai/others/contactMail/demoContact";
     }
 
     const body = {
@@ -24,6 +24,8 @@ export async function submitContactForm(
       subscribe: formData.get("subscribe")
     }
 
+    console.log(body)
+
     const response = await fetch(apiEndpoint, {
       method: "POST",
       headers: {
@@ -33,6 +35,8 @@ export async function submitContactForm(
     });
 
     const data = await response.json();
+
+    console.log(data)
 
     if (response.ok) {
       return {

@@ -97,6 +97,7 @@ const Page = () => {
 							<input
 								className="border border-gray-300 rounded-md p-2"
 								type="text"
+								name="firstName"
 								value={firstName}
 								onChange={(e) => setFirstName(e.target.value)}
 							/>
@@ -107,6 +108,7 @@ const Page = () => {
 							<input
 								className="border border-gray-300 rounded-md p-2"
 								type="text"
+								name="lastName"
 								value={lastName}
 								onChange={(e) => setLastName(e.target.value)}
 							/>
@@ -117,6 +119,7 @@ const Page = () => {
 							<input
 								className="border border-gray-300 rounded-md p-2"
 								type="email"
+								name="busEmail"
 								value={busEmail}
 								onChange={(e) => setBusEmail(e.target.value)}
 							/>
@@ -127,6 +130,7 @@ const Page = () => {
 							<input
 								className="border border-gray-300 rounded-md p-2"
 								type="text"
+								name="companyName"
 								value={companyName}
 								onChange={(e) => setCompanyName(e.target.value)}
 							/>
@@ -137,6 +141,7 @@ const Page = () => {
 							<input
 								className="border border-gray-300 rounded-md p-2"
 								type="text"
+								name="jobTitle"
 								value={jobTitle}
 								onChange={(e) => setJobTitle(e.target.value)}
 							/>
@@ -149,7 +154,9 @@ const Page = () => {
 								defaultCountry="in"
 								value={phoneNumber}
 								onChange={handlePhoneChange}
+								name="phoneNumber"
 							/>
+							<input type="hidden" name="phoneCode" value={phoneCode} />
 							{errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
 						</div>
 					</div>
@@ -163,6 +170,7 @@ const Page = () => {
 						<label htmlFor="check" className="cursor-pointer">
 							Please subscribe to the newsletter for influencer marketing best practices
 						</label>
+						<input type="hidden" name="subscribe" value={subscribe.toString()} />
 					</div>
 					<button
             type="submit"
