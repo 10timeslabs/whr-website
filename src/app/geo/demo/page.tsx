@@ -7,6 +7,8 @@ import GetInTouch from "@/components/GetInTouch";
 import Footer from "@/components/Footer";
 import GeneralNavbar from "@/components/GeneralNavbar";
 import { submitContactForm } from "@/actions/demoContact-actions";
+import Image from "next/image";
+import GridImage from "/public/usecase_grid.png";
 
 const Page = () => {
   const [firstName, setFirstName] = useState("");
@@ -99,137 +101,96 @@ const Page = () => {
   };
 
   return (
-    <div className="pt-[120px]">
-      <GeneralNavbar />
-      <div className="flex justify-center">
-        <form
-          className="bg-white rounded-xl p-8 drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)] flex flex-col gap-5 w-[700px]"
-          action={formAction}
-        >
-          <div className="grid grid-cols-2 gap-4">
-            <div className="flex flex-col gap-2">
-              <label>First Name</label>
-              <input
-                name="firstName"
-                className="border border-gray-300 rounded-md p-2"
-                type="text"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-              />
-              {errors.firstName && (
-                <span className="text-red-500 text-sm">{errors.firstName}</span>
-              )}
-            </div>
-            <div className="flex flex-col gap-2">
-              <label>Last Name</label>
-              <input
-                name="lastName"
-                className="border border-gray-300 rounded-md p-2"
-                type="text"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-              />
-              {errors.lastName && (
-                <span className="text-red-500 text-sm">{errors.lastName}</span>
-              )}
-            </div>
-            <div className="flex flex-col gap-2">
-              <label>Business Email</label>
-              <input
-                name="busEmail"
-                className="border border-gray-300 rounded-md p-2"
-                type="email"
-                value={busEmail}
-                onChange={(e) => setBusEmail(e.target.value)}
-              />
-              {errors.busEmail && (
-                <span className="text-red-500 text-sm">{errors.busEmail}</span>
-              )}
-            </div>
-            <div className="flex flex-col gap-2">
-              <label>Company</label>
-              <input
-                name="companyName"
-                className="border border-gray-300 rounded-md p-2"
-                type="text"
-                value={companyName}
-                onChange={(e) => setCompanyName(e.target.value)}
-              />
-              {errors.companyName && (
-                <span className="text-red-500 text-sm">
-                  {errors.companyName}
-                </span>
-              )}
-            </div>
-            <div className="flex flex-col gap-2">
-              <label>Job Title</label>
-              <input
-                name="jobTitle"
-                className="border border-gray-300 rounded-md p-2"
-                type="text"
-                value={jobTitle}
-                onChange={(e) => setJobTitle(e.target.value)}
-              />
-              {errors.jobTitle && (
-                <span className="text-red-500 text-sm">{errors.jobTitle}</span>
-              )}
-            </div>
-            <div className="flex flex-col gap-2">
-              <label>Phone Number</label>
-              <PhoneInput
-                className={`w-full ${styles.PhoneInput} border border-gray-300 rounded-md p-0.5`}
-                defaultCountry="in"
-                value={phoneNumber}
-                onChange={handlePhoneChange}
-              />
-              <input
-                type="hidden"
-                name="phoneNumber"
-                value={
-                  phoneCode && phoneNumber
-                    ? phoneNumber.substring(phoneCode.length + 1)
-                    : ""
-                }
-              />
-              <input
-                type="hidden"
-                name="phoneCode"
-                value={phoneCode ? `+${phoneCode}` : ""}
-              />
-              {errors.phoneNumber && (
-                <span className="text-red-500 text-sm">
-                  {errors.phoneNumber}
-                </span>
-              )}
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <input
-              type="checkbox"
-              id="check"
-              name="newsLetter"
-              checked={subscribe}
-              onChange={(e) => setSubscribe(e.target.checked)}
-            />
-            <label htmlFor="check" className="cursor-pointer">
-              Please subscribe to the newsletter for influencer marketing best
-              practices
-            </label>
-          </div>
-          {/* Add this hidden input to always include subscribe value */}
-          <input type="hidden" name="subscribe" value={subscribe.toString()} />
-          <button
+	<div className='pt-[120px]'>
+	<GeneralNavbar />
+	<Image src={GridImage} alt="grid" className="absolute top-[120px] -z-[50]" />
+	<div className='flex justify-center'>
+		<form className='bg-white rounded-xl p-8 drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)] flex flex-col gap-5 w-[700px]' action={formAction}>
+			<div className="grid grid-cols-2 gap-4">
+				<div className="flex flex-col gap-2">
+					<label>First Name</label>
+					<input
+						className="border border-gray-300 rounded-md p-2"
+						type="text"
+						value={firstName}
+						onChange={(e) => setFirstName(e.target.value)}
+					/>
+					{errors.firstName && <span className="text-red-500 text-sm">{errors.firstName}</span>}
+				</div>
+				<div className="flex flex-col gap-2">
+					<label>Last Name</label>
+					<input
+						className="border border-gray-300 rounded-md p-2"
+						type="text"
+						value={lastName}
+						onChange={(e) => setLastName(e.target.value)}
+					/>
+					{errors.lastName && <span className="text-red-500 text-sm">{errors.lastName}</span>}
+				</div>
+				<div className="flex flex-col gap-2">
+					<label>Business Email</label>
+					<input
+						className="border border-gray-300 rounded-md p-2"
+						type="email"
+						value={busEmail}
+						onChange={(e) => setBusEmail(e.target.value)}
+					/>
+					{errors.busEmail && <span className="text-red-500 text-sm">{errors.busEmail}</span>}
+				</div>
+				<div className="flex flex-col gap-2">
+					<label>Company</label>
+					<input
+						className="border border-gray-300 rounded-md p-2"
+						type="text"
+						value={companyName}
+						onChange={(e) => setCompanyName(e.target.value)}
+					/>
+					{errors.companyName && <span className="text-red-500 text-sm">{errors.companyName}</span>}
+				</div>
+				<div className="flex flex-col gap-2">
+					<label>Job Title</label>
+					<input
+						className="border border-gray-300 rounded-md p-2"
+						type="text"
+						value={jobTitle}
+						onChange={(e) => setJobTitle(e.target.value)}
+					/>
+					{errors.jobTitle && <span className="text-red-500 text-sm">{errors.jobTitle}</span>}
+				</div>
+				<div className="flex flex-col gap-2">
+					<label>Phone Number</label>
+					<PhoneInput
+						className={`w-full ${styles.PhoneInput} border border-gray-300 rounded-md p-0.5`}
+						defaultCountry="in"
+						value={phoneNumber}
+						onChange={handlePhoneChange}
+					/>
+					{errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
+				</div>
+			</div>
+			<div className="flex items-center gap-2">
+				<input
+					type="checkbox"
+					id="check"
+					checked={subscribe}
+					onChange={(e) => setSubscribe(e.target.checked)}
+				/>
+				<label htmlFor="check" className="cursor-pointer">
+					Please subscribe to the newsletter for influencer marketing best practices
+				</label>
+			</div>
+			<button
             type="submit"
             disabled={isPending}
             className="bg-[#6750A4] w-full text-center py-[8px] rounded-[10px] text-white cursor-pointer disabled:opacity-50"
           >
             {isPending ? "Submitting..." : "Submit"}
           </button>
-        </form>
-      </div>
-      <GetInTouch />
-      <Footer />
-    </div>
+		</form>
+	</div>
+	<GetInTouch />
+	<Footer />
+</div>
   );
 };
 
