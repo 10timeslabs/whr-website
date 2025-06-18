@@ -18,6 +18,7 @@ export async function submitContactForm(formData: FormData) {
       lastName: formData.get("lastName"),
       email: formData.get("busEmail"),
       message: formData.get("message"),
+      source: formData.get("source")
     };
 
     const response = await fetch(apiEndpoint, {

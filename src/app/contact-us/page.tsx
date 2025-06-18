@@ -54,7 +54,7 @@ const Page = () => {
     }
 
     // Add pageUrl to form data
-    formDataObj.append("pageUrl", window.location.href)
+    formDataObj.append("source", window.location.href)
 
     try {
       const result = await submitContactForm(formDataObj)

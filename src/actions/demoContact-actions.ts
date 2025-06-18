@@ -21,7 +21,8 @@ export async function submitContactForm(
       companyName: formData.get("companyName"),
       jobTitle: formData.get("jobTitle"),
       phoneNumber: formData.get("phoneNumber"),
-      subscribe: formData.get("subscribe")
+      subscribe: formData.get("subscribe"),
+      source: formData.get("source")
     }
 
     console.log(body)
