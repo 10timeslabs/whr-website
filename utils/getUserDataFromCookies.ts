@@ -8,15 +8,15 @@ interface UserDetails {
   profilePicture: string | null;
 }
 
-export const getUserDataFromCookies = () => {
-  const cookieStore = cookies();
+export const getUserDataFromCookies = async () => {
+  const cookieStore = await cookies();
   const geoUserCookie = cookieStore.get("geoUser");
   const gtmUserCookie = cookieStore.get("gtmUser");
 
   let geoUser: UserDetails | null = null;
   let gtmUser: UserDetails | null = null;
 
-  if (geoUserCookie) {
+  if (geoUserCookie && geoUserCookie.value) {
     try {
       geoUser = JSON.parse(geoUserCookie.value);
     } catch (error) {
@@ -24,7 +24,7 @@ export const getUserDataFromCookies = () => {
     }
   }
 
-  if (gtmUserCookie) {
+  if (gtmUserCookie && gtmUserCookie.value) {
     try {
       gtmUser = JSON.parse(gtmUserCookie.value);
     } catch (error) {

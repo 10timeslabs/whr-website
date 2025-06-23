@@ -9,9 +9,9 @@ const UserProfiles = () => {
   const [userDropdown, setUserdropdown] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-  const generateProfileName = () => {
-    if (userDetails.gtmUser) {
-      const { firstname, lastname } = userDetails.gtmUser;
+  const generateProfileName = (platform: "geoUser" | "gtmUser") => {
+    if (userDetails[platform]) {
+      const { firstname, lastname } = userDetails[platform];
       const initials = [firstname?.[0], lastname?.[0]]
         .map((char) => char?.toUpperCase())
         .filter(Boolean)
@@ -45,7 +45,7 @@ const UserProfiles = () => {
                   size === "lg" ? "w-10 h-10" : "w-9 h-9"
                 } font-medium text-sm shadow-sm`}
         >
-          {generateProfileName()}
+          {generateProfileName(platform)}
         </div>
       ) : (
         <img
@@ -76,13 +76,15 @@ const UserProfiles = () => {
     };
   }, [userDropdown]);
 
+  if (!userDetails.gtmUser && !userDetails.geoUser) return <></>;
+
   return (
     <div className="relative">
       <div
         className="cursor-pointer"
         onClick={() => setUserdropdown(!userDropdown)}
       >
-        <ProfileCard platform="geoUser" />
+        <ProfileCard platform={userDetails.gtmUser ? "gtmUser" : "geoUser"} />
       </div>
 
       {userDropdown && (
