@@ -219,18 +219,13 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
                 </div>
                 <div className="font-bold text-2xl">GEO</div>
               </div>
-              <div className="text-muted-foreground text-xl">
+              <div className="text-muted-foreground text-sm">
                 What You'll Get
               </div>
               <div className="flex gap-2 items-baseline text-sm">
-                <Image src={TickIcon} alt="tick" />
-                On-ground Event intelligence
+                Comprehensive coverage of all event formats enriched with advanced location intelligence to support strategic market planning.
               </div>
-              <div className="flex gap-2 items-baseline text-sm">
-                <Image src={TickIcon} alt="tick" />
-                Location-based Insights
-              </div>
-              <div className="border border-b-[#A9A9AA] border-dashed"></div>
+              {/* <div className="border border-b-[#A9A9AA] border-dashed"></div> */}
             </div>
 
             <Link
@@ -255,24 +250,15 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
                 </div>
                 <div className="font-bold text-2xl">GTM</div>
               </div>
-              <div className="text-muted-foreground text-xl">
+              <div className="text-muted-foreground text-sm">
                 What You'll Get
               </div>
               <div className="overflow-y-auto h-[120px]">
                 <div className="flex gap-2 items-baseline text-sm">
-                  <Image src={TickIcon} alt="tick" />
-                  Go-to-Market Event Strategy
-                </div>
-                <div className="flex gap-2 items-baseline text-sm">
-                  <Image src={TickIcon} alt="tick" />
-                  Track your competitors
-                </div>
-                <div className="flex gap-2 items-baseline text-sm">
-                  <Image src={TickIcon} alt="tick" />
-                  Prospect events, people and companies
+                  Focused insights into business events, delivering industry-specific intelligence to drive informed go-to-market decisions.
                 </div>
               </div>
-              <div className="border border-b-[#A9A9AA] border-dashed"></div>
+              {/* <div className="border border-b-[#A9A9AA] border-dashed"></div> */}
             </div>
 
             <Link
