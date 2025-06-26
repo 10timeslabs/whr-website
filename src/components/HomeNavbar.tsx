@@ -7,7 +7,10 @@ import WhrAIText from "/public/Whr.ai.svg";
 import HambergurMenuIcon from "/public/hamburger.svg";
 import CrossIon from "/public/cross.svg";
 import { usePathname } from "next/navigation";
+import UserProfiles from "./ProfileCard";
+import { useAccounts } from "@/context/auth";
 const Navbar = () => {
+  const { gtmUser, geoUser } = useAccounts();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement | null>(null);
@@ -76,7 +79,7 @@ const Navbar = () => {
         </div>
 
         {/* ----------------Mobile Menu Button -----------------*/}
-        <div className="lg:hidden flex items-center">
+        <div className="lg:hidden flex items-center gap-2">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="rounded-md text-white"
@@ -88,6 +91,7 @@ const Navbar = () => {
               <Image width={40} src={HambergurMenuIcon} alt="Open Menu" />
             )}
           </button>
+          <UserProfiles />
         </div>
 
         {/* ------------------Desktop Links-------------- */}
@@ -124,16 +128,20 @@ const Navbar = () => {
 
         {/*-------------- Desktop Buttons------------------- */}
         <div className="hidden lg:flex space-x-4">
-          <div className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
-          onClick={handleClick}>
-            Sign Up
-          </div>
+          {!(gtmUser || geoUser) &&
+            <div className="bg-primary px-[15px] py-[8px] rounded-[10px] text-white cursor-pointer"
+            onClick={handleClick}>
+              Sign Up
+            </div>
+          }
           <Link
             href="/demo"
             className="px-[15px] py-[8px] rounded-[10px]  border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
           >
             Demo
           </Link>
+          {/* User Logo */}
+          <UserProfiles />
         </div>
       </div>
 
@@ -199,13 +207,15 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="mt-10 space-y-6"  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-          <div
-            // href="/signup"
-            className="block w-48 px-6 py-3 text-white bg-primary rounded-lg text-center text-xl hover:bg-primary transition-all duration-300 ease-in-out"
-            onClick={handleClick}
-         >
-            Sign Up
-          </div>
+          {!(gtmUser || geoUser) &&
+            <div
+              // href="/signup"
+              className="block w-48 px-6 py-3 text-white bg-primary rounded-lg text-center text-xl hover:bg-primary transition-all duration-300 ease-in-out"
+              onClick={handleClick}
+            >
+              Sign Up
+            </div>
+          }
           <Link
             href="/demo"
             className="block w-48 px-6 py-3 text-primary border border-primary rounded-lg text-center text-xl hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"

@@ -11,8 +11,11 @@ import { dropdownValues } from "../../data/dropdownData";
 import HambergurMenuIcon from "/public/hamburger.svg";
 import CrossIcon from "/public/cross.svg";
 import TickIcon from "/public/tick.svg";
+import UserProfiles from "./ProfileCard";
+import { useAccounts } from "@/context/auth";
 
 const GeneralNavbar = () => {
+  const { gtmUser, geoUser } = useAccounts();
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdowns, setDropdowns] = useState<any>({});
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -417,23 +420,26 @@ const GeneralNavbar = () => {
           </div>
 
           <div className=" hidden lg:flex items-center space-x-4">
-            <div
-              // href="/signup"
-              onClick={() => {
-                handleClick();
-              }}
-              className="bg-primary text-[14px] px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer"
-            >
-              Sign Up
-            </div>
+            {!(gtmUser || geoUser) &&
+              <div
+                // href="/signup"
+                onClick={() => {
+                  handleClick();
+                }}
+                className="bg-primary text-[14px] px-[12px] py-[8px] rounded-[10px] text-white cursor-pointer"
+              >
+                Sign Up
+              </div>
+            }
             <Link
               href={pathname.includes("/geo") ? "/geo/demo" : "/gtm/demo"}
               className="px-[15px] text-[14px] py-[8px] rounded-[10px] border border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
             >
               Demo
             </Link>
+            <UserProfiles />
           </div>
-          <div className="lg:hidden flex items-center">
+          <div className="lg:hidden flex items-center gap-2">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-md  text-white"
@@ -449,6 +455,7 @@ const GeneralNavbar = () => {
                 />
               )}
             </button>
+            <UserProfiles />
           </div>
         </div>
       </nav>

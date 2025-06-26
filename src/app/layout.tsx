@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { AuthProvider } from "@/context/auth";
+import { getUserDataFromCookies } from "../../utils/getUserDataFromCookies";
 
 export const metadata: Metadata = {
   title: "whr.ai - Premier Event Intelligence Platform",
@@ -29,11 +31,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const userCookies = await getUserDataFromCookies();
   return (
     <html lang="en">
       <head>
@@ -61,7 +64,9 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         <Breadcrumbs />
-        <div>{children}</div>
+        <div>
+          <AuthProvider value={userCookies}>{children}</AuthProvider>
+        </div>
       </body>
     </html>
   );
