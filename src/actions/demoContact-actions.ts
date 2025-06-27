@@ -25,7 +25,6 @@ export async function submitContactForm(
       source: formData.get("source")
     }
 
-    console.log(body)
 
     const response = await fetch(apiEndpoint, {
       method: "POST",
@@ -37,7 +36,6 @@ export async function submitContactForm(
 
     const data = await response.json();
 
-    console.log(data)
 
     if (response.ok) {
       return {
