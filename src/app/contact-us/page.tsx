@@ -11,6 +11,8 @@ import linkedInIcon from "/public/social_link_icons/Vector (3).svg";
 import youtubeIcon from "/public/social_link_icons/Vector (5).svg";
 import TwitterIcon from "/public/social_link_icons/Vector.svg";
 import HomeNavbar from "@/components/HomeNavbar";
+import {submitContactForm} from "@/actions/contactUs-actions"
+
 const Page = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -20,6 +22,7 @@ const Page = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submissionMessage, setSubmissionMessage] = useState("")
   const [errors, setErrors] = useState<{
     firstName?: string;
     lastName?: string;
@@ -28,55 +31,52 @@ const Page = () => {
   }>({});
 
   const validateForm = () => {
-    let newErrors: typeof errors = {};
-    if (!formData.firstName.trim()) newErrors.firstName = "First name is required";
-    if (!formData.lastName.trim()) newErrors.lastName = "Last name is required";
-    if (!formData.busEmail.trim()) newErrors.busEmail = "Email is required";
-    else if (!/\S+@\S+\.\S+/.test(formData.busEmail))
-      newErrors.busEmail = "Invalid email format";
-    if (!formData.message.trim()) newErrors.message = "Message is required";
-    return newErrors;
-  };
+    const newErrors: typeof errors = {}
+    if (!formData.firstName.trim()) newErrors.firstName = "First name is required"
+    if (!formData.lastName.trim()) newErrors.lastName = "Last name is required"
+    if (!formData.busEmail.trim()) newErrors.busEmail = "Email is required"
+    else if (!/\S+@\S+\.\S+/.test(formData.busEmail)) newErrors.busEmail = "Invalid email format"
+    if (!formData.message.trim()) newErrors.message = "Message is required"
+    return newErrors
+  }
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" });
-  };
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+    setErrors({ ...errors, [e.target.name]: "" })
+  }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const validationErrors = validateForm();
+  const handleSubmit = async (formDataObj: FormData) => {
+    // Client-side validation
+    const validationErrors = validateForm()
     if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
+      setErrors(validationErrors)
+      return
     }
 
-    const submitData = new FormData();
-    submitData.append("firstName", formData.firstName.trim());
-    submitData.append("lastName", formData.lastName.trim());
-    submitData.append("busEmail", formData.busEmail.trim());
-    submitData.append("message", formData.message.trim());
-    submitData.append("pageUrl", window.location.href);
+    // Add pageUrl to form data
+    formDataObj.append("source", window.location.href)
 
     try {
-      const response = await fetch("https://board.10times.com/enquiry/submit", {
-        method: "POST",
-        body: submitData,
-      });
-      if (response.ok) {
-        console.log("Form submitted successfully");
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 3000);
-        setFormData({ firstName: "", lastName: "", busEmail: "", message: "" });
+      const result = await submitContactForm(formDataObj)
+
+      if (result.success) {
+        setSubmitted(true)
+        setSubmissionMessage(result.message)
+        setTimeout(() => {
+          setSubmitted(false)
+          setSubmissionMessage("")
+        }, 3000)
+        setFormData({ firstName: "", lastName: "", busEmail: "", message: "" })
       } else {
-        console.error("Failed to submit form");
+        setSubmissionMessage(result.message)
+        setTimeout(() => setSubmissionMessage(""), 3000)
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error("Error submitting form:", error)
+      setSubmissionMessage("Something went wrong. Please try again.")
+      setTimeout(() => setSubmissionMessage(""), 3000)
     }
-  };
+  }
 
   return (
     <div>
@@ -125,7 +125,7 @@ const Page = () => {
               </p>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form action={handleSubmit}  className="space-y-4">
               <div>
                 <label className="block text-gray-600 font-medium">
                   First Name
