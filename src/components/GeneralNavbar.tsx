@@ -396,7 +396,15 @@ const GeneralNavbar = () => {
                 )}
               </div>
             ))}
-
+        {pathname.includes("/gtm") &&
+              <Link href="https://gtm.whr.ai/collections">
+                <div
+              className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
+            >
+              Collections
+            </div>
+              </Link>
+               } 
             <div
               className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
               onClick={()=>handleRoute("about")}
@@ -504,8 +512,17 @@ const GeneralNavbar = () => {
                   )}
                 </div>
               ))}
+              {pathname.includes("/gtm") &&
+              <Link href="https://gtm.whr.ai/collections">
               <div
                 className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2"
+              >
+                Collections
+              </div>
+              </Link>
+              }
+              <div
+                className="text-black bg-muted px-4 py-4 rounded-md text-lg font-semibold cursor-pointer flex justify-between items-center gap-2 mt-4"
                 onClick={()=>handleRoute("about")}
               >
                 About
