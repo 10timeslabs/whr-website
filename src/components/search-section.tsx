@@ -197,7 +197,8 @@ const SearchSection = () => {
                       if (!searchInput.trim()) return;
                       // Split input by comma or space, filter out empty
                       const keywords = searchInput.split(/[,\s]+/).filter(Boolean);
-                      const url = `https://gtm.whr.ai/internal/search/events?view=table&includeKeywords=${encodeURIComponent(keywords.join(","))}`;
+                      const platform = pathName == "/gtm" ? "gtm" : "geo"
+                      const url = `https://${platform}.whr.ai/internal/search/events?view=table&includeKeywords=${encodeURIComponent(keywords.join(","))}`;
                       if (typeof window !== "undefined") {
                         window.location.href = url;
                       } else if (router) {
