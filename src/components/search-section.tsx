@@ -57,6 +57,19 @@ const SearchSection = () => {
     }
   };
 
+
+  const handleSearch = () => {
+    if (!searchInput.trim()) return;
+    const keywords = searchInput.split(/[,\s]+/).filter(Boolean);
+    const platform = pathName == "/gtm" ? "gtm" : "geo"
+    const url = `https://${platform}.whr.ai/internal/search/events?view=table&includeKeywords=${encodeURIComponent(keywords.join(","))}&utm_campaign=onboarding&utm_source=whr&utm_medium=web&utm_term=smart_search`;
+    if (typeof window !== "undefined") {
+      window.location.href = url;
+    } else if (router) {
+      router.push(url);
+    }
+  };
+
   useEffect(() => {
     // Only update usecaseData if not on /geo or /gtm
     if (pathName !== "/geo" && pathName !== "/gtm") {
@@ -166,6 +179,12 @@ const SearchSection = () => {
                   className="resize-none flex-1 bg-transparent h-24 max-sm:h-20 outline-none text-lg max-sm:text-base text-gray-800 placeholder-gray-400"
                   value={searchInput}
                   onChange={e => setSearchInput(e.target.value)}
+                  onKeyDown={e => {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                      e.preventDefault();
+                      handleSearch()
+                    }
+                  }}
                 />
               </div>
               {/* Category buttons */}
@@ -237,6 +256,12 @@ const SearchSection = () => {
                   onChange={e => {
                     setAiInput(e.target.value);
                     setAiError("");
+                  }}
+                  onKeyDown={e => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault();
+                      handleAiFetch();
+                    }
                   }}
                 />
                 <button
