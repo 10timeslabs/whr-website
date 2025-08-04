@@ -52,16 +52,34 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const tabs = ["Predict", "Sell", "Participate"];
-  const activeIndex = tabs.indexOf(activeTab)
+  const tabs = ["Event Analysts", "Suppliers & Organizers", "Event Participants"];
+  const activeIndex = tabs.indexOf(
+    activeTab === "Predict"
+      ? "Event Analysts"
+      : activeTab === "Sell"
+      ? "Suppliers & Organizers"
+      : "Event Participants"
+  );
   const handlePrev = () => {
     const newIndex = activeIndex === 0 ? tabs.length - 1 : activeIndex - 1;
-    setActiveTab(tabs[newIndex]);
+    setActiveTab(
+      tabs[newIndex] === "Event Analysts"
+        ? "Predict"
+        : tabs[newIndex] === "Suppliers & Organizers"
+        ? "Sell"
+        : "Participate"
+    );
   };
 
   const handleNext = () => {
     const newIndex = activeIndex === tabs.length - 1 ? 0 : activeIndex + 1;
-    setActiveTab(tabs[newIndex]);
+    setActiveTab(
+      tabs[newIndex] === "Event Analysts"
+        ? "Predict"
+        : tabs[newIndex] === "Suppliers & Organizers"
+        ? "Sell"
+        : "Participate"
+    );
   };
   
   return (
@@ -102,7 +120,11 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
                 </button>
     
                <div className='bg-[var(--neutral-light-color)] p-1 rounded-md'> <div className="px-4 py-2 bg-white rounded-md shadow-md border font-semibold text-[#6750a4]">
-                  {activeTab}
+                  {activeTab === "Predict"
+                    ? "Event Analysts"
+                    : activeTab === "Sell"
+                    ? "Suppliers & Organizers"
+                    : "Event Participants"}
                 </div></div>
     
                 <button onClick={handleNext} className="p-2">
@@ -111,7 +133,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
               </div>
     
               <div className="flex gap-2 mt-2">
-                {tabs.map((_, index) => (
+                {tabs.map((tab, index) => (
                   <span
                     key={index}
                     className={`h-2 w-2 rounded-full ${index === activeIndex? "bg-[#6750a4]" : "bg-gray-400"}`}
@@ -121,32 +143,32 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
             </div>
             ):(
               showTabs ? (
-                <div className="grid grid-cols-3 gap-2 bg-[#EFEFEF] border border-[var(--neutral-light-color)] rounded w-fit p-2 shadow-sm">
-                  <button
-                    className={`transition-all duration-200 px-2 py-2 font-medium rounded flex items-center justify-center gap-1 
-                      ${activeTab === "Participate" ? "bg-[#6750a4] text-white border-[#6750a4]" : "text-[#8F8F8F]"}
-                    `}
-                    onClick={() => setActiveTab("Participate")}
-                  >
-                    Event Participants
-                  </button>
-                  <button
-                    className={`transition-all duration-200 px-2 py-2 font-medium rounded flex items-center justify-center gap-1
-                      ${activeTab === "Sell" ? "bg-[#6750a4] text-white border-[#6750a4]" : "text-[#8F8F8F]"}
-                    `}
-                    onClick={() => setActiveTab("Sell")}
-                  >
-                    Suppliers & Organizers
-                  </button>
-                  <button
-                    className={`transition-all duration-200 px-2 py-2 font-medium rounded flex items-center justify-center gap-1 
-                      ${activeTab === "Predict" ? "bg-[#6750a4] text-white border-[#6750a4]" : "text-[#8F8F8F]"}
-                    `}
-                    onClick={() => setActiveTab("Predict")}
-                  >
-                    Event Analysts
-                  </button>
-                </div>
+                <div className="flex gap-2 bg-[#EFEFEF] rounded-lg shadow-md p-2">
+                <button
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition ${
+                    activeTab === "Participate" ? "text-white bg-primary" : "text-gray-500 hover:bg-gray-100"
+                  }`}
+                  onClick={() => setActiveTab("Participate")}
+                >
+                  Event Participants
+                </button>
+                <button
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition ${
+                    activeTab === "Sell" ? "text-white bg-primary" : "text-gray-500 hover:bg-gray-100"
+                  }`}
+                  onClick={() => setActiveTab("Sell")}
+                >
+                  Suppliers & Organizers
+                </button>
+                <button
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition ${
+                    activeTab === "Predict" ? "text-white bg-primary" : "text-gray-500 hover:bg-gray-100"
+                  }`}
+                  onClick={() => setActiveTab("Predict")}
+                >
+                  Event Analysts
+                </button>
+              </div>
               ) :<></>
             
             

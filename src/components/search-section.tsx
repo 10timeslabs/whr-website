@@ -46,7 +46,7 @@ const SearchSection = () => {
       }
       // Remove protocol for dashboard url param
       const cleanUrl = urlObj.hostname + urlObj.pathname + (urlObj.search || "");
-      const redirectUrl = `https://gtm.whr.ai/widget/dashboard?url=${encodeURIComponent(cleanUrl)}`;
+      const redirectUrl = `https://gtm.whr.ai/internal/trackers?tab=allTrackers&showTemplates=true&brand=${encodeURIComponent(cleanUrl)}&utm_campaign=onboarding&utm_source=whr&utm_medium=web&utm_term=ai_recommendations`;
       if (typeof window !== "undefined") {
         window.location.href = redirectUrl;
       } else if (router) {
@@ -101,7 +101,7 @@ const SearchSection = () => {
         />
         <div className="relative z-10 w-full max-w-4xl flex flex-col items-center">
           {/* Tabs */}
-          <div className="flex gap-2 max-sm:gap-1 bg-[#EFEFEF] rounded-lg shadow-md p-2 mb-6 max-sm:justify-center">
+          <div className="flex gap-2 max-sm:gap-1 bg-white rounded-lg shadow-md p-2 mb-6 max-sm:justify-center">
             <button
               className={`flex items-center gap-2 max-sm:gap-0 px-4 max-sm:px-3 py-2 rounded-lg font-medium max-sm:text-sm transition ${
                 activeTab === "Smart Search" ? "text-white bg-primary" : "text-gray-500 hover:bg-gray-100"
@@ -162,7 +162,7 @@ const SearchSection = () => {
             <div className="w-full bg-white rounded-3xl border border-[#E6E6E6] shadow-lg flex flex-col px-6 max-sm:px-4 py-6 max-sm:py-4">
               <div className="flex items-center w-full">
                 <textarea
-                  placeholder="Search by keywords, people or company name"
+                  placeholder="Search by keywords, people or company"
                   className="resize-none flex-1 bg-transparent h-24 max-sm:h-20 outline-none text-lg max-sm:text-base text-gray-800 placeholder-gray-400"
                   value={searchInput}
                   onChange={e => setSearchInput(e.target.value)}
@@ -171,22 +171,22 @@ const SearchSection = () => {
               {/* Category buttons */}
               <div className="flex items-center justify-between gap-2 mt-2">
                 <div className="flex gap-2 max-sm:flex-wrap">
-                  <button className="flex items-center gap-2 max-sm:gap-1 p-2 max-sm:px-3 max-sm:py-2 rounded-lg bg-[#EBF5FF] text-[#666666] font-medium">
+                  <div className="flex items-center gap-2 max-sm:gap-1 p-2 max-sm:px-3 max-sm:py-2 rounded-lg bg-[#EBF5FF] text-[#666666] font-medium">
                     <Image
                       src={companiesIcon || "/placeholder.svg"}
                       alt="companies"
                       className="max-sm:w-4 max-sm:h-4"
                     />
                     <span className="text-sm max-sm:text-xs">Companies</span>
-                  </button>
-                  <button className="flex items-center gap-2 max-sm:gap-1 p-2 max-sm:px-3 max-sm:py-2 rounded-lg bg-[#EBF5FF] text-[#666666] font-medium">
+                  </div>
+                  <div className="flex items-center gap-2 max-sm:gap-1 p-2 max-sm:px-3 max-sm:py-2 rounded-lg bg-[#EBF5FF] text-[#666666] font-medium">
                     <Image src={peopleIcon || "/placeholder.svg"} alt="people" className="max-sm:w-4 max-sm:h-4" />
                     <span className="text-sm max-sm:text-xs">People</span>
-                  </button>
-                  <button className="flex items-center gap-2 max-sm:gap-1 p-2 max-sm:px-3 max-sm:py-2 rounded-lg bg-[#EBF5FF] text-[#666666] font-medium">
+                  </div>
+                  <div className="flex items-center gap-2 max-sm:gap-1 p-2 max-sm:px-3 max-sm:py-2 rounded-lg bg-[#EBF5FF] text-[#666666] font-medium">
                     <Image src={eventIcon || "/placeholder.svg"} alt="events" className="max-sm:w-4 max-sm:h-4" />
                     <span className="text-sm max-sm:text-xs">Events</span>
-                  </button>
+                  </div>
                 </div>
                 <div className="max-sm:flex max-sm:justify-center max-sm:mt-2">
                   <button
@@ -198,7 +198,7 @@ const SearchSection = () => {
                       // Split input by comma or space, filter out empty
                       const keywords = searchInput.split(/[,\s]+/).filter(Boolean);
                       const platform = pathName == "/gtm" ? "gtm" : "geo"
-                      const url = `https://${platform}.whr.ai/internal/search/events?view=table&includeKeywords=${encodeURIComponent(keywords.join(","))}`;
+                      const url = `https://${platform}.whr.ai/internal/search/events?view=table&includeKeywords=${encodeURIComponent(keywords.join(","))}&utm_campaign=onboarding&utm_source=whr&utm_medium=web&utm_term=smart_search`;
                       if (typeof window !== "undefined") {
                         window.location.href = url;
                       } else if (router) {
