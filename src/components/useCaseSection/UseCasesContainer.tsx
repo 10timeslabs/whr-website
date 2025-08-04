@@ -6,6 +6,7 @@ import CircleImage from "/public/CircularAnimation/Circle.png";
 import { homepageTabsData } from "../../../data/homepageTabsData";
 import GridImage from "/public/usecase_grid.png";
 import Link from "next/link";
+import { GTM_UseCase_15, GTM_UseCase_9, TrendsIcon } from "../../../svgicons/icons";
 interface Props {
   text?: string;
   pathName: string;
@@ -143,13 +144,14 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
             </div>
             ):(
               showTabs ? (
-                <div className="flex gap-2 bg-[#EFEFEF] rounded-lg shadow-md p-2">
+                <div className="flex gap-2 bg-white rounded-lg shadow-md p-2">
                 <button
                   className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition ${
                     activeTab === "Participate" ? "text-white bg-primary" : "text-gray-500 hover:bg-gray-100"
                   }`}
                   onClick={() => setActiveTab("Participate")}
                 >
+                  <GTM_UseCase_15 color="currentColor" />
                   Event Participants
                 </button>
                 <button
@@ -158,6 +160,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
                   }`}
                   onClick={() => setActiveTab("Sell")}
                 >
+                   <GTM_UseCase_9 color="currentColor" />
                   Suppliers & Organizers
                 </button>
                 <button
@@ -166,6 +169,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
                   }`}
                   onClick={() => setActiveTab("Predict")}
                 >
+                  <TrendsIcon color="currentColor" />
                   Event Analysts
                 </button>
               </div>
