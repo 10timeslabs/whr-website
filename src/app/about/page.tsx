@@ -43,12 +43,12 @@ const Page = () => {
         <Image src={LogoSparkle} alt='Logo' className='ml-[20%] h-[200px] w-[180px] max-[730px]:h-[150px] max-[730px]:w-[120px]  max-[480px]:hidden' />
       </div>
       {/* Journey Section */}
-      <div className='w-[87%] flex justify-between mt-[70px] max-[480px]:flex-col max-[480px]:gap-4'>
+      <div className='w-[87%] flex justify-between mt-[120px] max-[480px]:flex-col max-[480px]:gap-4'>
         <div className='text-[56px] leading-[64px] w-[30%] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>Our Journey</div>
         <div className='text-[#3a3a3a] text-lg w-[50%] max-[730px]:text-[14px] max-[730px]:leading-[20px] max-[480px]:w-full'>Founded in January 2025, whr.ai was born from over a decade of experience in the event industry. Our founder and team recognized that events are a core factor of volatility that is notoriously difficult to gauge. Traditional data was fragmented and riddled with noise, making it challenging to incorporate events into actionable business insights. Unlike more straightforward factors like weather or holidays, understanding the dynamic and multifaceted nature of events required a specialized approach. Determined to solve this problem, we launched whr.ai to create a reliable single source of truth that everyone can depend on.</div>
       </div>
       {/* What sets us apart */}
-      <div className='w-[87%] flex justify-between mt-[70px] max-[730px]:flex-col'>
+      <div className='w-[87%] flex justify-between mt-[120px] max-[730px]:flex-col'>
         <div className='flex flex-col w-[30%] gap-4 max-[730px]:w-full'>
           <div className='text-[56px] leading-[64px] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>What Sets Us Apart</div>
           <div className='text-[var(--secondary-text-color)]'>Redefining the Ordinary. Delivering the Extraordinary.</div>
@@ -73,7 +73,7 @@ const Page = () => {
         </div>
       </div>
       {/* Why US */}
-      <div className='w-[87%] flex justify-between mt-[70px] max-[1050px]:flex-col'>
+      <div className='w-[87%] flex justify-between mt-[120px] max-[1050px]:flex-col'>
         <div className='flex flex-col w-[30%] gap-4 max-[1050px]:w-full'>
           <div className='text-[56px] leading-[64px] max-[730px]:text-[40px] max-[730px]:leading-[50px]'>Why Whr.ai</div>
           <div className='text-[var(--secondary-text-color)]'>Powering Events with Intelligent Connections.</div>
@@ -99,12 +99,12 @@ const Page = () => {
         </div>
       </div>
       {/* WHO we Serve */}
-      <div className='w-[87%] flex justify-between mt-[70px] max-[480px]:flex-col max-[480px]:gap-4'>
+      <div className='w-[87%] flex justify-between mt-[120px] max-[480px]:flex-col max-[480px]:gap-4'>
         <div className='text-[56px] leading-[64px] w-[30%] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>Who We Serve</div>
         <div className='text-[#3a3a3a] w-[50%] text-lg max-[730px]:text-[14px] max-[730px]:leading-[20px] max-[480px]:w-full'>Our primary customers include global hotels, venues, event planners, research firms, brand agencies, and large enterprises that participate in or provide services to events. Whether you are a local business affected by inbound visitors or an enterprise investing over $100k annually in events, whr.ai offers tailored solutions to meet your specific needs</div>
       </div>
       {/* Conclusion */}
-      <div className="w-[87%] flex flex-col items-center justify-center rounded-2xl border border-[var(--border-color)] gap-5 mt-[70px] py-4"
+      <div className="w-[87%] flex flex-col items-center justify-center rounded-2xl border border-[var(--border-color)] gap-5 mt-[120px] py-4"
         style={{ backgroundImage: `url(${GridImageTwo.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className='text-[48px] w-[90%] text-center text-[var(--primary-color)] max-[775px]:text-[40px] max-[480px]:text-[24px]'>Innovating the Future of Event Intelligence</div>
