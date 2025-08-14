@@ -229,7 +229,7 @@ const Page = () => {
           </li>
         </ul>
 
-        <h2 className="text-lg font-semibold mt-4">8. Intellectual Property</h2>
+        <h2 className="text-lg font-semibold mt-4">9. Intellectual Property</h2>
 
         <ul className="list-disc ml-12">
           <li>
@@ -252,7 +252,7 @@ const Page = () => {
         </ul>
 
         <h2 className="text-lg font-semibold mt-4">
-          9. Liability and Disclaimers
+          10. Liability and Disclaimers
         </h2>
         <ul className="list-disc ml-12">
           <li>
@@ -282,7 +282,7 @@ const Page = () => {
           </li>
         </ul>
 
-        <h2 className="text-lg font-semibold mt-4">10. Termination</h2>
+        <h2 className="text-lg font-semibold mt-4">11. Termination</h2>
         <ul className="list-disc ml-12">
           <li>
             <strong>Termination by User</strong>: Users may terminate their
@@ -305,7 +305,7 @@ const Page = () => {
           </li>
         </ul>
         <h2 className="text-lg font-semibold mt-4">
-          11. Governing Law and Jurisdiction
+          12. Governing Law and Jurisdiction
         </h2>
         <p>
           These Terms are governed by and construed in accordance with the laws
@@ -314,7 +314,7 @@ const Page = () => {
           located in Bengaluru, India.
         </p>
         <h2 className="text-lg font-semibold mt-4">
-          12. Privacy and Security Incidents
+          13. Privacy and Security Incidents
         </h2>
         <ul className="list-disc ml-12">
           <li>
@@ -329,7 +329,7 @@ const Page = () => {
           </li>
         </ul>
         <h2 className="text-lg font-semibold mt-4">
-          13. Modifications to Terms
+          14. Modifications to Terms
         </h2>
         <p>
           Crintel Labs reserves the right to modify these Terms at any time. We
@@ -337,7 +337,7 @@ const Page = () => {
           Platform or via email. Continued use of the Platform after such
           changes constitutes acceptance of the new Terms.
         </p>
-        <h2 className="text-lg font-semibold mt-4">14. Miscellaneous</h2>
+        <h2 className="text-lg font-semibold mt-4">15. Miscellaneous</h2>
         <ul className="list-disc ml-12">
           <li>
             <strong>Severability</strong>: If any provision of these Terms is
@@ -366,7 +366,7 @@ const Page = () => {
             or as otherwise specified by Crintel Labs.
           </li>
         </ul>
-        <h2 className="text-lg font-semibold mt-4">15. Contact Us</h2>
+        <h2 className="text-lg font-semibold mt-4">16. Contact Us</h2>
         <p>
           If you have any questions about these Terms, please contact us at:
         </p>
