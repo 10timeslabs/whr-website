@@ -24,6 +24,7 @@ import Untracked from '/public/internal_landing_page_icons/untracked roi_geo pro
 import GetInTouch from "@/components/GetInTouch";
 import Footer from "@/components/Footer";
 import GeneralNavbar from "@/components/GeneralNavbar";
+import SearchSection from "@/components/search-section";
 
 export const metadata = {
   title: "whr.ai/gtm - GTM Event Intelligence Solutions",
@@ -107,7 +108,8 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center mt-10">
-        <UseCasesContainer text="Whr Depends on your Why" pathName="/gtm" />
+        {/* <UseCasesContainer text="Whr Depends on your Why" pathName="/gtm" /> */}
+        <SearchSection/>
       </div>
 
       {/* <div className="w-full">

@@ -159,6 +159,7 @@ import CircleImage from "/public/CircularAnimation/Circle.png";
 import { homepageTabsData } from "../../../data/homepageTabsData";
 import GridImage from "/public/usecase_grid.png";
 import Link from "next/link";
+import { GTM_UseCase_15, GTM_UseCase_9, TrendsIcon } from "../../../svgicons/icons";
 interface Props {
   text?: string;
   pathName: string;
@@ -205,16 +206,34 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const tabs = ["Predict", "Sell", "Participate"];
-  const activeIndex = tabs.indexOf(activeTab)
+  const tabs = ["Event Analysts", "Suppliers & Organizers", "Event Participants"];
+  const activeIndex = tabs.indexOf(
+    activeTab === "Predict"
+      ? "Event Analysts"
+      : activeTab === "Sell"
+      ? "Suppliers & Organizers"
+      : "Event Participants"
+  );
   const handlePrev = () => {
     const newIndex = activeIndex === 0 ? tabs.length - 1 : activeIndex - 1;
-    setActiveTab(tabs[newIndex]);
+    setActiveTab(
+      tabs[newIndex] === "Event Analysts"
+        ? "Predict"
+        : tabs[newIndex] === "Suppliers & Organizers"
+        ? "Sell"
+        : "Participate"
+    );
   };
 
   const handleNext = () => {
     const newIndex = activeIndex === tabs.length - 1 ? 0 : activeIndex + 1;
-    setActiveTab(tabs[newIndex]);
+    setActiveTab(
+      tabs[newIndex] === "Event Analysts"
+        ? "Predict"
+        : tabs[newIndex] === "Suppliers & Organizers"
+        ? "Sell"
+        : "Participate"
+    );
   };
   
   return (
@@ -255,7 +274,11 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
                 </button>
     
                <div className='bg-[var(--neutral-light-color)] p-1 rounded-md'> <div className="px-4 py-2 bg-white rounded-md shadow-md border font-semibold text-[#6750a4]">
-                  {activeTab}
+                  {activeTab === "Predict"
+                    ? "Event Analysts"
+                    : activeTab === "Sell"
+                    ? "Suppliers & Organizers"
+                    : "Event Participants"}
                 </div></div>
     
                 <button onClick={handleNext} className="p-2">
@@ -264,7 +287,7 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
               </div>
     
               <div className="flex gap-2 mt-2">
-                {tabs.map((_, index) => (
+                {tabs.map((tab, index) => (
                   <span
                     key={index}
                     className={`h-2 w-2 rounded-full ${index === activeIndex? "bg-[#6750a4]" : "bg-gray-400"}`}
@@ -273,30 +296,46 @@ const UseCasesContainer = ({ text, pathName }: Props) => {
               </div>
             </div>
             ):(
-              showTabs ? <div className="flex items-center gap-3 p-1 bg-[var(--neutral-light-color)] border border-[var(--neutral-light-color)] rounded-sm w-fit">
-              <button
-             className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Participate" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
-               }`}
-             onClick={() => setActiveTab("Participate")}
-           >
-             Participate
-           </button>
-          
-           <button
-             className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Sell" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
-               }`}
-             onClick={() => setActiveTab("Sell")}
-           >
-             Sell
-           </button>
-           <button
-             className={`w-auto px-2 py-1 font-semibold rounded-sm flex items-center justify-center gap-1 ${activeTab === "Predict" ? "text-[#6750a4] bg-white" : "text-[var(--tertiary-text-color)]"
-               }`}
-             onClick={() => setActiveTab("Predict")}
-           >
-             Predict
-           </button>
-         </div> : <span className="text-[36px] font-medium text-center">{text}</span>)
+              showTabs ? (
+                <div className="flex gap-2 bg-white rounded-lg shadow-md p-2">
+                <button
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition ${
+                    activeTab === "Participate" ? "text-white bg-primary" : "text-gray-500 hover:bg-gray-100"
+                  }`}
+                  onClick={() => setActiveTab("Participate")}
+                >
+                  <GTM_UseCase_15 color="currentColor" />
+                  Event Participants
+                </button>
+                <button
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition ${
+                    activeTab === "Sell" ? "text-white bg-primary" : "text-gray-500 hover:bg-gray-100"
+                  }`}
+                  onClick={() => setActiveTab("Sell")}
+                >
+                   <GTM_UseCase_9 color="currentColor" />
+                  Suppliers & Organizers
+                </button>
+                <button
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition ${
+                    activeTab === "Predict" ? "text-white bg-primary" : "text-gray-500 hover:bg-gray-100"
+                  }`}
+                  onClick={() => setActiveTab("Predict")}
+                >
+                  <TrendsIcon color="currentColor" />
+                  Event Analysts
+                </button>
+              </div>
+              ) :<></>
+            
+            
+            
+            
+            
+            
+            
+            
+            )
            }
           {pathName === "/" && <div className='text-2xl text-center'>{activeTab === "GTM" ? "Where should you Go" : "Where could you focus"}</div>}
           <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">
