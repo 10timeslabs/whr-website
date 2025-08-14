@@ -144,7 +144,21 @@ const Page = () => {
           </li>
         </ul>
         <h2 className="text-lg font-semibold mt-4">
-          6. API Usage and Data Licensing
+          6. User Verification Requirement
+        </h2>
+        <ul className="list-disc ml-12">
+          <li>
+            <strong>Account Verification</strong>: User will be required to verify their account via email and/or phone number to access the Platform at regular intervals to ensure legitimacy.
+          </li>
+          <li>
+            <strong>Identity Verification</strong>: Crintel Labs reserves the right, at its sole discretion, to request government-issued identification for identity verification at any time.
+          </li>
+          <li>
+            <strong>Suspicious Activity</strong>: If a User is suspected of parsing, scraping, or misusing the Platform, access will be temporarily or permanently blocked. Crintel Labs may request proof of legitimacy, and access will only be restored upon satisfactory verification. In such cases, no refunds will be issued for any subscription fees already paid.
+          </li>
+        </ul>
+        <h2 className="text-lg font-semibold mt-4">
+          7. API Usage and Data Licensing
         </h2>
         <ul className="list-disc ml-12">
           <li>
@@ -171,7 +185,7 @@ const Page = () => {
           </li>
         </ul>
         <h2 className="text-lg font-semibold mt-4">
-          7. User Responsibilities and Restrictions
+          8. User Responsibilities and Restrictions
         </h2>
 
         <ul className="list-disc ml-12">
