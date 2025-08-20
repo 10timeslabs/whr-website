@@ -91,16 +91,16 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
   const paymentLinks: paymentLinks = {
     geo: {
       Essential: {
-        monthly: `https://buy.stripe.com/dRmfZg2UA0cZ1xEbji57W08?${queryString}`,
-        yearly: `https://buy.stripe.com/4gM28q66MgbXb8egDC57W0b?${queryString}`,
+        monthly: `https://buy.stripe.com/dRmfZg2UA0cZ1xEbji57W08?${queryString}&locked_prefilled_email=${geoUser?.email}`,
+        yearly: `https://buy.stripe.com/4gM28q66MgbXb8egDC57W0b?${queryString}&locked_prefilled_email=${geoUser?.email}`,
       },
       Scale: {
-        monthly: `https://buy.stripe.com/3cI6oGcva4tfgsyevu57W09?${queryString}`,
-        yearly: `https://buy.stripe.com/eVqbJ0br6bVHb8eafe57W0c?${queryString}`,
+        monthly: `https://buy.stripe.com/3cI6oGcva4tfgsyevu57W09?${queryString}&locked_prefilled_email=${geoUser?.email}`,
+        yearly: `https://buy.stripe.com/eVqbJ0br6bVHb8eafe57W0c?${queryString}&locked_prefilled_email=${geoUser?.email}`,
       },
       Advance: {
-        monthly: `https://buy.stripe.com/14A8wO2UA0cZ3FMfzy57W0a?${queryString}`,
-        yearly: `https://buy.stripe.com/00w28qbr69Nzgsycnm57W0d?${queryString}`,
+        monthly: `https://buy.stripe.com/14A8wO2UA0cZ3FMfzy57W0a?${queryString}&locked_prefilled_email=${geoUser?.email}`,
+        yearly: `https://buy.stripe.com/00w28qbr69Nzgsycnm57W0d?${queryString}&locked_prefilled_email=${geoUser?.email}`,
       },
       Enterprise: {
         monthly: `/demo?${queryString}`,
@@ -109,16 +109,16 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
     },
     gtm: {
       Essential: {
-        monthly: `https://buy.stripe.com/bJedR852I2l7foudrq57W02?${queryString}`,
-        yearly: `https://buy.stripe.com/bJe7sKcva9Nz2BIdrq57W07?${queryString}`,
+        monthly: `https://buy.stripe.com/bJedR852I2l7foudrq57W02?${queryString}&locked_prefilled_email=${gtmUser?.email}`,
+        yearly: `https://buy.stripe.com/bJe7sKcva9Nz2BIdrq57W07?${queryString}&locked_prefilled_email=${gtmUser?.email}`,
       },
       Scale: {
-        monthly: `https://buy.stripe.com/00w4gy1Qw1h36RYcnm57W03?${queryString}`,
-        yearly: `https://buy.stripe.com/eVqdR8eDif7T2BI9ba57W06?${queryString}`,
+        monthly: `https://buy.stripe.com/00w4gy1Qw1h36RYcnm57W03?${queryString}&locked_prefilled_email=${gtmUser?.email}`,
+        yearly: `https://buy.stripe.com/eVqdR8eDif7T2BI9ba57W06?${queryString}&locked_prefilled_email=${gtmUser?.email}`,
       },
       Advance: {
-        monthly: `https://buy.stripe.com/6oU6oGan2aRDfou5YY57W04?${queryString}`,
-        yearly: `https://buy.stripe.com/00weVcdze3pbb8e3QQ57W05?${queryString}`,
+        monthly: `https://buy.stripe.com/6oU6oGan2aRDfou5YY57W04?${queryString}&locked_prefilled_email=${gtmUser?.email}`,
+        yearly: `https://buy.stripe.com/00weVcdze3pbb8e3QQ57W05?${queryString}&locked_prefilled_email=${gtmUser?.email}`,
       },
       Enterprise: {
         monthly: `/demo?${queryString}`,
@@ -129,7 +129,6 @@ const PriceCard = ({ data, isActive, isAnually }: Props) => {
 
   const handlePlanClick = (planName: string, type: "monthly" | "yearly") => {
     if (gtmUser && !geoUser) {
-      paymentLinks.gtm[planName][type];
       window.open(paymentLinks["gtm"][planName][type], "_self");
     } else if (!gtmUser && geoUser) {
       window.open(paymentLinks["geo"][planName][type], "_self");
