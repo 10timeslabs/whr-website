@@ -9,10 +9,13 @@ import CrossIon from "/public/cross.svg";
 import { usePathname } from "next/navigation";
 import UserProfiles from "./ProfileCard";
 import { useAccounts } from "@/context/auth";
+import PlatformSelectionModal from "./PlatformSelection/platformSelectionModal";
+import whrLogo from "/public/logo/croppedlogo.png";
 const Navbar = () => {
   const { gtmUser, geoUser } = useAccounts();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement | null>(null);
   const pathName = usePathname()
   useEffect(() => {
@@ -42,10 +45,7 @@ const Navbar = () => {
     };
   }, []);
   const handleClick = () =>{
-    if(pathName.split("/")[1] === "geo"){
-      window.open("https://geo.whr.ai/signup", "_blank")
-    }
-    else window.open("https://gtm.whr.ai/signup", "_blank")
+    setIsModalOpen(true);
   }
   return (
     <nav className="fixed top-2 left-0 w-full z-50 transition-colors duration-1000 ease-in-out">
@@ -118,12 +118,12 @@ const Navbar = () => {
           >
             Blog
           </Link>
-          {/* <Link
+          <Link
             href="/pricing"
             className="text-black hover:text-primary text-lg"
           >
             Pricing
-          </Link> */}
+          </Link>
         </div>
 
         {/*-------------- Desktop Buttons------------------- */}
@@ -198,11 +198,11 @@ const Navbar = () => {
               Blog
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link href="/pricing" className="text-gray-800 hover:text-primary">
               Pricing
             </Link>
-          </li> */}
+          </li>
         </ul>
 
         {/* Buttons */}
@@ -231,6 +231,92 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(false)}
         ></div>
       )}
+
+      <PlatformSelectionModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      >
+        <div className="grid grid-cols-6 gap-6 mt-6">
+          <div className="bg-[#59478C] rounded-xl p-5 flex flex-col gap-3 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] col-span-6 lg:col-span-2 h-[20vh] lg:h-[50vh] justify-between">
+            <div className="flex flex-col gap-3">
+              {/* <div className="text-base text-white font-semibold">
+                Save More
+                <div className="text-lg text-white font-bold">
+                  With Good Plans.
+                </div>
+              </div> */}
+              <div className="text-sm text-white">
+              Choose the platform that fits your business needs, complete a quick signup, and begin your journey.
+              </div>
+              <div className="text-white font-bold">{"->"}</div>
+            </div>
+            <div className="items-center gap-2 hidden lg:flex">
+              <div className="bg-white rounded-xl p-1 h-9 w-9 flex items-center justify-center shadow-lg">
+                <Image src={whrLogo} alt="tick" height={26} width={24} />
+              </div>
+              <span className="text-white font-bold text-lg">WHR.ai</span>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-xl p-5 flex flex-col gap-3 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] col-span-3 lg:col-span-2 h-[50vh] justify-between">
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-2">
+                <div className="bg-white rounded-xl p-1 h-9 w-9 flex items-center justify-center shadow-lg">
+                  <Image src={whrLogo} alt="tick" height={26} width={24} />
+                </div>
+                <div className="font-bold text-2xl">GEO</div>
+              </div>
+              <div className="text-muted-foreground text-sm">
+                What You'll Get
+              </div>
+              <div className="overflow-y-auto h-[120px]">
+                <div className="flex gap-2 items-baseline text-sm">
+                  Unlock comprehensive geographic insights and spatial intelligence to make data-driven decisions for your business.
+                </div>
+              </div>
+            </div>
+
+            <button
+              className="bg-[var(--primary-color)] rounded-md text-white text-center py-2"
+              onClick={() => {
+                window.open("https://geo.whr.ai/signup", "_blank");
+                setIsModalOpen(false);
+              }}
+            >
+              Choose GEO
+            </button>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 flex flex-col gap-3 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] col-span-3 lg:col-span-2 h-[50vh] justify-between">
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-2">
+                <div className="bg-white rounded-xl p-1 h-9 w-9 flex items-center justify-center shadow-lg">
+                  <Image src={whrLogo} alt="tick" height={26} width={24} />
+                </div>
+                <div className="font-bold text-2xl">GTM</div>
+              </div>
+              <div className="text-muted-foreground text-sm">
+                What You'll Get
+              </div>
+              <div className="overflow-y-auto h-[120px]">
+                <div className="flex gap-2 items-baseline text-sm">
+                  Focused insights into business events, delivering industry-specific intelligence to drive informed go-to-market decisions.
+                </div>
+              </div>
+            </div>
+
+            <button
+              className="bg-[var(--primary-color)] rounded-md text-white text-center py-2"
+              onClick={() => {
+                window.open("https://gtm.whr.ai/signup", "_blank");
+                setIsModalOpen(false);
+              }}
+            >
+              Choose GTM
+            </button>
+          </div>
+        </div>
+      </PlatformSelectionModal>
     </nav>
   );
 };

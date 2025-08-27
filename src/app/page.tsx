@@ -18,6 +18,7 @@ import Footer from "@/components/Footer";
 import HomeNavbar from "@/components/HomeNavbar";
 import { Typewriter } from "react-simple-typewriter";
 import TypewriterEffect from "@/components/TypewriterEffect";
+import CollectionsSection from "@/components/collections/CollectionsSection";
 
 export const metadata = {
   title: "whr.ai - Global Event Intelligence Platform",
@@ -63,17 +64,34 @@ export default function Home() {
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS</div>
         <AutoScroll icons={companyLogos} size="small" />
       </div>
-      <div className="w-full"><ProblemContainer cardData={cardData} route="home" /></div>
+      {/* <div className="w-full"><ProblemContainer cardData={cardData} route="home" /></div> */}
       {/* <div className="flex flex-col gap-10 items-center mt-14">
         <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS</div>
         <AutoScroll icons={companyLogos} size="small" />
       </div> */}
-      <div className="mt-14">
+      {/* <div className="mt-14">
         <CircleContainer />
+      </div> */}
+
+
+        
+
+
+
+
+      {/* Collections Section */}
+      <div className="mt-14">
+        <CollectionsSection />
       </div>
+
       <div className="mt-14">
         <ProductsCarousel />
       </div>
+
+
+ 
+
+
       <div className="w-full mt-4"><Clarity /></div>
       <GetInTouch />
       <Footer />

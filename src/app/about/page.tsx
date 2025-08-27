@@ -10,6 +10,17 @@ import SparkleImg from "/public/sparkle.png";
 import GetInTouch from '@/components/GetInTouch'
 import Footer from '@/components/Footer'
 import HomeNavbar from '@/components/HomeNavbar'
+import ProblemContainer from "@/components/realWorldProblem/ProblemContainer";
+import ProductsCarousel from '@/components/ProductSection/ProductsCarousel'
+import CircleContainer from '@/components/circleAnimation/CircleContainer'
+import Clarity from '@/components/clarityAnimation/Clarity'
+import JourneySection from '@/components/journeySection/JourneySection'
+import FragmentDataIcon from '/public/realworldproblems/Fragmenteddata.svg'
+import NoiseIcon from '/public/realworldproblems/noise.svg'
+import PuzzleIcon from '/public/realworldproblems/puzzle.svg'
+import IntelDataIcon from '/public/realworldproblems/timesensitiveintel.svg'
+import UseCasesContainer from '@/components/useCaseSection/UseCasesContainer'
+import HeroSectionImage from '/public/about-banner.jpg'
 
 const Page = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0)
@@ -29,24 +40,125 @@ const Page = () => {
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data?.length); // Loop back to 0
   };
+
+  const cardData = [
+    { icon: FragmentDataIcon, heading: "Fragmented Data", subheading: "Fragmented data poses significant challenges, with information scattered across multiple sources, inconsistent formats, various languages, duplicate entries, and unsynchronised timelines" },
+    { icon: NoiseIcon, heading: "Too Much Noise", subheading: "With overwhelming volumes of information, the process of finding relevant data, cleaning it, identifying fake or unreliable entries, and quantifying it for meaningful use becomes a daunting task." },
+    { icon: PuzzleIcon, heading: "Piecing the Puzzle", subheading: "Data is only as valuable as the connections between its points. Without linking multiple lateral data points, insights remain incomplete and unusable." },
+    { icon: IntelDataIcon, heading: "Time Sensitive Intel", subheading: "Delivering actionable intelligence to the right people at the right time is critical for success. When key insights are accessible exactly when they’re needed, it enables informed decisions." },
+  ]
   return (
-    <div className='pt-[120px] flex flex-col items-center'>
+    <div className='flex flex-col items-center'>
       <HomeNavbar/>
+
+      <div className="w-full">
+            {/* For Screens ≤ 898px - Text Above, Image Below */}
+            <div className="max-[898px]:flex flex-col hidden mt-[100px] relative">
+              {/* Container with Gradient */}
+              <div
+                className="w-full p-6 rounded-r-md relative"
+                style={{
+                  opacity: "0.9",
+                  background: `#fff`,
+                  backdropFilter: "blur(50px)",
+                }}
+              >
+                {/* Text Content */}
+                <div className="w-[60%]">
+                  <h1>
+                    <div className="text-black font-bold text-[28px] leading-[34px] z-30">
+                    Powering Real-World Intelligence
+                    </div>
+                    <div className="text-black text-sm leading-5 mt-4 z-300">
+                      <p>At whr.ai, we aim to be the ultimate source of truth for real-world actions. We envision a future where individuals and organizations affected by events have the insights to plan effectively, forecast accurately, and make decisive moves to advance their business.</p>
+                    </div>
+                  </h1>
+                </div>
+              </div>
+
+              {/* Image Below Text on Small Screens */}
+              <div className="w-full">
+                <Image
+                  src={HeroSectionImage}
+                  alt="Hero Section Image"
+                  width={1000}
+                  height={1000}
+                  priority // Ensures this image loads ASAP for LCP optimization
+                  className="w-full max-h-[650px] object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="min-[899px]:block hidden w-full">
+              {/* Background Image */}
+              <Image
+                src={HeroSectionImage}
+                alt="Hero Section Image"
+                width={1000}
+                height={1000}
+                priority
+                className="h-[450px] md:h-[650px] w-full object-cover"
+              />
+
+              {/* Blurry Background */}
+              <div
+                className="absolute left-0 top-0 h-[450px] md:h-[650px] w-full md:w-[700px] p-6 rounded-r-md"
+                style={{
+                  opacity: "0.9",
+                  background: `#ECECEC`,
+                  filter: "blur(100px)",
+                  backdropFilter: "blur(50px)",
+                  maskImage:
+                    "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%)",
+                }}
+              />
+
+              {/* Text Content */}
+              <div className="absolute left-5 md:left-[100px] top-10 h-auto max-w-[90%] md:max-w-[40%] p-4 md:p-6 rounded-r-md flex flex-col">
+                {/* Main Text */}
+                <h1>
+                  {/* <div className="text-black font-bold text-[28px] md:text-[40px] mt-20 md:mt-32 leading-[34px] md:leading-[46px] break-words">
+                    {dataToDisplay.text}
+                  </div> */}
+                   <div className="text-black mt-28 text-[58px] max-[775px]:text-[28px] break-words leading-[34px] md:leading-[66px]">
+                   Powering Real-World Intelligence
+                  </div>
+
+                  {/* Subtext */}
+                  <div className="text-[#171717] text-sm md:text-lg leading-5 md:leading-6 mt-4 text-wrap break-words">
+                    <p>At whr.ai, we aim to be the ultimate source of truth for real-world actions. We envision a future where individuals and organizations affected by events have the insights to plan effectively, forecast accurately, and make decisive moves to advance their business.</p>
+                  </div>
+                </h1>
+              </div>
+            </div>
+          </div>
+      <div className="w-full"><ProblemContainer cardData={cardData} route="home" /></div>
+      {/* <div className="flex flex-col gap-10 items-center mt-14">
+        <div className="text-sm font-medium border border-color rounded-xl py-1 px-7">CUSTOMERS</div>
+        <AutoScroll icons={companyLogos} size="small" />
+      </div> */}
+      <div className="mt-14 w-full">
+        <CircleContainer />
+      </div>
+      <div className="mt-14 w-full">
+        {/* <ProductsCarousel /> */}
+      </div>
+      {/* <div className="w-full mt-4"><Clarity /></div>s */}
       <Image src={GridImage} alt="grid" className="absolute top-0 -z-[10]" />
       <div className="h-[100px] w-full absolute top-0 bg-gradient-to-b from-[rgba(165,184,198,0.2)] to-[rgba(132,168,204,0)]"></div>
       {/* Empowering Section */}
-      <div className='w-[87%] flex items-center'>
+      {/* <div className='w-[87%] flex items-center'>
         <div className='flex flex-col w-[50%] gap-4 max-[480px]:w-full'>
           <div className='text-[56px] leading-[64px] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>Empowering Real-World Intelligence</div>
           <div className='text-[#3a3a3a] text-lg max-[730px]:text-[14px] max-[730px]:leading-[20px] max-[480px]:w-full'>At whr.ai, our mission is to be the single source of truth for all actions happening in the real world. We envision a future where every individual and organization impacted by real-world events is empowered with the intelligence needed to plan better, forecast accurately, and take decisive actions to drive their business forward.</div>
         </div>
         <Image src={LogoSparkle} alt='Logo' className='ml-[20%] h-[200px] w-[180px] max-[730px]:h-[150px] max-[730px]:w-[120px]  max-[480px]:hidden' />
-      </div>
+      </div> */}
+
+
       {/* Journey Section */}
-      <div className='w-[87%] flex justify-between mt-[120px] max-[480px]:flex-col max-[480px]:gap-4'>
-        <div className='text-[56px] leading-[64px] w-[30%] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>Our Journey</div>
-        <div className='text-[#3a3a3a] text-lg w-[50%] max-[730px]:text-[14px] max-[730px]:leading-[20px] max-[480px]:w-full'>Founded in January 2025, whr.ai was born from over a decade of experience in the event industry. Our founder and team recognized that events are a core factor of volatility that is notoriously difficult to gauge. Traditional data was fragmented and riddled with noise, making it challenging to incorporate events into actionable business insights. Unlike more straightforward factors like weather or holidays, understanding the dynamic and multifaceted nature of events required a specialized approach. Determined to solve this problem, we launched whr.ai to create a reliable single source of truth that everyone can depend on.</div>
-      </div>
+      <JourneySection />
+      
       {/* What sets us apart */}
       <div className='w-[87%] flex justify-between mt-[120px] max-[730px]:flex-col'>
         <div className='flex flex-col w-[30%] gap-4 max-[730px]:w-full'>
@@ -73,36 +185,44 @@ const Page = () => {
         </div>
       </div>
       {/* Why US */}
-      <div className='w-[87%] flex justify-between mt-[120px] max-[1050px]:flex-col'>
-        <div className='flex flex-col w-[30%] gap-4 max-[1050px]:w-full'>
+      <div className='w-[87%] flex flex-col items-center mt-[120px]'>
+        {/* Header Section */}
+        <div className='flex flex-col items-center gap-4 mb-16 text-center'>
           <div className='text-[56px] leading-[64px] max-[730px]:text-[40px] max-[730px]:leading-[50px]'>Why Whr.ai</div>
-          <div className='text-[var(--secondary-text-color)]'>Powering Events with Intelligent Connections.</div>
+          <div className='text-[var(--secondary-text-color)] text-lg'>Powering Events with Intelligent Connections.</div>
         </div>
-        <div className='flex flex-col gap-4 w-[60%] max-[1050px]:mt-4 max-[1050px]:w-full'>
-          <div className='flex gap-4 max-[580px]:flex-col'>
-            <div className='flex flex-col gap-5 border border-[var(--border-color)] rounded-2xl p-8 '>
-              <Image src={SparkleImg} alt='sparkle' width={38} height={38} />
-              <div className='text-[24px] text-[var(--primary-color)] max-[730px]:text-[18px]'>Trusted Data</div>
-              <div className='text-lg text-[var(--secondary-text-color)] max-[730px]:text-[14px]'>Rely on data that is meticulously verified and constantly updated to ensure accuracy.</div>
-            </div>
-            <div className='flex flex-col gap-5 border border-[var(--border-color)] rounded-2xl p-8'>
-              <Image src={SparkleImg} alt='sparkle' width={38} height={38} />
-              <div className='text-[24px] text-[var(--primary-color)] max-[730px]:text-[18px]'>Comprehensive Coverage</div>
-              <div className='text-lg text-[var(--secondary-text-color)] max-[730px]:text-[14px]'>Access a single source of truth covering all event categories and geographies</div>
-            </div>
-          </div>
-          <div className='flex flex-col gap-5 border border-[var(--border-color)] rounded-2xl p-8 w-full'>
+        
+        {/* Cards Section */}
+        <div className='grid grid-cols-3 gap-6 w-full max-w-[1200px] max-[1024px]:grid-cols-1 max-[1024px]:max-w-[500px]'>
+          <div className='flex flex-col gap-5 border border-[var(--border-color)] rounded-2xl p-8'>
             <Image src={SparkleImg} alt='sparkle' width={38} height={38} />
-            <div className='text-[24px] text-[var(--primary-color)] max-[730px]:text-[18px]'>Designed for Event Stakeholders</div>
-            <div className='text-lg text-[var(--secondary-text-color)] max-[730px]:text-[14px]'>Our solutions are tailored to unlock maximum benefits for hotels, venues, event planners, research firms, brand agencies, and large enterprises involved in events.</div>
+            <div className='text-[24px] text-[var(--primary-color)] max-[730px]:text-[20px]'>Trusted Data</div>
+            <div className='text-lg text-[var(--secondary-text-color)] max-[730px]:text-[16px]'>Rely on data that is meticulously verified and constantly updated to ensure accuracy.</div>
+          </div>
+          
+          <div className='flex flex-col gap-5 border border-[var(--border-color)] rounded-2xl p-8'>
+            <Image src={SparkleImg} alt='sparkle' width={38} height={38} />
+            <div className='text-[24px] text-[var(--primary-color)] max-[730px]:text-[20px]'>Comprehensive Coverage</div>
+            <div className='text-lg text-[var(--secondary-text-color)] max-[730px]:text-[16px]'>Access a single source of truth covering all event categories and geographies</div>
+          </div>
+          
+          <div className='flex flex-col gap-5 border border-[var(--border-color)] rounded-2xl p-8'>
+            <Image src={SparkleImg} alt='sparkle' width={38} height={38} />
+            <div className='text-[24px] text-[var(--primary-color)] max-[730px]:text-[20px]'>For Event Stakeholders</div>
+            <div className='text-lg text-[var(--secondary-text-color)] max-[730px]:text-[16px]'>We maximize benefits for hotels, venues, planners, research firms, agencies, and enterprises in events.</div>
           </div>
         </div>
       </div>
       {/* WHO we Serve */}
-      <div className='w-[87%] flex justify-between mt-[120px] max-[480px]:flex-col max-[480px]:gap-4'>
-        <div className='text-[56px] leading-[64px] w-[30%] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>Who We Serve</div>
-        <div className='text-[#3a3a3a] w-[50%] text-lg max-[730px]:text-[14px] max-[730px]:leading-[20px] max-[480px]:w-full'>Our primary customers include global hotels, venues, event planners, research firms, brand agencies, and large enterprises that participate in or provide services to events. Whether you are a local business affected by inbound visitors or an enterprise investing over $100k annually in events, whr.ai offers tailored solutions to meet your specific needs</div>
+      <div className='w-full flex flex-col justify-between mt-[120px] max-[480px]:flex-col max-[480px]:gap-4'>
+        <div className='text-[56px] text-center leading-[64px] max-[730px]:text-[40px] max-[730px]:leading-[50px] max-[480px]:w-full'>Who We Serve</div>
+        <div className="w-full flex items-center justify-center mt-10">
+        <UseCasesContainer pathName="" />
       </div>
+      </div>
+
+
+
       {/* Conclusion */}
       <div className="w-[87%] flex flex-col items-center justify-center rounded-2xl border border-[var(--border-color)] gap-5 mt-[120px] py-4"
         style={{ backgroundImage: `url(${GridImageTwo.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
