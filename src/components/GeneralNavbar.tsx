@@ -404,7 +404,17 @@ const GeneralNavbar = () => {
               Collections
             </div>
               </Link>
-               } 
+               }
+
+            {pathname.includes("/geo") &&
+              <Link href="https://geo.whr.ai/signup">
+                <div
+                  className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
+                >
+                  Collections
+                </div>
+              </Link>
+            }
             <div
               className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
               onClick={()=>handleRoute("about")}

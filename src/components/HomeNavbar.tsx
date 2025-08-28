@@ -11,6 +11,7 @@ import UserProfiles from "./ProfileCard";
 import { useAccounts } from "@/context/auth";
 import PlatformSelectionModal from "./PlatformSelection/platformSelectionModal";
 import whrLogo from "/public/logo/croppedlogo.png";
+import { GAEvent } from "../../utils/gaEvents";
 const Navbar = () => {
   const { gtmUser, geoUser } = useAccounts();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -279,6 +280,7 @@ const Navbar = () => {
             <button
               className="bg-[var(--primary-color)] rounded-md text-white text-center py-2"
               onClick={() => {
+                GAEvent('whr_landing_page', 'Platform Selection', 'Click', 'Choose GEO Button');
                 window.open("https://geo.whr.ai/signup", "_blank");
                 setIsModalOpen(false);
               }}
@@ -308,6 +310,7 @@ const Navbar = () => {
             <button
               className="bg-[var(--primary-color)] rounded-md text-white text-center py-2"
               onClick={() => {
+                GAEvent('whr_landing_page', 'Platform Selection', 'Click', 'Choose GTM Button');
                 window.open("https://gtm.whr.ai/signup", "_blank");
                 setIsModalOpen(false);
               }}

@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { AuthProvider } from "@/context/auth";
 import { getUserDataFromCookies } from "../../utils/getUserDataFromCookies";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "whr.ai - Premier Event Intelligence Platform",
@@ -63,6 +64,7 @@ export default async function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
         <Breadcrumbs />
         <div>
           <AuthProvider value={userCookies}>{children}</AuthProvider>
