@@ -276,7 +276,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-
+<div className="flex flex-col gap-3">
             <button
               className="bg-[var(--primary-color)] rounded-md text-white text-center py-2"
               onClick={() => {
@@ -287,8 +287,18 @@ const Navbar = () => {
             >
               Choose GEO
             </button>
+            <div className="text-center pb-3 text-sm">
+            Already have an account?
+            <Link
+              href="https://geo.whr.ai/signin"
+              className="text-[#6750a4] cursor-pointer font-medium"
+            >
+              {" "}
+              Log In
+            </Link>
           </div>
-
+          </div>
+          </div>
           <div className="bg-white rounded-xl p-5 flex flex-col gap-3 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] col-span-3 lg:col-span-2 h-[50vh] justify-between">
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2">
@@ -306,7 +316,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-
+              <div className="flex flex-col gap-3">
             <button
               className="bg-[var(--primary-color)] rounded-md text-white text-center py-2"
               onClick={() => {
@@ -317,6 +327,17 @@ const Navbar = () => {
             >
               Choose GTM
             </button>
+            <div className="text-center pb-3 text-sm">
+            Already have an account?
+            <Link
+              href="https://gtm.whr.ai/signin"
+              className="text-[#6750a4] cursor-pointer font-medium"
+            >
+              {" "}
+              Log In
+            </Link>
+          </div>
+          </div>
           </div>
         </div>
       </PlatformSelectionModal>
