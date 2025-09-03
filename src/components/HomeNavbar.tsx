@@ -237,7 +237,7 @@ const Navbar = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       >
-        <div className="grid grid-cols-1 sm:grid-cols-6 gap-4 sm:gap-6 mt-6 max-h-[70vh] sm:max-h-none overflow-y-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-6 gap-4 sm:gap-6 mt-6 max-h-[70vh] sm:max-h-none overflow-y-auto p-2">
           <div className="bg-[#59478C] rounded-xl p-4 sm:p-5 flex flex-col gap-3 drop-shadow-[2px_2px_5px_rgba(0,0,0,0.25)] col-span-1 sm:col-span-6 lg:col-span-2 min-h-[160px] sm:h-[20vh] lg:h-[50vh] justify-between">
             <div className="flex flex-col gap-3">
               {/* <div className="text-base text-white font-semibold">
