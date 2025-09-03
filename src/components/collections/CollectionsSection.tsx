@@ -2,10 +2,6 @@
 import React from 'react';
 import CollectionCard from './CollectionCard';
 import { useCollections } from '../../hooks/useCollections';
-import { 
-  GTM_UseCase_1, GTM_UseCase_2, GTM_UseCase_3, GTM_UseCase_4, GTM_UseCase_5, GTM_UseCase_6, GTM_UseCase_7,
-  Geo_UseCase_1, Geo_UseCase_2, Geo_UseCase_3, Geo_UseCase_4, Geo_UseCase_5, Geo_UseCase_6, Geo_UseCase_7, Geo_UseCase_8
-} from '../../../svgicons/icons';
 
 const CollectionsSection = () => {
   const { collections: gtmCollections, loading: gtmLoading, error: gtmError, refetch: gtmRefetch } = useCollections(4, 'gtm');
@@ -25,34 +21,6 @@ const CollectionsSection = () => {
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
-
-
-  const getIconForCollection = (name: string, index: number) => {
-    const iconMap: { [key: string]: React.ReactNode } = {
-      "Health Forward": <GTM_UseCase_1 color="#6750a4" width="24" height="24" />,
-      "Money Flow": <GTM_UseCase_2 color="#6750a4" width="24" height="24" />,
-      "Green Ventures": <GTM_UseCase_3 color="#6750a4" width="24" height="24" />,
-      "Media Matrix": <GTM_UseCase_4 color="#6750a4" width="24" height="24" />,
-      "Hospitality Unlocked": <GTM_UseCase_5 color="#6750a4" width="24" height="24" />,
-      "Build Beyond": <GTM_UseCase_6 color="#6750a4" width="24" height="24" />,
-      "Energy Unlocked": <GTM_UseCase_7 color="#6750a4" width="24" height="24" />,
-      "Legal Leaders": <Geo_UseCase_1 color="#6750a4" width="24" height="24" />,
-      "Food Frontiers": <Geo_UseCase_2 color="#6750a4" width="24" height="24" />,
-      "Creative Sparks": <Geo_UseCase_3 color="#6750a4" width="24" height="24" />
-    };
-    
-    return iconMap[name] || <GTM_UseCase_1 color="#6750a4" width="24" height="24" />;
-  };
-
-
-  const formatEventCount = (count: number): string => {
-    if (count >= 1000000) {
-      return `${(count / 1000000).toFixed(1)}M events`;
-    } else if (count >= 1000) {
-      return `${Math.round(count / 1000)}k events`;
-    }
-    return `${count} events`;
-  };
 
 
 
@@ -137,13 +105,10 @@ const CollectionsSection = () => {
                 id={collection.id}
                 heading={collection.name}
                 description={collection.description}
-                eventCount={formatEventCount(collection.totalEvent)}
                 totalEvent={collection.totalEvent}
-                image="/GTM-Solutions/brand-building.svg" // Using placeholder as image URLs aren't in API
                 href={isFull 
                   ? `${GTM_BASE_URL}/collections/${collection.id}/events?view=${isMobile ? "list" : "table"}&eventType=active&type=${collection.trackerType[0]}`
                   : `${GTM_BASE_URL}/internal/trackers/create?type=${collection.trackerType[0]}&collectionId=${collection.id}`}
-                icon={getIconForCollection(collection.name, index)}
                 tags={collection.data.includeKeywords} // Pass all keywords
                 trackerType={collection.trackerType}
               />
@@ -198,11 +163,8 @@ const CollectionsSection = () => {
                 id={collection.id}
                 heading={collection.name}
                 description={collection.description}
-                eventCount={formatEventCount(collection.totalEvent)}
                 totalEvent={collection.totalEvent}
-                image="/geo_soln_illustrations/demand forecasting.svg" // Using placeholder as image URLs aren't in API
-                                  href={`${GEO_BASE_URL}/signup`}
-                icon={getIconForCollection(collection.name, index)}
+                href={`${GEO_BASE_URL}/signup`}
                 tags={collection.data.includeKeywords} // Pass all keywords
                 trackerType={collection.trackerType}
               />

@@ -9,10 +9,7 @@ import Template from "/public/collections/template.svg";
 interface Props {
   heading: string;
   description: string;
-  eventCount: string;
-  image: string;
   href: string;
-  icon: React.ReactNode;
   tags?: string[];
   trackerType?: string[];
   totalEvent?: number;
@@ -22,10 +19,7 @@ interface Props {
 const CollectionCard = ({ 
   heading, 
   description, 
-  eventCount, 
-  image, 
   href, 
-  icon, 
   tags = [], 
   trackerType = ["T_PRODUCT_KEYWORDS"],
   totalEvent = 0,
