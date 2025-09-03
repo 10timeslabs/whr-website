@@ -64,7 +64,6 @@ export default async function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
         <Breadcrumbs />
         <div>
           <AuthProvider value={userCookies}>{children}</AuthProvider>
