@@ -407,7 +407,7 @@ const GeneralNavbar = () => {
                }
 
             {pathname.includes("/geo") &&
-              <Link href="https://geo.whr.ai/signup">
+              <Link href="https://geo.whr.ai/collections">
                 <div
                   className="text-black hover:text-primary text-[16px] px-4 py-2 cursor-pointer"
                 >

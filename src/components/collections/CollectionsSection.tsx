@@ -11,7 +11,6 @@ const CollectionsSection = () => {
   const GEO_BASE_URL = process.env.NEXT_PUBLIC_GEO_BASE_URL || 'https://geo.whr.ai';
   
   const [isMobile, setIsMobile] = React.useState(false);
-  const [isFull, setIsFull] = React.useState(true); 
   
   React.useEffect(() => {
     const checkMobile = () => {
@@ -106,9 +105,7 @@ const CollectionsSection = () => {
                 heading={collection.name}
                 description={collection.description}
                 totalEvent={collection.totalEvent}
-                href={isFull 
-                  ? `${GTM_BASE_URL}/collections/${collection.id}/events?view=${isMobile ? "list" : "table"}&eventType=active&type=${collection.trackerType[0]}`
-                  : `${GTM_BASE_URL}/internal/trackers/create?type=${collection.trackerType[0]}&collectionId=${collection.id}`}
+                href={`${GTM_BASE_URL}/collections/${collection.id}/events?view=${isMobile ? "list" : "table"}&eventType=active&type=${collection.trackerType[0]}`}
                 tags={collection.data.includeKeywords} // Pass all keywords
                 trackerType={collection.trackerType}
               />
@@ -128,8 +125,8 @@ const CollectionsSection = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-4 max-[650px]:flex-col max-[650px]:gap-2">
             <h2 className="text-[48px] font-medium max-[850px]:text-[32px]">GEO Collection</h2>
-                            {/* <a 
-                  href={`${GEO_BASE_URL}/signup`} 
+                            <a 
+                  href={`${GEO_BASE_URL}/collections`} 
                   target="_blank" 
                   rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-4 py-2 bg-[var(--primary-color)] text-white rounded-lg hover:bg-[var(--primary-color-hover)] transition-all duration-300 text-sm font-medium shadow-md hover:shadow-lg transform hover:scale-105"
@@ -143,7 +140,7 @@ const CollectionsSection = () => {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a> */}
+            </a>
           </div>
           <p className="text-[var(--secondary-text-color)] text-[18px] max-w-2xl mx-auto">
             Leverage geographical intelligence and location-based insights for strategic decision making
@@ -164,7 +161,7 @@ const CollectionsSection = () => {
                 heading={collection.name}
                 description={collection.description}
                 totalEvent={collection.totalEvent}
-                href={`${GEO_BASE_URL}/signup`}
+                href={`${GEO_BASE_URL}/collections/${collection.id}/events?view=${isMobile ? "list" : "table"}&eventType=social&type=${collection.trackerType[0]}`}
                 tags={collection.data.includeKeywords} // Pass all keywords
                 trackerType={collection.trackerType}
               />
