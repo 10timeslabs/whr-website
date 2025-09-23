@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 
 interface Props {
   isOpen: boolean;
@@ -21,17 +22,21 @@ const PlatformSelectionModal = ({ isOpen, onClose, children }: Props) => {
 
     if (isOpen) {
       document.addEventListener("mousedown", handleOutsideClick);
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = "hidden";
     }
 
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
+      // Restore body scroll when modal is closed
+      document.body.style.overflow = "unset";
     };
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 sm:p-6">
+  const modalContent = (
+    <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black bg-opacity-50 p-4 sm:p-6">
       <div
         ref={modalRef}
         className="bg-white rounded-lg shadow-lg p-6 sm:p-8 w-full max-w-[98vw] sm:max-w-[90vw] lg:max-w-[60vw] max-h-[95vh] sm:max-h-none relative"
@@ -48,6 +53,11 @@ const PlatformSelectionModal = ({ isOpen, onClose, children }: Props) => {
       </div>
     </div>
   );
+
+  // Use portal to render modal at document.body level
+  return typeof document !== "undefined" 
+    ? createPortal(modalContent, document.body)
+    : null;
 };
 
 export default PlatformSelectionModal;
