@@ -170,7 +170,7 @@ const Page = () => {
 							{errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
 						</div>
 					</div>
-					<div className="flex items-center gap-2">
+					{/* <div className="flex items-center gap-2">
 						<input
 							type="checkbox"
 							id="check"
@@ -181,7 +181,7 @@ const Page = () => {
 							Please subscribe to the newsletter for influencer marketing best practices
 						</label>
             <input type="hidden" name="subscribe" value={subscribe.toString()} />
-					</div>
+					</div> */}
 					<button
             type="submit"
             disabled={isPending}
